@@ -63,7 +63,7 @@
   })();
   </script>
   <title>Loker Dunia</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><circle cx='50' cy='50' r='26' fill='none' stroke='white' stroke-width='7'/><path d='M24 50h52M50 24c-12 14-12 38 0 52M50 24c12 14 12 38 0 52' fill='none' stroke='white' stroke-width='5'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><g transform='translate(14 14) scale(3)' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='10' cy='7' r='4'/><path d='M10.3 15H7a4 4 0 0 0-4 4v2'/><circle cx='17' cy='17' r='3'/><path d='m21 21-1.9-1.9'/></g></svg>">
   <link rel="stylesheet" href="/tailwind.css">
   <link rel="stylesheet" href="/usernode-native/v1/native.css">
   <!-- Platform bridge and native UI kit: centrally hosted, loaded by relative path. Never vendor. -->
@@ -651,6 +651,7 @@
     user: '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
     plus: '<path d="M5 12h14"/><path d="M12 5v14"/>',
     briefcase: '<rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',
+    seeker: '<circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/>',
     globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
     moon: '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>',
     sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>',
@@ -855,7 +856,7 @@
     $('#hdr').innerHTML =
       '<div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-2 md:gap-4">' +
         '<a href="#/" class="flex items-center gap-2 font-bold text-blue-700 dark:text-blue-400 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg">' +
-          '<span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('globe', 'w-5 h-5') + '</span><span class="text-base">Loker Dunia</span></a>' +
+          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span class="text-base">Loker Dunia</span></a>' +
         searchForm('hdr-q', 'hidden md:flex flex-1 max-w-md') +
         '<nav class="hidden lg:flex items-center gap-1" aria-label="' + esc(t('mainNav')) + '">' + items.slice(0, 4).map(([h, , k]) =>
           '<a href="' + h + '" class="px-3 py-2 rounded-lg text-sm font-medium ' + (act === h ? 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-950' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>').join('') + '</nav>' +

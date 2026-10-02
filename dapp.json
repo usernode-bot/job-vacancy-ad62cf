@@ -6,6 +6,7 @@
     "dethan1527"
   ],
   "tests": [
+    { "name": "Header logo shows a person searching for a job", "path": "/", "expectSelector": "#hdr [data-testid=app-logo][data-logo=seeker] svg" },
     { "name": "Home lists latest jobs", "path": "/", "expectSelector": "[data-testid=job-card]", "expectText": "Lowongan terbaru" },
     {
       "id": "jobs.search",

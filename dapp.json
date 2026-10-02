@@ -2,6 +2,9 @@
   "name": "Loker Dunia",
   "description": "Papan lowongan kerja global dengan pencocokan skill dan sertifikat",
   "secrets": [],
+  "admins": [
+    "dethan1527"
+  ],
   "tests": [
     { "name": "Home lists latest jobs", "path": "/", "expectSelector": "[data-testid=job-card]", "expectText": "Lowongan terbaru" },
     {

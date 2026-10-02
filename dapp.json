@@ -12,6 +12,11 @@
       "expectSelector": "#hdr [data-testid=app-logo][data-logo=seeker] svg"
     },
     {
+      "name": "Header shows the language switcher, Bahasa Indonesia by default",
+      "path": "/",
+      "expectSelector": "#hdr [data-testid=lang-switcher][data-lang=id]"
+    },
+    {
       "name": "Home lists latest jobs",
       "path": "/",
       "expectSelector": "[data-testid=job-card]",

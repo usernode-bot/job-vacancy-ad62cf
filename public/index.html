@@ -69,6 +69,9 @@
   <!-- Platform bridge and native UI kit: centrally hosted, loaded by relative path. Never vendor. -->
   <script src="/usernode-bridge/v1/bridge.js"></script>
   <script src="/usernode-native/v1/native.js"></script>
+  <!-- Interface text, one file per language. Bahasa Indonesia comes first: it is the default. -->
+  <script src="/i18n/id.js"></script>
+  <script src="/i18n/en.js"></script>
   <script>
     // Theme before first paint: the viewer's in-app choice wins, then the
     // platform theme, then the OS preference.
@@ -99,7 +102,7 @@
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen antialiased">
-  <a href="#view" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-blue-700 focus:px-3 focus:py-2 focus:rounded-lg">Skip</a>
+  <a href="#view" id="skip-link" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-blue-700 focus:px-3 focus:py-2 focus:rounded-lg">Skip</a>
   <header id="hdr" class="sticky top-0 z-30 bg-white/90 dark:bg-slate-900/90 backdrop-blur border-b border-slate-200 dark:border-slate-800"></header>
   <main id="view" class="max-w-6xl mx-auto px-4 pt-4 pb-safe-nav" tabindex="-1"></main>
   <nav id="bottomnav" class="md:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-t border-slate-200 dark:border-slate-800 nav-safe"></nav>
@@ -173,175 +176,13 @@
 
 
   /* ==========================================================================
-     Interface text: Bahasa Indonesia (default) and English.
+     Interface text lives in public/i18n/<code>.js, one file per language,
+     each loaded by its own <script> tag above. Bahasa Indonesia is the
+     default and the fallback for missing keys.
      Job content written by employers stays in the language it was posted in.
      ========================================================================== */
-  const I18N = {
-    id: {
-      saving: 'Menyimpan', saveFailed: 'Gagal menyimpan. Periksa koneksi lalu coba lagi.', loadFailed: 'Data tidak bisa dimuat', loadFailedBody: 'Periksa koneksi internet lalu coba lagi.', retry: 'Coba lagi',
-      errNameTaken: 'Nama ini sudah dipakai perusahaan lain', alreadyAppliedErr: 'Kamu sudah melamar lowongan ini', uploading: 'Mengunggah',
-      uploadUnavailable: 'File tidak bisa diunggah di sini, jadi sertifikat disimpan tanpa file.', pdfNotStored: 'File PDF belum bisa disimpan di server. Sertifikat disimpan tanpa file; unggah JPG atau PNG agar perusahaan bisa melihatnya.',
-      fileNotAvailable: 'File sertifikat tidak tersedia.', demoData: 'Data demo', noJobsYet: 'Belum ada lowongan', noJobsYetBody: 'Lowongan yang dipasang perusahaan akan muncul di sini.',
-      loading: 'Memuat', close: 'Tutup', add: 'Tambah', remove: 'Hapus', edit: 'Edit', back: 'Kembali', next: 'Lanjut', choose: 'Pilih', optional: 'opsional', all: 'Semua',
-      mainNav: 'Navigasi utama', navHome: 'Beranda', navSearch: 'Cari', navSaved: 'Tersimpan', navExplore: 'Jelajah', navProfile: 'Profil', navSignIn: 'Masuk', navPost: 'Pasang', navDashboard: 'Dasbor', navAccount: 'Akun',
-      searchPlaceholder: 'Cari posisi, perusahaan, atau skill', quickCountry: 'Pilih negara', allCountries: 'Semua negara', chooseCountry: 'Pilih negara', searchCountry: 'Cari negara',
-      switchLang: 'Switch to English', lightMode: 'Mode terang', darkMode: 'Mode gelap', nJobs: '{n} lowongan',
-      hello: 'Halo, {name}', homeTitle: 'Lowongan di seluruh dunia', homeStats: '{jobs} lowongan aktif di {countries} negara',
-      yourHiring: 'Rekrutmen kamu', openDashboard: 'Buka dasbor', statJobs: 'Lowongan', statApplicants: 'Pelamar',
-      forYou: 'Lowongan untuk Kamu', seeAll: 'Lihat semua', noRecsTitle: 'Belum ada lowongan yang cocok', noRecsBody: 'Tambahkan skill di profil agar rekomendasi lebih tepat.', addSkills: 'Tambah skill',
-      forYouGuestTitle: 'Rekomendasi sesuai skill kamu', forYouGuestBody: 'Buat profil Pencari Kerja untuk melihat lowongan yang paling cocok.', signUpSeeker: 'Daftar sebagai Pencari Kerja', completeProfile: 'Lengkapi profil',
-      latestJobs: 'Lowongan terbaru', topSkills: 'Skill Paling Dicari', topSkillsSub: 'Peringkat skill dari semua lowongan', byCountry: 'Jelajahi per Negara', byCountrySub: 'Jumlah lowongan di tiap negara',
-      save: 'Simpan', unsave: 'Hapus dari tersimpan', saved: 'Tersimpan', savedToast: 'Lowongan disimpan', unsavedToast: 'Lowongan dihapus dari Tersimpan', nMore: '+{n} lagi',
-      remoteWorldwide: 'Remote Worldwide', remoteWorldwideL: 'Remote Worldwide (bisa dari negara mana pun)', remoteWorldwideHint: 'Bisa bekerja dari negara mana pun', visaSponsor: 'Sponsor Visa', relocation: 'Relokasi Dibantu',
-      country: 'Negara', city: 'Kota', cityPlaceholder: 'Semua kota', category: 'Kategori', allCategories: 'Semua kategori', jobType: 'Tipe kerja', workModel: 'Model kerja',
-      salaryRange: 'Gaji per bulan ({cur})', min: 'Minimal', max: 'Maksimal', salaryHint: 'Gaji tahunan dan per jam dikonversi ke per bulan.', skills: 'Keahlian', filterSkillPh: 'Filter skill, misal React',
-      showSalaryIn: 'Tampilkan gaji dalam', localCurrency: 'Mata uang lokal', ratesLink: 'Kurs statis per {date}', ratesTitle: 'Kurs statis', ratesBody: 'Konversi memakai kurs tetap per {date}. Nilainya perkiraan, bukan kurs pasar saat ini.',
-      resetFilters: 'Reset filter', searchTitle: 'Cari Lowongan', filters: 'Filter', matchMySkills: 'Cocokkan Skill Saya', sortBy: 'Urutkan', sortNewest: 'Terbaru', sortSalary: 'Gaji tertinggi',
-      matchNeedsProfile: 'Isi skill di profil Pencari Kerja untuk mencocokkan lowongan.', matchExplain: 'Skill wajib berbobot 2, nilai plus 1. Skill bersertifikat dihitung penuh, tanpa bukti dihitung 75%.',
-      nFound: '{n} lowongan ditemukan', noJobs: 'Tidak ada lowongan ditemukan', noJobsBody: 'Coba kurangi filter atau ganti kata kunci.', showResults: 'Tampilkan hasil',
-      matchPct: 'Cocok {n}%', yourMatch: 'Kecocokan kamu', matchScore: 'Skor kecocokan', matchedSkills: 'Skill yang cocok', missingSkills: 'Skill yang kurang', needLevel: 'butuh {lv}', matchSignIn: 'Masuk sebagai Pencari Kerja untuk melihat kecocokan skill kamu.',
-      certified: 'Tersertifikasi ✓', noProof: 'Belum ada bukti', certExpiredBadge: 'Sertifikat kedaluwarsa', certExpiredLong: 'Sertifikat ini sudah kedaluwarsa',
-      jobNotFound: 'Lowongan tidak ditemukan', jobNotFoundBody: 'Lowongan ini mungkin sudah ditutup.', backToSearch: 'Kembali ke pencarian', salary: 'Gaji',
-      viewApplicants: 'Lihat pelamar ({n})', applyNow: 'Lamar Sekarang', alreadyApplied: 'Sudah dilamar: {status}',
-      description: 'Deskripsi', qualifications: 'Kualifikasi', benefits: 'Benefit', required: 'Wajib', nicePlus: 'Nilai Plus', requirements: 'Persyaratan',
-      minExp: 'Pengalaman minimal', nYears: '{n} tahun', noExpNeeded: 'Tidak perlu pengalaman', education: 'Pendidikan', eduMin: 'Minimal {lv}', languages: 'Bahasa', visaInfo: 'Visa & izin kerja', timezone: 'Zona waktu', tzFlexible: 'jam kerja fleksibel',
-      visaYes: 'Perusahaan mensponsori visa kerja di {country}.', visaNo: 'Tidak ada sponsor visa. Kandidat perlu izin kerja yang sah di {country}.', reloYes: 'Biaya relokasi dibantu.', visaRemoteWorldwide: 'Tidak perlu visa. Bekerja remote dari negara mana pun sebagai kontraktor atau karyawan lokal.',
-      savedTitle: 'Tersimpan', nSaved: '{n} lowongan tersimpan', noSaved: 'Belum ada lowongan tersimpan', noSavedBody: 'Ketuk ikon simpan di lowongan untuk melihatnya lagi di sini.', findJobs: 'Cari lowongan',
-      skillsBasis: 'Berdasarkan {n} lowongan', youHaveIt: 'Kamu punya', pctRequired: '{n}% wajib', otherCountriesHint: 'Tidak ada negara kamu?', allCountriesList: 'Lihat semua negara', noCountry: 'Negara tidak ditemukan', noCountryBody: 'Coba ejaan lain.',
-      signUpTitle: 'Daftar', signInTitle: 'Masuk', signUp: 'Daftar', signIn: 'Masuk', homeroomIdentity: 'Kamu masuk dengan akun Homeroom @{user}, jadi tidak perlu kata sandi. Pilih peran kamu.', homeroomIdentityAnon: 'Akun Homeroom kamu dipakai untuk masuk, jadi tidak perlu kata sandi.',
-      roleSeeker: 'Pencari Kerja', roleSeekerBody: 'Buat CV digital, cocokkan skill, dan lamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan dan kelola pelamar.',
-      yourAccounts: 'Akun kamu', noAccountsYet: 'Kamu belum punya akun Loker Dunia. Daftar dulu sebagai Pencari Kerja atau Perusahaan.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
-      companySignupTitle: 'Daftar sebagai Perusahaan', companySignupBody: 'Isi data perusahaan untuk mulai memasang lowongan.', companyName: 'Nama perusahaan', industry: 'Industri', createCompany: 'Buat akun perusahaan', welcomeCompany: 'Selamat datang, {co}',
-      createProfile: 'Buat profil', editProfile: 'Edit profil', stepOf: 'Langkah {n} dari {total}', progress: 'Kemajuan pendaftaran', stepBio: 'Biodata', stepEduExp: 'Pendidikan & Pengalaman', stepSkills: 'Keahlian', stepCerts: 'Sertifikat',
-      saveFinish: 'Simpan & Selesai', saveChanges: 'Simpan perubahan', backToProfile: 'Kembali ke profil',
-      uploadPhoto: 'Unggah foto', changePhoto: 'Ganti foto', photoHint: 'JPG atau PNG, maks 5 MB.', fullName: 'Nama lengkap', birthDate: 'Tanggal lahir', gender: 'Jenis kelamin',
-      gender_male: 'Laki-laki', gender_female: 'Perempuan', gender_other: 'Lainnya', gender_na: 'Tidak ingin menyebutkan',
-      countryOfResidence: 'Negara domisili', cityOfResidence: 'Kota domisili', nationality: 'Kewarganegaraan', email: 'Email', phone: 'Telepon', countryCode: 'Kode negara', code: 'Kode', phoneNumber: 'Nomor telepon',
-      summary: 'Ringkasan diri', summaryPh: 'Ceritakan keahlian utama dan tujuan karier kamu', summaryHint: 'Minimal 30 karakter.',
-      educationN: 'Pendidikan {n}', experienceN: 'Pengalaman {n}', eduLevel: 'Jenjang', gradYear: 'Tahun lulus', institution: 'Institusi', major: 'Jurusan', position: 'Posisi', companyLabel: 'Perusahaan',
-      startMonth: 'Mulai', endMonth: 'Selesai', present: 'Sekarang', currentlyWorking: 'Masih bekerja di sini', jobDesc: 'Deskripsi pekerjaan', experience: 'Pengalaman',
-      addEducation: 'Tambah pendidikan', addExperience: 'Tambah pengalaman', noEducationYet: 'Belum ada pendidikan.', noExperienceYet: 'Belum ada pengalaman.',
-      edu_sma: 'SMA/SMK', edu_d3: 'D3', edu_s1: 'S1', edu_s2: 'S2', edu_s3: 'S3', edu_any: 'Semua jenjang',
-      typeSkill: 'Ketik skill', skillsStepHint: 'Pilih dari saran atau ketik sendiri. Atur tingkat dan lama pengalaman tiap skill.', level: 'Tingkat', yearsExp: 'Tahun', noSkillsYet: 'Belum ada skill.', skillExists: 'Skill ini sudah ada',
-      level_1: 'Pemula', level_2: 'Menengah', level_3: 'Mahir', language: 'Bahasa', addLanguage: 'Tambah bahasa', noLanguagesYet: 'Belum ada bahasa.',
-      lang_basic: 'Dasar', lang_intermediate: 'Menengah', lang_fluent: 'Fasih', lang_native: 'Bahasa ibu',
-      yourCerts: 'Sertifikat kamu ({n})', noCertsYet: 'Belum ada sertifikat.', addCert: 'Tambah sertifikat', certFile: 'File sertifikat', chooseFile: 'Pilih file', changeFile: 'Ganti file', certFileHint: 'JPG, PNG, atau PDF, maks 5 MB.',
-      certName: 'Nama sertifikat', issuer: 'Penerbit', issueDate: 'Tanggal terbit', expiryDate: 'Tanggal kedaluwarsa', verifyIdOrLink: 'ID atau link verifikasi', provesSkills: 'Skill yang dibuktikan', addSkillsFirst: 'Tambahkan skill di langkah 3 dulu.', addThisCert: 'Tambahkan sertifikat ini', certAdded: 'Sertifikat ditambahkan',
-      validUntil: 'berlaku s.d. {d}', viewCert: 'Lihat sertifikat', certificate: 'Sertifikat', certificates: 'Sertifikat', downloadPdf: 'Unduh PDF', verification: 'Verifikasi', finishCertFirst: 'Lengkapi atau kosongkan form sertifikat dulu',
-      errRequired: 'Wajib diisi', errName: 'Minimal 3 karakter', errAge: 'Usia harus antara 15 dan 100 tahun', errEmail: 'Format email tidak valid', errPhone: 'Nomor telepon 6 sampai 15 digit', errSummary: 'Ringkasan minimal 30 karakter',
-      errMinEdu: 'Tambahkan minimal satu pendidikan', errYear: 'Tahun tidak valid', errEndBefore: 'Tanggal selesai sebelum tanggal mulai', errMinSkill: 'Tambahkan minimal satu skill', errYears: 'Isi 0 sampai 50', errMinLang: 'Tambahkan minimal satu bahasa',
-      errFileType: 'Format harus JPG, PNG, atau PDF', errPhotoType: 'Format foto harus JPG atau PNG', errFileSize: 'Ukuran file maksimal 5 MB', errFileRead: 'File tidak bisa dibaca', errExpiry: 'Harus setelah tanggal terbit',
-      errSalaryRange: 'Harus lebih besar dari gaji minimal', errMinRequired: 'Tambahkan minimal satu skill wajib',
-      profileCreated: 'Profil berhasil dibuat', profileSaved: 'Profil disimpan', residence: 'Domisili', age: 'Usia', nYearsOld: '{n} tahun', nYearsShort: '{n} thn', hiddenByCandidate: 'Disembunyikan oleh pelamar',
-      certsHiddenByCandidate: 'Pelamar memilih menyembunyikan sertifikat dari perusahaan.',
-      noProfileTitle: 'Profil belum dibuat', noProfileBody: 'Lengkapi 4 langkah pendaftaran untuk mulai melamar.', profileCompleteness: 'Kelengkapan profil', profileComplete: 'Profil kamu sudah lengkap.',
-      suggest_photo: 'Tambahkan foto profil', suggest_bio: 'Lengkapi biodata', suggest_phone: 'Tambahkan nomor telepon', suggest_summary: 'Tulis ringkasan diri', suggest_education: 'Tambahkan pendidikan', suggest_experience: 'Tambahkan pengalaman kerja', suggest_skills: 'Tambahkan minimal 3 skill', suggest_languages: 'Tambahkan bahasa yang dikuasai', suggest_certs: 'Unggah sertifikat untuk membuktikan skill',
-      shareProfile: 'Bagikan Profil', linkCopied: 'Tautan profil disalin', copyManually: 'Salin tautan ini:', previewAsCompany: 'Lihat seperti perusahaan',
-      privacy: 'Privasi', privacyHint: 'Atur apa yang bisa dilihat perusahaan.', showPhoneToCompanies: 'Tampilkan telepon ke perusahaan', showCertsToCompanies: 'Tampilkan sertifikat ke perusahaan', privacySaved: 'Pengaturan privasi disimpan',
-      myApplications: 'Lamaran saya', noApplications: 'Belum ada lamaran.', signOut: 'Keluar', signedOut: 'Kamu sudah keluar', signedInAs: 'Masuk sebagai {name}',
-      profileNotFound: 'Profil tidak ditemukan', profileNotFoundBody: 'Profil ini tidak ada atau sudah dihapus.', previewNotice: 'Begini profil kamu terlihat oleh perusahaan.',
-      signInToApply: 'Masuk sebagai Pencari Kerja untuk melamar', profileToApply: 'Lengkapi profil dulu untuk melamar', autoFilled: 'Diisi otomatis dari profil kamu',
-      attachCerts: 'Lampirkan sertifikat', certsPrivateWarning: 'Sertifikat kamu disembunyikan dari perusahaan. Ubah di Privasi agar lampiran terlihat.', noCertsToAttach: 'Belum ada sertifikat di profil.',
-      shortMessage: 'Pesan singkat', messagePh: 'Kenapa kamu cocok untuk posisi ini?', sendApplication: 'Kirim Lamaran', sending: 'Mengirim', applyTo: 'Lamar: {title}', applySuccess: 'Lamaran terkirim ke {co}',
-      companyOnlyTitle: 'Khusus akun Perusahaan', companyOnlyBody: 'Masuk sebagai Perusahaan untuk memasang lowongan dan melihat pelamar.', signInAsCompany: 'Masuk sebagai Perusahaan',
-      postJob: 'Pasang Loker', postJobAs: 'Diposting sebagai {co}', jobBasics: 'Info lowongan', jobTitle: 'Judul posisi', locationSalary: 'Lokasi & gaji', currency: 'Mata uang',
-      salaryMinL: 'Gaji min', salaryMaxL: 'Gaji maks', period: 'Periode', periodMonth: 'Per bulan', periodYear: 'Per tahun', periodHour: 'Per jam', visaNote: 'Catatan visa',
-      addRequiredSkill: 'Tambah skill wajib', addNiceSkill: 'Tambah skill nilai plus', minExpYears: 'Pengalaman minimal (tahun)', onePerLine: 'Satu poin per baris.', publishJob: 'Pasang lowongan', publishing: 'Memasang', jobPublished: 'Lowongan berhasil dipasang',
-      nApplicants: '{n} pelamar', nNew: '{n} baru', noCompanyJobs: 'Belum ada lowongan', noCompanyJobsBody: 'Pasang lowongan pertama untuk mulai menerima pelamar.',
-      viewJob: 'Lihat lowongan', filterApplicants: 'Filter pelamar', anyLevel: 'Semua tingkat', atLeast: 'Minimal {lv}', anyCert: 'Semua', hasCert: 'Punya sertifikat', validCertForSkill: 'Sertifikat valid untuk skill', anyExp: 'Semua', atLeastYears: 'Minimal {n} tahun',
-      nCerts: '{n} sertifikat', noApplicants: 'Belum ada pelamar', noApplicantsBody: 'Pelamar akan muncul di sini.', noApplicantsMatch: 'Tidak ada pelamar yang cocok', noApplicantsMatchBody: 'Coba longgarkan filter.',
-      applicantNotFound: 'Pelamar tidak ditemukan', applicantNotFoundBody: 'Lamaran ini tidak ada atau bukan untuk lowongan kamu.', applicationStatus: 'Status lamaran', appliedOn: 'Melamar pada {d}', matchForJob: 'Kecocokan untuk lowongan ini',
-      message: 'Pesan', noMessage: 'Tidak ada pesan.', attachedCerts: 'Sertifikat terlampir ({n})', noAttached: 'Tidak ada sertifikat terlampir.', statusUpdated: 'Status diubah menjadi {s}',
-      status_new: 'Baru', status_processing: 'Diproses', status_interview: 'Wawancara', status_accepted: 'Diterima', status_rejected: 'Ditolak',
-      type_fulltime: 'Full-time', type_parttime: 'Part-time', type_internship: 'Magang', type_contract: 'Kontrak',
-      model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
-      per_month: '/bln', per_year: '/thn', per_hour: '/jam',
-      cat_it: 'IT', cat_health: 'Kesehatan', cat_education: 'Pendidikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
-      pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
-    },
-    en: {
-      saving: 'Saving', saveFailed: 'Could not save. Check your connection and try again.', loadFailed: 'Data could not be loaded', loadFailedBody: 'Check your internet connection and try again.', retry: 'Try again',
-      errNameTaken: 'Another company already uses this name', alreadyAppliedErr: 'You already applied to this job', uploading: 'Uploading',
-      uploadUnavailable: 'Files cannot be uploaded here, so the certificate is saved without a file.', pdfNotStored: 'PDF files cannot be stored on the server yet. The certificate is saved without a file; upload a JPG or PNG so companies can see it.',
-      fileNotAvailable: 'The certificate file is not available.', demoData: 'Demo data', noJobsYet: 'No jobs yet', noJobsYetBody: 'Jobs posted by companies will appear here.',
-      loading: 'Loading', close: 'Close', add: 'Add', remove: 'Remove', edit: 'Edit', back: 'Back', next: 'Next', choose: 'Choose', optional: 'optional', all: 'All',
-      mainNav: 'Main navigation', navHome: 'Home', navSearch: 'Search', navSaved: 'Saved', navExplore: 'Explore', navProfile: 'Profile', navSignIn: 'Sign in', navPost: 'Post', navDashboard: 'Dashboard', navAccount: 'Account',
-      searchPlaceholder: 'Search roles, companies or skills', quickCountry: 'Choose country', allCountries: 'All countries', chooseCountry: 'Choose country', searchCountry: 'Search countries',
-      switchLang: 'Ganti ke Bahasa Indonesia', lightMode: 'Light mode', darkMode: 'Dark mode', nJobs: '{n} jobs',
-      hello: 'Hi, {name}', homeTitle: 'Jobs around the world', homeStats: '{jobs} open jobs in {countries} countries',
-      yourHiring: 'Your hiring', openDashboard: 'Open dashboard', statJobs: 'Jobs', statApplicants: 'Applicants',
-      forYou: 'Jobs for You', seeAll: 'See all', noRecsTitle: 'No matching jobs yet', noRecsBody: 'Add skills to your profile for better recommendations.', addSkills: 'Add skills',
-      forYouGuestTitle: 'Recommendations for your skills', forYouGuestBody: 'Create a Job Seeker profile to see the jobs that fit you best.', signUpSeeker: 'Sign up as a Job Seeker', completeProfile: 'Complete profile',
-      latestJobs: 'Latest jobs', topSkills: 'Most Wanted Skills', topSkillsSub: 'Skill ranking across all jobs', byCountry: 'Explore by Country', byCountrySub: 'Job count in each country',
-      save: 'Save', unsave: 'Remove from saved', saved: 'Saved', savedToast: 'Job saved', unsavedToast: 'Job removed from Saved', nMore: '+{n} more',
-      remoteWorldwide: 'Remote Worldwide', remoteWorldwideL: 'Remote Worldwide (from any country)', remoteWorldwideHint: 'Work from any country', visaSponsor: 'Visa Sponsor', relocation: 'Relocation Support',
-      country: 'Country', city: 'City', cityPlaceholder: 'All cities', category: 'Category', allCategories: 'All categories', jobType: 'Job type', workModel: 'Work model',
-      salaryRange: 'Monthly salary ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Yearly and hourly pay is converted to monthly.', skills: 'Skills', filterSkillPh: 'Filter skills, e.g. React',
-      showSalaryIn: 'Show salary in', localCurrency: 'Local currency', ratesLink: 'Static rates as of {date}', ratesTitle: 'Static exchange rates', ratesBody: 'Conversions use fixed rates as of {date}. They are estimates, not live market rates.',
-      resetFilters: 'Reset filters', searchTitle: 'Find Jobs', filters: 'Filters', matchMySkills: 'Match My Skills', sortBy: 'Sort by', sortNewest: 'Newest', sortSalary: 'Highest salary',
-      matchNeedsProfile: 'Add skills to a Job Seeker profile to match jobs.', matchExplain: 'Required skills weigh 2, nice-to-have 1. Certified skills count fully, unproven ones count 75%.',
-      nFound: '{n} jobs found', noJobs: 'No jobs found', noJobsBody: 'Try fewer filters or another keyword.', showResults: 'Show results',
-      matchPct: '{n}% match', yourMatch: 'Your match', matchScore: 'Match score', matchedSkills: 'Matching skills', missingSkills: 'Missing skills', needLevel: 'needs {lv}', matchSignIn: 'Sign in as a Job Seeker to see how your skills match.',
-      certified: 'Certified ✓', noProof: 'No proof yet', certExpiredBadge: 'Certificate expired', certExpiredLong: 'This certificate has expired',
-      jobNotFound: 'Job not found', jobNotFoundBody: 'This job may have closed.', backToSearch: 'Back to search', salary: 'Salary',
-      viewApplicants: 'View applicants ({n})', applyNow: 'Apply Now', alreadyApplied: 'Applied: {status}',
-      description: 'Description', qualifications: 'Qualifications', benefits: 'Benefits', required: 'Required', nicePlus: 'Nice to have', requirements: 'Requirements',
-      minExp: 'Minimum experience', nYears: '{n} years', noExpNeeded: 'No experience needed', education: 'Education', eduMin: 'At least {lv}', languages: 'Languages', visaInfo: 'Visa & work permit', timezone: 'Time zone', tzFlexible: 'flexible hours',
-      visaYes: 'The company sponsors a work visa in {country}.', visaNo: 'No visa sponsorship. Candidates need a valid work permit in {country}.', reloYes: 'Relocation costs are supported.', visaRemoteWorldwide: 'No visa needed. Work remotely from any country as a contractor or local employee.',
-      savedTitle: 'Saved', nSaved: '{n} saved jobs', noSaved: 'No saved jobs yet', noSavedBody: 'Tap the save icon on a job to find it here again.', findJobs: 'Find jobs',
-      skillsBasis: 'Based on {n} jobs', youHaveIt: 'You have it', pctRequired: '{n}% required', otherCountriesHint: 'Country not listed?', allCountriesList: 'See all countries', noCountry: 'No country found', noCountryBody: 'Try another spelling.',
-      signUpTitle: 'Sign up', signInTitle: 'Sign in', signUp: 'Sign up', signIn: 'Sign in', homeroomIdentity: 'You are signed in with the Homeroom account @{user}, so no password is needed. Choose your role.', homeroomIdentityAnon: 'Your Homeroom account signs you in, so no password is needed.',
-      roleSeeker: 'Job Seeker', roleSeekerBody: 'Build a digital CV, match your skills and apply to jobs.', roleCompany: 'Company', roleCompanyBody: 'Post jobs and manage applicants.',
-      yourAccounts: 'Your accounts', noAccountsYet: 'You do not have a Loker Dunia account yet. Sign up as a Job Seeker or a Company first.', sampleAccounts: 'Sample accounts', sampleAccount: 'sample', unfinishedProfile: 'Unfinished profile',
-      companySignupTitle: 'Sign up as a Company', companySignupBody: 'Enter your company details to start posting jobs.', companyName: 'Company name', industry: 'Industry', createCompany: 'Create company account', welcomeCompany: 'Welcome, {co}',
-      createProfile: 'Create profile', editProfile: 'Edit profile', stepOf: 'Step {n} of {total}', progress: 'Sign-up progress', stepBio: 'Personal details', stepEduExp: 'Education & Experience', stepSkills: 'Skills', stepCerts: 'Certificates',
-      saveFinish: 'Save & Finish', saveChanges: 'Save changes', backToProfile: 'Back to profile',
-      uploadPhoto: 'Upload photo', changePhoto: 'Change photo', photoHint: 'JPG or PNG, max 5 MB.', fullName: 'Full name', birthDate: 'Date of birth', gender: 'Gender',
-      gender_male: 'Male', gender_female: 'Female', gender_other: 'Other', gender_na: 'Prefer not to say',
-      countryOfResidence: 'Country of residence', cityOfResidence: 'City of residence', nationality: 'Nationality', email: 'Email', phone: 'Phone', countryCode: 'Country code', code: 'Code', phoneNumber: 'Phone number',
-      summary: 'About me', summaryPh: 'Describe your main skills and career goals', summaryHint: 'At least 30 characters.',
-      educationN: 'Education {n}', experienceN: 'Experience {n}', eduLevel: 'Level', gradYear: 'Graduation year', institution: 'Institution', major: 'Major', position: 'Position', companyLabel: 'Company',
-      startMonth: 'Start', endMonth: 'End', present: 'Present', currentlyWorking: 'I currently work here', jobDesc: 'Job description', experience: 'Experience',
-      addEducation: 'Add education', addExperience: 'Add experience', noEducationYet: 'No education yet.', noExperienceYet: 'No experience yet.',
-      edu_sma: 'High school', edu_d3: 'Diploma', edu_s1: "Bachelor's", edu_s2: "Master's", edu_s3: 'Doctorate', edu_any: 'Any level',
-      typeSkill: 'Type a skill', skillsStepHint: 'Pick a suggestion or type your own. Set the level and years of experience for each skill.', level: 'Level', yearsExp: 'Years', noSkillsYet: 'No skills yet.', skillExists: 'This skill is already added',
-      level_1: 'Beginner', level_2: 'Intermediate', level_3: 'Advanced', language: 'Language', addLanguage: 'Add language', noLanguagesYet: 'No languages yet.',
-      lang_basic: 'Basic', lang_intermediate: 'Intermediate', lang_fluent: 'Fluent', lang_native: 'Native',
-      yourCerts: 'Your certificates ({n})', noCertsYet: 'No certificates yet.', addCert: 'Add a certificate', certFile: 'Certificate file', chooseFile: 'Choose file', changeFile: 'Change file', certFileHint: 'JPG, PNG or PDF, max 5 MB.',
-      certName: 'Certificate name', issuer: 'Issuer', issueDate: 'Issue date', expiryDate: 'Expiry date', verifyIdOrLink: 'Verification ID or link', provesSkills: 'Skills it proves', addSkillsFirst: 'Add skills in step 3 first.', addThisCert: 'Add this certificate', certAdded: 'Certificate added',
-      validUntil: 'valid until {d}', viewCert: 'View certificate', certificate: 'Certificate', certificates: 'Certificates', downloadPdf: 'Download PDF', verification: 'Verification', finishCertFirst: 'Complete or clear the certificate form first',
-      errRequired: 'Required', errName: 'At least 3 characters', errAge: 'Age must be between 15 and 100', errEmail: 'Invalid email format', errPhone: 'Phone number must be 6 to 15 digits', errSummary: 'Summary needs at least 30 characters',
-      errMinEdu: 'Add at least one education entry', errYear: 'Invalid year', errEndBefore: 'End date is before start date', errMinSkill: 'Add at least one skill', errYears: 'Enter 0 to 50', errMinLang: 'Add at least one language',
-      errFileType: 'File must be JPG, PNG or PDF', errPhotoType: 'Photo must be JPG or PNG', errFileSize: 'File must be 5 MB or less', errFileRead: 'The file could not be read', errExpiry: 'Must be after the issue date',
-      errSalaryRange: 'Must be more than the minimum salary', errMinRequired: 'Add at least one required skill',
-      profileCreated: 'Profile created', profileSaved: 'Profile saved', residence: 'Lives in', age: 'Age', nYearsOld: '{n} years old', nYearsShort: '{n} yrs', hiddenByCandidate: 'Hidden by the candidate',
-      certsHiddenByCandidate: 'The candidate chose to hide certificates from companies.',
-      noProfileTitle: 'No profile yet', noProfileBody: 'Complete the 4 sign-up steps to start applying.', profileCompleteness: 'Profile completeness', profileComplete: 'Your profile is complete.',
-      suggest_photo: 'Add a profile photo', suggest_bio: 'Complete your personal details', suggest_phone: 'Add a phone number', suggest_summary: 'Write a short summary', suggest_education: 'Add your education', suggest_experience: 'Add work experience', suggest_skills: 'Add at least 3 skills', suggest_languages: 'Add the languages you speak', suggest_certs: 'Upload certificates to prove your skills',
-      shareProfile: 'Share Profile', linkCopied: 'Profile link copied', copyManually: 'Copy this link:', previewAsCompany: 'View as a company',
-      privacy: 'Privacy', privacyHint: 'Choose what companies can see.', showPhoneToCompanies: 'Show phone to companies', showCertsToCompanies: 'Show certificates to companies', privacySaved: 'Privacy settings saved',
-      myApplications: 'My applications', noApplications: 'No applications yet.', signOut: 'Sign out', signedOut: 'You are signed out', signedInAs: 'Signed in as {name}',
-      profileNotFound: 'Profile not found', profileNotFoundBody: 'This profile does not exist or was removed.', previewNotice: 'This is how companies see your profile.',
-      signInToApply: 'Sign in as a Job Seeker to apply', profileToApply: 'Complete your profile to apply', autoFilled: 'Filled in from your profile',
-      attachCerts: 'Attach certificates', certsPrivateWarning: 'Your certificates are hidden from companies. Change this in Privacy so attachments are visible.', noCertsToAttach: 'No certificates in your profile yet.',
-      shortMessage: 'Short message', messagePh: 'Why are you a good fit for this role?', sendApplication: 'Send Application', sending: 'Sending', applyTo: 'Apply: {title}', applySuccess: 'Application sent to {co}',
-      companyOnlyTitle: 'Company accounts only', companyOnlyBody: 'Sign in as a Company to post jobs and see applicants.', signInAsCompany: 'Sign in as a Company',
-      postJob: 'Post a Job', postJobAs: 'Posting as {co}', jobBasics: 'Job details', jobTitle: 'Job title', locationSalary: 'Location & salary', currency: 'Currency',
-      salaryMinL: 'Min salary', salaryMaxL: 'Max salary', period: 'Period', periodMonth: 'Per month', periodYear: 'Per year', periodHour: 'Per hour', visaNote: 'Visa note',
-      addRequiredSkill: 'Add required skill', addNiceSkill: 'Add nice-to-have skill', minExpYears: 'Minimum experience (years)', onePerLine: 'One point per line.', publishJob: 'Publish job', publishing: 'Publishing', jobPublished: 'Job published',
-      nApplicants: '{n} applicants', nNew: '{n} new', noCompanyJobs: 'No jobs yet', noCompanyJobsBody: 'Post your first job to start receiving applicants.',
-      viewJob: 'View job', filterApplicants: 'Filter applicants', anyLevel: 'Any level', atLeast: 'At least {lv}', anyCert: 'Any', hasCert: 'Has certificates', validCertForSkill: 'Valid certificate for skill', anyExp: 'Any', atLeastYears: 'At least {n} years',
-      nCerts: '{n} certificates', noApplicants: 'No applicants yet', noApplicantsBody: 'Applicants will appear here.', noApplicantsMatch: 'No applicants match', noApplicantsMatchBody: 'Try loosening the filters.',
-      applicantNotFound: 'Applicant not found', applicantNotFoundBody: 'This application does not exist or is not for your job.', applicationStatus: 'Application status', appliedOn: 'Applied on {d}', matchForJob: 'Match for this job',
-      message: 'Message', noMessage: 'No message.', attachedCerts: 'Attached certificates ({n})', noAttached: 'No certificates attached.', statusUpdated: 'Status changed to {s}',
-      status_new: 'New', status_processing: 'In review', status_interview: 'Interview', status_accepted: 'Accepted', status_rejected: 'Rejected',
-      type_fulltime: 'Full-time', type_parttime: 'Part-time', type_internship: 'Internship', type_contract: 'Contract',
-      model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
-      per_month: '/mo', per_year: '/yr', per_hour: '/hr',
-      cat_it: 'IT', cat_health: 'Healthcare', cat_education: 'Education', cat_finance: 'Finance', cat_engineering: 'Engineering', cat_creative: 'Creative', cat_marketing: 'Marketing', cat_sales: 'Sales & Service', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agriculture',
-      pageNotFound: 'Page not found', pageNotFoundBody: 'This link does not exist.',
-    },
-  };
+  const I18N = Object.fromEntries(Object.entries(window.LOKER_I18N || {}).map(([c, l]) => [c, l.strings]));
+  const LANGS = Object.keys(I18N);
 
   /* ==========================================================================
      State: a client-side cache of what the server returned. The server
@@ -357,7 +198,8 @@
 
   function readJson(key) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
   const prefs = Object.assign({ lang: 'id', cur: 'local' }, readJson(PREF_KEY) || {});
-  let lang = prefs.lang === 'en' ? 'en' : 'id';
+  // The viewer's saved choice; Bahasa Indonesia until they pick another.
+  let lang = LANGS.includes(prefs.lang) ? prefs.lang : 'id';
   function savePrefs() { try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch (e) {} }
 
   // Homeroom identity (display only; the server already verified the token).
@@ -378,7 +220,7 @@
     if (vars) for (const k in vars) s = s.split('{' + k + '}').join(vars[k]);
     return s;
   }
-  function locale() { return lang === 'id' ? 'id-ID' : 'en-US'; }
+  function locale() { return (window.LOKER_I18N[lang] && window.LOKER_I18N[lang].locale) || lang; }
   function flag(cc) {
     if (!cc || cc.length !== 2) return '🌐';
     return String.fromCodePoint(...cc.toUpperCase().split('').map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
@@ -664,6 +506,7 @@
     back: '<path d="m15 18-6-6 6-6"/>',
     chevron: '<path d="m9 18 6-6-6-6"/>',
     down: '<path d="m6 9 6 6 6-6"/>',
+    languages: '<path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/>',
     alert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
     file: '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',
     trash: '<path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>',
@@ -777,6 +620,19 @@
   function closeModal() { if (modalClose) modalClose(); }
 
   /* ---------- pickers ---------- */
+  // Interface language. Every file in public/i18n/ shows up here by its own name.
+  function openLanguagePicker() {
+    const root = openModal('<ul class="space-y-0.5" data-testid="lang-list">' + LANGS.map(c =>
+      '<li><button type="button" data-pick-lang="' + c + '" lang="' + c + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"' + (c === lang ? ' aria-current="true"' : '') + '>' +
+        '<span class="flex-1 text-sm' + (c === lang ? ' font-semibold' : '') + '">' + esc(window.LOKER_I18N[c].name) + '</span>' +
+        (c === lang ? '<span class="text-blue-600 dark:text-blue-400">' + icon('check', 'w-4 h-4') + '</span>' : '') + '</button></li>').join('') + '</ul>', { title: t('appLanguage') });
+    root.querySelector('[data-testid=lang-list]').addEventListener('click', e => {
+      const b = e.target.closest('[data-pick-lang]'); if (!b) return;
+      closeModal();
+      if (b.dataset.pickLang === lang) return;
+      lang = b.dataset.pickLang; prefs.lang = lang; savePrefs(); render();
+    });
+  }
   // Searchable picker over every country. onPick(code|'' for all).
   function openCountryPicker(onPick, opts) {
     opts = opts || {};
@@ -863,7 +719,8 @@
         '<div class="ml-auto flex items-center gap-1">' +
           '<button type="button" data-action="quick-country" class="inline-flex items-center gap-1.5 h-10 px-2.5 rounded-xl text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('quickCountry')) + '">' +
             '<span class="text-lg" aria-hidden="true">' + flag(cc) + '</span><span class="hidden sm:inline max-w-28 truncate">' + esc(cc ? countryName(cc) : t('allCountries')) + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
-          '<button type="button" data-action="toggle-lang" class="' + C.btnIcon + ' text-xs font-bold" aria-label="' + esc(t('switchLang')) + '">' + (lang === 'id' ? 'EN' : 'ID') + '</button>' +
+          '<button type="button" data-action="pick-lang" data-testid="lang-switcher" data-lang="' + lang + '" class="inline-flex items-center gap-1 h-10 px-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('switchLang') + ': ' + window.LOKER_I18N[lang].name) + '" aria-haspopup="dialog">' +
+            icon('languages', 'w-4 h-4') + '<span>' + lang.toUpperCase() + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
           '<button type="button" data-action="toggle-theme" class="' + C.btnIcon + '" aria-label="' + esc(t(theme === 'dark' ? 'lightMode' : 'darkMode')) + '">' + icon(theme === 'dark' ? 'sun' : 'moon') + '</button>' +
           (u ? '<a href="#/profile" class="hidden md:inline-flex items-center gap-2 h-10 pl-1 pr-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium">' +
                 avatar(p && p.photo, (p && p.fullName) || (co && co.name) || HR_USER || '?', 'w-8 h-8 text-xs') + '<span class="max-w-32 truncate">' + esc((p && p.fullName) || (co && co.name) || t('navProfile')) + '</span></a>'
@@ -873,6 +730,7 @@
     $('#bottomnav').innerHTML = '<ul class="grid grid-cols-5">' + items.map(([h, ic, k]) =>
       '<li><a href="' + h + '" class="flex flex-col items-center gap-0.5 pt-2 pb-1.5 text-xs font-medium ' + (act === h ? 'text-blue-600 dark:text-blue-400' : 'text-slate-500 dark:text-slate-400') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + icon(ic, 'w-6 h-6') + '<span>' + t(k) + '</span></a></li>').join('') + '</ul>';
     document.documentElement.lang = lang;
+    $('#skip-link').textContent = t('skipToContent');
   }
 
   /* ==========================================================================
@@ -1882,7 +1740,7 @@
       case 'retry-load': boot(); break;
       case 'quick-country':
         openCountryPicker(cc => { filters.country = cc; filters.city = ''; go('#/jobs'); }, { allowAll: true, showCounts: true, title: t('quickCountry') }); break;
-      case 'toggle-lang': lang = lang === 'id' ? 'en' : 'id'; prefs.lang = lang; savePrefs(); render(); break;
+      case 'pick-lang': openLanguagePicker(); break;
       case 'toggle-theme': {
         const dark = document.documentElement.classList.contains('dark');
         try { localStorage.setItem('lokerdunia.theme', dark ? 'light' : 'dark'); } catch (err) {}

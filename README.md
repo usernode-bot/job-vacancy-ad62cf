@@ -1,15 +1,19 @@
 # Loker Dunia
 
-A mobile-first global job board that runs on Homeroom. Interface text is in
-Bahasa Indonesia with an English toggle, in light and dark mode.
+A mobile-first global job board that runs on Homeroom. The interface comes in
+50 languages (English by default, picked from the header's language button;
+Arabic, Persian, Urdu and Hebrew lay out right to left), in light and dark mode.
+Interface text lives in `public/i18n/<code>.js`, one file per language, listed
+in `public/i18n/languages.js`; to add a language, copy `en.js`, translate it and
+add an entry to that list. A missing key falls back to English.
 
 - **Job seekers** build a CV-style profile in a 4-step sign-up (biodata,
   education and experience, skills and languages, certificates). Skills show
-  whether a certificate proves them, and "Cocokkan Skill Saya" scores every
+  whether a certificate proves them, and "Match My Skills" scores every
   job against the profile, weighting certified skills higher.
-- **Companies** post jobs ("Pasang Loker"), see applicants per job with their
+- **Companies** post jobs ("Post a Job"), see applicants per job with their
   match score and certificates, filter them and move them through
-  Baru, Diproses, Wawancara, Diterima and Ditolak.
+  New, In review, Interview, Accepted and Rejected.
 - **Everyone** can search and filter jobs from every continent,
   convert salaries with static exchange rates, bookmark jobs, and browse the
   most wanted skills and jobs per country.

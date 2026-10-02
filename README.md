@@ -1,27 +1,42 @@
-# JOB VACANCY
+# Loker Dunia
 
-> **Starter template** — this repo was scaffolded by Homeroom Social
-> Vibecoding. Everything in it is placeholder example code until the
-> app's first real feature is built.
+A mobile-first global job board that runs on Homeroom. Interface text is in
+Bahasa Indonesia with an English toggle, in light and dark mode.
 
-The scaffold is a small working demo that proves the plumbing works:
+- **Job seekers** build a CV-style profile in a 4-step sign-up (biodata,
+  education and experience, skills and languages, certificates). Skills show
+  whether a certificate proves them, and "Cocokkan Skill Saya" scores every
+  job against the profile, weighting certified skills higher.
+- **Companies** post jobs ("Pasang Loker"), see applicants per job with their
+  match score and certificates, filter them and move them through
+  Baru, Diproses, Wawancara, Diterima and Ditolak.
+- **Everyone** can search and filter jobs from every continent,
+  convert salaries with static exchange rates, bookmark jobs, and browse the
+  most wanted skills and jobs per country.
 
-- **Sign-in** — the server verifies the platform-issued user token
-  (an RS256 JWT) on every request, so the app already knows who is
-  using it. No accounts to build.
-- **Database** — the app has its own private Postgres database; the
-  demo stores button presses in a `presses` table.
-- **Live API** — two example routes (`/api/press`,
-  `/api/leaderboard`) read and write through a real Express server.
-- **Styling** — Tailwind CSS, precompiled by `npm run build` during
-  image creation with either Kubernetes/Paketo or standalone Docker.
+## How it is built
 
-## Replacing the template
+The interface is the single page `public/index.html`. All data lives in the
+app's Postgres database and is served by authenticated `/api` routes
+(`lib/routes.js`), scoped to the signed-in Homeroom user:
 
-Open the app on Homeroom, tap the Homeroom icon in the header, choose
-**Start a new change**, and describe the app you want in plain English.
-The template will be replaced with your real app. You can also run
-Claude Code against this repo directly; start with `CLAUDE.md`, which
-carries the app-specific notes and points at the platform rules.
+- `lib/schema.js` creates the tables on boot: `app_users`, `companies`,
+  `jobs` (public) and `profiles`, `skills`, `certificates`, `applications`,
+  `saved_jobs` (marked `staging:private`, so staging previews get them empty).
+- Privacy is enforced on the server: a company reviewing an applicant, or
+  anyone opening a shared profile, only receives the phone number and the
+  certificates when the applicant allows it.
+- Certificate images and profile photos are uploaded to the platform's file
+  storage through the bridge; only the returned URL is stored. Platform
+  storage accepts images only, so a PDF certificate is saved without its file.
+- `lib/seed.js` fills staging previews (never production) with 37 sample
+  jobs, 34 sample employers, 3 fake applicants and their applications. The
+  demo employer "PT Nusantara Digital" can be opened from "Masuk" by any
+  tester. Production starts with an empty board.
 
-Once the real app exists, rewrite this README to describe it.
+Sign-in uses the Homeroom account the app is opened with; choosing
+"Pencari Kerja" or "Perusahaan" sets the role, with no passwords.
+
+`npm test` runs the API against a real Postgres (`TEST_DATABASE_URL`, or
+`INLOOP_DATABASE_URL` in Homeroom build workers) on a throwaway database.
+Tailwind is precompiled by `npm run build` during the image build.

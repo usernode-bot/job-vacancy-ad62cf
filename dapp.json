@@ -1,7 +1,26 @@
 {
-  "description": "Jadi setiap orang bisa mengecek daftar lowongan pekerjaan dimasing masing sektor sesuai sk",
+  "name": "Loker Dunia",
+  "description": "Papan lowongan kerja global dengan pencocokan skill dan sertifikat",
   "secrets": [],
   "admins": [
     "dethan1527"
+  ],
+  "tests": [
+    { "name": "Home lists latest jobs", "path": "/", "expectSelector": "[data-testid=job-card]", "expectText": "Lowongan terbaru" },
+    {
+      "id": "jobs.search",
+      "name": "Job search renders job cards",
+      "path": "/#/jobs",
+      "expectSelector": "#results [data-testid=job-card]",
+      "visual": true,
+      "impact": ["public/index.html"]
+    },
+    { "name": "Job detail shows required skills and apply", "path": "/#/job/j1", "expectSelector": "[data-testid=job-skill-lists]", "expectText": "Lamar Sekarang" },
+    { "name": "Most wanted skills ranking", "path": "/#/skills", "expectSelector": "[data-testid=skill-ranking] li" },
+    { "name": "Explore by country", "path": "/#/countries", "expectSelector": "[data-testid=country-grid] button" },
+    { "name": "Sign up offers both roles", "path": "/#/auth", "expectSelector": "[data-testid=role-choice]", "expectText": "Perusahaan" },
+    { "name": "Saved page empty state", "path": "/#/saved", "expectText": "Belum ada lowongan tersimpan" },
+    { "name": "Sign-in lists the staging demo employer from the server", "path": "/#/auth?tab=login", "expectSelector": "[data-action=sign-in][data-id=nusantara]", "expectText": "PT Nusantara Digital" },
+    { "name": "Job detail loads a server-seeded job", "path": "/#/job/j17", "expectSelector": "[data-testid=job-skill-lists]", "expectText": "Maple Leaf Commerce" }
   ]
 }

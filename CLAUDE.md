@@ -95,6 +95,10 @@ shared understanding of what this app is for)_
 
 ## App-specific conventions
 
-_(optional — e.g. "all currency values stored as integer cents, not
-floats"; "the `posts` table is append-only"; "avoid adding new
-dependencies"; etc.)_
+- Private tables (`staging:private`): `profiles`, `skills`, `certificates`,
+  `applications`, `saved_jobs`. Public: `app_users`, `companies`, `jobs`.
+- Applicant privacy (phone, certificates) is enforced in `profileOut()` in
+  `lib/routes.js`; never send those fields to a non-owner anywhere else.
+- Sample data is staging-only (`lib/seed.js`, rows flagged `is_demo`, owned by
+  no user). Demo companies are manageable by any signed-in user; real
+  companies only by their owner.

@@ -16,6 +16,8 @@
     { "name": "Most wanted skills ranking", "path": "/#/skills", "expectSelector": "[data-testid=skill-ranking] li" },
     { "name": "Explore by country", "path": "/#/countries", "expectSelector": "[data-testid=country-grid] button" },
     { "name": "Sign up offers both roles", "path": "/#/auth", "expectSelector": "[data-testid=role-choice]", "expectText": "Perusahaan" },
-    { "name": "Saved page empty state", "path": "/#/saved", "expectText": "Belum ada lowongan tersimpan" }
+    { "name": "Saved page empty state", "path": "/#/saved", "expectText": "Belum ada lowongan tersimpan" },
+    { "name": "Sign-in lists the staging demo employer from the server", "path": "/#/auth?tab=login", "expectSelector": "[data-action=sign-in][data-id=nusantara]", "expectText": "PT Nusantara Digital" },
+    { "name": "Job detail loads a server-seeded job", "path": "/#/job/j17", "expectSelector": "[data-testid=job-skill-lists]", "expectText": "Maple Leaf Commerce" }
   ]
 }

@@ -10,21 +10,33 @@ Bahasa Indonesia with an English toggle, in light and dark mode.
 - **Companies** post jobs ("Pasang Loker"), see applicants per job with their
   match score and certificates, filter them and move them through
   Baru, Diproses, Wawancara, Diterima and Ditolak.
-- **Everyone** can search and filter 37 sample jobs from every continent,
+- **Everyone** can search and filter jobs from every continent,
   convert salaries with static exchange rates, bookmark jobs, and browse the
   most wanted skills and jobs per country.
 
 ## How it is built
 
-The whole app is `public/index.html`. There is no backend for app data: state
-lives in memory (and is mirrored to `localStorage` when the browser allows it)
-as `users`, `companies`, `profiles`, `skills`, `certificates`, `jobs`,
-`applications` and `bookmarks`. All reads and writes go through the `api`
-object in that file, so it can be swapped for real HTTP calls later.
+The interface is the single page `public/index.html`. All data lives in the
+app's Postgres database and is served by authenticated `/api` routes
+(`lib/routes.js`), scoped to the signed-in Homeroom user:
+
+- `lib/schema.js` creates the tables on boot: `app_users`, `companies`,
+  `jobs` (public) and `profiles`, `skills`, `certificates`, `applications`,
+  `saved_jobs` (marked `staging:private`, so staging previews get them empty).
+- Privacy is enforced on the server: a company reviewing an applicant, or
+  anyone opening a shared profile, only receives the phone number and the
+  certificates when the applicant allows it.
+- Certificate images and profile photos are uploaded to the platform's file
+  storage through the bridge; only the returned URL is stored. Platform
+  storage accepts images only, so a PDF certificate is saved without its file.
+- `lib/seed.js` fills staging previews (never production) with 37 sample
+  jobs, 34 sample employers, 3 fake applicants and their applications. The
+  demo employer "PT Nusantara Digital" can be opened from "Masuk" by any
+  tester. Production starts with an empty board.
 
 Sign-in uses the Homeroom account the app is opened with; choosing
-"Pencari Kerja" or "Perusahaan" creates the role, with no passwords. Sample
-accounts (Rizky Pratama, PT Nusantara Digital) are available under "Masuk".
+"Pencari Kerja" or "Perusahaan" sets the role, with no passwords.
 
-`server.js` only serves the page, verifies the platform token and shuts down
-gracefully. Tailwind is precompiled by `npm run build` during the image build.
+`npm test` runs the API against a real Postgres (`TEST_DATABASE_URL`, or
+`INLOOP_DATABASE_URL` in Homeroom build workers) on a throwaway database.
+Tailwind is precompiled by `npm run build` during the image build.

@@ -2,10 +2,14 @@ const express = require('express');
 const path = require('path');
 const { Pool } = require('pg');
 const jwt = require('jsonwebtoken');
+const { migrate } = require('./lib/schema');
+const { seedStaging } = require('./lib/seed');
+const { buildRouter } = require('./lib/routes');
 
 const app = express();
 const port = process.env.PORT || 3000;
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const IS_STAGING = process.env.USERNODE_ENV === 'staging';
 
 // The platform signs user-identity tokens with an RSA private key it never
 // shares. Containers get only the PUBLIC half, so this app can verify who a
@@ -25,7 +29,7 @@ const APP_AUDIENCE = process.env.USERNODE_APP_ID
 // Everything else requires a valid platform-issued JWT.
 const PUBLIC_API_PATHS = new Set(['/health']);
 
-app.use(express.json());
+app.use(express.json({ limit: '256kb' }));
 
 // The platform's three centrally hosted files — the bridge, the native UI
 // kit and the Tailwind runtime — are reachable at these paths on this app's
@@ -113,6 +117,8 @@ app.get('/health', (_req, res) => {
 // fresh load.
 app.get('/favicon.ico', (_req, res) => res.status(204).end());
 
+app.use('/api', buildRouter(pool));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // HTML shell: serve the app if authenticated. Unauthenticated top-level
@@ -150,22 +156,30 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Loker Dunia keeps its data in the browser (see public/index.html), so
-// there is no schema to migrate on boot. The pool is kept for future API
-// routes and closed cleanly on shutdown.
 const DRAIN_MS = 3000;
-const server = app.listen(port, () => console.log(`Listening on :${port}`));
-// Let Envoy retire idle upstream connections at 60s, with a 15s margin.
-server.keepAliveTimeout = 75_000;
+let server = null;
+
+async function start() {
+  await migrate(pool);
+  // Staging previews start without the sample jobs, the sample employer and
+  // its 3 fake applicants; seed them (idempotently) so the board and the
+  // applicant dashboard can be reviewed. Production never runs this.
+  if (IS_STAGING) await seedStaging(pool);
+  server = app.listen(port, () => console.log(`Listening on :${port}`));
+  // Let Envoy retire idle upstream connections at 60s, with a 15s margin.
+  server.keepAliveTimeout = 75_000;
+}
 
 async function shutdown(signal) {
   if (shuttingDown) return;
   shuttingDown = true;
   console.log(`[shutdown] ${signal} received, draining`);
-  server.close(() => {});
-  server.closeIdleConnections?.();
-  const timer = setTimeout(() => server.closeAllConnections?.(), DRAIN_MS);
-  timer.unref?.();
+  if (server) {
+    server.close(() => {});
+    server.closeIdleConnections?.();
+    const timer = setTimeout(() => server.closeAllConnections?.(), DRAIN_MS);
+    timer.unref?.();
+  }
   try {
     await pool.end();
   } catch (e) {
@@ -176,3 +190,5 @@ async function shutdown(signal) {
 
 process.on('SIGTERM', () => shutdown('SIGTERM'));
 process.on('SIGINT', () => shutdown('SIGINT'));
+
+start().catch(err => { console.error(err); process.exit(1); });

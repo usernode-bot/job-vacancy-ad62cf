@@ -171,295 +171,6 @@
     'Structural Analysis', 'Agronomi', 'Analisis Tanah', 'Riset',
   ];
 
-  // Companies (employer accounts). `nusantara` is the sample employer that
-  // already has applicants, so its dashboard is never empty.
-  const SEED_COMPANIES = [
-    ['nusantara', 'PT Nusantara Digital', 'ID', 'Jakarta', 'it'],
-    ['harapan', 'RS Harapan Sehat', 'ID', 'Surabaya', 'health'],
-    ['serenity', 'Bali Serenity Resort', 'ID', 'Denpasar', 'hospitality'],
-    ['lumina', 'Lumina Analytics', 'SG', 'Singapore', 'it'],
-    ['straits', 'Straits Capital', 'SG', 'Singapore', 'finance'],
-    ['sakura', 'Sakura Mobility K.K.', 'JP', 'Tokyo', 'it'],
-    ['kansai', 'Kansai Language School', 'JP', 'Osaka', 'education'],
-    ['spree', 'Spree Cloud GmbH', 'DE', 'Berlin', 'it'],
-    ['alpenwerk', 'Alpenwerk AG', 'DE', 'München', 'engineering'],
-    ['thames', 'Thames Fintech Ltd', 'GB', 'London', 'finance'],
-    ['northbridge', 'Northbridge Health NHS Trust', 'GB', 'Manchester', 'health'],
-    ['goldengate', 'Golden Gate AI', 'US', 'San Francisco', 'it'],
-    ['hudson', 'Hudson Creative Studio', 'US', 'New York', 'creative'],
-    ['lonestar', 'Lone Star SaaS', 'US', 'Austin', 'sales'],
-    ['mapleleaf', 'Maple Leaf Commerce', 'CA', 'Toronto', 'it'],
-    ['pacific', 'Pacific Learning Academy', 'CA', 'Vancouver', 'education'],
-    ['harbour', 'Harbour Infrastructure Pty Ltd', 'AU', 'Sydney', 'engineering'],
-    ['laneway', 'Laneway Coffee Co.', 'AU', 'Melbourne', 'hospitality'],
-    ['desertpearl', 'Desert Pearl Hospitality', 'AE', 'Dubai', 'hospitality'],
-    ['gulfhorizon', 'Gulf Horizon Holdings', 'AE', 'Abu Dhabi', 'finance'],
-    ['paulista', 'Paulista Pagamentos', 'BR', 'São Paulo', 'it'],
-    ['carioca', 'Carioca Media', 'BR', 'Rio de Janeiro', 'marketing'],
-    ['ekopay', 'Eko Pay', 'NG', 'Lagos', 'it'],
-    ['savannah', 'Savannah Health Initiative', 'NG', 'Abuja', 'health'],
-    ['riftvalley', 'Rift Valley AgriTech', 'KE', 'Nairobi', 'agriculture'],
-    ['indus', 'Indus Softworks', 'IN', 'Bengaluru', 'it'],
-    ['canal', 'Canal Logistics B.V.', 'NL', 'Amsterdam', 'logistics'],
-    ['twintowers', 'Twin Towers Media', 'MY', 'Kuala Lumpur', 'creative'],
-    ['balticdocs', 'Baltic Docs OÜ', 'EE', 'Tallinn', 'it'],
-    ['pearl', 'Pearl Outsourcing Inc.', 'PH', 'Manila', 'sales'],
-    ['hanriver', 'Han River Commerce', 'KR', 'Seoul', 'it'],
-    ['tablemountain', 'Table Mountain Labs', 'ZA', 'Cape Town', 'creative'],
-    ['lakeview', 'Lakeview Pharma AG', 'CH', 'Zürich', 'health'],
-    ['aztec', 'Aztec Growth', 'MX', 'Mexico City', 'sales'],
-  ].map(([id, name, country, city, industry]) => ({ id, name, country, city, industry, demo: true }));
-
-  // Sample jobs. req/nice are "Skill:level" lists (1 Pemula, 2 Menengah, 3 Mahir);
-  // langs are "code:level"; days = posted N days ago.
-  const SEED_JOBS = [
-    { id: 'j1', co: 'nusantara', c: 'ID', city: 'Jakarta', title: 'Senior Backend Engineer', cat: 'it', cur: 'IDR', min: 25e6, max: 40e6, per: 'month', type: 'fulltime', model: 'hybrid', days: 1,
-      req: 'Go:3|PostgreSQL:2|Docker:2|REST API:3', nice: 'Kubernetes:2|AWS:1|Redis:2', exp: 4, edu: 's1', langs: 'id:fluent|en:intermediate',
-      desc: 'Bangun layanan pembayaran dan katalog yang melayani jutaan transaksi per hari. Kamu akan merancang API, menjaga performa basis data, dan membimbing engineer junior.',
-      quals: ['Minimal 4 tahun membangun layanan backend di produksi', 'Paham desain basis data relasional dan optimasi query', 'Terbiasa dengan code review dan pengujian otomatis'],
-      ben: ['BPJS Kesehatan dan asuransi swasta', 'Kerja hybrid 3 hari di kantor', 'Anggaran belajar Rp 10 juta per tahun'] },
-    { id: 'j2', co: 'nusantara', c: 'ID', city: 'Bandung', title: 'Frontend Developer (React)', cat: 'it', cur: 'IDR', min: 12e6, max: 20e6, per: 'month', type: 'fulltime', model: 'onsite', days: 3,
-      req: 'React:3|TypeScript:2|JavaScript:3|CSS:2', nice: 'Next.js:2|Figma:1|Git:2', exp: 2, edu: 's1', langs: 'id:fluent|en:basic',
-      desc: 'Kembangkan dasbor merchant dan aplikasi web pelanggan yang cepat dan mudah diakses. Bekerja dekat dengan tim desain di studio Bandung.',
-      quals: ['Minimal 2 tahun pengalaman React', 'Paham aksesibilitas web dan desain responsif', 'Portofolio proyek web yang bisa dilihat'],
-      ben: ['Makan siang gratis', 'Laptop kerja', 'Bonus kinerja tahunan'] },
-    { id: 'j3', co: 'nusantara', c: 'ID', city: 'Yogyakarta', title: 'UI/UX Designer', cat: 'creative', cur: 'IDR', min: 9e6, max: 15e6, per: 'month', type: 'fulltime', model: 'hybrid', days: 5,
-      req: 'Figma:3|UI Design:3|UX Research:2|Prototyping:2', nice: 'HTML:1|CSS:1|Usability Testing:2', exp: 2, edu: 's1', langs: 'id:fluent|en:intermediate',
-      desc: 'Rancang alur aplikasi pembayaran yang sederhana untuk pengguna di seluruh Indonesia. Kamu akan memimpin riset pengguna dan menjaga design system.',
-      quals: ['Portofolio studi kasus produk digital', 'Pengalaman melakukan wawancara dan uji kegunaan', 'Mampu presentasi ke pemangku kepentingan'],
-      ben: ['Kerja hybrid', 'Langganan alat desain', 'Cuti 18 hari'] },
-    { id: 'j4', co: 'harapan', c: 'ID', city: 'Surabaya', title: 'Perawat ICU', cat: 'health', cur: 'IDR', min: 7e6, max: 11e6, per: 'month', type: 'fulltime', model: 'onsite', days: 2,
-      req: 'Keperawatan:3|Perawatan Intensif:2|BLS/CPR:3', nice: 'ACLS:2|Rekam Medis Elektronik:1', exp: 2, edu: 'd3', langs: 'id:fluent',
-      desc: 'Bergabung dengan unit perawatan intensif dewasa berkapasitas 20 tempat tidur. Memberikan asuhan keperawatan dan berkoordinasi dengan dokter jaga.',
-      quals: ['STR aktif', 'Minimal 2 tahun di ICU atau IGD', 'Bersedia bekerja dalam sistem shift'],
-      ben: ['Tunjangan shift malam', 'BPJS Kesehatan dan Ketenagakerjaan', 'Pelatihan ACLS dibiayai'] },
-    { id: 'j5', co: 'serenity', c: 'ID', city: 'Denpasar', title: 'Guest Relations Officer', cat: 'hospitality', cur: 'IDR', min: 6e6, max: 9e6, per: 'month', type: 'fulltime', model: 'onsite', days: 6, relo: 1, tz: 'WITA (UTC+8)',
-      req: 'Layanan Pelanggan:3|Penanganan Keluhan:2|Manajemen Reservasi:2', nice: 'Opera PMS:1|Komunikasi:2', exp: 1, edu: 'd3', langs: 'en:fluent|id:fluent|ja:basic',
-      desc: 'Sambut tamu internasional dan pastikan pengalaman menginap yang berkesan. Menangani permintaan khusus, keluhan, dan koordinasi antar departemen.',
-      quals: ['Lulusan perhotelan atau pariwisata', 'Bahasa Inggris lancar', 'Ramah dan tenang di bawah tekanan'],
-      ben: ['Akomodasi staf', 'Service charge bulanan', 'Makan saat bertugas'] },
-    { id: 'j6', co: 'lumina', c: 'SG', city: 'Singapore', title: 'Data Scientist', cat: 'it', cur: 'SGD', min: 7000, max: 10000, per: 'month', type: 'fulltime', model: 'hybrid', days: 2, visa: 1,
-      req: 'Python:3|Machine Learning:3|SQL:2|Statistics:3', nice: 'TensorFlow:2|Spark:1|Data Visualization:2', exp: 3, edu: 's2', langs: 'en:fluent',
-      desc: 'Bangun model prediksi permintaan untuk klien ritel di Asia Tenggara. Kamu akan bekerja dari eksplorasi data hingga model berjalan di produksi.',
-      quals: ['S2 bidang kuantitatif atau pengalaman setara', 'Pengalaman membawa model ML ke produksi', 'Mampu menjelaskan hasil ke klien non-teknis'],
-      ben: ['Bantuan Employment Pass', 'Asuransi kesehatan keluarga', 'Bonus tahunan 2 bulan'] },
-    { id: 'j7', co: 'straits', c: 'SG', city: 'Singapore', title: 'Financial Analyst', cat: 'finance', cur: 'SGD', min: 6000, max: 8500, per: 'month', type: 'fulltime', model: 'onsite', days: 9,
-      req: 'Financial Modeling:3|Excel:3|Valuation:2|Bloomberg Terminal:2', nice: 'Power BI:1|Data Analysis:2', exp: 2, edu: 's1', langs: 'en:fluent|zh:intermediate',
-      desc: 'Analisis peluang investasi di pasar ASEAN dan siapkan memo untuk komite investasi. Bekerja dengan tim portofolio senior.',
-      quals: ['Gelar keuangan, ekonomi, atau akuntansi', 'Kandidat CFA menjadi nilai plus', 'Teliti dan kuat dalam analisis angka'],
-      ben: ['Bonus kinerja', 'Dukungan ujian CFA', 'Asuransi kesehatan'] },
-    { id: 'j8', co: 'sakura', c: 'JP', city: 'Tokyo', title: 'iOS Engineer', cat: 'it', cur: 'JPY', min: 7e6, max: 10e6, per: 'year', type: 'fulltime', model: 'hybrid', days: 4, visa: 1, relo: 1,
-      req: 'Swift:3|iOS:3|REST API:2|Git:2', nice: 'Kotlin:1|CI/CD:1', exp: 3, edu: 's1', langs: 'en:fluent|ja:basic',
-      desc: 'Kembangkan aplikasi mobilitas yang dipakai komuter di seluruh Jepang. Tim internasional dengan bahasa kerja Inggris.',
-      quals: ['Minimal 3 tahun pengembangan iOS', 'Pernah merilis aplikasi di App Store', 'Mau belajar bahasa Jepang'],
-      ben: ['Sponsor visa kerja', 'Paket relokasi dan apartemen sementara', 'Kursus bahasa Jepang gratis'] },
-    { id: 'j9', co: 'kansai', c: 'JP', city: 'Osaka', title: 'English Teacher', cat: 'education', cur: 'JPY', min: 250000, max: 300000, per: 'month', type: 'contract', model: 'onsite', days: 12, visa: 1,
-      req: 'Pengajaran Bahasa Inggris:2|Manajemen Kelas:2|Public Speaking:2', nice: 'Desain Kurikulum:1|Pendidikan Anak:1', exp: 1, edu: 's1', langs: 'en:native|ja:basic',
-      desc: 'Mengajar bahasa Inggris untuk anak dan orang dewasa dalam kelas kecil. Kontrak 12 bulan dengan opsi perpanjangan.',
-      quals: ['Gelar sarjana bidang apa pun', 'Sertifikat TEFL atau TESOL', 'Penutur asli atau setara C2'],
-      ben: ['Sponsor visa', 'Bantuan mencari tempat tinggal', 'Tiket pesawat di akhir kontrak'] },
-    { id: 'j10', co: 'spree', c: 'DE', city: 'Berlin', title: 'DevOps Engineer', cat: 'it', cur: 'EUR', min: 65000, max: 85000, per: 'year', type: 'fulltime', model: 'remote', days: 3, visa: 1,
-      req: 'Kubernetes:3|Terraform:2|AWS:2|CI/CD:3|Linux:3', nice: 'Go:1|Prometheus:2', exp: 3, edu: 's1', langs: 'en:fluent|de:basic',
-      desc: 'Kelola platform cloud yang menjalankan ratusan layanan pelanggan. Remote di zona waktu Eropa dengan pertemuan tim tiap kuartal di Berlin.',
-      quals: ['Pengalaman mengelola klaster Kubernetes di produksi', 'Infrastructure as code dengan Terraform', 'Siap ikut rotasi on-call'],
-      ben: ['30 hari cuti', 'Bantuan Blue Card EU', 'Anggaran perangkat kerja rumah'] },
-    { id: 'j11', co: 'alpenwerk', c: 'DE', city: 'München', title: 'Mechanical Design Engineer', cat: 'engineering', cur: 'EUR', min: 58000, max: 72000, per: 'year', type: 'fulltime', model: 'onsite', days: 15, relo: 1,
-      req: 'SolidWorks:3|CAD:3|FEA:2|GD&T:2', nice: 'Six Sigma:1|Python:1', exp: 3, edu: 's1', langs: 'de:intermediate|en:fluent',
-      desc: 'Rancang komponen untuk mesin pengemasan otomatis. Dari konsep, simulasi, hingga dukungan produksi.',
-      quals: ['Gelar teknik mesin', 'Pengalaman desain produk industri', 'Bahasa Jerman minimal B1'],
-      ben: ['Bantuan relokasi', 'Tiket transportasi umum', 'Program pensiun perusahaan'] },
-    { id: 'j12', co: 'thames', c: 'GB', city: 'London', title: 'Product Manager', cat: 'it', cur: 'GBP', min: 70000, max: 90000, per: 'year', type: 'fulltime', model: 'hybrid', days: 2, visa: 1,
-      req: 'Product Management:3|Agile:2|Data Analysis:2|Stakeholder Management:3', nice: 'SQL:1|Figma:1', exp: 5, edu: 's1', langs: 'en:fluent',
-      desc: 'Pimpin produk tabungan digital untuk 2 juta pengguna. Tentukan peta jalan bersama tim engineering, desain, dan kepatuhan.',
-      quals: ['Minimal 5 tahun sebagai product manager', 'Pengalaman produk keuangan atau regulasi', 'Terbiasa mengambil keputusan berbasis data'],
-      ben: ['Sponsor Skilled Worker visa', 'Saham karyawan', 'Asuransi kesehatan privat'] },
-    { id: 'j13', co: 'northbridge', c: 'GB', city: 'Manchester', title: 'Registered Nurse', cat: 'health', cur: 'GBP', min: 29000, max: 36000, per: 'year', type: 'fulltime', model: 'onsite', days: 7, visa: 1, relo: 1,
-      req: 'Keperawatan:3|BLS/CPR:3|Rekam Medis Elektronik:2|Perawatan Luka:2', nice: 'ACLS:1|Perawatan Intensif:1', exp: 1, edu: 's1', langs: 'en:fluent',
-      desc: 'Perawat di bangsal penyakit dalam dengan program adaptasi untuk perawat internasional. Termasuk pendampingan hingga registrasi NMC.',
-      quals: ['Lulusan keperawatan dengan registrasi aktif di negara asal', 'IELTS 7.0 atau OET B', 'Siap kerja shift'],
-      ben: ['Sponsor Health and Care visa', 'Biaya ujian OSCE ditanggung', 'Akomodasi 3 bulan pertama'] },
-    { id: 'j14', co: 'goldengate', c: 'US', city: 'San Francisco', title: 'Machine Learning Engineer', cat: 'it', cur: 'USD', min: 170000, max: 220000, per: 'year', type: 'fulltime', model: 'hybrid', days: 1, visa: 1, tz: 'PT (UTC-8)',
-      req: 'Python:3|PyTorch:3|Machine Learning:3|MLOps:2|Docker:2', nice: 'Kubernetes:1|Spark:1|Deep Learning:2', exp: 4, edu: 's2', langs: 'en:fluent',
-      desc: 'Latih dan sajikan model bahasa untuk asisten dokumen perusahaan. Fokus pada evaluasi, efisiensi inferensi, dan keandalan.',
-      quals: ['Minimal 4 tahun ML terapan', 'Pengalaman pipeline pelatihan terdistribusi', 'Publikasi atau proyek open source menjadi nilai plus'],
-      ben: ['Sponsor H-1B dan green card', 'Asuransi kesehatan penuh', 'Kepemilikan saham'] },
-    { id: 'j15', co: 'hudson', c: 'US', city: 'New York', title: 'Graphic Designer', cat: 'creative', cur: 'USD', min: 45, max: 65, per: 'hour', type: 'contract', model: 'remote', days: 8,
-      req: 'Adobe Illustrator:3|Photoshop:3|Branding:2|Typography:2', nice: 'Motion Graphics:1|Figma:2', exp: 3, edu: 'any', langs: 'en:fluent',
-      desc: 'Kontrak 6 bulan untuk proyek identitas merek klien gaya hidup. Remote di zona waktu Amerika Serikat.',
-      quals: ['Portofolio identitas merek', 'Bisa bekerja mandiri dengan tenggat ketat', 'Berdomisili di AS'],
-      ben: ['Jam kerja fleksibel', 'Kemungkinan perpanjangan kontrak', 'Akses lisensi Adobe'] },
-    { id: 'j16', co: 'lonestar', c: 'US', city: 'Austin', title: 'Customer Success Manager', cat: 'sales', cur: 'USD', min: 75000, max: 95000, per: 'year', type: 'fulltime', model: 'remote', days: 10, tz: 'CT (UTC-6)',
-      req: 'Layanan Pelanggan:3|HubSpot CRM:2|Komunikasi:3|Negosiasi:2', nice: 'Data Analysis:1|Public Speaking:2', exp: 3, edu: 's1', langs: 'en:fluent|es:intermediate',
-      desc: 'Dampingi 60 akun bisnis menengah agar sukses memakai platform penjadwalan kami. Mengurangi churn dan menemukan peluang perluasan.',
-      quals: ['3 tahun di customer success SaaS', 'Terbiasa mengelola renewal', 'Bahasa Spanyol menjadi nilai plus'],
-      ben: ['401(k) dengan matching', 'Cuti tanpa batas', 'Anggaran kerja rumah'] },
-    { id: 'j17', co: 'mapleleaf', c: 'CA', city: 'Toronto', title: 'Full Stack Developer', cat: 'it', cur: 'CAD', min: 95000, max: 120000, per: 'year', type: 'fulltime', model: 'hybrid', days: 4, visa: 1,
-      req: 'JavaScript:3|Node.js:3|React:2|PostgreSQL:2', nice: 'AWS:1|GraphQL:2|TypeScript:2', exp: 3, edu: 's1', langs: 'en:fluent',
-      desc: 'Bangun fitur checkout dan manajemen inventaris untuk ribuan toko online di Kanada.',
-      quals: ['Minimal 3 tahun full stack', 'Pengalaman dengan sistem e-commerce', 'Komunikasi tertulis yang baik'],
-      ben: ['Dukungan Global Talent Stream', 'Asuransi kesehatan dan gigi', 'Saham karyawan'] },
-    { id: 'j18', co: 'pacific', c: 'CA', city: 'Vancouver', title: 'Elementary School Teacher', cat: 'education', cur: 'CAD', min: 60000, max: 78000, per: 'year', type: 'fulltime', model: 'onsite', days: 18, tz: 'PT (UTC-8)',
-      req: 'Manajemen Kelas:3|Desain Kurikulum:2|Pendidikan Anak:3', nice: 'Public Speaking:1|Komunikasi:2', exp: 2, edu: 's1', langs: 'en:fluent|fr:intermediate',
-      desc: 'Mengajar kelas 3 di sekolah dasar bilingual. Merancang pembelajaran berbasis proyek bersama tim guru.',
-      quals: ['Sertifikat mengajar BC atau setara', 'Pengalaman mengajar sekolah dasar', 'Bahasa Prancis menjadi nilai plus'],
-      ben: ['Libur musim panas', 'Dana pengembangan profesional', 'Program pensiun'] },
-    { id: 'j19', co: 'harbour', c: 'AU', city: 'Sydney', title: 'Civil Engineer', cat: 'engineering', cur: 'AUD', min: 105000, max: 130000, per: 'year', type: 'fulltime', model: 'onsite', days: 6, visa: 1, relo: 1,
-      req: 'AutoCAD:3|Civil 3D:2|Manajemen Proyek:2|Structural Analysis:2', nice: 'Six Sigma:1', exp: 4, edu: 's1', langs: 'en:fluent',
-      desc: 'Rancang dan awasi proyek jalan serta drainase untuk pemerintah daerah New South Wales.',
-      quals: ['Gelar teknik sipil terakreditasi', 'Minimal 4 tahun pengalaman proyek infrastruktur', 'Bisa memperoleh status Chartered Engineer'],
-      ben: ['Sponsor visa 482', 'Relokasi keluarga', 'Superannuation 11,5%'] },
-    { id: 'j20', co: 'laneway', c: 'AU', city: 'Melbourne', title: 'Barista & Cafe Supervisor', cat: 'hospitality', cur: 'AUD', min: 30, max: 36, per: 'hour', type: 'parttime', model: 'onsite', days: 2,
-      req: 'Barista:3|Layanan Pelanggan:2|Food Safety:2', nice: 'Manajemen Tim:1', exp: 1, edu: 'any', langs: 'en:intermediate',
-      desc: 'Pimpin shift pagi di kafe specialty coffee yang ramai. 25 sampai 30 jam per minggu.',
-      quals: ['Pengalaman barista minimal 1 tahun', 'Sertifikat Food Handler', 'Hak kerja di Australia'],
-      ben: ['Kopi gratis tiap shift', 'Penalty rate akhir pekan', 'Pelatihan latte art'] },
-    { id: 'j21', co: 'desertpearl', c: 'AE', city: 'Dubai', title: 'Hotel Operations Manager', cat: 'hospitality', cur: 'AED', min: 22000, max: 30000, per: 'month', type: 'fulltime', model: 'onsite', days: 5, visa: 1, relo: 1,
-      req: 'Manajemen Operasional:3|Manajemen Tim:3|Opera PMS:2|Revenue Management:2', nice: 'Penanganan Keluhan:2|Six Sigma:1', exp: 6, edu: 's1', langs: 'en:fluent|ar:basic',
-      desc: 'Kelola operasional harian hotel 300 kamar di Dubai Marina, mulai dari front office hingga housekeeping.',
-      quals: ['Minimal 6 tahun di hotel bintang lima', '2 tahun di posisi manajerial', 'Bahasa Arab menjadi nilai plus'],
-      ben: ['Visa kerja dan tiket tahunan', 'Akomodasi atau tunjangan perumahan', 'Bebas pajak penghasilan'] },
-    { id: 'j22', co: 'gulfhorizon', c: 'AE', city: 'Abu Dhabi', title: 'Accountant', cat: 'finance', cur: 'AED', min: 14000, max: 19000, per: 'month', type: 'fulltime', model: 'onsite', days: 11, visa: 1,
-      req: 'Akuntansi:3|IFRS:2|SAP:2|Excel:3', nice: 'Perpajakan:2|Audit:1', exp: 3, edu: 's1', langs: 'en:fluent',
-      desc: 'Tangani pelaporan bulanan dan konsolidasi untuk grup perusahaan properti dan ritel.',
-      quals: ['Gelar akuntansi', 'Sertifikasi ACCA atau CPA menjadi nilai plus', 'Pengalaman closing bulanan'],
-      ben: ['Visa kerja', 'Asuransi kesehatan', 'Tunjangan pendidikan anak'] },
-    { id: 'j23', co: 'paulista', c: 'BR', city: 'São Paulo', title: 'Backend Developer (Java)', cat: 'it', cur: 'BRL', min: 12000, max: 18000, per: 'month', type: 'fulltime', model: 'hybrid', days: 3,
-      req: 'Java:3|Spring Boot:3|Microservices:2|PostgreSQL:2', nice: 'Kafka:2|Docker:1', exp: 3, edu: 's1', langs: 'pt:fluent|en:intermediate',
-      desc: 'Kembangkan layanan Pix dan penyelesaian pembayaran untuk merchant di seluruh Brasil.',
-      quals: ['3 tahun Java di produksi', 'Pengalaman sistem keuangan', 'Bahasa Portugis lancar'],
-      ben: ['Vale refeição', 'Asuransi kesehatan', 'Gympass'] },
-    { id: 'j24', co: 'carioca', c: 'BR', city: 'Rio de Janeiro', title: 'Digital Marketing Specialist', cat: 'marketing', cur: 'BRL', min: 6000, max: 9000, per: 'month', type: 'fulltime', model: 'remote', days: 14,
-      req: 'SEO:2|Google Ads:3|Content Marketing:2|Google Analytics:2', nice: 'Copywriting:2|Social Media Marketing:2', exp: 2, edu: 's1', langs: 'pt:fluent|en:intermediate',
-      desc: 'Jalankan kampanye akuisisi berbayar dan organik untuk portal berita dan podcast.',
-      quals: ['2 tahun mengelola anggaran iklan digital', 'Paham analitik dan atribusi', 'Kreatif dan berorientasi data'],
-      ben: ['Kerja remote penuh', 'Bonus kuartalan', 'Asuransi kesehatan'] },
-    { id: 'j25', co: 'ekopay', c: 'NG', city: 'Lagos', title: 'Software Engineer (Fintech)', cat: 'it', cur: 'NGN', min: 900000, max: 1500000, per: 'month', type: 'fulltime', model: 'hybrid', days: 2,
-      req: 'TypeScript:3|Node.js:3|REST API:2|PostgreSQL:2', nice: 'React Native:1|AWS:1|Docker:2', exp: 2, edu: 's1', langs: 'en:fluent',
-      desc: 'Bangun layanan transfer dan dompet digital untuk UMKM di Afrika Barat.',
-      quals: ['2 tahun pengembangan backend', 'Perhatian pada keamanan dan keandalan', 'Pengalaman fintech menjadi nilai plus'],
-      ben: ['HMO kesehatan', 'Subsidi internet', 'Opsi saham'] },
-    { id: 'j26', co: 'savannah', c: 'NG', city: 'Abuja', title: 'Public Health Officer', cat: 'health', cur: 'NGN', min: 600000, max: 900000, per: 'month', type: 'contract', model: 'onsite', days: 20,
-      req: 'Epidemiologi:3|Data Analysis:2|Manajemen Program:2|Komunikasi:2', nice: 'Riset:2|Excel:2', exp: 3, edu: 's2', langs: 'en:fluent|ha:intermediate',
-      desc: 'Koordinasikan program imunisasi dan surveilans penyakit di wilayah Federal Capital Territory.',
-      quals: ['S2 kesehatan masyarakat', 'Pengalaman program lapangan', 'Bahasa Hausa menjadi nilai plus'],
-      ben: ['Kontrak 18 bulan', 'Tunjangan transportasi', 'Asuransi kesehatan'] },
-    { id: 'j27', co: 'riftvalley', c: 'KE', city: 'Nairobi', title: 'Agronomist', cat: 'agriculture', cur: 'KES', min: 180000, max: 260000, per: 'month', type: 'fulltime', model: 'onsite', days: 9,
-      req: 'Agronomi:3|Analisis Tanah:2|Data Analysis:2', nice: 'Manajemen Proyek:1|Riset:2', exp: 3, edu: 's1', langs: 'en:fluent|sw:intermediate',
-      desc: 'Dampingi petani mitra meningkatkan hasil panen dengan data tanah dan cuaca dari sensor lapangan.',
-      quals: ['Gelar agronomi atau ilmu tanah', 'Siap perjalanan dinas ke lapangan', 'Bahasa Swahili menjadi nilai plus'],
-      ben: ['Kendaraan dinas', 'Asuransi kesehatan', 'Bonus musim panen'] },
-    { id: 'j28', co: 'indus', c: 'IN', city: 'Bengaluru', title: 'QA Automation Engineer', cat: 'it', cur: 'INR', min: 1400000, max: 2200000, per: 'year', type: 'fulltime', model: 'hybrid', days: 5,
-      req: 'Selenium:3|Python:2|Test Automation:3|CI/CD:2', nice: 'Java:1|Docker:1', exp: 3, edu: 's1', langs: 'en:fluent',
-      desc: 'Bangun kerangka uji otomatis untuk platform logistik yang dipakai ribuan pengemudi.',
-      quals: ['3 tahun otomasi pengujian', 'Pengalaman uji API dan UI', 'Teliti terhadap detail'],
-      ben: ['Asuransi kesehatan keluarga', 'Kerja hybrid', 'Bonus tahunan'] },
-    { id: 'j29', co: 'canal', c: 'NL', city: 'Amsterdam', title: 'Supply Chain Analyst', cat: 'logistics', cur: 'EUR', min: 50000, max: 62000, per: 'year', type: 'fulltime', model: 'hybrid', days: 7, visa: 1,
-      req: 'Supply Chain Management:3|Excel:3|SQL:2|SAP:2', nice: 'Power BI:2|Data Analysis:2', exp: 2, edu: 's1', langs: 'en:fluent|nl:basic',
-      desc: 'Optimalkan aliran barang dari pelabuhan Rotterdam ke gudang di seluruh Eropa.',
-      quals: ['Gelar logistik, teknik industri, atau ekonomi', '2 tahun analisis rantai pasok', 'Bahasa Belanda tidak wajib'],
-      ben: ['Sponsor Highly Skilled Migrant', 'Fasilitas 30% ruling', 'Sepeda kantor'] },
-    { id: 'j30', co: 'twintowers', c: 'MY', city: 'Kuala Lumpur', title: 'Content Writer (Melayu & English)', cat: 'creative', cur: 'MYR', min: 4500, max: 6500, per: 'month', type: 'fulltime', model: 'remote', days: 4,
-      req: 'Copywriting:3|SEO:2|Content Marketing:2|Riset:2', nice: 'Social Media Marketing:1|Google Analytics:1', exp: 2, edu: 's1', langs: 'ms:fluent|en:fluent',
-      desc: 'Tulis artikel, naskah video, dan konten media sosial untuk merek gaya hidup di Malaysia.',
-      quals: ['Portofolio tulisan dua bahasa', 'Paham dasar SEO', 'Disiplin dengan tenggat'],
-      ben: ['Kerja remote', 'EPF dan SOCSO', 'Laptop kerja'] },
-    { id: 'j31', co: 'balticdocs', c: 'EE', city: 'Tallinn', title: 'Technical Writer', cat: 'it', cur: 'EUR', min: 3500, max: 5000, per: 'month', type: 'contract', model: 'remote', days: 3, rw: 1,
-      req: 'Technical Writing:3|API Documentation:3|Markdown:2|Git:2', nice: 'REST API:1|Python:1', exp: 2, edu: 'any', langs: 'en:fluent',
-      desc: 'Tulis dokumentasi API dan panduan pengembang untuk klien SaaS dari mana pun di dunia.',
-      quals: ['Contoh dokumentasi teknis', 'Paham cara kerja API', 'Bahasa Inggris tulis setara C1'],
-      ben: ['Remote dari negara mana pun', 'Tarif bulanan tetap', 'Jam kerja fleksibel'] },
-    { id: 'j32', co: 'pearl', c: 'PH', city: 'Manila', title: 'Customer Support Specialist', cat: 'sales', cur: 'PHP', min: 28000, max: 38000, per: 'month', type: 'fulltime', model: 'onsite', days: 1,
-      req: 'Layanan Pelanggan:2|Zendesk:2|Komunikasi:3|Penanganan Keluhan:2', nice: 'Excel:1', exp: 1, edu: 'sma', langs: 'en:fluent|tl:fluent',
-      desc: 'Bantu pelanggan perusahaan perjalanan global lewat chat dan email. Shift malam waktu Manila.',
-      quals: ['Bahasa Inggris lancar', 'Pengalaman layanan pelanggan', 'Bersedia shift malam'],
-      ben: ['Tunjangan shift malam', 'HMO dari hari pertama', 'Antar jemput'] },
-    { id: 'j33', co: 'hanriver', c: 'KR', city: 'Seoul', title: 'Data Engineer', cat: 'it', cur: 'KRW', min: 60e6, max: 85e6, per: 'year', type: 'fulltime', model: 'hybrid', days: 6, visa: 1,
-      req: 'Python:3|SQL:3|Spark:2|Airflow:2', nice: 'AWS:2|Kafka:1', exp: 3, edu: 's1', langs: 'en:fluent|ko:basic',
-      desc: 'Bangun pipeline data untuk rekomendasi produk di platform belanja dengan 10 juta pengguna.',
-      quals: ['3 tahun data engineering', 'Pengalaman data warehouse skala besar', 'Bahasa Korea menjadi nilai plus'],
-      ben: ['Sponsor visa E-7', 'Kelas bahasa Korea', 'Makan siang ditanggung'] },
-    { id: 'j34', co: 'tablemountain', c: 'ZA', city: 'Cape Town', title: 'UX Researcher', cat: 'creative', cur: 'ZAR', min: 45000, max: 65000, per: 'month', type: 'fulltime', model: 'remote', days: 8, rw: 1,
-      req: 'UX Research:3|Usability Testing:3|Figma:2|Data Analysis:2', nice: 'Prototyping:1|Public Speaking:1', exp: 3, edu: 's1', langs: 'en:fluent',
-      desc: 'Pimpin riset untuk aplikasi kesehatan digital yang dipakai di 12 negara. Tim tersebar di seluruh dunia.',
-      quals: ['3 tahun riset kualitatif dan kuantitatif', 'Pengalaman riset lintas budaya', 'Mampu menyusun laporan yang jelas'],
-      ben: ['Remote dari mana pun', 'Anggaran coworking', 'Cuti 25 hari'] },
-    { id: 'j35', co: 'lakeview', c: 'CH', city: 'Zürich', title: 'Clinical Research Associate', cat: 'health', cur: 'CHF', min: 95000, max: 120000, per: 'year', type: 'fulltime', model: 'hybrid', days: 13, visa: 1,
-      req: 'Clinical Trials:3|Good Clinical Practice:3|Data Analysis:2', nice: 'Medical Writing:2|Statistics:1', exp: 3, edu: 's2', langs: 'en:fluent|de:intermediate',
-      desc: 'Pantau uji klinis fase II dan III di rumah sakit mitra di Swiss dan Jerman.',
-      quals: ['Latar belakang ilmu hayati', '3 tahun sebagai CRA', 'Bahasa Jerman B2'],
-      ben: ['Bantuan izin kerja', 'Asuransi pensiun', 'Tunjangan transportasi'] },
-    { id: 'j36', co: 'aztec', c: 'MX', city: 'Mexico City', title: 'Sales Development Representative', cat: 'sales', cur: 'MXN', min: 30000, max: 45000, per: 'month', type: 'fulltime', model: 'remote', days: 5, rw: 1,
-      req: 'Penjualan B2B:2|HubSpot CRM:2|Komunikasi:3|Negosiasi:1', nice: 'Copywriting:1', exp: 1, edu: 'any', langs: 'en:fluent|es:fluent',
-      desc: 'Hubungi calon klien di Amerika dan Eropa untuk perangkat lunak logistik. Remote dari mana pun dengan overlap jam kerja Amerika.',
-      quals: ['Bilingual Inggris dan Spanyol', 'Pengalaman penjualan atau layanan pelanggan', 'Target oriented'],
-      ben: ['Komisi tanpa batas', 'Remote dari mana pun', 'Pelatihan penjualan'] },
-    { id: 'j37', co: 'nusantara', c: 'ID', city: 'Jakarta', title: 'Data Analyst Intern', cat: 'it', cur: 'IDR', min: 4e6, max: 5e6, per: 'month', type: 'internship', model: 'hybrid', days: 2,
-      req: 'SQL:1|Excel:2|Data Visualization:1', nice: 'Python:1|Statistics:1|Power BI:1', exp: 0, edu: 's1', langs: 'id:fluent|en:basic',
-      desc: 'Magang 6 bulan di tim analitik. Membuat dasbor dan analisis perilaku pengguna bersama mentor.',
-      quals: ['Mahasiswa tingkat akhir atau lulusan baru', 'Minat kuat pada data', 'Bisa magang penuh waktu'],
-      ben: ['Uang saku bulanan', 'Mentor khusus', 'Peluang menjadi karyawan tetap'] },
-  ];
-
-  // Initials avatars and certificate previews for the sample profiles,
-  // drawn as SVG so the samples carry no image files.
-  function svgUri(svg) { return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg); }
-  function initialsAvatar(name, bg) {
-    const ini = name.split(/\s+/).map(w => w[0]).slice(0, 2).join('').toUpperCase();
-    return svgUri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"><rect width="96" height="96" fill="${bg}"/><text x="48" y="60" font-family="system-ui,sans-serif" font-size="36" font-weight="700" fill="#fff" text-anchor="middle">${ini}</text></svg>`);
-  }
-  function certPreview(title, issuer, holder) {
-    const e = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-    return svgUri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280"><rect width="400" height="280" fill="#eff6ff"/><rect x="12" y="12" width="376" height="256" fill="none" stroke="#2563eb" stroke-width="3"/><text x="200" y="70" font-family="Georgia,serif" font-size="14" fill="#1e3a8a" text-anchor="middle">CERTIFICATE</text><text x="200" y="118" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#0f172a" text-anchor="middle">${e(title.slice(0, 40))}</text><text x="200" y="160" font-family="system-ui,sans-serif" font-size="13" fill="#334155" text-anchor="middle">${e(holder)}</text><text x="200" y="220" font-family="system-ui,sans-serif" font-size="12" fill="#1d4ed8" text-anchor="middle">${e(issuer)}</text></svg>`);
-  }
-
-  const SEED_PROFILES = [
-    { id: 'p1', bio: { fullName: 'Rizky Pratama', birthDate: '1994-03-12', gender: 'male', country: 'ID', city: 'Jakarta', nationality: 'ID', email: 'rizky.pratama@example.com', phoneCode: 'ID', phone: '81234567890',
-        summary: 'Backend engineer dengan 6 tahun pengalaman membangun layanan pembayaran berskala besar. Suka merapikan arsitektur, menulis tes, dan membimbing engineer baru.', photo: initialsAvatar('Rizky Pratama', '#1d4ed8') },
-      education: [{ level: 's1', institution: 'Universitas Indonesia', major: 'Ilmu Komputer', year: '2016' }],
-      experience: [
-        { position: 'Backend Engineer', company: 'Kopi Kilat', start: '2019-02', end: '', current: true, description: 'Memimpin migrasi layanan pembayaran ke Go dan menurunkan latensi 40%.' },
-        { position: 'Software Engineer', company: 'Tokobaru', start: '2016-08', end: '2019-01', current: false, description: 'Membangun API katalog produk dan sistem pencarian.' }],
-      skills: [['Go', 3, 5], ['PostgreSQL', 3, 6], ['Docker', 2, 4], ['REST API', 3, 6], ['Kubernetes', 2, 2], ['AWS', 1, 1], ['Redis', 2, 3]],
-      languages: [['id', 'native'], ['en', 'fluent']],
-      certs: [
-        { name: 'Golang Backend Developer', issuer: 'Dicoding Indonesia', issueDate: '2022-05-10', expiryDate: '', verify: 'DCD-GO-22-81734', skills: ['Go', 'REST API'] },
-        { name: 'PostgreSQL 14 Associate', issuer: 'EDB', issueDate: '2023-01-20', expiryDate: '2027-01-20', verify: 'https://example.com/verify/edb-55102', skills: ['PostgreSQL'] },
-        { name: 'Certified Kubernetes Application Developer', issuer: 'The Linux Foundation', issueDate: '2022-06-01', expiryDate: '2025-06-01', verify: 'LF-CKAD-2206-1189', skills: ['Kubernetes', 'Docker'] }],
-      privacy: { showPhone: true, showCerts: true } },
-    { id: 'p2', bio: { fullName: 'Amara Okafor', birthDate: '1997-09-02', gender: 'female', country: 'NG', city: 'Lagos', nationality: 'NG', email: 'amara.okafor@example.com', phoneCode: 'NG', phone: '8031234567',
-        summary: 'Frontend developer yang juga paham desain antarmuka. Senang membangun produk web yang cepat, mudah diakses, dan nyaman dipakai di ponsel.', photo: initialsAvatar('Amara Okafor', '#0369a1') },
-      education: [{ level: 's1', institution: 'University of Lagos', major: 'Computer Engineering', year: '2019' }],
-      experience: [
-        { position: 'Frontend Developer', company: 'Paystream', start: '2020-01', end: '', current: true, description: 'Membangun dasbor merchant dengan React dan TypeScript.' },
-        { position: 'UI Designer (Freelance)', company: 'Mandiri', start: '2018-06', end: '2019-12', current: false, description: 'Merancang situs dan aplikasi untuk UMKM.' }],
-      skills: [['React', 3, 4], ['TypeScript', 2, 3], ['JavaScript', 3, 5], ['CSS', 3, 5], ['Figma', 2, 3], ['UI Design', 2, 3], ['Next.js', 2, 2]],
-      languages: [['en', 'fluent'], ['yo', 'native']],
-      certs: [
-        { name: 'Meta Front-End Developer Professional Certificate', issuer: 'Meta (Coursera)', issueDate: '2023-03-15', expiryDate: '', verify: 'https://example.com/verify/meta-fe-7731', skills: ['React', 'JavaScript', 'CSS'] },
-        { name: 'Google UX Design Certificate', issuer: 'Google (Coursera)', issueDate: '2021-11-08', expiryDate: '', verify: 'GUX-21-44890', skills: ['Figma', 'UI Design'] }],
-      privacy: { showPhone: false, showCerts: true } },
-    { id: 'p3', bio: { fullName: 'Ayu Kartika Sari', birthDate: '2001-07-25', gender: 'female', country: 'ID', city: 'Yogyakarta', nationality: 'ID', email: 'ayu.kartika@example.com', phoneCode: 'ID', phone: '85700112233',
-        summary: 'Lulusan statistika yang suka mengubah data menjadi cerita. Berpengalaman membuat dasbor penjualan dan analisis survei untuk UMKM.', photo: initialsAvatar('Ayu Kartika Sari', '#2563eb') },
-      education: [{ level: 's1', institution: 'Universitas Gadjah Mada', major: 'Statistika', year: '2023' }, { level: 'sma', institution: 'SMA Negeri 3 Yogyakarta', major: 'IPA', year: '2019' }],
-      experience: [{ position: 'Data Analyst Intern', company: 'Rumah Batik Laras', start: '2022-07', end: '2022-12', current: false, description: 'Membuat dasbor penjualan bulanan dan analisis pelanggan.' }],
-      skills: [['SQL', 2, 2], ['Python', 2, 2], ['Excel', 3, 4], ['Data Visualization', 2, 2], ['Statistics', 2, 3], ['Figma', 1, 1]],
-      languages: [['id', 'native'], ['jv', 'fluent'], ['en', 'intermediate']],
-      certs: [
-        { name: 'Google Data Analytics Professional Certificate', issuer: 'Google (Coursera)', issueDate: '2023-04-02', expiryDate: '', verify: 'GDA-23-10293', skills: ['SQL', 'Data Visualization'] },
-        { name: 'Microsoft Office Specialist: Excel Expert', issuer: 'Microsoft', issueDate: '2022-02-14', expiryDate: '', verify: 'MOS-EXP-220214', skills: ['Excel'] }],
-      privacy: { showPhone: true, showCerts: false } },
-  ];
-
-  // Sample applications so the sample employer's dashboard is never empty.
-  const SEED_APPLICATIONS = [
-    ['a1', 'j1', 'p1', 'processing', 3, 'Saya tertarik membangun layanan pembayaran skala besar di Nusantara Digital.'],
-    ['a2', 'j2', 'p1', 'new', 1, 'Saya ingin mencoba peran yang lebih dekat ke frontend.'],
-    ['a3', 'j2', 'p2', 'interview', 2, 'Saya sudah 4 tahun membangun dasbor merchant dengan React.'],
-    ['a4', 'j3', 'p2', 'new', 1, 'Desain dan kode adalah dua hal yang paling saya sukai.'],
-    ['a5', 'j37', 'p3', 'new', 1, 'Saya lulusan statistika dan ingin belajar analitik produk.'],
-    ['a6', 'j3', 'p3', 'rejected', 4, 'Saya tertarik dengan riset pengguna.'],
-    ['a7', 'j10', 'p1', 'new', 2, 'Saya terbuka untuk bekerja remote di zona waktu Eropa.'],
-  ];
 
   /* ==========================================================================
      Interface text: Bahasa Indonesia (default) and English.
@@ -467,6 +178,10 @@
      ========================================================================== */
   const I18N = {
     id: {
+      saving: 'Menyimpan', saveFailed: 'Gagal menyimpan. Periksa koneksi lalu coba lagi.', loadFailed: 'Data tidak bisa dimuat', loadFailedBody: 'Periksa koneksi internet lalu coba lagi.', retry: 'Coba lagi',
+      errNameTaken: 'Nama ini sudah dipakai perusahaan lain', alreadyAppliedErr: 'Kamu sudah melamar lowongan ini', uploading: 'Mengunggah',
+      uploadUnavailable: 'File tidak bisa diunggah di sini, jadi sertifikat disimpan tanpa file.', pdfNotStored: 'File PDF belum bisa disimpan di server. Sertifikat disimpan tanpa file; unggah JPG atau PNG agar perusahaan bisa melihatnya.',
+      fileNotAvailable: 'File sertifikat tidak tersedia.', demoData: 'Data demo', noJobsYet: 'Belum ada lowongan', noJobsYetBody: 'Lowongan yang dipasang perusahaan akan muncul di sini.',
       loading: 'Memuat', close: 'Tutup', add: 'Tambah', remove: 'Hapus', edit: 'Edit', back: 'Kembali', next: 'Lanjut', choose: 'Pilih', optional: 'opsional', all: 'Semua',
       mainNav: 'Navigasi utama', navHome: 'Beranda', navSearch: 'Cari', navSaved: 'Tersimpan', navExplore: 'Jelajah', navProfile: 'Profil', navSignIn: 'Masuk', navPost: 'Pasang', navDashboard: 'Dasbor', navAccount: 'Akun',
       searchPlaceholder: 'Cari posisi, perusahaan, atau skill', quickCountry: 'Pilih negara', allCountries: 'Semua negara', chooseCountry: 'Pilih negara', searchCountry: 'Cari negara',
@@ -495,8 +210,8 @@
       skillsBasis: 'Berdasarkan {n} lowongan', youHaveIt: 'Kamu punya', pctRequired: '{n}% wajib', otherCountriesHint: 'Tidak ada negara kamu?', allCountriesList: 'Lihat semua negara', noCountry: 'Negara tidak ditemukan', noCountryBody: 'Coba ejaan lain.',
       signUpTitle: 'Daftar', signInTitle: 'Masuk', signUp: 'Daftar', signIn: 'Masuk', homeroomIdentity: 'Kamu masuk dengan akun Homeroom @{user}, jadi tidak perlu kata sandi. Pilih peran kamu.', homeroomIdentityAnon: 'Akun Homeroom kamu dipakai untuk masuk, jadi tidak perlu kata sandi.',
       roleSeeker: 'Pencari Kerja', roleSeekerBody: 'Buat CV digital, cocokkan skill, dan lamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan dan kelola pelamar.',
-      yourAccounts: 'Akun kamu di perangkat ini', noAccountsYet: 'Belum ada akun di perangkat ini. Daftar dulu atau coba akun contoh.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
-      companySignupTitle: 'Daftar sebagai Perusahaan', companySignupBody: 'Isi data perusahaan untuk mulai memasang lowongan.', companyName: 'Nama perusahaan', companyClaimHint: 'Nama yang sudah ada di Loker Dunia akan memakai profil perusahaan itu, termasuk perusahaan contoh "PT Nusantara Digital".', industry: 'Industri', createCompany: 'Buat akun perusahaan', welcomeCompany: 'Selamat datang, {co}',
+      yourAccounts: 'Akun kamu', noAccountsYet: 'Kamu belum punya akun Loker Dunia. Daftar dulu sebagai Pencari Kerja atau Perusahaan.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
+      companySignupTitle: 'Daftar sebagai Perusahaan', companySignupBody: 'Isi data perusahaan untuk mulai memasang lowongan.', companyName: 'Nama perusahaan', industry: 'Industri', createCompany: 'Buat akun perusahaan', welcomeCompany: 'Selamat datang, {co}',
       createProfile: 'Buat profil', editProfile: 'Edit profil', stepOf: 'Langkah {n} dari {total}', progress: 'Kemajuan pendaftaran', stepBio: 'Biodata', stepEduExp: 'Pendidikan & Pengalaman', stepSkills: 'Keahlian', stepCerts: 'Sertifikat',
       saveFinish: 'Simpan & Selesai', saveChanges: 'Simpan perubahan', backToProfile: 'Kembali ke profil',
       uploadPhoto: 'Unggah foto', changePhoto: 'Ganti foto', photoHint: 'JPG atau PNG, maks 5 MB.', fullName: 'Nama lengkap', birthDate: 'Tanggal lahir', gender: 'Jenis kelamin',
@@ -524,7 +239,7 @@
       shareProfile: 'Bagikan Profil', linkCopied: 'Tautan profil disalin', copyManually: 'Salin tautan ini:', previewAsCompany: 'Lihat seperti perusahaan',
       privacy: 'Privasi', privacyHint: 'Atur apa yang bisa dilihat perusahaan.', showPhoneToCompanies: 'Tampilkan telepon ke perusahaan', showCertsToCompanies: 'Tampilkan sertifikat ke perusahaan', privacySaved: 'Pengaturan privasi disimpan',
       myApplications: 'Lamaran saya', noApplications: 'Belum ada lamaran.', signOut: 'Keluar', signedOut: 'Kamu sudah keluar', signedInAs: 'Masuk sebagai {name}',
-      profileNotFound: 'Profil tidak ditemukan', profileNotFoundBody: 'Data Loker Dunia tersimpan di perangkat pemiliknya, jadi profil ini hanya bisa dibuka di sana.', previewNotice: 'Begini profil kamu terlihat oleh perusahaan.',
+      profileNotFound: 'Profil tidak ditemukan', profileNotFoundBody: 'Profil ini tidak ada atau sudah dihapus.', previewNotice: 'Begini profil kamu terlihat oleh perusahaan.',
       signInToApply: 'Masuk sebagai Pencari Kerja untuk melamar', profileToApply: 'Lengkapi profil dulu untuk melamar', autoFilled: 'Diisi otomatis dari profil kamu',
       attachCerts: 'Lampirkan sertifikat', certsPrivateWarning: 'Sertifikat kamu disembunyikan dari perusahaan. Ubah di Privasi agar lampiran terlihat.', noCertsToAttach: 'Belum ada sertifikat di profil.',
       shortMessage: 'Pesan singkat', messagePh: 'Kenapa kamu cocok untuk posisi ini?', sendApplication: 'Kirim Lamaran', sending: 'Mengirim', applyTo: 'Lamar: {title}', applySuccess: 'Lamaran terkirim ke {co}',
@@ -542,9 +257,13 @@
       model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
       per_month: '/bln', per_year: '/thn', per_hour: '/jam',
       cat_it: 'IT', cat_health: 'Kesehatan', cat_education: 'Pendidikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
-      pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.', storageFull: 'Penyimpanan perangkat penuh. Perubahan hanya tersimpan sampai halaman ditutup.',
+      pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
     },
     en: {
+      saving: 'Saving', saveFailed: 'Could not save. Check your connection and try again.', loadFailed: 'Data could not be loaded', loadFailedBody: 'Check your internet connection and try again.', retry: 'Try again',
+      errNameTaken: 'Another company already uses this name', alreadyAppliedErr: 'You already applied to this job', uploading: 'Uploading',
+      uploadUnavailable: 'Files cannot be uploaded here, so the certificate is saved without a file.', pdfNotStored: 'PDF files cannot be stored on the server yet. The certificate is saved without a file; upload a JPG or PNG so companies can see it.',
+      fileNotAvailable: 'The certificate file is not available.', demoData: 'Demo data', noJobsYet: 'No jobs yet', noJobsYetBody: 'Jobs posted by companies will appear here.',
       loading: 'Loading', close: 'Close', add: 'Add', remove: 'Remove', edit: 'Edit', back: 'Back', next: 'Next', choose: 'Choose', optional: 'optional', all: 'All',
       mainNav: 'Main navigation', navHome: 'Home', navSearch: 'Search', navSaved: 'Saved', navExplore: 'Explore', navProfile: 'Profile', navSignIn: 'Sign in', navPost: 'Post', navDashboard: 'Dashboard', navAccount: 'Account',
       searchPlaceholder: 'Search roles, companies or skills', quickCountry: 'Choose country', allCountries: 'All countries', chooseCountry: 'Choose country', searchCountry: 'Search countries',
@@ -573,8 +292,8 @@
       skillsBasis: 'Based on {n} jobs', youHaveIt: 'You have it', pctRequired: '{n}% required', otherCountriesHint: 'Country not listed?', allCountriesList: 'See all countries', noCountry: 'No country found', noCountryBody: 'Try another spelling.',
       signUpTitle: 'Sign up', signInTitle: 'Sign in', signUp: 'Sign up', signIn: 'Sign in', homeroomIdentity: 'You are signed in with the Homeroom account @{user}, so no password is needed. Choose your role.', homeroomIdentityAnon: 'Your Homeroom account signs you in, so no password is needed.',
       roleSeeker: 'Job Seeker', roleSeekerBody: 'Build a digital CV, match your skills and apply to jobs.', roleCompany: 'Company', roleCompanyBody: 'Post jobs and manage applicants.',
-      yourAccounts: 'Your accounts on this device', noAccountsYet: 'No accounts on this device yet. Sign up first or try a sample account.', sampleAccounts: 'Sample accounts', sampleAccount: 'sample', unfinishedProfile: 'Unfinished profile',
-      companySignupTitle: 'Sign up as a Company', companySignupBody: 'Enter your company details to start posting jobs.', companyName: 'Company name', companyClaimHint: 'A name already on Loker Dunia uses that company profile, including the sample company "PT Nusantara Digital".', industry: 'Industry', createCompany: 'Create company account', welcomeCompany: 'Welcome, {co}',
+      yourAccounts: 'Your accounts', noAccountsYet: 'You do not have a Loker Dunia account yet. Sign up as a Job Seeker or a Company first.', sampleAccounts: 'Sample accounts', sampleAccount: 'sample', unfinishedProfile: 'Unfinished profile',
+      companySignupTitle: 'Sign up as a Company', companySignupBody: 'Enter your company details to start posting jobs.', companyName: 'Company name', industry: 'Industry', createCompany: 'Create company account', welcomeCompany: 'Welcome, {co}',
       createProfile: 'Create profile', editProfile: 'Edit profile', stepOf: 'Step {n} of {total}', progress: 'Sign-up progress', stepBio: 'Personal details', stepEduExp: 'Education & Experience', stepSkills: 'Skills', stepCerts: 'Certificates',
       saveFinish: 'Save & Finish', saveChanges: 'Save changes', backToProfile: 'Back to profile',
       uploadPhoto: 'Upload photo', changePhoto: 'Change photo', photoHint: 'JPG or PNG, max 5 MB.', fullName: 'Full name', birthDate: 'Date of birth', gender: 'Gender',
@@ -602,7 +321,7 @@
       shareProfile: 'Share Profile', linkCopied: 'Profile link copied', copyManually: 'Copy this link:', previewAsCompany: 'View as a company',
       privacy: 'Privacy', privacyHint: 'Choose what companies can see.', showPhoneToCompanies: 'Show phone to companies', showCertsToCompanies: 'Show certificates to companies', privacySaved: 'Privacy settings saved',
       myApplications: 'My applications', noApplications: 'No applications yet.', signOut: 'Sign out', signedOut: 'You are signed out', signedInAs: 'Signed in as {name}',
-      profileNotFound: 'Profile not found', profileNotFoundBody: 'Loker Dunia data is stored on its owner\'s device, so this profile can only be opened there.', previewNotice: 'This is how companies see your profile.',
+      profileNotFound: 'Profile not found', profileNotFoundBody: 'This profile does not exist or was removed.', previewNotice: 'This is how companies see your profile.',
       signInToApply: 'Sign in as a Job Seeker to apply', profileToApply: 'Complete your profile to apply', autoFilled: 'Filled in from your profile',
       attachCerts: 'Attach certificates', certsPrivateWarning: 'Your certificates are hidden from companies. Change this in Privacy so attachments are visible.', noCertsToAttach: 'No certificates in your profile yet.',
       shortMessage: 'Short message', messagePh: 'Why are you a good fit for this role?', sendApplication: 'Send Application', sending: 'Sending', applyTo: 'Apply: {title}', applySuccess: 'Application sent to {co}',
@@ -620,67 +339,25 @@
       model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
       per_month: '/mo', per_year: '/yr', per_hour: '/hr',
       cat_it: 'IT', cat_health: 'Healthcare', cat_education: 'Education', cat_finance: 'Finance', cat_engineering: 'Engineering', cat_creative: 'Creative', cat_marketing: 'Marketing', cat_sales: 'Sales & Service', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agriculture',
-      pageNotFound: 'Page not found', pageNotFoundBody: 'This link does not exist.', storageFull: 'Device storage is full. Changes are kept only until the page closes.',
+      pageNotFound: 'Page not found', pageNotFoundBody: 'This link does not exist.',
     },
   };
 
   /* ==========================================================================
-     State. Organised as the tables a backend would hold:
-     users, companies, profiles, skills, certificates, jobs, applications,
-     bookmarks. `api` below is the only code that reads or writes it, so it
-     can be swapped for fetch() calls later.
+     State: a client-side cache of what the server returned. The server
+     (lib/routes.js, Postgres) owns every record; `api` below is the only code
+     that talks to it, and it keeps this cache in step after each write.
      ========================================================================== */
-  const SEED_VERSION = 1;
-  const STORE_KEY = 'lokerdunia.store';
   const PREF_KEY = 'lokerdunia.prefs';
   const DAY = 86400000;
-
-  function parseSkillList(s) {
-    return (s || '').split('|').filter(Boolean).map(x => { const [name, lv] = x.split(':'); return { name, level: Number(lv) || 1 }; });
-  }
-  function seedDb() {
-    const now = Date.now();
-    const db = { users: [], companies: SEED_COMPANIES.map(c => ({ ...c })), profiles: [], skills: [], certificates: [], jobs: [], applications: [], bookmarks: {} };
-    db.jobs = SEED_JOBS.map(j => ({
-      id: j.id, companyId: j.co, title: j.title, category: j.cat, country: j.c, city: j.city,
-      currency: j.cur, salaryMin: j.min, salaryMax: j.max, period: j.per, type: j.type, model: j.model,
-      remoteWorldwide: !!j.rw, visaSponsor: !!j.visa, relocation: !!j.relo,
-      postedAt: new Date(now - j.days * DAY).toISOString(),
-      required: parseSkillList(j.req), nice: parseSkillList(j.nice), minExp: j.exp, education: j.edu,
-      languages: j.langs.split('|').map(x => { const [code, level] = x.split(':'); return { code, level }; }),
-      description: j.desc, qualifications: j.quals, benefits: j.ben, visaNote: '', timezone: j.tz || COUNTRY_TZ[j.c] || '',
-    }));
-    SEED_PROFILES.forEach(p => {
-      db.profiles.push({ id: p.id, demo: true, ...p.bio,
-        education: p.education.map(e => ({ id: uid('e'), ...e })),
-        experience: p.experience.map(e => ({ id: uid('x'), ...e })),
-        languages: p.languages.map(([code, level]) => ({ id: uid('l'), code, level })),
-        privacy: { ...p.privacy } });
-      p.skills.forEach(([name, level, years]) => db.skills.push({ id: uid('s'), profileId: p.id, name, level, years }));
-      p.certs.forEach((c, i) => db.certificates.push({ id: p.id + 'c' + i, profileId: p.id, ...c,
-        file: { dataUrl: certPreview(c.name, c.issuer, p.bio.fullName), type: 'image/svg+xml', name: c.name + '.png', size: 0 } }));
-    });
-    SEED_APPLICATIONS.forEach(([id, jobId, profileId, status, daysAgo, message]) => {
-      const certIds = db.certificates.filter(c => c.profileId === profileId).map(c => c.id);
-      db.applications.push({ id, jobId, profileId, status, message, certIds, createdAt: new Date(now - daysAgo * DAY).toISOString() });
-    });
-    db.users.push({ id: 'u_demo_seeker', role: 'seeker', hrUser: null, profileId: 'p1', demo: true });
-    db.users.push({ id: 'u_demo_company', role: 'company', hrUser: null, companyId: 'nusantara', demo: true });
-    return db;
-  }
+  const db = { companies: [], profiles: [], skills: [], certificates: [], jobs: [], applications: [], savedJobIds: [] };
+  // { userId, username, role, activeCompanyId, profileId, ownedCompanyIds, demoCompanyIds }
+  let me = null;
+  let loadState = 'loading';
 
   function readJson(key) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
-  const stored = readJson(STORE_KEY);
-  let db = stored && stored.v === SEED_VERSION ? stored.db : seedDb();
-  let session = stored && stored.v === SEED_VERSION ? (stored.session || { userId: null }) : { userId: null };
   const prefs = Object.assign({ lang: 'id', cur: 'local' }, readJson(PREF_KEY) || {});
   let lang = prefs.lang === 'en' ? 'en' : 'id';
-  let storageWarned = false;
-
-  function persist() {
-    try { localStorage.setItem(STORE_KEY, JSON.stringify({ v: SEED_VERSION, db, session })); }
-    catch (e) { if (!storageWarned) { storageWarned = true; toast(t('storageFull')); } }
-  }
   function savePrefs() { try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch (e) {} }
 
   // Homeroom identity (display only; the server already verified the token).
@@ -746,23 +423,26 @@
   function today() { return new Date().toISOString().slice(0, 10); }
 
   /* ---------- lookups ---------- */
-  const currentUser = () => db.users.find(u => u.id === session.userId) || null;
-  const role = () => (currentUser() || {}).role || 'guest';
-  const myProfile = () => { const u = currentUser(); return u && u.profileId ? getProfile(u.profileId) : null; };
-  const myCompany = () => { const u = currentUser(); return u && u.companyId ? db.companies.find(c => c.id === u.companyId) : null; };
+  const currentUser = () => (me && me.role ? me : null);
+  const role = () => (me && me.role) || 'guest';
   const getProfile = id => db.profiles.find(p => p.id === id) || null;
+  const myProfile = () => (me && me.profileId ? getProfile(me.profileId) : null);
+  const myCompany = () => (me && me.role === 'company' && me.activeCompanyId ? db.companies.find(c => c.id === me.activeCompanyId) || null : null);
   const getJob = id => db.jobs.find(j => j.id === id) || null;
   const companyOf = j => db.companies.find(c => c.id === j.companyId) || { name: '?', id: '' };
   const skillsOf = pid => db.skills.filter(s => s.profileId === pid);
   const certsOf = pid => db.certificates.filter(c => c.profileId === pid);
+  // Hidden certificates are not sent at all, so counts come from the server.
+  const certCount = p => (p.certCount != null ? p.certCount : certsOf(p.id).length);
   const jobSkills = j => j.required.concat(j.nice).map(s => s.name);
-  const bookmarkKey = () => session.userId || 'guest';
-  const isSaved = id => (db.bookmarks[bookmarkKey()] || []).includes(id);
+  const isSaved = id => db.savedJobIds.includes(id);
 
   function certExpired(c) { return !!c.expiryDate && c.expiryDate < today(); }
   // certified: a valid certificate proves it; expired: only expired ones do; none.
   function skillProof(pid, name) {
     const n = name.toLowerCase();
+    const held = skillsOf(pid).find(s => s.name.toLowerCase() === n);
+    if (held && held.proof) return held.proof;
     const cs = certsOf(pid).filter(c => (c.skills || []).some(s => s.toLowerCase() === n));
     if (!cs.length) return 'none';
     return cs.some(c => !certExpired(c)) ? 'certified' : 'expired';
@@ -811,30 +491,113 @@
       ['experience', 15, (p.experience || []).length > 0],
       ['skills', 15, skillsOf(p.id).length >= 3],
       ['languages', 5, (p.languages || []).length > 0],
-      ['certs', 10, certsOf(p.id).length > 0],
+      ['certs', 10, certCount(p) > 0],
     ];
     const pct = items.reduce((s, [, w, ok]) => s + (ok ? w : 0), 0);
     return { pct, missing: items.filter(i => !i[2]).map(i => i[0]) };
   }
 
-  /* ---------- api: the swap-for-fetch boundary ---------- */
-  const LATENCY = 280;
+  /* ---------- api: the only code that talks to the server ---------- */
+  async function request(method, path, body) {
+    const headers = { 'content-type': 'application/json' };
+    if (TOKEN) headers['x-usernode-token'] = TOKEN;
+    const res = await fetch('/api' + path, { method, headers, body: body === undefined ? undefined : JSON.stringify(body) });
+    let data = null;
+    try { data = await res.json(); } catch (e) {}
+    if (!res.ok) { const err = new Error((data && data.error) || 'http_' + res.status); err.status = res.status; err.code = data && data.error; throw err; }
+    return data;
+  }
+  function mergeProfile(p) {
+    const { skills, certificates, ...rest } = p;
+    db.profiles = db.profiles.filter(x => x.id !== p.id).concat(rest);
+    db.skills = db.skills.filter(x => x.profileId !== p.id).concat(skills);
+    db.certificates = db.certificates.filter(x => x.profileId !== p.id).concat(certificates);
+  }
   const api = {
-    async searchJobs(f) { await sleep(LATENCY); return filterJobs(f); },
-    async getJob(id) { await sleep(LATENCY); return getJob(id); },
-    async apply(jobId, profileId, certIds, message) {
-      await sleep(500);
-      const a = { id: uid('a'), jobId, profileId, certIds, message, status: 'new', createdAt: new Date().toISOString() };
-      db.applications.push(a); persist(); return a;
+    async bootstrap() {
+      const d = await request('GET', '/bootstrap');
+      me = d.me;
+      db.companies = d.companies; db.jobs = d.jobs; db.savedJobIds = d.savedJobIds;
+      db.applications = d.applications;
+      db.profiles = []; db.skills = []; db.certificates = [];
+      if (d.profile) mergeProfile(d.profile);
     },
-    async createJob(job) { await sleep(400); db.jobs.unshift(job); persist(); return job; },
-    async setStatus(appId, status) { const a = db.applications.find(x => x.id === appId); if (a) { a.status = status; persist(); } return a; },
-    toggleBookmark(jobId) {
-      const k = bookmarkKey(); const list = db.bookmarks[k] = db.bookmarks[k] || [];
-      const i = list.indexOf(jobId); if (i >= 0) list.splice(i, 1); else list.unshift(jobId);
-      persist(); return i < 0;
+    async searchJobs(f) { await sleep(150); return filterJobs(f); },
+    async getJob(id) { await sleep(150); return getJob(id); },
+    async setRole(role, companyId) {
+      const d = await request('POST', '/me/role', { role, companyId });
+      me.role = d.role; me.activeCompanyId = d.activeCompanyId;
+    },
+    async createCompany(body) {
+      const { company } = await request('POST', '/companies', body);
+      db.companies.push(company); me.ownedCompanyIds.push(company.id);
+      me.role = 'company'; me.activeCompanyId = company.id;
+      return company;
+    },
+    async saveProfile(payload) {
+      const { profile } = await request('PUT', '/profile', payload);
+      mergeProfile(profile); me.profileId = profile.id; me.role = 'seeker'; me.activeCompanyId = null;
+      return profile;
+    },
+    async setPrivacy(privacy) {
+      const d = await request('PUT', '/profile/privacy', privacy);
+      const p = myProfile(); if (p) p.privacy = d.privacy;
+    },
+    async loadProfile(id) {
+      const { profile } = await request('GET', '/profiles/' + encodeURIComponent(id));
+      if (!(me && me.profileId === id)) mergeProfile(profile);
+      return profile;
+    },
+    async apply(jobId, certIds, message) {
+      const { application } = await request('POST', '/jobs/' + encodeURIComponent(jobId) + '/apply', { certIds, message });
+      db.applications.unshift(application); return application;
+    },
+    async createJob(job) { const d = await request('POST', '/jobs', job); db.jobs.unshift(d.job); return d.job; },
+    // Every application to one company's jobs, from any applicant's device.
+    async loadCompanyApplications(companyId) {
+      const d = await request('GET', '/companies/' + encodeURIComponent(companyId) + '/applications');
+      const ids = new Set(d.applications.map(a => a.id));
+      db.applications = db.applications.filter(a => !ids.has(a.id)).concat(d.applications);
+      d.profiles.forEach(p => { if (!(me && me.profileId === p.id)) mergeProfile(p); });
+    },
+    async setStatus(appId, status) {
+      const { application } = await request('PATCH', '/applications/' + encodeURIComponent(appId), { status });
+      const a = db.applications.find(x => x.id === appId); if (a) a.status = application.status;
+      return application;
+    },
+    async toggleBookmark(jobId) {
+      const was = isSaved(jobId);
+      db.savedJobIds = was ? db.savedJobIds.filter(x => x !== jobId) : [jobId].concat(db.savedJobIds);
+      try { await request(was ? 'DELETE' : 'PUT', '/saved/' + encodeURIComponent(jobId)); }
+      catch (e) { db.savedJobIds = was ? [jobId].concat(db.savedJobIds) : db.savedJobIds.filter(x => x !== jobId); throw e; }
+      return !was;
     },
   };
+
+  // Files go to the platform's storage through the bridge; only the returned
+  // URL is saved. Platform storage takes images only, and it is missing when
+  // the app runs outside Homeroom, so callers get null there and say so.
+  function dataUrlToFile(dataUrl, name) {
+    const [head, b64] = dataUrl.split(',');
+    const type = head.slice(5, head.indexOf(';'));
+    const bin = atob(b64); const arr = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+    const ext = type === 'image/png' ? '.png' : type === 'image/webp' ? '.webp' : '.jpg';
+    return new File([arr], (name || 'file').replace(/\.[^.]+$/, '') + ext, { type });
+  }
+  async function uploadImage(dataUrl, name, visibility) {
+    if (!(window.usernode && typeof usernode.uploadFile === 'function')) return null;
+    try { return await usernode.uploadFile(dataUrlToFile(dataUrl, name), { visibility }); }
+    catch (e) { console.warn('upload unavailable: ' + (e && e.message)); return null; }
+  }
+  // Private platform files need the viewer's token on the image request.
+  function fileSrc(file) {
+    if (!file) return '';
+    if (file.dataUrl) return file.dataUrl;
+    if (!file.url) return '';
+    if (TOKEN && file.url.includes('/app-files/')) return file.url + (file.url.includes('?') ? '&' : '?') + 'token=' + encodeURIComponent(TOKEN);
+    return file.url;
+  }
 
   /* ---------- search ---------- */
   const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false });
@@ -1182,7 +945,8 @@
       }
       html += '</section>';
     }
-    html += '<section>' + sectionHead(t('latestJobs'), '#/jobs', t('seeAll')) + jobGrid(latest, { showMatch: r === 'seeker', three: true }) + '</section>';
+    html += '<section>' + sectionHead(t('latestJobs'), latest.length ? '#/jobs' : '', t('seeAll')) + (latest.length ? jobGrid(latest, { showMatch: r === 'seeker', three: true })
+      : emptyState(t('noJobsYet'), t('noJobsYetBody'), r === 'company' ? '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>' : '')) + '</section>';
     html += '<section class="grid gap-3 sm:grid-cols-2">' +
       '<a href="#/skills" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('trending') + '</span><span class="flex-1"><span class="block font-medium">' + t('topSkills') + '</span><span class="block text-sm ' + C.muted + '">' + t('topSkillsSub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
       '<a href="#/countries" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('byCountry') + '</span><span class="block text-sm ' + C.muted + '">' + t('byCountrySub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>';
@@ -1339,7 +1103,7 @@
   }
 
   function viewSaved() {
-    const ids = db.bookmarks[bookmarkKey()] || [];
+    const ids = db.savedJobIds;
     const jobs = ids.map(getJob).filter(Boolean);
     return '<h1 class="' + C.h1 + ' mb-1">' + t('savedTitle') + '</h1><p class="text-sm ' + C.muted + ' mb-4">' + t('nSaved', { n: jobs.length }) + '</p>' +
       (jobs.length ? jobGrid(jobs, { showMatch: role() === 'seeker', three: true }) : emptyState(t('noSaved'), t('noSavedBody'), '<a href="#/jobs" class="' + C.btnPrimary + '">' + t('findJobs') + '</a>'));
@@ -1400,13 +1164,18 @@
   // "Daftar/Masuk" is choosing a role and profile, never a password.
   let authTab = 'register';
   function viewAuth() {
-    const mine = db.users.filter(u => !u.demo && u.hrUser === HR_USER);
-    const demos = db.users.filter(u => u.demo);
+    const tabQ = route().query.get('tab');
+    if (tabQ === 'login' || tabQ === 'register') authTab = tabQ;
+    // Accounts are the Homeroom user's own seeker profile and the companies
+    // they own; demo companies exist only in staging previews.
+    const own = me ? db.companies.filter(c => me.ownedCompanyIds.includes(c.id)) : [];
+    const mine = (me && me.profileId ? [{ kind: 'seeker', id: me.profileId }] : []).concat(own.map(c => ({ kind: 'company', id: c.id })));
+    const demos = me ? db.companies.filter(c => me.demoCompanyIds.includes(c.id)).map(c => ({ kind: 'company', id: c.id, demo: true })) : [];
     const acctRow = u => {
-      const p = u.profileId && getProfile(u.profileId); const co = u.companyId && db.companies.find(c => c.id === u.companyId);
+      const p = u.kind === 'seeker' && getProfile(u.id); const co = u.kind === 'company' && db.companies.find(c => c.id === u.id);
       const name = (p && p.fullName) || (co && co.name) || t('unfinishedProfile');
-      return '<li><button type="button" data-action="sign-in" data-id="' + u.id + '" class="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
-        avatar(p && p.photo, name, 'w-10 h-10 text-sm') + '<span class="flex-1 min-w-0"><span class="block font-medium truncate">' + esc(name) + '</span><span class="block text-xs ' + C.muted + '">' + t(u.role === 'seeker' ? 'roleSeeker' : 'roleCompany') + (u.demo ? ' · ' + t('sampleAccount') : '') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</button></li>';
+      return '<li><button type="button" data-action="sign-in" data-kind="' + u.kind + '" data-id="' + esc(u.id) + '" class=""w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
+        avatar(p && p.photo, name, 'w-10 h-10 text-sm') + '<span class="flex-1 min-w-0"><span class="block font-medium truncate">' + esc(name) + '</span><span class="block text-xs ' + C.muted + '">' + t(u.kind === 'seeker' ? 'roleSeeker' : 'roleCompany') + (u.demo ? ' · ' + t('sampleAccount') : '') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</button></li>';
     };
     const tab = (k, label) => '<button type="button" role="tab" aria-selected="' + (authTab === k) + '" data-action="auth-tab" data-tab="' + k + '" class="flex-1 rounded-lg px-3 py-2 text-sm font-medium ' + (authTab === k ? 'bg-white dark:bg-slate-900 shadow-sm text-blue-700 dark:text-blue-300' : 'text-slate-600 dark:text-slate-300') + '">' + label + '</button>';
     const roleCard = (r, ic, title, body) => '<button type="button" data-action="choose-role" data-role="' + r + '" class="' + C.card + ' p-4 flex items-start gap-3 text-left hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' +
@@ -1419,7 +1188,7 @@
         : '<div class="mt-4 space-y-4">' +
           (mine.length ? '<div><h2 class="text-sm font-medium ' + C.muted + ' mb-2">' + t('yourAccounts') + '</h2><ul class="' + C.card + ' ' + C.divider + ' overflow-hidden">' + mine.map(acctRow).join('') + '</ul></div>'
             : '<p class="text-sm ' + C.muted + '">' + t('noAccountsYet') + '</p>') +
-          '<div><h2 class="text-sm font-medium ' + C.muted + ' mb-2">' + t('sampleAccounts') + '</h2><ul class="' + C.card + ' ' + C.divider + ' overflow-hidden">' + demos.map(acctRow).join('') + '</ul></div></div>') +
+          (demos.length ? '<div><h2 class="text-sm font-medium ' + C.muted + ' mb-2">' + t('sampleAccounts') + '</h2><ul class="' + C.card + ' ' + C.divider + ' overflow-hidden">' + demos.map(acctRow).join('') + '</ul></div>' : '') + '</div>') +
       '</div>';
   }
   function viewCompanySignup() {
@@ -1429,8 +1198,7 @@
     return '<div class="max-w-lg mx-auto">' + backLink('#/auth', t('back')) + '<h1 class="' + C.h1 + '">' + t('companySignupTitle') + '</h1>' +
       '<p class="mt-1 text-sm ' + C.muted + '">' + t('companySignupBody') + '</p>' +
       '<form data-form="company-signup" class="mt-4 ' + C.section + ' space-y-4" novalidate>' +
-        '<div><label class="' + C.label + '" for="cs-name">' + t('companyName') + '</label><input id="cs-name" list="cs-names" data-cd="name" value="' + esc(d.name) + '" class="' + inp('name') + '"><datalist id="cs-names">' + db.companies.map(c => '<option value="' + esc(c.name) + '">').join('') + '</datalist>' + err('name') +
-        '<p class="mt-1 text-xs ' + C.muted + '">' + t('companyClaimHint') + '</p></div>' +
+        '<div><label class="' + C.label + '" for="cs-name">' + t('companyName') + '</label><input id="cs-name" data-cd="name" value="' + esc(d.name) + '" class="' + inp('name') + '">' + err('name') + '</div>' +
         '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="cd-country" class="' + inp('country') + ' flex items-center gap-2 text-left"><span aria-hidden="true">' + flag(d.country) + '</span><span class="flex-1">' + esc(d.country ? countryName(d.country) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + err('country') + '</div>' +
         '<div><label class="' + C.label + '" for="cs-city">' + t('city') + '</label><input id="cs-city" data-cd="city" value="' + esc(d.city) + '" class="' + inp('city') + '">' + err('city') + '</div>' +
         '<div><label class="' + C.label + '" for="cs-ind">' + t('industry') + '</label><select id="cs-ind" data-cd="industry" class="' + C.input + '">' + CATEGORIES.map(c => '<option value="' + c + '"' + (d.industry === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div>' +
@@ -1485,7 +1253,7 @@
     return '<div class="space-y-4">' +
       '<div class="flex items-center gap-4">' + avatar(b.photo, b.fullName || '?', 'w-20 h-20 text-xl') +
         '<div><label class="' + C.btnSecondary + ' cursor-pointer focus-within:ring-2 focus-within:ring-blue-500">' + icon('upload', 'w-4 h-4') + t(b.photo ? 'changePhoto' : 'uploadPhoto') + '<input type="file" accept="image/jpeg,image/png,image/webp" data-file="photo" class="sr-only"></label>' +
-        '<p class="mt-1 text-xs ' + C.muted + '">' + t('photoHint') + '</p>' + (draft.errors['bio.photo'] ? '<p class="' + C.err + '" data-err>' + esc(draft.errors['bio.photo']) + '</p>' : '') + '</div></div>' +
+        '<p class="mt-1 text-xs ' + C.muted + '">' + t(draft.uploading === 'photo' ? 'uploading' : 'photoHint') + '</p>' + (draft.errors['bio.photo'] ? '<p class="' + C.err + '" data-err>' + esc(draft.errors['bio.photo']) + '</p>' : '') + '</div></div>' +
       field('bio.fullName', t('fullName'), { attrs: ' autocomplete="name"' }) +
       '<div class="grid gap-4 sm:grid-cols-2">' + field('bio.birthDate', t('birthDate'), { type: 'date', attrs: ' max="' + today() + '"' }) +
         field('bio.gender', t('gender'), { type: 'select', blank: t('choose'), options: [['male', t('gender_male')], ['female', t('gender_female')], ['other', t('gender_other')], ['na', t('gender_na')]] }) + '</div>' +
@@ -1543,7 +1311,9 @@
   function filePreview(file, cls) {
     if (!file) return '';
     if (file.type === 'application/pdf') return '<div class="' + cls + ' flex flex-col items-center justify-center gap-1 bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300 rounded-xl">' + icon('file', 'w-8 h-8') + '<span class="text-xs font-semibold">PDF</span></div>';
-    return '<img src="' + esc(file.dataUrl) + '" alt="" class="' + cls + ' object-cover rounded-xl bg-slate-100 dark:bg-slate-800">';
+    const src = fileSrc(file);
+    if (!src) return '<div class="' + cls + ' flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-400 rounded-xl">' + icon('file', 'w-7 h-7') + '</div>';
+    return '<img src="' + esc(src) + '" alt="" class="' + cls + ' object-cover rounded-xl bg-slate-100 dark:bg-slate-800">';
   }
   function certCard(c, opts) {
     opts = opts || {};
@@ -1565,7 +1335,8 @@
       '<section class="rounded-xl border border-slate-200 dark:border-slate-800 p-3 space-y-3"><h3 class="font-semibold">' + t('addCert') + '</h3>' +
         '<div><span class="' + C.label + '">' + t('certFile') + '</span><div class="flex items-center gap-3">' + (f.file ? filePreview(f.file, 'w-24 h-16') : '') +
         '<label class="' + C.btnSecondary + ' cursor-pointer focus-within:ring-2 focus-within:ring-blue-500">' + icon('upload', 'w-4 h-4') + t(f.file ? 'changeFile' : 'chooseFile') + '<input type="file" accept="image/jpeg,image/png,application/pdf" data-file="cert" class="sr-only"></label></div>' +
-        (f.file ? '<p class="mt-1 text-xs ' + C.muted + '">' + esc(f.file.name) + ' · ' + (f.file.size / 1024 / 1024).toFixed(2) + ' MB</p>' : '<p class="mt-1 text-xs ' + C.muted + '">' + t('certFileHint') + '</p>') +
+        (f.file ? '<p class="mt-1 text-xs ' + C.muted + '">' + esc(f.file.name) + ' · ' + (f.file.size / 1024 / 1024).toFixed(2) + ' MB' + (f.file.uploading ? ' · ' + t('uploading') : '') + '</p>' +
+          (f.file.localOnly ? '<p class="mt-1 text-xs text-amber-700 dark:text-amber-300" data-testid="file-not-stored">' + t(f.file.type === 'application/pdf' ? 'pdfNotStored' : 'uploadUnavailable') + '</p>' : '') : '<p class="mt-1 text-xs ' + C.muted + '">' + t('certFileHint') + '</p>') +
         (e['certForm.file'] ? '<p class="' + C.err + '" data-err>' + esc(e['certForm.file']) + '</p>' : '') + '</div>' +
         field('certForm.name', t('certName'), { ph: 'AWS Certified Cloud Practitioner' }) + field('certForm.issuer', t('issuer'), { ph: 'Amazon Web Services' }) +
         '<div class="grid gap-3 grid-cols-2">' + field('certForm.issueDate', t('issueDate'), { type: 'date', attrs: ' max="' + today() + '"' }) + field('certForm.expiryDate', t('expiryDate'), { type: 'date', optional: true }) + '</div>' +
@@ -1646,20 +1417,25 @@
     (ctl || el).scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     if (ctl) ctl.focus({ preventScroll: true });
   }
-  function finishRegister() {
-    const u = currentUser();
+  async function finishRegister(btn) {
     const b = draft.bio;
-    let p = draft.profileId && getProfile(draft.profileId);
-    if (!p) { p = { id: uid('p'), privacy: { showPhone: true, showCerts: true } }; db.profiles.push(p); u.profileId = p.id; }
-    Object.assign(p, { ...b, fullName: b.fullName.trim(), email: b.email.trim(), phone: b.phone.replace(/\s+/g, ''), summary: b.summary.trim(),
-      education: draft.education, experience: draft.experience, languages: draft.languages });
-    db.skills = db.skills.filter(s => s.profileId !== p.id).concat(draft.skills.map(s => ({ id: s.id || uid('s'), profileId: p.id, name: s.name, level: Number(s.level), years: Number(s.years) })));
-    db.certificates = db.certificates.filter(c => c.profileId !== p.id).concat(draft.certificates.map(c => ({ ...c, profileId: p.id })));
+    const fileOut = f => (f ? { url: f.url || '', id: f.id || '', type: f.type || '', name: f.name || '', size: f.size || 0 } : null);
+    const payload = {
+      bio: { ...b, fullName: b.fullName.trim(), email: b.email.trim(), phone: b.phone.replace(/\s+/g, ''), summary: b.summary.trim() },
+      education: draft.education, experience: draft.experience, languages: draft.languages,
+      skills: draft.skills.map(s => ({ id: s.id, name: s.name, level: Number(s.level), years: Number(s.years) })),
+      certificates: draft.certificates.map(c => ({ id: c.id, name: c.name, issuer: c.issuer, issueDate: c.issueDate, expiryDate: c.expiryDate, verify: c.verify, skills: c.skills, file: fileOut(c.file) })),
+    };
+    const label = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = t('saving'); }
+    try { await api.saveProfile(payload); }
+    catch (e) { if (btn) { btn.disabled = false; btn.textContent = label; } toast(t('saveFailed')); return; }
     const wasEdit = draft.mode === 'edit';
-    draft = null; persist();
+    draft = null;
     toast(t(wasEdit ? 'profileSaved' : 'profileCreated'));
     go('#/profile');
   }
+
 
   // Images are downscaled before they are kept so the in-browser store stays small.
   function readFile(file, maxDim) {
@@ -1698,7 +1474,7 @@
     const latest = (p.experience || []).slice().sort((a, b) => (b.current - a.current) || (b.start || '').localeCompare(a.start || ''))[0];
     const age = p.birthDate ? Math.floor((Date.now() - new Date(p.birthDate)) / (365.25 * DAY)) : null;
     let html = '<section class="' + C.section + '"><div class="flex flex-col sm:flex-row sm:items-start gap-4">' + avatar(p.photo, p.fullName, 'w-24 h-24 text-2xl') +
-      '<div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2"><div><h1 class="' + C.h1 + '">' + esc(p.fullName) + '</h1>' +
+      '<div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2"><div><h1 class="' + C.h1 + '">' + esc(p.fullName) + '</h1>' + (p.isDemo ? '<span class="' + C.chip + ' mt-1">' + t('demoData') + '</span>' : '') +
       (latest ? '<p class="' + C.muted + '">' + esc(latest.position) + ' · ' + esc(latest.company) + '</p>' : '') + '</div>' + editBtn(1) + '</div>' +
       '<dl class="mt-3 grid gap-x-6 gap-y-1.5 sm:grid-cols-2 text-sm">' +
         '<div class="flex gap-2"><dt class="' + C.muted + '">' + t('residence') + '</dt><dd>' + flag(p.country) + ' ' + esc(p.city) + ', ' + esc(countryName(p.country)) + '</dd></div>' +
@@ -1718,7 +1494,7 @@
     html += '<section class="' + C.section + '">' + head(t('education'), 2) + ((p.education || []).length ? '<ul class="space-y-3">' + p.education.slice().sort((a, b) => String(b.year).localeCompare(String(a.year))).map(e =>
       '<li><p class="font-medium text-sm">' + esc(e.institution) + '</p><p class="text-sm">' + esc(t('edu_' + e.level)) + ', ' + esc(e.major) + '</p><p class="text-xs ' + C.muted + '">' + esc(e.year) + '</p></li>').join('') + '</ul>' : '') + '</section>';
     if (!opts.hideCerts) {
-      html += '<section class="' + C.section + '" data-testid="cv-certs">' + head(t('certificates') + ' (' + certs.length + ')', 4) +
+      html += '<section class="' + C.section + '" data-testid="cv-certs">' + head(t('certificates') + ' (' + certCount(p) + ')', 4) +
         (showCerts ? (certs.length ? '<div class="grid gap-4 sm:grid-cols-2">' + certs.map(c => certCard(c) + (c.verify ? '<p class="-mt-2 ml-24 text-xs ' + C.muted + ' break-all">' + t('verification') + ': ' + (/^https?:\/\//.test(c.verify) ? '<a href="' + esc(c.verify) + '" target="_blank" rel="noopener" class="text-blue-700 dark:text-blue-300 hover:underline">' + esc(c.verify) + '</a>' : esc(c.verify)) + '</p>' : '')).join('') + '</div>' : '<p class="text-sm ' + C.muted + '">' + t('noCertsYet') + '</p>')
           : '<p class="text-sm ' + C.muted + '" data-testid="certs-hidden">' + t('certsHiddenByCandidate') + '</p>') + '</section>';
     }
@@ -1854,11 +1630,14 @@
     if (Object.keys(d.errors).length) { render(); focusFirstError(); return; }
     btn.disabled = true; btn.textContent = t('publishing');
     const lines = s => s.split('\n').map(x => x.trim()).filter(Boolean);
-    const job = await api.createJob({ id: uid('j'), companyId: myCompany().id, title: d.title.trim(), category: d.category, country: d.country, city: d.city.trim(),
+    let job;
+    try {
+      job = await api.createJob({ companyId: myCompany().id, title: d.title.trim(), category: d.category, country: d.country, city: d.city.trim(),
       currency: d.currency, salaryMin: Number(d.salaryMin), salaryMax: Number(d.salaryMax), period: d.period, type: d.type, model: d.model,
-      remoteWorldwide: d.remoteWorldwide && d.model === 'remote', visaSponsor: d.visaSponsor, relocation: d.relocation, postedAt: new Date().toISOString(),
+      remoteWorldwide: d.remoteWorldwide && d.model === 'remote', visaSponsor: d.visaSponsor, relocation: d.relocation,
       required: d.required.slice(), nice: d.nice.slice(), minExp: Number(d.minExp) || 0, education: d.education, languages: d.languages.slice(),
       description: d.description.trim(), qualifications: lines(d.qualifications), benefits: lines(d.benefits), visaNote: d.visaNote.trim(), timezone: d.timezone.trim() });
+    } catch (err) { btn.disabled = false; btn.textContent = t('publishJob'); toast(t('saveFailed')); return; }
     postDraft = null;
     toast(t('jobPublished'));
     go('#/job/' + job.id);
@@ -1894,8 +1673,8 @@
       const has = sk ? skillsOf(p.id).find(s => s.name.toLowerCase() === sk) : null;
       if (sk && !has) return false;
       if (f.level && (sk ? has.level < f.level : !skillsOf(p.id).some(s => s.level >= f.level))) return false;
-      if (f.cert === 'has' && !certs.length) return false;
-      if (f.cert === 'skill' && !(sk ? skillProof(p.id, f.skill) === 'certified' : certs.some(c => !certExpired(c)))) return false;
+      if (f.cert === 'has' && !certCount(p)) return false;
+      if (f.cert === 'skill' && !(sk ? skillProof(p.id, f.skill) === 'certified' : skillsOf(p.id).some(s => skillProof(p.id, s.name) === 'certified'))) return false;
       return true;
     }).sort((x, y) => y.m.pct - x.m.pct);
     return { rows, total };
@@ -1927,8 +1706,8 @@
     if (!rows.length) return emptyState(t('noApplicantsMatch'), t('noApplicantsMatchBody'), '<button type="button" data-action="reset-app-filters" class="' + C.btnPrimary + '">' + t('resetFilters') + '</button>');
     return '<ul class="' + C.card + ' ' + C.divider + ' overflow-hidden" data-testid="applicant-list">' + rows.map(({ a, p, m, certs, exp }) =>
       '<li><a href="#/applicant/' + a.id + '" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' + avatar(p.photo, p.fullName, 'w-12 h-12') +
-      '<span class="flex-1 min-w-0"><span class="block font-medium truncate">' + esc(p.fullName) + '</span><span class="block text-xs ' + C.muted + '">' + flag(p.country) + ' ' + esc(countryName(p.country)) + ' · ' + t('nYears', { n: fmtNum(exp) }) + ' · ' + esc(fmtDate(a.createdAt)) + '</span>' +
-      '<span class="mt-1 flex flex-wrap items-center gap-1.5">' + matchChip(m.pct) + '<span class="' + C.chip + '">' + icon('award', 'w-3 h-3') + t('nCerts', { n: certs.length }) + '</span></span></span>' +
+      '<span class="flex-1 min-w-0"><span class="block font-medium truncate">' + esc(p.fullName) + (p.isDemo ? ' <span class="' + C.chip + ' py-0.5 align-middle">' + t('demoData') + '</span>' : '') + '</span><span class="block text-xs ' + C.muted + '">' + flag(p.country) + ' ' + esc(countryName(p.country)) + ' · ' + t('nYears', { n: fmtNum(exp) }) + ' · ' + esc(fmtDate(a.createdAt)) + '</span>' +
+      '<span class="mt-1 flex flex-wrap items-center gap-1.5">' + matchChip(m.pct) + '<span class="' + C.chip + '">' + icon('award', 'w-3 h-3') + t('nCerts', { n: certCount(p) }) + '</span></span></span>' +
       '<span class="' + STATUS_CHIP[a.status] + ' shrink-0">' + t('status_' + a.status) + '</span></a></li>').join('') + '</ul>';
   }
   function viewApplicant(appId) {
@@ -1964,6 +1743,27 @@
     renderChrome();
     const view = $('#view');
     let html;
+    if (loadState !== 'ready') {
+      view.innerHTML = loadState === 'error'
+        ? '<div data-testid="load-error">' + emptyState(t('loadFailed'), t('loadFailedBody'), '<button type="button" data-action="retry-load" class="' + C.btnPrimary + '">' + t('retry') + '</button>') + '</div>'
+        : spinner();
+      return;
+    }
+    // Screens that show data other people write (applications, a shared
+    // profile, an applicant's status) refetch it each time they are opened.
+    const co = myCompany();
+    if (changed && co && (!a || a === 'dashboard' || a === 'applicant')) {
+      view.innerHTML = spinner();
+      try { await api.loadCompanyApplications(co.id); } catch (e) { toast(t('loadFailed')); }
+      if (seq !== renderSeq) return;
+    } else if (changed && a === 'p' && b && !(me && me.profileId === b)) {
+      view.innerHTML = spinner();
+      try { await api.loadProfile(b); } catch (e) { /* the view shows not-found */ }
+      if (seq !== renderSeq) return;
+    } else if (changed && a === 'profile' && role() === 'seeker') {
+      try { await api.bootstrap(); } catch (e) {}
+      if (seq !== renderSeq) return;
+    }
     if (a === 'job') {
       view.innerHTML = viewJobSkeleton();
       const j = await api.getJob(b);
@@ -2058,10 +1858,12 @@
     openModal('<div data-filter-host>' + filterForm() + '</div><button type="button" data-action="modal-close" class="' + C.btnPrimary + ' w-full mt-4">' + t('showResults') + '</button>', { title: t('filters'), onClose: refreshFilterHosts });
   }
   function openCertViewer(c) {
-    const f = c.file;
-    const body = f.type === 'application/pdf'
-      ? '<object data="' + esc(f.dataUrl) + '" type="application/pdf" class="w-full rounded-xl" style="height:65vh"><div class="text-center py-8">' + icon('file', 'w-10 h-10 mx-auto text-red-600') + '<p class="mt-2 text-sm">' + esc(f.name) + '</p><a href="' + esc(f.dataUrl) + '" download="' + esc(f.name) + '" class="mt-3 ' + C.btnPrimary + '">' + t('downloadPdf') + '</a></div></object>'
-      : '<img src="' + esc(f.dataUrl) + '" alt="' + esc(c.name) + '" class="w-full rounded-xl bg-slate-100 dark:bg-slate-800">';
+    const f = c.file || {};
+    const src = fileSrc(f);
+    const body = !src ? '<div class="text-center py-10 text-sm ' + C.muted + '">' + icon('file', 'w-10 h-10 mx-auto mb-2') + t('fileNotAvailable') + '</div>'
+      : f.type === 'application/pdf'
+      ? '<object data="' + esc(src) + '" type="application/pdf" class="w-full rounded-xl" style="height:65vh"><div class="text-center py-8">' + icon('file', 'w-10 h-10 mx-auto text-red-600') + '<p class="mt-2 text-sm">' + esc(f.name) + '</p><a href="' + esc(src) + '" download="' + esc(f.name) + '" class="mt-3 ' + C.btnPrimary + '">' + t('downloadPdf') + '</a></div></object>'
+      : '<img src="' + esc(src) + '" alt="' + esc(c.name) + '" class="w-full rounded-xl bg-slate-100 dark:bg-slate-800">';
     openModal(body + '<div class="mt-3 text-sm"><p class="font-medium">' + esc(c.name) + '</p><p class="' + C.muted + '">' + esc(c.issuer) + ' · ' + esc(fmtDate(c.issueDate)) + (c.expiryDate ? ' · ' + t('validUntil', { d: fmtDate(c.expiryDate) }) : '') + '</p>' +
       (certExpired(c) ? '<p class="mt-1 inline-flex items-center gap-1 text-xs font-medium text-amber-700 dark:text-amber-300">' + icon('alert', 'w-3.5 h-3.5') + t('certExpiredLong') + '</p>' : '') + '</div>', { title: t('certificate'), wide: true });
   }
@@ -2076,6 +1878,7 @@
     const inModal = !!el.closest('[data-modal-body]');
     switch (act) {
       case 'modal-close': closeModal(); break;
+      case 'retry-load': boot(); break;
       case 'quick-country':
         openCountryPicker(cc => { filters.country = cc; filters.city = ''; go('#/jobs'); }, { allowAll: true, showCounts: true, title: t('quickCountry') }); break;
       case 'toggle-lang': lang = lang === 'id' ? 'en' : 'id'; prefs.lang = lang; savePrefs(); render(); break;
@@ -2087,7 +1890,8 @@
       }
       case 'bookmark': {
         e.preventDefault();
-        const saved = api.toggleBookmark(el.dataset.id);
+        let saved;
+        try { saved = await api.toggleBookmark(el.dataset.id); } catch (err) { toast(t('saveFailed')); break; }
         toast(t(saved ? 'savedToast' : 'unsavedToast'));
         if (route().parts[0] === 'saved') render(); else setBookmarkButtons(el.dataset.id, saved);
         break;
@@ -2116,23 +1920,23 @@
         refreshFilterHosts(); refreshResults(); break;
       }
       case 'apply': openApply(el.dataset.id); break;
-      case 'auth-tab': authTab = el.dataset.tab; render(); break;
+      case 'auth-tab': authTab = el.dataset.tab; if (route().query.get('tab')) go('#/auth?tab=' + authTab); else render(); break;
       case 'choose-role':
         if (el.dataset.role === 'company') { companyDraft = { name: '', country: '', city: '', industry: 'it', errors: {} }; go('#/auth?company=1'); break; }
-        {
-          let u = db.users.find(x => !x.demo && x.role === 'seeker' && x.hrUser === HR_USER);
-          if (!u) { u = { id: uid('u'), role: 'seeker', hrUser: HR_USER, profileId: null }; db.users.push(u); }
-          session.userId = u.id; draft = null; persist();
-          go(u.profileId ? '#/profile' : '#/register');
-        }
+        try { await api.setRole('seeker'); } catch (err) { toast(t('saveFailed')); break; }
+        draft = null;
+        go(me.profileId ? '#/profile' : '#/register');
         break;
       case 'sign-in': {
-        const u = db.users.find(x => x.id === el.dataset.id); if (!u) break;
-        session.userId = u.id; draft = null; postDraft = null; persist();
-        toast(t('signedInAs', { name: (u.profileId && getProfile(u.profileId) || {}).fullName || (db.companies.find(c => c.id === u.companyId) || {}).name || '' }));
-        go(u.role === 'company' ? '#/dashboard' : (u.profileId ? '#/profile' : '#/register')); break;
+        const kind = el.dataset.kind;
+        try { await api.setRole(kind, kind === 'company' ? el.dataset.id : undefined); } catch (err) { toast(t('saveFailed')); break; }
+        draft = null; postDraft = null;
+        toast(t('signedInAs', { name: kind === 'seeker' ? (myProfile() || {}).fullName || '' : (myCompany() || {}).name || '' }));
+        go(kind === 'company' ? '#/dashboard' : (me.profileId ? '#/profile' : '#/register')); break;
       }
-      case 'sign-out': session.userId = null; draft = null; postDraft = null; ui.matchMode = false; persist(); toast(t('signedOut')); go('#/'); break;
+      case 'sign-out':
+        try { await api.setRole(null); } catch (err) { toast(t('saveFailed')); break; }
+        draft = null; postDraft = null; ui.matchMode = false; toast(t('signedOut')); go('#/'); break;
       case 'cd-country': openCountryPicker(cc => { companyDraft.country = cc; delete companyDraft.errors.country; render(); }); break;
       case 'draft-country':
         openCountryPicker(cc => {
@@ -2155,6 +1959,7 @@
       case 'goto-step': if (Number(el.dataset.step) < draft.step) { draft.step = Number(el.dataset.step); draft.errors = {}; render().then(() => window.scrollTo(0, 0)); } break;
       case 'step-back': draft.step = Math.max(1, draft.step - 1); draft.errors = {}; render().then(() => window.scrollTo(0, 0)); break;
       case 'add-cert': {
+        if (draft.uploading) { toast(t('uploading')); break; }
         const errs = validateCertForm();
         Object.keys(draft.errors).filter(k => k.startsWith('certForm.')).forEach(k => delete draft.errors[k]);
         if (Object.keys(errs).length) { Object.assign(draft.errors, errs); await render(); focusFirstError(); break; }
@@ -2182,7 +1987,9 @@
       case 'post-lang-remove': postDraft.languages.splice(Number(el.dataset.i), 1); render(); break;
       case 'app-status-tab': appFilters.status = el.dataset.status; render(); break;
       case 'reset-app-filters': Object.assign(appFilters, { skill: '', level: 0, cert: 'any', country: '', minExp: 0, status: '' }); render(); break;
-      case 'set-status': await api.setStatus(el.dataset.app, el.dataset.status); toast(t('statusUpdated', { s: t('status_' + el.dataset.status) })); render(); break;
+      case 'set-status':
+        try { await api.setStatus(el.dataset.app, el.dataset.status); } catch (err) { toast(t('saveFailed')); break; }
+        toast(t('statusUpdated', { s: t('status_' + el.dataset.status) })); render(); break;
     }
   });
 
@@ -2251,16 +2058,29 @@
       else {
         try {
           const dataUrl = await readFile(file, which === 'photo' ? 320 : 1600);
-          if (which === 'photo') draft.bio.photo = dataUrl;
-          else draft.certForm.file = { dataUrl, type: dataUrl.startsWith('data:application/pdf') ? 'application/pdf' : (dataUrl.slice(5, dataUrl.indexOf(';')) || file.type), name: file.name, size: file.size };
-        } catch (err) { draft.errors[errKey] = t('errFileRead'); }
+          const type = dataUrl.startsWith('data:application/pdf') ? 'application/pdf' : (dataUrl.slice(5, dataUrl.indexOf(';')) || file.type);
+          // Preview straight away from the local copy, then store the file.
+          if (which === 'cert') draft.certForm.file = { dataUrl, type, name: file.name, size: file.size, url: '', id: '', uploading: type !== 'application/pdf' };
+          draft.uploading = which; await render();
+          const stored = type === 'application/pdf' ? null : await uploadImage(dataUrl, file.name, which === 'photo' ? 'public' : 'private');
+          draft.uploading = null;
+          if (which === 'photo') {
+            if (stored) draft.bio.photo = stored.url; else draft.errors[errKey] = t('uploadUnavailable');
+          } else {
+            Object.assign(draft.certForm.file, { uploading: false, url: stored ? stored.url : '', id: stored ? stored.id : '', localOnly: !stored });
+            if (!stored) toast(t(type === 'application/pdf' ? 'pdfNotStored' : 'uploadUnavailable'));
+          }
+        } catch (err) { draft.uploading = null; draft.errors[errKey] = t('errFileRead'); }
       }
       await render(); if (draft.errors[errKey]) focusFirstError();
       return;
     }
     if (el.matches('[data-privacy]')) {
       const p = myProfile(); if (!p) return;
-      p.privacy[el.dataset.privacy] = el.checked; persist(); toast(t('privacySaved')); return;
+      const next = { ...p.privacy, [el.dataset.privacy]: el.checked };
+      try { await api.setPrivacy(next); toast(t('privacySaved')); }
+      catch (err) { el.checked = !el.checked; toast(t('saveFailed')); }
+      return;
     }
     if (el.matches('[data-cd]')) { companyDraft[el.dataset.cd] = el.value; return; }
     if (el.matches('select[data-post]') && postDraft) { postDraft[el.dataset.post] = el.value; return; }
@@ -2297,7 +2117,7 @@
         if (Object.keys(ce).length) { draft.errors = ce; await render(); focusFirstError(); toast(t('finishCertFirst')); return; }
         draft.certificates.push({ ...f, id: uid('c'), skills: f.skills.slice() }); draft.certForm = blankCert();
       }
-      finishRegister();
+      finishRegister(form.querySelector('[data-finish]'));
     }
     if (kind === 'company-signup') {
       const d = companyDraft; d.errors = {};
@@ -2305,11 +2125,15 @@
       if (!d.country) d.errors.country = t('errRequired');
       if (!d.city.trim()) d.errors.city = t('errRequired');
       if (Object.keys(d.errors).length) { await render(); focusFirstError(); return; }
-      let co = db.companies.find(c => c.name.toLowerCase() === d.name.trim().toLowerCase());
-      if (!co) { co = { id: uid('co'), name: d.name.trim(), country: d.country, city: d.city.trim(), industry: d.industry }; db.companies.push(co); }
-      let u = db.users.find(x => !x.demo && x.role === 'company' && x.hrUser === HR_USER && x.companyId === co.id);
-      if (!u) { u = { id: uid('u'), role: 'company', hrUser: HR_USER, companyId: co.id }; db.users.push(u); }
-      session.userId = u.id; postDraft = null; persist();
+      const btn = form.querySelector('[type=submit]'); btn.disabled = true;
+      let co;
+      try { co = await api.createCompany({ name: d.name.trim(), country: d.country, city: d.city.trim(), industry: d.industry }); }
+      catch (err) {
+        btn.disabled = false;
+        if (err.code === 'name_taken') { d.errors.name = t('errNameTaken'); await render(); focusFirstError(); } else toast(t('saveFailed'));
+        return;
+      }
+      postDraft = null;
       toast(t('welcomeCompany', { co: co.name }));
       go('#/dashboard');
     }
@@ -2318,7 +2142,13 @@
       btn.disabled = true; btn.innerHTML = '<span class="w-4 h-4 rounded-full border-2 border-white/40 border-t-white animate-spin motion-reduce:animate-none"></span>' + t('sending');
       const j = getJob(form.dataset.job);
       const certIds = $$('input[name="cert"]:checked', form).map(i => i.value);
-      await api.apply(j.id, myProfile().id, certIds, form.querySelector('[name="message"]').value.trim());
+      try { await api.apply(j.id, certIds, form.querySelector('[name="message"]').value.trim()); }
+      catch (err) {
+        btn.disabled = false; btn.textContent = t('sendApplication');
+        toast(t(err.code === 'already_applied' ? 'alreadyAppliedErr' : 'saveFailed'));
+        if (err.code === 'already_applied') { closeModal(); api.bootstrap().then(render); }
+        return;
+      }
       closeModal();
       toast(t('applySuccess', { co: companyOf(j).name }));
       render();
@@ -2343,14 +2173,20 @@
   window.addEventListener('usernode:theme-changed', () => renderChrome());
 
   /* ---------- boot ---------- */
-  (function boot() {
+  async function boot() {
+    loadState = 'loading'; render();
+    try { await api.bootstrap(); loadState = 'ready'; }
+    catch (e) { console.warn('bootstrap failed: ' + e.message); loadState = 'error'; }
+    lastPath = null; render();
+  }
+  (function start() {
     // Shared profile links arrive as /p/<id>; the app itself routes by hash.
     const m = location.pathname.match(/^\/p\/([A-Za-z0-9_-]+)\/?$/);
     if (m) history.replaceState(null, '', '/' + location.search + '#/p/' + m[1]);
     if (window.usernode && usernode.issueState && usernode.issueState.register) {
-      usernode.issueState.register(() => ({ route: location.hash, role: role(), lang, jobs: db.jobs.length, applications: db.applications.length, filters: { ...filters, q: filters.q ? '[set]' : '' } }));
+      usernode.issueState.register(() => ({ route: location.hash, role: role(), lang, loadState, jobs: db.jobs.length, applications: db.applications.length, filters: { ...filters, q: filters.q ? '[set]' : '' } }));
     }
-    render();
+    boot();
   })();
   </script>
 </body>

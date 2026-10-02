@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -69,9 +69,23 @@
   <!-- Platform bridge and native UI kit: centrally hosted, loaded by relative path. Never vendor. -->
   <script src="/usernode-bridge/v1/bridge.js"></script>
   <script src="/usernode-native/v1/native.js"></script>
-  <!-- Interface text, one file per language. Bahasa Indonesia comes first: it is the default. -->
-  <script src="/i18n/id.js"></script>
+  <!-- Interface text, one file per language. The list of languages is always
+       loaded, and so is English: it is the default and the fallback. Every
+       other language file is loaded only when it is chosen. -->
+  <script src="/i18n/languages.js"></script>
   <script src="/i18n/en.js"></script>
+  <script>
+    // Language and direction before first paint, so a returning Arabic reader
+    // never sees a left-to-right flash.
+    (function () {
+      var code = 'en';
+      try { code = (JSON.parse(localStorage.getItem('lokerdunia.prefs')) || {}).lang || 'en'; } catch (e) {}
+      var l = (window.LOKER_LANGS || []).filter(function (x) { return x.code === code; })[0];
+      if (!l) return;
+      document.documentElement.lang = l.code;
+      document.documentElement.dir = l.dir;
+    })();
+  </script>
   <script>
     // Theme before first paint: the viewer's in-app choice wins, then the
     // platform theme, then the OS preference.
@@ -102,7 +116,7 @@
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen antialiased">
-  <a href="#view" id="skip-link" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-blue-700 focus:px-3 focus:py-2 focus:rounded-lg">Skip</a>
+  <a href="#view" id="skip-link" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:start-2 focus:z-50 focus:bg-white focus:text-blue-700 focus:px-3 focus:py-2 focus:rounded-lg">Skip</a>
   <header id="hdr" class="sticky top-0 z-30 bg-white/90 dark:bg-slate-900/90 backdrop-blur border-b border-slate-200 dark:border-slate-800"></header>
   <main id="view" class="max-w-6xl mx-auto px-4 pt-4 pb-safe-nav" tabindex="-1"></main>
   <nav id="bottomnav" class="md:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-t border-slate-200 dark:border-slate-800 nav-safe"></nav>
@@ -177,12 +191,25 @@
 
   /* ==========================================================================
      Interface text lives in public/i18n/<code>.js, one file per language,
-     each loaded by its own <script> tag above. Bahasa Indonesia is the
-     default and the fallback for missing keys.
+     listed in public/i18n/languages.js. English is the default and the
+     fallback for missing keys; any other file is loaded when it is chosen.
      Job content written by employers stays in the language it was posted in.
      ========================================================================== */
-  const I18N = Object.fromEntries(Object.entries(window.LOKER_I18N || {}).map(([c, l]) => [c, l.strings]));
-  const LANGS = Object.keys(I18N);
+  const LANG_META = Object.fromEntries((window.LOKER_LANGS || []).map(l => [l.code, l]));
+  const LANGS = Object.keys(LANG_META);
+  const DEFAULT_LANG = 'en';
+  // Loads public/i18n/<code>.js once. Resolves when its strings are registered.
+  const langLoads = {};
+  function loadLang(code) {
+    if (window.LOKER_I18N[code]) return Promise.resolve();
+    return langLoads[code] = langLoads[code] || new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = '/i18n/' + code + '.js';
+      s.onload = () => window.LOKER_I18N[code] ? resolve() : reject(new Error('no strings for ' + code));
+      s.onerror = () => reject(new Error('could not load ' + code));
+      document.head.appendChild(s);
+    }).catch(e => { delete langLoads[code]; throw e; });
+  }
 
   /* ==========================================================================
      State: a client-side cache of what the server returned. The server
@@ -197,9 +224,10 @@
   let loadState = 'loading';
 
   function readJson(key) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
-  const prefs = Object.assign({ lang: 'id', cur: 'local' }, readJson(PREF_KEY) || {});
-  // The viewer's saved choice; Bahasa Indonesia until they pick another.
-  let lang = LANGS.includes(prefs.lang) ? prefs.lang : 'id';
+  // prefs.lang is only set when the viewer picks a language themselves.
+  const prefs = Object.assign({ cur: 'local' }, readJson(PREF_KEY) || {});
+  // The viewer's saved choice; English until they pick another.
+  let lang = LANGS.includes(prefs.lang) ? prefs.lang : DEFAULT_LANG;
   function savePrefs() { try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch (e) {} }
 
   // Homeroom identity (display only; the server already verified the token).
@@ -216,11 +244,12 @@
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
   function t(key, vars) {
-    let s = (I18N[lang] && I18N[lang][key]) ?? I18N.id[key] ?? key;
+    const cur = window.LOKER_I18N[lang];
+    let s = (cur && cur.strings[key]) ?? window.LOKER_I18N[DEFAULT_LANG].strings[key] ?? key;
     if (vars) for (const k in vars) s = s.split('{' + k + '}').join(vars[k]);
     return s;
   }
-  function locale() { return (window.LOKER_I18N[lang] && window.LOKER_I18N[lang].locale) || lang; }
+  function locale() { return (LANG_META[lang] && LANG_META[lang].locale) || lang; }
   function flag(cc) {
     if (!cc || cc.length !== 2) return '🌐';
     return String.fromCodePoint(...cc.toUpperCase().split('').map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
@@ -518,8 +547,10 @@
     dashboard: '<rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/>',
     sparkle: '<path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>',
   };
+  // Arrows that mean "back" or "forward" point the other way in right-to-left languages.
+  const MIRRORED_ICONS = { back: 1, chevron: 1 };
   function icon(name, cls) {
-    return '<svg class="' + (cls || 'w-5 h-5') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[name] + '</svg>';
+    return '<svg class="' + (cls || 'w-5 h-5') + (MIRRORED_ICONS[name] ? ' rtl:-scale-x-100' : '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[name] + '</svg>';
   }
 
   const C = {
@@ -579,7 +610,7 @@
     return '<span class="w-11 h-11 rounded-xl bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-bold text-sm flex items-center justify-center shrink-0" aria-hidden="true">' + esc(ini) + '</span>';
   }
   function backLink(href, label) {
-    return '<a href="' + href + '" class="' + C.btnGhost + ' -ml-2 mb-2">' + icon('back', 'w-4 h-4') + esc(label) + '</a>';
+    return '<a href="' + href + '" class="' + C.btnGhost + ' -ms-2 mb-2">' + icon('back', 'w-4 h-4') + esc(label) + '</a>';
   }
   function emptyState(title, body, actionHtml) {
     return '<div data-testid="empty-state" class="text-center py-12 px-4"><div class="mx-auto w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center mb-3">' + icon('search') + '</div>' +
@@ -620,17 +651,43 @@
   function closeModal() { if (modalClose) modalClose(); }
 
   /* ---------- pickers ---------- */
-  // Interface language. Every file in public/i18n/ shows up here by its own name.
+  // Interface language: every entry in public/i18n/languages.js, by its own
+  // name with its name in the current language underneath. Searchable.
   function openLanguagePicker() {
-    const root = openModal('<ul class="space-y-0.5" data-testid="lang-list">' + LANGS.map(c =>
-      '<li><button type="button" data-pick-lang="' + c + '" lang="' + c + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"' + (c === lang ? ' aria-current="true"' : '') + '>' +
-        '<span class="flex-1 text-sm' + (c === lang ? ' font-semibold' : '') + '">' + esc(window.LOKER_I18N[c].name) + '</span>' +
-        (c === lang ? '<span class="text-blue-600 dark:text-blue-400">' + icon('check', 'w-4 h-4') + '</span>' : '') + '</button></li>').join('') + '</ul>', { title: t('appLanguage') });
-    root.querySelector('[data-testid=lang-list]').addEventListener('click', e => {
+    const en = new Intl.DisplayNames(['en'], { type: 'language' });
+    const enName = c => { try { return en.of(c) || c; } catch (e) { return c; } };
+    const list = LANGS.slice().sort((a, b) => (a === lang ? -1 : b === lang ? 1 : langName(a).localeCompare(langName(b), lang)));
+    const row = c => {
+      const m = LANG_META[c], here = langName(c), on = c === lang;
+      return '<li><button type="button" data-pick-lang="' + c + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-start hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"' + (on ? ' aria-current="true"' : '') +
+        ' data-search="' + esc([m.name, here, enName(c), c].join(' ').toLowerCase()) + '">' +
+        '<span class="flex-1 min-w-0"><span lang="' + c + '" dir="' + m.dir + '" class="block text-sm' + (on ? ' font-semibold' : '') + '">' + esc(m.name) + '</span>' +
+        (here !== m.name ? '<span class="block text-xs ' + C.muted + '">' + esc(here) + '</span>' : '') + '</span>' +
+        (on ? '<span class="text-blue-600 dark:text-blue-400">' + icon('check', 'w-4 h-4') + '</span>' : '') + '</button></li>';
+    };
+    const root = openModal(
+      '<input type="search" autofocus data-lang-search class="' + C.input + '" placeholder="' + esc(t('searchLanguage')) + '" aria-label="' + esc(t('searchLanguage')) + '">' +
+      '<ul class="mt-3 space-y-0.5" data-testid="lang-list">' + list.map(row).join('') + '</ul>' +
+      '<div data-lang-empty hidden class="py-8 text-center"><p class="font-medium">' + esc(t('noLanguage')) + '</p><p class="text-sm ' + C.muted + '">' + esc(t('noLanguageBody')) + '</p></div>',
+      { title: t('appLanguage') });
+    root.querySelector('[data-lang-search]').addEventListener('input', e => {
+      const q = e.target.value.trim().toLowerCase();
+      let shown = 0;
+      root.querySelectorAll('[data-pick-lang]').forEach(b => {
+        const hit = !q || b.dataset.search.includes(q);
+        b.parentElement.hidden = !hit; if (hit) shown++;
+      });
+      root.querySelector('[data-lang-empty]').hidden = shown > 0;
+    });
+    root.querySelector('[data-testid=lang-list]').addEventListener('click', async e => {
       const b = e.target.closest('[data-pick-lang]'); if (!b) return;
+      const code = b.dataset.pickLang;
+      if (code === lang) { closeModal(); return; }
+      b.setAttribute('aria-busy', 'true');
+      try { await loadLang(code); }
+      catch (err) { console.warn(err.message); b.removeAttribute('aria-busy'); toast(t('loadFailed')); return; }
       closeModal();
-      if (b.dataset.pickLang === lang) return;
-      lang = b.dataset.pickLang; prefs.lang = lang; savePrefs(); render();
+      lang = code; prefs.lang = code; savePrefs(); render();
     });
   }
   // Searchable picker over every country. onPick(code|'' for all).
@@ -639,12 +696,12 @@
     const counts = {};
     db.jobs.forEach(j => { counts[j.country] = (counts[j.country] || 0) + 1; });
     const list = sortedCountries();
-    const row = cc => '<li><button type="button" data-pick="' + cc + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"><span class="text-xl" aria-hidden="true">' + flag(cc) + '</span><span class="flex-1 text-sm">' + esc(countryName(cc)) + '</span>' +
+    const row = cc => '<li><button type="button" data-pick="' + cc + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-start hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"><span class="text-xl" aria-hidden="true">' + flag(cc) + '</span><span class="flex-1 text-sm">' + esc(countryName(cc)) + '</span>' +
       (opts.showCounts && counts[cc] ? '<span class="text-xs ' + C.muted + '">' + t('nJobs', { n: counts[cc] }) + '</span>' : '') + '</button></li>';
     const root = openModal(
       '<input type="search" autofocus data-country-search class="' + C.input + '" placeholder="' + esc(t('searchCountry')) + '" aria-label="' + esc(t('searchCountry')) + '">' +
       '<ul class="mt-3 space-y-0.5" data-country-list>' +
-      (opts.allowAll ? '<li><button type="button" data-pick="" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800"><span class="text-xl" aria-hidden="true">🌐</span><span class="flex-1 text-sm font-medium">' + esc(t('allCountries')) + '</span></button></li>' : '') +
+      (opts.allowAll ? '<li><button type="button" data-pick="" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-start hover:bg-slate-100 dark:hover:bg-slate-800"><span class="text-xl" aria-hidden="true">🌐</span><span class="flex-1 text-sm font-medium">' + esc(t('allCountries')) + '</span></button></li>' : '') +
       list.map(row).join('') + '</ul>', { title: opts.title || t('chooseCountry') });
     root.querySelector('[data-country-search]').addEventListener('input', e => {
       const q = e.target.value.trim().toLowerCase();
@@ -667,7 +724,7 @@
     return '<div class="relative" data-skill-input="' + key + '"><div class="flex gap-2">' +
       '<input type="text" autocomplete="off" data-skill-text class="' + C.input + '" placeholder="' + esc(placeholder || t('typeSkill')) + '" aria-label="' + esc(placeholder || t('typeSkill')) + '" role="combobox" aria-expanded="false" aria-autocomplete="list">' +
       '<button type="button" data-action="skill-add" class="' + C.btnSecondary + ' shrink-0">' + t('add') + '</button></div>' +
-      '<ul data-skill-suggest role="listbox" class="hidden absolute z-20 left-0 right-0 mt-1 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-lg overflow-hidden"></ul></div>';
+      '<ul data-skill-suggest role="listbox" class="hidden absolute z-20 start-0 end-0 mt-1 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-lg overflow-hidden"></ul></div>';
   }
   function suggestSkills(q, exclude) {
     q = q.trim().toLowerCase(); if (!q) return [];
@@ -707,8 +764,8 @@
     const p = myProfile(), co = myCompany();
     const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     const searchForm = (id, extra) => '<form data-search-form class="' + extra + '" role="search"><label for="' + id + '" class="sr-only">' + t('searchPlaceholder') + '</label>' +
-      '<div class="relative w-full"><span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">' + icon('search', 'w-4 h-4') + '</span>' +
-      '<input id="' + id + '" type="search" data-search-input value="' + esc(filters.q) + '" placeholder="' + esc(t('searchPlaceholder')) + '" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 pl-9 pr-3 py-2 text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-slate-900"></div></form>';
+      '<div class="relative w-full"><span class="absolute start-3 top-1/2 -translate-y-1/2 text-slate-400">' + icon('search', 'w-4 h-4') + '</span>' +
+      '<input id="' + id + '" type="search" data-search-input value="' + esc(filters.q) + '" placeholder="' + esc(t('searchPlaceholder')) + '" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 ps-9 pe-3 py-2 text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-slate-900"></div></form>';
     $('#hdr').innerHTML =
       '<div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-2 md:gap-4">' +
         '<a href="#/" class="flex items-center gap-2 font-bold text-blue-700 dark:text-blue-400 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg">' +
@@ -716,13 +773,13 @@
         searchForm('hdr-q', 'hidden md:flex flex-1 max-w-md') +
         '<nav class="hidden lg:flex items-center gap-1" aria-label="' + esc(t('mainNav')) + '">' + items.slice(0, 4).map(([h, , k]) =>
           '<a href="' + h + '" class="px-3 py-2 rounded-lg text-sm font-medium ' + (act === h ? 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-950' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>').join('') + '</nav>' +
-        '<div class="ml-auto flex items-center gap-1">' +
+        '<div class="ms-auto flex items-center gap-1">' +
           '<button type="button" data-action="quick-country" class="inline-flex items-center gap-1.5 h-10 px-2.5 rounded-xl text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('quickCountry')) + '">' +
             '<span class="text-lg" aria-hidden="true">' + flag(cc) + '</span><span class="hidden sm:inline max-w-28 truncate">' + esc(cc ? countryName(cc) : t('allCountries')) + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
-          '<button type="button" data-action="pick-lang" data-testid="lang-switcher" data-lang="' + lang + '" class="inline-flex items-center gap-1 h-10 px-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('switchLang') + ': ' + window.LOKER_I18N[lang].name) + '" aria-haspopup="dialog">' +
-            icon('languages', 'w-4 h-4') + '<span>' + lang.toUpperCase() + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
+          '<button type="button" data-action="pick-lang" data-testid="lang-switcher" data-lang="' + lang + '" class="inline-flex items-center gap-1 h-10 px-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('switchLang') + ': ' + LANG_META[lang].name) + '" aria-haspopup="dialog">' +
+            icon('languages', 'w-4 h-4') + '<span>' + esc(LANG_META[lang].short) + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
           '<button type="button" data-action="toggle-theme" class="' + C.btnIcon + '" aria-label="' + esc(t(theme === 'dark' ? 'lightMode' : 'darkMode')) + '">' + icon(theme === 'dark' ? 'sun' : 'moon') + '</button>' +
-          (u ? '<a href="#/profile" class="hidden md:inline-flex items-center gap-2 h-10 pl-1 pr-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium">' +
+          (u ? '<a href="#/profile" class="hidden md:inline-flex items-center gap-2 h-10 ps-1 pe-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium">' +
                 avatar(p && p.photo, (p && p.fullName) || (co && co.name) || HR_USER || '?', 'w-8 h-8 text-xs') + '<span class="max-w-32 truncate">' + esc((p && p.fullName) || (co && co.name) || t('navProfile')) + '</span></a>'
              : '<a href="#/auth" class="hidden md:inline-flex ' + C.btnPrimary + '">' + t('navSignIn') + '</a>') +
         '</div></div>' +
@@ -730,6 +787,7 @@
     $('#bottomnav').innerHTML = '<ul class="grid grid-cols-5">' + items.map(([h, ic, k]) =>
       '<li><a href="' + h + '" class="flex flex-col items-center gap-0.5 pt-2 pb-1.5 text-xs font-medium ' + (act === h ? 'text-blue-600 dark:text-blue-400' : 'text-slate-500 dark:text-slate-400') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + icon(ic, 'w-6 h-6') + '<span>' + t(k) + '</span></a></li>').join('') + '</ul>';
     document.documentElement.lang = lang;
+    document.documentElement.dir = LANG_META[lang].dir;
     $('#skip-link').textContent = t('skipToContent');
   }
 
@@ -754,9 +812,9 @@
     const conv = salaryConverted(j);
     return '<article data-testid="job-card" class="relative ' + C.card + ' p-4 flex flex-col gap-3 hover:border-blue-400 dark:hover:border-blue-700">' +
       '<div class="flex items-start gap-3">' + companyLogo(co.name) +
-        '<div class="min-w-0 flex-1"><h3 class="font-semibold leading-snug"><a href="#/job/' + j.id + '" class="after:absolute after:inset-0 after:rounded-2xl focus:outline-none focus-visible:underline">' + esc(j.title) + '</a></h3>' +
-        '<p class="text-sm ' + C.muted + ' truncate">' + esc(co.name) + '</p></div>' +
-        '<button type="button" data-action="bookmark" data-id="' + j.id + '" aria-pressed="' + saved + '" aria-label="' + esc(t(saved ? 'unsave' : 'save')) + '" class="relative z-10 ' + C.btnIcon + ' -mr-2 -mt-1 ' + (saved ? 'text-blue-600 dark:text-blue-400' : '') + '">' +
+        '<div class="min-w-0 flex-1"><h3 class="font-semibold leading-snug"><a href="#/job/' + j.id + '" class="after:absolute after:inset-0 after:rounded-2xl focus:outline-none focus-visible:underline" dir="auto">' + esc(j.title) + '</a></h3>' +
+        '<p class="text-sm ' + C.muted + ' truncate" dir="auto">' + esc(co.name) + '</p></div>' +
+        '<button type="button" data-action="bookmark" data-id="' + j.id + '" aria-pressed="' + saved + '" aria-label="' + esc(t(saved ? 'unsave' : 'save')) + '" class="relative z-10 ' + C.btnIcon + ' -me-2 -mt-1 ' + (saved ? 'text-blue-600 dark:text-blue-400' : '') + '">' +
           '<svg class="w-5 h-5" viewBox="0 0 24 24" fill="' + (saved ? 'currentColor' : 'none') + '" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS.bookmark + '</svg></button>' +
       '</div>' +
       '<div class="text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span><span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + '</span></div>' +
@@ -822,7 +880,7 @@
       '<input type="checkbox" class="un-switch" data-filter-bool="' + key + '"' + (f[key] ? ' checked' : '') + '></label>';
     const fc = filterCurrency();
     return '<form data-filter-form class="space-y-5" onsubmit="return false">' +
-      '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="filter-country" class="' + C.input + ' flex items-center gap-2 text-left"><span aria-hidden="true">' + flag(f.country) + '</span><span class="flex-1 truncate">' + esc(f.country ? countryName(f.country) : t('allCountries')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button></div>' +
+      '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="filter-country" class="' + C.input + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(f.country) + '</span><span class="flex-1 truncate">' + esc(f.country ? countryName(f.country) : t('allCountries')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button></div>' +
       '<div><label class="' + C.label + '" for="f-city">' + t('city') + '</label><input id="f-city" list="f-city-list" data-filter="city" value="' + esc(f.city) + '" class="' + C.input + '" placeholder="' + esc(t('cityPlaceholder')) + '"><datalist id="f-city-list">' + cities.map(c => '<option value="' + esc(c) + '">').join('') + '</datalist></div>' +
       '<div><label class="' + C.label + '" for="f-cat">' + t('category') + '</label><select id="f-cat" data-filter="category" class="' + C.input + '"><option value="">' + t('allCategories') + '</option>' + CATEGORIES.map(c => '<option value="' + c + '"' + (f.category === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div>' +
       '<fieldset><legend class="' + C.label + '">' + t('jobType') + '</legend><div class="flex flex-wrap gap-2">' + JOB_TYPES.map(x => check('types', x, f.types.includes(x), t('type_' + x))).join('') + '</div></fieldset>' +
@@ -836,7 +894,7 @@
       '<div class="' + C.divider + '">' + toggle('rw', t('remoteWorldwide'), t('remoteWorldwideHint')) + toggle('visa', t('visaSponsor'), '') + toggle('relo', t('relocation'), '') + '</div>' +
       '<div><label class="' + C.label + '" for="f-cur">' + t('showSalaryIn') + '</label><select id="f-cur" data-pref-cur class="' + C.input + '"><option value="local"' + (prefs.cur === 'local' ? ' selected' : '') + '>' + t('localCurrency') + '</option>' +
         Object.keys(RATES).map(c => '<option value="' + c + '"' + (prefs.cur === c ? ' selected' : '') + '>' + c + '</option>').join('') + '</select>' +
-        '<button type="button" data-action="show-rates" class="mt-1 ' + C.btnGhost + ' -ml-2 text-xs">' + icon('info', 'w-3.5 h-3.5') + t('ratesLink', { date: fmtDate(RATES_DATE) }) + '</button></div>' +
+        '<button type="button" data-action="show-rates" class="mt-1 ' + C.btnGhost + ' -ms-2 text-xs">' + icon('info', 'w-3.5 h-3.5') + t('ratesLink', { date: fmtDate(RATES_DATE) }) + '</button></div>' +
       '<button type="button" data-action="reset-filters" class="' + C.btnSecondary + ' w-full">' + t('resetFilters') + '</button>' +
       '</form>';
   }
@@ -929,7 +987,7 @@
     const isOwner = role() === 'company' && myCompany() && myCompany().id === j.companyId;
     const nApps = db.applications.filter(a => a.jobId === j.id).length;
     const conv = salaryConverted(j);
-    const list = items => '<ul class="list-disc pl-5 space-y-1 text-sm">' + items.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
+    const list = items => '<ul class="list-disc ps-5 space-y-1 text-sm">' + items.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
     const info = (label, value) => '<div class="py-2.5 flex flex-col sm:flex-row sm:gap-4"><dt class="text-sm ' + C.muted + ' sm:w-44 shrink-0">' + esc(label) + '</dt><dd class="text-sm">' + value + '</dd></div>';
     const aside = '<div class="' + C.section + ' space-y-4">' +
       '<div><p class="text-xs ' + C.muted + '">' + t('salary') + '</p><p class="text-lg font-bold">' + esc(salaryText(j)) + '</p>' + (conv ? '<p class="text-sm ' + C.muted + '">' + esc(conv) + '</p>' : '') + '</div>' +
@@ -937,16 +995,16 @@
       '<button type="button" data-action="bookmark" data-id="' + j.id + '" aria-pressed="' + saved + '" class="' + C.btnSecondary + ' w-full">' +
         '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="' + (saved ? 'currentColor' : 'none') + '" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS.bookmark + '</svg>' + t(saved ? 'saved' : 'save') + '</button>' +
       (role() !== 'company' ? (p ? '<div class="pt-4 border-t border-slate-200 dark:border-slate-800">' + matchPanel(j, p.id) + '</div>'
-        : '<div class="pt-4 border-t border-slate-200 dark:border-slate-800 text-sm"><p class="' + C.muted + '">' + t('matchSignIn') + '</p><a href="' + (role() === 'seeker' ? '#/register' : '#/auth') + '" class="mt-2 ' + C.btnGhost + ' -ml-2">' + t(role() === 'seeker' ? 'completeProfile' : 'signUpSeeker') + '</a></div>') : '') +
+        : '<div class="pt-4 border-t border-slate-200 dark:border-slate-800 text-sm"><p class="' + C.muted + '">' + t('matchSignIn') + '</p><a href="' + (role() === 'seeker' ? '#/register' : '#/auth') + '" class="mt-2 ' + C.btnGhost + ' -ms-2">' + t(role() === 'seeker' ? 'completeProfile' : 'signUpSeeker') + '</a></div>') : '') +
       '</div>';
     return backLink('#/jobs', t('backToSearch')) +
       '<div class="lg:grid lg:grid-cols-3 lg:gap-6"><div class="lg:col-span-2 space-y-4">' +
-      '<header class="flex items-start gap-3">' + companyLogo(co.name) + '<div class="min-w-0"><h1 class="' + C.h1 + '">' + esc(j.title) + '</h1>' +
-        '<p class="' + C.muted + '">' + esc(co.name) + '</p><p class="mt-1 text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + ' · ' + esc(relDays(j.postedAt)) + '</p>' +
+      '<header class="flex items-start gap-3">' + companyLogo(co.name) + '<div class="min-w-0"><h1 class="' + C.h1 + '" dir="auto">' + esc(j.title) + '</h1>' +
+        '<p class="' + C.muted + '" dir="auto">' + esc(co.name) + '</p><p class="mt-1 text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + ' · ' + esc(relDays(j.postedAt)) + '</p>' +
         '<div class="mt-2 flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('cat_' + j.category) + '</span><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
         (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') + (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + (j.relocation ? '<span class="' + C.chipBlue + '">' + t('relocation') + '</span>' : '') + '</div></div></header>' +
       '<div class="lg:hidden">' + aside + '</div>' +
-      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('description') + '</h2><p class="text-sm leading-relaxed">' + esc(j.description) + '</p></section>' +
+      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('description') + '</h2><p class="text-sm leading-relaxed" dir="auto">' + esc(j.description) + '</p></section>' +
       (j.qualifications.length ? '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('qualifications') + '</h2>' + list(j.qualifications) + '</section>' : '') +
       (j.benefits.length ? '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('benefits') + '</h2>' + list(j.benefits) + '</section>' : '') +
       '<section class="' + C.section + '" data-testid="job-skill-lists"><h2 class="font-semibold mb-1">' + t('skills') + '</h2><div class="grid gap-4 sm:grid-cols-2">' +
@@ -990,11 +1048,11 @@
         '<div><label class="' + C.label + '" for="ins-k">' + t('category') + '</label><select id="ins-k" data-insight="category" class="' + C.input + '"><option value="">' + t('allCategories') + '</option>' + CATEGORIES.map(c => '<option value="' + c + '"' + (insight.category === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div></div>' +
       '<p class="text-sm ' + C.muted + ' mb-3">' + t('skillsBasis', { n: jobs.length }) + '</p>' +
       (rows.length ? '<ol class="' + C.card + ' ' + C.divider + '" data-testid="skill-ranking">' + rows.map(([name, a], i) =>
-        '<li><button type="button" data-action="search-skill" data-skill="' + esc(name) + '" class="w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
+        '<li><button type="button" data-action="search-skill" data-skill="' + esc(name) + '" class="w-full text-start px-4 py-3 flex items-center gap-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
         '<span class="w-6 text-sm font-semibold ' + (i < 3 ? 'text-blue-700 dark:text-blue-300' : C.muted) + '">' + (i + 1) + '</span>' +
         '<span class="flex-1 min-w-0"><span class="flex items-center gap-2"><span class="font-medium truncate">' + esc(name) + '</span>' + (mine.has(name.toLowerCase()) ? '<span class="' + C.chipBlue + ' py-0.5">' + t('youHaveIt') + '</span>' : '') + '</span>' +
         '<span class="mt-1.5 block h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden"><span class="block h-full rounded-full bg-blue-600" style="width:' + Math.round(a.n / top * 100) + '%"></span></span></span>' +
-        '<span class="text-right shrink-0"><span class="block text-sm font-semibold">' + t('nJobs', { n: a.n }) + '</span><span class="block text-xs ' + C.muted + '">' + t('pctRequired', { n: Math.round(a.req / a.n * 100) }) + '</span></span></button></li>').join('') + '</ol>'
+        '<span class="text-end shrink-0"><span class="block text-sm font-semibold">' + t('nJobs', { n: a.n }) + '</span><span class="block text-xs ' + C.muted + '">' + t('pctRequired', { n: Math.round(a.req / a.n * 100) }) + '</span></span></button></li>').join('') + '</ol>'
         : emptyState(t('noJobs'), t('noJobsBody')));
   }
   let countryQuery = '';
@@ -1006,10 +1064,10 @@
     return '<h1 class="' + C.h1 + ' mb-3">' + t('byCountry') + '</h1>' + insightsTabs('#/countries') +
       '<input type="search" data-country-query value="' + esc(countryQuery) + '" class="' + C.input + ' max-w-md mb-4" placeholder="' + esc(t('searchCountry')) + '" aria-label="' + esc(t('searchCountry')) + '">' +
       '<div data-country-grid>' + countryGrid(list, counts, rwCount) + '</div>' +
-      '<p class="mt-4 text-sm ' + C.muted + '">' + t('otherCountriesHint') + ' <button type="button" data-action="quick-country" class="' + C.btnGhost + ' -ml-1">' + t('allCountriesList') + '</button></p>';
+      '<p class="mt-4 text-sm ' + C.muted + '">' + t('otherCountriesHint') + ' <button type="button" data-action="quick-country" class="' + C.btnGhost + ' -ms-1">' + t('allCountriesList') + '</button></p>';
   }
   function countryGrid(list, counts, rwCount) {
-    const tile = (onclick, flagStr, name, n) => '<button type="button" ' + onclick + ' class="' + C.card + ' p-4 flex items-center gap-3 text-left hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"><span class="text-3xl" aria-hidden="true">' + flagStr + '</span><span class="min-w-0"><span class="block font-medium truncate">' + esc(name) + '</span><span class="block text-sm ' + C.muted + '">' + t('nJobs', { n }) + '</span></span></button>';
+    const tile = (onclick, flagStr, name, n) => '<button type="button" ' + onclick + ' class="' + C.card + ' p-4 flex items-center gap-3 text-start hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"><span class="text-3xl" aria-hidden="true">' + flagStr + '</span><span class="min-w-0"><span class="block font-medium truncate">' + esc(name) + '</span><span class="block text-sm ' + C.muted + '">' + t('nJobs', { n }) + '</span></span></button>';
     return '<div class="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4" data-testid="country-grid">' +
       (!countryQuery ? tile('data-action="browse-rw"', '🌐', t('remoteWorldwide'), rwCount) : '') +
       list.map(c => tile('data-action="browse-country" data-cc="' + c + '"', flag(c), countryName(c), counts[c])).join('') + '</div>' +
@@ -1033,11 +1091,11 @@
     const acctRow = u => {
       const p = u.kind === 'seeker' && getProfile(u.id); const co = u.kind === 'company' && db.companies.find(c => c.id === u.id);
       const name = (p && p.fullName) || (co && co.name) || t('unfinishedProfile');
-      return '<li><button type="button" data-action="sign-in" data-kind="' + u.kind + '" data-id="' + esc(u.id) + '" class=""w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
+      return '<li><button type="button" data-action="sign-in" data-kind="' + u.kind + '" data-id="' + esc(u.id) + '" class=""w-full flex items-center gap-3 px-4 py-3 text-start hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
         avatar(p && p.photo, name, 'w-10 h-10 text-sm') + '<span class="flex-1 min-w-0"><span class="block font-medium truncate">' + esc(name) + '</span><span class="block text-xs ' + C.muted + '">' + t(u.kind === 'seeker' ? 'roleSeeker' : 'roleCompany') + (u.demo ? ' · ' + t('sampleAccount') : '') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</button></li>';
     };
     const tab = (k, label) => '<button type="button" role="tab" aria-selected="' + (authTab === k) + '" data-action="auth-tab" data-tab="' + k + '" class="flex-1 rounded-lg px-3 py-2 text-sm font-medium ' + (authTab === k ? 'bg-white dark:bg-slate-900 shadow-sm text-blue-700 dark:text-blue-300' : 'text-slate-600 dark:text-slate-300') + '">' + label + '</button>';
-    const roleCard = (r, ic, title, body) => '<button type="button" data-action="choose-role" data-role="' + r + '" class="' + C.card + ' p-4 flex items-start gap-3 text-left hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' +
+    const roleCard = (r, ic, title, body) => '<button type="button" data-action="choose-role" data-role="' + r + '" class="' + C.card + ' p-4 flex items-start gap-3 text-start hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' +
       '<span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center shrink-0">' + icon(ic) + '</span><span><span class="block font-semibold">' + title + '</span><span class="block text-sm ' + C.muted + '">' + body + '</span></span></button>';
     return '<div class="max-w-lg mx-auto"><h1 class="' + C.h1 + '">' + t(authTab === 'register' ? 'signUpTitle' : 'signInTitle') + '</h1>' +
       '<p class="mt-1 text-sm ' + C.muted + '">' + (HR_USER ? t('homeroomIdentity', { user: HR_USER }) : t('homeroomIdentityAnon')) + '</p>' +
@@ -1058,7 +1116,7 @@
       '<p class="mt-1 text-sm ' + C.muted + '">' + t('companySignupBody') + '</p>' +
       '<form data-form="company-signup" class="mt-4 ' + C.section + ' space-y-4" novalidate>' +
         '<div><label class="' + C.label + '" for="cs-name">' + t('companyName') + '</label><input id="cs-name" data-cd="name" value="' + esc(d.name) + '" class="' + inp('name') + '">' + err('name') + '</div>' +
-        '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="cd-country" class="' + inp('country') + ' flex items-center gap-2 text-left"><span aria-hidden="true">' + flag(d.country) + '</span><span class="flex-1">' + esc(d.country ? countryName(d.country) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + err('country') + '</div>' +
+        '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="cd-country" class="' + inp('country') + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(d.country) + '</span><span class="flex-1">' + esc(d.country ? countryName(d.country) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + err('country') + '</div>' +
         '<div><label class="' + C.label + '" for="cs-city">' + t('city') + '</label><input id="cs-city" data-cd="city" value="' + esc(d.city) + '" class="' + inp('city') + '">' + err('city') + '</div>' +
         '<div><label class="' + C.label + '" for="cs-ind">' + t('industry') + '</label><select id="cs-ind" data-cd="industry" class="' + C.input + '">' + CATEGORIES.map(c => '<option value="' + c + '"' + (d.industry === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div>' +
         '<button type="submit" class="' + C.btnPrimary + ' w-full">' + t('createCompany') + '</button></form></div>';
@@ -1104,7 +1162,7 @@
   }
   function countryField(path, label) {
     const v = getPath(draft, path); const e = draft.errors[path];
-    return '<div><span class="' + C.label + '">' + esc(label) + '</span><button type="button" data-action="draft-country" data-path="' + path + '" class="' + (e ? C.inputErr : C.input) + ' flex items-center gap-2 text-left"><span aria-hidden="true">' + flag(v) + '</span><span class="flex-1 truncate">' + esc(v ? countryName(v) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + (e ? '<p class="' + C.err + '" data-err>' + esc(e) + '</p>' : '') + '</div>';
+    return '<div><span class="' + C.label + '">' + esc(label) + '</span><button type="button" data-action="draft-country" data-path="' + path + '" class="' + (e ? C.inputErr : C.input) + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(v) + '</span><span class="flex-1 truncate">' + esc(v ? countryName(v) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + (e ? '<p class="' + C.err + '" data-err>' + esc(e) + '</p>' : '') + '</div>';
   }
   function stepBio() {
     const b = draft.bio;
@@ -1223,7 +1281,7 @@
       '<h1 class="' + C.h1 + '">' + t(draft.mode === 'edit' ? 'editProfile' : 'createProfile') + '</h1>' +
       '<div class="mt-3" data-testid="stepper"><div class="flex items-center justify-between text-sm"><span class="font-medium">' + t('stepOf', { n: s, total: 4 }) + ': ' + t(STEP_KEYS[s - 1]) + '</span><span class="' + C.muted + '">' + (s * 25) + '%</span></div>' +
         '<div class="mt-2 h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden" role="progressbar" aria-valuemin="0" aria-valuemax="4" aria-valuenow="' + s + '" aria-label="' + esc(t('progress')) + '"><div class="h-full rounded-full bg-blue-600 transition-all motion-reduce:transition-none" style="width:' + (s * 25) + '%"></div></div>' +
-        '<ol class="mt-3 hidden sm:grid grid-cols-4 gap-2 text-xs">' + STEP_KEYS.map((k, i) => '<li><button type="button" data-action="goto-step" data-step="' + (i + 1) + '" class="w-full text-left ' + (i + 1 === s ? 'text-blue-700 dark:text-blue-300 font-semibold' : i + 1 < s ? 'text-slate-700 dark:text-slate-300' : C.muted) + '"' + (i + 1 > s ? ' disabled' : '') + '>' + (i + 1) + '. ' + t(k) + '</button></li>').join('') + '</ol></div>' +
+        '<ol class="mt-3 hidden sm:grid grid-cols-4 gap-2 text-xs">' + STEP_KEYS.map((k, i) => '<li><button type="button" data-action="goto-step" data-step="' + (i + 1) + '" class="w-full text-start ' + (i + 1 === s ? 'text-blue-700 dark:text-blue-300 font-semibold' : i + 1 < s ? 'text-slate-700 dark:text-slate-300' : C.muted) + '"' + (i + 1 > s ? ' disabled' : '') + '>' + (i + 1) + '. ' + t(k) + '</button></li>').join('') + '</ol></div>' +
       '<form data-form="register" class="mt-4 ' + C.section + '" novalidate>' + body +
       '<div class="mt-6 flex gap-2 justify-between">' + (s > 1 ? '<button type="button" data-action="step-back" class="' + C.btnSecondary + '">' + t('back') + '</button>' : '<span></span>') +
       (s < 4 ? '<button type="submit" class="' + C.btnPrimary + '">' + t('next') + '</button>' : '<button type="submit" class="' + C.btnPrimary + '" data-finish>' + t(draft.mode === 'edit' ? 'saveChanges' : 'saveFinish') + '</button>') + '</div></form></div>';
@@ -1343,18 +1401,18 @@
         '<div class="flex gap-2 min-w-0"><dt class="' + C.muted + '">' + t('email') + '</dt><dd class="truncate"><a class="text-blue-700 dark:text-blue-300 hover:underline" href="mailto:' + esc(p.email) + '">' + esc(p.email) + '</a></dd></div>' +
         '<div class="flex gap-2"><dt class="' + C.muted + '">' + t('phone') + '</dt><dd data-testid="cv-phone">' + (showPhone ? '+' + esc(DIAL[p.phoneCode] || '') + ' ' + esc(p.phone) : '<span class="' + C.muted + '">' + t('hiddenByCandidate') + '</span>') + '</dd></div>' +
       '</dl></div></div></section>';
-    html += '<section class="' + C.section + '">' + head(t('summary'), 1) + '<p class="text-sm leading-relaxed whitespace-pre-line">' + esc(p.summary) + '</p></section>';
+    html += '<section class="' + C.section + '">' + head(t('summary'), 1) + '<p class="text-sm leading-relaxed whitespace-pre-line" dir="auto">' + esc(p.summary) + '</p></section>';
     html += '<section class="' + C.section + '" data-testid="cv-skills">' + head(t('skills'), 3) +
       '<div class="flex flex-wrap gap-x-3 gap-y-1 text-xs ' + C.muted + ' mb-3"><span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-600"></span>' + t('level_1') + '</span><span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-sky-300"></span>' + t('level_2') + '</span><span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>' + t('level_3') + '</span></div>' +
       (skills.length ? '<ul class="grid gap-2 sm:grid-cols-2">' + skills.map(s => '<li class="flex items-center justify-between gap-2"><span class="flex items-center gap-2 min-w-0"><span class="' + LEVEL_CHIP[s.level] + '">' + esc(s.name) + '</span><span class="text-xs ' + C.muted + '">' + t('nYearsShort', { n: fmtNum(s.years) }) + '</span></span>' + proofBadge(skillProof(p.id, s.name)) + '</li>').join('') + '</ul>' : '<p class="text-sm ' + C.muted + '">' + t('noSkillsYet') + '</p>') +
       ((p.languages || []).length ? '<h3 class="text-sm font-medium mt-4 mb-1">' + t('languages') + '</h3><p class="text-sm">' + p.languages.map(l => esc(langName(l.code)) + ' <span class="' + C.muted + '">(' + t('lang_' + l.level) + ')</span>').join(', ') + '</p>' : '') + '</section>';
     html += '<section class="' + C.section + '">' + head(t('experience'), 2) + ((p.experience || []).length ? '<ol class="space-y-4">' + p.experience.slice().sort((a, b) => (b.start || '').localeCompare(a.start || '')).map(x =>
-      '<li class="border-l-2 border-blue-200 dark:border-blue-900 pl-3"><p class="font-medium text-sm">' + esc(x.position) + '</p><p class="text-sm">' + esc(x.company) + '</p><p class="text-xs ' + C.muted + '">' + esc(fmtMonth(x.start)) + ' - ' + esc(x.current ? t('present') : fmtMonth(x.end)) + '</p>' + (x.description ? '<p class="mt-1 text-sm">' + esc(x.description) + '</p>' : '') + '</li>').join('') + '</ol>' : '<p class="text-sm ' + C.muted + '">' + t('noExperienceYet') + '</p>') + '</section>';
+      '<li class="border-s-2 border-blue-200 dark:border-blue-900 ps-3"><p class="font-medium text-sm">' + esc(x.position) + '</p><p class="text-sm">' + esc(x.company) + '</p><p class="text-xs ' + C.muted + '">' + esc(fmtMonth(x.start)) + ' - ' + esc(x.current ? t('present') : fmtMonth(x.end)) + '</p>' + (x.description ? '<p class="mt-1 text-sm">' + esc(x.description) + '</p>' : '') + '</li>').join('') + '</ol>' : '<p class="text-sm ' + C.muted + '">' + t('noExperienceYet') + '</p>') + '</section>';
     html += '<section class="' + C.section + '">' + head(t('education'), 2) + ((p.education || []).length ? '<ul class="space-y-3">' + p.education.slice().sort((a, b) => String(b.year).localeCompare(String(a.year))).map(e =>
       '<li><p class="font-medium text-sm">' + esc(e.institution) + '</p><p class="text-sm">' + esc(t('edu_' + e.level)) + ', ' + esc(e.major) + '</p><p class="text-xs ' + C.muted + '">' + esc(e.year) + '</p></li>').join('') + '</ul>' : '') + '</section>';
     if (!opts.hideCerts) {
       html += '<section class="' + C.section + '" data-testid="cv-certs">' + head(t('certificates') + ' (' + certCount(p) + ')', 4) +
-        (showCerts ? (certs.length ? '<div class="grid gap-4 sm:grid-cols-2">' + certs.map(c => certCard(c) + (c.verify ? '<p class="-mt-2 ml-24 text-xs ' + C.muted + ' break-all">' + t('verification') + ': ' + (/^https?:\/\//.test(c.verify) ? '<a href="' + esc(c.verify) + '" target="_blank" rel="noopener" class="text-blue-700 dark:text-blue-300 hover:underline">' + esc(c.verify) + '</a>' : esc(c.verify)) + '</p>' : '')).join('') + '</div>' : '<p class="text-sm ' + C.muted + '">' + t('noCertsYet') + '</p>')
+        (showCerts ? (certs.length ? '<div class="grid gap-4 sm:grid-cols-2">' + certs.map(c => certCard(c) + (c.verify ? '<p class="-mt-2 ms-24 text-xs ' + C.muted + ' break-all">' + t('verification') + ': ' + (/^https?:\/\//.test(c.verify) ? '<a href="' + esc(c.verify) + '" target="_blank" rel="noopener" class="text-blue-700 dark:text-blue-300 hover:underline">' + esc(c.verify) + '</a>' : esc(c.verify)) + '</p>' : '')).join('') + '</div>' : '<p class="text-sm ' + C.muted + '">' + t('noCertsYet') + '</p>')
           : '<p class="text-sm ' + C.muted + '" data-testid="certs-hidden">' + t('certsHiddenByCandidate') + '</p>') + '</section>';
     }
     return html;
@@ -1459,7 +1517,7 @@
       '<section class="' + C.section + ' space-y-4"><h2 class="font-semibold">' + t('jobBasics') + '</h2>' + inp('title', t('jobTitle'), 'text', ' placeholder="Senior Backend Engineer"') +
         '<div class="grid gap-4 sm:grid-cols-3">' + sel('category', t('category'), CATEGORIES.map(c => [c, t('cat_' + c)])) + sel('type', t('jobType'), JOB_TYPES.map(c => [c, t('type_' + c)])) + sel('model', t('workModel'), WORK_MODELS.map(c => [c, t('model_' + c)])) + '</div></section>' +
       '<section class="' + C.section + ' space-y-4"><h2 class="font-semibold">' + t('locationSalary') + '</h2><div class="grid gap-4 sm:grid-cols-2">' +
-        '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="post-country" class="' + cls('country') + ' flex items-center gap-2 text-left"><span aria-hidden="true">' + flag(d.country) + '</span><span class="flex-1 truncate">' + esc(d.country ? countryName(d.country) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + err('country') + '</div>' + inp('city', t('city')) + '</div>' +
+        '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="post-country" class="' + cls('country') + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(d.country) + '</span><span class="flex-1 truncate">' + esc(d.country ? countryName(d.country) : t('chooseCountry')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button>' + err('country') + '</div>' + inp('city', t('city')) + '</div>' +
         '<div class="grid gap-4 grid-cols-2 sm:grid-cols-4">' + sel('currency', t('currency'), Object.keys(RATES).map(c => [c, c])) + inp('salaryMin', t('salaryMinL'), 'number', ' min="0" inputmode="numeric"') + inp('salaryMax', t('salaryMaxL'), 'number', ' min="0" inputmode="numeric"') +
           sel('period', t('period'), [['month', t('periodMonth')], ['year', t('periodYear')], ['hour', t('periodHour')]]) + '</div>' +
         inp('timezone', t('timezone')) + '</section>' +
@@ -1512,7 +1570,7 @@
         const nNew = apps.filter(a => a.status === 'new').length;
         return '<li><a href="#/dashboard/' + j.id + '" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
           '<span class="flex-1 min-w-0"><span class="block font-medium truncate">' + esc(j.title) + '</span><span class="block text-xs ' + C.muted + '">' + flag(j.country) + ' ' + esc(j.city) + ' · ' + esc(relDays(j.postedAt)) + '</span></span>' +
-          '<span class="text-right shrink-0"><span class="block text-sm font-semibold">' + t('nApplicants', { n: apps.length }) + '</span>' + (nNew ? '<span class="' + STATUS_CHIP.new + ' mt-0.5">' + t('nNew', { n: nNew }) + '</span>' : '') + '</span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></li>';
+          '<span class="text-end shrink-0"><span class="block text-sm font-semibold">' + t('nApplicants', { n: apps.length }) + '</span>' + (nNew ? '<span class="' + STATUS_CHIP.new + ' mt-0.5">' + t('nNew', { n: nNew }) + '</span>' : '') + '</span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></li>';
       }).join('') + '</ul>'
       : emptyState(t('noCompanyJobs'), t('noCompanyJobsBody'), '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>'));
   }
@@ -1580,7 +1638,7 @@
     const aside = '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('applicationStatus') + '</h2><div class="flex flex-wrap gap-2" data-testid="status-buttons">' + STATUSES.map(statusBtn).join('') + '</div>' +
         '<p class="mt-3 text-xs ' + C.muted + '">' + t('appliedOn', { d: fmtDate(a.createdAt) }) + '</p></section>' +
       '<section class="' + C.section + '"><h2 class="font-semibold mb-3">' + t('matchForJob') + '</h2>' + matchPanel(j, p.id, true) + '</section>' +
-      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('message') + '</h2><p class="text-sm whitespace-pre-line">' + (a.message ? esc(a.message) : '<span class="' + C.muted + '">' + t('noMessage') + '</span>') + '</p></section>' +
+      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('message') + '</h2><p class="text-sm whitespace-pre-line" dir="auto">' + (a.message ? esc(a.message) : '<span class="' + C.muted + '">' + t('noMessage') + '</span>') + '</p></section>' +
       '<section class="' + C.section + '" data-testid="attached-certs"><h2 class="font-semibold mb-2">' + t('attachedCerts', { n: attached.length }) + '</h2>' +
         (p.privacy.showCerts ? (attached.length ? '<div class="space-y-4">' + attached.map(c => certCard(c)).join('') + '</div>' : '<p class="text-sm ' + C.muted + '">' + t('noAttached') + '</p>')
           : '<p class="text-sm ' + C.muted + '">' + t('certsHiddenByCandidate') + '</p>') + '</section>';
@@ -1703,15 +1761,15 @@
     const input = wrapper.querySelector('[data-skill-text]');
     const box = wrapper.querySelector('[data-skill-suggest]');
     const list = suggestSkills(input.value, suggestExclusions(wrapper.dataset.skillInput));
-    box.innerHTML = list.map((s, i) => '<li role="option" id="sg-' + i + '"><button type="button" data-suggest-item="' + esc(s) + '" class="w-full text-left px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800' + (i === 0 ? ' bg-slate-50 dark:bg-slate-800/60' : '') + '">' + esc(s) + '</button></li>').join('');
+    box.innerHTML = list.map((s, i) => '<li role="option" id="sg-' + i + '"><button type="button" data-suggest-item="' + esc(s) + '" class="w-full text-start px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800' + (i === 0 ? ' bg-slate-50 dark:bg-slate-800/60' : '') + '">' + esc(s) + '</button></li>').join('');
     box.classList.toggle('hidden', !list.length);
     input.setAttribute('aria-expanded', list.length ? 'true' : 'false');
   }
   function hideSuggestions() { $$('[data-skill-suggest]').forEach(b => b.classList.add('hidden')); }
 
   function openRates() {
-    openModal('<p class="text-sm ' + C.muted + ' mb-3">' + t('ratesBody', { date: fmtDate(RATES_DATE) }) + '</p><table class="w-full text-sm"><thead><tr class="text-left ' + C.muted + '"><th class="py-1.5 font-medium">' + t('currency') + '</th><th class="py-1.5 font-medium text-right">1 USD =</th></tr></thead><tbody class="' + C.divider + '">' +
-      Object.entries(RATES).map(([c, r]) => '<tr><td class="py-1.5 font-medium">' + c + '</td><td class="py-1.5 text-right tabular-nums">' + new Intl.NumberFormat(locale(), { maximumFractionDigits: 4 }).format(r) + ' ' + c + '</td></tr>').join('') + '</tbody></table>', { title: t('ratesTitle') });
+    openModal('<p class="text-sm ' + C.muted + ' mb-3">' + t('ratesBody', { date: fmtDate(RATES_DATE) }) + '</p><table class="w-full text-sm"><thead><tr class="text-start ' + C.muted + '"><th class="py-1.5 font-medium">' + t('currency') + '</th><th class="py-1.5 font-medium text-end">1 USD =</th></tr></thead><tbody class="' + C.divider + '">' +
+      Object.entries(RATES).map(([c, r]) => '<tr><td class="py-1.5 font-medium">' + c + '</td><td class="py-1.5 text-end tabular-nums">' + new Intl.NumberFormat(locale(), { maximumFractionDigits: 4 }).format(r) + ' ' + c + '</td></tr>').join('') + '</tbody></table>', { title: t('ratesTitle') });
   }
   function openFiltersModal() {
     openModal('<div data-filter-host>' + filterForm() + '</div><button type="button" data-action="modal-close" class="' + C.btnPrimary + ' w-full mt-4">' + t('showResults') + '</button>', { title: t('filters'), onClose: refreshFilterHosts });
@@ -2033,6 +2091,9 @@
 
   /* ---------- boot ---------- */
   async function boot() {
+    // A saved language other than English is fetched before the first paint.
+    try { await loadLang(lang); }
+    catch (e) { console.warn(e.message); lang = DEFAULT_LANG; }
     loadState = 'loading'; render();
     try { await api.bootstrap(); loadState = 'ready'; }
     catch (e) { console.warn('bootstrap failed: ' + e.message); loadState = 'error'; }

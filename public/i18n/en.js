@@ -1,9 +1,9 @@
-/* Loker Dunia interface text: English.
+/* Loker Dunia interface text: English. Default language and the fallback for every other one.
  *
  * To add a language: copy this file to public/i18n/<code>.js, translate every
  * value (keep the keys and the {placeholders}), change the code, name and
- * locale, and add a <script src="/i18n/<code>.js"> tag in public/index.html.
- * A key missing here falls back to Bahasa Indonesia.
+ * locale, and add an entry for it to public/i18n/languages.js.
+ * A key missing in another language falls back to English.
  */
 (window.LOKER_I18N = window.LOKER_I18N || {}).en = {
   name: 'English',
@@ -16,7 +16,7 @@
     loading: 'Loading', close: 'Close', add: 'Add', remove: 'Remove', edit: 'Edit', back: 'Back', next: 'Next', choose: 'Choose', optional: 'optional', all: 'All',
     mainNav: 'Main navigation', navHome: 'Home', navSearch: 'Search', navSaved: 'Saved', navExplore: 'Explore', navProfile: 'Profile', navSignIn: 'Sign in', navPost: 'Post', navDashboard: 'Dashboard', navAccount: 'Account',
     searchPlaceholder: 'Search roles, companies or skills', quickCountry: 'Choose country', allCountries: 'All countries', chooseCountry: 'Choose country', searchCountry: 'Search countries',
-    switchLang: 'Change language', appLanguage: 'App language', skipToContent: 'Skip to content', lightMode: 'Light mode', darkMode: 'Dark mode', nJobs: '{n} jobs',
+    switchLang: 'Change language', appLanguage: 'App language', searchLanguage: 'Search languages', noLanguage: 'No language found', noLanguageBody: 'Try another spelling.', skipToContent: 'Skip to content', lightMode: 'Light mode', darkMode: 'Dark mode', nJobs: '{n} jobs',
     hello: 'Hi, {name}', homeTitle: 'Jobs around the world', homeStats: '{jobs} open jobs in {countries} countries',
     yourHiring: 'Your hiring', openDashboard: 'Open dashboard', statJobs: 'Jobs', statApplicants: 'Applicants',
     forYou: 'Jobs for You', seeAll: 'See all', noRecsTitle: 'No matching jobs yet', noRecsBody: 'Add skills to your profile for better recommendations.', addSkills: 'Add skills',

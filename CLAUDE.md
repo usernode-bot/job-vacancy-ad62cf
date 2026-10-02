@@ -99,6 +99,9 @@ shared understanding of what this app is for)_
   `applications`, `saved_jobs`. Public: `app_users`, `companies`, `jobs`.
 - Applicant privacy (phone, certificates) is enforced in `profileOut()` in
   `lib/routes.js`; never send those fields to a non-owner anywhere else.
+- Interface languages are listed in `public/i18n/languages.js`; English
+  (`en.js`) is the default and the fallback. Every language file must keep
+  exactly `en.js`'s keys and `{placeholders}` (`test/i18n.test.js` checks it).
 - Sample data is staging-only (`lib/seed.js`, rows flagged `is_demo`, owned by
   no user). Demo companies are manageable by any signed-in user; real
   companies only by their owner.

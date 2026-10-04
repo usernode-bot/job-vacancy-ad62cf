@@ -1,9 +1,7 @@
-/* Loker Dunia interface text: Bahasa Indonesia. Default language and the fallback for every other one.
+/* Loker Dunia interface text: Bahasa Indonesia.
  *
- * To add a language: copy this file to public/i18n/<code>.js, translate every
- * value (keep the keys and the {placeholders}), change the code, name and
- * locale, and add a <script src="/i18n/<code>.js"> tag in public/index.html.
- * A key missing here falls back to Bahasa Indonesia.
+ * English (en.js) is the default and the base: see that file for how to add
+ * a language. A key missing here falls back to English.
  */
 (window.LOKER_I18N = window.LOKER_I18N || {}).id = {
   name: 'Bahasa Indonesia',
@@ -16,7 +14,7 @@
     loading: 'Memuat', close: 'Tutup', add: 'Tambah', remove: 'Hapus', edit: 'Edit', back: 'Kembali', next: 'Lanjut', choose: 'Pilih', optional: 'opsional', all: 'Semua',
     mainNav: 'Navigasi utama', navHome: 'Beranda', navSearch: 'Cari', navSaved: 'Tersimpan', navExplore: 'Jelajah', navProfile: 'Profil', navSignIn: 'Masuk', navPost: 'Pasang', navDashboard: 'Dasbor', navAccount: 'Akun',
     searchPlaceholder: 'Cari posisi, perusahaan, atau skill', quickCountry: 'Pilih negara', allCountries: 'Semua negara', chooseCountry: 'Pilih negara', searchCountry: 'Cari negara',
-    switchLang: 'Ganti bahasa', appLanguage: 'Bahasa aplikasi', skipToContent: 'Langsung ke konten', lightMode: 'Mode terang', darkMode: 'Mode gelap', nJobs: '{n} lowongan',
+    switchLang: 'Ganti bahasa', appLanguage: 'Bahasa aplikasi', searchLanguage: 'Cari bahasa', noLanguage: 'Bahasa tidak ditemukan', noLanguageBody: 'Coba ejaan lain.', skipToContent: 'Langsung ke konten', lightMode: 'Mode terang', darkMode: 'Mode gelap', nJobs: '{n} lowongan',
     hello: 'Halo, {name}', homeTitle: 'Lowongan di seluruh dunia', homeStats: '{jobs} lowongan aktif di {countries} negara',
     yourHiring: 'Rekrutmen kamu', openDashboard: 'Buka dasbor', statJobs: 'Lowongan', statApplicants: 'Pelamar',
     forYou: 'Lowongan untuk Kamu', seeAll: 'Lihat semua', noRecsTitle: 'Belum ada lowongan yang cocok', noRecsBody: 'Tambahkan skill di profil agar rekomendasi lebih tepat.', addSkills: 'Tambah skill',

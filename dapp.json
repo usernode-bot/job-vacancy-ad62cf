@@ -12,15 +12,20 @@
       "expectSelector": "#hdr [data-testid=app-logo][data-logo=seeker] svg"
     },
     {
-      "name": "Header shows the language switcher, Bahasa Indonesia by default",
+      "name": "Header shows the language switcher, English by default",
       "path": "/",
-      "expectSelector": "#hdr [data-testid=lang-switcher][data-lang=id]"
+      "expectSelector": "#hdr [data-testid=lang-switcher][data-lang=en]"
+    },
+    {
+      "name": "Page is in English, left to right, by default",
+      "path": "/",
+      "expectSelector": "html[lang=en][dir=ltr] [data-testid=job-card]"
     },
     {
       "name": "Home lists latest jobs",
       "path": "/",
       "expectSelector": "[data-testid=job-card]",
-      "expectText": "Lowongan terbaru"
+      "expectText": "Latest jobs"
     },
     {
       "id": "jobs.search",
@@ -29,14 +34,15 @@
       "expectSelector": "#results [data-testid=job-card]",
       "visual": true,
       "impact": [
-        "public/index.html"
+        "public/index.html",
+        "public/i18n/**"
       ]
     },
     {
       "name": "Job detail shows required skills and apply",
       "path": "/#/job/j1",
       "expectSelector": "[data-testid=job-skill-lists]",
-      "expectText": "Lamar Sekarang"
+      "expectText": "Apply Now"
     },
     {
       "name": "Most wanted skills ranking",
@@ -52,12 +58,12 @@
       "name": "Sign up offers both roles",
       "path": "/#/auth",
       "expectSelector": "[data-testid=role-choice]",
-      "expectText": "Perusahaan"
+      "expectText": "Company"
     },
     {
       "name": "Saved page empty state",
       "path": "/#/saved",
-      "expectText": "Belum ada lowongan tersimpan"
+      "expectText": "No saved jobs yet"
     },
     {
       "name": "Sign-in lists the staging demo employer from the server",

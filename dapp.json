@@ -76,6 +76,17 @@
       "path": "/#/job/j17",
       "expectSelector": "[data-testid=job-skill-lists]",
       "expectText": "Maple Leaf Commerce"
+    },
+    {
+      "name": "No diploma required chip shows on job cards",
+      "path": "/#/jobs",
+      "expectSelector": "[data-testid=edu-any-chip]",
+      "expectText": "No diploma required"
+    },
+    {
+      "name": "Job detail says no diploma required for a job without education requirement",
+      "path": "/#/job/j15",
+      "expectText": "No diploma required"
     }
   ],
   "visibility": {

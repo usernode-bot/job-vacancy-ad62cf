@@ -21,6 +21,7 @@
     country: '国', city: '都市', cityPlaceholder: 'すべての都市', category: 'カテゴリ', allCategories: 'すべてのカテゴリ', jobType: '雇用形態', workModel: '勤務形態',
     salaryRange: '月給（{cur}）', min: '下限', max: '上限', salaryHint: '年俸と時給は月給に換算されます。', skills: 'スキル', filterSkillPh: 'スキルで絞り込み（例：React）',
     showSalaryIn: '給与の表示通貨', localCurrency: '現地通貨', ratesLink: '{date} 時点の固定レート', ratesTitle: '固定為替レート', ratesBody: '換算には {date} 時点の固定レートを使用しています。これは概算であり、リアルタイムの市場レートではありません。',
+    eduAll: 'すべての学歴', eduNoDiploma: '学歴不問',
     resetFilters: '絞り込みをリセット', searchTitle: '求人を探す', filters: '絞り込み', matchMySkills: 'スキルでマッチ', sortBy: '並べ替え', sortNewest: '新着順', sortSalary: '給与が高い順',
     matchNeedsProfile: '求人とマッチさせるには、求職者プロフィールにスキルを追加してください。', matchExplain: '必須スキルは 2、歓迎スキルは 1 の重みで計算します。資格で証明されたスキルは満点、未証明のスキルは 75% で計算します。',
     nFound: '{n} 件の求人が見つかりました', noJobs: '求人が見つかりません', noJobsBody: '絞り込み条件を減らすか、別のキーワードをお試しください。', showResults: '結果を表示',

@@ -21,6 +21,7 @@
     country: 'Nchi', city: 'Jiji', cityPlaceholder: 'Majiji yote', category: 'Kategoria', allCategories: 'Kategoria zote', jobType: 'Aina ya kazi', workModel: 'Mfumo wa kazi',
     salaryRange: 'Mshahara wa mwezi ({cur})', min: 'Kima cha chini', max: 'Kima cha juu', salaryHint: 'Malipo ya mwaka na ya saa yanabadilishwa kuwa ya mwezi.', skills: 'Ujuzi', filterSkillPh: 'Chuja ujuzi, k.m. React',
     showSalaryIn: 'Onyesha mshahara kwa', localCurrency: 'Sarafu ya nchi', ratesLink: 'Viwango thabiti hadi {date}', ratesTitle: 'Viwango thabiti vya ubadilishaji', ratesBody: 'Ubadilishaji unatumia viwango thabiti vya tarehe {date}. Ni makadirio, si viwango halisi vya soko.',
+    eduAll: 'Elimu yote', eduNoDiploma: 'Hakuna diploma inayohitajika',
     resetFilters: 'Weka upya vichujio', searchTitle: 'Tafuta Kazi', filters: 'Vichujio', matchMySkills: 'Linganisha na Ujuzi Wangu', sortBy: 'Panga kwa', sortNewest: 'Mpya zaidi', sortSalary: 'Mshahara wa juu zaidi',
     matchNeedsProfile: 'Ongeza ujuzi kwenye wasifu wa Mtafuta Kazi ili kulinganisha kazi.', matchExplain: 'Ujuzi unaohitajika una uzito wa 2, ujuzi wa ziada 1. Ujuzi uliothibitishwa kwa cheti unahesabiwa kikamilifu, usiothibitishwa unahesabiwa 75%.',
     nFound: 'Kazi {n} zimepatikana', noJobs: 'Hakuna kazi iliyopatikana', noJobsBody: 'Jaribu kupunguza vichujio au neno lingine.', showResults: 'Onyesha matokeo',

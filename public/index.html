@@ -471,7 +471,7 @@
   }
 
   /* ---------- search ---------- */
-  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false });
+  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', edu: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false });
   let filters = emptyFilters();
   const ui = { matchMode: false, sort: 'newest' };
   function filterCurrency() { return prefs.cur === 'local' ? 'USD' : prefs.cur; }
@@ -486,6 +486,7 @@
       if (f.country && j.country !== f.country) return false;
       if (f.city && !j.city.toLowerCase().includes(f.city.trim().toLowerCase())) return false;
       if (f.category && j.category !== f.category) return false;
+      if (f.edu && j.education !== f.edu) return false;
       if (f.types.length && !f.types.includes(j.type)) return false;
       if (f.models.length && !f.models.includes(j.model)) return false;
       if (f.skills.length && !f.skills.every(s => jobSkills(j).some(x => x.toLowerCase() === s.toLowerCase()))) return false;
@@ -508,7 +509,7 @@
   }
   function activeFilterCount() {
     const f = filters;
-    return [f.country, f.city, f.category, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo].filter(Boolean).length;
+    return [f.country, f.city, f.category, f.edu, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo].filter(Boolean).length;
   }
 
   /* ==========================================================================
@@ -821,7 +822,8 @@
       '<div><p class="text-sm font-semibold">' + esc(salaryText(j)) + '</p>' + (conv ? '<p class="text-xs ' + C.muted + '">' + esc(conv) + '</p>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
         (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') +
-        (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + '</div>' +
+        (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') +
+        (j.education === 'any' ? '<span class="' + C.chipBlue + '" data-testid="edu-any-chip">' + t('eduNoDiploma') + '</span>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5" data-testid="job-skills">' + shown.map(s => '<span class="' + C.chip + ' border border-slate-200 dark:border-slate-700 bg-transparent dark:bg-transparent">' + esc(s.name) + '</span>').join('') +
         (all.length > shown.length ? '<span class="' + C.chip + ' bg-transparent dark:bg-transparent text-blue-700 dark:text-blue-300">' + t('nMore', { n: all.length - shown.length }) + '</span>' : '') + '</div>' +
       '<div class="flex items-center justify-between gap-2 mt-auto pt-1"><span class="text-xs ' + C.muted + '">' + esc(relDays(j.postedAt)) + '</span>' + (m ? matchChip(m.pct) : '') + '</div>' +
@@ -883,6 +885,7 @@
       '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="filter-country" class="' + C.input + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(f.country) + '</span><span class="flex-1 truncate">' + esc(f.country ? countryName(f.country) : t('allCountries')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button></div>' +
       '<div><label class="' + C.label + '" for="f-city">' + t('city') + '</label><input id="f-city" list="f-city-list" data-filter="city" value="' + esc(f.city) + '" class="' + C.input + '" placeholder="' + esc(t('cityPlaceholder')) + '"><datalist id="f-city-list">' + cities.map(c => '<option value="' + esc(c) + '">').join('') + '</datalist></div>' +
       '<div><label class="' + C.label + '" for="f-cat">' + t('category') + '</label><select id="f-cat" data-filter="category" class="' + C.input + '"><option value="">' + t('allCategories') + '</option>' + CATEGORIES.map(c => '<option value="' + c + '"' + (f.category === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div>' +
+      '<div><label class="' + C.label + '" for="f-edu">' + t('education') + '</label><select id="f-edu" data-filter="edu" class="' + C.input + '"><option value="">' + t('eduAll') + '</option><option value="any"' + (f.edu === 'any' ? ' selected' : '') + '>' + t('eduNoDiploma') + '</option>' + EDU_LEVELS.map(l => '<option value="' + l + '"' + (f.edu === l ? ' selected' : '') + '>' + t('edu_' + l) + '</option>').join('') + '</select></div>' +
       '<fieldset><legend class="' + C.label + '">' + t('jobType') + '</legend><div class="flex flex-wrap gap-2">' + JOB_TYPES.map(x => check('types', x, f.types.includes(x), t('type_' + x))).join('') + '</div></fieldset>' +
       '<fieldset><legend class="' + C.label + '">' + t('workModel') + '</legend><div class="flex flex-wrap gap-2">' + WORK_MODELS.map(x => check('models', x, f.models.includes(x), t('model_' + x))).join('') + '</div></fieldset>' +
       '<fieldset><legend class="' + C.label + '">' + t('salaryRange', { cur: fc }) + '</legend><div class="grid grid-cols-2 gap-2">' +
@@ -1012,7 +1015,7 @@
         '<div><h3 class="text-sm font-medium mt-2">' + t('nicePlus') + '</h3><ul class="' + C.divider + '">' + (j.nice.length ? j.nice.map(skillRow).join('') : '<li class="py-2 text-sm ' + C.muted + '">-</li>') + '</ul></div></div></section>' +
       '<section class="' + C.section + '"><h2 class="font-semibold mb-1">' + t('requirements') + '</h2><dl class="' + C.divider + '">' +
         info(t('minExp'), esc(j.minExp ? t('nYears', { n: j.minExp }) : t('noExpNeeded'))) +
-        info(t('education'), esc(j.education === 'any' ? t('edu_any') : t('eduMin', { lv: t('edu_' + j.education) }))) +
+        info(t('education'), esc(j.education === 'any' ? t('eduNoDiploma') : t('eduMin', { lv: t('edu_' + j.education) }))) +
         info(t('languages'), esc(j.languages.map(l => langName(l.code) + ' (' + t('lang_' + l.level) + ')').join(', '))) +
         info(t('visaInfo'), esc(visaText(j))) +
         info(t('timezone'), esc(j.timezone + (j.remoteWorldwide ? ' · ' + t('tzFlexible') : ''))) + '</dl></section>' +

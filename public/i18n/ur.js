@@ -21,6 +21,7 @@
     country: 'ملک', city: 'شہر', cityPlaceholder: 'تمام شہر', category: 'زمرہ', allCategories: 'تمام زمرے', jobType: 'ملازمت کی قسم', workModel: 'کام کا طریقہ',
     salaryRange: 'ماہانہ تنخواہ ({cur})', min: 'کم از کم', max: 'زیادہ سے زیادہ', salaryHint: 'سالانہ اور فی گھنٹہ تنخواہ کو ماہانہ میں تبدیل کیا جاتا ہے۔', skills: 'مہارتیں', filterSkillPh: 'مہارتیں فلٹر کریں، مثلاً React',
     showSalaryIn: 'تنخواہ اس میں دکھائیں', localCurrency: 'مقامی کرنسی', ratesLink: '{date} کے مقررہ نرخ', ratesTitle: 'مقررہ شرح مبادلہ', ratesBody: 'تبادلے {date} کے مقررہ نرخوں پر کیے جاتے ہیں۔ یہ تخمینے ہیں، براہ راست مارکیٹ نرخ نہیں۔',
+    eduAll: 'تمام تعلیم', eduNoDiploma: 'ڈپلومہ کی ضرورت نہیں',
     resetFilters: 'فلٹرز ری سیٹ کریں', searchTitle: 'ملازمتیں تلاش کریں', filters: 'فلٹرز', matchMySkills: 'میری مہارتوں سے ملائیں', sortBy: 'ترتیب', sortNewest: 'تازہ ترین', sortSalary: 'سب سے زیادہ تنخواہ',
     matchNeedsProfile: 'ملازمتوں سے مطابقت کے لیے ملازمت کے متلاشی کی پروفائل میں مہارتیں شامل کریں۔', matchExplain: 'لازمی مہارتوں کا وزن 2 اور اضافی مہارتوں کا 1 ہے۔ تصدیق شدہ مہارتیں مکمل اور غیر ثابت شدہ مہارتیں 75% شمار ہوتی ہیں۔',
     nFound: '{n} ملازمتیں ملیں', noJobs: 'کوئی ملازمت نہیں ملی', noJobsBody: 'کم فلٹرز یا کوئی اور کلیدی لفظ آزمائیں۔', showResults: 'نتائج دکھائیں',

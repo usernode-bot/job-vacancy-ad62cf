@@ -21,6 +21,7 @@
     country: 'Kraj', city: 'Miasto', cityPlaceholder: 'Wszystkie miasta', category: 'Kategoria', allCategories: 'Wszystkie kategorie', jobType: 'Rodzaj zatrudnienia', workModel: 'Tryb pracy',
     salaryRange: 'Wynagrodzenie miesięczne ({cur})', min: 'Minimum', max: 'Maksimum', salaryHint: 'Stawki roczne i godzinowe są przeliczane na miesięczne.', skills: 'Umiejętności', filterSkillPh: 'Filtruj umiejętności, np. React',
     showSalaryIn: 'Pokaż wynagrodzenie w', localCurrency: 'Waluta lokalna', ratesLink: 'Stałe kursy z dnia {date}', ratesTitle: 'Stałe kursy walut', ratesBody: 'Przeliczenia wykorzystują stałe kursy z dnia {date}. Są to wartości szacunkowe, a nie bieżące kursy rynkowe.',
+    eduAll: 'Wszystkie wykształcenie', eduNoDiploma: 'Bez dyplomu',
     resetFilters: 'Wyczyść filtry', searchTitle: 'Znajdź pracę', filters: 'Filtry', matchMySkills: 'Dopasuj do umiejętności', sortBy: 'Sortuj według', sortNewest: 'Najnowsze', sortSalary: 'Najwyższe wynagrodzenie',
     matchNeedsProfile: 'Dodaj umiejętności do profilu kandydata, aby dopasowywać oferty.', matchExplain: 'Umiejętności wymagane mają wagę 2, mile widziane 1. Umiejętności z certyfikatem liczą się w pełni, niepotwierdzone w 75%.',
     nFound: 'Znalezione oferty: {n}', noJobs: 'Nie znaleziono ofert', noJobsBody: 'Użyj mniejszej liczby filtrów lub innego słowa kluczowego.', showResults: 'Pokaż wyniki',

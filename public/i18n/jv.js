@@ -21,6 +21,7 @@
     country: 'Negari', city: 'Kitha', cityPlaceholder: 'Sedaya kitha', category: 'Kategori', allCategories: 'Sedaya kategori', jobType: 'Jinis padamelan', workModel: 'Model nyambut damel',
     salaryRange: 'Bayaran saben wulan ({cur})', min: 'Minimal', max: 'Maksimal', salaryHint: 'Bayaran taunan lan saben jam dipunowahi dados saben wulan.', skills: 'Kaprigelan', filterSkillPh: 'Saring kaprigelan, tuladhanipun React',
     showSalaryIn: 'Tampilaken bayaran ing', localCurrency: 'Arta lokal', ratesLink: 'Kurs tetep per {date}', ratesTitle: 'Kurs arta tetep', ratesBody: 'Konversi ngagem kurs tetep per {date}. Punika kinten-kinten, sanes kurs pasar ingkang langsung.',
+    eduAll: 'Sedaya pendhidhikan', eduNoDiploma: 'Ora butuh ijazah',
     resetFilters: 'Reset saringan', searchTitle: 'Pados Padamelan', filters: 'Saringan', matchMySkills: 'Cocokaken Kaprigelan Kula', sortBy: 'Urutaken miturut', sortNewest: 'Paling enggal', sortSalary: 'Bayaran paling inggil',
     matchNeedsProfile: 'Tambahaken kaprigelan ing profil Pados Padamelan kangge nyocokaken lowongan.', matchExplain: 'Kaprigelan wajib bobotipun 2, kaprigelan tambahan 1. Kaprigelan ingkang gadhah sertifikat dipunetang wetah, ingkang dereng kabukten dipunetang 75%.',
     nFound: '{n} lowongan kapanggih', noJobs: 'Lowongan mboten kapanggih', noJobsBody: 'Cobi ngirangi saringan utawi tembung kunci sanes.', showResults: 'Tampilaken asil',

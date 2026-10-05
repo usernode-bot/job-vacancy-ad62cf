@@ -21,6 +21,7 @@
     country: 'Quốc gia', city: 'Thành phố', cityPlaceholder: 'Tất cả thành phố', category: 'Ngành nghề', allCategories: 'Tất cả ngành nghề', jobType: 'Loại hình công việc', workModel: 'Hình thức làm việc',
     salaryRange: 'Lương hằng tháng ({cur})', min: 'Tối thiểu', max: 'Tối đa', salaryHint: 'Lương theo năm và theo giờ được quy đổi sang theo tháng.', skills: 'Kỹ năng', filterSkillPh: 'Lọc kỹ năng, ví dụ React',
     showSalaryIn: 'Hiển thị lương theo', localCurrency: 'Tiền tệ địa phương', ratesLink: 'Tỷ giá cố định tính đến {date}', ratesTitle: 'Tỷ giá hối đoái cố định', ratesBody: 'Việc quy đổi sử dụng tỷ giá cố định tính đến {date}. Đây là ước tính, không phải tỷ giá thị trường trực tiếp.',
+    eduAll: 'Mọi học vấn', eduNoDiploma: 'Không yêu cầu bằng cấp',
     resetFilters: 'Đặt lại bộ lọc', searchTitle: 'Tìm việc làm', filters: 'Bộ lọc', matchMySkills: 'Phù hợp kỹ năng của tôi', sortBy: 'Sắp xếp theo', sortNewest: 'Mới nhất', sortSalary: 'Lương cao nhất',
     matchNeedsProfile: 'Thêm kỹ năng vào hồ sơ Người tìm việc để so khớp việc làm.', matchExplain: 'Kỹ năng bắt buộc có trọng số 2, kỹ năng ưu tiên có trọng số 1. Kỹ năng có chứng chỉ được tính đầy đủ, kỹ năng chưa chứng minh được tính 75%.',
     nFound: 'Tìm thấy {n} việc làm', noJobs: 'Không tìm thấy việc làm', noJobsBody: 'Hãy thử bớt bộ lọc hoặc dùng từ khóa khác.', showResults: 'Xem kết quả',

@@ -21,6 +21,7 @@
     country: 'देश', city: 'शहर', cityPlaceholder: 'सभी शहर', category: 'श्रेणी', allCategories: 'सभी श्रेणियाँ', jobType: 'नौकरी का प्रकार', workModel: 'कार्य मॉडल',
     salaryRange: 'मासिक वेतन ({cur})', min: 'न्यूनतम', max: 'अधिकतम', salaryHint: 'वार्षिक और प्रति घंटा वेतन को मासिक में बदला जाता है।', skills: 'कौशल', filterSkillPh: 'कौशल फ़िल्टर करें, जैसे React',
     showSalaryIn: 'वेतन इसमें दिखाएँ', localCurrency: 'स्थानीय मुद्रा', ratesLink: '{date} तक की स्थिर दरें', ratesTitle: 'स्थिर विनिमय दरें', ratesBody: 'रूपांतरण {date} तक की निश्चित दरों पर आधारित हैं। ये अनुमान हैं, बाज़ार की वर्तमान दरें नहीं।',
+    eduAll: 'सभी शिक्षा', eduNoDiploma: 'कोई डिप्लोमा आवश्यक नहीं',
     resetFilters: 'फ़िल्टर रीसेट करें', searchTitle: 'नौकरियाँ खोजें', filters: 'फ़िल्टर', matchMySkills: 'मेरे कौशल से मिलाएँ', sortBy: 'क्रमबद्ध करें', sortNewest: 'नवीनतम', sortSalary: 'सबसे अधिक वेतन',
     matchNeedsProfile: 'नौकरियों से मिलान के लिए नौकरी चाहने वाले की प्रोफ़ाइल में कौशल जोड़ें।', matchExplain: 'आवश्यक कौशल का भार 2 और वांछनीय कौशल का भार 1 है। प्रमाणित कौशल पूरे गिने जाते हैं, अप्रमाणित कौशल 75% गिने जाते हैं।',
     nFound: '{n} नौकरियाँ मिलीं', noJobs: 'कोई नौकरी नहीं मिली', noJobsBody: 'कम फ़िल्टर या कोई अन्य कीवर्ड आज़माएँ।', showResults: 'परिणाम दिखाएँ',

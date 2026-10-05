@@ -21,6 +21,7 @@
     country: 'Land', city: 'Stadt', cityPlaceholder: 'Alle Städte', category: 'Kategorie', allCategories: 'Alle Kategorien', jobType: 'Anstellungsart', workModel: 'Arbeitsmodell',
     salaryRange: 'Monatsgehalt ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Jahres- und Stundenlöhne werden in Monatsbeträge umgerechnet.', skills: 'Fähigkeiten', filterSkillPh: 'Fähigkeiten filtern, z. B. React',
     showSalaryIn: 'Gehalt anzeigen in', localCurrency: 'Landeswährung', ratesLink: 'Feste Kurse vom {date}', ratesTitle: 'Feste Wechselkurse', ratesBody: 'Umrechnungen verwenden feste Kurse vom {date}. Es handelt sich um Schätzungen, nicht um aktuelle Marktkurse.',
+    eduAll: 'Alle Ausbildungsabschlüsse', eduNoDiploma: 'Kein Abschluss erforderlich',
     resetFilters: 'Filter zurücksetzen', searchTitle: 'Stellen finden', filters: 'Filter', matchMySkills: 'Passend zu meinen Fähigkeiten', sortBy: 'Sortieren nach', sortNewest: 'Neueste', sortSalary: 'Höchstes Gehalt',
     matchNeedsProfile: 'Fügen Sie einem Bewerberprofil Fähigkeiten hinzu, um passende Stellen zu finden.', matchExplain: 'Erforderliche Fähigkeiten zählen doppelt, wünschenswerte einfach. Zertifizierte Fähigkeiten zählen voll, nicht nachgewiesene zu 75 %.',
     nFound: '{n} Stellen gefunden', noJobs: 'Keine Stellen gefunden', noJobsBody: 'Versuchen Sie weniger Filter oder einen anderen Suchbegriff.', showResults: 'Ergebnisse anzeigen',

@@ -21,6 +21,7 @@
     country: 'Mamlakat', city: 'Shahar', cityPlaceholder: 'Barcha shaharlar', category: 'Turkum', allCategories: 'Barcha turkumlar', jobType: 'Bandlik turi', workModel: 'Ish formati',
     salaryRange: 'Oylik maosh ({cur})', min: 'Eng kam', max: 'Eng koʻp', salaryHint: 'Yillik va soatbay toʻlov oylikka aylantiriladi.', skills: 'Koʻnikmalar', filterSkillPh: 'Koʻnikmalarni saralang, masalan React',
     showSalaryIn: 'Maoshni koʻrsatish valyutasi', localCurrency: 'Mahalliy valyuta', ratesLink: '{date} holatiga koʻra qatʼiy kurslar', ratesTitle: 'Qatʼiy valyuta kurslari', ratesBody: 'Hisob-kitoblar {date} holatiga koʻra qatʼiy kurslardan foydalanadi. Ular taxminiy boʻlib, joriy bozor kurslari emas.',
+    eduAll: 'Barcha taʼlim', eduNoDiploma: 'Diplom talab qilinmaydi',
     resetFilters: 'Filtrlarni tiklash', searchTitle: 'Ish topish', filters: 'Filtrlar', matchMySkills: 'Koʻnikmalarimga moslash', sortBy: 'Saralash', sortNewest: 'Eng yangi', sortSalary: 'Eng yuqori maosh',
     matchNeedsProfile: 'Vakansiyalarga moslash uchun Ish izlovchi profilingizga koʻnikmalar qoʻshing.', matchExplain: 'Majburiy koʻnikmalar 2, afzal koʻriladiganlar 1 ball. Sertifikatlangan koʻnikmalar toʻliq, tasdiqlanmaganlari 75% hisoblanadi.',
     nFound: '{n} ta vakansiya topildi', noJobs: 'Vakansiya topilmadi', noJobsBody: 'Kamroq filtr yoki boshqa kalit soʻzni sinab koʻring.', showResults: 'Natijalarni koʻrsatish',

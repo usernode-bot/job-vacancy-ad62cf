@@ -21,6 +21,7 @@
     country: 'દેશ', city: 'શહેર', cityPlaceholder: 'બધા શહેરો', category: 'શ્રેણી', allCategories: 'બધી શ્રેણીઓ', jobType: 'નોકરીનો પ્રકાર', workModel: 'કાર્ય મોડેલ',
     salaryRange: 'માસિક પગાર ({cur})', min: 'ન્યૂનતમ', max: 'મહત્તમ', salaryHint: 'વાર્ષિક અને કલાકદીઠ પગારને માસિકમાં રૂપાંતરિત કરવામાં આવે છે.', skills: 'કૌશલ્યો', filterSkillPh: 'કૌશલ્યો ફિલ્ટર કરો, જેમ કે React',
     showSalaryIn: 'પગાર આમાં બતાવો', localCurrency: 'સ્થાનિક ચલણ', ratesLink: '{date} મુજબના નિશ્ચિત દરો', ratesTitle: 'નિશ્ચિત વિનિમય દરો', ratesBody: 'રૂપાંતરણ {date} મુજબના નિશ્ચિત દરોનો ઉપયોગ કરે છે. તે અંદાજ છે, બજારના લાઇવ દરો નથી.',
+    eduAll: 'બધું શિક્ષણ', eduNoDiploma: 'ડિપ્લોમા જરૂરી નથી',
     resetFilters: 'ફિલ્ટર રીસેટ કરો', searchTitle: 'નોકરીઓ શોધો', filters: 'ફિલ્ટર', matchMySkills: 'મારા કૌશલ્યો સાથે મેળવો', sortBy: 'આ મુજબ ગોઠવો', sortNewest: 'સૌથી નવી', sortSalary: 'સૌથી વધુ પગાર',
     matchNeedsProfile: 'નોકરીઓ સાથે મેળ કરવા માટે નોકરી શોધનારની પ્રોફાઇલમાં કૌશલ્યો ઉમેરો.', matchExplain: 'જરૂરી કૌશલ્યોનું વજન 2 અને ઇચ્છનીય કૌશલ્યોનું વજન 1 છે. પ્રમાણિત કૌશલ્યો પૂરેપૂરા ગણાય છે, અપ્રમાણિત કૌશલ્યો 75% ગણાય છે.',
     nFound: '{n} નોકરીઓ મળી', noJobs: 'કોઈ નોકરી મળી નથી', noJobsBody: 'ઓછા ફિલ્ટર અથવા બીજો કીવર્ડ અજમાવો.', showResults: 'પરિણામો બતાવો',

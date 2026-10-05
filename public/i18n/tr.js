@@ -21,6 +21,7 @@
     country: 'Ülke', city: 'Şehir', cityPlaceholder: 'Tüm şehirler', category: 'Kategori', allCategories: 'Tüm kategoriler', jobType: 'Çalışma türü', workModel: 'Çalışma modeli',
     salaryRange: 'Aylık maaş ({cur})', min: 'En az', max: 'En çok', salaryHint: 'Yıllık ve saatlik ücretler aylığa çevrilir.', skills: 'Beceriler', filterSkillPh: 'Becerileri filtreleyin, ör. React',
     showSalaryIn: 'Maaşı şu birimde göster', localCurrency: 'Yerel para birimi', ratesLink: '{date} itibarıyla sabit kurlar', ratesTitle: 'Sabit döviz kurları', ratesBody: 'Dönüşümler {date} itibarıyla sabit kurları kullanır. Bunlar tahminidir, canlı piyasa kurları değildir.',
+    eduAll: 'Tüm eğitimler', eduNoDiploma: 'Diploma gerekmez',
     resetFilters: 'Filtreleri sıfırla', searchTitle: 'İş Bul', filters: 'Filtreler', matchMySkills: 'Becerilerime Göre Eşleştir', sortBy: 'Sırala', sortNewest: 'En yeni', sortSalary: 'En yüksek maaş',
     matchNeedsProfile: 'İlanlarla eşleşmek için İş Arayan profilinize beceri ekleyin.', matchExplain: 'Zorunlu beceriler 2, tercih sebebi olanlar 1 puan değerindedir. Sertifikalı beceriler tam, kanıtlanmamış olanlar %75 sayılır.',
     nFound: '{n} ilan bulundu', noJobs: 'İlan bulunamadı', noJobsBody: 'Daha az filtre veya başka bir anahtar kelime deneyin.', showResults: 'Sonuçları göster',

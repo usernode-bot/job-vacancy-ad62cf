@@ -21,6 +21,7 @@
     country: 'País', city: 'Ciudad', cityPlaceholder: 'Todas las ciudades', category: 'Categoría', allCategories: 'Todas las categorías', jobType: 'Tipo de empleo', workModel: 'Modalidad de trabajo',
     salaryRange: 'Salario mensual ({cur})', min: 'Mínimo', max: 'Máximo', salaryHint: 'Los pagos anuales y por hora se convierten a mensuales.', skills: 'Habilidades', filterSkillPh: 'Filtrar habilidades, p. ej. React',
     showSalaryIn: 'Mostrar salario en', localCurrency: 'Moneda local', ratesLink: 'Tipos fijos a fecha de {date}', ratesTitle: 'Tipos de cambio fijos', ratesBody: 'Las conversiones utilizan tipos fijos a fecha de {date}. Son estimaciones, no tipos de mercado en tiempo real.',
+    eduAll: 'Toda la formación', eduNoDiploma: 'Sin requisito de diploma',
     resetFilters: 'Restablecer filtros', searchTitle: 'Buscar empleo', filters: 'Filtros', matchMySkills: 'Según mis habilidades', sortBy: 'Ordenar por', sortNewest: 'Más recientes', sortSalary: 'Mayor salario',
     matchNeedsProfile: 'Añada habilidades a un perfil de candidato para encontrar ofertas compatibles.', matchExplain: 'Las habilidades obligatorias valen 2 y las deseables 1. Las habilidades certificadas cuentan al completo; las no acreditadas, al 75 %.',
     nFound: '{n} ofertas encontradas', noJobs: 'No se encontraron ofertas', noJobsBody: 'Pruebe con menos filtros u otra palabra clave.', showResults: 'Mostrar resultados',

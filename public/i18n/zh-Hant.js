@@ -21,6 +21,7 @@
     country: '國家', city: '城市', cityPlaceholder: '所有城市', category: '類別', allCategories: '所有類別', jobType: '工作性質', workModel: '工作模式',
     salaryRange: '月薪（{cur}）', min: '最低', max: '最高', salaryHint: '年薪與時薪已換算為月薪。', skills: '技能', filterSkillPh: '篩選技能，例如 React',
     showSalaryIn: '薪資顯示幣別', localCurrency: '當地貨幣', ratesLink: '固定匯率（截至 {date}）', ratesTitle: '固定匯率', ratesBody: '換算採用截至 {date} 的固定匯率，僅供估算，並非即時市場匯率。',
+    eduAll: '所有學歷', eduNoDiploma: '不拘學歷',
     resetFilters: '重設篩選', searchTitle: '搜尋職缺', filters: '篩選', matchMySkills: '比對我的技能', sortBy: '排序方式', sortNewest: '最新', sortSalary: '薪資最高',
     matchNeedsProfile: '請在求職者檔案中新增技能以比對職缺。', matchExplain: '必備技能權重為 2，加分技能為 1。已認證的技能以全額計算，未經證明的技能以 75% 計算。',
     nFound: '找到 {n} 個職缺', noJobs: '找不到職缺', noJobsBody: '請減少篩選條件或嘗試其他關鍵字。', showResults: '顯示結果',

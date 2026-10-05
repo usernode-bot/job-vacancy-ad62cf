@@ -21,6 +21,7 @@
     country: 'देश', city: 'शहर', cityPlaceholder: 'सबै शहर', category: 'श्रेणी', allCategories: 'सबै श्रेणी', jobType: 'जागिरको प्रकार', workModel: 'कार्य मोडेल',
     salaryRange: 'मासिक तलब ({cur})', min: 'न्यूनतम', max: 'अधिकतम', salaryHint: 'वार्षिक र प्रतिघण्टा तलबलाई मासिकमा रूपान्तरण गरिन्छ।', skills: 'सीप', filterSkillPh: 'सीप फिल्टर गर्नुहोस्, जस्तै React',
     showSalaryIn: 'तलब देखाउने मुद्रा', localCurrency: 'स्थानीय मुद्रा', ratesLink: '{date} सम्मका स्थिर दर', ratesTitle: 'स्थिर विनिमय दर', ratesBody: 'रूपान्तरणमा {date} सम्मका निश्चित दर प्रयोग गरिन्छ। यी अनुमान हुन्, बजारका हालका दर होइनन्।',
+    eduAll: 'सबै शिक्षा', eduNoDiploma: 'डिप्लोमा आवश्यक छैन',
     resetFilters: 'फिल्टर रिसेट गर्नुहोस्', searchTitle: 'जागिर खोज्नुहोस्', filters: 'फिल्टर', matchMySkills: 'मेरो सीपसँग मिलाउनुहोस्', sortBy: 'क्रमबद्ध', sortNewest: 'नयाँ', sortSalary: 'सबैभन्दा बढी तलब',
     matchNeedsProfile: 'जागिर मिलाउन जागिर खोज्ने व्यक्तिको प्रोफाइलमा सीप थप्नुहोस्।', matchExplain: 'आवश्यक सीपको भार 2 र वाञ्छनीय सीपको भार 1 हुन्छ। प्रमाणित सीप पूरा गनिन्छ, प्रमाण नभएका सीप 75% गनिन्छ।',
     nFound: '{n} जागिर भेटिए', noJobs: 'कुनै जागिर भेटिएन', noJobsBody: 'कम फिल्टर वा अर्को कीवर्ड प्रयास गर्नुहोस्।', showResults: 'नतिजा देखाउनुहोस्',

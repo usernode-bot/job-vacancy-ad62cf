@@ -21,6 +21,7 @@
     country: 'රට', city: 'නගරය', cityPlaceholder: 'සියලු නගර', category: 'කාණ්ඩය', allCategories: 'සියලු කාණ්ඩ', jobType: 'රැකියා වර්ගය', workModel: 'වැඩ ආකෘතිය',
     salaryRange: 'මාසික වැටුප ({cur})', min: 'අවම', max: 'උපරිම', salaryHint: 'වාර්ෂික සහ පැයට ගෙවීම් මාසික අගයට පරිවර්තනය කෙරේ.', skills: 'කුසලතා', filterSkillPh: 'කුසලතා පෙරන්න, උදා: React',
     showSalaryIn: 'වැටුප පෙන්වන්න', localCurrency: 'දේශීය මුදල්', ratesLink: '{date} දිනට ස්ථාවර අනුපාත', ratesTitle: 'ස්ථාවර විනිමය අනුපාත', ratesBody: 'පරිවර්තන සඳහා {date} දිනට ස්ථාවර අනුපාත භාවිතා කෙරේ. ඒවා ඇස්තමේන්තු මිස සජීවී වෙළඳපොළ අනුපාත නොවේ.',
+    eduAll: 'සියලුම අධ්‍යාපනය', eduNoDiploma: 'ඩිප්ලෝමාවක් අවශ්‍ය නැත',
     resetFilters: 'පෙරහන් යළි සකසන්න', searchTitle: 'රැකියා සොයන්න', filters: 'පෙරහන්', matchMySkills: 'මගේ කුසලතා ගළපන්න', sortBy: 'අනුපිළිවෙළ', sortNewest: 'නවතම', sortSalary: 'ඉහළම වැටුප',
     matchNeedsProfile: 'රැකියා ගැළපීමට රැකියා අපේක්ෂක පැතිකඩකට කුසලතා එක් කරන්න.', matchExplain: 'අවශ්‍ය කුසලතාවලට බර 2 ක්, ඇත්නම් හොඳ කුසලතාවලට බර 1 ක්. සහතික කළ කුසලතා සම්පූර්ණයෙන් ද, සනාථ නොකළ ඒවා 75% ලෙස ද ගණන් ගැනේ.',
     nFound: 'රැකියා {n} ක් හමු විය', noJobs: 'රැකියා හමු නොවීය', noJobsBody: 'අඩු පෙරහන් හෝ වෙනත් මූල පදයක් උත්සාහ කරන්න.', showResults: 'ප්‍රතිඵල පෙන්වන්න',

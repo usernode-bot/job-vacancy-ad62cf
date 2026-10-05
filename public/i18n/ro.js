@@ -21,6 +21,7 @@
     country: 'Țară', city: 'Oraș', cityPlaceholder: 'Toate orașele', category: 'Categorie', allCategories: 'Toate categoriile', jobType: 'Tip de post', workModel: 'Mod de lucru',
     salaryRange: 'Salariu lunar ({cur})', min: 'Minim', max: 'Maxim', salaryHint: 'Salariile anuale și orare sunt convertite în valori lunare.', skills: 'Competențe', filterSkillPh: 'Filtrați competențe, de ex. React',
     showSalaryIn: 'Afișați salariul în', localCurrency: 'Moneda locală', ratesLink: 'Cursuri fixe la {date}', ratesTitle: 'Cursuri de schimb fixe', ratesBody: 'Conversiile folosesc cursuri fixe la {date}. Acestea sunt estimări, nu cursuri de piață în timp real.',
+    eduAll: 'Toate studiile', eduNoDiploma: 'Fără diplomă',
     resetFilters: 'Resetați filtrele', searchTitle: 'Găsiți locuri de muncă', filters: 'Filtre', matchMySkills: 'Potrivire cu competențele mele', sortBy: 'Sortați după', sortNewest: 'Cele mai noi', sortSalary: 'Cel mai mare salariu',
     matchNeedsProfile: 'Adăugați competențe într-un profil de candidat pentru a găsi posturi potrivite.', matchExplain: 'Competențele obligatorii au ponderea 2, cele dorite 1. Competențele certificate contează integral, cele nedovedite 75%.',
     nFound: '{n} posturi găsite', noJobs: 'Nu s-au găsit posturi', noJobsBody: 'Încercați mai puține filtre sau alt cuvânt cheie.', showResults: 'Afișați rezultatele',

@@ -21,6 +21,7 @@
     country: '国家', city: '城市', cityPlaceholder: '所有城市', category: '类别', allCategories: '所有类别', jobType: '工作类型', workModel: '工作方式',
     salaryRange: '月薪（{cur}）', min: '最低', max: '最高', salaryHint: '年薪和时薪已折算为月薪。', skills: '技能', filterSkillPh: '筛选技能，例如 React',
     showSalaryIn: '薪资显示货币', localCurrency: '当地货币', ratesLink: '固定汇率（截至 {date}）', ratesTitle: '固定汇率', ratesBody: '换算采用截至 {date} 的固定汇率，仅为估算，并非实时市场汇率。',
+    eduAll: '所有学历', eduNoDiploma: '不限学历',
     resetFilters: '重置筛选', searchTitle: '查找职位', filters: '筛选', matchMySkills: '匹配我的技能', sortBy: '排序方式', sortNewest: '最新', sortSalary: '薪资最高',
     matchNeedsProfile: '请在求职者资料中添加技能以匹配职位。', matchExplain: '必备技能权重为 2，加分技能为 1。已认证的技能按全额计算，未经证明的技能按 75% 计算。',
     nFound: '找到 {n} 个职位', noJobs: '未找到职位', noJobsBody: '请减少筛选条件或尝试其他关键词。', showResults: '查看结果',

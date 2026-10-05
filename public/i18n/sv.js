@@ -21,6 +21,7 @@
     country: 'Land', city: 'Stad', cityPlaceholder: 'Alla städer', category: 'Kategori', allCategories: 'Alla kategorier', jobType: 'Anställningsform', workModel: 'Arbetsmodell',
     salaryRange: 'Månadslön ({cur})', min: 'Lägsta', max: 'Högsta', salaryHint: 'Års- och timlön räknas om till månadslön.', skills: 'Färdigheter', filterSkillPh: 'Filtrera färdigheter, t.ex. React',
     showSalaryIn: 'Visa lön i', localCurrency: 'Lokal valuta', ratesLink: 'Fasta kurser per {date}', ratesTitle: 'Fasta växelkurser', ratesBody: 'Omräkningar använder fasta kurser per {date}. De är uppskattningar, inte aktuella marknadskurser.',
+    eduAll: 'All utbildning', eduNoDiploma: 'Ingen examen krävs',
     resetFilters: 'Återställ filter', searchTitle: 'Hitta jobb', filters: 'Filter', matchMySkills: 'Matcha mina färdigheter', sortBy: 'Sortera efter', sortNewest: 'Nyaste', sortSalary: 'Högsta lön',
     matchNeedsProfile: 'Lägg till färdigheter i en profil som arbetssökande för att matcha jobb.', matchExplain: 'Krav väger 2, meriterande 1. Certifierade färdigheter räknas fullt ut, obestyrkta till 75 %.',
     nFound: '{n} jobb hittades', noJobs: 'Inga jobb hittades', noJobsBody: 'Prova färre filter eller ett annat sökord.', showResults: 'Visa resultat',

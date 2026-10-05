@@ -24,7 +24,7 @@
     latestJobs: 'Latest jobs', topSkills: 'Most Wanted Skills', topSkillsSub: 'Skill ranking across all jobs', byCountry: 'Explore by Country', byCountrySub: 'Job count in each country',
     save: 'Save', unsave: 'Remove from saved', saved: 'Saved', savedToast: 'Job saved', unsavedToast: 'Job removed from Saved', nMore: '+{n} more',
     remoteWorldwide: 'Remote Worldwide', remoteWorldwideL: 'Remote Worldwide (from any country)', remoteWorldwideHint: 'Work from any country', visaSponsor: 'Visa Sponsor', relocation: 'Relocation Support',
-    country: 'Country', city: 'City', cityPlaceholder: 'All cities', category: 'Category', allCategories: 'All categories', jobType: 'Job type', workModel: 'Work model',
+    country: 'Country', city: 'City', cityPlaceholder: 'All cities', category: 'Category', allCategories: 'All categories', eduAll: 'All education', eduNoDiploma: 'No diploma required', jobType: 'Job type', workModel: 'Work model',
     salaryRange: 'Monthly salary ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Yearly and hourly pay is converted to monthly.', skills: 'Skills', filterSkillPh: 'Filter skills, e.g. React',
     showSalaryIn: 'Show salary in', localCurrency: 'Local currency', ratesLink: 'Static rates as of {date}', ratesTitle: 'Static exchange rates', ratesBody: 'Conversions use fixed rates as of {date}. They are estimates, not live market rates.',
     resetFilters: 'Reset filters', searchTitle: 'Find Jobs', filters: 'Filters', matchMySkills: 'Match My Skills', sortBy: 'Sort by', sortNewest: 'Newest', sortSalary: 'Highest salary',

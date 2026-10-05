@@ -21,6 +21,7 @@
     country: 'Orílẹ̀-èdè', city: 'Ìlú', cityPlaceholder: 'Gbogbo ìlú', category: 'Ẹ̀ka', allCategories: 'Gbogbo ẹ̀ka', jobType: 'Irú iṣẹ́', workModel: 'Ọ̀nà iṣẹ́',
     salaryRange: 'Owó oṣù ({cur})', min: 'Ó kéré jù', max: 'Ó pọ̀ jù', salaryHint: 'A yí owó ọdún àti ti wákàtí padà sí ti oṣù.', skills: 'Ọgbọ́n', filterSkillPh: 'Ṣàsẹ́ ọgbọ́n, fún àpẹẹrẹ React',
     showSalaryIn: 'Fi owó oṣù hàn ní', localCurrency: 'Owó ìbílẹ̀', ratesLink: 'Ìwọ̀n tí kò yí padà ní {date}', ratesTitle: 'Ìwọ̀n pàṣípààrọ̀ tí kò yí padà', ratesBody: 'Ìyípadà ń lo ìwọ̀n tí kò yí padà ti {date}. Ìṣirò ìfojúsùn ni wọ́n, kì í ṣe ìwọ̀n ọjà lọ́wọ́lọ́wọ́.',
+    eduAll: 'Gbogbo ẹ̀kọ́', eduNoDiploma: 'Ko nilo dípúlómà',
     resetFilters: 'Tún àwọn àsẹ́ ṣe', searchTitle: 'Wá Iṣẹ́', filters: 'Àwọn àsẹ́', matchMySkills: 'Bá Ọgbọ́n Mi Mu', sortBy: 'Tò nípa', sortNewest: 'Tuntun jùlọ', sortSalary: 'Owó oṣù tó ga jùlọ',
     matchNeedsProfile: 'Ṣàfikún ọgbọ́n sí profaili Olùwáṣẹ́ láti bá iṣẹ́ mu.', matchExplain: 'Ọgbọ́n tí a béèrè ní ìwúwo 2, ọgbọ́n àfikún ní 1. Ọgbọ́n tó ní ìwé-ẹ̀rí ka ní kíkún, èyí tí kò ní ẹ̀rí ka 75%.',
     nFound: 'A rí iṣẹ́ {n}', noJobs: 'A kò rí iṣẹ́ kankan', noJobsBody: 'Gbìyànjú àsẹ́ díẹ̀ tàbí ọ̀rọ̀ mìíràn.', showResults: 'Fi àbájáde hàn',

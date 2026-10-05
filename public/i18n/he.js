@@ -21,6 +21,7 @@
     country: 'מדינה', city: 'עיר', cityPlaceholder: 'כל הערים', category: 'קטגוריה', allCategories: 'כל הקטגוריות', jobType: 'סוג משרה', workModel: 'מודל עבודה',
     salaryRange: 'שכר חודשי ({cur})', min: 'מינימום', max: 'מקסימום', salaryHint: 'שכר שנתי ושעתי מומר לשכר חודשי.', skills: 'כישורים', filterSkillPh: 'סינון כישורים, למשל React',
     showSalaryIn: 'הצגת שכר ב', localCurrency: 'מטבע מקומי', ratesLink: 'שערים קבועים נכון ל-{date}', ratesTitle: 'שערי חליפין קבועים', ratesBody: 'ההמרות מבוססות על שערים קבועים נכון ל-{date}. אלה הערכות ולא שערי שוק בזמן אמת.',
+    eduAll: 'כל ההשכלה', eduNoDiploma: 'לא נדרשת תעודה',
     resetFilters: 'איפוס מסננים', searchTitle: 'חיפוש משרות', filters: 'מסננים', matchMySkills: 'התאמה לכישורים שלי', sortBy: 'מיון לפי', sortNewest: 'החדשות ביותר', sortSalary: 'השכר הגבוה ביותר',
     matchNeedsProfile: 'כדי להתאים משרות, יש להוסיף כישורים לפרופיל מחפש העבודה.', matchExplain: 'משקל כישורי חובה הוא 2, ויתרון הוא 1. כישורים עם תעודה נספרים במלואם, וכישורים שלא הוכחו נספרים ב-75%.',
     nFound: 'נמצאו {n} משרות', noJobs: 'לא נמצאו משרות', noJobsBody: 'כדאי לנסות פחות מסננים או מילת מפתח אחרת.', showResults: 'הצגת תוצאות',

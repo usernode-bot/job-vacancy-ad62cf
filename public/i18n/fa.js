@@ -21,6 +21,7 @@
     country: 'کشور', city: 'شهر', cityPlaceholder: 'همه شهرها', category: 'دسته‌بندی', allCategories: 'همه دسته‌بندی‌ها', jobType: 'نوع همکاری', workModel: 'نحوه کار',
     salaryRange: 'حقوق ماهانه ({cur})', min: 'حداقل', max: 'حداکثر', salaryHint: 'حقوق سالانه و ساعتی به ماهانه تبدیل می‌شود.', skills: 'مهارت‌ها', filterSkillPh: 'فیلتر مهارت‌ها، مثلاً React',
     showSalaryIn: 'نمایش حقوق به', localCurrency: 'ارز محلی', ratesLink: 'نرخ‌های ثابت تا تاریخ {date}', ratesTitle: 'نرخ‌های ثابت ارز', ratesBody: 'تبدیل‌ها با نرخ‌های ثابت تا تاریخ {date} انجام می‌شوند. این مقادیر تخمینی هستند و نرخ لحظه‌ای بازار نیستند.',
+    eduAll: 'همه مقاطع تحصیلی', eduNoDiploma: 'بدون نیاز به مدرک',
     resetFilters: 'بازنشانی فیلترها', searchTitle: 'جستجوی شغل', filters: 'فیلترها', matchMySkills: 'تطبیق با مهارت‌هایم', sortBy: 'مرتب‌سازی بر اساس', sortNewest: 'جدیدترین', sortSalary: 'بالاترین حقوق',
     matchNeedsProfile: 'برای تطبیق مشاغل، مهارت‌هایی به پروفایل کارجو اضافه کنید.', matchExplain: 'وزن مهارت‌های الزامی 2 و مهارت‌های امتیازی 1 است. مهارت‌های دارای گواهی کامل و مهارت‌های اثبات‌نشده 75% محاسبه می‌شوند.',
     nFound: '{n} شغل یافت شد', noJobs: 'شغلی یافت نشد', noJobsBody: 'فیلترهای کمتر یا کلیدواژه دیگری را امتحان کنید.', showResults: 'نمایش نتایج',

@@ -25,6 +25,7 @@
     country: 'Negara', city: 'Kota', cityPlaceholder: 'Semua kota', category: 'Kategori', allCategories: 'Semua kategori', jobType: 'Tipe kerja', workModel: 'Model kerja',
     salaryRange: 'Gaji per bulan ({cur})', min: 'Minimal', max: 'Maksimal', salaryHint: 'Gaji tahunan dan per jam dikonversi ke per bulan.', skills: 'Keahlian', filterSkillPh: 'Filter skill, misal React',
     showSalaryIn: 'Tampilkan gaji dalam', localCurrency: 'Mata uang lokal', ratesLink: 'Kurs statis per {date}', ratesTitle: 'Kurs statis', ratesBody: 'Konversi memakai kurs tetap per {date}. Nilainya perkiraan, bukan kurs pasar saat ini.',
+    eduAll: 'Semua pendidikan', eduNoDiploma: 'Tanpa ijazah',
     resetFilters: 'Reset filter', searchTitle: 'Cari Lowongan', filters: 'Filter', matchMySkills: 'Cocokkan Skill Saya', sortBy: 'Urutkan', sortNewest: 'Terbaru', sortSalary: 'Gaji tertinggi',
     matchNeedsProfile: 'Isi skill di profil Pencari Kerja untuk mencocokkan lowongan.', matchExplain: 'Skill wajib berbobot 2, nilai plus 1. Skill bersertifikat dihitung penuh, tanpa bukti dihitung 75%.',
     nFound: '{n} lowongan ditemukan', noJobs: 'Tidak ada lowongan ditemukan', noJobsBody: 'Coba kurangi filter atau ganti kata kunci.', showResults: 'Tampilkan hasil',

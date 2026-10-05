@@ -21,6 +21,7 @@
     country: 'ประเทศ', city: 'เมือง', cityPlaceholder: 'ทุกเมือง', category: 'หมวดหมู่', allCategories: 'ทุกหมวดหมู่', jobType: 'ประเภทงาน', workModel: 'รูปแบบการทำงาน',
     salaryRange: 'เงินเดือน ({cur})', min: 'ต่ำสุด', max: 'สูงสุด', salaryHint: 'ค่าจ้างรายปีและรายชั่วโมงจะถูกแปลงเป็นรายเดือน', skills: 'ทักษะ', filterSkillPh: 'กรองทักษะ เช่น React',
     showSalaryIn: 'แสดงเงินเดือนเป็น', localCurrency: 'สกุลเงินท้องถิ่น', ratesLink: 'อัตราคงที่ ณ วันที่ {date}', ratesTitle: 'อัตราแลกเปลี่ยนคงที่', ratesBody: 'การแปลงค่าใช้อัตราคงที่ ณ วันที่ {date} เป็นค่าประมาณ ไม่ใช่อัตราตลาดแบบเรียลไทม์',
+    eduAll: 'การศึกษาทั้งหมด', eduNoDiploma: 'ไม่ต้องมีวุฒิการศึกษา',
     resetFilters: 'รีเซ็ตตัวกรอง', searchTitle: 'ค้นหางาน', filters: 'ตัวกรอง', matchMySkills: 'ตรงกับทักษะของฉัน', sortBy: 'เรียงตาม', sortNewest: 'ใหม่ล่าสุด', sortSalary: 'เงินเดือนสูงสุด',
     matchNeedsProfile: 'เพิ่มทักษะในโปรไฟล์ผู้หางานเพื่อจับคู่งาน', matchExplain: 'ทักษะที่จำเป็นมีน้ำหนัก 2 ทักษะที่พึงมีมีน้ำหนัก 1 ทักษะที่มีใบรับรองนับเต็ม ส่วนทักษะที่ยังไม่มีหลักฐานนับ 75%',
     nFound: 'พบ {n} งาน', noJobs: 'ไม่พบงาน', noJobsBody: 'ลองลดตัวกรองหรือใช้คำค้นหาอื่น', showResults: 'แสดงผลลัพธ์',

@@ -21,6 +21,7 @@
     country: 'Nagara', city: 'Kota', cityPlaceholder: 'Sadaya kota', category: 'Kategori', allCategories: 'Sadaya kategori', jobType: 'Jinis padamelan', workModel: 'Modél damel',
     salaryRange: 'Gajih bulanan ({cur})', min: 'Minimum', max: 'Maksimum', salaryHint: 'Gajih taunan sareng per jam dirobih janten bulanan.', skills: 'Kaahlian', filterSkillPh: 'Saring kaahlian, conto React',
     showSalaryIn: 'Témbongkeun gajih dina', localCurrency: 'Mata uang lokal', ratesLink: 'Kurs tetep per {date}', ratesTitle: 'Kurs mata uang tetep', ratesBody: 'Konvérsi nganggo kurs tetep per {date}. Ieu mangrupikeun perkiraan, sanés kurs pasar langsung.',
+    eduAll: 'Sadaya atikan', eduNoDiploma: 'Teu kedah ijazah',
     resetFilters: 'Reset saringan', searchTitle: 'Milarian Padamelan', filters: 'Saringan', matchMySkills: 'Cocogkeun Kaahlian Abdi', sortBy: 'Urutkeun dumasar', sortNewest: 'Panganyarna', sortSalary: 'Gajih pangluhurna',
     matchNeedsProfile: 'Tambihan kaahlian dina profil Pencari Padamelan kanggo nyocogkeun lowongan.', matchExplain: 'Kaahlian wajib bobotna 2, kaahlian tambihan 1. Kaahlian anu gaduh sértifikat diitung pinuh, anu teu acan kabuktian diitung 75%.',
     nFound: '{n} lowongan kapendak', noJobs: 'Lowongan teu kapendak', noJobsBody: 'Cobian ngirangan saringan atanapi kecap konci sanés.', showResults: 'Témbongkeun hasil',

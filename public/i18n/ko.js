@@ -21,6 +21,7 @@
     country: '국가', city: '도시', cityPlaceholder: '모든 도시', category: '직군', allCategories: '모든 직군', jobType: '고용 형태', workModel: '근무 형태',
     salaryRange: '월급 ({cur})', min: '최소', max: '최대', salaryHint: '연봉과 시급은 월급으로 환산됩니다.', skills: '기술', filterSkillPh: '기술 필터 (예: React)',
     showSalaryIn: '급여 표시 통화', localCurrency: '현지 통화', ratesLink: '{date} 기준 고정 환율', ratesTitle: '고정 환율', ratesBody: '환산에는 {date} 기준 고정 환율이 사용됩니다. 실시간 시장 환율이 아닌 추정치입니다.',
+    eduAll: '모든 학력', eduNoDiploma: '학력 무관',
     resetFilters: '필터 초기화', searchTitle: '채용 공고 찾기', filters: '필터', matchMySkills: '내 기술과 매칭', sortBy: '정렬', sortNewest: '최신순', sortSalary: '급여 높은순',
     matchNeedsProfile: '채용 공고와 매칭하려면 구직자 프로필에 기술을 추가해 주세요.', matchExplain: '필수 기술은 가중치 2, 우대 기술은 1입니다. 인증된 기술은 100%, 증명되지 않은 기술은 75%로 반영됩니다.',
     nFound: '채용 공고 {n}개를 찾았습니다', noJobs: '채용 공고를 찾을 수 없습니다', noJobsBody: '필터를 줄이거나 다른 키워드로 검색해 보세요.', showResults: '결과 보기',

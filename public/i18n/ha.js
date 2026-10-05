@@ -21,6 +21,7 @@
     country: 'Ƙasa', city: 'Birni', cityPlaceholder: 'Duk birane', category: 'Rukuni', allCategories: 'Duk rukunoni', jobType: 'Nauʼin aiki', workModel: 'Tsarin aiki',
     salaryRange: 'Albashin wata ({cur})', min: 'Mafi ƙaranci', max: 'Mafi yawa', salaryHint: 'Ana mayar da biyan shekara da na awa zuwa na wata.', skills: 'Ƙwarewa', filterSkillPh: 'Tace ƙwarewa, misali React',
     showSalaryIn: 'Nuna albashi a', localCurrency: 'Kuɗin gida', ratesLink: 'Ƙayyadaddun farashi na {date}', ratesTitle: 'Ƙayyadaddun farashin musaya', ratesBody: 'Musayar tana amfani da ƙayyadaddun farashi na {date}. Ƙiyasi ne, ba farashin kasuwa na yanzu ba.',
+    eduAll: 'Dukkan ilimi', eduNoDiploma: 'Babu bukatar difloma',
     resetFilters: 'Sake saita matattara', searchTitle: 'Nemi Ayyuka', filters: 'Matattara', matchMySkills: 'Daidaita da Ƙwarewata', sortBy: 'Jera ta', sortNewest: 'Mafi sabo', sortSalary: 'Albashi mafi tsoka',
     matchNeedsProfile: 'Ƙara ƙwarewa a bayanan Mai Neman Aiki domin daidaita ayyuka.', matchExplain: 'Ƙwarewar da ake buƙata tana da nauyin 2, ta ƙari 1. Ƙwarewar da ke da takardar shaida ana ƙirga ta gaba ɗaya, wadda ba ta da hujja ana ƙirga ta 75%.',
     nFound: 'An sami ayyuka {n}', noJobs: 'Ba a sami ayyuka ba', noJobsBody: 'Gwada rage matattara ko wata kalma.', showResults: 'Nuna sakamako',

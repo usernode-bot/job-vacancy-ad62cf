@@ -21,6 +21,7 @@
     country: 'Paese', city: 'Città', cityPlaceholder: 'Tutte le città', category: 'Categoria', allCategories: 'Tutte le categorie', jobType: 'Tipo di contratto', workModel: 'Modalità di lavoro',
     salaryRange: 'Stipendio mensile ({cur})', min: 'Minimo', max: 'Massimo', salaryHint: 'Le retribuzioni annuali e orarie sono convertite in mensili.', skills: 'Competenze', filterSkillPh: 'Filtra competenze, es. React',
     showSalaryIn: 'Mostra stipendio in', localCurrency: 'Valuta locale', ratesLink: 'Tassi fissi al {date}', ratesTitle: 'Tassi di cambio fissi', ratesBody: 'Le conversioni usano tassi fissi al {date}. Sono stime, non tassi di mercato in tempo reale.',
+    eduAll: 'Tutta l’istruzione', eduNoDiploma: 'Nessun diploma richiesto',
     resetFilters: 'Azzera filtri', searchTitle: 'Trova lavoro', filters: 'Filtri', matchMySkills: 'In base alle mie competenze', sortBy: 'Ordina per', sortNewest: 'Più recenti', sortSalary: 'Stipendio più alto',
     matchNeedsProfile: 'Aggiunga competenze a un profilo da candidato per trovare offerte corrispondenti.', matchExplain: 'Le competenze richieste valgono 2, quelle gradite 1. Le competenze certificate contano per intero, quelle non comprovate al 75%.',
     nFound: '{n} offerte trovate', noJobs: 'Nessuna offerta trovata', noJobsBody: "Provi con meno filtri o un'altra parola chiave.", showResults: 'Mostra risultati',

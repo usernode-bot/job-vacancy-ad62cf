@@ -21,6 +21,7 @@
     country: 'Bansa', city: 'Lungsod', cityPlaceholder: 'Lahat ng lungsod', category: 'Kategorya', allCategories: 'Lahat ng kategorya', jobType: 'Uri ng trabaho', workModel: 'Modelo ng trabaho',
     salaryRange: 'Buwanang sahod ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Kino-convert sa buwanan ang taunan at kada oras na sahod.', skills: 'Kasanayan', filterSkillPh: 'I-filter ang kasanayan, hal. React',
     showSalaryIn: 'Ipakita ang sahod sa', localCurrency: 'Lokal na pera', ratesLink: 'Nakapirming palitan noong {date}', ratesTitle: 'Nakapirming palitan ng pera', ratesBody: 'Gumagamit ang conversion ng nakapirming palitan noong {date}. Mga tantya ito, hindi kasalukuyang palitan sa merkado.',
+    eduAll: 'Lahat ng edukasyon', eduNoDiploma: 'Walang kinakailangang diploma',
     resetFilters: 'I-reset ang mga filter', searchTitle: 'Maghanap ng Trabaho', filters: 'Mga filter', matchMySkills: 'Itugma sa Aking Kasanayan', sortBy: 'Ayusin ayon sa', sortNewest: 'Pinakabago', sortSalary: 'Pinakamataas na sahod',
     matchNeedsProfile: 'Magdagdag ng kasanayan sa profile ng Naghahanap ng Trabaho para maitugma ang mga trabaho.', matchExplain: 'Ang kinakailangang kasanayan ay may bigat na 2, ang dagdag na kasanayan ay 1. Buong bilang ang may sertipiko, 75% naman ang wala pang patunay.',
     nFound: '{n} trabahong nahanap', noJobs: 'Walang nahanap na trabaho', noJobsBody: 'Subukang bawasan ang filter o gumamit ng ibang keyword.', showResults: 'Ipakita ang resulta',

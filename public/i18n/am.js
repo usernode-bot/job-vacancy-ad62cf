@@ -21,6 +21,7 @@
     country: 'አገር', city: 'ከተማ', cityPlaceholder: 'ሁሉም ከተሞች', category: 'ምድብ', allCategories: 'ሁሉም ምድቦች', jobType: 'የሥራ ዓይነት', workModel: 'የሥራ ሞዴል',
     salaryRange: 'ወርሃዊ ደመወዝ ({cur})', min: 'ዝቅተኛ', max: 'ከፍተኛ', salaryHint: 'ዓመታዊ እና በሰዓት የሚከፈል ክፍያ ወደ ወርሃዊ ይቀየራል።', skills: 'ክህሎቶች', filterSkillPh: 'ክህሎቶችን ያጣሩ፣ ለምሳሌ React',
     showSalaryIn: 'ደመወዝን በዚህ አሳይ', localCurrency: 'የአገር ውስጥ ገንዘብ', ratesLink: 'ከ{date} ጀምሮ ያሉ ቋሚ ተመኖች', ratesTitle: 'ቋሚ የምንዛሪ ተመኖች', ratesBody: 'ልወጣዎቹ ከ{date} ጀምሮ ያሉ ቋሚ ተመኖችን ይጠቀማሉ። ግምቶች ናቸው እንጂ የቀጥታ የገበያ ተመኖች አይደሉም።',
+    eduAll: 'ሁሉም ትምህርት', eduNoDiploma: 'ዲፕሎማ አያስፈልግም',
     resetFilters: 'ማጣሪያዎችን ዳግም ያስጀምሩ', searchTitle: 'ሥራዎችን ይፈልጉ', filters: 'ማጣሪያዎች', matchMySkills: 'ከክህሎቶቼ ጋር አዛምድ', sortBy: 'ደርድር በ', sortNewest: 'አዲሶቹ', sortSalary: 'ከፍተኛ ደመወዝ',
     matchNeedsProfile: 'ሥራዎችን ለማዛመድ በሥራ ፈላጊ መገለጫ ላይ ክህሎቶችን ያክሉ።', matchExplain: 'አስፈላጊ ክህሎቶች 2፣ ቢኖሩ ጥሩ የሆኑ ክህሎቶች 1 ክብደት አላቸው። የተረጋገጡ ክህሎቶች ሙሉ በሙሉ ይቆጠራሉ፤ ያልተረጋገጡት 75% ይቆጠራሉ።',
     nFound: '{n} ሥራዎች ተገኝተዋል', noJobs: 'ምንም ሥራ አልተገኘም', noJobsBody: 'ያነሱ ማጣሪያዎችን ወይም ሌላ ቁልፍ ቃል ይሞክሩ።', showResults: 'ውጤቶችን አሳይ',

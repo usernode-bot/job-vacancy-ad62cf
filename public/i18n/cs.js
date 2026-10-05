@@ -21,6 +21,7 @@
     country: 'Země', city: 'Město', cityPlaceholder: 'Všechna města', category: 'Kategorie', allCategories: 'Všechny kategorie', jobType: 'Typ úvazku', workModel: 'Způsob práce',
     salaryRange: 'Měsíční mzda ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Roční a hodinová mzda se přepočítává na měsíční.', skills: 'Dovednosti', filterSkillPh: 'Filtrovat dovednosti, např. React',
     showSalaryIn: 'Zobrazit mzdu v', localCurrency: 'Místní měna', ratesLink: 'Pevné kurzy ke dni {date}', ratesTitle: 'Pevné směnné kurzy', ratesBody: 'Převody používají pevné kurzy ke dni {date}. Jde o odhady, nikoli o aktuální tržní kurzy.',
+    eduAll: 'Všechna vzdělání', eduNoDiploma: 'Bez diplomu',
     resetFilters: 'Zrušit filtry', searchTitle: 'Najít práci', filters: 'Filtry', matchMySkills: 'Podle mých dovedností', sortBy: 'Řadit podle', sortNewest: 'Nejnovější', sortSalary: 'Nejvyšší mzda',
     matchNeedsProfile: 'Přidejte dovednosti do profilu uchazeče, abyste mohli porovnávat nabídky.', matchExplain: 'Požadované dovednosti mají váhu 2, výhodou 1. Certifikované dovednosti se počítají plně, neprokázané na 75 %.',
     nFound: 'Nalezené nabídky: {n}', noJobs: 'Žádné nabídky nenalezeny', noJobsBody: 'Zkuste méně filtrů nebo jiné klíčové slovo.', showResults: 'Zobrazit výsledky',

@@ -21,6 +21,7 @@
     country: 'Negara', city: 'Bandar', cityPlaceholder: 'Semua bandar', category: 'Kategori', allCategories: 'Semua kategori', jobType: 'Jenis pekerjaan', workModel: 'Model kerja',
     salaryRange: 'Gaji bulanan ({cur})', min: 'Minimum', max: 'Maksimum', salaryHint: 'Gaji tahunan dan setiap jam ditukar kepada bulanan.', skills: 'Kemahiran', filterSkillPh: 'Tapis kemahiran, cth. React',
     showSalaryIn: 'Paparkan gaji dalam', localCurrency: 'Mata wang tempatan', ratesLink: 'Kadar tetap pada {date}', ratesTitle: 'Kadar pertukaran tetap', ratesBody: 'Penukaran menggunakan kadar tetap pada {date}. Ini ialah anggaran, bukan kadar pasaran semasa.',
+    eduAll: 'Semua pendidikan', eduNoDiploma: 'Tanpa diploma',
     resetFilters: 'Set semula penapis', searchTitle: 'Cari Pekerjaan', filters: 'Penapis', matchMySkills: 'Padankan Kemahiran Saya', sortBy: 'Isih mengikut', sortNewest: 'Terbaharu', sortSalary: 'Gaji tertinggi',
     matchNeedsProfile: 'Tambah kemahiran pada profil Pencari Kerja untuk memadankan jawatan.', matchExplain: 'Kemahiran wajib bernilai 2, kemahiran tambahan bernilai 1. Kemahiran bersijil dikira sepenuhnya, yang belum dibuktikan dikira 75%.',
     nFound: '{n} jawatan dijumpai', noJobs: 'Tiada jawatan dijumpai', noJobsBody: 'Cuba kurangkan penapis atau gunakan kata kunci lain.', showResults: 'Paparkan hasil',

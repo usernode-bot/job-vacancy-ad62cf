@@ -21,6 +21,7 @@
     country: 'Obodo', city: 'Obodo mepere emepe', cityPlaceholder: 'Obodo mepere emepe niile', category: 'Ụdị', allCategories: 'Ụdị niile', jobType: 'Ụdị ọrụ', workModel: 'Usoro ọrụ',
     salaryRange: 'Ụgwọ ọnwa ({cur})', min: 'Opekata mpe', max: 'Kacha elu', salaryHint: 'A na-agbanwe ụgwọ afọ na nke awa ka ọ bụrụ nke ọnwa.', skills: 'Nka', filterSkillPh: 'Họcha nka, dịka React',
     showSalaryIn: 'Gosi ụgwọ na', localCurrency: 'Ego obodo', ratesLink: 'Ọnụego a kpụrụ akpụ dị ka {date}', ratesTitle: 'Ọnụego mgbanwe a kpụrụ akpụ', ratesBody: 'Mgbanwe na-eji ọnụego a kpụrụ akpụ dị ka {date}. Ha bụ atụmatụ, ọ bụghị ọnụego ahịa nke ugbu a.',
+    eduAll: 'Agụmakwụkwọ niile', eduNoDiploma: 'Achọghị akwụkwọ nzere',
     resetFilters: 'Tọgharịa nzacha', searchTitle: 'Chọọ Ọrụ', filters: 'Nzacha', matchMySkills: 'Dakọọ Nka M', sortBy: 'Hazie site na', sortNewest: 'Kacha ọhụrụ', sortSalary: 'Ụgwọ kacha elu',
     matchNeedsProfile: 'Tinye nka na profaịlụ Onye Na-achọ Ọrụ ka ịdakọ ọrụ.', matchExplain: 'Nka a chọrọ nwere ịdị arọ 2, nka mgbakwunye 1. Nka nwere asambodo na-agụ zuru oke, nke enweghị ihe akaebe na-agụ 75%.',
     nFound: 'Ahụrụ ọrụ {n}', noJobs: 'Ahụghị ọrụ ọ bụla', noJobsBody: 'Nwaa nzacha ole na ole ma ọ bụ okwu ọzọ.', showResults: 'Gosi nsonaazụ',

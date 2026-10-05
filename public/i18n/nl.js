@@ -21,6 +21,7 @@
     country: 'Land', city: 'Stad', cityPlaceholder: 'Alle steden', category: 'Categorie', allCategories: 'Alle categorieën', jobType: 'Dienstverband', workModel: 'Werkmodel',
     salaryRange: 'Maandsalaris ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Jaar- en uurlonen worden omgerekend naar maandbedragen.', skills: 'Vaardigheden', filterSkillPh: 'Vaardigheden filteren, bijv. React',
     showSalaryIn: 'Salaris tonen in', localCurrency: 'Lokale valuta', ratesLink: 'Vaste koersen per {date}', ratesTitle: 'Vaste wisselkoersen', ratesBody: 'Omrekeningen gebruiken vaste koersen per {date}. Het zijn schattingen, geen actuele marktkoersen.',
+    eduAll: 'Alle opleidingen', eduNoDiploma: 'Geen diploma vereist',
     resetFilters: 'Filters wissen', searchTitle: 'Vacatures zoeken', filters: 'Filters', matchMySkills: 'Passend bij mijn vaardigheden', sortBy: 'Sorteren op', sortNewest: 'Nieuwste', sortSalary: 'Hoogste salaris',
     matchNeedsProfile: 'Voeg vaardigheden toe aan een werkzoekendenprofiel om vacatures te matchen.', matchExplain: 'Vereiste vaardigheden tellen dubbel, gewenste enkel. Gecertificeerde vaardigheden tellen volledig, onbewezen voor 75%.',
     nFound: '{n} vacatures gevonden', noJobs: 'Geen vacatures gevonden', noJobsBody: 'Probeer minder filters of een ander zoekwoord.', showResults: 'Resultaten tonen',

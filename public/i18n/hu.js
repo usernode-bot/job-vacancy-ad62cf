@@ -21,6 +21,7 @@
     country: 'Ország', city: 'Város', cityPlaceholder: 'Minden város', category: 'Kategória', allCategories: 'Minden kategória', jobType: 'Foglalkoztatás típusa', workModel: 'Munkavégzés módja',
     salaryRange: 'Havi fizetés ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Az éves és órabéreket havi összegre számítjuk át.', skills: 'Készségek', filterSkillPh: 'Készségek szűrése, pl. React',
     showSalaryIn: 'Fizetés megjelenítése ebben', localCurrency: 'Helyi pénznem', ratesLink: 'Rögzített árfolyamok, {date}', ratesTitle: 'Rögzített árfolyamok', ratesBody: 'Az átváltás a(z) {date} szerinti rögzített árfolyamokkal történik. Ezek becslések, nem élő piaci árfolyamok.',
+    eduAll: 'Minden végzettség', eduNoDiploma: 'Diploma nem szükséges',
     resetFilters: 'Szűrők törlése', searchTitle: 'Álláskeresés', filters: 'Szűrők', matchMySkills: 'Egyezés a készségeimmel', sortBy: 'Rendezés', sortNewest: 'Legújabb', sortSalary: 'Legmagasabb fizetés',
     matchNeedsProfile: 'Az egyeztetéshez adjon készségeket Álláskereső profiljához.', matchExplain: 'A kötelező készségek 2, az előnyt jelentők 1 súllyal számítanak. A tanúsított készségek teljes, az igazolatlanok 75%-os értékkel számítanak.',
     nFound: '{n} állás található', noJobs: 'Nem található állás', noJobsBody: 'Próbáljon kevesebb szűrőt vagy más kulcsszót.', showResults: 'Találatok megjelenítése',

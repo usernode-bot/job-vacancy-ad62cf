@@ -105,7 +105,7 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     const { rows } = await pool.query(`SELECT c.relname FROM pg_class c JOIN pg_description d ON d.objoid = c.oid AND d.objsubid = 0
       WHERE d.description = 'staging:private' ORDER BY 1`);
     await pool.end();
-    assert.deepEqual(rows.map(r => r.relname), ['applications', 'certificates', 'profiles', 'saved_jobs', 'skills']);
+    assert.deepEqual(rows.map(r => r.relname), ['applications', 'certificates', 'notifications', 'profiles', 'saved_jobs', 'skills']);
   });
 
   let companyId, jobId, certId;
@@ -202,5 +202,85 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     assert.deepEqual((await call(stranger, 'GET', '/bootstrap')).data.savedJobIds, []);
     await call(seeker, 'DELETE', `/saved/${jobId}`);
     assert.deepEqual((await call(seeker, 'GET', '/bootstrap')).data.savedJobIds, []);
+  });
+
+  await t.test('a profile save backfills notifications for recent matching jobs', async () => {
+    // The seeker's profile (React 3, TypeScript 2, React certified) was saved
+    // after the employer's React Developer job was posted, so the backfill
+    // must have picked it up along with any matching seeded jobs.
+    const { status, data } = await call(seeker, 'GET', '/notifications');
+    assert.equal(status, 200);
+    assert.ok(data.notifications.some(n => n.jobId === jobId), 'the earlier employer job is backfilled');
+    const hit = data.notifications.find(n => n.jobId === jobId);
+    assert.ok(hit.pct > 0, 'the notification carries a match score');
+    assert.equal(hit.readAt, null);
+    assert.ok(data.unread >= 1);
+    assert.ok((await call(seeker, 'GET', '/bootstrap')).data.notifUnread >= 1);
+    // A stranger has no profile, so nothing is theirs to see.
+    assert.deepEqual((await call(stranger, 'GET', '/notifications')).data.notifications, []);
+  });
+
+  await t.test('posting a job notifies matching seekers; unrelated jobs do not', async () => {
+    const before = (await call(seeker, 'GET', '/notifications')).data.notifications.length;
+    const j = await call(employer, 'POST', '/jobs', { companyId, title: 'Senior React Engineer', category: 'it', country: 'ID', city: 'Jakarta', currency: 'IDR',
+      salaryMin: 20e6, salaryMax: 30e6, period: 'month', type: 'fulltime', model: 'remote', required: [{ name: 'React', level: 3 }], nice: [{ name: 'Rust', level: 2 }],
+      languages: [{ code: 'id', level: 'fluent' }], description: 'Bangun aplikasi React.', qualifications: [], benefits: [] });
+    assert.equal(j.status, 201);
+    const after = await call(seeker, 'GET', '/notifications');
+    const hit = after.data.notifications.find(n => n.jobId === j.data.job.id);
+    assert.ok(hit, 'the seeker with React 3 is notified');
+    assert.equal(hit.readAt, null);
+    assert.equal(after.data.notifications.length, before + 1);
+    assert.equal((await call(employer, 'GET', '/notifications')).data.notifications.length, 0, 'the poster with no profile gets nothing');
+    const rust = await call(employer, 'POST', '/jobs', { companyId, title: 'Rust Systems Engineer', category: 'it', country: 'ID', city: 'Jakarta', currency: 'IDR',
+      salaryMin: 20e6, salaryMax: 30e6, period: 'month', type: 'fulltime', model: 'remote', required: [{ name: 'Rust', level: 2 }], nice: [],
+      languages: [{ code: 'en', level: 'fluent' }], description: 'Bangun sistem Rust.', qualifications: [], benefits: [] });
+    assert.equal(rust.status, 201);
+    const final = (await call(seeker, 'GET', '/notifications')).data.notifications;
+    assert.equal(final.length, before + 1, 'a job outside the profile creates nothing new');
+    assert.ok(!final.some(n => n.jobId === rust.data.job.id));
+    // A nice-to-have match alone never reaches the notify bar.
+    const niced = await call(employer, 'POST', '/jobs', { companyId, title: 'DevOps Engineer', category: 'it', country: 'ID', city: 'Jakarta', currency: 'IDR',
+      salaryMin: 20e6, salaryMax: 30e6, period: 'month', type: 'fulltime', model: 'remote', required: [{ name: 'Kubernetes', level: 2 }], nice: [{ name: 'React', level: 2 }],
+      languages: [{ code: 'en', level: 'fluent' }], description: 'Kelola klaster.', qualifications: [], benefits: [] });
+    assert.equal(niced.status, 201);
+    assert.ok(!(await call(seeker, 'GET', '/notifications')).data.notifications.some(n => n.jobId === niced.data.job.id), 'nice-to-only jobs stay quiet');
+  });
+
+  await t.test('another account saving a profile hears about the earlier job', async () => {
+    const p = await call(stranger, 'PUT', '/profile', profileBody({
+      bio: { ...profileBody().bio, fullName: 'Second Seeker', email: 'second@example.com', phone: '81200002222' },
+      skills: [{ name: 'React', level: 2, years: 1 }], certificates: [],
+    }));
+    assert.equal(p.status, 200);
+    const { data } = await call(stranger, 'GET', '/notifications');
+    assert.ok(data.notifications.some(n => n.jobId === jobId), 'the job posted before this profile existed is backfilled');
+    assert.ok((await call(stranger, 'GET', '/bootstrap')).data.notifUnread >= 1);
+    // The two seekers never see each other's alerts.
+    const mine = (await call(seeker, 'GET', '/notifications')).data.notifications.map(n => n.id);
+    const theirs = data.notifications.map(n => n.id);
+    assert.ok(!theirs.some(id => mine.includes(id)), 'no notification is shared between users');
+  });
+
+  await t.test('marking notifications read clears the unread count', async () => {
+    const r = await call(seeker, 'POST', '/notifications/read');
+    assert.equal(r.status, 200);
+    assert.equal(r.data.unread, 0);
+    const { data } = await call(seeker, 'GET', '/notifications');
+    assert.ok(data.notifications.length, 'the notifications are still listed');
+    assert.ok(data.notifications.every(n => n.readAt), 'every row now carries a read time');
+    assert.equal(data.unread, 0);
+    assert.equal((await call(seeker, 'GET', '/bootstrap')).data.notifUnread, 0);
+    assert.equal((await call(stranger, 'POST', '/notifications/read')).status, 200, 'marking read is per user and does not touch others');
+  });
+
+  await t.test('staging demo feed behind ?demo=1, plain route untouched', async () => {
+    const demo = await call(stranger, 'GET', '/notifications?demo=1');
+    assert.equal(demo.status, 200);
+    assert.ok(demo.data.notifications.length >= 3);
+    assert.ok(demo.data.notifications.every(n => n.isDemo), 'every demo row is labelled');
+    assert.ok(demo.data.notifications.some(n => !n.readAt) && demo.data.notifications.some(n => n.readAt), 'one row is already read');
+    const plain = await call(stranger, 'GET', '/notifications');
+    assert.deepEqual(plain.data.notifications.filter(n => n.isDemo), [], 'the plain route never serves demo rows');
   });
 });

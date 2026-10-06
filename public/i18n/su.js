@@ -83,5 +83,6 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kaséhatan', cat_education: 'Atikan', cat_finance: 'Kauangan', cat_engineering: 'Téknik', cat_creative: 'Kréatif', cat_marketing: 'Pamasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotélan', cat_logistics: 'Logistik', cat_agriculture: 'Tatanén',
     pageNotFound: 'Kaca teu kapendak', pageNotFoundBody: 'Tautan ieu teu aya.',
+    navNotifs: 'Bewara', notifHint: 'Pagawéan anyar nu cocog jeung kaahlian dina profil anjeun.', notifEmptyTitle: 'Can aya bewara', notifEmptyBody: 'Lamun pagawéan anyar peryogi kaahlian nu boga, bakal muncul di dieu.',
   },
 };

@@ -219,9 +219,10 @@
      ========================================================================== */
   const PREF_KEY = 'lokerdunia.prefs';
   const DAY = 86400000;
-  const db = { companies: [], profiles: [], skills: [], certificates: [], jobs: [], applications: [], savedJobIds: [] };
+  const db = { companies: [], profiles: [], skills: [], certificates: [], jobs: [], applications: [], savedJobIds: [], notifications: [] };
   // { userId, username, role, activeCompanyId, profileId, ownedCompanyIds, demoCompanyIds }
   let me = null;
+  let notifUnread = 0; // unread job-match alerts, from /bootstrap and /notifications
   let loadState = 'loading';
 
   function readJson(key) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
@@ -429,6 +430,7 @@
       me = d.me;
       db.companies = d.companies; db.jobs = d.jobs; db.savedJobIds = d.savedJobIds;
       db.applications = d.applications;
+      notifUnread = d.notifUnread || 0;
       db.profiles = []; db.skills = []; db.certificates = [];
       if (d.profile) mergeProfile(d.profile);
     },
@@ -481,6 +483,16 @@
       try { await request(was ? 'DELETE' : 'PUT', '/saved/' + encodeURIComponent(jobId)); }
       catch (e) { db.savedJobIds = was ? [jobId].concat(db.savedJobIds) : db.savedJobIds.filter(x => x !== jobId); throw e; }
       return !was;
+    },
+    // Job-match alerts. ?demo=1 (staging previews only) shows the demo feed.
+    async loadNotifications() {
+      const demo = route().query.get('demo') === '1' ? '?demo=1' : '';
+      const d = await request('GET', '/notifications' + demo);
+      db.notifications = d.notifications; notifUnread = d.unread;
+    },
+    async markNotificationsRead() {
+      await request('POST', '/notifications/read');
+      notifUnread = 0;
     },
   };
 
@@ -576,6 +588,7 @@
     chevron: '<path d="m9 18 6-6-6-6"/>',
     down: '<path d="m6 9 6 6 6-6"/>',
     languages: '<path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/>',
+    bell: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>',
     alert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
     file: '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',
     trash: '<path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>',
@@ -819,6 +832,8 @@
           '<button type="button" data-action="pick-lang" data-testid="lang-switcher" data-lang="' + lang + '" class="inline-flex items-center gap-1 h-10 px-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('switchLang') + ': ' + LANG_META[lang].name) + '" aria-haspopup="dialog">' +
             icon('languages', 'w-4 h-4') + '<span>' + esc(LANG_META[lang].short) + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
           '<button type="button" data-action="toggle-theme" class="' + C.btnIcon + '" aria-label="' + esc(t(theme === 'dark' ? 'lightMode' : 'darkMode')) + '">' + icon(theme === 'dark' ? 'sun' : 'moon') + '</button>' +
+          (u ? '<button type="button" data-action="open-notifs" data-testid="notif-bell" class="' + C.btnIcon + ' relative" aria-label="' + esc(t('navNotifs') + (notifUnread ? ': ' + notifUnread : '')) + '">' + icon('bell') +
+                (notifUnread ? '<span data-testid="notif-badge" class="absolute -top-1 -end-1 rounded-full bg-blue-600 text-white text-xs px-1.5 leading-5">' + (notifUnread > 9 ? '9+' : notifUnread) + '</span>' : '') + '</button>' : '') +
           (u ? '<a href="#/profile" class="hidden md:inline-flex items-center gap-2 h-10 ps-1 pe-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium">' +
                 avatar(p && p.photo, (p && p.fullName) || (co && co.name) || HR_USER || '?', 'w-8 h-8 text-xs') + '<span class="max-w-32 truncate">' + esc((p && p.fullName) || (co && co.name) || t('navProfile')) + '</span></a>'
              : '<a href="#/auth" class="hidden md:inline-flex ' + C.btnPrimary + '">' + t('navSignIn') + '</a>') +
@@ -1066,6 +1081,40 @@
     const jobs = ids.map(getJob).filter(Boolean);
     return '<h1 class="' + C.h1 + ' mb-1">' + t('savedTitle') + '</h1><p class="text-sm ' + C.muted + ' mb-4">' + t('nSaved', { n: jobs.length }) + '</p>' +
       (jobs.length ? jobGrid(jobs, { showMatch: role() === 'seeker', three: true }) : emptyState(t('noSaved'), t('noSavedBody'), '<a href="#/jobs" class="' + C.btnPrimary + '">' + t('findJobs') + '</a>'));
+  }
+
+  // Job-match alerts: jobs posted after the profile cleared the match bar.
+  // Opening the page marks everything read server-side (after this render,
+  // so the unread dots survive the visit) and clears the header badge.
+  function notifRow(n) {
+    const j = n.job, co = n.company, unread = !n.readAt;
+    return '<li><a href="#/job/' + esc(j.id) + '" data-testid="notif-item" data-unread="' + (unread ? '1' : '0') + '" class="flex items-start gap-3 px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500">' +
+      companyLogo(co.name) +
+      '<span class="flex-1 min-w-0">' +
+        '<span class="flex items-center gap-2"><span class="' + (unread ? 'font-semibold' : 'font-medium') + ' truncate" dir="auto">' + esc(j.title) + '</span>' +
+        (n.isDemo ? '<span class="' + C.chip + ' py-0.5 shrink-0">' + t('demoData') + '</span>' : '') + '</span>' +
+        '<span class="block text-sm ' + C.muted + ' truncate">' + esc(co.name) + ' · ' + flag(j.country) + ' ' + esc(j.city) + '</span>' +
+        '<span class="mt-1 flex flex-wrap items-center gap-1.5">' + matchChip(n.pct) + '<span class="text-xs ' + C.muted + '">' + esc(relDays(n.createdAt)) + '</span></span>' +
+      '</span>' +
+      (unread ? '<span class="mt-2 w-2.5 h-2.5 rounded-full bg-blue-600 shrink-0" aria-hidden="true"></span>' : '') +
+      '</a></li>';
+  }
+  function viewNotifications() {
+    let body;
+    if (db.notifications.length) {
+      body = '<ul class="' + C.card + ' ' + C.divider + ' overflow-hidden" data-testid="notif-list">' + db.notifications.map(notifRow).join('') + '</ul>';
+    } else {
+      // No alerts yet. The action depends on where the viewer is: sign in,
+      // add skills, or go browse matching jobs.
+      const p = myProfile();
+      const action = !currentUser()
+        ? '<a href="#/auth" class="' + C.btnPrimary + '">' + t('navSignIn') + '</a>'
+        : (!p || !skillsOf(p.id).length)
+        ? '<a href="#/register?step=3&edit=1" class="' + C.btnPrimary + '">' + t('addSkills') + '</a>'
+        : '<a href="#/jobs?match=1" class="' + C.btnPrimary + '">' + t('findJobs') + '</a>';
+      body = emptyState(t('notifEmptyTitle'), t('notifEmptyBody'), action);
+    }
+    return '<h1 class="' + C.h1 + ' mb-1">' + t('navNotifs') + '</h1><p class="text-sm ' + C.muted + ' mb-4">' + t('notifHint') + '</p>' + body;
   }
 
   function insightsTabs(active) {
@@ -1722,6 +1771,10 @@
     } else if (changed && a === 'profile' && role() === 'seeker') {
       try { await api.bootstrap(); } catch (e) {}
       if (seq !== renderSeq) return;
+    } else if (changed && a === 'notifications' && currentUser()) {
+      view.innerHTML = spinner();
+      try { await api.loadNotifications(); } catch (e) { toast(t('loadFailed')); }
+      if (seq !== renderSeq) return;
     }
     if (a === 'job') {
       view.innerHTML = viewJobSkeleton();
@@ -1731,6 +1784,7 @@
     } else if (!a) html = viewHome();
     else if (a === 'jobs') html = viewJobs();
     else if (a === 'saved') html = viewSaved();
+    else if (a === 'notifications') html = viewNotifications();
     else if (a === 'skills') html = viewSkills();
     else if (a === 'countries') html = viewCountries();
     else if (a === 'auth') html = r.query.get('company') === '1' ? viewCompanySignup() : viewAuth();
@@ -1747,6 +1801,11 @@
     view.innerHTML = html;
     if (changed) window.scrollTo(0, 0);
     if (a === 'jobs') refreshResults();
+    // Mark the alerts read after they are on screen, without re-rendering:
+    // the unread dots stay for this visit, the header badge goes away.
+    if (a === 'notifications' && db.notifications.some(n => !n.readAt)) {
+      api.markNotificationsRead().then(() => renderChrome()).catch(() => {});
+    }
   }
   function rerenderKeepFocus(selector) {
     render().then(() => { const el = selector && $(selector); if (el) el.focus({ preventScroll: true }); });
@@ -1860,6 +1919,7 @@
       case 'browse-country': filters = emptyFilters(); filters.country = el.dataset.cc; go('#/jobs'); break;
       case 'browse-rw': filters = emptyFilters(); filters.rw = true; go('#/jobs'); break;
       case 'open-filters': openFiltersModal(); break;
+      case 'open-notifs': go('#/notifications'); break;
       case 'toggle-match':
         ui.matchMode = !ui.matchMode;
         if (!ui.matchMode && route().query.get('match') === '1') go('#/jobs'); else render();

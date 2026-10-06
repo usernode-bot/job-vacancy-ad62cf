@@ -96,7 +96,8 @@ shared understanding of what this app is for)_
 ## App-specific conventions
 
 - Private tables (`staging:private`): `profiles`, `skills`, `certificates`,
-  `applications`, `saved_jobs`. Public: `app_users`, `companies`, `jobs`.
+  `applications`, `saved_jobs`, `notifications`. Public: `app_users`,
+  `companies`, `jobs`.
 - Applicant privacy (phone, certificates) is enforced in `profileOut()` in
   `lib/routes.js`; never send those fields to a non-owner anywhere else.
 - Interface languages are listed in `public/i18n/languages.js`; English

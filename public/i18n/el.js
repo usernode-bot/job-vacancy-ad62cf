@@ -83,5 +83,6 @@
     per_month: '/μήνα', per_year: '/έτος', per_hour: '/ώρα',
     cat_it: 'Πληροφορική', cat_health: 'Υγεία', cat_education: 'Εκπαίδευση', cat_finance: 'Οικονομικά', cat_engineering: 'Μηχανική', cat_creative: 'Δημιουργικά', cat_marketing: 'Μάρκετινγκ', cat_sales: 'Πωλήσεις και Εξυπηρέτηση', cat_hospitality: 'Φιλοξενία', cat_logistics: 'Εφοδιαστική', cat_agriculture: 'Γεωργία',
     pageNotFound: 'Η σελίδα δεν βρέθηκε', pageNotFoundBody: 'Αυτός ο σύνδεσμος δεν υπάρχει.',
+    navNotifs: 'Ειδοποιήσεις', notifHint: 'Νέες θέσεις εργασίας που ταιριάζουν με τις δεξιότητες του προφίλ σας.', notifEmptyTitle: 'Καμία ειδοποίηση ακόμη', notifEmptyBody: 'Όταν μια νέα θέση χρειάζεται μια δεξιότητα που έχετε, θα εμφανιστεί εδώ.',
   },
 };

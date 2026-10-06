@@ -83,5 +83,6 @@
     per_month: '/mwezi', per_year: '/mwaka', per_hour: '/saa',
     cat_it: 'TEHAMA', cat_health: 'Afya', cat_education: 'Elimu', cat_finance: 'Fedha', cat_engineering: 'Uhandisi', cat_creative: 'Ubunifu', cat_marketing: 'Masoko', cat_sales: 'Mauzo na Huduma', cat_hospitality: 'Ukarimu', cat_logistics: 'Usafirishaji', cat_agriculture: 'Kilimo',
     pageNotFound: 'Ukurasa haukupatikana', pageNotFoundBody: 'Kiungo hiki hakipo.',
+    navNotifs: 'Arifa', notifHint: 'Kazi mpya zinazolingana na ujuzi katika wasifu wako.', notifEmptyTitle: 'Hakuna arifa bado', notifEmptyBody: 'Kazi mpya inapohitaji ujuzi unao, itaonekana hapa.',
   },
 };

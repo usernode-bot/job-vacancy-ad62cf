@@ -83,5 +83,6 @@
     per_month: '/माह', per_year: '/वर्ष', per_hour: '/घंटा',
     cat_it: 'IT', cat_health: 'स्वास्थ्य सेवा', cat_education: 'शिक्षा', cat_finance: 'वित्त', cat_engineering: 'इंजीनियरिंग', cat_creative: 'क्रिएटिव', cat_marketing: 'मार्केटिंग', cat_sales: 'बिक्री और सेवा', cat_hospitality: 'आतिथ्य', cat_logistics: 'लॉजिस्टिक्स', cat_agriculture: 'कृषि',
     pageNotFound: 'पेज नहीं मिला', pageNotFoundBody: 'यह लिंक मौजूद नहीं है।',
+    navNotifs: 'सूचनाएँ', notifHint: 'आपकी प्रोफ़ाइल की कौशल से मेल खाती नई नौकरियाँ।', notifEmptyTitle: 'अभी कोई सूचना नहीं', notifEmptyBody: 'जब किसी नई नौकरी को आपके पास मौजूद कौशल की ज़रूरत होगी, तो वह यहाँ दिखेगी।',
   },
 };

@@ -83,5 +83,6 @@
     per_month: '/mån', per_year: '/år', per_hour: '/tim',
     cat_it: 'IT', cat_health: 'Vård och hälsa', cat_education: 'Utbildning', cat_finance: 'Ekonomi', cat_engineering: 'Teknik', cat_creative: 'Kreativt', cat_marketing: 'Marknadsföring', cat_sales: 'Försäljning och service', cat_hospitality: 'Hotell och restaurang', cat_logistics: 'Logistik', cat_agriculture: 'Jordbruk',
     pageNotFound: 'Sidan hittades inte', pageNotFoundBody: 'Denna länk finns inte.',
+    navNotifs: 'Notiser', notifHint: 'Nya jobb som matchar färdigheterna i din profil.', notifEmptyTitle: 'Inga notiser än', notifEmptyBody: 'När ett nytt jobb behöver en färdighet du har, visas det här.',
   },
 };

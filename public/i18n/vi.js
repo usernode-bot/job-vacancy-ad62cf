@@ -83,5 +83,6 @@
     per_month: '/tháng', per_year: '/năm', per_hour: '/giờ',
     cat_it: 'CNTT', cat_health: 'Y tế', cat_education: 'Giáo dục', cat_finance: 'Tài chính', cat_engineering: 'Kỹ thuật', cat_creative: 'Sáng tạo', cat_marketing: 'Marketing', cat_sales: 'Bán hàng và Dịch vụ', cat_hospitality: 'Nhà hàng khách sạn', cat_logistics: 'Logistics', cat_agriculture: 'Nông nghiệp',
     pageNotFound: 'Không tìm thấy trang', pageNotFoundBody: 'Liên kết này không tồn tại.',
+    navNotifs: 'Thông báo', notifHint: 'Việc làm mới khớp với kỹ năng trong hồ sơ của bạn.', notifEmptyTitle: 'Chưa có thông báo', notifEmptyBody: 'Khi một việc làm mới cần kỹ năng bạn có, nó sẽ xuất hiện ở đây.',
   },
 };

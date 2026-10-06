@@ -83,5 +83,6 @@
     per_month: '/ay', per_year: '/yıl', per_hour: '/sa',
     cat_it: 'Bilişim', cat_health: 'Sağlık', cat_education: 'Eğitim', cat_finance: 'Finans', cat_engineering: 'Mühendislik', cat_creative: 'Yaratıcı', cat_marketing: 'Pazarlama', cat_sales: 'Satış ve Hizmet', cat_hospitality: 'Konaklama', cat_logistics: 'Lojistik', cat_agriculture: 'Tarım',
     pageNotFound: 'Sayfa bulunamadı', pageNotFoundBody: 'Bu bağlantı mevcut değil.',
+    navNotifs: 'Bildirimler', notifHint: 'Profilinizdeki becerilerle eşleşen yeni iş ilanları.', notifEmptyTitle: 'Henüz bildirim yok', notifEmptyBody: 'Yeni bir iş ilanı sahip olduğunuz bir beceriye ihtiyaç duyduğunda burada görünür.',
   },
 };

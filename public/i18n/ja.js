@@ -83,5 +83,6 @@
     per_month: '/月', per_year: '/年', per_hour: '/時',
     cat_it: 'IT', cat_health: '医療・ヘルスケア', cat_education: '教育', cat_finance: '金融', cat_engineering: 'エンジニアリング', cat_creative: 'クリエイティブ', cat_marketing: 'マーケティング', cat_sales: '営業・サービス', cat_hospitality: 'ホスピタリティ', cat_logistics: '物流', cat_agriculture: '農業',
     pageNotFound: 'ページが見つかりません', pageNotFoundBody: 'このリンクは存在しません。',
+    navNotifs: '通知', notifHint: 'プロフィールのスキルに合う新しい求人。', notifEmptyTitle: '通知はまだありません', notifEmptyBody: '新しい求人があなたの持つスキルを必要とすると、ここに表示されます。',
   },
 };

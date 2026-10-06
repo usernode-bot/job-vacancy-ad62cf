@@ -83,5 +83,6 @@
     per_month: '/Mon.', per_year: '/Jahr', per_hour: '/Std.',
     cat_it: 'IT', cat_health: 'Gesundheitswesen', cat_education: 'Bildung', cat_finance: 'Finanzen', cat_engineering: 'Ingenieurwesen', cat_creative: 'Kreativ', cat_marketing: 'Marketing', cat_sales: 'Vertrieb und Service', cat_hospitality: 'Gastgewerbe', cat_logistics: 'Logistik', cat_agriculture: 'Landwirtschaft',
     pageNotFound: 'Seite nicht gefunden', pageNotFoundBody: 'Dieser Link existiert nicht.',
+    navNotifs: 'Benachrichtigungen', notifHint: 'Neue Stellen, die zu den Fähigkeiten in Ihrem Profil passen.', notifEmptyTitle: 'Noch keine Benachrichtigungen', notifEmptyBody: 'Wenn eine neue Stelle eine Fähigkeit braucht, die Sie haben, erscheint sie hier.',
   },
 };

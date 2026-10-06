@@ -83,5 +83,6 @@
     per_month: '/mes', per_year: '/año', per_hour: '/h',
     cat_it: 'TI', cat_health: 'Sanidad', cat_education: 'Educación', cat_finance: 'Finanzas', cat_engineering: 'Ingeniería', cat_creative: 'Creatividad', cat_marketing: 'Marketing', cat_sales: 'Ventas y atención', cat_hospitality: 'Hostelería', cat_logistics: 'Logística', cat_agriculture: 'Agricultura',
     pageNotFound: 'Página no encontrada', pageNotFoundBody: 'Este enlace no existe.',
+    navNotifs: 'Notificaciones', notifHint: 'Nuevos empleos que coinciden con las habilidades de tu perfil.', notifEmptyTitle: 'Aún no hay notificaciones', notifEmptyBody: 'Cuando un nuevo empleo necesite una habilidad que tengas, aparecerá aquí.',
   },
 };

@@ -83,5 +83,6 @@
     per_month: '/মাস', per_year: '/বছর', per_hour: '/ঘণ্টা',
     cat_it: 'IT', cat_health: 'স্বাস্থ্যসেবা', cat_education: 'শিক্ষা', cat_finance: 'অর্থায়ন', cat_engineering: 'প্রকৌশল', cat_creative: 'সৃজনশীল', cat_marketing: 'মার্কেটিং', cat_sales: 'বিক্রয় ও সেবা', cat_hospitality: 'আতিথেয়তা', cat_logistics: 'লজিস্টিকস', cat_agriculture: 'কৃষি',
     pageNotFound: 'পৃষ্ঠা পাওয়া যায়নি', pageNotFoundBody: 'এই লিংকটির কোনো অস্তিত্ব নেই।',
+    navNotifs: 'বিজ্ঞপ্তি', notifHint: 'আপনার প্রোফাইলের দক্ষতার সাথে মেলে এমন নতুন চাকরি।', notifEmptyTitle: 'এখনও কোনো বিজ্ঞপ্তি নেই', notifEmptyBody: 'নতুন কোনো চাকরিতে আপনার থাকা দক্ষতা প্রয়োজন হলে সেটি এখানে দেখা যাবে।',
   },
 };

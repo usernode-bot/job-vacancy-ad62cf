@@ -83,5 +83,6 @@
     per_month: '/महिना', per_year: '/वर्ष', per_hour: '/घण्टा',
     cat_it: 'IT', cat_health: 'स्वास्थ्य सेवा', cat_education: 'शिक्षा', cat_finance: 'वित्त', cat_engineering: 'इन्जिनियरिङ', cat_creative: 'सिर्जनात्मक', cat_marketing: 'मार्केटिङ', cat_sales: 'बिक्री र सेवा', cat_hospitality: 'आतिथ्य', cat_logistics: 'लजिस्टिक्स', cat_agriculture: 'कृषि',
     pageNotFound: 'पृष्ठ भेटिएन', pageNotFoundBody: 'यो लिङ्क अस्तित्वमा छैन।',
+    navNotifs: 'सूचना', notifHint: 'तपाईंको प्रोफाइलका सीपसँग मिल्ने नयाँ रोजगारी।', notifEmptyTitle: 'अझै सूचना छैन', notifEmptyBody: 'नयाँ जागिरलाई तपाईंसँग भएको सीप चाहिएमा यहाँ देखिनेछ।',
   },
 };

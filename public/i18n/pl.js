@@ -83,5 +83,6 @@
     per_month: '/mies.', per_year: '/rok', per_hour: '/godz.',
     cat_it: 'IT', cat_health: 'Ochrona zdrowia', cat_education: 'Edukacja', cat_finance: 'Finanse', cat_engineering: 'Inżynieria', cat_creative: 'Branża kreatywna', cat_marketing: 'Marketing', cat_sales: 'Sprzedaż i obsługa', cat_hospitality: 'Hotelarstwo i gastronomia', cat_logistics: 'Logistyka', cat_agriculture: 'Rolnictwo',
     pageNotFound: 'Nie znaleziono strony', pageNotFoundBody: 'Ten link nie istnieje.',
+    navNotifs: 'Powiadomienia', notifHint: 'Nowe oferty pracy pasujące do umiejętności w Twoim profilu.', notifEmptyTitle: 'Nie ma jeszcze powiadomień', notifEmptyBody: 'Gdy nowa oferta będzie wymagać umiejętności, którą masz, pojawi się tutaj.',
   },
 };

@@ -83,5 +83,6 @@
     per_month: '/ọnwa', per_year: '/afọ', per_hour: '/awa',
     cat_it: 'Teknụzụ (IT)', cat_health: 'Ahụike', cat_education: 'Agụmakwụkwọ', cat_finance: 'Ego na akụ', cat_engineering: 'Injinịa', cat_creative: 'Okike nka', cat_marketing: 'Ahịa na mgbasa ozi', cat_sales: 'Ire ahịa na Ọrụ ndị ahịa', cat_hospitality: 'Nnabata ndị ọbịa', cat_logistics: 'Njem ngwongwo', cat_agriculture: 'Ọrụ ugbo',
     pageNotFound: 'Ahụghị ibe ahụ', pageNotFoundBody: 'Njikọ a adịghị.',
+    notifications: 'Ọkwa', markAllRead: 'Maka niile dị ka e gụọla', noNotifications: 'Enweghị ọkwa ugbu a', noNotificationsBody: 'Ọrụ ndị kwekọrọ na nkà gị ga-apụta ebe a.', notifUnread: '{n} anaghị agụ',
   },
 };

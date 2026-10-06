@@ -83,5 +83,6 @@
     per_month: '/mnd', per_year: '/jr', per_hour: '/uur',
     cat_it: 'IT', cat_health: 'Zorg', cat_education: 'Onderwijs', cat_finance: 'Financiën', cat_engineering: 'Techniek', cat_creative: 'Creatief', cat_marketing: 'Marketing', cat_sales: 'Verkoop en service', cat_hospitality: 'Horeca', cat_logistics: 'Logistiek', cat_agriculture: 'Landbouw',
     pageNotFound: 'Pagina niet gevonden', pageNotFoundBody: 'Deze link bestaat niet.',
+    notifications: 'Meldingen', markAllRead: 'Alles als gelezen markeren', noNotifications: 'Nog geen meldingen', noNotificationsBody: 'Banen die bij je vaardigheden passen, verschijnen hier.', notifUnread: '{n} ongelezen',
   },
 };

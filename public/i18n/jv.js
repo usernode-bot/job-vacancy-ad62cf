@@ -83,5 +83,6 @@
     per_month: '/wln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kasarasan', cat_education: 'Pendhidhikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Tetanen',
     pageNotFound: 'Kaca mboten kapanggih', pageNotFoundBody: 'Link punika mboten wonten.',
+    notifications: 'Kabar', markAllRead: 'Tandhani kabeh wis diwaca', noNotifications: 'Durung ana kabar', noNotificationsBody: 'Lowongan sing cocog karo skill sampeyan bakal katon ing kene.', notifUnread: '{n} durung diwaca',
   },
 };

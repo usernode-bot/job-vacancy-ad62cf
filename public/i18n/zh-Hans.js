@@ -83,5 +83,6 @@
     per_month: '/月', per_year: '/年', per_hour: '/小时',
     cat_it: 'IT', cat_health: '医疗健康', cat_education: '教育', cat_finance: '金融', cat_engineering: '工程', cat_creative: '创意', cat_marketing: '市场营销', cat_sales: '销售与服务', cat_hospitality: '酒店餐饮', cat_logistics: '物流', cat_agriculture: '农业',
     pageNotFound: '页面未找到', pageNotFoundBody: '该链接不存在。',
+    notifications: '通知', markAllRead: '全部标为已读', noNotifications: '暂无通知', noNotificationsBody: '与你技能匹配的职位会显示在这里。', notifUnread: '{n} 条未读',
   },
 };

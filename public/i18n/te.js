@@ -83,5 +83,6 @@
     per_month: '/నెల', per_year: '/సం.', per_hour: '/గం.',
     cat_it: 'IT', cat_health: 'ఆరోగ్య సంరక్షణ', cat_education: 'విద్య', cat_finance: 'ఆర్థికం', cat_engineering: 'ఇంజనీరింగ్', cat_creative: 'సృజనాత్మకం', cat_marketing: 'మార్కెటింగ్', cat_sales: 'అమ్మకాలు & సేవ', cat_hospitality: 'ఆతిథ్యం', cat_logistics: 'లాజిస్టిక్స్', cat_agriculture: 'వ్యవసాయం',
     pageNotFound: 'పేజీ కనుగొనబడలేదు', pageNotFoundBody: 'ఈ లింక్ ఉనికిలో లేదు.',
+    notifications: 'నోటిఫికేషన్లు', markAllRead: 'అన్నింటినీ చదివినట్లు గుర్తించండి', noNotifications: 'ఇంకా నోటిఫికేషన్లు లేవు', noNotificationsBody: 'మీ నైపుణ్యాలకు సరిపోయే ఉద్యోగాలు ఇక్కడ కనిపిస్తాయి.', notifUnread: '{n} చదవనివి',
   },
 };

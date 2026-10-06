@@ -78,6 +78,7 @@
     applicantNotFound: 'Nomzod topilmadi', applicantNotFoundBody: 'Bu ariza mavjud emas yoki sizning vakansiyangizga tegishli emas.', applicationStatus: 'Ariza holati', appliedOn: 'Ariza sanasi: {d}', matchForJob: 'Ushbu vakansiyaga moslik',
     message: 'Xabar', noMessage: 'Xabar yoʻq.', attachedCerts: 'Biriktirilgan sertifikatlar ({n})', noAttached: 'Sertifikatlar biriktirilmagan.', statusUpdated: 'Holat oʻzgartirildi: {s}',
     status_new: 'Yangi', status_processing: 'Koʻrib chiqilmoqda', status_interview: 'Suhbat', status_accepted: 'Qabul qilindi', status_rejected: 'Rad etildi',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Toʻliq stavka', type_parttime: 'Yarim stavka', type_internship: 'Amaliyot', type_contract: 'Shartnoma asosida',
     model_onsite: 'Ofisda', model_hybrid: 'Gibrid', model_remote: 'Masofaviy',
     per_month: '/oy', per_year: '/yil', per_hour: '/soat',

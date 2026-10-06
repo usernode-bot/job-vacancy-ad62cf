@@ -78,6 +78,7 @@
     applicantNotFound: '未找到申请人', applicantNotFoundBody: '该申请不存在或不属于您的职位。', applicationStatus: '申请状态', appliedOn: '申请于 {d}', matchForJob: '与该职位的匹配度',
     message: '留言', noMessage: '无留言。', attachedCerts: '附加的证书（{n}）', noAttached: '未附加证书。', statusUpdated: '状态已更改为{s}',
     status_new: '新申请', status_processing: '审核中', status_interview: '面试', status_accepted: '已录用', status_rejected: '未通过',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: '全职', type_parttime: '兼职', type_internship: '实习', type_contract: '合同制',
     model_onsite: '现场办公', model_hybrid: '混合办公', model_remote: '远程',
     per_month: '/月', per_year: '/年', per_hour: '/小时',

@@ -78,6 +78,7 @@
     applicantNotFound: 'A kò rí olùbẹ̀wẹ̀ náà', applicantNotFoundBody: 'Ìbẹ̀wẹ̀ yìí kò sí tàbí kì í ṣe fún iṣẹ́ yín.', applicationStatus: 'Ipò ìbẹ̀wẹ̀', appliedOn: 'Ó bẹ̀wẹ̀ ní {d}', matchForJob: 'Ìbámu fún iṣẹ́ yìí',
     message: 'Ìfiránṣẹ́', noMessage: 'Kò sí ìfiránṣẹ́.', attachedCerts: 'Àwọn ìwé-ẹ̀rí tí a so mọ́ ọn ({n})', noAttached: 'Kò sí ìwé-ẹ̀rí tí a so mọ́ ọn.', statusUpdated: 'A ti yí ipò padà sí {s}',
     status_new: 'Tuntun', status_processing: 'À ń ṣàyẹ̀wò', status_interview: 'Ìfọ̀rọ̀wánilẹ́nuwò', status_accepted: 'A gbà á', status_rejected: 'A kọ̀ ọ́',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Àkókò kíkún', type_parttime: 'Àkókò díẹ̀', type_internship: 'Ìkọ́ṣẹ́', type_contract: 'Àdéhùn',
     model_onsite: 'Ní ọ́fíìsì', model_hybrid: 'Àdàlù', model_remote: 'Láti ọ̀nà jínjìn',
     per_month: '/oṣù', per_year: '/ọdún', per_hour: '/wákàtí',

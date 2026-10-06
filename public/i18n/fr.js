@@ -78,6 +78,7 @@
     applicantNotFound: 'Candidat introuvable', applicantNotFoundBody: "Cette candidature n'existe pas ou ne concerne pas votre offre.", applicationStatus: 'Statut de la candidature', appliedOn: 'Candidature du {d}', matchForJob: 'Correspondance avec cette offre',
     message: 'Message', noMessage: 'Aucun message.', attachedCerts: 'Certificats joints ({n})', noAttached: 'Aucun certificat joint.', statusUpdated: 'Statut changé en {s}',
     status_new: 'Nouvelle', status_processing: 'En cours', status_interview: 'Entretien', status_accepted: 'Acceptée', status_rejected: 'Refusée',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Temps plein', type_parttime: 'Temps partiel', type_internship: 'Stage', type_contract: 'Contrat',
     model_onsite: 'Sur site', model_hybrid: 'Hybride', model_remote: 'Télétravail',
     per_month: '/mois', per_year: '/an', per_hour: '/h',

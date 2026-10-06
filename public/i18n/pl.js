@@ -78,6 +78,7 @@
     applicantNotFound: 'Nie znaleziono kandydata', applicantNotFoundBody: 'Ta aplikacja nie istnieje lub nie dotyczy Twojej oferty.', applicationStatus: 'Status aplikacji', appliedOn: 'Aplikacja z dnia {d}', matchForJob: 'Dopasowanie do oferty',
     message: 'Wiadomość', noMessage: 'Brak wiadomości.', attachedCerts: 'Załączone certyfikaty ({n})', noAttached: 'Brak załączonych certyfikatów.', statusUpdated: 'Status zmieniono na: {s}',
     status_new: 'Nowa', status_processing: 'W trakcie oceny', status_interview: 'Rozmowa', status_accepted: 'Przyjęta', status_rejected: 'Odrzucona',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Pełny etat', type_parttime: 'Część etatu', type_internship: 'Staż', type_contract: 'Kontrakt',
     model_onsite: 'Stacjonarnie', model_hybrid: 'Hybrydowo', model_remote: 'Zdalnie',
     per_month: '/mies.', per_year: '/rok', per_hour: '/godz.',

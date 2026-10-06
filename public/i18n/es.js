@@ -78,6 +78,7 @@
     applicantNotFound: 'Candidato no encontrado', applicantNotFoundBody: 'Esta postulación no existe o no corresponde a su oferta.', applicationStatus: 'Estado de la postulación', appliedOn: 'Postulado el {d}', matchForJob: 'Coincidencia con esta oferta',
     message: 'Mensaje', noMessage: 'Sin mensaje.', attachedCerts: 'Certificados adjuntos ({n})', noAttached: 'No hay certificados adjuntos.', statusUpdated: 'Estado cambiado a {s}',
     status_new: 'Nuevo', status_processing: 'En revisión', status_interview: 'Entrevista', status_accepted: 'Aceptado', status_rejected: 'Rechazado',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Jornada completa', type_parttime: 'Media jornada', type_internship: 'Prácticas', type_contract: 'Contrato',
     model_onsite: 'Presencial', model_hybrid: 'Híbrido', model_remote: 'Remoto',
     per_month: '/mes', per_year: '/año', per_hour: '/h',

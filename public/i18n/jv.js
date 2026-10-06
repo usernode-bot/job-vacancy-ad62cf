@@ -78,6 +78,7 @@
     applicantNotFound: 'Pelamar mboten kapanggih', applicantNotFoundBody: 'Lamaran punika mboten wonten utawi sanes kangge lowongan panjenengan.', applicationStatus: 'Status lamaran', appliedOn: 'Nglamar tanggal {d}', matchForJob: 'Kecocokan kangge lowongan punika',
     message: 'Pesen', noMessage: 'Mboten wonten pesen.', attachedCerts: 'Sertifikat ingkang dipunlampiraken ({n})', noAttached: 'Mboten wonten sertifikat ingkang dipunlampiraken.', statusUpdated: 'Status dipungantos dados {s}',
     status_new: 'Enggal', status_processing: 'Dipunpriksa', status_interview: 'Wawancara', status_accepted: 'Dipuntampi', status_rejected: 'Dipuntolak',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Full-time', type_parttime: 'Paruh wekdal', type_internship: 'Magang', type_contract: 'Kontrak',
     model_onsite: 'Ing kantor', model_hybrid: 'Hibrida', model_remote: 'Remote',
     per_month: '/wln', per_year: '/thn', per_hour: '/jam',

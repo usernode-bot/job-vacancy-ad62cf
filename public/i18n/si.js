@@ -78,6 +78,7 @@
     applicantNotFound: 'අයදුම්කරු හමු නොවීය', applicantNotFoundBody: 'මෙම අයදුම්පත නොපවතී හෝ ඔබගේ රැකියාව සඳහා නොවේ.', applicationStatus: 'අයදුම්පතේ තත්ත්වය', appliedOn: '{d} දින අයදුම් කළා', matchForJob: 'මෙම රැකියාව සඳහා ගැළපීම',
     message: 'පණිවිඩය', noMessage: 'පණිවිඩයක් නොමැත.', attachedCerts: 'අමුණා ඇති සහතික ({n})', noAttached: 'සහතික අමුණා නැත.', statusUpdated: 'තත්ත්වය {s} ලෙස වෙනස් කරන ලදී',
     status_new: 'නව', status_processing: 'සමාලෝචනය වෙමින්', status_interview: 'සම්මුඛ පරීක්ෂණය', status_accepted: 'පිළිගත්', status_rejected: 'ප්‍රතික්ෂේපිත',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'පූර්ණ කාලීන', type_parttime: 'අර්ධ කාලීන', type_internship: 'සීමාවාසික', type_contract: 'කොන්ත්‍රාත්',
     model_onsite: 'කාර්යාලයේ', model_hybrid: 'මිශ්‍ර', model_remote: 'දුරස්ථ',
     per_month: '/මසකට', per_year: '/වසරකට', per_hour: '/පැයකට',

@@ -78,6 +78,7 @@
     applicantNotFound: '지원자를 찾을 수 없습니다', applicantNotFoundBody: '존재하지 않거나 귀사의 채용 공고에 대한 지원이 아닙니다.', applicationStatus: '지원 상태', appliedOn: '{d} 지원', matchForJob: '이 채용 공고와의 일치도',
     message: '메시지', noMessage: '메시지가 없습니다.', attachedCerts: '첨부된 자격증 ({n})', noAttached: '첨부된 자격증이 없습니다.', statusUpdated: '상태가 {s}(으)로 변경되었습니다',
     status_new: '신규', status_processing: '검토 중', status_interview: '면접', status_accepted: '합격', status_rejected: '불합격',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: '정규직', type_parttime: '파트타임', type_internship: '인턴십', type_contract: '계약직',
     model_onsite: '사무실 근무', model_hybrid: '하이브리드', model_remote: '원격',
     per_month: '/월', per_year: '/년', per_hour: '/시간',

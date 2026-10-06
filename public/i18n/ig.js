@@ -78,6 +78,7 @@
     applicantNotFound: 'Ahụghị onye tinyere akwụkwọ ahụ', applicantNotFoundBody: 'Akwụkwọ a adịghị ma ọ bụ ọ bụghị maka ọrụ gị.', applicationStatus: 'Ọnọdụ akwụkwọ', appliedOn: 'Etinyere na {d}', matchForJob: 'Ndakọ maka ọrụ a',
     message: 'Ozi', noMessage: 'Enweghị ozi.', attachedCerts: 'Asambodo etinyere ({n})', noAttached: 'Etinyeghị asambodo ọ bụla.', statusUpdated: 'Agbanwere ọnọdụ ka ọ bụrụ {s}',
     status_new: 'Ọhụrụ', status_processing: 'A na-enyocha ya', status_interview: 'Ajụjụ ọnụ', status_accepted: 'Anabatara', status_rejected: 'Ajụrụ',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Oge niile', type_parttime: 'Oge ụfọdụ', type_internship: 'Ọzụzụ ọrụ', type_contract: 'Nkwekọrịta',
     model_onsite: 'N’ọfịs', model_hybrid: 'Ngwakọ', model_remote: 'Site n’ebe dị anya',
     per_month: '/ọnwa', per_year: '/afọ', per_hour: '/awa',

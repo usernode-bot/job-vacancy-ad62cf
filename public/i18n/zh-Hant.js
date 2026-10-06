@@ -78,6 +78,7 @@
     applicantNotFound: '找不到應徵者', applicantNotFoundBody: '此應徵不存在或不屬於您的職缺。', applicationStatus: '應徵狀態', appliedOn: '應徵日期：{d}', matchForJob: '與此職缺的符合度',
     message: '訊息', noMessage: '無訊息。', attachedCerts: '附加的證照（{n}）', noAttached: '未附加證照。', statusUpdated: '狀態已變更為{s}',
     status_new: '新應徵', status_processing: '審核中', status_interview: '面試', status_accepted: '已錄取', status_rejected: '未錄取',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: '全職', type_parttime: '兼職', type_internship: '實習', type_contract: '約聘',
     model_onsite: '進辦公室', model_hybrid: '混合辦公', model_remote: '遠端',
     per_month: '/月', per_year: '/年', per_hour: '/小時',

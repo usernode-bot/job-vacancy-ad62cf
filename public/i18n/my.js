@@ -78,6 +78,7 @@
     applicantNotFound: 'လျှောက်ထားသူ မတွေ့ပါ', applicantNotFoundBody: 'ဤလျှောက်လွှာ မရှိပါ သို့မဟုတ် သင့်အလုပ်အတွက် မဟုတ်ပါ။', applicationStatus: 'လျှောက်လွှာ အခြေအနေ', appliedOn: '{d} တွင် လျှောက်ထားသည်', matchForJob: 'ဤအလုပ်အတွက် ကိုက်ညီမှု',
     message: 'စာ', noMessage: 'စာ မရှိပါ။', attachedCerts: 'ပူးတွဲလက်မှတ်များ ({n})', noAttached: 'ပူးတွဲလက်မှတ် မရှိပါ။', statusUpdated: 'အခြေအနေကို {s} သို့ ပြောင်းလိုက်ပါပြီ',
     status_new: 'အသစ်', status_processing: 'စိစစ်နေသည်', status_interview: 'အင်တာဗျူး', status_accepted: 'လက်ခံသည်', status_rejected: 'ပယ်ချသည်',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'အချိန်ပြည့်', type_parttime: 'အချိန်ပိုင်း', type_internship: 'အလုပ်သင်', type_contract: 'စာချုပ်ဖြင့်',
     model_onsite: 'ရုံးတွင်', model_hybrid: 'ပေါင်းစပ်', model_remote: 'အဝေးမှ',
     per_month: '/လ', per_year: '/နှစ်', per_hour: '/နာရီ',

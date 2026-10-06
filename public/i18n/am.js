@@ -78,6 +78,7 @@
     applicantNotFound: 'አመልካቹ አልተገኘም', applicantNotFoundBody: 'ይህ ማመልከቻ የለም ወይም ለእርስዎ ሥራ አይደለም።', applicationStatus: 'የማመልከቻ ሁኔታ', appliedOn: 'በ{d} ተመልክቷል', matchForJob: 'ለዚህ ሥራ ያለው ተዛማጅነት',
     message: 'መልዕክት', noMessage: 'ምንም መልዕክት የለም።', attachedCerts: 'የተያያዙ የምስክር ወረቀቶች ({n})', noAttached: 'ምንም የምስክር ወረቀት አልተያያዘም።', statusUpdated: 'ሁኔታው ወደ {s} ተቀይሯል',
     status_new: 'አዲስ', status_processing: 'በግምገማ ላይ', status_interview: 'ቃለ መጠይቅ', status_accepted: 'ተቀባይነት አግኝቷል', status_rejected: 'ውድቅ ተደርጓል',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'ሙሉ ጊዜ', type_parttime: 'የትርፍ ጊዜ', type_internship: 'የልምምድ ሥራ', type_contract: 'ኮንትራት',
     model_onsite: 'በቢሮ', model_hybrid: 'ድብልቅ', model_remote: 'በርቀት',
     per_month: '/በወር', per_year: '/በዓመት', per_hour: '/በሰዓት',

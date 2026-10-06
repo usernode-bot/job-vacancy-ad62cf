@@ -436,6 +436,11 @@
       const a = db.applications.find(x => x.id === appId); if (a) a.status = application.status;
       return application;
     },
+    async setTracking(appId, trackStatus) {
+      const { application } = await request('PATCH', '/applications/' + encodeURIComponent(appId) + '/tracking', { trackStatus });
+      const a = db.applications.find(x => x.id === appId); if (a) a.trackStatus = application.trackStatus;
+      return application;
+    },
     async toggleBookmark(jobId) {
       const was = isSaved(jobId);
       db.savedJobIds = was ? db.savedJobIds.filter(x => x !== jobId) : [jobId].concat(db.savedJobIds);
@@ -577,6 +582,7 @@
     2: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300',
     3: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-blue-600 text-white',
   };
+  const TRACK_STATUSES = ['applied', 'interviewing', 'offer', 'rejected'];
   const STATUS_CHIP = {
     new: 'inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
     processing: 'inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-amber-50 text-amber-800 dark:bg-amber-950 dark:text-amber-300',
@@ -1433,7 +1439,7 @@
       '<section class="' + C.section + '"><h2 class="font-semibold mb-1">' + t('privacy') + '</h2><p class="text-xs ' + C.muted + ' mb-2">' + t('privacyHint') + '</p><div class="' + C.divider + '">' +
         '<label class="flex items-center justify-between gap-3 py-2.5"><span class="text-sm">' + t('showPhoneToCompanies') + '</span><input type="checkbox" class="un-switch" data-privacy="showPhone"' + (p.privacy.showPhone ? ' checked' : '') + '></label>' +
         '<label class="flex items-center justify-between gap-3 py-2.5"><span class="text-sm">' + t('showCertsToCompanies') + '</span><input type="checkbox" class="un-switch" data-privacy="showCerts"' + (p.privacy.showCerts ? ' checked' : '') + '></label></div></section>' +
-      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('myApplications') + '</h2>' + (apps.length ? '<ul class="' + C.divider + '">' + apps.map(a => { const j = getJob(a.jobId); return j ? '<li class="py-2.5 flex items-center justify-between gap-2"><a href="#/job/' + j.id + '" class="min-w-0"><span class="block text-sm font-medium truncate hover:underline">' + esc(j.title) + '</span><span class="block text-xs ' + C.muted + '">' + esc(companyOf(j).name) + ' · ' + esc(fmtDate(a.createdAt)) + '</span></a><span class="' + STATUS_CHIP[a.status] + '">' + t('status_' + a.status) + '</span></li>' : ''; }).join('') + '</ul>' : '<p class="text-sm ' + C.muted + '">' + t('noApplications') + '</p>') + '</section>' +
+      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('myApplications') + '</h2>' + (apps.length ? '<ul class="' + C.divider + '">' + apps.map(a => { const j = getJob(a.jobId); return j ? '<li class="py-2.5 flex items-center justify-between gap-2"><a href="#/job/' + j.id + '" class="min-w-0"><span class="block text-sm font-medium truncate hover:underline">' + esc(j.title) + '</span><span class="block text-xs ' + C.muted + '">' + esc(companyOf(j).name) + ' · ' + esc(fmtDate(a.createdAt)) + '</span></a><span class="flex flex-col items-end gap-1 shrink-0"><span class="' + STATUS_CHIP[a.status] + '">' + t('status_' + a.status) + '</span><select data-track-app="' + a.id + '" aria-label="' + esc(t('myProgress')) + '" class="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-2 py-1 text-xs">' + TRACK_STATUSES.map(x => '<option value="' + x + '"' + ((a.trackStatus || 'applied') === x ? ' selected' : '') + '>' + t('track' + x[0].toUpperCase() + x.slice(1)) + '</option>').join('') + '</select></span></li>' : ''; }).join('') + '</ul>' : '<p class="text-sm ' + C.muted + '">' + t('noApplications') + '</p>') + '</section>' +
       signOutBlock();
     return '<div class="lg:grid lg:grid-cols-3 lg:gap-6"><div class="lg:col-span-2 space-y-4" data-testid="cv">' + renderCV(p, 'self') + '</div><div class="mt-4 lg:mt-0 space-y-4">' + aside + '</div></div>';
   }
@@ -1942,6 +1948,11 @@
 
   document.addEventListener('change', async e => {
     const el = e.target;
+    if (el.matches('select[data-track-app]')) {
+      try { await api.setTracking(el.dataset.trackApp, el.value); toast(t('statusUpdated', { s: t('track' + el.value[0].toUpperCase() + el.value.slice(1)) })); }
+      catch (err) { toast(t('saveFailed')); render(); }
+      return;
+    }
     if (el.matches('select[data-filter]')) { filters[el.dataset.filter] = el.value; refreshResults(); return; }
     if (el.matches('[data-filter-multi]')) {
       const k = el.dataset.filterMulti;

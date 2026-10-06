@@ -78,6 +78,7 @@
     applicantNotFound: 'រកមិនឃើញបេក្ខជន', applicantNotFoundBody: 'ពាក្យស្នើសុំនេះមិនមាន ឬមិនមែនសម្រាប់ការងាររបស់អ្នក។', applicationStatus: 'ស្ថានភាពពាក្យស្នើសុំ', appliedOn: 'បានដាក់ពាក្យនៅ {d}', matchForJob: 'ភាពត្រូវគ្នាសម្រាប់ការងារនេះ',
     message: 'សារ', noMessage: 'គ្មានសារ។', attachedCerts: 'វិញ្ញាបនបត្រដែលបានភ្ជាប់ ({n})', noAttached: 'គ្មានវិញ្ញាបនបត្រភ្ជាប់។', statusUpdated: 'បានប្តូរស្ថានភាពទៅ {s}',
     status_new: 'ថ្មី', status_processing: 'កំពុងពិនិត្យ', status_interview: 'សម្ភាសន៍', status_accepted: 'បានទទួល', status_rejected: 'បានបដិសេធ',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'ពេញម៉ោង', type_parttime: 'ក្រៅម៉ោង', type_internship: 'កម្មសិក្សា', type_contract: 'កិច្ចសន្យា',
     model_onsite: 'នៅការិយាល័យ', model_hybrid: 'ចម្រុះ', model_remote: 'ពីចម្ងាយ',
     per_month: '/ខែ', per_year: '/ឆ្នាំ', per_hour: '/ម៉ោង',

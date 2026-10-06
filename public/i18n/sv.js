@@ -78,6 +78,7 @@
     applicantNotFound: 'Den sökande hittades inte', applicantNotFoundBody: 'Denna ansökan finns inte eller gäller inte ditt jobb.', applicationStatus: 'Ansökningsstatus', appliedOn: 'Ansökte {d}', matchForJob: 'Matchning för detta jobb',
     message: 'Meddelande', noMessage: 'Inget meddelande.', attachedCerts: 'Bifogade certifikat ({n})', noAttached: 'Inga certifikat bifogade.', statusUpdated: 'Status ändrad till {s}',
     status_new: 'Ny', status_processing: 'Under granskning', status_interview: 'Intervju', status_accepted: 'Antagen', status_rejected: 'Avböjd',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Heltid', type_parttime: 'Deltid', type_internship: 'Praktik', type_contract: 'Visstid',
     model_onsite: 'På plats', model_hybrid: 'Hybrid', model_remote: 'Distans',
     per_month: '/mån', per_year: '/år', per_hour: '/tim',

@@ -78,6 +78,7 @@
     applicantNotFound: 'امیدوار نہیں ملا', applicantNotFoundBody: 'یہ درخواست موجود نہیں یا آپ کی ملازمت کے لیے نہیں ہے۔', applicationStatus: 'درخواست کی حیثیت', appliedOn: '{d} کو درخواست دی', matchForJob: 'اس ملازمت سے مطابقت',
     message: 'پیغام', noMessage: 'کوئی پیغام نہیں۔', attachedCerts: 'منسلک سرٹیفکیٹس ({n})', noAttached: 'کوئی سرٹیفکیٹ منسلک نہیں۔', statusUpdated: 'حیثیت {s} میں تبدیل کر دی گئی',
     status_new: 'نئی', status_processing: 'زیر جائزہ', status_interview: 'انٹرویو', status_accepted: 'منظور شدہ', status_rejected: 'مسترد',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'کل وقتی', type_parttime: 'جز وقتی', type_internship: 'انٹرن شپ', type_contract: 'کنٹریکٹ',
     model_onsite: 'دفتر میں', model_hybrid: 'ہائبرڈ', model_remote: 'ریموٹ',
     per_month: '/ماہ', per_year: '/سال', per_hour: '/گھنٹہ',

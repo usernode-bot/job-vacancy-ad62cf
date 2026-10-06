@@ -78,6 +78,7 @@
     applicantNotFound: 'ಅರ್ಜಿದಾರರು ಕಂಡುಬಂದಿಲ್ಲ', applicantNotFoundBody: 'ಈ ಅರ್ಜಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಅಥವಾ ನಿಮ್ಮ ಉದ್ಯೋಗಕ್ಕೆ ಸಂಬಂಧಿಸಿಲ್ಲ.', applicationStatus: 'ಅರ್ಜಿಯ ಸ್ಥಿತಿ', appliedOn: '{d} ರಂದು ಅರ್ಜಿ ಸಲ್ಲಿಸಲಾಗಿದೆ', matchForJob: 'ಈ ಉದ್ಯೋಗಕ್ಕೆ ಹೊಂದಾಣಿಕೆ',
     message: 'ಸಂದೇಶ', noMessage: 'ಸಂದೇಶವಿಲ್ಲ.', attachedCerts: 'ಲಗತ್ತಿಸಿದ ಪ್ರಮಾಣಪತ್ರಗಳು ({n})', noAttached: 'ಯಾವುದೇ ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಲಗತ್ತಿಸಿಲ್ಲ.', statusUpdated: 'ಸ್ಥಿತಿಯನ್ನು {s} ಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ',
     status_new: 'ಹೊಸದು', status_processing: 'ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ', status_interview: 'ಸಂದರ್ಶನ', status_accepted: 'ಸ್ವೀಕರಿಸಲಾಗಿದೆ', status_rejected: 'ತಿರಸ್ಕರಿಸಲಾಗಿದೆ',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'ಪೂರ್ಣಾವಧಿ', type_parttime: 'ಅರೆಕಾಲಿಕ', type_internship: 'ಇಂಟರ್ನ್‌ಶಿಪ್', type_contract: 'ಗುತ್ತಿಗೆ',
     model_onsite: 'ಕಚೇರಿಯಲ್ಲಿ', model_hybrid: 'ಹೈಬ್ರಿಡ್', model_remote: 'ರಿಮೋಟ್',
     per_month: '/ತಿಂ.', per_year: '/ವ.', per_hour: '/ಗಂ.',

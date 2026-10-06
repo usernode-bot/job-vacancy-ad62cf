@@ -78,6 +78,7 @@
     applicantNotFound: 'దరఖాస్తుదారు కనుగొనబడలేదు', applicantNotFoundBody: 'ఈ దరఖాస్తు ఉనికిలో లేదు లేదా మీ ఉద్యోగానికి సంబంధించినది కాదు.', applicationStatus: 'దరఖాస్తు స్థితి', appliedOn: '{d}న దరఖాస్తు చేశారు', matchForJob: 'ఈ ఉద్యోగానికి సరిపోలిక',
     message: 'సందేశం', noMessage: 'సందేశం లేదు.', attachedCerts: 'జతచేసిన సర్టిఫికెట్లు ({n})', noAttached: 'సర్టిఫికెట్లు ఏవీ జతచేయబడలేదు.', statusUpdated: 'స్థితి {s}కు మార్చబడింది',
     status_new: 'కొత్తది', status_processing: 'సమీక్షలో ఉంది', status_interview: 'ఇంటర్వ్యూ', status_accepted: 'ఆమోదించబడింది', status_rejected: 'తిరస్కరించబడింది',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'పూర్తి సమయం', type_parttime: 'పార్ట్ టైమ్', type_internship: 'ఇంటర్న్‌షిప్', type_contract: 'కాంట్రాక్ట్',
     model_onsite: 'కార్యాలయంలో', model_hybrid: 'హైబ్రిడ్', model_remote: 'రిమోట్',
     per_month: '/నెల', per_year: '/సం.', per_hour: '/గం.',

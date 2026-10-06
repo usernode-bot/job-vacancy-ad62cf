@@ -78,6 +78,7 @@
     applicantNotFound: 'விண்ணப்பதாரர் கிடைக்கவில்லை', applicantNotFoundBody: 'இந்த விண்ணப்பம் இல்லை அல்லது உங்கள் வேலைக்கானது அல்ல.', applicationStatus: 'விண்ணப்ப நிலை', appliedOn: '{d} அன்று விண்ணப்பிக்கப்பட்டது', matchForJob: 'இந்த வேலைக்கான பொருத்தம்',
     message: 'செய்தி', noMessage: 'செய்தி இல்லை.', attachedCerts: 'இணைக்கப்பட்ட சான்றிதழ்கள் ({n})', noAttached: 'சான்றிதழ்கள் எதுவும் இணைக்கப்படவில்லை.', statusUpdated: 'நிலை {s} ஆக மாற்றப்பட்டது',
     status_new: 'புதியது', status_processing: 'பரிசீலனையில்', status_interview: 'நேர்காணல்', status_accepted: 'ஏற்கப்பட்டது', status_rejected: 'நிராகரிக்கப்பட்டது',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'முழுநேரம்', type_parttime: 'பகுதிநேரம்', type_internship: 'பயிற்சிப் பணி', type_contract: 'ஒப்பந்தம்',
     model_onsite: 'அலுவலகத்தில்', model_hybrid: 'கலப்பு', model_remote: 'தொலைநிலை',
     per_month: '/மாதம்', per_year: '/ஆண்டு', per_hour: '/மணி',

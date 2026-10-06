@@ -78,6 +78,7 @@
     applicantNotFound: 'Mwombaji hakupatikana', applicantNotFoundBody: 'Ombi hili halipo au si la kazi yako.', applicationStatus: 'Hali ya ombi', appliedOn: 'Aliomba tarehe {d}', matchForJob: 'Ulinganifu kwa kazi hii',
     message: 'Ujumbe', noMessage: 'Hakuna ujumbe.', attachedCerts: 'Vyeti vilivyoambatishwa ({n})', noAttached: 'Hakuna vyeti vilivyoambatishwa.', statusUpdated: 'Hali imebadilishwa kuwa {s}',
     status_new: 'Mpya', status_processing: 'Inakaguliwa', status_interview: 'Usaili', status_accepted: 'Amekubaliwa', status_rejected: 'Amekataliwa',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Muda wote', type_parttime: 'Muda mfupi', type_internship: 'Mafunzo kazini', type_contract: 'Mkataba',
     model_onsite: 'Ofisini', model_hybrid: 'Mseto', model_remote: 'Kwa mbali',
     per_month: '/mwezi', per_year: '/mwaka', per_hour: '/saa',

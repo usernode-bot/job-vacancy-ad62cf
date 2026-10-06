@@ -78,6 +78,7 @@
     applicantNotFound: 'لم يتم العثور على المتقدم', applicantNotFoundBody: 'هذا الطلب غير موجود أو لا يخص وظيفتك.', applicationStatus: 'حالة الطلب', appliedOn: 'تاريخ التقديم {d}', matchForJob: 'التطابق مع هذه الوظيفة',
     message: 'الرسالة', noMessage: 'لا توجد رسالة.', attachedCerts: 'الشهادات المرفقة ({n})', noAttached: 'لا توجد شهادات مرفقة.', statusUpdated: 'تم تغيير الحالة إلى {s}',
     status_new: 'جديد', status_processing: 'قيد المراجعة', status_interview: 'مقابلة', status_accepted: 'مقبول', status_rejected: 'مرفوض',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'دوام كامل', type_parttime: 'دوام جزئي', type_internship: 'تدريب', type_contract: 'عقد',
     model_onsite: 'في الموقع', model_hybrid: 'هجين', model_remote: 'عن بُعد',
     per_month: '/شهر', per_year: '/سنة', per_hour: '/ساعة',

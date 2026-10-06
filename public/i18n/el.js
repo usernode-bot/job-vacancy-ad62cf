@@ -78,6 +78,7 @@
     applicantNotFound: 'Ο υποψήφιος δεν βρέθηκε', applicantNotFoundBody: 'Αυτή η αίτηση δεν υπάρχει ή δεν αφορά θέση σας.', applicationStatus: 'Κατάσταση αίτησης', appliedOn: 'Αίτηση στις {d}', matchForJob: 'Ταίριασμα με αυτή τη θέση',
     message: 'Μήνυμα', noMessage: 'Χωρίς μήνυμα.', attachedCerts: 'Συνημμένα πιστοποιητικά ({n})', noAttached: 'Δεν επισυνάφθηκαν πιστοποιητικά.', statusUpdated: 'Η κατάσταση άλλαξε σε {s}',
     status_new: 'Νέα', status_processing: 'Σε εξέταση', status_interview: 'Συνέντευξη', status_accepted: 'Εγκρίθηκε', status_rejected: 'Απορρίφθηκε',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Πλήρης απασχόληση', type_parttime: 'Μερική απασχόληση', type_internship: 'Πρακτική άσκηση', type_contract: 'Σύμβαση',
     model_onsite: 'Δια ζώσης', model_hybrid: 'Υβριδικό', model_remote: 'Εξ αποστάσεως',
     per_month: '/μήνα', per_year: '/έτος', per_hour: '/ώρα',

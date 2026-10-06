@@ -83,5 +83,6 @@
     per_month: '/oṣù', per_year: '/ọdún', per_hour: '/wákàtí',
     cat_it: 'Ìmọ̀ ẹ̀rọ (IT)', cat_health: 'Ìlera', cat_education: 'Ẹ̀kọ́', cat_finance: 'Ìṣúná', cat_engineering: 'Ìmọ̀ ẹ̀rọ', cat_creative: 'Iṣẹ́ ọnà', cat_marketing: 'Ìpolówó ọjà', cat_sales: 'Títà àti Iṣẹ́ ìsìn', cat_hospitality: 'Ìgbàlejò', cat_logistics: 'Ètò ìrìnnà ẹrù', cat_agriculture: 'Iṣẹ́ àgbẹ̀',
     pageNotFound: 'A kò rí ojú-ìwé náà', pageNotFoundBody: 'Ìjápọ̀ yìí kò sí.',
+    showAllCountries: 'Fi gbogbo orílẹ̀-èdè {n} hàn', showFewer: 'Fi díẹ̀ hàn',
   },
 };

@@ -83,5 +83,6 @@
     per_month: '/lună', per_year: '/an', per_hour: '/oră',
     cat_it: 'IT', cat_health: 'Sănătate', cat_education: 'Educație', cat_finance: 'Finanțe', cat_engineering: 'Inginerie', cat_creative: 'Creativ', cat_marketing: 'Marketing', cat_sales: 'Vânzări și servicii', cat_hospitality: 'Ospitalitate', cat_logistics: 'Logistică', cat_agriculture: 'Agricultură',
     pageNotFound: 'Pagina nu a fost găsită', pageNotFoundBody: 'Acest link nu există.',
+    showAllCountries: 'Afișează toate cele {n} țări', showFewer: 'Afișează mai puține',
   },
 };

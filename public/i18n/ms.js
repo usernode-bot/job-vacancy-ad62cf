@@ -83,5 +83,6 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kesihatan', cat_education: 'Pendidikan', cat_finance: 'Kewangan', cat_engineering: 'Kejuruteraan', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Jualan & Perkhidmatan', cat_hospitality: 'Hospitaliti', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak dijumpai', pageNotFoundBody: 'Pautan ini tidak wujud.',
+    showAllCountries: 'Tunjukkan semua {n} negara', showFewer: 'Tunjukkan kurang',
   },
 };

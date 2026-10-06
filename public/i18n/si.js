@@ -83,5 +83,6 @@
     per_month: '/මසකට', per_year: '/වසරකට', per_hour: '/පැයකට',
     cat_it: 'IT', cat_health: 'සෞඛ්‍ය සේවා', cat_education: 'අධ්‍යාපනය', cat_finance: 'මූල්‍ය', cat_engineering: 'ඉංජිනේරු', cat_creative: 'නිර්මාණාත්මක', cat_marketing: 'අලෙවිකරණය', cat_sales: 'විකුණුම් සහ සේවා', cat_hospitality: 'ආගන්තුක සත්කාර', cat_logistics: 'සැපයුම් දාම', cat_agriculture: 'කෘෂිකර්මය',
     pageNotFound: 'පිටුව හමු නොවීය', pageNotFoundBody: 'මෙම සබැඳිය නොපවතී.',
+    showAllCountries: 'රටවල් {n} ම පෙන්වන්න', showFewer: 'අඩුවෙන් පෙන්වන්න',
   },
 };

@@ -83,5 +83,6 @@
     per_month: '/wln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kasarasan', cat_education: 'Pendhidhikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Tetanen',
     pageNotFound: 'Kaca mboten kapanggih', pageNotFoundBody: 'Link punika mboten wonten.',
+    showAllCountries: 'Tampilake kabeh {n} negara', showFewer: 'Tampilake luwih sithik',
   },
 };

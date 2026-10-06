@@ -83,5 +83,6 @@
     per_month: '/ខែ', per_year: '/ឆ្នាំ', per_hour: '/ម៉ោង',
     cat_it: 'IT', cat_health: 'សុខាភិបាល', cat_education: 'អប់រំ', cat_finance: 'ហិរញ្ញវត្ថុ', cat_engineering: 'វិស្វកម្ម', cat_creative: 'ច្នៃប្រឌិត', cat_marketing: 'ទីផ្សារ', cat_sales: 'លក់ និងសេវាកម្ម', cat_hospitality: 'បដិសណ្ឋារកិច្ច', cat_logistics: 'ភស្តុភារ', cat_agriculture: 'កសិកម្ម',
     pageNotFound: 'រកមិនឃើញទំព័រ', pageNotFoundBody: 'តំណនេះមិនមានទេ។',
+    showAllCountries: 'បង្ហាញប្រទេសទាំង {n}', showFewer: 'បង្ហាញតិចជាង',
   },
 };

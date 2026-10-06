@@ -83,5 +83,7 @@
     per_month: '/buwan', per_year: '/taon', per_hour: '/oras',
     cat_it: 'IT', cat_health: 'Kalusugan', cat_education: 'Edukasyon', cat_finance: 'Pananalapi', cat_engineering: 'Inhinyeriya', cat_creative: 'Malikhain', cat_marketing: 'Marketing', cat_sales: 'Benta at Serbisyo', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agrikultura',
     pageNotFound: 'Hindi nahanap ang pahina', pageNotFoundBody: 'Hindi umiiral ang link na ito.',
+    sampleListing: 'Sample na listahan', sampleApplyOff: 'Sarado ang mga aplikasyon',
+    sampleApplyNote: 'Ito ay sample na listahan na nagpapakita kung ano ang hitsura ng mga trabaho sa Loker Dunia. Sarado ang mga aplikasyon.',
   },
 };

@@ -83,5 +83,7 @@
     per_month: '/شهر', per_year: '/سنة', per_hour: '/ساعة',
     cat_it: 'تقنية المعلومات', cat_health: 'الرعاية الصحية', cat_education: 'التعليم', cat_finance: 'المالية', cat_engineering: 'الهندسة', cat_creative: 'الإبداع', cat_marketing: 'التسويق', cat_sales: 'المبيعات والخدمة', cat_hospitality: 'الضيافة', cat_logistics: 'الخدمات اللوجستية', cat_agriculture: 'الزراعة',
     pageNotFound: 'الصفحة غير موجودة', pageNotFoundBody: 'هذا الرابط غير موجود.',
+    sampleListing: 'إعلان تجريبي', sampleApplyOff: 'التقديم متوقف',
+    sampleApplyNote: 'هذا إعلان تجريبي يوضح شكل الوظائف على Loker Dunia. التقديم متوقف.',
   },
 };

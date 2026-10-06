@@ -83,5 +83,7 @@
     per_month: '/oy', per_year: '/yil', per_hour: '/soat',
     cat_it: 'IT', cat_health: 'Sogʻliqni saqlash', cat_education: 'Taʼlim', cat_finance: 'Moliya', cat_engineering: 'Muhandislik', cat_creative: 'Ijodiy', cat_marketing: 'Marketing', cat_sales: 'Savdo va xizmat', cat_hospitality: 'Mehmondoʻstlik', cat_logistics: 'Logistika', cat_agriculture: 'Qishloq xoʻjaligi',
     pageNotFound: 'Sahifa topilmadi', pageNotFoundBody: 'Bu havola mavjud emas.',
+    sampleListing: 'Namunaviy e’lon', sampleApplyOff: 'Ariza topshirish o‘chirilgan',
+    sampleApplyNote: 'Bu Loker Dunia’da ishlar qanday ko‘rinishini ko‘rsatadigan namunaviy e’londir. Ariza topshirish o‘chirilgan.',
   },
 };

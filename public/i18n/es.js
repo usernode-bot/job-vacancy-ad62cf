@@ -83,5 +83,7 @@
     per_month: '/mes', per_year: '/año', per_hour: '/h',
     cat_it: 'TI', cat_health: 'Sanidad', cat_education: 'Educación', cat_finance: 'Finanzas', cat_engineering: 'Ingeniería', cat_creative: 'Creatividad', cat_marketing: 'Marketing', cat_sales: 'Ventas y atención', cat_hospitality: 'Hostelería', cat_logistics: 'Logística', cat_agriculture: 'Agricultura',
     pageNotFound: 'Página no encontrada', pageNotFoundBody: 'Este enlace no existe.',
+    sampleListing: 'Oferta de ejemplo', sampleApplyOff: 'Las solicitudes están desactivadas',
+    sampleApplyNote: 'Esta es una oferta de ejemplo que muestra cómo se ven los empleos en Loker Dunia. Las solicitudes están desactivadas.',
   },
 };

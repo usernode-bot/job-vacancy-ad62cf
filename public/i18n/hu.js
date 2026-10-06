@@ -83,5 +83,7 @@
     per_month: '/hó', per_year: '/év', per_hour: '/óra',
     cat_it: 'IT', cat_health: 'Egészségügy', cat_education: 'Oktatás', cat_finance: 'Pénzügy', cat_engineering: 'Mérnöki', cat_creative: 'Kreatív', cat_marketing: 'Marketing', cat_sales: 'Értékesítés és ügyfélszolgálat', cat_hospitality: 'Vendéglátás', cat_logistics: 'Logisztika', cat_agriculture: 'Mezőgazdaság',
     pageNotFound: 'Az oldal nem található', pageNotFoundBody: 'Ez a hivatkozás nem létezik.',
+    sampleListing: 'Minta hirdetés', sampleApplyOff: 'A jelentkezés ki van kapcsolva',
+    sampleApplyNote: 'Ez egy minta hirdetés, amely megmutatja, hogyan néznek ki az állások a Loker Dunián. A jelentkezés ki van kapcsolva.',
   },
 };

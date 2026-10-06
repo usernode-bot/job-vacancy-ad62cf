@@ -83,5 +83,7 @@
     per_month: '/tháng', per_year: '/năm', per_hour: '/giờ',
     cat_it: 'CNTT', cat_health: 'Y tế', cat_education: 'Giáo dục', cat_finance: 'Tài chính', cat_engineering: 'Kỹ thuật', cat_creative: 'Sáng tạo', cat_marketing: 'Marketing', cat_sales: 'Bán hàng và Dịch vụ', cat_hospitality: 'Nhà hàng khách sạn', cat_logistics: 'Logistics', cat_agriculture: 'Nông nghiệp',
     pageNotFound: 'Không tìm thấy trang', pageNotFoundBody: 'Liên kết này không tồn tại.',
+    sampleListing: 'Tin mẫu', sampleApplyOff: 'Đã tắt chức năng ứng tuyển',
+    sampleApplyNote: 'Đây là tin tuyển dụng mẫu cho thấy việc làm trên Loker Dunia trông như thế nào. Đã tắt chức năng ứng tuyển.',
   },
 };

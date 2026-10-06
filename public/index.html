@@ -824,7 +824,7 @@
         (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5" data-testid="job-skills">' + shown.map(s => '<span class="' + C.chip + ' border border-slate-200 dark:border-slate-700 bg-transparent dark:bg-transparent">' + esc(s.name) + '</span>').join('') +
         (all.length > shown.length ? '<span class="' + C.chip + ' bg-transparent dark:bg-transparent text-blue-700 dark:text-blue-300">' + t('nMore', { n: all.length - shown.length }) + '</span>' : '') + '</div>' +
-      '<div class="flex items-center justify-between gap-2 mt-auto pt-1"><span class="text-xs ' + C.muted + '">' + esc(relDays(j.postedAt)) + '</span>' + (m ? matchChip(m.pct) : '') + '</div>' +
+      '<div class="flex items-center justify-between gap-2 mt-auto pt-1">' + (j.isSample ? '<span data-testid="sample-chip" class="' + C.chip + '">' + t('sampleListing') + '</span>' : '<span class="text-xs ' + C.muted + '">' + esc(relDays(j.postedAt)) + '</span>') + '' + (m ? matchChip(m.pct) : '') + '</div>' +
       '</article>';
   }
   function jobGrid(list, opts) { return '<div class="grid gap-3 sm:grid-cols-2' + ((opts || {}).three ? ' lg:grid-cols-3' : '') + '">' + list.map(j => jobCard(j, opts)).join('') + '</div>'; }
@@ -970,6 +970,7 @@
   function applyState(j) {
     const p = myProfile();
     if (role() === 'company') return '';
+    if (j.isSample) return '<div data-testid="apply-off" class="space-y-2"><p class="text-sm ' + C.muted + '">' + t('sampleApplyNote') + '</p><button type="button" disabled class="' + C.btnSecondary + ' w-full">' + t('sampleApplyOff') + '</button></div>';
     const applied = p && db.applications.find(a => a.jobId === j.id && a.profileId === p.id);
     if (applied) return '<button type="button" disabled class="' + C.btnSecondary + ' w-full">' + icon('check', 'w-4 h-4') + t('alreadyApplied', { status: t('status_' + applied.status) }) + '</button>';
     return '<button type="button" data-action="apply" data-id="' + j.id + '" class="' + C.btnPrimary + ' w-full">' + t('applyNow') + '</button>';
@@ -1000,7 +1001,7 @@
     return backLink('#/jobs', t('backToSearch')) +
       '<div class="lg:grid lg:grid-cols-3 lg:gap-6"><div class="lg:col-span-2 space-y-4">' +
       '<header class="flex items-start gap-3">' + companyLogo(co.name) + '<div class="min-w-0"><h1 class="' + C.h1 + '" dir="auto">' + esc(j.title) + '</h1>' +
-        '<p class="' + C.muted + '" dir="auto">' + esc(co.name) + '</p><p class="mt-1 text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + ' · ' + esc(relDays(j.postedAt)) + '</p>' +
+        '<p class="' + C.muted + '" dir="auto">' + esc(co.name) + '</p><p class="mt-1 text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + (j.isSample ? '' : ' · ' + esc(relDays(j.postedAt))) + '</p>' + (j.isSample ? '<p class="mt-2"><span data-testid="sample-chip" class="' + C.chip + '">' + t('sampleListing') + '</span></p>' : '') +
         '<div class="mt-2 flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('cat_' + j.category) + '</span><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
         (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') + (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + (j.relocation ? '<span class="' + C.chipBlue + '">' + t('relocation') + '</span>' : '') + '</div></div></header>' +
       '<div class="lg:hidden">' + aside + '</div>' +

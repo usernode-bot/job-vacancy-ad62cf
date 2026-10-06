@@ -35,10 +35,10 @@ async function call(user, method, p, body) {
   return { status: res.status, data };
 }
 
-function startServer() {
+function startServer(env = 'staging', url = dbUrl) {
   return new Promise((resolve, reject) => {
     const child = spawn(process.execPath, [path.join(__dirname, '..', 'server.js')], {
-      env: { ...process.env, PORT: String(port), DATABASE_URL: dbUrl, USERNODE_ENV: 'staging', USERNODE_APP_ID: APP_ID, USERNODE_JWT_PUBLIC_KEY: publicKey },
+      env: { ...process.env, PORT: String(port), DATABASE_URL: url, USERNODE_ENV: env, USERNODE_APP_ID: APP_ID, USERNODE_JWT_PUBLIC_KEY: publicKey },
       stdio: ['ignore', 'pipe', 'pipe'],
     });
     let log = '';
@@ -85,7 +85,8 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
   await t.test('staging seed provides the sample board and demo employer', async () => {
     const { status, data } = await call(stranger, 'GET', '/bootstrap');
     assert.equal(status, 200);
-    assert.equal(data.jobs.length, 37);
+    assert.equal(data.jobs.filter(j => j.isDemo).length, 37);
+    assert.equal(data.jobs.length, 37 + 40, 'the demo jobs plus the sample listings');
     assert.ok(data.me.demoCompanyIds.includes('nusantara'));
     assert.equal(data.profile, null, 'nobody is seeded as the visitor');
   });
@@ -93,11 +94,12 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
   await t.test('seeding twice is idempotent', async () => {
     const { migrate } = require('../lib/schema');
     const { seedStaging } = require('../lib/seed');
+    const { seedSamples } = require('../lib/samples');
     const pool = new Pool({ connectionString: dbUrl });
-    await migrate(pool); await seedStaging(pool);
+    await migrate(pool); await seedStaging(pool); await seedSamples(pool);
     const { rows } = await pool.query('SELECT (SELECT COUNT(*) FROM jobs)::int AS jobs, (SELECT COUNT(*) FROM applications)::int AS apps, (SELECT COUNT(*) FROM profiles)::int AS profiles');
     await pool.end();
-    assert.deepEqual(rows[0], { jobs: 37, apps: 7, profiles: 3 });
+    assert.deepEqual(rows[0], { jobs: 77, apps: 7, profiles: 3 });
   });
 
   await t.test('personal tables are marked staging:private', async () => {
@@ -180,6 +182,51 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     const ayu = data.profiles.find(p => p.fullName === 'Ayu Kartika Sari');
     assert.deepEqual(ayu.certificates, []);
     assert.equal(ayu.certCount, 2);
+  });
+
+  await t.test('sample listings: worldwide, tagged, and nobody can manage or apply to them', async () => {
+    const { data } = await call(seeker, 'GET', '/bootstrap');
+    const samples = data.jobs.filter(j => j.isSample);
+    assert.equal(samples.length, 40);
+    assert.ok(new Set(samples.map(j => j.country)).size >= 30, 'at least 30 countries');
+    assert.equal(new Set(samples.map(j => j.category)).size, 11, 'every category');
+    assert.ok(samples.filter(j => j.remoteWorldwide).length >= 5);
+    assert.ok(samples.filter(j => j.visaSponsor).length >= 10);
+    assert.ok(samples.filter(j => j.relocation).length >= 6);
+    assert.ok(samples.every(j => !j.isDemo), 'samples are not demo rows');
+    assert.ok(data.jobs.filter(j => !j.isSample).every(j => j.isSample === false));
+    const sampleCompanies = data.companies.filter(c => c.isSample);
+    assert.equal(sampleCompanies.length, 40);
+    assert.ok(sampleCompanies.every(c => !data.me.demoCompanyIds.includes(c.id)));
+    const sid = samples[0].id, cid = samples[0].companyId;
+    const a = await call(seeker, 'POST', `/jobs/${sid}/apply`, { certIds: [] });
+    assert.equal(a.status, 409);
+    assert.equal(a.data.error, 'sample_listing');
+    assert.equal((await call(stranger, 'GET', `/companies/${cid}/applications`)).status, 403, 'no one manages a sample company');
+    assert.equal((await call(stranger, 'POST', '/jobs', { companyId: cid, title: 'x', category: 'it', country: 'ID', city: 'x', currency: 'IDR', salaryMin: 1, salaryMax: 2, period: 'month', type: 'fulltime', model: 'onsite' })).status, 403);
+    assert.equal((await call(stranger, 'POST', '/me/role', { role: 'company', companyId: cid })).status, 403);
+  });
+
+  await t.test('production ships the sample listings too, and no demo rows', async () => {
+    const dbName2 = dbName + '_prod';
+    const admin2 = new Client({ connectionString: BASE_URL });
+    await admin2.connect();
+    await admin2.query(`CREATE DATABASE ${dbName2}`);
+    const u2 = new URL(BASE_URL); u2.pathname = '/' + dbName2;
+    const oldPort = port; port = oldPort + 501;
+    let prod;
+    try {
+      prod = await startServer('production', u2.toString());
+      const { data } = await call(stranger, 'GET', '/bootstrap');
+      assert.equal(data.jobs.length, 40);
+      assert.ok(data.jobs.every(j => j.isSample && !j.isDemo));
+      assert.deepEqual(data.me.demoCompanyIds, []);
+    } finally {
+      if (prod) { prod.removeAllListeners('exit'); prod.kill('SIGTERM'); await new Promise(r => prod.once('exit', r)); }
+      port = oldPort;
+      await admin2.query(`DROP DATABASE IF EXISTS ${dbName2}`);
+      await admin2.end();
+    }
   });
 
   await t.test('saved jobs are stored per user', async () => {

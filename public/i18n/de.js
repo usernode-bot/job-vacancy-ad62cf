@@ -83,5 +83,7 @@
     per_month: '/Mon.', per_year: '/Jahr', per_hour: '/Std.',
     cat_it: 'IT', cat_health: 'Gesundheitswesen', cat_education: 'Bildung', cat_finance: 'Finanzen', cat_engineering: 'Ingenieurwesen', cat_creative: 'Kreativ', cat_marketing: 'Marketing', cat_sales: 'Vertrieb und Service', cat_hospitality: 'Gastgewerbe', cat_logistics: 'Logistik', cat_agriculture: 'Landwirtschaft',
     pageNotFound: 'Seite nicht gefunden', pageNotFoundBody: 'Dieser Link existiert nicht.',
+    sampleListing: 'Beispielanzeige', sampleApplyOff: 'Bewerbungen sind deaktiviert',
+    sampleApplyNote: 'Dies ist eine Beispielanzeige, die zeigt, wie Stellen bei Loker Dunia aussehen. Bewerbungen sind deaktiviert.',
   },
 };

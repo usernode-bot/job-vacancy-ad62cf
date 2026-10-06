@@ -83,5 +83,7 @@
     per_month: '/महिना', per_year: '/वर्ष', per_hour: '/तास',
     cat_it: 'IT', cat_health: 'आरोग्यसेवा', cat_education: 'शिक्षण', cat_finance: 'वित्त', cat_engineering: 'अभियांत्रिकी', cat_creative: 'सर्जनशील', cat_marketing: 'मार्केटिंग', cat_sales: 'विक्री आणि सेवा', cat_hospitality: 'आतिथ्य', cat_logistics: 'लॉजिस्टिक्स', cat_agriculture: 'शेती',
     pageNotFound: 'पृष्ठ सापडले नाही', pageNotFoundBody: 'ही लिंक अस्तित्वात नाही.',
+    sampleListing: 'नमुना यादी', sampleApplyOff: 'अर्ज बंद आहेत',
+    sampleApplyNote: 'ही एक नमुना यादी आहे, जी Loker Dunia वर नोकऱ्या कशा दिसतात ते दाखवते. अर्ज बंद आहेत.',
   },
 };

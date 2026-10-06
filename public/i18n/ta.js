@@ -83,5 +83,7 @@
     per_month: '/மாதம்', per_year: '/ஆண்டு', per_hour: '/மணி',
     cat_it: 'IT', cat_health: 'சுகாதாரம்', cat_education: 'கல்வி', cat_finance: 'நிதி', cat_engineering: 'பொறியியல்', cat_creative: 'படைப்பாற்றல்', cat_marketing: 'சந்தைப்படுத்தல்', cat_sales: 'விற்பனை & சேவை', cat_hospitality: 'விருந்தோம்பல்', cat_logistics: 'தளவாடங்கள்', cat_agriculture: 'வேளாண்மை',
     pageNotFound: 'பக்கம் கிடைக்கவில்லை', pageNotFoundBody: 'இந்த இணைப்பு இல்லை.',
+    sampleListing: 'மாதிரி பட்டியல்', sampleApplyOff: 'விண்ணப்பங்கள் நிறுத்தப்பட்டுள்ளன',
+    sampleApplyNote: 'Loker Dunia-வில் வேலைகள் எப்படி இருக்கும் என்பதைக் காட்டும் மாதிரி பட்டியல் இது. விண்ணப்பங்கள் நிறுத்தப்பட்டுள்ளன.',
   },
 };

@@ -4,6 +4,7 @@ const { Pool } = require('pg');
 const jwt = require('jsonwebtoken');
 const { migrate } = require('./lib/schema');
 const { seedStaging } = require('./lib/seed');
+const { seedSamples } = require('./lib/samples');
 const { buildRouter } = require('./lib/routes');
 
 const app = express();
@@ -161,6 +162,9 @@ let server = null;
 
 async function start() {
   await migrate(pool);
+  // Sample listings ship everywhere, so the live board is never empty. They
+  // are flagged is_sample, not is_demo: nobody can manage them or apply.
+  await seedSamples(pool);
   // Staging previews start without the sample jobs, the sample employer and
   // its 3 fake applicants; seed them (idempotently) so the board and the
   // applicant dashboard can be reviewed. Production never runs this.

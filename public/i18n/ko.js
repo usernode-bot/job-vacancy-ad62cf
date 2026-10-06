@@ -83,5 +83,7 @@
     per_month: '/월', per_year: '/년', per_hour: '/시간',
     cat_it: 'IT', cat_health: '의료', cat_education: '교육', cat_finance: '금융', cat_engineering: '엔지니어링', cat_creative: '크리에이티브', cat_marketing: '마케팅', cat_sales: '영업 및 서비스', cat_hospitality: '호텔 및 요식업', cat_logistics: '물류', cat_agriculture: '농업',
     pageNotFound: '페이지를 찾을 수 없습니다', pageNotFoundBody: '존재하지 않는 링크입니다.',
+    sampleListing: '샘플 공고', sampleApplyOff: '지원이 비활성화되어 있습니다',
+    sampleApplyNote: 'Loker Dunia의 채용 공고가 어떻게 보이는지 보여 주는 샘플 공고입니다. 지원이 비활성화되어 있습니다.',
   },
 };

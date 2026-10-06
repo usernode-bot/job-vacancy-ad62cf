@@ -83,5 +83,7 @@
     per_month: '/ਮਹੀਨਾ', per_year: '/ਸਾਲ', per_hour: '/ਘੰਟਾ',
     cat_it: 'IT', cat_health: 'ਸਿਹਤ ਸੰਭਾਲ', cat_education: 'ਸਿੱਖਿਆ', cat_finance: 'ਵਿੱਤ', cat_engineering: 'ਇੰਜੀਨੀਅਰਿੰਗ', cat_creative: 'ਰਚਨਾਤਮਕ', cat_marketing: 'ਮਾਰਕੀਟਿੰਗ', cat_sales: 'ਵਿਕਰੀ ਅਤੇ ਸੇਵਾ', cat_hospitality: 'ਪਰਾਹੁਣਚਾਰੀ', cat_logistics: 'ਲੌਜਿਸਟਿਕਸ', cat_agriculture: 'ਖੇਤੀਬਾੜੀ',
     pageNotFound: 'ਪੰਨਾ ਨਹੀਂ ਮਿਲਿਆ', pageNotFoundBody: 'ਇਹ ਲਿੰਕ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।',
+    sampleListing: 'ਨਮੂਨਾ ਸੂਚੀ', sampleApplyOff: 'ਅਰਜ਼ੀਆਂ ਬੰਦ ਹਨ',
+    sampleApplyNote: 'ਇਹ ਇੱਕ ਨਮੂਨਾ ਸੂਚੀ ਹੈ ਜੋ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ Loker Dunia ਉੱਤੇ ਨੌਕਰੀਆਂ ਕਿਵੇਂ ਦਿਸਦੀਆਂ ਹਨ। ਅਰਜ਼ੀਆਂ ਬੰਦ ਹਨ।',
   },
 };

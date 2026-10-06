@@ -84,5 +84,6 @@
     cat_it: 'Ìmọ̀ ẹ̀rọ (IT)', cat_health: 'Ìlera', cat_education: 'Ẹ̀kọ́', cat_finance: 'Ìṣúná', cat_engineering: 'Ìmọ̀ ẹ̀rọ', cat_creative: 'Iṣẹ́ ọnà', cat_marketing: 'Ìpolówó ọjà', cat_sales: 'Títà àti Iṣẹ́ ìsìn', cat_hospitality: 'Ìgbàlejò', cat_logistics: 'Ètò ìrìnnà ẹrù', cat_agriculture: 'Iṣẹ́ àgbẹ̀',
     pageNotFound: 'A kò rí ojú-ìwé náà', pageNotFoundBody: 'Ìjápọ̀ yìí kò sí.',
     notifications: 'Àwọn ìkìlọ̀', markAllRead: 'Ṣàmì sí gbogbo wọn bí a ti kà', noNotifications: 'Kò sí ìkìlọ̀ kankan síbẹ̀', noNotificationsBody: 'Àwọn iṣẹ́ tó bá ọgbọ́n rẹ mu yóò hàn níbí.', notifUnread: '{n} tí a kò kà',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

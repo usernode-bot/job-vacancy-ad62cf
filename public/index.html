@@ -818,7 +818,7 @@
     const p = route().parts[0] || '';
     if (p === '' ) return '#/';
     if (p === 'jobs' || p === 'job') return '#/jobs';
-    if (p === 'countries' || p === 'skills') return '#/countries';
+    if (p === 'countries' || p === 'skills' || p === 'world') return '#/countries';
     if (p === 'dashboard' || p === 'applicant') return '#/dashboard';
     if (p === 'register' || p === 'auth') return role() === 'guest' ? '#/auth' : '#/profile';
     return '#/' + p;
@@ -936,7 +936,8 @@
       : emptyState(t('noJobsYet'), t('noJobsYetBody'), r === 'company' ? '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>' : '')) + '</section>';
     html += '<section class="grid gap-3 sm:grid-cols-2">' +
       '<a href="#/skills" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('trending') + '</span><span class="flex-1"><span class="block font-medium">' + t('topSkills') + '</span><span class="block text-sm ' + C.muted + '">' + t('topSkillsSub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
-      '<a href="#/countries" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('byCountry') + '</span><span class="block text-sm ' + C.muted + '">' + t('byCountrySub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>';
+      '<a href="#/countries" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('byCountry') + '</span><span class="block text-sm ' + C.muted + '">' + t('byCountrySub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
+      '<a href="#/world" data-testid="world-jobs-link" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400 sm:col-span-2"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('worldJobs') + '</span><span class="block text-sm ' + C.muted + '">' + t('worldJobsSub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>';
     return html + '</div>';
   }
 
@@ -1099,7 +1100,7 @@
 
   function insightsTabs(active) {
     const tab = (h, k) => '<a href="' + h + '" class="flex-1 text-center rounded-lg px-3 py-2 text-sm font-medium ' + (active === h ? 'bg-white dark:bg-slate-900 shadow-sm text-blue-700 dark:text-blue-300' : 'text-slate-600 dark:text-slate-300') + '"' + (active === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>';
-    return '<div class="flex gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-800 mb-4 max-w-md">' + tab('#/countries', 'byCountry') + tab('#/skills', 'topSkills') + '</div>';
+    return '<div class="flex gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-800 mb-4 max-w-lg">' + tab('#/countries', 'byCountry') + tab('#/skills', 'topSkills') + tab('#/world', 'worldJobs') + '</div>';
   }
   const insight = { country: '', category: '' };
   function viewSkills() {
@@ -1125,6 +1126,21 @@
         '<span class="mt-1.5 block h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden"><span class="block h-full rounded-full bg-blue-600" style="width:' + Math.round(a.n / top * 100) + '%"></span></span></span>' +
         '<span class="text-end shrink-0"><span class="block text-sm font-semibold">' + t('nJobs', { n: a.n }) + '</span><span class="block text-xs ' + C.muted + '">' + t('pctRequired', { n: Math.round(a.req / a.n * 100) }) + '</span></span></button></li>').join('') + '</ol>'
         : emptyState(t('noJobs'), t('noJobsBody')));
+  }
+  // Worldwide openings come from the server (public feeds, or built-in
+  // samples when they are down); the screen loads them each time it opens.
+  let worldJobs = null;
+  function viewWorld() {
+    const w = worldJobs;
+    const head = '<h1 class="' + C.h1 + ' mb-3">' + t('worldJobs') + '</h1>' + insightsTabs('#/world');
+    if (!w) return head + emptyState(t('loadFailed'), t('loadFailedBody'), '<button type="button" data-action="retry-world" class="' + C.btnPrimary + '">' + t('retry') + '</button>');
+    return head + '<p class="text-sm ' + C.muted + ' mb-1">' + t('worldJobsCount', { n: w.jobs.length }) + '</p>' +
+      '<p class="text-sm ' + C.muted + ' mb-4" data-testid="world-jobs-source" data-live="' + (w.live ? '1' : '0') + '">' + esc(w.live ? t('worldJobsSource', { source: w.sources.join(', ') }) : t('worldJobsSample')) + '</p>' +
+      '<ul class="grid gap-3 sm:grid-cols-2" data-testid="world-jobs">' + w.jobs.map(j =>
+        '<li data-testid="world-job" class="' + C.card + ' p-4 flex flex-col gap-2"><div class="flex gap-3">' + companyLogo(j.company) +
+        '<div class="min-w-0 flex-1"><h2 class="font-semibold leading-snug">' + esc(j.title) + '</h2><p class="text-sm ' + C.muted + ' truncate">' + esc(j.company) + '</p></div></div>' +
+        '<p class="text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span><span class="min-w-0">' + esc(j.location) + '</span></p>' +
+        '<div class="mt-auto pt-1"><a href="' + esc(j.url) + '" target="_blank" rel="noopener noreferrer" class="' + C.btnSecondary + '">' + t('viewListing') + '</a></div></li>').join('') + '</ul>';
   }
   let countryQuery = '';
   function viewCountries() {
@@ -1762,6 +1778,14 @@
     else if (a === 'saved') html = viewSaved();
     else if (a === 'skills') html = viewSkills();
     else if (a === 'countries') html = viewCountries();
+    else if (a === 'world') {
+      if (changed || !worldJobs) {
+        view.innerHTML = spinner();
+        try { worldJobs = await request('GET', '/world-jobs'); } catch (e) { worldJobs = null; }
+        if (seq !== renderSeq) return;
+      }
+      html = viewWorld();
+    }
     else if (a === 'auth') html = r.query.get('company') === '1' ? viewCompanySignup() : viewAuth();
     else if (a === 'register') html = viewRegister();
     else if (a === 'profile') html = viewProfile();
@@ -1893,6 +1917,7 @@
       case 'pick-category': filters = emptyFilters(); filters.category = el.dataset.cat; go('#/jobs'); break;
       case 'search-skill': filters = emptyFilters(); filters.skills = [el.dataset.skill]; go('#/jobs'); break;
       case 'browse-country': filters = emptyFilters(); filters.country = el.dataset.cc; go('#/jobs'); break;
+      case 'retry-world': worldJobs = null; render(); break;
       case 'browse-rw': filters = emptyFilters(); filters.rw = true; go('#/jobs'); break;
       case 'open-filters': openFiltersModal(); break;
       case 'toggle-match':

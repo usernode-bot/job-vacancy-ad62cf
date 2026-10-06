@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Vård och hälsa', cat_education: 'Utbildning', cat_finance: 'Ekonomi', cat_engineering: 'Teknik', cat_creative: 'Kreativt', cat_marketing: 'Marknadsföring', cat_sales: 'Försäljning och service', cat_hospitality: 'Hotell och restaurang', cat_logistics: 'Logistik', cat_agriculture: 'Jordbruk',
     pageNotFound: 'Sidan hittades inte', pageNotFoundBody: 'Denna länk finns inte.',
     notifications: 'Aviseringar', markAllRead: 'Markera alla som lästa', noNotifications: 'Inga aviseringar än', noNotificationsBody: 'Jobb som matchar dina färdigheter visas här.', notifUnread: '{n} olästa',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

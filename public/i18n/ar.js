@@ -84,5 +84,6 @@
     cat_it: 'تقنية المعلومات', cat_health: 'الرعاية الصحية', cat_education: 'التعليم', cat_finance: 'المالية', cat_engineering: 'الهندسة', cat_creative: 'الإبداع', cat_marketing: 'التسويق', cat_sales: 'المبيعات والخدمة', cat_hospitality: 'الضيافة', cat_logistics: 'الخدمات اللوجستية', cat_agriculture: 'الزراعة',
     pageNotFound: 'الصفحة غير موجودة', pageNotFoundBody: 'هذا الرابط غير موجود.',
     notifications: 'الإشعارات', markAllRead: 'تحديد الكل كمقروء', noNotifications: 'لا توجد إشعارات بعد', noNotificationsBody: 'ستظهر هنا الوظائف المطابقة لمهاراتك.', notifUnread: '{n} غير مقروء',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

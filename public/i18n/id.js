@@ -88,5 +88,6 @@
     cat_it: 'IT', cat_health: 'Kesehatan', cat_education: 'Pendidikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
     notifications: 'Notifikasi', markAllRead: 'Tandai semua dibaca', noNotifications: 'Belum ada notifikasi', noNotificationsBody: 'Lowongan yang cocok dengan skill kamu akan muncul di sini.', notifUnread: '{n} belum dibaca',
+    worldJobs: 'Lowongan seluruh dunia', worldJobsSub: 'Daftar langsung dari situs lowongan publik', worldJobsCount: '{n} lowongan', worldJobsSource: 'Daftar langsung dari {source}', worldJobsSample: 'Daftar langsung sedang tidak tersedia. Menampilkan contoh lowongan dari seluruh dunia.', viewListing: 'Lihat lowongan',
   },
 };

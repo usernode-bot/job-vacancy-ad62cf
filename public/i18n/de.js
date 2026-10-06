@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Gesundheitswesen', cat_education: 'Bildung', cat_finance: 'Finanzen', cat_engineering: 'Ingenieurwesen', cat_creative: 'Kreativ', cat_marketing: 'Marketing', cat_sales: 'Vertrieb und Service', cat_hospitality: 'Gastgewerbe', cat_logistics: 'Logistik', cat_agriculture: 'Landwirtschaft',
     pageNotFound: 'Seite nicht gefunden', pageNotFoundBody: 'Dieser Link existiert nicht.',
     notifications: 'Benachrichtigungen', markAllRead: 'Alle als gelesen markieren', noNotifications: 'Noch keine Benachrichtigungen', noNotificationsBody: 'Hier erscheinen Jobs, die zu deinen Fähigkeiten passen.', notifUnread: '{n} ungelesen',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

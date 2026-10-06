@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Egészségügy', cat_education: 'Oktatás', cat_finance: 'Pénzügy', cat_engineering: 'Mérnöki', cat_creative: 'Kreatív', cat_marketing: 'Marketing', cat_sales: 'Értékesítés és ügyfélszolgálat', cat_hospitality: 'Vendéglátás', cat_logistics: 'Logisztika', cat_agriculture: 'Mezőgazdaság',
     pageNotFound: 'Az oldal nem található', pageNotFoundBody: 'Ez a hivatkozás nem létezik.',
     notifications: 'Értesítések', markAllRead: 'Összes megjelölése olvasottként', noNotifications: 'Még nincs értesítés', noNotificationsBody: 'Itt jelennek meg a készségeidhez illő állások.', notifUnread: '{n} olvasatlan',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

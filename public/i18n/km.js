@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'សុខាភិបាល', cat_education: 'អប់រំ', cat_finance: 'ហិរញ្ញវត្ថុ', cat_engineering: 'វិស្វកម្ម', cat_creative: 'ច្នៃប្រឌិត', cat_marketing: 'ទីផ្សារ', cat_sales: 'លក់ និងសេវាកម្ម', cat_hospitality: 'បដិសណ្ឋារកិច្ច', cat_logistics: 'ភស្តុភារ', cat_agriculture: 'កសិកម្ម',
     pageNotFound: 'រកមិនឃើញទំព័រ', pageNotFoundBody: 'តំណនេះមិនមានទេ។',
     notifications: 'ការជូនដំណឹង', markAllRead: 'សម្គាល់ទាំងអស់ថាបានអាន', noNotifications: 'មិនទាន់មានការជូនដំណឹងទេ', noNotificationsBody: 'ការងារដែលត្រូវនឹងជំនាញរបស់អ្នកនឹងបង្ហាញនៅទីនេះ។', notifUnread: '{n} មិនទាន់អាន',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

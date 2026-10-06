@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Kalusugan', cat_education: 'Edukasyon', cat_finance: 'Pananalapi', cat_engineering: 'Inhinyeriya', cat_creative: 'Malikhain', cat_marketing: 'Marketing', cat_sales: 'Benta at Serbisyo', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agrikultura',
     pageNotFound: 'Hindi nahanap ang pahina', pageNotFoundBody: 'Hindi umiiral ang link na ito.',
     notifications: 'Mga abiso', markAllRead: 'Markahan lahat bilang nabasa', noNotifications: 'Wala pang abiso', noNotificationsBody: 'Dito lalabas ang mga trabahong tugma sa iyong mga kasanayan.', notifUnread: '{n} hindi pa nababasa',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

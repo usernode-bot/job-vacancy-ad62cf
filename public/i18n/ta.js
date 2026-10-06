@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'சுகாதாரம்', cat_education: 'கல்வி', cat_finance: 'நிதி', cat_engineering: 'பொறியியல்', cat_creative: 'படைப்பாற்றல்', cat_marketing: 'சந்தைப்படுத்தல்', cat_sales: 'விற்பனை & சேவை', cat_hospitality: 'விருந்தோம்பல்', cat_logistics: 'தளவாடங்கள்', cat_agriculture: 'வேளாண்மை',
     pageNotFound: 'பக்கம் கிடைக்கவில்லை', pageNotFoundBody: 'இந்த இணைப்பு இல்லை.',
     notifications: 'அறிவிப்புகள்', markAllRead: 'அனைத்தையும் படித்ததாகக் குறி', noNotifications: 'இன்னும் அறிவிப்புகள் இல்லை', noNotificationsBody: 'உங்கள் திறன்களுக்கு பொருந்தும் வேலைகள் இங்கே தோன்றும்.', notifUnread: '{n} படிக்காதவை',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

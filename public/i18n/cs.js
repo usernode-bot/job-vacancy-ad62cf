@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Zdravotnictví', cat_education: 'Vzdělávání', cat_finance: 'Finance', cat_engineering: 'Strojírenství a technika', cat_creative: 'Kreativní obory', cat_marketing: 'Marketing', cat_sales: 'Prodej a služby', cat_hospitality: 'Pohostinství', cat_logistics: 'Logistika', cat_agriculture: 'Zemědělství',
     pageNotFound: 'Stránka nenalezena', pageNotFoundBody: 'Tento odkaz neexistuje.',
     notifications: 'Oznámení', markAllRead: 'Označit vše jako přečtené', noNotifications: 'Zatím žádná oznámení', noNotificationsBody: 'Zde se zobrazí nabídky, které odpovídají vašim dovednostem.', notifUnread: '{n} nepřečtených',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'स्वास्थ्य सेवा', cat_education: 'शिक्षा', cat_finance: 'वित्त', cat_engineering: 'इन्जिनियरिङ', cat_creative: 'सिर्जनात्मक', cat_marketing: 'मार्केटिङ', cat_sales: 'बिक्री र सेवा', cat_hospitality: 'आतिथ्य', cat_logistics: 'लजिस्टिक्स', cat_agriculture: 'कृषि',
     pageNotFound: 'पृष्ठ भेटिएन', pageNotFoundBody: 'यो लिङ्क अस्तित्वमा छैन।',
     notifications: 'सूचनाहरू', markAllRead: 'सबै पढिसकेको चिन्ह लगाउनुहोस्', noNotifications: 'अहिलेसम्म कुनै सूचना छैन', noNotificationsBody: 'तपाईंको सीपसँग मिल्ने जागिरहरू यहाँ देखिनेछन्।', notifUnread: '{n} नपढिएका',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

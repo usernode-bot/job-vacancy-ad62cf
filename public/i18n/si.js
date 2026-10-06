@@ -46,7 +46,7 @@
     educationN: 'අධ්‍යාපනය {n}', experienceN: 'පළපුරුද්ද {n}', eduLevel: 'මට්ටම', gradYear: 'උපාධි ලැබූ වසර', institution: 'ආයතනය', major: 'ප්‍රධාන විෂය', position: 'තනතුර', companyLabel: 'සමාගම',
     startMonth: 'ආරම්භය', endMonth: 'අවසානය', present: 'මේ දක්වා', currentlyWorking: 'මම දැනට මෙහි සේවය කරමි', jobDesc: 'රැකියා විස්තරය', experience: 'පළපුරුද්ද',
     addEducation: 'අධ්‍යාපනය එක් කරන්න', addExperience: 'පළපුරුද්ද එක් කරන්න', noEducationYet: 'තවමත් අධ්‍යාපනය නොමැත.', noExperienceYet: 'තවමත් පළපුරුද්ද නොමැත.',
-    edu_sma: 'උසස් පෙළ', edu_d3: 'ඩිප්ලෝමා', edu_s1: 'උපාධිය', edu_s2: 'පශ්චාත් උපාධිය', edu_s3: 'ආචාර්ය උපාධිය', edu_any: 'ඕනෑම මට්ටමක්',
+    edu_sma: 'උසස් පෙළ', edu_d3: 'ඩිප්ලෝමා', edu_s1: 'උපාධිය', edu_s2: 'පශ්චාත් උපාධිය', edu_s3: 'ආචාර්ය උපාධිය', edu_any: 'අධ්‍යාපන සහතිකයක් අවශ්‍ය නැත', noEduCertHint: 'ඩිප්ලෝමාවක් හෝ පාසල් සහතිකයක් නොමැතිව අයදුම් කළ හැකි රැකියා',
     typeSkill: 'කුසලතාවක් ටයිප් කරන්න', skillsStepHint: 'යෝජනාවක් තෝරන්න හෝ ඔබේම එකක් ටයිප් කරන්න. එක් එක් කුසලතාව සඳහා මට්ටම සහ පළපුරුදු වසර ගණන සකසන්න.', level: 'මට්ටම', yearsExp: 'වසර', noSkillsYet: 'තවමත් කුසලතා නොමැත.', skillExists: 'මෙම කුසලතාව දැනටමත් එක් කර ඇත',
     level_1: 'ආරම්භක', level_2: 'මධ්‍යම', level_3: 'උසස්', language: 'භාෂාව', addLanguage: 'භාෂාවක් එක් කරන්න', noLanguagesYet: 'තවමත් භාෂා නොමැත.',
     lang_basic: 'මූලික', lang_intermediate: 'මධ්‍යම', lang_fluent: 'චතුර', lang_native: 'මව් භාෂාව',

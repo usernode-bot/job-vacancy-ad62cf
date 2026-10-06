@@ -46,7 +46,7 @@
     educationN: 'Formation {n}', experienceN: 'Expérience {n}', eduLevel: 'Niveau', gradYear: "Année d'obtention", institution: 'Établissement', major: 'Spécialité', position: 'Poste', companyLabel: 'Entreprise',
     startMonth: 'Début', endMonth: 'Fin', present: "Aujourd'hui", currentlyWorking: 'Je travaille actuellement ici', jobDesc: 'Description du poste', experience: 'Expérience',
     addEducation: 'Ajouter une formation', addExperience: 'Ajouter une expérience', noEducationYet: "Aucune formation pour l'instant.", noExperienceYet: "Aucune expérience pour l'instant.",
-    edu_sma: 'Baccalauréat', edu_d3: 'Bac+2', edu_s1: 'Licence', edu_s2: 'Master', edu_s3: 'Doctorat', edu_any: 'Tout niveau',
+    edu_sma: 'Baccalauréat', edu_d3: 'Bac+2', edu_s1: 'Licence', edu_s2: 'Master', edu_s3: 'Doctorat', edu_any: 'Aucun diplôme requis', noEduCertHint: 'Offres accessibles sans diplôme ni certificat scolaire',
     typeSkill: 'Saisissez une compétence', skillsStepHint: "Choisissez une suggestion ou saisissez la vôtre. Indiquez le niveau et les années d'expérience pour chaque compétence.", level: 'Niveau', yearsExp: 'Années', noSkillsYet: "Aucune compétence pour l'instant.", skillExists: 'Cette compétence est déjà ajoutée',
     level_1: 'Débutant', level_2: 'Intermédiaire', level_3: 'Avancé', language: 'Langue', addLanguage: 'Ajouter une langue', noLanguagesYet: "Aucune langue pour l'instant.",
     lang_basic: 'Notions', lang_intermediate: 'Intermédiaire', lang_fluent: 'Courant', lang_native: 'Langue maternelle',

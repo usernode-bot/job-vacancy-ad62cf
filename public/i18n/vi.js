@@ -46,7 +46,7 @@
     educationN: 'Học vấn {n}', experienceN: 'Kinh nghiệm {n}', eduLevel: 'Trình độ', gradYear: 'Năm tốt nghiệp', institution: 'Cơ sở đào tạo', major: 'Chuyên ngành', position: 'Chức vụ', companyLabel: 'Công ty',
     startMonth: 'Bắt đầu', endMonth: 'Kết thúc', present: 'Hiện tại', currentlyWorking: 'Tôi đang làm việc tại đây', jobDesc: 'Mô tả công việc', experience: 'Kinh nghiệm',
     addEducation: 'Thêm học vấn', addExperience: 'Thêm kinh nghiệm', noEducationYet: 'Chưa có học vấn.', noExperienceYet: 'Chưa có kinh nghiệm.',
-    edu_sma: 'Trung học phổ thông', edu_d3: 'Cao đẳng', edu_s1: 'Cử nhân', edu_s2: 'Thạc sĩ', edu_s3: 'Tiến sĩ', edu_any: 'Mọi trình độ',
+    edu_sma: 'Trung học phổ thông', edu_d3: 'Cao đẳng', edu_s1: 'Cử nhân', edu_s2: 'Thạc sĩ', edu_s3: 'Tiến sĩ', edu_any: 'Không yêu cầu bằng cấp', noEduCertHint: 'Việc làm có thể ứng tuyển mà không cần bằng tốt nghiệp hay chứng chỉ học vấn',
     typeSkill: 'Nhập một kỹ năng', skillsStepHint: 'Chọn một gợi ý hoặc tự nhập. Đặt trình độ và số năm kinh nghiệm cho từng kỹ năng.', level: 'Trình độ', yearsExp: 'Số năm', noSkillsYet: 'Chưa có kỹ năng.', skillExists: 'Kỹ năng này đã được thêm',
     level_1: 'Mới bắt đầu', level_2: 'Trung cấp', level_3: 'Nâng cao', language: 'Ngôn ngữ', addLanguage: 'Thêm ngôn ngữ', noLanguagesYet: 'Chưa có ngôn ngữ.',
     lang_basic: 'Cơ bản', lang_intermediate: 'Trung cấp', lang_fluent: 'Lưu loát', lang_native: 'Bản ngữ',

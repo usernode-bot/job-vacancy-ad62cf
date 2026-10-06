@@ -122,6 +122,20 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     assert.equal((await call(stranger, 'POST', '/companies', { name: 'test employer ltd', country: 'ID', city: 'Jakarta' })).status, 409);
   });
 
+  await t.test('a job can be marked as needing no education certificate', async () => {
+    const body = { companyId, title: 'Warehouse Helper', category: 'logistics', country: 'ID', city: 'Bekasi', currency: 'IDR',
+      salaryMin: 4e6, salaryMax: 5e6, period: 'month', type: 'fulltime', model: 'onsite', required: [{ name: 'Forklift', level: 1 }], nice: [],
+      languages: [{ code: 'id', level: 'fluent' }], description: 'Bantu operasional gudang.', qualifications: [], benefits: [] };
+    const none = await call(employer, 'POST', '/jobs', { ...body, education: 'any' });
+    assert.equal(none.status, 201);
+    assert.equal(none.data.job.education, 'any');
+    const s1 = await call(employer, 'POST', '/jobs', { ...body, education: 's1' });
+    assert.equal(s1.data.job.education, 's1');
+    const { data } = await call(stranger, 'GET', '/bootstrap');
+    assert.equal(data.jobs.find(j => j.id === none.data.job.id).education, 'any');
+    assert.ok(data.jobs.filter(j => j.isDemo && j.education === 'any').length >= 4, 'staging seed has no-certificate jobs to filter');
+  });
+
   await t.test('a seeker saves a profile and applies with a certificate', async () => {
     const bad = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, photo: 'data:image/png;base64,AAAA' } }));
     assert.equal(bad.status, 200);

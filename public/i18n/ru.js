@@ -46,7 +46,7 @@
     educationN: 'Образование {n}', experienceN: 'Опыт {n}', eduLevel: 'Уровень', gradYear: 'Год окончания', institution: 'Учебное заведение', major: 'Специальность', position: 'Должность', companyLabel: 'Компания',
     startMonth: 'Начало', endMonth: 'Окончание', present: 'По настоящее время', currentlyWorking: 'Я работаю здесь сейчас', jobDesc: 'Описание работы', experience: 'Опыт работы',
     addEducation: 'Добавить образование', addExperience: 'Добавить опыт', noEducationYet: 'Образование пока не указано.', noExperienceYet: 'Опыт пока не указан.',
-    edu_sma: 'Среднее', edu_d3: 'Среднее специальное', edu_s1: 'Бакалавр', edu_s2: 'Магистр', edu_s3: 'Доктор наук', edu_any: 'Любой уровень',
+    edu_sma: 'Среднее', edu_d3: 'Среднее специальное', edu_s1: 'Бакалавр', edu_s2: 'Магистр', edu_s3: 'Доктор наук', edu_any: 'Без документа об образовании', noEduCertHint: 'Вакансии, на которые можно откликнуться без диплома или аттестата',
     typeSkill: 'Введите навык', skillsStepHint: 'Выберите вариант из подсказок или введите свой. Укажите уровень и опыт в годах для каждого навыка.', level: 'Уровень', yearsExp: 'Лет', noSkillsYet: 'Навыки пока не указаны.', skillExists: 'Этот навык уже добавлен',
     level_1: 'Начальный', level_2: 'Средний', level_3: 'Продвинутый', language: 'Язык', addLanguage: 'Добавить язык', noLanguagesYet: 'Языки пока не указаны.',
     lang_basic: 'Базовый', lang_intermediate: 'Средний', lang_fluent: 'Свободный', lang_native: 'Родной',

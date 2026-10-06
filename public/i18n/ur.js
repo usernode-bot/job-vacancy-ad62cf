@@ -46,7 +46,7 @@
     educationN: 'تعلیم {n}', experienceN: 'تجربہ {n}', eduLevel: 'سطح', gradYear: 'فراغت کا سال', institution: 'ادارہ', major: 'مضمون', position: 'عہدہ', companyLabel: 'کمپنی',
     startMonth: 'آغاز', endMonth: 'اختتام', present: 'تاحال', currentlyWorking: 'میں فی الحال یہاں کام کرتا ہوں', jobDesc: 'ملازمت کی تفصیل', experience: 'تجربہ',
     addEducation: 'تعلیم شامل کریں', addExperience: 'تجربہ شامل کریں', noEducationYet: 'ابھی کوئی تعلیم شامل نہیں۔', noExperienceYet: 'ابھی کوئی تجربہ شامل نہیں۔',
-    edu_sma: 'ہائی اسکول', edu_d3: 'ڈپلومہ', edu_s1: 'بیچلرز', edu_s2: 'ماسٹرز', edu_s3: 'ڈاکٹریٹ', edu_any: 'کوئی بھی سطح',
+    edu_sma: 'ہائی اسکول', edu_d3: 'ڈپلومہ', edu_s1: 'بیچلرز', edu_s2: 'ماسٹرز', edu_s3: 'ڈاکٹریٹ', edu_any: 'تعلیمی سند کی ضرورت نہیں', noEduCertHint: 'ایسی نوکریاں جن کے لیے ڈپلومہ یا اسکول کی سند کے بغیر درخواست دی جا سکتی ہے',
     typeSkill: 'مہارت لکھیں', skillsStepHint: 'کوئی تجویز منتخب کریں یا اپنی مہارت لکھیں۔ ہر مہارت کے لیے سطح اور تجربے کے سال مقرر کریں۔', level: 'سطح', yearsExp: 'سال', noSkillsYet: 'ابھی کوئی مہارت شامل نہیں۔', skillExists: 'یہ مہارت پہلے ہی شامل ہے',
     level_1: 'ابتدائی', level_2: 'درمیانی', level_3: 'ماہر', language: 'زبان', addLanguage: 'زبان شامل کریں', noLanguagesYet: 'ابھی کوئی زبان شامل نہیں۔',
     lang_basic: 'بنیادی', lang_intermediate: 'درمیانی', lang_fluent: 'روانی سے', lang_native: 'مادری',

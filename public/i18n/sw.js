@@ -46,7 +46,7 @@
     educationN: 'Elimu {n}', experienceN: 'Uzoefu {n}', eduLevel: 'Kiwango', gradYear: 'Mwaka wa kuhitimu', institution: 'Taasisi', major: 'Fani', position: 'Cheo', companyLabel: 'Kampuni',
     startMonth: 'Mwanzo', endMonth: 'Mwisho', present: 'Sasa', currentlyWorking: 'Ninafanya kazi hapa kwa sasa', jobDesc: 'Maelezo ya kazi', experience: 'Uzoefu',
     addEducation: 'Ongeza elimu', addExperience: 'Ongeza uzoefu', noEducationYet: 'Bado hakuna elimu.', noExperienceYet: 'Bado hakuna uzoefu.',
-    edu_sma: 'Shule ya sekondari', edu_d3: 'Stashahada', edu_s1: 'Shahada ya kwanza', edu_s2: 'Shahada ya uzamili', edu_s3: 'Shahada ya uzamivu', edu_any: 'Kiwango chochote',
+    edu_sma: 'Shule ya sekondari', edu_d3: 'Stashahada', edu_s1: 'Shahada ya kwanza', edu_s2: 'Shahada ya uzamili', edu_s3: 'Shahada ya uzamivu', edu_any: 'Hakuna cheti cha elimu kinachohitajika', noEduCertHint: 'Kazi unazoweza kuomba bila stashahada wala cheti cha shule',
     typeSkill: 'Andika ujuzi', skillsStepHint: 'Chagua pendekezo au andika wako mwenyewe. Weka kiwango na miaka ya uzoefu kwa kila ujuzi.', level: 'Kiwango', yearsExp: 'Miaka', noSkillsYet: 'Bado hakuna ujuzi.', skillExists: 'Ujuzi huu tayari umeongezwa',
     level_1: 'Mwanzo', level_2: 'Kati', level_3: 'Juu', language: 'Lugha', addLanguage: 'Ongeza lugha', noLanguagesYet: 'Bado hakuna lugha.',
     lang_basic: 'Msingi', lang_intermediate: 'Kati', lang_fluent: 'Fasaha', lang_native: 'Lugha ya mama',

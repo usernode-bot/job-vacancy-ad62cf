@@ -46,7 +46,7 @@
     educationN: 'Ausbildung {n}', experienceN: 'Erfahrung {n}', eduLevel: 'Abschluss', gradYear: 'Abschlussjahr', institution: 'Einrichtung', major: 'Fachrichtung', position: 'Position', companyLabel: 'Unternehmen',
     startMonth: 'Beginn', endMonth: 'Ende', present: 'Heute', currentlyWorking: 'Ich arbeite derzeit hier', jobDesc: 'Tätigkeitsbeschreibung', experience: 'Erfahrung',
     addEducation: 'Ausbildung hinzufügen', addExperience: 'Erfahrung hinzufügen', noEducationYet: 'Noch keine Ausbildung.', noExperienceYet: 'Noch keine Erfahrung.',
-    edu_sma: 'Abitur', edu_d3: 'Diplom', edu_s1: 'Bachelor', edu_s2: 'Master', edu_s3: 'Promotion', edu_any: 'Beliebiger Abschluss',
+    edu_sma: 'Abitur', edu_d3: 'Diplom', edu_s1: 'Bachelor', edu_s2: 'Master', edu_s3: 'Promotion', edu_any: 'Kein Bildungsabschluss erforderlich', noEduCertHint: 'Jobs, auf die du dich ohne Diplom oder Schulzeugnis bewerben kannst',
     typeSkill: 'Fähigkeit eingeben', skillsStepHint: 'Wählen Sie einen Vorschlag oder geben Sie eine eigene Fähigkeit ein. Legen Sie für jede Fähigkeit Niveau und Jahre an Erfahrung fest.', level: 'Niveau', yearsExp: 'Jahre', noSkillsYet: 'Noch keine Fähigkeiten.', skillExists: 'Diese Fähigkeit wurde bereits hinzugefügt',
     level_1: 'Anfänger', level_2: 'Fortgeschritten', level_3: 'Experte', language: 'Sprache', addLanguage: 'Sprache hinzufügen', noLanguagesYet: 'Noch keine Sprachen.',
     lang_basic: 'Grundkenntnisse', lang_intermediate: 'Gute Kenntnisse', lang_fluent: 'Fließend', lang_native: 'Muttersprache',

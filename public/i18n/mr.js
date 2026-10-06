@@ -46,7 +46,7 @@
     educationN: 'शिक्षण {n}', experienceN: 'अनुभव {n}', eduLevel: 'स्तर', gradYear: 'उत्तीर्ण वर्ष', institution: 'संस्था', major: 'विषय', position: 'पद', companyLabel: 'कंपनी',
     startMonth: 'सुरुवात', endMonth: 'शेवट', present: 'सध्या', currentlyWorking: 'मी सध्या येथे काम करतो/करते', jobDesc: 'कामाचे वर्णन', experience: 'अनुभव',
     addEducation: 'शिक्षण जोडा', addExperience: 'अनुभव जोडा', noEducationYet: 'अद्याप शिक्षण जोडलेले नाही.', noExperienceYet: 'अद्याप अनुभव जोडलेला नाही.',
-    edu_sma: 'उच्च माध्यमिक', edu_d3: 'डिप्लोमा', edu_s1: 'पदवी', edu_s2: 'पदव्युत्तर पदवी', edu_s3: 'डॉक्टरेट', edu_any: 'कोणताही स्तर',
+    edu_sma: 'उच्च माध्यमिक', edu_d3: 'डिप्लोमा', edu_s1: 'पदवी', edu_s2: 'पदव्युत्तर पदवी', edu_s3: 'डॉक्टरेट', edu_any: 'शैक्षणिक प्रमाणपत्राची गरज नाही', noEduCertHint: 'डिप्लोमा किंवा शाळेच्या प्रमाणपत्राशिवाय अर्ज करता येणाऱ्या नोकऱ्या',
     typeSkill: 'कौशल्य टाइप करा', skillsStepHint: 'एखादी सूचना निवडा किंवा स्वतः टाइप करा. प्रत्येक कौशल्यासाठी स्तर आणि अनुभवाची वर्षे निश्चित करा.', level: 'स्तर', yearsExp: 'वर्षे', noSkillsYet: 'अद्याप कौशल्ये नाहीत.', skillExists: 'हे कौशल्य आधीच जोडले आहे',
     level_1: 'नवशिका', level_2: 'मध्यम', level_3: 'प्रगत', language: 'भाषा', addLanguage: 'भाषा जोडा', noLanguagesYet: 'अद्याप भाषा नाहीत.',
     lang_basic: 'प्राथमिक', lang_intermediate: 'मध्यम', lang_fluent: 'अस्खलित', lang_native: 'मातृभाषा',

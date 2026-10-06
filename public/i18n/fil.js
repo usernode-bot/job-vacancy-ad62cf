@@ -46,7 +46,7 @@
     educationN: 'Edukasyon {n}', experienceN: 'Karanasan {n}', eduLevel: 'Antas', gradYear: 'Taon ng pagtatapos', institution: 'Institusyon', major: 'Kurso', position: 'Posisyon', companyLabel: 'Kumpanya',
     startMonth: 'Simula', endMonth: 'Katapusan', present: 'Kasalukuyan', currentlyWorking: 'Kasalukuyan akong nagtatrabaho dito', jobDesc: 'Paglalarawan ng trabaho', experience: 'Karanasan',
     addEducation: 'Magdagdag ng edukasyon', addExperience: 'Magdagdag ng karanasan', noEducationYet: 'Wala pang edukasyon.', noExperienceYet: 'Wala pang karanasan.',
-    edu_sma: 'High school', edu_d3: 'Diploma', edu_s1: 'Bachelor\'s', edu_s2: 'Master\'s', edu_s3: 'Doktorado', edu_any: 'Anumang antas',
+    edu_sma: 'High school', edu_d3: 'Diploma', edu_s1: 'Bachelor\'s', edu_s2: 'Master\'s', edu_s3: 'Doktorado', edu_any: 'Hindi kailangan ng diploma o katibayan ng pag-aaral', noEduCertHint: 'Mga trabahong maaari kang mag-apply nang walang diploma o sertipiko ng paaralan',
     typeSkill: 'Mag-type ng kasanayan', skillsStepHint: 'Pumili ng mungkahi o mag-type ng sarili. Itakda ang antas at taon ng karanasan para sa bawat kasanayan.', level: 'Antas', yearsExp: 'Taon', noSkillsYet: 'Wala pang kasanayan.', skillExists: 'Naidagdag na ang kasanayang ito',
     level_1: 'Baguhan', level_2: 'Katamtaman', level_3: 'Bihasa', language: 'Wika', addLanguage: 'Magdagdag ng wika', noLanguagesYet: 'Wala pang wika.',
     lang_basic: 'Batayan', lang_intermediate: 'Katamtaman', lang_fluent: 'Matatas', lang_native: 'Katutubong wika',

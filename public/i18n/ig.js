@@ -46,7 +46,7 @@
     educationN: 'Agụmakwụkwọ {n}', experienceN: 'Ahụmahụ {n}', eduLevel: 'Ọkwa', gradYear: 'Afọ ngụsị akwụkwọ', institution: 'Ụlọ akwụkwọ', major: 'Isiokwu ọmụmụ', position: 'Ọkwa ọrụ', companyLabel: 'Ụlọ ọrụ',
     startMonth: 'Mmalite', endMonth: 'Njedebe', present: 'Ugbu a', currentlyWorking: 'Ana m arụ ọrụ ebe a ugbu a', jobDesc: 'Nkọwa ọrụ', experience: 'Ahụmahụ',
     addEducation: 'Tinye agụmakwụkwọ', addExperience: 'Tinye ahụmahụ', noEducationYet: 'Enweghị agụmakwụkwọ ugbu a.', noExperienceYet: 'Enweghị ahụmahụ ugbu a.',
-    edu_sma: 'Ụlọ akwụkwọ sekọndrị', edu_d3: 'Diplọma', edu_s1: 'Nzere mbụ', edu_s2: 'Nzere masta', edu_s3: 'Nzere dọkịta', edu_any: 'Ọkwa ọ bụla',
+    edu_sma: 'Ụlọ akwụkwọ sekọndrị', edu_d3: 'Diplọma', edu_s1: 'Nzere mbụ', edu_s2: 'Nzere masta', edu_s3: 'Nzere dọkịta', edu_any: 'Achọghị asambodo agụmakwụkwọ', noEduCertHint: 'Ọrụ ị nwere ike itinye akwụkwọ maka ya na-enweghị diplọma ma ọ bụ asambodo ụlọ akwụkwọ',
     typeSkill: 'Dee nka', skillsStepHint: 'Họrọ ndụmọdụ ma ọ bụ dee nke gị. Tọọ ọkwa na afọ ahụmahụ maka nka ọ bụla.', level: 'Ọkwa', yearsExp: 'Afọ', noSkillsYet: 'Enweghị nka ugbu a.', skillExists: 'Etinyelarị nka a',
     level_1: 'Onye mbido', level_2: 'Etiti', level_3: 'Ọkachamara', language: 'Asụsụ', addLanguage: 'Tinye asụsụ', noLanguagesYet: 'Enweghị asụsụ ugbu a.',
     lang_basic: 'Ntọala', lang_intermediate: 'Etiti', lang_fluent: 'Na-asụ nke ọma', lang_native: 'Asụsụ obodo',

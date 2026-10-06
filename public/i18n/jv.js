@@ -46,7 +46,7 @@
     educationN: 'Pendhidhikan {n}', experienceN: 'Pengalaman {n}', eduLevel: 'Jenjang', gradYear: 'Taun lulus', institution: 'Institusi', major: 'Jurusan', position: 'Jabatan', companyLabel: 'Perusahaan',
     startMonth: 'Wiwit', endMonth: 'Rampung', present: 'Sapunika', currentlyWorking: 'Kula taksih nyambut damel ing ngriki', jobDesc: 'Andharan padamelan', experience: 'Pengalaman',
     addEducation: 'Tambah pendhidhikan', addExperience: 'Tambah pengalaman', noEducationYet: 'Dereng wonten pendhidhikan.', noExperienceYet: 'Dereng wonten pengalaman.',
-    edu_sma: 'SMA/SMK', edu_d3: 'Diploma', edu_s1: 'Sarjana (S1)', edu_s2: 'Magister (S2)', edu_s3: 'Doktor (S3)', edu_any: 'Sedaya jenjang',
+    edu_sma: 'SMA/SMK', edu_d3: 'Diploma', edu_s1: 'Sarjana (S1)', edu_s2: 'Magister (S2)', edu_s3: 'Doktor (S3)', edu_any: 'Tanpa ijazah', noEduCertHint: 'Lowongan sing bisa dilamar tanpa ijazah',
     typeSkill: 'Serat kaprigelan', skillsStepHint: 'Pilih saran utawi serat piyambak. Tetepaken tingkat lan taun pengalaman kangge saben kaprigelan.', level: 'Tingkat', yearsExp: 'Taun', noSkillsYet: 'Dereng wonten kaprigelan.', skillExists: 'Kaprigelan punika sampun dipuntambahaken',
     level_1: 'Pemula', level_2: 'Menengah', level_3: 'Mahir', language: 'Basa', addLanguage: 'Tambah basa', noLanguagesYet: 'Dereng wonten basa.',
     lang_basic: 'Dhasar', lang_intermediate: 'Menengah', lang_fluent: 'Lancar', lang_native: 'Basa ibu',

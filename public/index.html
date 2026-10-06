@@ -134,9 +134,10 @@
     .split(',').reduce((m, p) => { const [c, d] = p.split(':'); m[c] = d; return m; }, {});
   const COUNTRY_CODES = Object.keys(DIAL);
 
-  // Static exchange rates: units of each currency per 1 USD.
-  // Approximate values, fixed on RATES_DATE. Not live market data.
-  const RATES_DATE = '2026-10-01';
+  // Exchange rates: units of each currency per 1 USD. These are the built-in
+  // fallback, fixed on RATES_DATE; loadRates() overwrites them with live rates
+  // when they can be fetched.
+  let RATES_DATE = '2026-10-01';
   const RATES = {
     USD: 1, IDR: 16300, EUR: 0.92, GBP: 0.78, JPY: 148, SGD: 1.33, AUD: 1.52, CAD: 1.37,
     AED: 3.6725, BRL: 5.4, NGN: 1550, INR: 84, MYR: 4.4, CHF: 0.86, ZAR: 18, KES: 129,
@@ -274,9 +275,47 @@
   function salaryText(j) {
     return fmtMoney(j.salaryMin, j.currency, true) + '–' + fmtMoney(j.salaryMax, j.currency, true) + t('per_' + j.period);
   }
+  // 'local' means "detect from the browser": the region of the browser locale
+  // decides the currency, and no conversion happens when it is unknown.
+  function detectCurrency() {
+    const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (const l of langs) {
+      const m = /[-_]([A-Za-z]{2})\b/.exec(l || '');
+      const cur = m && COUNTRY_CURRENCY[m[1].toUpperCase()];
+      if (cur) return cur;
+    }
+    return null;
+  }
+  function viewerCurrency() { return prefs.cur === 'local' ? detectCurrency() : prefs.cur; }
+
+  // Live rates from a free, key-less source, cached for 12 hours. Any failure
+  // leaves the built-in rates in place.
+  const RATES_CACHE_KEY = 'lokerdunia.rates';
+  const RATES_TTL = 12 * 3600 * 1000;
+  function applyRates(r, date) {
+    let n = 0;
+    for (const c in RATES) { if (typeof r[c] === 'number' && r[c] > 0) { RATES[c] = r[c]; n++; } }
+    if (n && date) RATES_DATE = date;
+    return n > 0;
+  }
+  // Rates come from our own server (which caches them); the browser never calls
+  // the rates host itself. Any failure leaves the cached or built-in rates.
+  async function loadRates() {
+    const cached = readJson(RATES_CACHE_KEY);
+    if (cached && cached.rates && Date.now() - cached.at < RATES_TTL) { applyRates(cached.rates, cached.date); return true; }
+    try {
+      const body = await request('GET', '/rates');
+      if (!body || !body.rates || !applyRates(body.rates, body.date)) throw new Error('unavailable');
+      try { localStorage.setItem(RATES_CACHE_KEY, JSON.stringify({ at: Date.now(), date: body.date, rates: body.rates })); } catch (e) {}
+      return true;
+    } catch (e) {
+      if (cached && cached.rates) applyRates(cached.rates, cached.date);
+      return false;
+    }
+  }
   function salaryConverted(j) {
-    const to = prefs.cur;
-    if (to === 'local' || to === j.currency || !RATES[j.currency]) return '';
+    const to = viewerCurrency();
+    if (!to || to === j.currency || !RATES[to] || !RATES[j.currency]) return '';
     return '≈ ' + fmtMoney(convert(j.salaryMin, j.currency, to), to, true) + '–' + fmtMoney(convert(j.salaryMax, j.currency, to), to, true) + t('per_' + j.period);
   }
   function fmtDate(iso, opts) {
@@ -471,10 +510,10 @@
   }
 
   /* ---------- search ---------- */
-  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false });
+  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false, noCert: false });
   let filters = emptyFilters();
   const ui = { matchMode: false, sort: 'newest', countryListOpen: false };
-  function filterCurrency() { return prefs.cur === 'local' ? 'USD' : prefs.cur; }
+  function filterCurrency() { return viewerCurrency() || 'USD'; }
   function filterJobs(f) {
     const words = f.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const fc = filterCurrency();
@@ -492,6 +531,7 @@
       if (f.rw && !j.remoteWorldwide) return false;
       if (f.visa && !j.visaSponsor) return false;
       if (f.relo && !j.relocation) return false;
+      if (f.noCert && j.education !== 'any') return false;
       const lo = convert(monthly(j.salaryMin, j.period), j.currency, fc);
       const hi = convert(monthly(j.salaryMax, j.period), j.currency, fc);
       if (f.salaryMin !== '' && hi < Number(f.salaryMin)) return false;
@@ -508,7 +548,7 @@
   }
   function activeFilterCount() {
     const f = filters;
-    return [f.country, f.city, f.category, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo].filter(Boolean).length;
+    return [f.country, f.city, f.category, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo, f.noCert].filter(Boolean).length;
   }
 
   /* ==========================================================================
@@ -821,7 +861,8 @@
       '<div><p class="text-sm font-semibold">' + esc(salaryText(j)) + '</p>' + (conv ? '<p class="text-xs ' + C.muted + '">' + esc(conv) + '</p>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
         (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') +
-        (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + '</div>' +
+        (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') +
+        (j.education === 'any' ? '<span data-testid="no-cert-badge" class="' + C.chipBlue + '">' + t('edu_any') + '</span>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5" data-testid="job-skills">' + shown.map(s => '<span class="' + C.chip + ' border border-slate-200 dark:border-slate-700 bg-transparent dark:bg-transparent">' + esc(s.name) + '</span>').join('') +
         (all.length > shown.length ? '<span class="' + C.chip + ' bg-transparent dark:bg-transparent text-blue-700 dark:text-blue-300">' + t('nMore', { n: all.length - shown.length }) + '</span>' : '') + '</div>' +
       '<div class="flex items-center justify-between gap-2 mt-auto pt-1"><span class="text-xs ' + C.muted + '">' + esc(relDays(j.postedAt)) + '</span>' + (m ? matchChip(m.pct) : '') + '</div>' +
@@ -891,7 +932,7 @@
         '<p class="mt-1 text-xs ' + C.muted + '">' + t('salaryHint') + '</p></fieldset>' +
       '<div><span class="' + C.label + '">' + t('skills') + '</span>' + skillInput('filter', t('filterSkillPh')) +
         '<div class="mt-2 flex flex-wrap gap-1.5">' + f.skills.map(s => '<button type="button" data-action="filter-skill-remove" data-skill="' + esc(s) + '" class="' + C.chipBlue + '" aria-label="' + esc(t('remove') + ' ' + s) + '">' + esc(s) + icon('x', 'w-3 h-3') + '</button>').join('') + '</div></div>' +
-      '<div class="' + C.divider + '">' + toggle('rw', t('remoteWorldwide'), t('remoteWorldwideHint')) + toggle('visa', t('visaSponsor'), '') + toggle('relo', t('relocation'), '') + '</div>' +
+      '<div class="' + C.divider + '">' + toggle('rw', t('remoteWorldwide'), t('remoteWorldwideHint')) + toggle('visa', t('visaSponsor'), '') + toggle('relo', t('relocation'), '') + toggle('noCert', t('edu_any'), t('noEduCertHint')) + '</div>' +
       '<div><label class="' + C.label + '" for="f-cur">' + t('showSalaryIn') + '</label><select id="f-cur" data-pref-cur class="' + C.input + '"><option value="local"' + (prefs.cur === 'local' ? ' selected' : '') + '>' + t('localCurrency') + '</option>' +
         Object.keys(RATES).map(c => '<option value="' + c + '"' + (prefs.cur === c ? ' selected' : '') + '>' + c + '</option>').join('') + '</select>' +
         '<button type="button" data-action="show-rates" class="mt-1 ' + C.btnGhost + ' -ms-2 text-xs">' + icon('info', 'w-3.5 h-3.5') + t('ratesLink', { date: fmtDate(RATES_DATE) }) + '</button></div>' +
@@ -967,6 +1008,7 @@
     if (f.rw) out.push(['rw', '', t('remoteWorldwide')]);
     if (f.visa) out.push(['visa', '', t('visaSponsor')]);
     if (f.relo) out.push(['relo', '', t('relocation')]);
+    if (f.noCert) out.push(['noCert', '', t('edu_any')]);
     return out.map(([k, v, l]) => '<button type="button" data-action="clear-filter" data-key="' + k + '" data-val="' + esc(v) + '" class="' + C.chipBlue + '" aria-label="' + esc(t('remove') + ' ' + l) + '">' + esc(l) + icon('x', 'w-3 h-3') + '</button>').join('');
   }
   let searchSeq = 0;
@@ -1041,7 +1083,7 @@
       '<header class="flex items-start gap-3">' + companyLogo(co.name) + '<div class="min-w-0"><h1 class="' + C.h1 + '" dir="auto">' + esc(j.title) + '</h1>' +
         '<p class="' + C.muted + '" dir="auto">' + esc(co.name) + '</p><p class="mt-1 text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + ' · ' + esc(relDays(j.postedAt)) + '</p>' +
         '<div class="mt-2 flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('cat_' + j.category) + '</span><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
-        (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') + (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + (j.relocation ? '<span class="' + C.chipBlue + '">' + t('relocation') + '</span>' : '') + '</div></div></header>' +
+        (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') + (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + (j.relocation ? '<span class="' + C.chipBlue + '">' + t('relocation') + '</span>' : '') + (j.education === 'any' ? '<span data-testid="no-cert-badge" class="' + C.chipBlue + '">' + t('edu_any') + '</span>' : '') + '</div></div></header>' +
       '<div class="lg:hidden">' + aside + '</div>' +
       '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('description') + '</h2><p class="text-sm leading-relaxed" dir="auto">' + esc(j.description) + '</p></section>' +
       (j.qualifications.length ? '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('qualifications') + '</h2>' + list(j.qualifications) + '</section>' : '') +
@@ -2140,6 +2182,7 @@
     try { await loadLang(lang); }
     catch (e) { console.warn(e.message); lang = DEFAULT_LANG; }
     loadState = 'loading'; render();
+    loadRates().then(ok => { if (ok && loadState === 'ready') { lastPath = null; render(); } });
     try { await api.bootstrap(); loadState = 'ready'; }
     catch (e) { console.warn('bootstrap failed: ' + e.message); loadState = 'error'; }
     lastPath = null; render();

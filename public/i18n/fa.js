@@ -46,7 +46,7 @@
     educationN: 'تحصیلات {n}', experienceN: 'سابقه کار {n}', eduLevel: 'مقطع', gradYear: 'سال فارغ‌التحصیلی', institution: 'مؤسسه آموزشی', major: 'رشته', position: 'سمت', companyLabel: 'شرکت',
     startMonth: 'شروع', endMonth: 'پایان', present: 'تاکنون', currentlyWorking: 'در حال حاضر اینجا کار می‌کنم', jobDesc: 'شرح وظایف', experience: 'سابقه کار',
     addEducation: 'افزودن تحصیلات', addExperience: 'افزودن سابقه کار', noEducationYet: 'هنوز تحصیلاتی ثبت نشده است.', noExperienceYet: 'هنوز سابقه کاری ثبت نشده است.',
-    edu_sma: 'دیپلم دبیرستان', edu_d3: 'کاردانی', edu_s1: 'کارشناسی', edu_s2: 'کارشناسی ارشد', edu_s3: 'دکتری', edu_any: 'هر مقطعی',
+    edu_sma: 'دیپلم دبیرستان', edu_d3: 'کاردانی', edu_s1: 'کارشناسی', edu_s2: 'کارشناسی ارشد', edu_s3: 'دکتری', edu_any: 'بدون نیاز به مدرک تحصیلی', noEduCertHint: 'شغل‌هایی که بدون دیپلم یا مدرک تحصیلی می‌توانید برایشان درخواست دهید',
     typeSkill: 'یک مهارت بنویسید', skillsStepHint: 'یک پیشنهاد را انتخاب کنید یا مهارت خود را بنویسید. سطح و سال‌های تجربه را برای هر مهارت تعیین کنید.', level: 'سطح', yearsExp: 'سال', noSkillsYet: 'هنوز مهارتی ثبت نشده است.', skillExists: 'این مهارت قبلاً اضافه شده است',
     level_1: 'مبتدی', level_2: 'متوسط', level_3: 'پیشرفته', language: 'زبان', addLanguage: 'افزودن زبان', noLanguagesYet: 'هنوز زبانی ثبت نشده است.',
     lang_basic: 'مقدماتی', lang_intermediate: 'متوسط', lang_fluent: 'مسلط', lang_native: 'زبان مادری',

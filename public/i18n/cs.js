@@ -46,7 +46,7 @@
     educationN: 'Vzdělání {n}', experienceN: 'Praxe {n}', eduLevel: 'Úroveň', gradYear: 'Rok ukončení', institution: 'Instituce', major: 'Obor studia', position: 'Pozice', companyLabel: 'Firma',
     startMonth: 'Začátek', endMonth: 'Konec', present: 'Současnost', currentlyWorking: 'Zde aktuálně pracuji', jobDesc: 'Popis práce', experience: 'Praxe',
     addEducation: 'Přidat vzdělání', addExperience: 'Přidat praxi', noEducationYet: 'Zatím žádné vzdělání.', noExperienceYet: 'Zatím žádná praxe.',
-    edu_sma: 'Střední škola', edu_d3: 'Vyšší odborné', edu_s1: 'Bakalářské', edu_s2: 'Magisterské', edu_s3: 'Doktorské', edu_any: 'Jakákoli úroveň',
+    edu_sma: 'Střední škola', edu_d3: 'Vyšší odborné', edu_s1: 'Bakalářské', edu_s2: 'Magisterské', edu_s3: 'Doktorské', edu_any: 'Bez nutnosti dokladu o vzdělání', noEduCertHint: 'Práce, o které se můžete ucházet bez diplomu či vysvědčení',
     typeSkill: 'Zadejte dovednost', skillsStepHint: 'Vyberte návrh nebo zadejte vlastní. U každé dovednosti nastavte úroveň a roky praxe.', level: 'Úroveň', yearsExp: 'Roky', noSkillsYet: 'Zatím žádné dovednosti.', skillExists: 'Tato dovednost je již přidána',
     level_1: 'Začátečník', level_2: 'Pokročilý', level_3: 'Expert', language: 'Jazyk', addLanguage: 'Přidat jazyk', noLanguagesYet: 'Zatím žádné jazyky.',
     lang_basic: 'Základní', lang_intermediate: 'Středně pokročilá', lang_fluent: 'Plynulá', lang_native: 'Rodilý mluvčí',

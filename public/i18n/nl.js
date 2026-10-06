@@ -46,7 +46,7 @@
     educationN: 'Opleiding {n}', experienceN: 'Ervaring {n}', eduLevel: 'Niveau', gradYear: 'Afstudeerjaar', institution: 'Instelling', major: 'Studierichting', position: 'Functie', companyLabel: 'Bedrijf',
     startMonth: 'Begin', endMonth: 'Einde', present: 'Heden', currentlyWorking: 'Ik werk hier momenteel', jobDesc: 'Functieomschrijving', experience: 'Ervaring',
     addEducation: 'Opleiding toevoegen', addExperience: 'Ervaring toevoegen', noEducationYet: 'Nog geen opleiding.', noExperienceYet: 'Nog geen ervaring.',
-    edu_sma: 'Middelbare school', edu_d3: 'Diploma', edu_s1: 'Bachelor', edu_s2: 'Master', edu_s3: 'Doctoraat', edu_any: 'Elk niveau',
+    edu_sma: 'Middelbare school', edu_d3: 'Diploma', edu_s1: 'Bachelor', edu_s2: 'Master', edu_s3: 'Doctoraat', edu_any: 'Geen diploma nodig', noEduCertHint: 'Vacatures waarop je zonder diploma of schoolcertificaat kunt solliciteren',
     typeSkill: 'Typ een vaardigheid', skillsStepHint: 'Kies een suggestie of typ zelf een vaardigheid. Stel voor elke vaardigheid het niveau en het aantal jaren ervaring in.', level: 'Niveau', yearsExp: 'Jaren', noSkillsYet: 'Nog geen vaardigheden.', skillExists: 'Deze vaardigheid is al toegevoegd',
     level_1: 'Beginner', level_2: 'Gemiddeld', level_3: 'Gevorderd', language: 'Taal', addLanguage: 'Taal toevoegen', noLanguagesYet: 'Nog geen talen.',
     lang_basic: 'Basis', lang_intermediate: 'Gemiddeld', lang_fluent: 'Vloeiend', lang_native: 'Moedertaal',

@@ -46,7 +46,7 @@
     educationN: '学歴 {n}', experienceN: '職歴 {n}', eduLevel: '学歴区分', gradYear: '卒業年', institution: '学校名', major: '専攻', position: '役職', companyLabel: '会社',
     startMonth: '開始', endMonth: '終了', present: '現在', currentlyWorking: '現在在籍中', jobDesc: '業務内容', experience: '職歴',
     addEducation: '学歴を追加', addExperience: '職歴を追加', noEducationYet: '学歴はまだありません。', noExperienceYet: '職歴はまだありません。',
-    edu_sma: '高校卒', edu_d3: '短大・専門卒', edu_s1: '学士', edu_s2: '修士', edu_s3: '博士', edu_any: '学歴不問',
+    edu_sma: '高校卒', edu_d3: '短大・専門卒', edu_s1: '学士', edu_s2: '修士', edu_s3: '博士', edu_any: '学歴不問', noEduCertHint: '卒業証明書や学位がなくても応募できる求人',
     typeSkill: 'スキルを入力', skillsStepHint: '候補から選ぶか、自由に入力してください。各スキルのレベルと経験年数を設定してください。', level: 'レベル', yearsExp: '年数', noSkillsYet: 'スキルはまだありません。', skillExists: 'このスキルはすでに追加されています',
     level_1: '初級', level_2: '中級', level_3: '上級', language: '言語', addLanguage: '言語を追加', noLanguagesYet: '言語はまだありません。',
     lang_basic: '基礎', lang_intermediate: '日常会話', lang_fluent: '流暢', lang_native: 'ネイティブ',

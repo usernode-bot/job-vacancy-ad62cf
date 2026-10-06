@@ -46,7 +46,7 @@
     educationN: 'ပညာရေး {n}', experienceN: 'အတွေ့အကြုံ {n}', eduLevel: 'အဆင့်', gradYear: 'ဘွဲ့ရသည့်နှစ်', institution: 'ပညာရေးအဖွဲ့အစည်း', major: 'အဓိကဘာသာ', position: 'ရာထူး', companyLabel: 'ကုမ္ပဏီ',
     startMonth: 'စတင်', endMonth: 'ပြီးဆုံး', present: 'ယခုအချိန်ထိ', currentlyWorking: 'ကျွန်ုပ် ဤနေရာတွင် လက်ရှိ အလုပ်လုပ်နေသည်', jobDesc: 'အလုပ်ဖော်ပြချက်', experience: 'အတွေ့အကြုံ',
     addEducation: 'ပညာရေး ထည့်ရန်', addExperience: 'အတွေ့အကြုံ ထည့်ရန်', noEducationYet: 'ပညာရေး မရှိသေးပါ။', noExperienceYet: 'အတွေ့အကြုံ မရှိသေးပါ။',
-    edu_sma: 'အထက်တန်းကျောင်း', edu_d3: 'ဒီပလိုမာ', edu_s1: 'ဘွဲ့', edu_s2: 'မဟာဘွဲ့', edu_s3: 'ပါရဂူဘွဲ့', edu_any: 'မည်သည့်အဆင့်မဆို',
+    edu_sma: 'အထက်တန်းကျောင်း', edu_d3: 'ဒီပလိုမာ', edu_s1: 'ဘွဲ့', edu_s2: 'မဟာဘွဲ့', edu_s3: 'ပါရဂူဘွဲ့', edu_any: 'ပညာရေးလက်မှတ် မလိုအပ်ပါ', noEduCertHint: 'ဒီပလိုမာ သို့မဟုတ် ကျောင်းလက်မှတ်မပါဘဲ လျှောက်ထားနိုင်သော အလုပ်များ',
     typeSkill: 'ကျွမ်းကျင်မှု ရိုက်ထည့်ပါ', skillsStepHint: 'အကြံပြုချက်တစ်ခု ရွေးပါ သို့မဟုတ် ကိုယ်တိုင် ရိုက်ထည့်ပါ။ ကျွမ်းကျင်မှုတစ်ခုစီအတွက် အဆင့်နှင့် အတွေ့အကြုံနှစ်ကို သတ်မှတ်ပါ။', level: 'အဆင့်', yearsExp: 'နှစ်', noSkillsYet: 'ကျွမ်းကျင်မှု မရှိသေးပါ။', skillExists: 'ဤကျွမ်းကျင်မှုကို ထည့်ပြီးဖြစ်သည်',
     level_1: 'အစပြု', level_2: 'အလယ်အလတ်', level_3: 'အဆင့်မြင့်', language: 'ဘာသာစကား', addLanguage: 'ဘာသာစကား ထည့်ရန်', noLanguagesYet: 'ဘာသာစကား မရှိသေးပါ။',
     lang_basic: 'အခြေခံ', lang_intermediate: 'အလယ်အလတ်', lang_fluent: 'ကျွမ်းကျင်', lang_native: 'မိခင်ဘာသာ',

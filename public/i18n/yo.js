@@ -46,7 +46,7 @@
     educationN: 'Ẹ̀kọ́ {n}', experienceN: 'Ìrírí {n}', eduLevel: 'Ìpele', gradYear: 'Ọdún ìkẹ́kọ̀ọ́jáde', institution: 'Ilé-ẹ̀kọ́', major: 'Ẹ̀ka ẹ̀kọ́', position: 'Ipò', companyLabel: 'Ilé-iṣẹ́',
     startMonth: 'Ìbẹ̀rẹ̀', endMonth: 'Ìparí', present: 'Lọ́wọ́lọ́wọ́', currentlyWorking: 'Mo ń ṣiṣẹ́ níbí lọ́wọ́lọ́wọ́', jobDesc: 'Àpèjúwe iṣẹ́', experience: 'Ìrírí',
     addEducation: 'Ṣàfikún ẹ̀kọ́', addExperience: 'Ṣàfikún ìrírí', noEducationYet: 'Kò sí ẹ̀kọ́ síbẹ̀.', noExperienceYet: 'Kò sí ìrírí síbẹ̀.',
-    edu_sma: 'Ilé-ẹ̀kọ́ girama', edu_d3: 'Díplómà', edu_s1: 'Oyè àkọ́kọ́', edu_s2: 'Oyè ọ̀gá', edu_s3: 'Oyè ọ̀mọ̀wé', edu_any: 'Ìpele èyíkéyìí',
+    edu_sma: 'Ilé-ẹ̀kọ́ girama', edu_d3: 'Díplómà', edu_s1: 'Oyè àkọ́kọ́', edu_s2: 'Oyè ọ̀gá', edu_s3: 'Oyè ọ̀mọ̀wé', edu_any: 'Kò nílò ìwé-ẹ̀rí ẹ̀kọ́', noEduCertHint: 'Àwọn iṣẹ́ tí o lè béèrè fún láìsí díplómà tàbí ìwé-ẹ̀rí ilé-ìwé',
     typeSkill: 'Tẹ ọgbọ́n kan', skillsStepHint: 'Yan àbá kan tàbí tẹ tiyín. Ṣètò ìpele àti ọdún ìrírí fún ọgbọ́n kọ̀ọ̀kan.', level: 'Ìpele', yearsExp: 'Ọdún', noSkillsYet: 'Kò sí ọgbọ́n síbẹ̀.', skillExists: 'A ti ṣàfikún ọgbọ́n yìí tẹ́lẹ̀',
     level_1: 'Olùbẹ̀rẹ̀', level_2: 'Àárín', level_3: 'Ọ̀jọ̀gbọ́n', language: 'Èdè', addLanguage: 'Ṣàfikún èdè', noLanguagesYet: 'Kò sí èdè síbẹ̀.',
     lang_basic: 'Ìpìlẹ̀', lang_intermediate: 'Àárín', lang_fluent: 'Ó mọ̀ ọ́ dáadáa', lang_native: 'Èdè abínibí',

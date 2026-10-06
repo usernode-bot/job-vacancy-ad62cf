@@ -46,7 +46,7 @@
     educationN: 'Освіта {n}', experienceN: 'Досвід {n}', eduLevel: 'Рівень', gradYear: 'Рік закінчення', institution: 'Навчальний заклад', major: 'Спеціальність', position: 'Посада', companyLabel: 'Компанія',
     startMonth: 'Початок', endMonth: 'Закінчення', present: 'Дотепер', currentlyWorking: 'Я зараз тут працюю', jobDesc: 'Опис роботи', experience: 'Досвід роботи',
     addEducation: 'Додати освіту', addExperience: 'Додати досвід', noEducationYet: 'Освіту поки не вказано.', noExperienceYet: 'Досвід поки не вказано.',
-    edu_sma: 'Середня', edu_d3: 'Фахова передвища', edu_s1: 'Бакалавр', edu_s2: 'Магістр', edu_s3: 'Доктор', edu_any: 'Будь-який рівень',
+    edu_sma: 'Середня', edu_d3: 'Фахова передвища', edu_s1: 'Бакалавр', edu_s2: 'Магістр', edu_s3: 'Доктор', edu_any: 'Без документа про освіту', noEduCertHint: 'Вакансії, на які можна відгукнутися без диплома чи атестата',
     typeSkill: 'Введіть навичку', skillsStepHint: 'Виберіть підказку або введіть власну. Вкажіть рівень і роки досвіду для кожної навички.', level: 'Рівень', yearsExp: 'Років', noSkillsYet: 'Навички поки не вказано.', skillExists: 'Цю навичку вже додано',
     level_1: 'Початковий', level_2: 'Середній', level_3: 'Просунутий', language: 'Мова', addLanguage: 'Додати мову', noLanguagesYet: 'Мови поки не вказано.',
     lang_basic: 'Базовий', lang_intermediate: 'Середній', lang_fluent: 'Вільний', lang_native: 'Рідна',

@@ -46,7 +46,7 @@
     educationN: 'Formação {n}', experienceN: 'Experiência {n}', eduLevel: 'Nível', gradYear: 'Ano de conclusão', institution: 'Instituição', major: 'Curso', position: 'Cargo', companyLabel: 'Empresa',
     startMonth: 'Início', endMonth: 'Término', present: 'Atual', currentlyWorking: 'Trabalho aqui atualmente', jobDesc: 'Descrição do cargo', experience: 'Experiência',
     addEducation: 'Adicionar formação', addExperience: 'Adicionar experiência', noEducationYet: 'Nenhuma formação ainda.', noExperienceYet: 'Nenhuma experiência ainda.',
-    edu_sma: 'Ensino médio', edu_d3: 'Tecnólogo', edu_s1: 'Bacharelado', edu_s2: 'Mestrado', edu_s3: 'Doutorado', edu_any: 'Qualquer nível',
+    edu_sma: 'Ensino médio', edu_d3: 'Tecnólogo', edu_s1: 'Bacharelado', edu_s2: 'Mestrado', edu_s3: 'Doutorado', edu_any: 'Não exige diploma', noEduCertHint: 'Vagas para as quais você pode se candidatar sem diploma ou certificado escolar',
     typeSkill: 'Digite uma habilidade', skillsStepHint: 'Escolha uma sugestão ou digite a sua. Defina o nível e os anos de experiência de cada habilidade.', level: 'Nível', yearsExp: 'Anos', noSkillsYet: 'Nenhuma habilidade ainda.', skillExists: 'Esta habilidade já foi adicionada',
     level_1: 'Iniciante', level_2: 'Intermediário', level_3: 'Avançado', language: 'Idioma', addLanguage: 'Adicionar idioma', noLanguagesYet: 'Nenhum idioma ainda.',
     lang_basic: 'Básico', lang_intermediate: 'Intermediário', lang_fluent: 'Fluente', lang_native: 'Nativo',

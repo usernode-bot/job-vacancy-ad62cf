@@ -46,7 +46,7 @@
     educationN: '{n}. végzettség', experienceN: '{n}. tapasztalat', eduLevel: 'Szint', gradYear: 'Végzés éve', institution: 'Intézmény', major: 'Szak', position: 'Pozíció', companyLabel: 'Cég',
     startMonth: 'Kezdés', endMonth: 'Befejezés', present: 'Jelenleg', currentlyWorking: 'Jelenleg itt dolgozom', jobDesc: 'Munkaköri leírás', experience: 'Tapasztalat',
     addEducation: 'Végzettség hozzáadása', addExperience: 'Tapasztalat hozzáadása', noEducationYet: 'Még nincs végzettség megadva.', noExperienceYet: 'Még nincs tapasztalat megadva.',
-    edu_sma: 'Középiskola', edu_d3: 'Felsőfokú szakképzés', edu_s1: 'Alapdiploma (BSc/BA)', edu_s2: 'Mesterdiploma (MSc/MA)', edu_s3: 'Doktori fokozat', edu_any: 'Bármilyen szint',
+    edu_sma: 'Középiskola', edu_d3: 'Felsőfokú szakképzés', edu_s1: 'Alapdiploma (BSc/BA)', edu_s2: 'Mesterdiploma (MSc/MA)', edu_s3: 'Doktori fokozat', edu_any: 'Nem kell végzettséget igazoló bizonyítvány', noEduCertHint: 'Állások, amelyekre diploma vagy iskolai bizonyítvány nélkül is jelentkezhetsz',
     typeSkill: 'Írjon be egy készséget', skillsStepHint: 'Válasszon egy javaslatot, vagy írja be a sajátját. Minden készséghez adja meg a szintet és a tapasztalati éveket.', level: 'Szint', yearsExp: 'Év', noSkillsYet: 'Még nincsenek készségek.', skillExists: 'Ez a készség már szerepel',
     level_1: 'Kezdő', level_2: 'Haladó', level_3: 'Szakértő', language: 'Nyelv', addLanguage: 'Nyelv hozzáadása', noLanguagesYet: 'Még nincsenek nyelvek.',
     lang_basic: 'Alapfok', lang_intermediate: 'Középfok', lang_fluent: 'Folyékony', lang_native: 'Anyanyelv',

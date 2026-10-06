@@ -46,7 +46,7 @@
     educationN: '教育经历 {n}', experienceN: '工作经历 {n}', eduLevel: '学历', gradYear: '毕业年份', institution: '学校', major: '专业', position: '职位', companyLabel: '公司',
     startMonth: '开始', endMonth: '结束', present: '至今', currentlyWorking: '我目前在此工作', jobDesc: '工作描述', experience: '工作经历',
     addEducation: '添加教育经历', addExperience: '添加工作经历', noEducationYet: '暂无教育经历。', noExperienceYet: '暂无工作经历。',
-    edu_sma: '高中', edu_d3: '大专', edu_s1: '本科', edu_s2: '硕士', edu_s3: '博士', edu_any: '不限学历',
+    edu_sma: '高中', edu_d3: '大专', edu_s1: '本科', edu_s2: '硕士', edu_s3: '博士', edu_any: '无需学历证书', noEduCertHint: '无需毕业证书或学历证明即可申请的职位',
     typeSkill: '输入技能', skillsStepHint: '选择推荐项或自行输入。请为每项技能设置水平和经验年限。', level: '水平', yearsExp: '年限', noSkillsYet: '暂无技能。', skillExists: '该技能已添加',
     level_1: '初级', level_2: '中级', level_3: '高级', language: '语言', addLanguage: '添加语言', noLanguagesYet: '暂无语言。',
     lang_basic: '基础', lang_intermediate: '中等', lang_fluent: '流利', lang_native: '母语',

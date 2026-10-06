@@ -46,7 +46,7 @@
     educationN: 'ಶಿಕ್ಷಣ {n}', experienceN: 'ಅನುಭವ {n}', eduLevel: 'ಮಟ್ಟ', gradYear: 'ಪದವಿ ಪಡೆದ ವರ್ಷ', institution: 'ಶಿಕ್ಷಣ ಸಂಸ್ಥೆ', major: 'ಪ್ರಮುಖ ವಿಷಯ', position: 'ಹುದ್ದೆ', companyLabel: 'ಕಂಪನಿ',
     startMonth: 'ಪ್ರಾರಂಭ', endMonth: 'ಅಂತ್ಯ', present: 'ಪ್ರಸ್ತುತ', currentlyWorking: 'ನಾನು ಪ್ರಸ್ತುತ ಇಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದೇನೆ', jobDesc: 'ಉದ್ಯೋಗ ವಿವರಣೆ', experience: 'ಅನುಭವ',
     addEducation: 'ಶಿಕ್ಷಣ ಸೇರಿಸಿ', addExperience: 'ಅನುಭವ ಸೇರಿಸಿ', noEducationYet: 'ಇನ್ನೂ ಶಿಕ್ಷಣದ ವಿವರಗಳಿಲ್ಲ.', noExperienceYet: 'ಇನ್ನೂ ಅನುಭವವಿಲ್ಲ.',
-    edu_sma: 'ಪಿಯುಸಿ', edu_d3: 'ಡಿಪ್ಲೊಮಾ', edu_s1: 'ಸ್ನಾತಕ ಪದವಿ', edu_s2: 'ಸ್ನಾತಕೋತ್ತರ ಪದವಿ', edu_s3: 'ಡಾಕ್ಟರೇಟ್', edu_any: 'ಯಾವುದೇ ಮಟ್ಟ',
+    edu_sma: 'ಪಿಯುಸಿ', edu_d3: 'ಡಿಪ್ಲೊಮಾ', edu_s1: 'ಸ್ನಾತಕ ಪದವಿ', edu_s2: 'ಸ್ನಾತಕೋತ್ತರ ಪದವಿ', edu_s3: 'ಡಾಕ್ಟರೇಟ್', edu_any: 'ಶೈಕ್ಷಣಿಕ ಪ್ರಮಾಣಪತ್ರ ಅಗತ್ಯವಿಲ್ಲ', noEduCertHint: 'ಡಿಪ್ಲೊಮಾ ಅಥವಾ ಶಾಲಾ ಪ್ರಮಾಣಪತ್ರವಿಲ್ಲದೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಬಹುದಾದ ಉದ್ಯೋಗಗಳು',
     typeSkill: 'ಕೌಶಲ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ', skillsStepHint: 'ಸಲಹೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ ಅಥವಾ ನಿಮ್ಮದೇ ಆದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ. ಪ್ರತಿ ಕೌಶಲ್ಯಕ್ಕೆ ಮಟ್ಟ ಮತ್ತು ಅನುಭವದ ವರ್ಷಗಳನ್ನು ಹೊಂದಿಸಿ.', level: 'ಮಟ್ಟ', yearsExp: 'ವರ್ಷಗಳು', noSkillsYet: 'ಇನ್ನೂ ಕೌಶಲ್ಯಗಳಿಲ್ಲ.', skillExists: 'ಈ ಕೌಶಲ್ಯವನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
     level_1: 'ಆರಂಭಿಕ', level_2: 'ಮಧ್ಯಮ', level_3: 'ಉನ್ನತ', language: 'ಭಾಷೆ', addLanguage: 'ಭಾಷೆ ಸೇರಿಸಿ', noLanguagesYet: 'ಇನ್ನೂ ಭಾಷೆಗಳಿಲ್ಲ.',
     lang_basic: 'ಮೂಲಭೂತ', lang_intermediate: 'ಮಧ್ಯಮ', lang_fluent: 'ನಿರರ್ಗಳ', lang_native: 'ಮಾತೃಭಾಷೆ',

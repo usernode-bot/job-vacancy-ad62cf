@@ -46,7 +46,7 @@
     educationN: 'השכלה {n}', experienceN: 'ניסיון {n}', eduLevel: 'רמה', gradYear: 'שנת סיום', institution: 'מוסד לימודים', major: 'תחום לימוד', position: 'תפקיד', companyLabel: 'חברה',
     startMonth: 'התחלה', endMonth: 'סיום', present: 'היום', currentlyWorking: 'אני עובד/ת כאן כעת', jobDesc: 'תיאור התפקיד', experience: 'ניסיון',
     addEducation: 'הוספת השכלה', addExperience: 'הוספת ניסיון', noEducationYet: 'אין עדיין השכלה.', noExperienceYet: 'אין עדיין ניסיון.',
-    edu_sma: 'תיכון', edu_d3: 'תעודה מקצועית', edu_s1: 'תואר ראשון', edu_s2: 'תואר שני', edu_s3: 'דוקטורט', edu_any: 'כל רמה',
+    edu_sma: 'תיכון', edu_d3: 'תעודה מקצועית', edu_s1: 'תואר ראשון', edu_s2: 'תואר שני', edu_s3: 'דוקטורט', edu_any: 'לא נדרשת תעודת השכלה', noEduCertHint: 'משרות שאפשר להגיש אליהן מועמדות בלי דיפלומה או תעודת בגרות',
     typeSkill: 'הקלדת כישור', skillsStepHint: 'יש לבחור הצעה או להקליד כישור משלך. יש להגדיר רמה ושנות ניסיון לכל כישור.', level: 'רמה', yearsExp: 'שנים', noSkillsYet: 'אין עדיין כישורים.', skillExists: 'הכישור הזה כבר נוסף',
     level_1: 'מתחיל', level_2: 'בינוני', level_3: 'מתקדם', language: 'שפה', addLanguage: 'הוספת שפה', noLanguagesYet: 'אין עדיין שפות.',
     lang_basic: 'בסיסית', lang_intermediate: 'בינונית', lang_fluent: 'שוטפת', lang_native: 'שפת אם',

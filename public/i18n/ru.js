@@ -83,5 +83,7 @@
     per_month: '/мес.', per_year: '/год', per_hour: '/час',
     cat_it: 'ИТ', cat_health: 'Здравоохранение', cat_education: 'Образование', cat_finance: 'Финансы', cat_engineering: 'Инженерия', cat_creative: 'Творчество', cat_marketing: 'Маркетинг', cat_sales: 'Продажи и сервис', cat_hospitality: 'Гостеприимство', cat_logistics: 'Логистика', cat_agriculture: 'Сельское хозяйство',
     pageNotFound: 'Страница не найдена', pageNotFoundBody: 'Такой ссылки не существует.',
+    sampleListing: 'Пример вакансии', sampleApplyOff: 'Отклики отключены',
+    sampleApplyNote: 'Это пример вакансии, показывающий, как выглядят вакансии в Loker Dunia. Отклики отключены.',
   },
 };

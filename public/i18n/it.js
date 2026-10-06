@@ -83,5 +83,7 @@
     per_month: '/mese', per_year: '/anno', per_hour: '/ora',
     cat_it: 'IT', cat_health: 'Sanità', cat_education: 'Istruzione', cat_finance: 'Finanza', cat_engineering: 'Ingegneria', cat_creative: 'Creatività', cat_marketing: 'Marketing', cat_sales: 'Vendite e assistenza', cat_hospitality: 'Ospitalità', cat_logistics: 'Logistica', cat_agriculture: 'Agricoltura',
     pageNotFound: 'Pagina non trovata', pageNotFoundBody: 'Questo link non esiste.',
+    sampleListing: 'Annuncio di esempio', sampleApplyOff: 'Le candidature sono disattivate',
+    sampleApplyNote: 'Questo è un annuncio di esempio che mostra come appaiono i lavori su Loker Dunia. Le candidature sono disattivate.',
   },
 };

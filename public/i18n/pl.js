@@ -83,5 +83,7 @@
     per_month: '/mies.', per_year: '/rok', per_hour: '/godz.',
     cat_it: 'IT', cat_health: 'Ochrona zdrowia', cat_education: 'Edukacja', cat_finance: 'Finanse', cat_engineering: 'Inżynieria', cat_creative: 'Branża kreatywna', cat_marketing: 'Marketing', cat_sales: 'Sprzedaż i obsługa', cat_hospitality: 'Hotelarstwo i gastronomia', cat_logistics: 'Logistyka', cat_agriculture: 'Rolnictwo',
     pageNotFound: 'Nie znaleziono strony', pageNotFoundBody: 'Ten link nie istnieje.',
+    sampleListing: 'Przykładowe ogłoszenie', sampleApplyOff: 'Aplikowanie jest wyłączone',
+    sampleApplyNote: 'To przykładowe ogłoszenie pokazujące, jak wyglądają oferty pracy w Loker Dunia. Aplikowanie jest wyłączone.',
   },
 };

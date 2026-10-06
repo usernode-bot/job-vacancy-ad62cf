@@ -83,5 +83,7 @@
     per_month: '/mês', per_year: '/ano', per_hour: '/h',
     cat_it: 'TI', cat_health: 'Saúde', cat_education: 'Educação', cat_finance: 'Finanças', cat_engineering: 'Engenharia', cat_creative: 'Criação', cat_marketing: 'Marketing', cat_sales: 'Vendas e atendimento', cat_hospitality: 'Hotelaria', cat_logistics: 'Logística', cat_agriculture: 'Agricultura',
     pageNotFound: 'Página não encontrada', pageNotFoundBody: 'Este link não existe.',
+    sampleListing: 'Vaga de exemplo', sampleApplyOff: 'As candidaturas estão desativadas',
+    sampleApplyNote: 'Esta é uma vaga de exemplo que mostra como são os empregos no Loker Dunia. As candidaturas estão desativadas.',
   },
 };

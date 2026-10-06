@@ -83,5 +83,7 @@
     per_month: '/ತಿಂ.', per_year: '/ವ.', per_hour: '/ಗಂ.',
     cat_it: 'IT', cat_health: 'ಆರೋಗ್ಯ ರಕ್ಷಣೆ', cat_education: 'ಶಿಕ್ಷಣ', cat_finance: 'ಹಣಕಾಸು', cat_engineering: 'ಎಂಜಿನಿಯರಿಂಗ್', cat_creative: 'ಸೃಜನಶೀಲ', cat_marketing: 'ಮಾರ್ಕೆಟಿಂಗ್', cat_sales: 'ಮಾರಾಟ & ಸೇವೆ', cat_hospitality: 'ಆತಿಥ್ಯ', cat_logistics: 'ಲಾಜಿಸ್ಟಿಕ್ಸ್', cat_agriculture: 'ಕೃಷಿ',
     pageNotFound: 'ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ', pageNotFoundBody: 'ಈ ಲಿಂಕ್ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
+    sampleListing: 'ಮಾದರಿ ಪಟ್ಟಿ', sampleApplyOff: 'ಅರ್ಜಿಗಳು ಆಫ್ ಆಗಿವೆ',
+    sampleApplyNote: 'ಇದು Loker Dunia ನಲ್ಲಿ ಉದ್ಯೋಗಗಳು ಹೇಗೆ ಕಾಣುತ್ತವೆ ಎಂಬುದನ್ನು ತೋರಿಸುವ ಮಾದರಿ ಪಟ್ಟಿ. ಅರ್ಜಿಗಳು ಆಫ್ ಆಗಿವೆ.',
   },
 };

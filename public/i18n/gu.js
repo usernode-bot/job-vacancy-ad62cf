@@ -83,5 +83,7 @@
     per_month: '/મહિનો', per_year: '/વર્ષ', per_hour: '/કલાક',
     cat_it: 'IT', cat_health: 'આરોગ્ય સંભાળ', cat_education: 'શિક્ષણ', cat_finance: 'નાણાં', cat_engineering: 'એન્જિનિયરિંગ', cat_creative: 'સર્જનાત્મક', cat_marketing: 'માર્કેટિંગ', cat_sales: 'વેચાણ અને સેવા', cat_hospitality: 'આતિથ્ય', cat_logistics: 'લોજિસ્ટિક્સ', cat_agriculture: 'કૃષિ',
     pageNotFound: 'પેજ મળ્યું નથી', pageNotFoundBody: 'આ લિંક અસ્તિત્વમાં નથી.',
+    sampleListing: 'નમૂનાની યાદી', sampleApplyOff: 'અરજીઓ બંધ છે',
+    sampleApplyNote: 'આ એક નમૂનાની યાદી છે, જે બતાવે છે કે Loker Dunia પર નોકરીઓ કેવી દેખાય છે. અરજીઓ બંધ છે.',
   },
 };

@@ -83,5 +83,7 @@
     per_month: '/ماہ', per_year: '/سال', per_hour: '/گھنٹہ',
     cat_it: 'آئی ٹی', cat_health: 'صحت', cat_education: 'تعلیم', cat_finance: 'مالیات', cat_engineering: 'انجینئرنگ', cat_creative: 'تخلیقی', cat_marketing: 'مارکیٹنگ', cat_sales: 'سیلز اور سروس', cat_hospitality: 'مہمان نوازی', cat_logistics: 'لاجسٹکس', cat_agriculture: 'زراعت',
     pageNotFound: 'صفحہ نہیں ملا', pageNotFoundBody: 'یہ لنک موجود نہیں ہے۔',
+    sampleListing: 'نمونہ اشتہار', sampleApplyOff: 'درخواستیں بند ہیں',
+    sampleApplyNote: 'یہ ایک نمونہ اشتہار ہے جو دکھاتا ہے کہ Loker Dunia پر ملازمتیں کیسی نظر آتی ہیں۔ درخواستیں بند ہیں۔',
   },
 };

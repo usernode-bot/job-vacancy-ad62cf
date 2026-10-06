@@ -33,10 +33,14 @@ app's Postgres database and is served by authenticated `/api` routes
 - Certificate images and profile photos are uploaded to the platform's file
   storage through the bridge; only the returned URL is stored. Platform
   storage accepts images only, so a PDF certificate is saved without its file.
-- `lib/seed.js` fills staging previews (never production) with 37 sample
-  jobs, 34 sample employers, 3 fake applicants and their applications. The
+- `lib/seed.js` fills staging previews (never production) with 37 demo
+  jobs, 34 demo employers, 3 fake applicants and their applications. The
   demo employer "PT Nusantara Digital" can be opened from "Masuk" by any
-  tester. Production starts with an empty board.
+  tester.
+- `lib/samples.js` adds 40 sample listings in 40 countries to every
+  environment, production included, so the board is never empty. They are
+  tagged "Sample listing", have no owner, and can't be applied to (the API
+  answers 409 `sample_listing`).
 
 Sign-in uses the Homeroom account the app is opened with; choosing
 "Pencari Kerja" or "Perusahaan" sets the role, with no passwords.

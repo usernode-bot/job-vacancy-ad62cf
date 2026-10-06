@@ -83,5 +83,7 @@
     per_month: '/חודש', per_year: '/שנה', per_hour: '/שעה',
     cat_it: 'הייטק ו-IT', cat_health: 'בריאות', cat_education: 'חינוך', cat_finance: 'כספים', cat_engineering: 'הנדסה', cat_creative: 'קריאייטיב', cat_marketing: 'שיווק', cat_sales: 'מכירות ושירות', cat_hospitality: 'אירוח ומלונאות', cat_logistics: 'לוגיסטיקה', cat_agriculture: 'חקלאות',
     pageNotFound: 'הדף לא נמצא', pageNotFoundBody: 'הקישור הזה אינו קיים.',
+    sampleListing: 'מודעה לדוגמה', sampleApplyOff: 'ההגשה כבויה',
+    sampleApplyNote: 'זוהי מודעה לדוגמה שמראה איך נראות משרות ב-Loker Dunia. ההגשה כבויה.',
   },
 };

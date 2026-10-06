@@ -39,6 +39,18 @@
       ]
     },
     {
+      "name": "Search lists sample listings tagged as samples",
+      "path": "/#/jobs",
+      "expectSelector": "#results [data-testid=job-card] [data-testid=sample-chip]",
+      "expectText": "Sample listing"
+    },
+    {
+      "name": "A sample listing has no Apply button, only the note",
+      "path": "/#/job/s-1",
+      "expectSelector": "[data-testid=apply-off]",
+      "expectText": "Applications are off"
+    },
+    {
       "name": "Job detail shows required skills and apply",
       "path": "/#/job/j1",
       "expectSelector": "[data-testid=job-skill-lists]",

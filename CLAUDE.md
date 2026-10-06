@@ -102,6 +102,11 @@ shared understanding of what this app is for)_
 - Interface languages are listed in `public/i18n/languages.js`; English
   (`en.js`) is the default and the fallback. Every language file must keep
   exactly `en.js`'s keys and `{placeholders}` (`test/i18n.test.js` checks it).
-- Sample data is staging-only (`lib/seed.js`, rows flagged `is_demo`, owned by
+- Demo data is staging-only (`lib/seed.js`, rows flagged `is_demo`, owned by
   no user). Demo companies are manageable by any signed-in user; real
   companies only by their owner.
+- Sample listings (`lib/samples.js`, rows flagged `is_sample`) ship in every
+  environment, production included, so the board is never empty. They are
+  NOT `is_demo`: nobody can manage them, applying returns 409
+  `sample_listing`, and the interface tags them "Sample listing". Never mark
+  a production row `is_demo`.

@@ -83,5 +83,7 @@
     per_month: '/เดือน', per_year: '/ปี', per_hour: '/ชม.',
     cat_it: 'ไอที', cat_health: 'สุขภาพ', cat_education: 'การศึกษา', cat_finance: 'การเงิน', cat_engineering: 'วิศวกรรม', cat_creative: 'งานสร้างสรรค์', cat_marketing: 'การตลาด', cat_sales: 'งานขายและบริการ', cat_hospitality: 'การโรงแรมและบริการ', cat_logistics: 'โลจิสติกส์', cat_agriculture: 'เกษตรกรรม',
     pageNotFound: 'ไม่พบหน้า', pageNotFoundBody: 'ลิงก์นี้ไม่มีอยู่',
+    sampleListing: 'ประกาศตัวอย่าง', sampleApplyOff: 'ปิดรับสมัครแล้ว',
+    sampleApplyNote: 'นี่คือประกาศตัวอย่างที่แสดงให้เห็นว่างานบน Loker Dunia หน้าตาเป็นอย่างไร ปิดรับสมัครแล้ว',
   },
 };

@@ -83,5 +83,6 @@
     per_month: '/mois', per_year: '/an', per_hour: '/h',
     cat_it: 'Informatique', cat_health: 'Santé', cat_education: 'Enseignement', cat_finance: 'Finance', cat_engineering: 'Ingénierie', cat_creative: 'Création', cat_marketing: 'Marketing', cat_sales: 'Vente et service', cat_hospitality: 'Hôtellerie-restauration', cat_logistics: 'Logistique', cat_agriculture: 'Agriculture',
     pageNotFound: 'Page introuvable', pageNotFoundBody: "Ce lien n'existe pas.",
+    notifications: 'Notifications', markAllRead: 'Tout marquer comme lu', noNotifications: 'Aucune notification pour le moment', noNotificationsBody: 'Les offres correspondant à vos compétences apparaîtront ici.', notifUnread: '{n} non lues',
   },
 };

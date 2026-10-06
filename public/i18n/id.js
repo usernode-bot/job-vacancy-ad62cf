@@ -87,5 +87,6 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kesehatan', cat_education: 'Pendidikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
+    notifications: 'Notifikasi', markAllRead: 'Tandai semua dibaca', noNotifications: 'Belum ada notifikasi', noNotificationsBody: 'Lowongan yang cocok dengan skill kamu akan muncul di sini.', notifUnread: '{n} belum dibaca',
   },
 };

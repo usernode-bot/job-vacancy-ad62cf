@@ -105,7 +105,7 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     const { rows } = await pool.query(`SELECT c.relname FROM pg_class c JOIN pg_description d ON d.objoid = c.oid AND d.objsubid = 0
       WHERE d.description = 'staging:private' ORDER BY 1`);
     await pool.end();
-    assert.deepEqual(rows.map(r => r.relname), ['applications', 'certificates', 'profiles', 'saved_jobs', 'skills']);
+    assert.deepEqual(rows.map(r => r.relname), ['applications', 'certificates', 'notifications', 'profiles', 'saved_jobs', 'skills']);
   });
 
   let companyId, jobId, certId;
@@ -151,6 +151,42 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     // Re-saving keeps the certificate id the application points at.
     const again = await call(seeker, 'PUT', '/profile', profileBody({ certificates: [{ ...profileBody().certificates[0], id: certId }] }));
     assert.equal(again.data.profile.certificates[0].id, certId);
+  });
+
+  await t.test('posting a job notifies seekers whose skills match, and only them', async () => {
+    const post = (title, required, nice) => call(employer, 'POST', '/jobs', { companyId, title, category: 'it', country: 'ID', city: 'Jakarta', currency: 'IDR',
+      salaryMin: 1, salaryMax: 2, period: 'month', type: 'fulltime', model: 'remote', required, nice: nice || [], description: 'Tes.' });
+    const good = await post('Notif React Lead', [{ name: 'react', level: 3 }]);
+    const lowOverlap = await post('Notif Rust Dev', [{ name: 'Rust', level: 3 }, { name: 'Go', level: 3 }], [{ name: 'React', level: 1 }]);
+    const nobody = await post('Notif Cobol Dev', [{ name: 'COBOL', level: 3 }]);
+    assert.equal(good.status, 201); assert.equal(lowOverlap.status, 201); assert.equal(nobody.status, 201);
+
+    const mine = await call(seeker, 'GET', '/notifications');
+    assert.equal(mine.status, 200);
+    assert.deepEqual(mine.data.notifications.map(n => n.title), ['Notif React Lead'], 'only the matching job notifies');
+    assert.equal(mine.data.notifications[0].matchPct, 100);
+    assert.equal(mine.data.notifications[0].company, 'Test Employer Ltd');
+    assert.equal(mine.data.unread, 1);
+
+    assert.equal((await call(employer, 'GET', '/notifications')).data.notifications.length, 0, 'the poster is not notified');
+    assert.equal((await call(stranger, 'GET', '/notifications')).data.notifications.length, 0, 'notifications are private to their owner');
+
+    const id = mine.data.notifications[0].id;
+    assert.equal((await call(stranger, 'POST', '/notifications/read', { ids: [id] })).data.unread, 0);
+    assert.equal((await call(seeker, 'GET', '/notifications')).data.unread, 1, 'someone else cannot mark it read');
+    const read = await call(seeker, 'POST', '/notifications/read', { ids: [id] });
+    assert.equal(read.data.unread, 0);
+    assert.equal((await call(seeker, 'GET', '/notifications')).data.notifications[0].read, true);
+
+    await post('Notif React Two', [{ name: 'React', level: 2 }]);
+    assert.equal((await call(seeker, 'GET', '/notifications')).data.unread, 1);
+    assert.equal((await call(seeker, 'POST', '/notifications/read', { all: true })).data.unread, 0);
+
+    const pool = new Pool({ connectionString: dbUrl });
+    await pool.query('DELETE FROM jobs WHERE id = $1', [good.data.job.id]);
+    const left = await pool.query('SELECT COUNT(*)::int AS n FROM notifications WHERE job_id = $1', [good.data.job.id]);
+    await pool.end();
+    assert.equal(left.rows[0].n, 0, 'deleting a job removes its notifications');
   });
 
   await t.test('the employer sees the application from another account, with privacy enforced', async () => {

@@ -83,5 +83,6 @@
     per_month: '/මසකට', per_year: '/වසරකට', per_hour: '/පැයකට',
     cat_it: 'IT', cat_health: 'සෞඛ්‍ය සේවා', cat_education: 'අධ්‍යාපනය', cat_finance: 'මූල්‍ය', cat_engineering: 'ඉංජිනේරු', cat_creative: 'නිර්මාණාත්මක', cat_marketing: 'අලෙවිකරණය', cat_sales: 'විකුණුම් සහ සේවා', cat_hospitality: 'ආගන්තුක සත්කාර', cat_logistics: 'සැපයුම් දාම', cat_agriculture: 'කෘෂිකර්මය',
     pageNotFound: 'පිටුව හමු නොවීය', pageNotFoundBody: 'මෙම සබැඳිය නොපවතී.',
+    notifications: 'දැනුම්දීම්', markAllRead: 'සියල්ල කියවූ ලෙස සලකුණු කරන්න', noNotifications: 'තවමත් දැනුම්දීම් නැත', noNotificationsBody: 'ඔබේ කුසලතාවලට ගැළපෙන රැකියා මෙහි දිස්වේ.', notifUnread: 'නොකියවූ {n}',
   },
 };

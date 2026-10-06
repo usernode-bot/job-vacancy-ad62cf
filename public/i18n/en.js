@@ -26,7 +26,7 @@
     remoteWorldwide: 'Remote Worldwide', remoteWorldwideL: 'Remote Worldwide (from any country)', remoteWorldwideHint: 'Work from any country', visaSponsor: 'Visa Sponsor', relocation: 'Relocation Support',
     country: 'Country', city: 'City', cityPlaceholder: 'All cities', category: 'Category', allCategories: 'All categories', jobType: 'Job type', workModel: 'Work model',
     salaryRange: 'Monthly salary ({cur})', min: 'Minimum', max: 'Maximum', salaryHint: 'Yearly and hourly pay is converted to monthly.', skills: 'Skills', filterSkillPh: 'Filter skills, e.g. React',
-    showSalaryIn: 'Show salary in', localCurrency: 'Local currency', ratesLink: 'Static rates as of {date}', ratesTitle: 'Static exchange rates', ratesBody: 'Conversions use fixed rates as of {date}. They are estimates, not live market rates.',
+    showSalaryIn: 'Show salary in', localCurrency: 'Automatic (from your browser)', ratesLink: 'Exchange rates as of {date}', ratesTitle: 'Exchange rates', ratesBody: 'Conversions use daily market rates as of {date}, or built-in approximate rates if live rates are unavailable. They are estimates.',
     resetFilters: 'Reset filters', searchTitle: 'Find Jobs', filters: 'Filters', matchMySkills: 'Match My Skills', sortBy: 'Sort by', sortNewest: 'Newest', sortSalary: 'Highest salary',
     matchNeedsProfile: 'Add skills to a Job Seeker profile to match jobs.', matchExplain: 'Required skills weigh 2, nice-to-have 1. Certified skills count fully, unproven ones count 75%.',
     nFound: '{n} jobs found', noJobs: 'No jobs found', noJobsBody: 'Try fewer filters or another keyword.', showResults: 'Show results',

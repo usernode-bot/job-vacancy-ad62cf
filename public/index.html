@@ -879,8 +879,20 @@
     const toggle = (key, label, hint) => '<label class="flex items-center justify-between gap-3 py-2"><span><span class="block text-sm font-medium">' + esc(label) + '</span>' + (hint ? '<span class="block text-xs ' + C.muted + '">' + esc(hint) + '</span>' : '') + '</span>' +
       '<input type="checkbox" class="un-switch" data-filter-bool="' + key + '"' + (f[key] ? ' checked' : '') + '></label>';
     const fc = filterCurrency();
+    const ccCounts = {};
+    db.jobs.forEach(j => { ccCounts[j.country] = (ccCounts[j.country] || 0) + 1; });
+    const ccList = Object.keys(ccCounts).sort((a, b) => ccCounts[b] - ccCounts[a] || countryName(a).localeCompare(countryName(b), lang));
+    const ccRow = cc => '<li><button type="button" data-action="filter-country-pick" data-cc="' + cc + '"' +
+      ' aria-pressed="' + (f.country === cc) + '"' +
+      ' class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-start hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500' +
+      (f.country === cc ? ' bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300' : '') + '">' +
+      '<span class="text-xl" aria-hidden="true">' + (cc ? flag(cc) : '🌐') + '</span>' +
+      '<span class="flex-1 text-sm">' + esc(cc ? countryName(cc) : t('allCountries')) + '</span>' +
+      (cc ? '<span class="text-xs ' + C.muted + '">' + t('nJobs', { n: ccCounts[cc] }) + '</span>' : '') +
+      '</button></li>';
     return '<form data-filter-form class="space-y-5" onsubmit="return false">' +
-      '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="filter-country" class="' + C.input + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(f.country) + '</span><span class="flex-1 truncate">' + esc(f.country ? countryName(f.country) : t('allCountries')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button></div>' +
+      '<div><span class="' + C.label + '">' + t('country') + '</span>' +
+      '<ul class="mt-1 max-h-56 overflow-y-auto space-y-0.5" data-testid="filter-countries">' + ccRow('') + ccList.map(ccRow).join('') + '</ul></div>' +
       '<div><label class="' + C.label + '" for="f-city">' + t('city') + '</label><input id="f-city" list="f-city-list" data-filter="city" value="' + esc(f.city) + '" class="' + C.input + '" placeholder="' + esc(t('cityPlaceholder')) + '"><datalist id="f-city-list">' + cities.map(c => '<option value="' + esc(c) + '">').join('') + '</datalist></div>' +
       '<div><label class="' + C.label + '" for="f-cat">' + t('category') + '</label><select id="f-cat" data-filter="category" class="' + C.input + '"><option value="">' + t('allCategories') + '</option>' + CATEGORIES.map(c => '<option value="' + c + '"' + (f.category === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div>' +
       '<fieldset><legend class="' + C.label + '">' + t('jobType') + '</legend><div class="flex flex-wrap gap-2">' + JOB_TYPES.map(x => check('types', x, f.types.includes(x), t('type_' + x))).join('') + '</div></fieldset>' +
@@ -1822,9 +1834,9 @@
         ui.matchMode = !ui.matchMode;
         if (!ui.matchMode && route().query.get('match') === '1') go('#/jobs'); else render();
         break;
-      case 'filter-country':
-        openCountryPicker(cc => { filters.country = cc; filters.city = ''; refreshFilterHosts(); refreshResults(); if (inModal) openFiltersModal(); }, { allowAll: true, showCounts: true });
-        break;
+      case 'filter-country-pick':
+        filters.country = el.dataset.cc; filters.city = '';
+        refreshFilterHosts(); refreshResults(); break;
       case 'filter-skill-remove': filters.skills = filters.skills.filter(s => s !== el.dataset.skill); refreshFilterHosts(); refreshResults(); break;
       case 'skill-add': { const w = el.closest('[data-skill-input]'); addSkillFrom(w, w.querySelector('[data-skill-text]').value); hideSuggestions(); break; }
       case 'show-rates': openRates(); break;

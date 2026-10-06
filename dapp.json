@@ -12,6 +12,12 @@
       "expectSelector": "#hdr [data-testid=app-logo][data-logo=seeker] svg"
     },
     {
+      "name": "Header shows the Loker Dunia wordmark in the display font",
+      "path": "/",
+      "expectSelector": "#hdr [data-testid=app-name].font-display",
+      "expectText": "Loker Dunia"
+    },
+    {
       "name": "Header shows the language switcher, English by default",
       "path": "/",
       "expectSelector": "#hdr [data-testid=lang-switcher][data-lang=en]"
@@ -35,7 +41,8 @@
       "visual": true,
       "impact": [
         "public/index.html",
-        "public/i18n/**"
+        "public/i18n/**",
+        "tailwind.config.js"
       ]
     },
     {

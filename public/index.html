@@ -64,6 +64,11 @@
   </script>
   <title>Loker Dunia</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><g transform='translate(14 14) scale(3)' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='10' cy='7' r='4'/><path d='M10.3 15H7a4 4 0 0 0-4 4v2'/><circle cx='17' cy='17' r='3'/><path d='m21 21-1.9-1.9'/></g></svg>">
+  <!-- Web fonts, self-hosted from npm packages (see server.js /fonts/*). -->
+  <link rel="preload" href="/fonts/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/plus-jakarta-sans/index.css">
+  <link rel="stylesheet" href="/fonts/playfair-display/wght.css">
+  <link rel="stylesheet" href="/fonts/playfair-display/wght-italic.css">
   <link rel="stylesheet" href="/tailwind.css">
   <link rel="stylesheet" href="/usernode-native/v1/native.css">
   <!-- Platform bridge and native UI kit: centrally hosted, loaded by relative path. Never vendor. -->
@@ -107,7 +112,6 @@
   </script>
   <style>
     :root { --un-accent: #2563eb; --un-accent-contrast: #ffffff; }
-    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .no-scrollbar { scrollbar-width: none; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .pb-safe-nav { padding-bottom: calc(5.5rem + var(--un-safe-inset-bottom, env(safe-area-inset-bottom, 0px))); }
@@ -566,7 +570,7 @@
     chip: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',
     chipBlue: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
     muted: 'text-slate-500 dark:text-slate-400',
-    h1: 'text-2xl font-bold tracking-tight',
+    h1: 'font-display text-[1.65rem] font-semibold tracking-tight',
     h2: 'text-lg font-semibold',
     err: 'mt-1 text-xs text-red-600 dark:text-red-400',
     divider: 'divide-y divide-slate-200 dark:divide-slate-800',
@@ -769,7 +773,7 @@
     $('#hdr').innerHTML =
       '<div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-2 md:gap-4">' +
         '<a href="#/" class="flex items-center gap-2 font-bold text-blue-700 dark:text-blue-400 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg">' +
-          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span class="text-base">Loker Dunia</span></a>' +
+          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span data-testid="app-name" class="font-display text-xl font-semibold tracking-tight text-slate-900 dark:text-white">Loker <span class="italic text-blue-600 dark:text-blue-400">Dunia</span></span></a>' +
         searchForm('hdr-q', 'hidden md:flex flex-1 max-w-md') +
         '<nav class="hidden lg:flex items-center gap-1" aria-label="' + esc(t('mainNav')) + '">' + items.slice(0, 4).map(([h, , k]) =>
           '<a href="' + h + '" class="px-3 py-2 rounded-lg text-sm font-medium ' + (act === h ? 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-950' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>').join('') + '</nav>' +
@@ -1485,7 +1489,7 @@
     if (!co) return needCompany();
     const jobs = db.jobs.filter(j => j.companyId === co.id);
     return '<div class="max-w-lg mx-auto space-y-4"><section class="' + C.section + ' flex items-center gap-4">' + companyLogo(co.name) +
-      '<div><h1 class="text-xl font-bold">' + esc(co.name) + '</h1><p class="text-sm ' + C.muted + '">' + flag(co.country) + ' ' + esc(co.city) + ', ' + esc(countryName(co.country)) + ' · ' + t('cat_' + co.industry) + '</p></div></section>' +
+      '<div><h1 class="font-display text-xl font-semibold">' + esc(co.name) + '</h1><p class="text-sm ' + C.muted + '">' + flag(co.country) + ' ' + esc(co.city) + ', ' + esc(countryName(co.country)) + ' · ' + t('cat_' + co.industry) + '</p></div></section>' +
       '<section class="' + C.section + ' ' + C.divider + '">' +
         '<a href="#/dashboard" class="flex items-center justify-between py-3 text-sm font-medium"><span>' + t('navDashboard') + '</span><span class="' + C.muted + '">' + t('nJobs', { n: jobs.length }) + '</span></a>' +
         '<a href="#/post" class="flex items-center justify-between py-3 text-sm font-medium"><span>' + t('postJob') + '</span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>' +

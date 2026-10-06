@@ -1771,7 +1771,10 @@
     } else if (changed && a === 'profile' && role() === 'seeker') {
       try { await api.bootstrap(); } catch (e) {}
       if (seq !== renderSeq) return;
-    } else if (changed && a === 'notifications' && currentUser()) {
+    // The demo feed also loads for an authenticated visitor who has not
+    // picked a role yet (the checks runner and fresh pre-onboarding visits),
+    // so the staging preview can be reviewed before onboarding.
+    } else if (changed && a === 'notifications' && (currentUser() || (r.query.get('demo') === '1' && TOKEN))) {
       view.innerHTML = spinner();
       try { await api.loadNotifications(); } catch (e) { toast(t('loadFailed')); }
       if (seq !== renderSeq) return;

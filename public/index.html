@@ -134,9 +134,10 @@
     .split(',').reduce((m, p) => { const [c, d] = p.split(':'); m[c] = d; return m; }, {});
   const COUNTRY_CODES = Object.keys(DIAL);
 
-  // Static exchange rates: units of each currency per 1 USD.
-  // Approximate values, fixed on RATES_DATE. Not live market data.
-  const RATES_DATE = '2026-10-01';
+  // Exchange rates: units of each currency per 1 USD. These are the built-in
+  // fallback, fixed on RATES_DATE; loadRates() overwrites them with live rates
+  // when they can be fetched.
+  let RATES_DATE = '2026-10-01';
   const RATES = {
     USD: 1, IDR: 16300, EUR: 0.92, GBP: 0.78, JPY: 148, SGD: 1.33, AUD: 1.52, CAD: 1.37,
     AED: 3.6725, BRL: 5.4, NGN: 1550, INR: 84, MYR: 4.4, CHF: 0.86, ZAR: 18, KES: 129,
@@ -274,9 +275,47 @@
   function salaryText(j) {
     return fmtMoney(j.salaryMin, j.currency, true) + '–' + fmtMoney(j.salaryMax, j.currency, true) + t('per_' + j.period);
   }
+  // 'local' means "detect from the browser": the region of the browser locale
+  // decides the currency, and no conversion happens when it is unknown.
+  function detectCurrency() {
+    const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (const l of langs) {
+      const m = /[-_]([A-Za-z]{2})\b/.exec(l || '');
+      const cur = m && COUNTRY_CURRENCY[m[1].toUpperCase()];
+      if (cur) return cur;
+    }
+    return null;
+  }
+  function viewerCurrency() { return prefs.cur === 'local' ? detectCurrency() : prefs.cur; }
+
+  // Live rates from a free, key-less source, cached for 12 hours. Any failure
+  // leaves the built-in rates in place.
+  const RATES_CACHE_KEY = 'lokerdunia.rates';
+  const RATES_TTL = 12 * 3600 * 1000;
+  function applyRates(r, date) {
+    let n = 0;
+    for (const c in RATES) { if (typeof r[c] === 'number' && r[c] > 0) { RATES[c] = r[c]; n++; } }
+    if (n && date) RATES_DATE = date;
+    return n > 0;
+  }
+  // Rates come from our own server (which caches them); the browser never calls
+  // the rates host itself. Any failure leaves the cached or built-in rates.
+  async function loadRates() {
+    const cached = readJson(RATES_CACHE_KEY);
+    if (cached && cached.rates && Date.now() - cached.at < RATES_TTL) { applyRates(cached.rates, cached.date); return true; }
+    try {
+      const body = await request('GET', '/rates');
+      if (!body || !body.rates || !applyRates(body.rates, body.date)) throw new Error('unavailable');
+      try { localStorage.setItem(RATES_CACHE_KEY, JSON.stringify({ at: Date.now(), date: body.date, rates: body.rates })); } catch (e) {}
+      return true;
+    } catch (e) {
+      if (cached && cached.rates) applyRates(cached.rates, cached.date);
+      return false;
+    }
+  }
   function salaryConverted(j) {
-    const to = prefs.cur;
-    if (to === 'local' || to === j.currency || !RATES[j.currency]) return '';
+    const to = viewerCurrency();
+    if (!to || to === j.currency || !RATES[to] || !RATES[j.currency]) return '';
     return '≈ ' + fmtMoney(convert(j.salaryMin, j.currency, to), to, true) + '–' + fmtMoney(convert(j.salaryMax, j.currency, to), to, true) + t('per_' + j.period);
   }
   function fmtDate(iso, opts) {
@@ -474,7 +513,7 @@
   const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false, noCert: false });
   let filters = emptyFilters();
   const ui = { matchMode: false, sort: 'newest' };
-  function filterCurrency() { return prefs.cur === 'local' ? 'USD' : prefs.cur; }
+  function filterCurrency() { return viewerCurrency() || 'USD'; }
   function filterJobs(f) {
     const words = f.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const fc = filterCurrency();
@@ -2098,6 +2137,7 @@
     try { await loadLang(lang); }
     catch (e) { console.warn(e.message); lang = DEFAULT_LANG; }
     loadState = 'loading'; render();
+    loadRates().then(ok => { if (ok && loadState === 'ready') { lastPath = null; render(); } });
     try { await api.bootstrap(); loadState = 'ready'; }
     catch (e) { console.warn('bootstrap failed: ' + e.message); loadState = 'error'; }
     lastPath = null; render();

@@ -46,7 +46,7 @@
     educationN: 'التعليم {n}', experienceN: 'الخبرة {n}', eduLevel: 'المستوى', gradYear: 'سنة التخرج', institution: 'المؤسسة التعليمية', major: 'التخصص', position: 'المسمى الوظيفي', companyLabel: 'الشركة',
     startMonth: 'البداية', endMonth: 'النهاية', present: 'حتى الآن', currentlyWorking: 'أعمل هنا حاليًا', jobDesc: 'الوصف الوظيفي', experience: 'الخبرة',
     addEducation: 'إضافة تعليم', addExperience: 'إضافة خبرة', noEducationYet: 'لا يوجد تعليم بعد.', noExperienceYet: 'لا توجد خبرة بعد.',
-    edu_sma: 'الثانوية العامة', edu_d3: 'دبلوم', edu_s1: 'بكالوريوس', edu_s2: 'ماجستير', edu_s3: 'دكتوراه', edu_any: 'أي مستوى',
+    edu_sma: 'الثانوية العامة', edu_d3: 'دبلوم', edu_s1: 'بكالوريوس', edu_s2: 'ماجستير', edu_s3: 'دكتوراه', edu_any: 'لا يشترط شهادة دراسية', noEduCertHint: 'وظائف يمكنك التقدم إليها دون دبلوم أو شهادة مدرسية',
     typeSkill: 'اكتب مهارة', skillsStepHint: 'اختر اقتراحًا أو اكتب مهارتك الخاصة. حدّد المستوى وسنوات الخبرة لكل مهارة.', level: 'المستوى', yearsExp: 'السنوات', noSkillsYet: 'لا توجد مهارات بعد.', skillExists: 'هذه المهارة مضافة بالفعل',
     level_1: 'مبتدئ', level_2: 'متوسط', level_3: 'متقدم', language: 'اللغة', addLanguage: 'إضافة لغة', noLanguagesYet: 'لا توجد لغات بعد.',
     lang_basic: 'أساسي', lang_intermediate: 'متوسط', lang_fluent: 'بطلاقة', lang_native: 'اللغة الأم',

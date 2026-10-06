@@ -46,7 +46,7 @@
     educationN: 'Atikan {n}', experienceN: 'Pangalaman {n}', eduLevel: 'Jenjang', gradYear: 'Taun lulus', institution: 'Institusi', major: 'Jurusan', position: 'Jabatan', companyLabel: 'Perusahaan',
     startMonth: 'Ngamimitian', endMonth: 'Réngsé', present: 'Ayeuna', currentlyWorking: 'Abdi masih damel di dieu', jobDesc: 'Pedaran padamelan', experience: 'Pangalaman',
     addEducation: 'Tambihan atikan', addExperience: 'Tambihan pangalaman', noEducationYet: 'Teu acan aya atikan.', noExperienceYet: 'Teu acan aya pangalaman.',
-    edu_sma: 'SMA/SMK', edu_d3: 'Diploma', edu_s1: 'Sarjana (S1)', edu_s2: 'Magister (S2)', edu_s3: 'Doktor (S3)', edu_any: 'Sadaya jenjang',
+    edu_sma: 'SMA/SMK', edu_d3: 'Diploma', edu_s1: 'Sarjana (S1)', edu_s2: 'Magister (S2)', edu_s3: 'Doktor (S3)', edu_any: 'Tanpa ijazah', noEduCertHint: 'Lowongan nu tiasa dilamar tanpa ijazah',
     typeSkill: 'Serat kaahlian', skillsStepHint: 'Pilih saran atanapi serat nyalira. Tangtoskeun tingkat sareng taun pangalaman kanggo unggal kaahlian.', level: 'Tingkat', yearsExp: 'Taun', noSkillsYet: 'Teu acan aya kaahlian.', skillExists: 'Kaahlian ieu parantos ditambihan',
     level_1: 'Pemula', level_2: 'Menengah', level_3: 'Mahir', language: 'Basa', addLanguage: 'Tambihan basa', noLanguagesYet: 'Teu acan aya basa.',
     lang_basic: 'Dasar', lang_intermediate: 'Menengah', lang_fluent: 'Lancar', lang_native: 'Basa indung',

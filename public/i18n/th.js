@@ -46,7 +46,7 @@
     educationN: 'การศึกษา {n}', experienceN: 'ประสบการณ์ {n}', eduLevel: 'ระดับ', gradYear: 'ปีที่สำเร็จการศึกษา', institution: 'สถาบัน', major: 'สาขาวิชา', position: 'ตำแหน่ง', companyLabel: 'บริษัท',
     startMonth: 'เริ่ม', endMonth: 'สิ้นสุด', present: 'ปัจจุบัน', currentlyWorking: 'ปัจจุบันฉันทำงานที่นี่', jobDesc: 'รายละเอียดงาน', experience: 'ประสบการณ์',
     addEducation: 'เพิ่มการศึกษา', addExperience: 'เพิ่มประสบการณ์', noEducationYet: 'ยังไม่มีข้อมูลการศึกษา', noExperienceYet: 'ยังไม่มีข้อมูลประสบการณ์',
-    edu_sma: 'มัธยมศึกษาตอนปลาย', edu_d3: 'อนุปริญญา', edu_s1: 'ปริญญาตรี', edu_s2: 'ปริญญาโท', edu_s3: 'ปริญญาเอก', edu_any: 'ทุกระดับ',
+    edu_sma: 'มัธยมศึกษาตอนปลาย', edu_d3: 'อนุปริญญา', edu_s1: 'ปริญญาตรี', edu_s2: 'ปริญญาโท', edu_s3: 'ปริญญาเอก', edu_any: 'ไม่ต้องใช้วุฒิการศึกษา', noEduCertHint: 'งานที่สมัครได้โดยไม่ต้องมีประกาศนียบัตรหรือวุฒิการศึกษา',
     typeSkill: 'พิมพ์ทักษะ', skillsStepHint: 'เลือกจากคำแนะนำหรือพิมพ์เอง กำหนดระดับและจำนวนปีประสบการณ์ของแต่ละทักษะ', level: 'ระดับ', yearsExp: 'จำนวนปี', noSkillsYet: 'ยังไม่มีทักษะ', skillExists: 'เพิ่มทักษะนี้แล้ว',
     level_1: 'เริ่มต้น', level_2: 'ปานกลาง', level_3: 'ขั้นสูง', language: 'ภาษา', addLanguage: 'เพิ่มภาษา', noLanguagesYet: 'ยังไม่มีภาษา',
     lang_basic: 'พื้นฐาน', lang_intermediate: 'ปานกลาง', lang_fluent: 'คล่องแคล่ว', lang_native: 'เจ้าของภาษา',

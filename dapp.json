@@ -76,6 +76,23 @@
       "path": "/#/job/j17",
       "expectSelector": "[data-testid=job-skill-lists]",
       "expectText": "Maple Leaf Commerce"
+    },
+    {
+      "name": "Job search shows the no education certificate badge",
+      "path": "/#/jobs",
+      "expectSelector": "#results [data-testid=job-card] [data-testid=no-cert-badge]",
+      "expectText": "No education certificate needed"
+    },
+    {
+      "name": "Job filters offer the no education certificate switch",
+      "path": "/#/jobs",
+      "expectSelector": "[data-filter-host] [data-filter-bool=noCert]"
+    },
+    {
+      "name": "Job page shows the no education certificate badge",
+      "path": "/#/job/j20",
+      "expectSelector": "header [data-testid=no-cert-badge]",
+      "expectText": "Barista"
     }
   ],
   "visibility": {

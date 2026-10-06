@@ -46,7 +46,7 @@
     educationN: 'Εκπαίδευση {n}', experienceN: 'Εμπειρία {n}', eduLevel: 'Επίπεδο', gradYear: 'Έτος αποφοίτησης', institution: 'Ίδρυμα', major: 'Ειδικότητα', position: 'Θέση', companyLabel: 'Εταιρεία',
     startMonth: 'Έναρξη', endMonth: 'Λήξη', present: 'Σήμερα', currentlyWorking: 'Εργάζομαι εδώ αυτή τη στιγμή', jobDesc: 'Περιγραφή εργασίας', experience: 'Εμπειρία',
     addEducation: 'Προσθήκη εκπαίδευσης', addExperience: 'Προσθήκη εμπειρίας', noEducationYet: 'Δεν υπάρχει ακόμη εκπαίδευση.', noExperienceYet: 'Δεν υπάρχει ακόμη εμπειρία.',
-    edu_sma: 'Λύκειο', edu_d3: 'Δίπλωμα', edu_s1: 'Πτυχίο', edu_s2: 'Μεταπτυχιακό', edu_s3: 'Διδακτορικό', edu_any: 'Οποιοδήποτε επίπεδο',
+    edu_sma: 'Λύκειο', edu_d3: 'Δίπλωμα', edu_s1: 'Πτυχίο', edu_s2: 'Μεταπτυχιακό', edu_s3: 'Διδακτορικό', edu_any: 'Δεν απαιτείται πτυχίο ή απολυτήριο', noEduCertHint: 'Θέσεις για τις οποίες μπορείτε να κάνετε αίτηση χωρίς δίπλωμα ή σχολικό απολυτήριο',
     typeSkill: 'Πληκτρολογήστε μια δεξιότητα', skillsStepHint: 'Επιλέξτε μια πρόταση ή γράψτε τη δική σας. Ορίστε το επίπεδο και τα έτη εμπειρίας για κάθε δεξιότητα.', level: 'Επίπεδο', yearsExp: 'Έτη', noSkillsYet: 'Δεν υπάρχουν ακόμη δεξιότητες.', skillExists: 'Αυτή η δεξιότητα έχει ήδη προστεθεί',
     level_1: 'Αρχάριος', level_2: 'Μέτριος', level_3: 'Προχωρημένος', language: 'Γλώσσα', addLanguage: 'Προσθήκη γλώσσας', noLanguagesYet: 'Δεν υπάρχουν ακόμη γλώσσες.',
     lang_basic: 'Βασικό', lang_intermediate: 'Μέτριο', lang_fluent: 'Άριστο', lang_native: 'Μητρική',

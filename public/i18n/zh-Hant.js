@@ -46,7 +46,7 @@
     educationN: '學歷 {n}', experienceN: '經歷 {n}', eduLevel: '學歷', gradYear: '畢業年份', institution: '學校', major: '科系', position: '職稱', companyLabel: '公司',
     startMonth: '開始', endMonth: '結束', present: '至今', currentlyWorking: '我目前在此任職', jobDesc: '工作內容', experience: '經歷',
     addEducation: '新增學歷', addExperience: '新增經歷', noEducationYet: '尚無學歷。', noExperienceYet: '尚無經歷。',
-    edu_sma: '高中', edu_d3: '專科', edu_s1: '學士', edu_s2: '碩士', edu_s3: '博士', edu_any: '不拘學歷',
+    edu_sma: '高中', edu_d3: '專科', edu_s1: '學士', edu_s2: '碩士', edu_s3: '博士', edu_any: '無需學歷證書', noEduCertHint: '無需畢業證書或學歷證明即可應徵的職缺',
     typeSkill: '輸入技能', skillsStepHint: '選擇建議項目或自行輸入。請為每項技能設定程度與經驗年數。', level: '程度', yearsExp: '年數', noSkillsYet: '尚無技能。', skillExists: '此技能已新增',
     level_1: '初級', level_2: '中級', level_3: '高級', language: '語言', addLanguage: '新增語言', noLanguagesYet: '尚無語言。',
     lang_basic: '基礎', lang_intermediate: '中等', lang_fluent: '流利', lang_native: '母語',

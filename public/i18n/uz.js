@@ -46,7 +46,7 @@
     educationN: 'Taʼlim {n}', experienceN: 'Tajriba {n}', eduLevel: 'Daraja', gradYear: 'Bitirgan yil', institution: 'Taʼlim muassasasi', major: 'Mutaxassislik', position: 'Lavozim', companyLabel: 'Kompaniya',
     startMonth: 'Boshlanishi', endMonth: 'Tugashi', present: 'Hozirgacha', currentlyWorking: 'Hozir shu yerda ishlayman', jobDesc: 'Ish tavsifi', experience: 'Tajriba',
     addEducation: 'Taʼlim qoʻshish', addExperience: 'Tajriba qoʻshish', noEducationYet: 'Hozircha taʼlim maʼlumoti yoʻq.', noExperienceYet: 'Hozircha tajriba yoʻq.',
-    edu_sma: 'Oʻrta maktab', edu_d3: 'Oʻrta maxsus', edu_s1: 'Bakalavr', edu_s2: 'Magistr', edu_s3: 'Doktorantura', edu_any: 'Har qanday daraja',
+    edu_sma: 'Oʻrta maktab', edu_d3: 'Oʻrta maxsus', edu_s1: 'Bakalavr', edu_s2: 'Magistr', edu_s3: 'Doktorantura', edu_any: 'Taʼlim hujjati talab qilinmaydi', noEduCertHint: 'Diplom yoki maktab attestatisiz ariza berish mumkin boʻlgan ishlar',
     typeSkill: 'Koʻnikmani yozing', skillsStepHint: 'Taklifni tanlang yoki oʻzingiz yozing. Har bir koʻnikma uchun daraja va tajriba yillarini belgilang.', level: 'Daraja', yearsExp: 'Yil', noSkillsYet: 'Hozircha koʻnikmalar yoʻq.', skillExists: 'Bu koʻnikma allaqachon qoʻshilgan',
     level_1: 'Boshlangʻich', level_2: 'Oʻrta', level_3: 'Yuqori', language: 'Til', addLanguage: 'Til qoʻshish', noLanguagesYet: 'Hozircha tillar yoʻq.',
     lang_basic: 'Boshlangʻich', lang_intermediate: 'Oʻrta', lang_fluent: 'Erkin', lang_native: 'Ona tili',

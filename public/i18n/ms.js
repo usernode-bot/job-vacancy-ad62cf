@@ -46,7 +46,7 @@
     educationN: 'Pendidikan {n}', experienceN: 'Pengalaman {n}', eduLevel: 'Tahap', gradYear: 'Tahun tamat pengajian', institution: 'Institusi', major: 'Bidang pengajian', position: 'Jawatan', companyLabel: 'Syarikat',
     startMonth: 'Mula', endMonth: 'Tamat', present: 'Kini', currentlyWorking: 'Saya masih bekerja di sini', jobDesc: 'Penerangan tugas', experience: 'Pengalaman',
     addEducation: 'Tambah pendidikan', addExperience: 'Tambah pengalaman', noEducationYet: 'Belum ada pendidikan.', noExperienceYet: 'Belum ada pengalaman.',
-    edu_sma: 'Sekolah menengah', edu_d3: 'Diploma', edu_s1: 'Ijazah Sarjana Muda', edu_s2: 'Ijazah Sarjana', edu_s3: 'Doktor Falsafah', edu_any: 'Semua tahap',
+    edu_sma: 'Sekolah menengah', edu_d3: 'Diploma', edu_s1: 'Ijazah Sarjana Muda', edu_s2: 'Ijazah Sarjana', edu_s3: 'Doktor Falsafah', edu_any: 'Tidak perlu sijil pendidikan', noEduCertHint: 'Jawatan yang boleh dipohon tanpa diploma atau sijil sekolah',
     typeSkill: 'Taip kemahiran', skillsStepHint: 'Pilih cadangan atau taip sendiri. Tetapkan tahap dan tahun pengalaman bagi setiap kemahiran.', level: 'Tahap', yearsExp: 'Tahun', noSkillsYet: 'Belum ada kemahiran.', skillExists: 'Kemahiran ini sudah ditambah',
     level_1: 'Permulaan', level_2: 'Pertengahan', level_3: 'Mahir', language: 'Bahasa', addLanguage: 'Tambah bahasa', noLanguagesYet: 'Belum ada bahasa.',
     lang_basic: 'Asas', lang_intermediate: 'Pertengahan', lang_fluent: 'Fasih', lang_native: 'Bahasa ibunda',

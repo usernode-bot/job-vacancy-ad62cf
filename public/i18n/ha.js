@@ -46,7 +46,7 @@
     educationN: 'Ilimi {n}', experienceN: 'Ƙwarewa {n}', eduLevel: 'Mataki', gradYear: 'Shekarar kammalawa', institution: 'Makaranta', major: 'Fanni', position: 'Matsayi', companyLabel: 'Kamfani',
     startMonth: 'Farawa', endMonth: 'Ƙarshe', present: 'Yanzu', currentlyWorking: 'Ina aiki a nan yanzu', jobDesc: 'Bayanin aiki', experience: 'Ƙwarewa',
     addEducation: 'Ƙara ilimi', addExperience: 'Ƙara ƙwarewa', noEducationYet: 'Babu ilimi tukuna.', noExperienceYet: 'Babu ƙwarewa tukuna.',
-    edu_sma: 'Makarantar sakandare', edu_d3: 'Difloma', edu_s1: 'Digiri na farko', edu_s2: 'Digiri na biyu', edu_s3: 'Digiri na uku', edu_any: 'Kowane mataki',
+    edu_sma: 'Makarantar sakandare', edu_d3: 'Difloma', edu_s1: 'Digiri na farko', edu_s2: 'Digiri na biyu', edu_s3: 'Digiri na uku', edu_any: 'Ba a buƙatar takardar shaidar karatu', noEduCertHint: 'Ayyukan da za ka iya nema ba tare da difloma ko takardar makaranta ba',
     typeSkill: 'Rubuta ƙwarewa', skillsStepHint: 'Zaɓi shawara ko rubuta naku. Saita mataki da shekarun ƙwarewa ga kowace ƙwarewa.', level: 'Mataki', yearsExp: 'Shekaru', noSkillsYet: 'Babu ƙwarewa tukuna.', skillExists: 'An riga an ƙara wannan ƙwarewa',
     level_1: 'Mafari', level_2: 'Matsakaici', level_3: 'Gwani', language: 'Harshe', addLanguage: 'Ƙara harshe', noLanguagesYet: 'Babu harsuna tukuna.',
     lang_basic: 'Na farko', lang_intermediate: 'Matsakaici', lang_fluent: 'Ƙwararre', lang_native: 'Harshen uwa',

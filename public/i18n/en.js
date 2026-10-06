@@ -52,7 +52,7 @@
     educationN: 'Education {n}', experienceN: 'Experience {n}', eduLevel: 'Level', gradYear: 'Graduation year', institution: 'Institution', major: 'Major', position: 'Position', companyLabel: 'Company',
     startMonth: 'Start', endMonth: 'End', present: 'Present', currentlyWorking: 'I currently work here', jobDesc: 'Job description', experience: 'Experience',
     addEducation: 'Add education', addExperience: 'Add experience', noEducationYet: 'No education yet.', noExperienceYet: 'No experience yet.',
-    edu_sma: 'High school', edu_d3: 'Diploma', edu_s1: "Bachelor's", edu_s2: "Master's", edu_s3: 'Doctorate', edu_any: 'Any level',
+    edu_sma: 'High school', edu_d3: 'Diploma', edu_s1: "Bachelor's", edu_s2: "Master's", edu_s3: 'Doctorate', edu_any: 'No education certificate needed', noEduCertHint: 'Jobs you can apply for without a diploma or school certificate',
     typeSkill: 'Type a skill', skillsStepHint: 'Pick a suggestion or type your own. Set the level and years of experience for each skill.', level: 'Level', yearsExp: 'Years', noSkillsYet: 'No skills yet.', skillExists: 'This skill is already added',
     level_1: 'Beginner', level_2: 'Intermediate', level_3: 'Advanced', language: 'Language', addLanguage: 'Add language', noLanguagesYet: 'No languages yet.',
     lang_basic: 'Basic', lang_intermediate: 'Intermediate', lang_fluent: 'Fluent', lang_native: 'Native',

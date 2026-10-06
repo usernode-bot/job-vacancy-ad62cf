@@ -46,7 +46,7 @@
     educationN: 'ਸਿੱਖਿਆ {n}', experienceN: 'ਤਜਰਬਾ {n}', eduLevel: 'ਪੱਧਰ', gradYear: 'ਗ੍ਰੈਜੂਏਸ਼ਨ ਸਾਲ', institution: 'ਸੰਸਥਾ', major: 'ਮੁੱਖ ਵਿਸ਼ਾ', position: 'ਅਹੁਦਾ', companyLabel: 'ਕੰਪਨੀ',
     startMonth: 'ਸ਼ੁਰੂਆਤ', endMonth: 'ਅੰਤ', present: 'ਹੁਣ ਤੱਕ', currentlyWorking: 'ਮੈਂ ਇਸ ਵੇਲੇ ਇੱਥੇ ਕੰਮ ਕਰਦਾ/ਕਰਦੀ ਹਾਂ', jobDesc: 'ਨੌਕਰੀ ਦਾ ਵੇਰਵਾ', experience: 'ਤਜਰਬਾ',
     addEducation: 'ਸਿੱਖਿਆ ਸ਼ਾਮਲ ਕਰੋ', addExperience: 'ਤਜਰਬਾ ਸ਼ਾਮਲ ਕਰੋ', noEducationYet: 'ਅਜੇ ਕੋਈ ਸਿੱਖਿਆ ਨਹੀਂ।', noExperienceYet: 'ਅਜੇ ਕੋਈ ਤਜਰਬਾ ਨਹੀਂ।',
-    edu_sma: 'ਹਾਈ ਸਕੂਲ', edu_d3: 'ਡਿਪਲੋਮਾ', edu_s1: 'ਬੈਚਲਰ', edu_s2: 'ਮਾਸਟਰ', edu_s3: 'ਡਾਕਟਰੇਟ', edu_any: 'ਕੋਈ ਵੀ ਪੱਧਰ',
+    edu_sma: 'ਹਾਈ ਸਕੂਲ', edu_d3: 'ਡਿਪਲੋਮਾ', edu_s1: 'ਬੈਚਲਰ', edu_s2: 'ਮਾਸਟਰ', edu_s3: 'ਡਾਕਟਰੇਟ', edu_any: 'ਵਿੱਦਿਅਕ ਸਰਟੀਫਿਕੇਟ ਦੀ ਲੋੜ ਨਹੀਂ', noEduCertHint: 'ਨੌਕਰੀਆਂ ਜਿਨ੍ਹਾਂ ਲਈ ਡਿਪਲੋਮਾ ਜਾਂ ਸਕੂਲ ਸਰਟੀਫਿਕੇਟ ਤੋਂ ਬਿਨਾਂ ਅਰਜ਼ੀ ਦੇ ਸਕਦੇ ਹੋ',
     typeSkill: 'ਹੁਨਰ ਲਿਖੋ', skillsStepHint: 'ਕੋਈ ਸੁਝਾਅ ਚੁਣੋ ਜਾਂ ਆਪਣਾ ਲਿਖੋ। ਹਰ ਹੁਨਰ ਲਈ ਪੱਧਰ ਅਤੇ ਤਜਰਬੇ ਦੇ ਸਾਲ ਤੈਅ ਕਰੋ।', level: 'ਪੱਧਰ', yearsExp: 'ਸਾਲ', noSkillsYet: 'ਅਜੇ ਕੋਈ ਹੁਨਰ ਨਹੀਂ।', skillExists: 'ਇਹ ਹੁਨਰ ਪਹਿਲਾਂ ਹੀ ਸ਼ਾਮਲ ਹੈ',
     level_1: 'ਸ਼ੁਰੂਆਤੀ', level_2: 'ਦਰਮਿਆਨਾ', level_3: 'ਉੱਨਤ', language: 'ਭਾਸ਼ਾ', addLanguage: 'ਭਾਸ਼ਾ ਸ਼ਾਮਲ ਕਰੋ', noLanguagesYet: 'ਅਜੇ ਕੋਈ ਭਾਸ਼ਾ ਨਹੀਂ।',
     lang_basic: 'ਮੁੱਢਲਾ', lang_intermediate: 'ਦਰਮਿਆਨਾ', lang_fluent: 'ਰਵਾਂ', lang_native: 'ਮਾਂ-ਬੋਲੀ',

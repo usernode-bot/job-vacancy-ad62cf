@@ -46,7 +46,7 @@
     educationN: 'शिक्षा {n}', experienceN: 'अनुभव {n}', eduLevel: 'स्तर', gradYear: 'उत्तीर्ण वर्ष', institution: 'संस्थान', major: 'विषय', position: 'पद', companyLabel: 'कंपनी',
     startMonth: 'शुरुआत', endMonth: 'समाप्ति', present: 'वर्तमान', currentlyWorking: 'मैं वर्तमान में यहाँ काम करता/करती हूँ', jobDesc: 'कार्य विवरण', experience: 'अनुभव',
     addEducation: 'शिक्षा जोड़ें', addExperience: 'अनुभव जोड़ें', noEducationYet: 'अभी कोई शिक्षा नहीं जोड़ी गई।', noExperienceYet: 'अभी कोई अनुभव नहीं जोड़ा गया।',
-    edu_sma: 'हाई स्कूल', edu_d3: 'डिप्लोमा', edu_s1: 'स्नातक', edu_s2: 'स्नातकोत्तर', edu_s3: 'डॉक्टरेट', edu_any: 'कोई भी स्तर',
+    edu_sma: 'हाई स्कूल', edu_d3: 'डिप्लोमा', edu_s1: 'स्नातक', edu_s2: 'स्नातकोत्तर', edu_s3: 'डॉक्टरेट', edu_any: 'शैक्षणिक प्रमाणपत्र ज़रूरी नहीं', noEduCertHint: 'ऐसी नौकरियाँ जिनके लिए डिप्लोमा या स्कूल प्रमाणपत्र के बिना आवेदन कर सकते हैं',
     typeSkill: 'कौशल टाइप करें', skillsStepHint: 'कोई सुझाव चुनें या स्वयं टाइप करें। प्रत्येक कौशल के लिए स्तर और अनुभव के वर्ष निर्धारित करें।', level: 'स्तर', yearsExp: 'वर्ष', noSkillsYet: 'अभी कोई कौशल नहीं।', skillExists: 'यह कौशल पहले ही जोड़ा जा चुका है',
     level_1: 'शुरुआती', level_2: 'मध्यम', level_3: 'उन्नत', language: 'भाषा', addLanguage: 'भाषा जोड़ें', noLanguagesYet: 'अभी कोई भाषा नहीं।',
     lang_basic: 'बुनियादी', lang_intermediate: 'मध्यम', lang_fluent: 'धाराप्रवाह', lang_native: 'मातृभाषा',

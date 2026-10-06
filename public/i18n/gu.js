@@ -46,7 +46,7 @@
     educationN: 'શિક્ષણ {n}', experienceN: 'અનુભવ {n}', eduLevel: 'સ્તર', gradYear: 'સ્નાતક વર્ષ', institution: 'સંસ્થા', major: 'મુખ્ય વિષય', position: 'હોદ્દો', companyLabel: 'કંપની',
     startMonth: 'શરૂઆત', endMonth: 'અંત', present: 'વર્તમાન', currentlyWorking: 'હું હાલમાં અહીં કામ કરું છું', jobDesc: 'નોકરીનું વર્ણન', experience: 'અનુભવ',
     addEducation: 'શિક્ષણ ઉમેરો', addExperience: 'અનુભવ ઉમેરો', noEducationYet: 'હજી કોઈ શિક્ષણ નથી.', noExperienceYet: 'હજી કોઈ અનુભવ નથી.',
-    edu_sma: 'હાઇ સ્કૂલ', edu_d3: 'ડિપ્લોમા', edu_s1: 'સ્નાતક', edu_s2: 'અનુસ્નાતક', edu_s3: 'ડૉક્ટરેટ', edu_any: 'કોઈપણ સ્તર',
+    edu_sma: 'હાઇ સ્કૂલ', edu_d3: 'ડિપ્લોમા', edu_s1: 'સ્નાતક', edu_s2: 'અનુસ્નાતક', edu_s3: 'ડૉક્ટરેટ', edu_any: 'શૈક્ષણિક પ્રમાણપત્રની જરૂર નથી', noEduCertHint: 'ડિપ્લોમા કે શાળા પ્રમાણપત્ર વિના અરજી કરી શકાય તેવી નોકરીઓ',
     typeSkill: 'કૌશલ્ય લખો', skillsStepHint: 'સૂચન પસંદ કરો અથવા તમારું પોતાનું લખો. દરેક કૌશલ્ય માટે સ્તર અને અનુભવના વર્ષો સેટ કરો.', level: 'સ્તર', yearsExp: 'વર્ષ', noSkillsYet: 'હજી કોઈ કૌશલ્ય નથી.', skillExists: 'આ કૌશલ્ય પહેલેથી ઉમેરાયેલું છે',
     level_1: 'શરૂઆતી', level_2: 'મધ્યમ', level_3: 'ઉન્નત', language: 'ભાષા', addLanguage: 'ભાષા ઉમેરો', noLanguagesYet: 'હજી કોઈ ભાષા નથી.',
     lang_basic: 'મૂળભૂત', lang_intermediate: 'મધ્યમ', lang_fluent: 'અસ્ખલિત', lang_native: 'માતૃભાષા',

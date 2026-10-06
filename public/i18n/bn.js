@@ -46,7 +46,7 @@
     educationN: 'শিক্ষা {n}', experienceN: 'অভিজ্ঞতা {n}', eduLevel: 'স্তর', gradYear: 'পাসের বছর', institution: 'প্রতিষ্ঠান', major: 'বিষয়', position: 'পদ', companyLabel: 'কোম্পানি',
     startMonth: 'শুরু', endMonth: 'শেষ', present: 'বর্তমান', currentlyWorking: 'আমি বর্তমানে এখানে কাজ করছি', jobDesc: 'কাজের বিবরণ', experience: 'অভিজ্ঞতা',
     addEducation: 'শিক্ষা যোগ করুন', addExperience: 'অভিজ্ঞতা যোগ করুন', noEducationYet: 'এখনও কোনো শিক্ষা যোগ করা হয়নি।', noExperienceYet: 'এখনও কোনো অভিজ্ঞতা যোগ করা হয়নি।',
-    edu_sma: 'উচ্চ মাধ্যমিক', edu_d3: 'ডিপ্লোমা', edu_s1: 'স্নাতক', edu_s2: 'স্নাতকোত্তর', edu_s3: 'ডক্টরেট', edu_any: 'যেকোনো স্তর',
+    edu_sma: 'উচ্চ মাধ্যমিক', edu_d3: 'ডিপ্লোমা', edu_s1: 'স্নাতক', edu_s2: 'স্নাতকোত্তর', edu_s3: 'ডক্টরেট', edu_any: 'শিক্ষাগত সনদ লাগবে না', noEduCertHint: 'ডিপ্লোমা বা স্কুল সনদ ছাড়াই আবেদন করা যায় এমন চাকরি',
     typeSkill: 'একটি দক্ষতা লিখুন', skillsStepHint: 'একটি পরামর্শ বেছে নিন বা নিজে লিখুন। প্রতিটি দক্ষতার স্তর ও অভিজ্ঞতার বছর নির্ধারণ করুন।', level: 'স্তর', yearsExp: 'বছর', noSkillsYet: 'এখনও কোনো দক্ষতা নেই।', skillExists: 'এই দক্ষতাটি ইতিমধ্যে যোগ করা হয়েছে',
     level_1: 'প্রাথমিক', level_2: 'মধ্যম', level_3: 'উন্নত', language: 'ভাষা', addLanguage: 'ভাষা যোগ করুন', noLanguagesYet: 'এখনও কোনো ভাষা নেই।',
     lang_basic: 'প্রাথমিক', lang_intermediate: 'মধ্যম', lang_fluent: 'সাবলীল', lang_native: 'মাতৃভাষা',

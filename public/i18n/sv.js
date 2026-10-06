@@ -46,7 +46,7 @@
     educationN: 'Utbildning {n}', experienceN: 'Erfarenhet {n}', eduLevel: 'Nivå', gradYear: 'Examensår', institution: 'Lärosäte', major: 'Inriktning', position: 'Befattning', companyLabel: 'Företag',
     startMonth: 'Start', endMonth: 'Slut', present: 'Nuvarande', currentlyWorking: 'Jag arbetar här för närvarande', jobDesc: 'Arbetsbeskrivning', experience: 'Erfarenhet',
     addEducation: 'Lägg till utbildning', addExperience: 'Lägg till erfarenhet', noEducationYet: 'Ingen utbildning ännu.', noExperienceYet: 'Ingen erfarenhet ännu.',
-    edu_sma: 'Gymnasium', edu_d3: 'Yrkesexamen', edu_s1: 'Kandidatexamen', edu_s2: 'Masterexamen', edu_s3: 'Doktorsexamen', edu_any: 'Alla nivåer',
+    edu_sma: 'Gymnasium', edu_d3: 'Yrkesexamen', edu_s1: 'Kandidatexamen', edu_s2: 'Masterexamen', edu_s3: 'Doktorsexamen', edu_any: 'Inget utbildningsbevis krävs', noEduCertHint: 'Jobb du kan söka utan examensbevis eller skolbetyg',
     typeSkill: 'Skriv en färdighet', skillsStepHint: 'Välj ett förslag eller skriv en egen. Ange nivå och antal års erfarenhet för varje färdighet.', level: 'Nivå', yearsExp: 'År', noSkillsYet: 'Inga färdigheter ännu.', skillExists: 'Denna färdighet har redan lagts till',
     level_1: 'Nybörjare', level_2: 'Medel', level_3: 'Avancerad', language: 'Språk', addLanguage: 'Lägg till språk', noLanguagesYet: 'Inga språk ännu.',
     lang_basic: 'Grundläggande', lang_intermediate: 'Medel', lang_fluent: 'Flytande', lang_native: 'Modersmål',

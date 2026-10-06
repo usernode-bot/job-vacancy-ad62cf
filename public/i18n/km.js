@@ -46,7 +46,7 @@
     educationN: 'ការសិក្សា {n}', experienceN: 'បទពិសោធន៍ {n}', eduLevel: 'កម្រិត', gradYear: 'ឆ្នាំបញ្ចប់ការសិក្សា', institution: 'គ្រឹះស្ថាន', major: 'មុខជំនាញ', position: 'មុខតំណែង', companyLabel: 'ក្រុមហ៊ុន',
     startMonth: 'ចាប់ផ្តើម', endMonth: 'បញ្ចប់', present: 'បច្ចុប្បន្ន', currentlyWorking: 'ខ្ញុំកំពុងធ្វើការនៅទីនេះ', jobDesc: 'ការពិពណ៌នាការងារ', experience: 'បទពិសោធន៍',
     addEducation: 'បន្ថែមការសិក្សា', addExperience: 'បន្ថែមបទពិសោធន៍', noEducationYet: 'មិនទាន់មានការសិក្សា។', noExperienceYet: 'មិនទាន់មានបទពិសោធន៍។',
-    edu_sma: 'វិទ្យាល័យ', edu_d3: 'សញ្ញាបត្ររង', edu_s1: 'បរិញ្ញាបត្រ', edu_s2: 'អនុបណ្ឌិត', edu_s3: 'បណ្ឌិត', edu_any: 'គ្រប់កម្រិត',
+    edu_sma: 'វិទ្យាល័យ', edu_d3: 'សញ្ញាបត្ររង', edu_s1: 'បរិញ្ញាបត្រ', edu_s2: 'អនុបណ្ឌិត', edu_s3: 'បណ្ឌិត', edu_any: 'មិនតម្រូវឱ្យមានសញ្ញាបត្រសិក្សា', noEduCertHint: 'ការងារដែលអ្នកអាចដាក់ពាក្យបានដោយគ្មានសញ្ញាបត្រ ឬវិញ្ញាបនបត្រសាលា',
     typeSkill: 'វាយបញ្ចូលជំនាញ', skillsStepHint: 'ជ្រើសរើសការណែនាំ ឬវាយបញ្ចូលដោយខ្លួនឯង។ កំណត់កម្រិត និងចំនួនឆ្នាំបទពិសោធន៍សម្រាប់ជំនាញនីមួយៗ។', level: 'កម្រិត', yearsExp: 'ឆ្នាំ', noSkillsYet: 'មិនទាន់មានជំនាញ។', skillExists: 'ជំនាញនេះត្រូវបានបន្ថែមរួចហើយ',
     level_1: 'ចាប់ផ្តើម', level_2: 'មធ្យម', level_3: 'កម្រិតខ្ពស់', language: 'ភាសា', addLanguage: 'បន្ថែមភាសា', noLanguagesYet: 'មិនទាន់មានភាសា។',
     lang_basic: 'មូលដ្ឋាន', lang_intermediate: 'មធ្យម', lang_fluent: 'ស្ទាត់', lang_native: 'ភាសាកំណើត',

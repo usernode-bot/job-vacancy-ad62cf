@@ -46,7 +46,7 @@
     educationN: 'Wykształcenie {n}', experienceN: 'Doświadczenie {n}', eduLevel: 'Poziom', gradYear: 'Rok ukończenia', institution: 'Uczelnia/szkoła', major: 'Kierunek', position: 'Stanowisko', companyLabel: 'Firma',
     startMonth: 'Początek', endMonth: 'Koniec', present: 'Obecnie', currentlyWorking: 'Obecnie tu pracuję', jobDesc: 'Opis obowiązków', experience: 'Doświadczenie',
     addEducation: 'Dodaj wykształcenie', addExperience: 'Dodaj doświadczenie', noEducationYet: 'Brak wykształcenia.', noExperienceYet: 'Brak doświadczenia.',
-    edu_sma: 'Średnie', edu_d3: 'Policealne', edu_s1: 'Licencjat', edu_s2: 'Magister', edu_s3: 'Doktorat', edu_any: 'Dowolny poziom',
+    edu_sma: 'Średnie', edu_d3: 'Policealne', edu_s1: 'Licencjat', edu_s2: 'Magister', edu_s3: 'Doktorat', edu_any: 'Bez wymaganego świadectwa ukończenia szkoły', noEduCertHint: 'Oferty, na które możesz aplikować bez dyplomu czy świadectwa szkolnego',
     typeSkill: 'Wpisz umiejętność', skillsStepHint: 'Wybierz podpowiedź lub wpisz własną. Ustaw poziom i lata doświadczenia dla każdej umiejętności.', level: 'Poziom', yearsExp: 'Lata', noSkillsYet: 'Brak umiejętności.', skillExists: 'Ta umiejętność jest już dodana',
     level_1: 'Początkujący', level_2: 'Średniozaawansowany', level_3: 'Zaawansowany', language: 'Język', addLanguage: 'Dodaj język', noLanguagesYet: 'Brak języków.',
     lang_basic: 'Podstawowy', lang_intermediate: 'Średniozaawansowany', lang_fluent: 'Biegły', lang_native: 'Ojczysty',

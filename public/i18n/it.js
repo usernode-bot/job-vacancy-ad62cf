@@ -46,7 +46,7 @@
     educationN: 'Istruzione {n}', experienceN: 'Esperienza {n}', eduLevel: 'Livello', gradYear: 'Anno di conseguimento', institution: 'Istituto', major: 'Indirizzo di studio', position: 'Posizione', companyLabel: 'Azienda',
     startMonth: 'Inizio', endMonth: 'Fine', present: 'Presente', currentlyWorking: 'Lavoro attualmente qui', jobDesc: 'Descrizione del ruolo', experience: 'Esperienza',
     addEducation: 'Aggiungi istruzione', addExperience: 'Aggiungi esperienza', noEducationYet: 'Ancora nessun titolo di studio.', noExperienceYet: 'Ancora nessuna esperienza.',
-    edu_sma: 'Diploma di maturità', edu_d3: 'Diploma tecnico superiore', edu_s1: 'Laurea triennale', edu_s2: 'Laurea magistrale', edu_s3: 'Dottorato', edu_any: 'Qualsiasi livello',
+    edu_sma: 'Diploma di maturità', edu_d3: 'Diploma tecnico superiore', edu_s1: 'Laurea triennale', edu_s2: 'Laurea magistrale', edu_s3: 'Dottorato', edu_any: 'Nessun titolo di studio richiesto', noEduCertHint: 'Offerte a cui puoi candidarti senza diploma o titolo di studio',
     typeSkill: 'Digiti una competenza', skillsStepHint: 'Scelga un suggerimento o digiti la sua. Indichi il livello e gli anni di esperienza per ogni competenza.', level: 'Livello', yearsExp: 'Anni', noSkillsYet: 'Ancora nessuna competenza.', skillExists: 'Questa competenza è già stata aggiunta',
     level_1: 'Principiante', level_2: 'Intermedio', level_3: 'Avanzato', language: 'Lingua', addLanguage: 'Aggiungi lingua', noLanguagesYet: 'Ancora nessuna lingua.',
     lang_basic: 'Base', lang_intermediate: 'Intermedio', lang_fluent: 'Fluente', lang_native: 'Madrelingua',

@@ -46,7 +46,7 @@
     educationN: 'शिक्षा {n}', experienceN: 'अनुभव {n}', eduLevel: 'तह', gradYear: 'उत्तीर्ण वर्ष', institution: 'संस्था', major: 'विषय', position: 'पद', companyLabel: 'कम्पनी',
     startMonth: 'सुरु', endMonth: 'अन्त्य', present: 'हालसम्म', currentlyWorking: 'म हाल यहाँ काम गर्छु', jobDesc: 'कामको विवरण', experience: 'अनुभव',
     addEducation: 'शिक्षा थप्नुहोस्', addExperience: 'अनुभव थप्नुहोस्', noEducationYet: 'अहिलेसम्म शिक्षा थपिएको छैन।', noExperienceYet: 'अहिलेसम्म अनुभव थपिएको छैन।',
-    edu_sma: 'उच्च माध्यमिक', edu_d3: 'डिप्लोमा', edu_s1: 'स्नातक', edu_s2: 'स्नातकोत्तर', edu_s3: 'विद्यावारिधि', edu_any: 'जुनसुकै तह',
+    edu_sma: 'उच्च माध्यमिक', edu_d3: 'डिप्लोमा', edu_s1: 'स्नातक', edu_s2: 'स्नातकोत्तर', edu_s3: 'विद्यावारिधि', edu_any: 'शैक्षिक प्रमाणपत्र आवश्यक छैन', noEduCertHint: 'डिप्लोमा वा विद्यालयको प्रमाणपत्रबिना आवेदन दिन सकिने कामहरू',
     typeSkill: 'सीप टाइप गर्नुहोस्', skillsStepHint: 'कुनै सुझाव छान्नुहोस् वा आफैं टाइप गर्नुहोस्। प्रत्येक सीपको स्तर र अनुभवका वर्ष तोक्नुहोस्।', level: 'स्तर', yearsExp: 'वर्ष', noSkillsYet: 'अहिलेसम्म कुनै सीप छैन।', skillExists: 'यो सीप पहिले नै थपिएको छ',
     level_1: 'सुरुवाती', level_2: 'मध्यम', level_3: 'उन्नत', language: 'भाषा', addLanguage: 'भाषा थप्नुहोस्', noLanguagesYet: 'अहिलेसम्म कुनै भाषा छैन।',
     lang_basic: 'आधारभूत', lang_intermediate: 'मध्यम', lang_fluent: 'धाराप्रवाह', lang_native: 'मातृभाषा',

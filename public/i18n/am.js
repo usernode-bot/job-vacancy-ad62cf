@@ -46,7 +46,7 @@
     educationN: 'ትምህርት {n}', experienceN: 'የሥራ ልምድ {n}', eduLevel: 'ደረጃ', gradYear: 'የምረቃ ዓመት', institution: 'ተቋም', major: 'የትምህርት መስክ', position: 'የሥራ መደብ', companyLabel: 'ኩባንያ',
     startMonth: 'መጀመሪያ', endMonth: 'መጨረሻ', present: 'እስካሁን', currentlyWorking: 'በአሁኑ ጊዜ እዚህ እሠራለሁ', jobDesc: 'የሥራ መግለጫ', experience: 'የሥራ ልምድ',
     addEducation: 'ትምህርት ያክሉ', addExperience: 'የሥራ ልምድ ያክሉ', noEducationYet: 'እስካሁን ምንም ትምህርት የለም።', noExperienceYet: 'እስካሁን ምንም የሥራ ልምድ የለም።',
-    edu_sma: 'ሁለተኛ ደረጃ ትምህርት', edu_d3: 'ዲፕሎማ', edu_s1: 'የመጀመሪያ ዲግሪ', edu_s2: 'ሁለተኛ ዲግሪ', edu_s3: 'ዶክትሬት', edu_any: 'ማንኛውም ደረጃ',
+    edu_sma: 'ሁለተኛ ደረጃ ትምህርት', edu_d3: 'ዲፕሎማ', edu_s1: 'የመጀመሪያ ዲግሪ', edu_s2: 'ሁለተኛ ዲግሪ', edu_s3: 'ዶክትሬት', edu_any: 'የትምህርት ማስረጃ አያስፈልግም', noEduCertHint: 'ያለ ዲፕሎማ ወይም የትምህርት ቤት ማስረጃ ማመልከት የሚችሉባቸው ሥራዎች',
     typeSkill: 'ክህሎት ይጻፉ', skillsStepHint: 'ከጥቆማዎቹ ይምረጡ ወይም የራስዎን ይጻፉ። ለእያንዳንዱ ክህሎት ደረጃውን እና የልምድ ዓመታትን ያስቀምጡ።', level: 'ደረጃ', yearsExp: 'ዓመታት', noSkillsYet: 'እስካሁን ምንም ክህሎት የለም።', skillExists: 'ይህ ክህሎት አስቀድሞ ተጨምሯል',
     level_1: 'ጀማሪ', level_2: 'መካከለኛ', level_3: 'ከፍተኛ', language: 'ቋንቋ', addLanguage: 'ቋንቋ ያክሉ', noLanguagesYet: 'እስካሁን ምንም ቋንቋ የለም።',
     lang_basic: 'መሠረታዊ', lang_intermediate: 'መካከለኛ', lang_fluent: 'አቀላጥፎ', lang_native: 'የአፍ መፍቻ',

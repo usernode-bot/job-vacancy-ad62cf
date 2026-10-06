@@ -46,7 +46,7 @@
     educationN: 'విద్య {n}', experienceN: 'అనుభవం {n}', eduLevel: 'స్థాయి', gradYear: 'ఉత్తీర్ణత సంవత్సరం', institution: 'విద్యాసంస్థ', major: 'ప్రధాన విషయం', position: 'హోదా', companyLabel: 'కంపెనీ',
     startMonth: 'ప్రారంభం', endMonth: 'ముగింపు', present: 'ప్రస్తుతం', currentlyWorking: 'నేను ప్రస్తుతం ఇక్కడ పని చేస్తున్నాను', jobDesc: 'ఉద్యోగ వివరణ', experience: 'అనుభవం',
     addEducation: 'విద్యను జోడించండి', addExperience: 'అనుభవాన్ని జోడించండి', noEducationYet: 'ఇంకా విద్య వివరాలు లేవు.', noExperienceYet: 'ఇంకా అనుభవం లేదు.',
-    edu_sma: 'ఇంటర్మీడియట్', edu_d3: 'డిప్లొమా', edu_s1: 'బ్యాచిలర్స్', edu_s2: 'మాస్టర్స్', edu_s3: 'డాక్టరేట్', edu_any: 'ఏ స్థాయి అయినా',
+    edu_sma: 'ఇంటర్మీడియట్', edu_d3: 'డిప్లొమా', edu_s1: 'బ్యాచిలర్స్', edu_s2: 'మాస్టర్స్', edu_s3: 'డాక్టరేట్', edu_any: 'విద్యా ధృవపత్రం అవసరం లేదు', noEduCertHint: 'డిప్లొమా లేదా పాఠశాల ధృవపత్రం లేకుండా దరఖాస్తు చేయగల ఉద్యోగాలు',
     typeSkill: 'నైపుణ్యాన్ని టైప్ చేయండి', skillsStepHint: 'సూచనను ఎంచుకోండి లేదా మీ స్వంతంగా టైప్ చేయండి. ప్రతి నైపుణ్యానికి స్థాయి మరియు అనుభవ సంవత్సరాలను సెట్ చేయండి.', level: 'స్థాయి', yearsExp: 'సంవత్సరాలు', noSkillsYet: 'ఇంకా నైపుణ్యాలు లేవు.', skillExists: 'ఈ నైపుణ్యం ఇప్పటికే జోడించబడింది',
     level_1: 'ప్రారంభ స్థాయి', level_2: 'మధ్యస్థ స్థాయి', level_3: 'ఉన్నత స్థాయి', language: 'భాష', addLanguage: 'భాషను జోడించండి', noLanguagesYet: 'ఇంకా భాషలు లేవు.',
     lang_basic: 'ప్రాథమికం', lang_intermediate: 'మధ్యస్థం', lang_fluent: 'అనర్గళం', lang_native: 'మాతృభాష',

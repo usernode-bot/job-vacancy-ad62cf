@@ -50,7 +50,7 @@
     educationN: 'Pendidikan {n}', experienceN: 'Pengalaman {n}', eduLevel: 'Jenjang', gradYear: 'Tahun lulus', institution: 'Institusi', major: 'Jurusan', position: 'Posisi', companyLabel: 'Perusahaan',
     startMonth: 'Mulai', endMonth: 'Selesai', present: 'Sekarang', currentlyWorking: 'Masih bekerja di sini', jobDesc: 'Deskripsi pekerjaan', experience: 'Pengalaman',
     addEducation: 'Tambah pendidikan', addExperience: 'Tambah pengalaman', noEducationYet: 'Belum ada pendidikan.', noExperienceYet: 'Belum ada pengalaman.',
-    edu_sma: 'SMA/SMK', edu_d3: 'D3', edu_s1: 'S1', edu_s2: 'S2', edu_s3: 'S3', edu_any: 'Semua jenjang',
+    edu_sma: 'SMA/SMK', edu_d3: 'D3', edu_s1: 'S1', edu_s2: 'S2', edu_s3: 'S3', edu_any: 'Tanpa ijazah', noEduCertHint: 'Lowongan yang bisa dilamar tanpa ijazah',
     typeSkill: 'Ketik skill', skillsStepHint: 'Pilih dari saran atau ketik sendiri. Atur tingkat dan lama pengalaman tiap skill.', level: 'Tingkat', yearsExp: 'Tahun', noSkillsYet: 'Belum ada skill.', skillExists: 'Skill ini sudah ada',
     level_1: 'Pemula', level_2: 'Menengah', level_3: 'Mahir', language: 'Bahasa', addLanguage: 'Tambah bahasa', noLanguagesYet: 'Belum ada bahasa.',
     lang_basic: 'Dasar', lang_intermediate: 'Menengah', lang_fluent: 'Fasih', lang_native: 'Bahasa ibu',

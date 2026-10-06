@@ -46,7 +46,7 @@
     educationN: 'Studii {n}', experienceN: 'Experiență {n}', eduLevel: 'Nivel', gradYear: 'Anul absolvirii', institution: 'Instituție', major: 'Specializare', position: 'Funcție', companyLabel: 'Companie',
     startMonth: 'Început', endMonth: 'Sfârșit', present: 'Prezent', currentlyWorking: 'Lucrez în prezent aici', jobDesc: 'Descrierea postului', experience: 'Experiență',
     addEducation: 'Adăugați studii', addExperience: 'Adăugați experiență', noEducationYet: 'Încă nu există studii.', noExperienceYet: 'Încă nu există experiență.',
-    edu_sma: 'Liceu', edu_d3: 'Studii postliceale', edu_s1: 'Licență', edu_s2: 'Master', edu_s3: 'Doctorat', edu_any: 'Orice nivel',
+    edu_sma: 'Liceu', edu_d3: 'Studii postliceale', edu_s1: 'Licență', edu_s2: 'Master', edu_s3: 'Doctorat', edu_any: 'Nu este necesară o diplomă de studii', noEduCertHint: 'Locuri de muncă la care poți aplica fără diplomă sau certificat școlar',
     typeSkill: 'Introduceți o competență', skillsStepHint: 'Alegeți o sugestie sau introduceți propria competență. Setați nivelul și anii de experiență pentru fiecare.', level: 'Nivel', yearsExp: 'Ani', noSkillsYet: 'Încă nu există competențe.', skillExists: 'Această competență a fost deja adăugată',
     level_1: 'Începător', level_2: 'Intermediar', level_3: 'Avansat', language: 'Limbă', addLanguage: 'Adăugați o limbă', noLanguagesYet: 'Încă nu există limbi.',
     lang_basic: 'Elementar', lang_intermediate: 'Intermediar', lang_fluent: 'Fluent', lang_native: 'Nativ',

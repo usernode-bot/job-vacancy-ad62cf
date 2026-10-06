@@ -46,7 +46,7 @@
     educationN: 'Eğitim {n}', experienceN: 'Deneyim {n}', eduLevel: 'Seviye', gradYear: 'Mezuniyet yılı', institution: 'Kurum', major: 'Bölüm', position: 'Pozisyon', companyLabel: 'Şirket',
     startMonth: 'Başlangıç', endMonth: 'Bitiş', present: 'Halen', currentlyWorking: 'Halen burada çalışıyorum', jobDesc: 'İş tanımı', experience: 'Deneyim',
     addEducation: 'Eğitim ekle', addExperience: 'Deneyim ekle', noEducationYet: 'Henüz eğitim bilgisi yok.', noExperienceYet: 'Henüz deneyim yok.',
-    edu_sma: 'Lise', edu_d3: 'Ön lisans', edu_s1: 'Lisans', edu_s2: 'Yüksek lisans', edu_s3: 'Doktora', edu_any: 'Tüm seviyeler',
+    edu_sma: 'Lise', edu_d3: 'Ön lisans', edu_s1: 'Lisans', edu_s2: 'Yüksek lisans', edu_s3: 'Doktora', edu_any: 'Diploma şartı yok', noEduCertHint: 'Diploma veya okul belgesi olmadan başvurabileceğin ilanlar',
     typeSkill: 'Bir beceri yazın', skillsStepHint: 'Bir öneri seçin veya kendiniz yazın. Her beceri için seviyeyi ve deneyim yılını belirtin.', level: 'Seviye', yearsExp: 'Yıl', noSkillsYet: 'Henüz beceri yok.', skillExists: 'Bu beceri zaten eklendi',
     level_1: 'Başlangıç', level_2: 'Orta', level_3: 'İleri', language: 'Dil', addLanguage: 'Dil ekle', noLanguagesYet: 'Henüz dil yok.',
     lang_basic: 'Temel', lang_intermediate: 'Orta', lang_fluent: 'Akıcı', lang_native: 'Ana dil',

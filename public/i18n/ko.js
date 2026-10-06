@@ -46,7 +46,7 @@
     educationN: '학력 {n}', experienceN: '경력 {n}', eduLevel: '학위', gradYear: '졸업 연도', institution: '학교', major: '전공', position: '직책', companyLabel: '회사',
     startMonth: '시작', endMonth: '종료', present: '현재', currentlyWorking: '현재 재직 중', jobDesc: '담당 업무', experience: '경력',
     addEducation: '학력 추가', addExperience: '경력 추가', noEducationYet: '등록된 학력이 없습니다.', noExperienceYet: '등록된 경력이 없습니다.',
-    edu_sma: '고등학교', edu_d3: '전문학사', edu_s1: '학사', edu_s2: '석사', edu_s3: '박사', edu_any: '학력 무관',
+    edu_sma: '고등학교', edu_d3: '전문학사', edu_s1: '학사', edu_s2: '석사', edu_s3: '박사', edu_any: '학력 증명서 불필요', noEduCertHint: '졸업장이나 학력 증명서 없이 지원할 수 있는 채용',
     typeSkill: '기술 입력', skillsStepHint: '추천 항목을 선택하거나 직접 입력하세요. 각 기술의 수준과 경력 연수를 설정해 주세요.', level: '수준', yearsExp: '연수', noSkillsYet: '등록된 기술이 없습니다.', skillExists: '이미 추가된 기술입니다',
     level_1: '초급', level_2: '중급', level_3: '고급', language: '언어', addLanguage: '언어 추가', noLanguagesYet: '등록된 언어가 없습니다.',
     lang_basic: '기초', lang_intermediate: '중급', lang_fluent: '유창함', lang_native: '모국어',

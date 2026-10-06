@@ -83,5 +83,6 @@
     per_month: '/മാസം', per_year: '/വർഷം', per_hour: '/മണിക്കൂർ',
     cat_it: 'IT', cat_health: 'ആരോഗ്യപരിപാലനം', cat_education: 'വിദ്യാഭ്യാസം', cat_finance: 'ധനകാര്യം', cat_engineering: 'എഞ്ചിനീയറിംഗ്', cat_creative: 'ക്രിയേറ്റീവ്', cat_marketing: 'മാർക്കറ്റിംഗ്', cat_sales: 'വിൽപ്പനയും സേവനവും', cat_hospitality: 'ആതിഥ്യം', cat_logistics: 'ലോജിസ്റ്റിക്സ്', cat_agriculture: 'കൃഷി',
     pageNotFound: 'പേജ് കണ്ടെത്തിയില്ല', pageNotFoundBody: 'ഈ ലിങ്ക് നിലവിലില്ല.',
+    navNotifs: 'അറിയിപ്പുകൾ', notifHint: 'നിങ്ങളുടെ പ്രൊഫൈലിലെ വൈദഗ്ധ്യവുമായി ചേരുന്ന പുതിയ ജോലികൾ.', notifEmptyTitle: 'ഇതുവരെ അറിയിപ്പുകളില്ല', notifEmptyBody: 'പുതിയ ജോലിക്ക് നിങ്ങളുടെ വൈദഗ്ധ്യം ആവശ്യമുണ്ടെങ്കിൽ അത് ഇവിടെ കാണാം.',
   },
 };

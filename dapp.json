@@ -93,6 +93,26 @@
       "path": "/#/job/j20",
       "expectSelector": "header [data-testid=no-cert-badge]",
       "expectText": "Barista"
+    },
+    {
+      "name": "Notifications page shows an empty state for a new account",
+      "path": "/#/notifications",
+      "expectSelector": "[data-testid=empty-state]",
+      "expectText": "No notifications yet"
+    },
+    {
+      "id": "notifications.list",
+      "name": "Notifications list renders demo job alerts",
+      "path": "/#/notifications?demo=1",
+      "expectSelector": "[data-testid=notif-item]",
+      "expectText": "Notifications",
+      "visual": true,
+      "impact": [
+        "public/index.html",
+        "public/i18n/**",
+        "lib/routes.js",
+        "lib/notify.js"
+      ]
     }
   ],
   "visibility": {

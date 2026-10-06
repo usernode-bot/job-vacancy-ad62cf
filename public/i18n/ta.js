@@ -83,5 +83,6 @@
     per_month: '/மாதம்', per_year: '/ஆண்டு', per_hour: '/மணி',
     cat_it: 'IT', cat_health: 'சுகாதாரம்', cat_education: 'கல்வி', cat_finance: 'நிதி', cat_engineering: 'பொறியியல்', cat_creative: 'படைப்பாற்றல்', cat_marketing: 'சந்தைப்படுத்தல்', cat_sales: 'விற்பனை & சேவை', cat_hospitality: 'விருந்தோம்பல்', cat_logistics: 'தளவாடங்கள்', cat_agriculture: 'வேளாண்மை',
     pageNotFound: 'பக்கம் கிடைக்கவில்லை', pageNotFoundBody: 'இந்த இணைப்பு இல்லை.',
+    navNotifs: 'அறிவிப்புகள்', notifHint: 'உங்கள் சுயவிவரத்தின் திறமைகளுடன் பொருந்தும் புதிய வேலைகள்.', notifEmptyTitle: 'இன்னும் அறிவிப்புகள் இல்லை', notifEmptyBody: 'புதிய வேலைக்கு உங்களிடம் உள்ள திறமை தேவைப்பட்டால், அது இங்கே தோன்றும்.',
   },
 };

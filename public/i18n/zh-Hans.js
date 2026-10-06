@@ -83,5 +83,6 @@
     per_month: '/月', per_year: '/年', per_hour: '/小时',
     cat_it: 'IT', cat_health: '医疗健康', cat_education: '教育', cat_finance: '金融', cat_engineering: '工程', cat_creative: '创意', cat_marketing: '市场营销', cat_sales: '销售与服务', cat_hospitality: '酒店餐饮', cat_logistics: '物流', cat_agriculture: '农业',
     pageNotFound: '页面未找到', pageNotFoundBody: '该链接不存在。',
+    navNotifs: '通知', notifHint: '与您资料中的技能相符的新职位。', notifEmptyTitle: '还没有通知', notifEmptyBody: '当新职位需要您拥有的技能时，会显示在这里。',
   },
 };

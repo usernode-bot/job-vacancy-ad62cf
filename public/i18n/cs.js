@@ -83,5 +83,6 @@
     per_month: '/měs.', per_year: '/rok', per_hour: '/hod.',
     cat_it: 'IT', cat_health: 'Zdravotnictví', cat_education: 'Vzdělávání', cat_finance: 'Finance', cat_engineering: 'Strojírenství a technika', cat_creative: 'Kreativní obory', cat_marketing: 'Marketing', cat_sales: 'Prodej a služby', cat_hospitality: 'Pohostinství', cat_logistics: 'Logistika', cat_agriculture: 'Zemědělství',
     pageNotFound: 'Stránka nenalezena', pageNotFoundBody: 'Tento odkaz neexistuje.',
+    navNotifs: 'Oznámení', notifHint: 'Nové nabídky práce odpovídající dovednostem ve vašem profilu.', notifEmptyTitle: 'Zatím žádná oznámení', notifEmptyBody: 'Když bude nová nabídka práce potřebovat dovednost, kterou máte, objeví se zde.',
   },
 };

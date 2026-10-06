@@ -83,5 +83,6 @@
     per_month: '/เดือน', per_year: '/ปี', per_hour: '/ชม.',
     cat_it: 'ไอที', cat_health: 'สุขภาพ', cat_education: 'การศึกษา', cat_finance: 'การเงิน', cat_engineering: 'วิศวกรรม', cat_creative: 'งานสร้างสรรค์', cat_marketing: 'การตลาด', cat_sales: 'งานขายและบริการ', cat_hospitality: 'การโรงแรมและบริการ', cat_logistics: 'โลจิสติกส์', cat_agriculture: 'เกษตรกรรม',
     pageNotFound: 'ไม่พบหน้า', pageNotFoundBody: 'ลิงก์นี้ไม่มีอยู่',
+    navNotifs: 'การแจ้งเตือน', notifHint: 'งานใหม่ที่ตรงกับทักษะในโปรไฟล์ของคุณ', notifEmptyTitle: 'ยังไม่มีการแจ้งเตือน', notifEmptyBody: 'เมื่อมีงานใหม่ที่ต้องการทักษะที่คุณมี งานนั้นจะปรากฏที่นี่',
   },
 };

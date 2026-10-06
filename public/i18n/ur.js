@@ -83,5 +83,6 @@
     per_month: '/ماہ', per_year: '/سال', per_hour: '/گھنٹہ',
     cat_it: 'آئی ٹی', cat_health: 'صحت', cat_education: 'تعلیم', cat_finance: 'مالیات', cat_engineering: 'انجینئرنگ', cat_creative: 'تخلیقی', cat_marketing: 'مارکیٹنگ', cat_sales: 'سیلز اور سروس', cat_hospitality: 'مہمان نوازی', cat_logistics: 'لاجسٹکس', cat_agriculture: 'زراعت',
     pageNotFound: 'صفحہ نہیں ملا', pageNotFoundBody: 'یہ لنک موجود نہیں ہے۔',
+    navNotifs: 'اطلاعات', notifHint: 'آپ کی پروفائل کی مہارتوں سے ملتی ہوئی نئی نوکریاں۔', notifEmptyTitle: 'ابھی کوئی اطلاع نہیں', notifEmptyBody: 'جب کسی نئی نوکری کو آپ کی مہارت کی ضرورت ہوگی، تو یہ یہاں نظر آئےگی۔',
   },
 };

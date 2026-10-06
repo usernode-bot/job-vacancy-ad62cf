@@ -87,5 +87,6 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kesehatan', cat_education: 'Pendidikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
+    navNotifs: 'Notifikasi', notifHint: 'Pekerjaan baru yang sesuai dengan keahlian di profil Anda.', notifEmptyTitle: 'Belum ada notifikasi', notifEmptyBody: 'Saat ada pekerjaan baru yang membutuhkan keahlian Anda, notifikasinya akan muncul di sini.',
   },
 };

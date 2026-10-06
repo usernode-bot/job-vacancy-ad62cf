@@ -83,5 +83,6 @@
     per_month: '/በወር', per_year: '/በዓመት', per_hour: '/በሰዓት',
     cat_it: 'IT', cat_health: 'ጤና አጠባበቅ', cat_education: 'ትምህርት', cat_finance: 'ፋይናንስ', cat_engineering: 'ምህንድስና', cat_creative: 'ፈጠራ', cat_marketing: 'ማርኬቲንግ', cat_sales: 'ሽያጭ እና አገልግሎት', cat_hospitality: 'መስተንግዶ', cat_logistics: 'ሎጂስቲክስ', cat_agriculture: 'ግብርና',
     pageNotFound: 'ገጹ አልተገኘም', pageNotFoundBody: 'ይህ ሊንክ የለም።',
+    navNotifs: 'ማሳወቂያዎች', notifHint: 'ከመገለጫዎ ክህሎቶች ጋር የሚዛመዱ አዳዲስ ሥራዎች።', notifEmptyTitle: 'እስካሁን ማሳወቂያ የለም', notifEmptyBody: 'አዲስ ሥራ የሚፈልገው ክህሎት ሲኖርዎ እዚህ ይታያል።',
   },
 };

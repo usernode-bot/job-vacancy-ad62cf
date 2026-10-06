@@ -83,5 +83,6 @@
     per_month: '/شهر', per_year: '/سنة', per_hour: '/ساعة',
     cat_it: 'تقنية المعلومات', cat_health: 'الرعاية الصحية', cat_education: 'التعليم', cat_finance: 'المالية', cat_engineering: 'الهندسة', cat_creative: 'الإبداع', cat_marketing: 'التسويق', cat_sales: 'المبيعات والخدمة', cat_hospitality: 'الضيافة', cat_logistics: 'الخدمات اللوجستية', cat_agriculture: 'الزراعة',
     pageNotFound: 'الصفحة غير موجودة', pageNotFoundBody: 'هذا الرابط غير موجود.',
+    navNotifs: 'الإشعارات', notifHint: 'وظائف جديدة تطابق مهاراتك في ملفك الشخصي.', notifEmptyTitle: 'لا إشعارات بعد', notifEmptyBody: 'عندما تحتاج وظيفة جديدة إلى مهارة تملكها، ستظهر هنا.',
   },
 };

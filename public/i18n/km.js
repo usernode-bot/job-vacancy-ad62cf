@@ -83,5 +83,6 @@
     per_month: '/ខែ', per_year: '/ឆ្នាំ', per_hour: '/ម៉ោង',
     cat_it: 'IT', cat_health: 'សុខាភិបាល', cat_education: 'អប់រំ', cat_finance: 'ហិរញ្ញវត្ថុ', cat_engineering: 'វិស្វកម្ម', cat_creative: 'ច្នៃប្រឌិត', cat_marketing: 'ទីផ្សារ', cat_sales: 'លក់ និងសេវាកម្ម', cat_hospitality: 'បដិសណ្ឋារកិច្ច', cat_logistics: 'ភស្តុភារ', cat_agriculture: 'កសិកម្ម',
     pageNotFound: 'រកមិនឃើញទំព័រ', pageNotFoundBody: 'តំណនេះមិនមានទេ។',
+    navNotifs: 'ការជូនដំណឹង', notifHint: 'ការងារថ្មីដែលត្រូវនឹងជំនាញក្នុងប្រវត្តិរូបរបស់អ្នក។', notifEmptyTitle: 'មិនទាន់មានការជូនដំណឹងទេ', notifEmptyBody: 'ពេលការងារថ្មីត្រូវការជំនាញដែលអ្នកមាន វានឹងបង្ហាញនៅទីនេះ។',
   },
 };

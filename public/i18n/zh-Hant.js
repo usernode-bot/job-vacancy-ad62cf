@@ -83,5 +83,6 @@
     per_month: '/月', per_year: '/年', per_hour: '/小時',
     cat_it: 'IT', cat_health: '醫療保健', cat_education: '教育', cat_finance: '金融', cat_engineering: '工程', cat_creative: '創意', cat_marketing: '行銷', cat_sales: '銷售與服務', cat_hospitality: '餐旅', cat_logistics: '物流', cat_agriculture: '農業',
     pageNotFound: '找不到頁面', pageNotFoundBody: '此連結不存在。',
+    navNotifs: '通知', notifHint: '符合您資料中技能的新職缺。', notifEmptyTitle: '目前還沒有通知', notifEmptyBody: '當新職缺需要您擁有的技能時，就會顯示在這裡。',
   },
 };

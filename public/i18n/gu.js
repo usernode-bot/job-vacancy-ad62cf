@@ -83,5 +83,6 @@
     per_month: '/મહિનો', per_year: '/વર્ષ', per_hour: '/કલાક',
     cat_it: 'IT', cat_health: 'આરોગ્ય સંભાળ', cat_education: 'શિક્ષણ', cat_finance: 'નાણાં', cat_engineering: 'એન્જિનિયરિંગ', cat_creative: 'સર્જનાત્મક', cat_marketing: 'માર્કેટિંગ', cat_sales: 'વેચાણ અને સેવા', cat_hospitality: 'આતિથ્ય', cat_logistics: 'લોજિસ્ટિક્સ', cat_agriculture: 'કૃષિ',
     pageNotFound: 'પેજ મળ્યું નથી', pageNotFoundBody: 'આ લિંક અસ્તિત્વમાં નથી.',
+    navNotifs: 'સૂચનાઓ', notifHint: 'તમારી પ્રોફાઇલની કૌશલ્યો સાથે મેળ ખાતી નવી નોકરીઓ.', notifEmptyTitle: 'હજી કોઈ સૂચના નથી', notifEmptyBody: 'જ્યારે નવી નોકરીને તમારી પાસે રહેલી કૌશલ્યની જરૂર હોય, ત્યારે તે અહીં દેખાશે.',
   },
 };

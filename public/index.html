@@ -290,7 +290,6 @@
 
   // Live rates from a free, key-less source, cached for 12 hours. Any failure
   // leaves the built-in rates in place.
-  const RATES_URL = 'https://open.er-api.com/v6/latest/USD';
   const RATES_CACHE_KEY = 'lokerdunia.rates';
   const RATES_TTL = 12 * 3600 * 1000;
   function applyRates(r, date) {
@@ -299,21 +298,18 @@
     if (n && date) RATES_DATE = date;
     return n > 0;
   }
+  // Rates come from our own server (which caches them); the browser never calls
+  // the rates host itself. Any failure leaves the cached or built-in rates.
   async function loadRates() {
     const cached = readJson(RATES_CACHE_KEY);
     if (cached && cached.rates && Date.now() - cached.at < RATES_TTL) { applyRates(cached.rates, cached.date); return true; }
     try {
-      const res = await fetch(RATES_URL);
-      if (!res.ok) throw new Error('rates ' + res.status);
-      const body = await res.json();
-      if (body.result !== 'success' || !body.rates || body.rates.USD !== 1) throw new Error('rates payload');
-      const date = new Date(body.time_last_update_unix * 1000).toISOString().slice(0, 10);
-      if (!applyRates(body.rates, date)) throw new Error('rates empty');
-      try { localStorage.setItem(RATES_CACHE_KEY, JSON.stringify({ at: Date.now(), date, rates: body.rates })); } catch (e) {}
+      const body = await request('GET', '/rates');
+      if (!body || !body.rates || !applyRates(body.rates, body.date)) throw new Error('unavailable');
+      try { localStorage.setItem(RATES_CACHE_KEY, JSON.stringify({ at: Date.now(), date: body.date, rates: body.rates })); } catch (e) {}
       return true;
     } catch (e) {
       if (cached && cached.rates) applyRates(cached.rates, cached.date);
-      console.warn('exchange rates unavailable: ' + e.message);
       return false;
     }
   }

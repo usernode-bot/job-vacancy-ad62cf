@@ -524,7 +524,7 @@
   /* ---------- search ---------- */
   const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false, noCert: false });
   let filters = emptyFilters();
-  const ui = { matchMode: false, sort: 'newest' };
+  const ui = { matchMode: false, sort: 'newest', countryListOpen: false };
   function filterCurrency() { return viewerCurrency() || 'USD'; }
   function filterJobs(f) {
     const words = f.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -968,6 +968,44 @@
       '<button type="button" data-action="reset-filters" class="' + C.btnSecondary + ' w-full">' + t('resetFilters') + '</button>' +
       '</form>';
   }
+  // Country list on Find Jobs: counts follow every filter except country itself,
+  // so a number is what you get after picking that row.
+  const COUNTRY_LIST_TOP = 8;
+  function countryFacets() {
+    const counts = {};
+    filterJobs(Object.assign({}, filters, { country: '' })).forEach(j => { counts[j.country] = (counts[j.country] || 0) + 1; });
+    if (filters.country && !(filters.country in counts)) counts[filters.country] = 0;
+    const list = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || countryName(a).localeCompare(countryName(b), lang));
+    return { list, counts, total: list.reduce((n, c) => n + counts[c], 0) };
+  }
+  function countryList(mode) {
+    if (!db.jobs.length) return '';
+    const { list, counts, total } = countryFacets();
+    const sel = filters.country;
+    const on = cc => cc === sel;
+    if (mode === 'strip') {
+      const pill = (cc, flagStr, name, n) => '<button type="button" data-action="list-country" data-cc="' + cc + '" aria-pressed="' + on(cc) + '" class="shrink-0 rounded-full border px-3.5 py-1.5 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ' +
+        (on(cc) ? 'border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-semibold' : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:border-blue-400') + '"><span aria-hidden="true">' + flagStr + '</span> ' + esc(name) + ' <span class="' + (on(cc) ? '' : C.muted) + '">' + n + '</span></button>';
+      return '<div class="-mx-4 px-4 mb-3 flex gap-2 overflow-x-auto no-scrollbar" aria-label="' + esc(t('byCountry')) + '">' + pill('', '🌍', t('allCountries'), total) + list.map(c => pill(c, flag(c), countryName(c), counts[c])).join('') + '</div>';
+    }
+    let shown = ui.countryListOpen ? list : list.slice(0, COUNTRY_LIST_TOP);
+    if (sel && !shown.includes(sel)) shown = shown.concat(sel);
+    const row = (cc, flagStr, name, n) => '<button type="button" data-action="list-country" data-cc="' + cc + '" aria-pressed="' + on(cc) + '" class="w-full flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm text-start focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ' +
+      (on(cc) ? 'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-semibold' : 'hover:bg-slate-50 dark:hover:bg-slate-800') + '"><span aria-hidden="true">' + flagStr + '</span><span class="flex-1 min-w-0 truncate">' + esc(name) + '</span><span class="text-xs ' + (on(cc) ? '' : C.muted) + '">' + n + '</span></button>';
+    return '<div class="' + C.section + ' mb-4" data-testid="country-list"><h2 class="font-semibold mb-2">' + t('byCountry') + '</h2>' +
+      '<div class="space-y-0.5">' + row('', '🌍', t('allCountries'), total) + shown.map(c => row(c, flag(c), countryName(c), counts[c])).join('') + '</div>' +
+      (list.length > COUNTRY_LIST_TOP ? '<button type="button" data-action="toggle-country-list" aria-expanded="' + ui.countryListOpen + '" class="' + C.btnGhost + ' mt-1 -ms-2 text-xs">' + (ui.countryListOpen ? t('showFewer') : t('showAllCountries', { n: list.length })) + '</button>' : '') + '</div>';
+  }
+  function refreshCountryLists() {
+    const a = document.activeElement;
+    const keep = a && a.closest && a.closest('[data-country-list]') && a.dataset.action ? { act: a.dataset.action, cc: a.dataset.cc, mode: a.closest('[data-country-list]').dataset.countryList } : null;
+    $$('[data-country-list]').forEach(h => { h.innerHTML = countryList(h.dataset.countryList); });
+    if (keep) {
+      const host = $('[data-country-list="' + keep.mode + '"]');
+      const btn = host && Array.from(host.querySelectorAll('[data-action="' + keep.act + '"]')).find(b => b.dataset.cc === keep.cc);
+      if (btn) btn.focus({ preventScroll: true });
+    }
+  }
   function viewJobs() {
     const q = route().query;
     if (q.get('match') === '1') ui.matchMode = true;
@@ -982,8 +1020,8 @@
       '</div>' +
       (ui.matchMode && !(p && skillsOf(p.id).length) ? '<div class="mb-4 rounded-xl border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950 p-3 text-sm flex flex-col sm:flex-row sm:items-center gap-2"><span class="flex-1">' + t('matchNeedsProfile') + '</span><a class="' + C.btnPrimary + '" href="' + (role() === 'seeker' ? '#/register' : '#/auth') + '">' + t(role() === 'seeker' ? 'completeProfile' : 'signUpSeeker') + '</a></div>' : '') +
       (ui.matchMode && p ? '<p class="mb-4 text-xs ' + C.muted + '">' + t('matchExplain') + '</p>' : '') +
-      '<div class="lg:grid lg:grid-cols-4 lg:gap-6"><aside class="hidden lg:block lg:col-span-1"><div class="' + C.section + ' sticky top-20" data-filter-host>' + filterForm() + '</div></aside>' +
-      '<div class="lg:col-span-3"><div data-active-chips class="flex flex-wrap gap-1.5 mb-3"></div><div id="results"></div></div></div></div>';
+      '<div class="lg:grid lg:grid-cols-4 lg:gap-6"><aside class="hidden lg:block lg:col-span-1"><div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto p-1 -m-1"><div data-country-list="column">' + countryList('column') + '</div><div class="' + C.section + '" data-filter-host>' + filterForm() + '</div></div></aside>' +
+      '<div class="lg:col-span-3"><div data-country-list="strip" class="lg:hidden">' + countryList('strip') + '</div><div data-active-chips class="flex flex-wrap gap-1.5 mb-3"></div><div id="results"></div></div></div></div>';
   }
   function activeChips() {
     const f = filters, out = [];
@@ -1006,6 +1044,7 @@
   async function refreshResults() {
     const box = $('#results'); if (!box) return;
     const chips = $('[data-active-chips]'); if (chips) chips.innerHTML = activeChips();
+    refreshCountryLists();
     const seq = ++searchSeq;
     box.innerHTML = skeletonCards(4);
     const list = await api.searchJobs(filters);
@@ -1895,6 +1934,12 @@
       case 'browse-country': filters = emptyFilters(); filters.country = el.dataset.cc; go('#/jobs'); break;
       case 'browse-rw': filters = emptyFilters(); filters.rw = true; go('#/jobs'); break;
       case 'open-filters': openFiltersModal(); break;
+      case 'list-country': {
+        const cc = filters.country === el.dataset.cc ? '' : el.dataset.cc;
+        if (cc !== filters.country) { filters.country = cc; filters.city = ''; }
+        refreshFilterHosts(); refreshResults(); break;
+      }
+      case 'toggle-country-list': ui.countryListOpen = !ui.countryListOpen; refreshCountryLists(); break;
       case 'toggle-match':
         ui.matchMode = !ui.matchMode;
         if (!ui.matchMode && route().query.get('match') === '1') go('#/jobs'); else render();

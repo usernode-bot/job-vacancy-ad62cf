@@ -83,6 +83,7 @@
     per_month: '/oy', per_year: '/yil', per_hour: '/soat',
     cat_it: 'IT', cat_health: 'Sogʻliqni saqlash', cat_education: 'Taʼlim', cat_finance: 'Moliya', cat_engineering: 'Muhandislik', cat_creative: 'Ijodiy', cat_marketing: 'Marketing', cat_sales: 'Savdo va xizmat', cat_hospitality: 'Mehmondoʻstlik', cat_logistics: 'Logistika', cat_agriculture: 'Qishloq xoʻjaligi',
     pageNotFound: 'Sahifa topilmadi', pageNotFoundBody: 'Bu havola mavjud emas.',
+    showAllCountries: 'Barcha {n} mamlakatni ko‘rsatish', showFewer: 'Kamroq ko‘rsatish',
     notifications: 'Bildirishnomalar', markAllRead: 'Hammasini o‘qilgan deb belgilash', noNotifications: 'Hozircha bildirishnoma yo‘q', noNotificationsBody: 'Ko‘nikmalaringizga mos ishlar shu yerda ko‘rinadi.', notifUnread: '{n} o‘qilmagan',
   },
 };

@@ -83,6 +83,7 @@
     per_month: '/월', per_year: '/년', per_hour: '/시간',
     cat_it: 'IT', cat_health: '의료', cat_education: '교육', cat_finance: '금융', cat_engineering: '엔지니어링', cat_creative: '크리에이티브', cat_marketing: '마케팅', cat_sales: '영업 및 서비스', cat_hospitality: '호텔 및 요식업', cat_logistics: '물류', cat_agriculture: '농업',
     pageNotFound: '페이지를 찾을 수 없습니다', pageNotFoundBody: '존재하지 않는 링크입니다.',
+    showAllCountries: '{n}개 국가 모두 보기', showFewer: '간략히 보기',
     notifications: '알림', markAllRead: '모두 읽음으로 표시', noNotifications: '아직 알림이 없습니다', noNotificationsBody: '내 스킬에 맞는 일자리가 여기에 표시됩니다.', notifUnread: '읽지 않음 {n}개',
   },
 };

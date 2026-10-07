@@ -83,6 +83,7 @@
     per_month: '/buwan', per_year: '/taon', per_hour: '/oras',
     cat_it: 'IT', cat_health: 'Kalusugan', cat_education: 'Edukasyon', cat_finance: 'Pananalapi', cat_engineering: 'Inhinyeriya', cat_creative: 'Malikhain', cat_marketing: 'Marketing', cat_sales: 'Benta at Serbisyo', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agrikultura',
     pageNotFound: 'Hindi nahanap ang pahina', pageNotFoundBody: 'Hindi umiiral ang link na ito.',
+    showAllCountries: 'Ipakita ang lahat ng {n} bansa', showFewer: 'Magpakita ng mas kaunti',
     notifications: 'Mga abiso', markAllRead: 'Markahan lahat bilang nabasa', noNotifications: 'Wala pang abiso', noNotificationsBody: 'Dito lalabas ang mga trabahong tugma sa iyong mga kasanayan.', notifUnread: '{n} hindi pa nababasa',
   },
 };

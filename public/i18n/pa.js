@@ -83,6 +83,7 @@
     per_month: '/ਮਹੀਨਾ', per_year: '/ਸਾਲ', per_hour: '/ਘੰਟਾ',
     cat_it: 'IT', cat_health: 'ਸਿਹਤ ਸੰਭਾਲ', cat_education: 'ਸਿੱਖਿਆ', cat_finance: 'ਵਿੱਤ', cat_engineering: 'ਇੰਜੀਨੀਅਰਿੰਗ', cat_creative: 'ਰਚਨਾਤਮਕ', cat_marketing: 'ਮਾਰਕੀਟਿੰਗ', cat_sales: 'ਵਿਕਰੀ ਅਤੇ ਸੇਵਾ', cat_hospitality: 'ਪਰਾਹੁਣਚਾਰੀ', cat_logistics: 'ਲੌਜਿਸਟਿਕਸ', cat_agriculture: 'ਖੇਤੀਬਾੜੀ',
     pageNotFound: 'ਪੰਨਾ ਨਹੀਂ ਮਿਲਿਆ', pageNotFoundBody: 'ਇਹ ਲਿੰਕ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।',
+    showAllCountries: 'ਸਾਰੇ {n} ਦੇਸ਼ ਦਿਖਾਓ', showFewer: 'ਘੱਟ ਦਿਖਾਓ',
     notifications: 'ਸੂਚਨਾਵਾਂ', markAllRead: 'ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਹੋਇਆ ਮਾਰਕ ਕਰੋ', noNotifications: 'ਹਾਲੇ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ', noNotificationsBody: 'ਤੁਹਾਡੇ ਹੁਨਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੀਆਂ ਨੌਕਰੀਆਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।', notifUnread: '{n} ਨਾ-ਪੜ੍ਹੀਆਂ',
   },
 };

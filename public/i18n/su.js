@@ -83,6 +83,7 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kaséhatan', cat_education: 'Atikan', cat_finance: 'Kauangan', cat_engineering: 'Téknik', cat_creative: 'Kréatif', cat_marketing: 'Pamasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotélan', cat_logistics: 'Logistik', cat_agriculture: 'Tatanén',
     pageNotFound: 'Kaca teu kapendak', pageNotFoundBody: 'Tautan ieu teu aya.',
+    showAllCountries: 'Témbongkeun kabéh {n} nagara', showFewer: 'Témbongkeun saeutik',
     notifications: 'Béwara', markAllRead: 'Tandaan sadayana parantos dibaca', noNotifications: 'Can aya béwara', noNotificationsBody: 'Lowongan anu cocog sareng kaahlian anjeun bakal muncul di dieu.', notifUnread: '{n} acan dibaca',
   },
 };

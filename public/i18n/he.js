@@ -83,6 +83,7 @@
     per_month: '/חודש', per_year: '/שנה', per_hour: '/שעה',
     cat_it: 'הייטק ו-IT', cat_health: 'בריאות', cat_education: 'חינוך', cat_finance: 'כספים', cat_engineering: 'הנדסה', cat_creative: 'קריאייטיב', cat_marketing: 'שיווק', cat_sales: 'מכירות ושירות', cat_hospitality: 'אירוח ומלונאות', cat_logistics: 'לוגיסטיקה', cat_agriculture: 'חקלאות',
     pageNotFound: 'הדף לא נמצא', pageNotFoundBody: 'הקישור הזה אינו קיים.',
+    showAllCountries: 'הצג את כל {n} המדינות', showFewer: 'הצג פחות',
     notifications: 'התראות', markAllRead: 'סמן הכול כנקרא', noNotifications: 'אין התראות עדיין', noNotificationsBody: 'משרות שמתאימות לכישורים שלך יופיעו כאן.', notifUnread: '{n} שלא נקראו',
   },
 };

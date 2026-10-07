@@ -83,6 +83,7 @@
     per_month: '/ماہ', per_year: '/سال', per_hour: '/گھنٹہ',
     cat_it: 'آئی ٹی', cat_health: 'صحت', cat_education: 'تعلیم', cat_finance: 'مالیات', cat_engineering: 'انجینئرنگ', cat_creative: 'تخلیقی', cat_marketing: 'مارکیٹنگ', cat_sales: 'سیلز اور سروس', cat_hospitality: 'مہمان نوازی', cat_logistics: 'لاجسٹکس', cat_agriculture: 'زراعت',
     pageNotFound: 'صفحہ نہیں ملا', pageNotFoundBody: 'یہ لنک موجود نہیں ہے۔',
+    showAllCountries: 'تمام {n} ممالک دکھائیں', showFewer: 'کم دکھائیں',
     notifications: 'اطلاعات', markAllRead: 'سب کو پڑھا ہوا نشان زد کریں', noNotifications: 'ابھی کوئی اطلاع نہیں', noNotificationsBody: 'آپ کی مہارتوں سے مطابقت رکھنے والی ملازمتیں یہاں نظر آئیں گی۔', notifUnread: '{n} غیر پڑھی ہوئی',
   },
 };

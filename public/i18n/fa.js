@@ -84,5 +84,6 @@
     cat_it: 'فناوری اطلاعات', cat_health: 'بهداشت و درمان', cat_education: 'آموزش', cat_finance: 'مالی', cat_engineering: 'مهندسی', cat_creative: 'خلاقیت و هنر', cat_marketing: 'بازاریابی', cat_sales: 'فروش و خدمات', cat_hospitality: 'هتلداری و پذیرایی', cat_logistics: 'لجستیک', cat_agriculture: 'کشاورزی',
     pageNotFound: 'صفحه یافت نشد', pageNotFoundBody: 'این پیوند وجود ندارد.',
     showAllCountries: 'نمایش همه {n} کشور', showFewer: 'نمایش کمتر',
+    notifications: 'اعلان‌ها', markAllRead: 'علامت‌گذاری همه به‌عنوان خوانده‌شده', noNotifications: 'هنوز اعلانی نیست', noNotificationsBody: 'شغل‌هایی که با مهارت‌های شما مطابقت دارند اینجا نمایش داده می‌شوند.', notifUnread: '{n} خوانده‌نشده',
   },
 };

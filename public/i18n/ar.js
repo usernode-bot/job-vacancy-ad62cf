@@ -84,5 +84,6 @@
     cat_it: 'تقنية المعلومات', cat_health: 'الرعاية الصحية', cat_education: 'التعليم', cat_finance: 'المالية', cat_engineering: 'الهندسة', cat_creative: 'الإبداع', cat_marketing: 'التسويق', cat_sales: 'المبيعات والخدمة', cat_hospitality: 'الضيافة', cat_logistics: 'الخدمات اللوجستية', cat_agriculture: 'الزراعة',
     pageNotFound: 'الصفحة غير موجودة', pageNotFoundBody: 'هذا الرابط غير موجود.',
     showAllCountries: 'عرض كل الدول ({n})', showFewer: 'عرض أقل',
+    notifications: 'الإشعارات', markAllRead: 'تحديد الكل كمقروء', noNotifications: 'لا توجد إشعارات بعد', noNotificationsBody: 'ستظهر هنا الوظائف المطابقة لمهاراتك.', notifUnread: '{n} غير مقروء',
   },
 };

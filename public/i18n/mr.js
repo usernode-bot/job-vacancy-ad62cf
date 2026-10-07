@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'आरोग्यसेवा', cat_education: 'शिक्षण', cat_finance: 'वित्त', cat_engineering: 'अभियांत्रिकी', cat_creative: 'सर्जनशील', cat_marketing: 'मार्केटिंग', cat_sales: 'विक्री आणि सेवा', cat_hospitality: 'आतिथ्य', cat_logistics: 'लॉजिस्टिक्स', cat_agriculture: 'शेती',
     pageNotFound: 'पृष्ठ सापडले नाही', pageNotFoundBody: 'ही लिंक अस्तित्वात नाही.',
     showAllCountries: 'सर्व {n} देश दाखवा', showFewer: 'कमी दाखवा',
+    notifications: 'सूचना', markAllRead: 'सर्व वाचले म्हणून चिन्हांकित करा', noNotifications: 'अजून कोणत्याही सूचना नाहीत', noNotificationsBody: 'तुमच्या कौशल्यांशी जुळणाऱ्या नोकऱ्या येथे दिसतील.', notifUnread: '{n} न वाचलेल्या',
   },
 };

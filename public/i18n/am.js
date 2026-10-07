@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'ጤና አጠባበቅ', cat_education: 'ትምህርት', cat_finance: 'ፋይናንስ', cat_engineering: 'ምህንድስና', cat_creative: 'ፈጠራ', cat_marketing: 'ማርኬቲንግ', cat_sales: 'ሽያጭ እና አገልግሎት', cat_hospitality: 'መስተንግዶ', cat_logistics: 'ሎጂስቲክስ', cat_agriculture: 'ግብርና',
     pageNotFound: 'ገጹ አልተገኘም', pageNotFoundBody: 'ይህ ሊንክ የለም።',
     showAllCountries: 'ሁሉንም {n} አገሮች አሳይ', showFewer: 'አነስተኛ አሳይ',
+    notifications: 'ማሳወቂያዎች', markAllRead: 'ሁሉንም እንደተነበበ ምልክት አድርግ', noNotifications: 'እስካሁን ማሳወቂያ የለም', noNotificationsBody: 'ከችሎታዎ ጋር የሚስማሙ ሥራዎች እዚህ ይታያሉ።', notifUnread: '{n} ያልተነበቡ',
   },
 };

@@ -84,5 +84,6 @@
     cat_it: 'ไอที', cat_health: 'สุขภาพ', cat_education: 'การศึกษา', cat_finance: 'การเงิน', cat_engineering: 'วิศวกรรม', cat_creative: 'งานสร้างสรรค์', cat_marketing: 'การตลาด', cat_sales: 'งานขายและบริการ', cat_hospitality: 'การโรงแรมและบริการ', cat_logistics: 'โลจิสติกส์', cat_agriculture: 'เกษตรกรรม',
     pageNotFound: 'ไม่พบหน้า', pageNotFoundBody: 'ลิงก์นี้ไม่มีอยู่',
     showAllCountries: 'แสดงทั้ง {n} ประเทศ', showFewer: 'แสดงน้อยลง',
+    notifications: 'การแจ้งเตือน', markAllRead: 'ทำเครื่องหมายว่าอ่านทั้งหมดแล้ว', noNotifications: 'ยังไม่มีการแจ้งเตือน', noNotificationsBody: 'งานที่ตรงกับทักษะของคุณจะแสดงที่นี่', notifUnread: 'ยังไม่ได้อ่าน {n}',
   },
 };

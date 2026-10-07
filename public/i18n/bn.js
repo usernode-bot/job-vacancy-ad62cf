@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'স্বাস্থ্যসেবা', cat_education: 'শিক্ষা', cat_finance: 'অর্থায়ন', cat_engineering: 'প্রকৌশল', cat_creative: 'সৃজনশীল', cat_marketing: 'মার্কেটিং', cat_sales: 'বিক্রয় ও সেবা', cat_hospitality: 'আতিথেয়তা', cat_logistics: 'লজিস্টিকস', cat_agriculture: 'কৃষি',
     pageNotFound: 'পৃষ্ঠা পাওয়া যায়নি', pageNotFoundBody: 'এই লিংকটির কোনো অস্তিত্ব নেই।',
     showAllCountries: 'সব {n}টি দেশ দেখুন', showFewer: 'কম দেখুন',
+    notifications: 'বিজ্ঞপ্তি', markAllRead: 'সব পঠিত হিসেবে চিহ্নিত করুন', noNotifications: 'এখনও কোনো বিজ্ঞপ্তি নেই', noNotificationsBody: 'আপনার দক্ষতার সাথে মেলে এমন চাকরি এখানে দেখা যাবে।', notifUnread: '{n} অপঠিত',
   },
 };

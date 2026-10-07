@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Ochrona zdrowia', cat_education: 'Edukacja', cat_finance: 'Finanse', cat_engineering: 'Inżynieria', cat_creative: 'Branża kreatywna', cat_marketing: 'Marketing', cat_sales: 'Sprzedaż i obsługa', cat_hospitality: 'Hotelarstwo i gastronomia', cat_logistics: 'Logistyka', cat_agriculture: 'Rolnictwo',
     pageNotFound: 'Nie znaleziono strony', pageNotFoundBody: 'Ten link nie istnieje.',
     showAllCountries: 'Pokaż wszystkie kraje ({n})', showFewer: 'Pokaż mniej',
+    notifications: 'Powiadomienia', markAllRead: 'Oznacz wszystko jako przeczytane', noNotifications: 'Brak powiadomień', noNotificationsBody: 'Tutaj pojawią się oferty pasujące do Twoich umiejętności.', notifUnread: '{n} nieprzeczytanych',
   },
 };

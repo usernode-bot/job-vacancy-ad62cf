@@ -90,5 +90,6 @@
     cat_it: 'IT', cat_health: 'Healthcare', cat_education: 'Education', cat_finance: 'Finance', cat_engineering: 'Engineering', cat_creative: 'Creative', cat_marketing: 'Marketing', cat_sales: 'Sales & Service', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agriculture',
     pageNotFound: 'Page not found', pageNotFoundBody: 'This link does not exist.',
     showAllCountries: 'Show all {n} countries', showFewer: 'Show fewer',
+    notifications: 'Notifications', markAllRead: 'Mark all as read', noNotifications: 'No notifications yet', noNotificationsBody: 'Jobs that match your skills will show up here.', notifUnread: '{n} unread',
   },
 };

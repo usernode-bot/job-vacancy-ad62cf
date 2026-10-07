@@ -84,5 +84,6 @@
     cat_it: 'TEHAMA', cat_health: 'Afya', cat_education: 'Elimu', cat_finance: 'Fedha', cat_engineering: 'Uhandisi', cat_creative: 'Ubunifu', cat_marketing: 'Masoko', cat_sales: 'Mauzo na Huduma', cat_hospitality: 'Ukarimu', cat_logistics: 'Usafirishaji', cat_agriculture: 'Kilimo',
     pageNotFound: 'Ukurasa haukupatikana', pageNotFoundBody: 'Kiungo hiki hakipo.',
     showAllCountries: 'Onyesha nchi zote {n}', showFewer: 'Onyesha chache',
+    notifications: 'Arifa', markAllRead: 'Weka alama zote kuwa zimesomwa', noNotifications: 'Bado hakuna arifa', noNotificationsBody: 'Kazi zinazolingana na ujuzi wako zitaonekana hapa.', notifUnread: '{n} hazijasomwa',
   },
 };

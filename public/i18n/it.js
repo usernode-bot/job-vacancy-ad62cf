@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Sanità', cat_education: 'Istruzione', cat_finance: 'Finanza', cat_engineering: 'Ingegneria', cat_creative: 'Creatività', cat_marketing: 'Marketing', cat_sales: 'Vendite e assistenza', cat_hospitality: 'Ospitalità', cat_logistics: 'Logistica', cat_agriculture: 'Agricoltura',
     pageNotFound: 'Pagina non trovata', pageNotFoundBody: 'Questo link non esiste.',
     showAllCountries: 'Mostra tutti i {n} paesi', showFewer: 'Mostra meno',
+    notifications: 'Notifiche', markAllRead: 'Segna tutto come letto', noNotifications: 'Nessuna notifica per ora', noNotificationsBody: 'Qui compariranno i lavori in linea con le tue competenze.', notifUnread: '{n} non lette',
   },
 };

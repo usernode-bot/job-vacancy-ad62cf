@@ -84,5 +84,6 @@
     cat_it: 'ИТ', cat_health: 'Здравоохранение', cat_education: 'Образование', cat_finance: 'Финансы', cat_engineering: 'Инженерия', cat_creative: 'Творчество', cat_marketing: 'Маркетинг', cat_sales: 'Продажи и сервис', cat_hospitality: 'Гостеприимство', cat_logistics: 'Логистика', cat_agriculture: 'Сельское хозяйство',
     pageNotFound: 'Страница не найдена', pageNotFoundBody: 'Такой ссылки не существует.',
     showAllCountries: 'Показать все страны ({n})', showFewer: 'Показать меньше',
+    notifications: 'Уведомления', markAllRead: 'Отметить все как прочитанные', noNotifications: 'Пока нет уведомлений', noNotificationsBody: 'Здесь появятся вакансии, подходящие под ваши навыки.', notifUnread: '{n} непрочитанных',
   },
 };

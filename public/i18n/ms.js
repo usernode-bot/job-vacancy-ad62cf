@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Kesihatan', cat_education: 'Pendidikan', cat_finance: 'Kewangan', cat_engineering: 'Kejuruteraan', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Jualan & Perkhidmatan', cat_hospitality: 'Hospitaliti', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak dijumpai', pageNotFoundBody: 'Pautan ini tidak wujud.',
     showAllCountries: 'Tunjukkan semua {n} negara', showFewer: 'Tunjukkan kurang',
+    notifications: 'Pemberitahuan', markAllRead: 'Tandakan semua sebagai dibaca', noNotifications: 'Belum ada pemberitahuan', noNotificationsBody: 'Pekerjaan yang sepadan dengan kemahiran anda akan dipaparkan di sini.', notifUnread: '{n} belum dibaca',
   },
 };

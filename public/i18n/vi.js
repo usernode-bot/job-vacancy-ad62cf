@@ -84,5 +84,6 @@
     cat_it: 'CNTT', cat_health: 'Y tế', cat_education: 'Giáo dục', cat_finance: 'Tài chính', cat_engineering: 'Kỹ thuật', cat_creative: 'Sáng tạo', cat_marketing: 'Marketing', cat_sales: 'Bán hàng và Dịch vụ', cat_hospitality: 'Nhà hàng khách sạn', cat_logistics: 'Logistics', cat_agriculture: 'Nông nghiệp',
     pageNotFound: 'Không tìm thấy trang', pageNotFoundBody: 'Liên kết này không tồn tại.',
     showAllCountries: 'Hiện cả {n} quốc gia', showFewer: 'Thu gọn',
+    notifications: 'Thông báo', markAllRead: 'Đánh dấu tất cả là đã đọc', noNotifications: 'Chưa có thông báo', noNotificationsBody: 'Các việc làm phù hợp với kỹ năng của bạn sẽ hiện ở đây.', notifUnread: '{n} chưa đọc',
   },
 };

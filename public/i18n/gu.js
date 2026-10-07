@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'આરોગ્ય સંભાળ', cat_education: 'શિક્ષણ', cat_finance: 'નાણાં', cat_engineering: 'એન્જિનિયરિંગ', cat_creative: 'સર્જનાત્મક', cat_marketing: 'માર્કેટિંગ', cat_sales: 'વેચાણ અને સેવા', cat_hospitality: 'આતિથ્ય', cat_logistics: 'લોજિસ્ટિક્સ', cat_agriculture: 'કૃષિ',
     pageNotFound: 'પેજ મળ્યું નથી', pageNotFoundBody: 'આ લિંક અસ્તિત્વમાં નથી.',
     showAllCountries: 'બધા {n} દેશો બતાવો', showFewer: 'ઓછા બતાવો',
+    notifications: 'સૂચનાઓ', markAllRead: 'બધાને વાંચેલા તરીકે ચિહ્નિત કરો', noNotifications: 'હજી કોઈ સૂચના નથી', noNotificationsBody: 'તમારી કુશળતા સાથે મેળ ખાતી નોકરીઓ અહીં દેખાશે.', notifUnread: '{n} વણવાંચેલ',
   },
 };

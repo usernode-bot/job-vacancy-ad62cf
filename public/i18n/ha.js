@@ -84,5 +84,6 @@
     cat_it: 'Fasahar Sadarwa', cat_health: 'Kiwon lafiya', cat_education: 'Ilimi', cat_finance: 'Kuɗi', cat_engineering: 'Injiniyanci', cat_creative: 'Fasahar ƙirƙira', cat_marketing: 'Tallace-tallace', cat_sales: 'Sayarwa da Hidima', cat_hospitality: 'Karɓar baƙi', cat_logistics: 'Sufuri da jigila', cat_agriculture: 'Noma',
     pageNotFound: 'Ba a sami shafin ba', pageNotFoundBody: 'Wannan mahaɗi bai wanzu ba.',
     showAllCountries: 'Nuna dukkan ƙasashe {n}', showFewer: 'Nuna kaɗan',
+    notifications: 'Sanarwa', markAllRead: 'Yi alamar duka a matsayin an karanta', noNotifications: 'Babu sanarwa tukuna', noNotificationsBody: 'Ayyukan da suka dace da gwanintarka za su bayyana a nan.', notifUnread: '{n} ba a karanta ba',
   },
 };

@@ -84,5 +84,6 @@
     cat_it: 'IT', cat_health: 'Egészségügy', cat_education: 'Oktatás', cat_finance: 'Pénzügy', cat_engineering: 'Mérnöki', cat_creative: 'Kreatív', cat_marketing: 'Marketing', cat_sales: 'Értékesítés és ügyfélszolgálat', cat_hospitality: 'Vendéglátás', cat_logistics: 'Logisztika', cat_agriculture: 'Mezőgazdaság',
     pageNotFound: 'Az oldal nem található', pageNotFoundBody: 'Ez a hivatkozás nem létezik.',
     showAllCountries: 'Mind a {n} ország megjelenítése', showFewer: 'Kevesebb megjelenítése',
+    notifications: 'Értesítések', markAllRead: 'Összes megjelölése olvasottként', noNotifications: 'Még nincs értesítés', noNotificationsBody: 'Itt jelennek meg a készségeidhez illő állások.', notifUnread: '{n} olvasatlan',
   },
 };

@@ -78,6 +78,7 @@
     applicantNotFound: 'متقاضی یافت نشد', applicantNotFoundBody: 'این درخواست وجود ندارد یا مربوط به آگهی شما نیست.', applicationStatus: 'وضعیت درخواست', appliedOn: 'تاریخ درخواست: {d}', matchForJob: 'تطابق با این شغل',
     message: 'پیام', noMessage: 'پیامی وجود ندارد.', attachedCerts: 'گواهی‌های پیوست‌شده ({n})', noAttached: 'گواهی‌ای پیوست نشده است.', statusUpdated: 'وضعیت به {s} تغییر کرد',
     status_new: 'جدید', status_processing: 'در حال بررسی', status_interview: 'مصاحبه', status_accepted: 'پذیرفته شد', status_rejected: 'رد شد',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'تمام‌وقت', type_parttime: 'پاره‌وقت', type_internship: 'کارآموزی', type_contract: 'قراردادی',
     model_onsite: 'حضوری', model_hybrid: 'ترکیبی', model_remote: 'دورکاری',
     per_month: '/ماه', per_year: '/سال', per_hour: '/ساعت',

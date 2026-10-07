@@ -78,6 +78,7 @@
     applicantNotFound: '応募者が見つかりません', applicantNotFoundBody: 'この応募は存在しないか、貴社の求人への応募ではありません。', applicationStatus: '選考状況', appliedOn: '{d} に応募', matchForJob: 'この求人とのマッチ度',
     message: 'メッセージ', noMessage: 'メッセージはありません。', attachedCerts: '添付された資格（{n}）', noAttached: '添付された資格はありません。', statusUpdated: 'ステータスを「{s}」に変更しました',
     status_new: '新着', status_processing: '選考中', status_interview: '面接', status_accepted: '採用', status_rejected: '不採用',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: '正社員', type_parttime: 'パートタイム', type_internship: 'インターン', type_contract: '契約社員',
     model_onsite: '出社', model_hybrid: 'ハイブリッド', model_remote: 'リモート',
     per_month: '/月', per_year: '/年', per_hour: '/時',

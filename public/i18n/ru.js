@@ -78,6 +78,7 @@
     applicantNotFound: 'Кандидат не найден', applicantNotFoundBody: 'Этот отклик не существует или относится не к вашей вакансии.', applicationStatus: 'Статус отклика', appliedOn: 'Отклик от {d}', matchForJob: 'Совпадение с вакансией',
     message: 'Сообщение', noMessage: 'Сообщения нет.', attachedCerts: 'Прикреплённые сертификаты ({n})', noAttached: 'Сертификаты не прикреплены.', statusUpdated: 'Статус изменён на «{s}»',
     status_new: 'Новый', status_processing: 'На рассмотрении', status_interview: 'Собеседование', status_accepted: 'Принят', status_rejected: 'Отклонён',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Полная занятость', type_parttime: 'Частичная занятость', type_internship: 'Стажировка', type_contract: 'Контракт',
     model_onsite: 'В офисе', model_hybrid: 'Гибрид', model_remote: 'Удалённо',
     per_month: '/мес.', per_year: '/год', per_hour: '/час',

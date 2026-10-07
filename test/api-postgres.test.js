@@ -239,4 +239,14 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     await call(seeker, 'DELETE', `/saved/${jobId}`);
     assert.deepEqual((await call(seeker, 'GET', '/bootstrap')).data.savedJobIds, []);
   });
+
+  await t.test('applicants track their own progress, privately', async () => {
+    const list = (await call(seeker, 'GET', '/bootstrap')).data.applications;
+    const appId = list[0].id;
+    assert.equal(list[0].trackStatus, 'applied');
+    assert.equal((await call(seeker, 'PATCH', `/applications/${appId}/tracking`, { trackStatus: 'bogus' })).status, 400);
+    assert.equal((await call(stranger, 'PATCH', `/applications/${appId}/tracking`, { trackStatus: 'offer' })).status, 404);
+    assert.equal((await call(seeker, 'PATCH', `/applications/${appId}/tracking`, { trackStatus: 'interviewing' })).status, 200);
+    assert.equal((await call(seeker, 'GET', '/bootstrap')).data.applications[0].trackStatus, 'interviewing');
+  });
 });

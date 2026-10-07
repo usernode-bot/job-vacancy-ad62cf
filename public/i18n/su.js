@@ -78,6 +78,7 @@
     applicantNotFound: 'Pelamar teu kapendak', applicantNotFoundBody: 'Lamaran ieu teu aya atanapi sanés kanggo lowongan anjeun.', applicationStatus: 'Status lamaran', appliedOn: 'Ngalamar tanggal {d}', matchForJob: 'Kacocogan kanggo lowongan ieu',
     message: 'Pesen', noMessage: 'Teu aya pesen.', attachedCerts: 'Sértifikat anu dilampirkeun ({n})', noAttached: 'Teu aya sértifikat anu dilampirkeun.', statusUpdated: 'Status digentos janten {s}',
     status_new: 'Énggal', status_processing: 'Dipariksa', status_interview: 'Wawancara', status_accepted: 'Ditampi', status_rejected: 'Ditolak',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Full-time', type_parttime: 'Paruh waktos', type_internship: 'Magang', type_contract: 'Kontrak',
     model_onsite: 'Di kantor', model_hybrid: 'Hibrid', model_remote: 'Jarak jauh',
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',

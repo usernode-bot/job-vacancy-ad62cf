@@ -78,6 +78,7 @@
     applicantNotFound: 'Pemohon tidak dijumpai', applicantNotFoundBody: 'Permohonan ini tidak wujud atau bukan untuk jawatan anda.', applicationStatus: 'Status permohonan', appliedOn: 'Dimohon pada {d}', matchForJob: 'Padanan untuk jawatan ini',
     message: 'Mesej', noMessage: 'Tiada mesej.', attachedCerts: 'Sijil dilampirkan ({n})', noAttached: 'Tiada sijil dilampirkan.', statusUpdated: 'Status ditukar kepada {s}',
     status_new: 'Baharu', status_processing: 'Dalam semakan', status_interview: 'Temu duga', status_accepted: 'Diterima', status_rejected: 'Ditolak',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Sepenuh masa', type_parttime: 'Separuh masa', type_internship: 'Latihan industri', type_contract: 'Kontrak',
     model_onsite: 'Di pejabat', model_hybrid: 'Hibrid', model_remote: 'Jarak jauh',
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',

@@ -78,6 +78,7 @@
     applicantNotFound: 'Candidatul nu a fost găsit', applicantNotFoundBody: 'Această aplicare nu există sau nu este pentru postul dvs.', applicationStatus: 'Starea aplicării', appliedOn: 'Aplicat pe {d}', matchForJob: 'Potrivire pentru acest post',
     message: 'Mesaj', noMessage: 'Niciun mesaj.', attachedCerts: 'Certificate atașate ({n})', noAttached: 'Niciun certificat atașat.', statusUpdated: 'Starea a fost schimbată în {s}',
     status_new: 'Nou', status_processing: 'În analiză', status_interview: 'Interviu', status_accepted: 'Acceptat', status_rejected: 'Respins',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Normă întreagă', type_parttime: 'Normă parțială', type_internship: 'Stagiu', type_contract: 'Contract',
     model_onsite: 'La birou', model_hybrid: 'Hibrid', model_remote: 'La distanță',
     per_month: '/lună', per_year: '/an', per_hour: '/oră',

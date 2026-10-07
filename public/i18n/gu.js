@@ -78,6 +78,7 @@
     applicantNotFound: 'અરજદાર મળ્યા નથી', applicantNotFoundBody: 'આ અરજી અસ્તિત્વમાં નથી અથવા તમારી નોકરી માટે નથી.', applicationStatus: 'અરજીની સ્થિતિ', appliedOn: '{d} ના રોજ અરજી કરી', matchForJob: 'આ નોકરી માટે મેળ',
     message: 'સંદેશ', noMessage: 'કોઈ સંદેશ નથી.', attachedCerts: 'જોડેલા પ્રમાણપત્રો ({n})', noAttached: 'કોઈ પ્રમાણપત્ર જોડેલું નથી.', statusUpdated: 'સ્થિતિ બદલીને {s} કરવામાં આવી',
     status_new: 'નવી', status_processing: 'સમીક્ષા હેઠળ', status_interview: 'ઇન્ટરવ્યૂ', status_accepted: 'સ્વીકૃત', status_rejected: 'અસ્વીકૃત',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'પૂર્ણ સમય', type_parttime: 'અંશકાલીન', type_internship: 'ઇન્ટર્નશિપ', type_contract: 'કરાર',
     model_onsite: 'ઓફિસમાં', model_hybrid: 'હાઇબ્રિડ', model_remote: 'રિમોટ',
     per_month: '/મહિનો', per_year: '/વર્ષ', per_hour: '/કલાક',

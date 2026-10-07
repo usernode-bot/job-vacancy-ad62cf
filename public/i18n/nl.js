@@ -78,6 +78,7 @@
     applicantNotFound: 'Sollicitant niet gevonden', applicantNotFoundBody: 'Deze sollicitatie bestaat niet of hoort niet bij uw vacature.', applicationStatus: 'Status sollicitatie', appliedOn: 'Gesolliciteerd op {d}', matchForJob: 'Match voor deze vacature',
     message: 'Bericht', noMessage: 'Geen bericht.', attachedCerts: 'Bijgevoegde certificaten ({n})', noAttached: 'Geen certificaten bijgevoegd.', statusUpdated: 'Status gewijzigd in {s}',
     status_new: 'Nieuw', status_processing: 'In behandeling', status_interview: 'Sollicitatiegesprek', status_accepted: 'Aangenomen', status_rejected: 'Afgewezen',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Voltijd', type_parttime: 'Deeltijd', type_internship: 'Stage', type_contract: 'Tijdelijk contract',
     model_onsite: 'Op locatie', model_hybrid: 'Hybride', model_remote: 'Op afstand',
     per_month: '/mnd', per_year: '/jr', per_hour: '/uur',

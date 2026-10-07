@@ -78,6 +78,7 @@
     applicantNotFound: 'ไม่พบผู้สมัคร', applicantNotFoundBody: 'ใบสมัครนี้ไม่มีอยู่หรือไม่ใช่ของงานของคุณ', applicationStatus: 'สถานะใบสมัคร', appliedOn: 'สมัครเมื่อ {d}', matchForJob: 'ความเหมาะสมกับงานนี้',
     message: 'ข้อความ', noMessage: 'ไม่มีข้อความ', attachedCerts: 'ใบรับรองที่แนบ ({n})', noAttached: 'ไม่มีใบรับรองที่แนบ', statusUpdated: 'เปลี่ยนสถานะเป็น {s} แล้ว',
     status_new: 'ใหม่', status_processing: 'กำลังพิจารณา', status_interview: 'สัมภาษณ์', status_accepted: 'ผ่านการคัดเลือก', status_rejected: 'ไม่ผ่านการคัดเลือก',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'งานประจำ', type_parttime: 'พาร์ทไทม์', type_internship: 'ฝึกงาน', type_contract: 'สัญญาจ้าง',
     model_onsite: 'ทำงานที่ออฟฟิศ', model_hybrid: 'ไฮบริด', model_remote: 'ทำงานทางไกล',
     per_month: '/เดือน', per_year: '/ปี', per_hour: '/ชม.',

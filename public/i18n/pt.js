@@ -78,6 +78,7 @@
     applicantNotFound: 'Candidato não encontrado', applicantNotFoundBody: 'Esta candidatura não existe ou não é para sua vaga.', applicationStatus: 'Status da candidatura', appliedOn: 'Candidatura em {d}', matchForJob: 'Compatibilidade com esta vaga',
     message: 'Mensagem', noMessage: 'Sem mensagem.', attachedCerts: 'Certificados anexados ({n})', noAttached: 'Nenhum certificado anexado.', statusUpdated: 'Status alterado para {s}',
     status_new: 'Nova', status_processing: 'Em análise', status_interview: 'Entrevista', status_accepted: 'Aprovada', status_rejected: 'Recusada',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Tempo integral', type_parttime: 'Meio período', type_internship: 'Estágio', type_contract: 'Contrato',
     model_onsite: 'Presencial', model_hybrid: 'Híbrido', model_remote: 'Remoto',
     per_month: '/mês', per_year: '/ano', per_hour: '/h',

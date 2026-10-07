@@ -78,6 +78,7 @@
     applicantNotFound: 'Aday bulunamadı', applicantNotFoundBody: 'Bu başvuru mevcut değil veya ilanınıza ait değil.', applicationStatus: 'Başvuru durumu', appliedOn: 'Başvuru tarihi: {d}', matchForJob: 'Bu ilanla uyum',
     message: 'Mesaj', noMessage: 'Mesaj yok.', attachedCerts: 'Eklenen sertifikalar ({n})', noAttached: 'Sertifika eklenmedi.', statusUpdated: 'Durum {s} olarak değiştirildi',
     status_new: 'Yeni', status_processing: 'İnceleniyor', status_interview: 'Mülakat', status_accepted: 'Kabul edildi', status_rejected: 'Reddedildi',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Tam zamanlı', type_parttime: 'Yarı zamanlı', type_internship: 'Staj', type_contract: 'Sözleşmeli',
     model_onsite: 'İş yerinde', model_hybrid: 'Hibrit', model_remote: 'Uzaktan',
     per_month: '/ay', per_year: '/yıl', per_hour: '/sa',

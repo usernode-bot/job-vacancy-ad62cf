@@ -78,6 +78,7 @@
     applicantNotFound: 'Ba a sami mai nema ba', applicantNotFoundBody: 'Wannan neman aiki bai wanzu ba ko ba na aikinku ba ne.', applicationStatus: 'Matsayin neman aiki', appliedOn: 'An nema a ranar {d}', matchForJob: 'Dacewa da wannan aiki',
     message: 'Saƙo', noMessage: 'Babu saƙo.', attachedCerts: 'Takardun shaida da aka haɗa ({n})', noAttached: 'Ba a haɗa takardun shaida ba.', statusUpdated: 'An canja matsayi zuwa {s}',
     status_new: 'Sabo', status_processing: 'Ana dubawa', status_interview: 'Hira', status_accepted: 'An karɓa', status_rejected: 'An ƙi',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Cikakken lokaci', type_parttime: 'Ɗan lokaci', type_internship: 'Horon aiki', type_contract: 'Kwangila',
     model_onsite: 'A wurin aiki', model_hybrid: 'Gauraye', model_remote: 'Daga nesa',
     per_month: '/wata', per_year: '/shekara', per_hour: '/awa',

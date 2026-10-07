@@ -78,6 +78,7 @@
     applicantNotFound: 'Кандидата не знайдено', applicantNotFoundBody: 'Цей відгук не існує або стосується не вашої вакансії.', applicationStatus: 'Статус відгуку', appliedOn: 'Відгук від {d}', matchForJob: 'Збіг із вакансією',
     message: 'Повідомлення', noMessage: 'Повідомлення немає.', attachedCerts: 'Прикріплені сертифікати ({n})', noAttached: 'Сертифікати не прикріплено.', statusUpdated: 'Статус змінено на «{s}»',
     status_new: 'Новий', status_processing: 'На розгляді', status_interview: 'Співбесіда', status_accepted: 'Прийнято', status_rejected: 'Відхилено',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Повна зайнятість', type_parttime: 'Часткова зайнятість', type_internship: 'Стажування', type_contract: 'Контракт',
     model_onsite: 'В офісі', model_hybrid: 'Гібрид', model_remote: 'Віддалено',
     per_month: '/міс.', per_year: '/рік', per_hour: '/год',

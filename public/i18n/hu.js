@@ -78,6 +78,7 @@
     applicantNotFound: 'A jelentkező nem található', applicantNotFoundBody: 'Ez a jelentkezés nem létezik, vagy nem az Ön állására érkezett.', applicationStatus: 'Jelentkezés állapota', appliedOn: 'Jelentkezés dátuma: {d}', matchForJob: 'Egyezés ezzel az állással',
     message: 'Üzenet', noMessage: 'Nincs üzenet.', attachedCerts: 'Csatolt tanúsítványok ({n})', noAttached: 'Nincs csatolt tanúsítvány.', statusUpdated: 'Új állapot: {s}',
     status_new: 'Új', status_processing: 'Elbírálás alatt', status_interview: 'Interjú', status_accepted: 'Elfogadva', status_rejected: 'Elutasítva',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Teljes munkaidő', type_parttime: 'Részmunkaidő', type_internship: 'Gyakornoki', type_contract: 'Szerződéses',
     model_onsite: 'Helyszíni', model_hybrid: 'Hibrid', model_remote: 'Távmunka',
     per_month: '/hó', per_year: '/év', per_hour: '/óra',

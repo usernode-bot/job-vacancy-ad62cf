@@ -78,6 +78,7 @@
     applicantNotFound: 'Uchazeč nenalezen', applicantNotFoundBody: 'Tato odpověď neexistuje nebo se netýká vaší nabídky.', applicationStatus: 'Stav odpovědi', appliedOn: 'Odpověď ze dne {d}', matchForJob: 'Shoda s touto nabídkou',
     message: 'Zpráva', noMessage: 'Bez zprávy.', attachedCerts: 'Přiložené certifikáty ({n})', noAttached: 'Nejsou přiloženy žádné certifikáty.', statusUpdated: 'Stav změněn na: {s}',
     status_new: 'Nová', status_processing: 'Posuzuje se', status_interview: 'Pohovor', status_accepted: 'Přijato', status_rejected: 'Zamítnuto',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Plný úvazek', type_parttime: 'Částečný úvazek', type_internship: 'Stáž', type_contract: 'Smlouva',
     model_onsite: 'Na pracovišti', model_hybrid: 'Hybridně', model_remote: 'Na dálku',
     per_month: '/měs.', per_year: '/rok', per_hour: '/hod.',

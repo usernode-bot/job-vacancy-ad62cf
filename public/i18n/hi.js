@@ -78,6 +78,7 @@
     applicantNotFound: 'आवेदक नहीं मिला', applicantNotFoundBody: 'यह आवेदन मौजूद नहीं है या आपकी नौकरी के लिए नहीं है।', applicationStatus: 'आवेदन की स्थिति', appliedOn: '{d} को आवेदन किया', matchForJob: 'इस नौकरी के लिए मेल',
     message: 'संदेश', noMessage: 'कोई संदेश नहीं।', attachedCerts: 'संलग्न प्रमाणपत्र ({n})', noAttached: 'कोई प्रमाणपत्र संलग्न नहीं।', statusUpdated: 'स्थिति {s} में बदली गई',
     status_new: 'नया', status_processing: 'समीक्षाधीन', status_interview: 'साक्षात्कार', status_accepted: 'स्वीकृत', status_rejected: 'अस्वीकृत',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'पूर्णकालिक', type_parttime: 'अंशकालिक', type_internship: 'इंटर्नशिप', type_contract: 'अनुबंध',
     model_onsite: 'कार्यालय से', model_hybrid: 'हाइब्रिड', model_remote: 'रिमोट',
     per_month: '/माह', per_year: '/वर्ष', per_hour: '/घंटा',

@@ -82,6 +82,7 @@
     applicantNotFound: 'Pelamar tidak ditemukan', applicantNotFoundBody: 'Lamaran ini tidak ada atau bukan untuk lowongan kamu.', applicationStatus: 'Status lamaran', appliedOn: 'Melamar pada {d}', matchForJob: 'Kecocokan untuk lowongan ini',
     message: 'Pesan', noMessage: 'Tidak ada pesan.', attachedCerts: 'Sertifikat terlampir ({n})', noAttached: 'Tidak ada sertifikat terlampir.', statusUpdated: 'Status diubah menjadi {s}',
     status_new: 'Baru', status_processing: 'Diproses', status_interview: 'Wawancara', status_accepted: 'Diterima', status_rejected: 'Ditolak',
+    trackApplied: 'Sudah melamar', trackInterviewing: 'Sedang wawancara', trackOffer: 'Dapat tawaran', trackRejected: 'Ditolak', myProgress: 'Progres saya',
     type_fulltime: 'Full-time', type_parttime: 'Part-time', type_internship: 'Magang', type_contract: 'Kontrak',
     model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',

@@ -78,6 +78,7 @@
     applicantNotFound: 'המועמד לא נמצא', applicantNotFoundBody: 'המועמדות הזו אינה קיימת או שאינה שייכת למשרה שלך.', applicationStatus: 'סטטוס המועמדות', appliedOn: 'הוגשה ב-{d}', matchForJob: 'התאמה למשרה זו',
     message: 'הודעה', noMessage: 'אין הודעה.', attachedCerts: 'תעודות מצורפות ({n})', noAttached: 'לא צורפו תעודות.', statusUpdated: 'הסטטוס שונה ל{s}',
     status_new: 'חדשה', status_processing: 'בבדיקה', status_interview: 'ראיון', status_accepted: 'התקבלה', status_rejected: 'נדחתה',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'משרה מלאה', type_parttime: 'משרה חלקית', type_internship: 'התמחות', type_contract: 'חוזה',
     model_onsite: 'במשרד', model_hybrid: 'היברידי', model_remote: 'מרחוק',
     per_month: '/חודש', per_year: '/שנה', per_hour: '/שעה',

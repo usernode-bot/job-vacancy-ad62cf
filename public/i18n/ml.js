@@ -78,6 +78,7 @@
     applicantNotFound: 'അപേക്ഷകനെ കണ്ടെത്തിയില്ല', applicantNotFoundBody: 'ഈ അപേക്ഷ നിലവിലില്ല അല്ലെങ്കിൽ നിങ്ങളുടെ ജോലിക്കുള്ളതല്ല.', applicationStatus: 'അപേക്ഷയുടെ നില', appliedOn: '{d}-ന് അപേക്ഷിച്ചു', matchForJob: 'ഈ ജോലിക്കുള്ള പൊരുത്തം',
     message: 'സന്ദേശം', noMessage: 'സന്ദേശമില്ല.', attachedCerts: 'അറ്റാച്ച് ചെയ്ത സർട്ടിഫിക്കറ്റുകൾ ({n})', noAttached: 'സർട്ടിഫിക്കറ്റുകളൊന്നും അറ്റാച്ച് ചെയ്തിട്ടില്ല.', statusUpdated: 'നില {s} ആയി മാറ്റി',
     status_new: 'പുതിയത്', status_processing: 'പരിശോധനയിൽ', status_interview: 'അഭിമുഖം', status_accepted: 'സ്വീകരിച്ചു', status_rejected: 'നിരസിച്ചു',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'മുഴുവൻ സമയം', type_parttime: 'പാർട്ട് ടൈം', type_internship: 'ഇന്റേൺഷിപ്പ്', type_contract: 'കരാർ',
     model_onsite: 'ഓഫീസിൽ', model_hybrid: 'ഹൈബ്രിഡ്', model_remote: 'റിമോട്ട്',
     per_month: '/മാസം', per_year: '/വർഷം', per_hour: '/മണിക്കൂർ',

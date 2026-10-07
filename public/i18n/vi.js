@@ -78,6 +78,7 @@
     applicantNotFound: 'Không tìm thấy ứng viên', applicantNotFoundBody: 'Đơn ứng tuyển này không tồn tại hoặc không thuộc việc làm của bạn.', applicationStatus: 'Trạng thái đơn ứng tuyển', appliedOn: 'Ứng tuyển ngày {d}', matchForJob: 'Mức độ phù hợp với việc làm này',
     message: 'Lời nhắn', noMessage: 'Không có lời nhắn.', attachedCerts: 'Chứng chỉ đính kèm ({n})', noAttached: 'Không có chứng chỉ đính kèm.', statusUpdated: 'Đã đổi trạng thái thành {s}',
     status_new: 'Mới', status_processing: 'Đang xem xét', status_interview: 'Phỏng vấn', status_accepted: 'Đã chấp nhận', status_rejected: 'Đã từ chối',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Toàn thời gian', type_parttime: 'Bán thời gian', type_internship: 'Thực tập', type_contract: 'Hợp đồng',
     model_onsite: 'Tại văn phòng', model_hybrid: 'Kết hợp', model_remote: 'Từ xa',
     per_month: '/tháng', per_year: '/năm', per_hour: '/giờ',

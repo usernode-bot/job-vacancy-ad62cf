@@ -78,6 +78,7 @@
     applicantNotFound: 'अर्जदार सापडला नाही', applicantNotFoundBody: 'हा अर्ज अस्तित्वात नाही किंवा आपल्या नोकरीसाठी नाही.', applicationStatus: 'अर्जाची स्थिती', appliedOn: '{d} रोजी अर्ज केला', matchForJob: 'या नोकरीसाठी जुळणी',
     message: 'संदेश', noMessage: 'संदेश नाही.', attachedCerts: 'जोडलेली प्रमाणपत्रे ({n})', noAttached: 'कोणतीही प्रमाणपत्रे जोडलेली नाहीत.', statusUpdated: 'स्थिती {s} मध्ये बदलली',
     status_new: 'नवीन', status_processing: 'पुनरावलोकनाधीन', status_interview: 'मुलाखत', status_accepted: 'स्वीकारले', status_rejected: 'नाकारले',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'पूर्णवेळ', type_parttime: 'अर्धवेळ', type_internship: 'इंटर्नशिप', type_contract: 'कंत्राटी',
     model_onsite: 'कार्यालयातून', model_hybrid: 'हायब्रिड', model_remote: 'रिमोट',
     per_month: '/महिना', per_year: '/वर्ष', per_hour: '/तास',

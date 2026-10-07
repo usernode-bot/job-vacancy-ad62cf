@@ -78,6 +78,7 @@
     applicantNotFound: 'আবেদনকারী পাওয়া যায়নি', applicantNotFoundBody: 'এই আবেদনটি নেই অথবা আপনার চাকরির জন্য নয়।', applicationStatus: 'আবেদনের অবস্থা', appliedOn: '{d} তারিখে আবেদন করেছেন', matchForJob: 'এই চাকরির সাথে মিল',
     message: 'বার্তা', noMessage: 'কোনো বার্তা নেই।', attachedCerts: 'সংযুক্ত সনদ ({n})', noAttached: 'কোনো সনদ সংযুক্ত নেই।', statusUpdated: 'অবস্থা {s}-এ পরিবর্তন করা হয়েছে',
     status_new: 'নতুন', status_processing: 'পর্যালোচনাধীন', status_interview: 'সাক্ষাৎকার', status_accepted: 'গৃহীত', status_rejected: 'প্রত্যাখ্যাত',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'পূর্ণকালীন', type_parttime: 'খণ্ডকালীন', type_internship: 'ইন্টার্নশিপ', type_contract: 'চুক্তিভিত্তিক',
     model_onsite: 'অফিসে', model_hybrid: 'হাইব্রিড', model_remote: 'রিমোট',
     per_month: '/মাস', per_year: '/বছর', per_hour: '/ঘণ্টা',

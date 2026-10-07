@@ -78,6 +78,7 @@
     applicantNotFound: 'Hindi nahanap ang aplikante', applicantNotFoundBody: 'Hindi umiiral ang aplikasyong ito o hindi ito para sa inyong trabaho.', applicationStatus: 'Status ng aplikasyon', appliedOn: 'Nag-apply noong {d}', matchForJob: 'Pagkakatugma sa trabahong ito',
     message: 'Mensahe', noMessage: 'Walang mensahe.', attachedCerts: 'Mga naka-attach na sertipiko ({n})', noAttached: 'Walang naka-attach na sertipiko.', statusUpdated: 'Pinalitan ang status sa {s}',
     status_new: 'Bago', status_processing: 'Sinusuri', status_interview: 'Interview', status_accepted: 'Tinanggap', status_rejected: 'Tinanggihan',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Full-time', type_parttime: 'Part-time', type_internship: 'Internship', type_contract: 'Kontrata',
     model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
     per_month: '/buwan', per_year: '/taon', per_hour: '/oras',

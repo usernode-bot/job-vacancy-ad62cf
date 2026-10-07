@@ -84,6 +84,7 @@
     applicantNotFound: 'Applicant not found', applicantNotFoundBody: 'This application does not exist or is not for your job.', applicationStatus: 'Application status', appliedOn: 'Applied on {d}', matchForJob: 'Match for this job',
     message: 'Message', noMessage: 'No message.', attachedCerts: 'Attached certificates ({n})', noAttached: 'No certificates attached.', statusUpdated: 'Status changed to {s}',
     status_new: 'New', status_processing: 'In review', status_interview: 'Interview', status_accepted: 'Accepted', status_rejected: 'Rejected',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'Full-time', type_parttime: 'Part-time', type_internship: 'Internship', type_contract: 'Contract',
     model_onsite: 'Onsite', model_hybrid: 'Hybrid', model_remote: 'Remote',
     per_month: '/mo', per_year: '/yr', per_hour: '/hr',

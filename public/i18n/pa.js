@@ -78,6 +78,7 @@
     applicantNotFound: 'ਬਿਨੈਕਾਰ ਨਹੀਂ ਮਿਲਿਆ', applicantNotFoundBody: 'ਇਹ ਅਰਜ਼ੀ ਮੌਜੂਦ ਨਹੀਂ ਹੈ ਜਾਂ ਤੁਹਾਡੀ ਨੌਕਰੀ ਲਈ ਨਹੀਂ ਹੈ।', applicationStatus: 'ਅਰਜ਼ੀ ਦੀ ਸਥਿਤੀ', appliedOn: '{d} ਨੂੰ ਅਰਜ਼ੀ ਦਿੱਤੀ', matchForJob: 'ਇਸ ਨੌਕਰੀ ਲਈ ਮੇਲ',
     message: 'ਸੁਨੇਹਾ', noMessage: 'ਕੋਈ ਸੁਨੇਹਾ ਨਹੀਂ।', attachedCerts: 'ਨੱਥੀ ਸਰਟੀਫ਼ਿਕੇਟ ({n})', noAttached: 'ਕੋਈ ਸਰਟੀਫ਼ਿਕੇਟ ਨੱਥੀ ਨਹੀਂ।', statusUpdated: 'ਸਥਿਤੀ ਬਦਲ ਕੇ {s} ਕੀਤੀ ਗਈ',
     status_new: 'ਨਵੀਂ', status_processing: 'ਸਮੀਖਿਆ ਅਧੀਨ', status_interview: 'ਇੰਟਰਵਿਊ', status_accepted: 'ਮਨਜ਼ੂਰ', status_rejected: 'ਨਾਮਨਜ਼ੂਰ',
+    trackApplied: 'Applied', trackInterviewing: 'Interviewing', trackOffer: 'Offer', trackRejected: 'Rejected', myProgress: 'My progress',
     type_fulltime: 'ਪੂਰਾ ਸਮਾਂ', type_parttime: 'ਅੰਸ਼ਕ ਸਮਾਂ', type_internship: 'ਇੰਟਰਨਸ਼ਿਪ', type_contract: 'ਠੇਕਾ',
     model_onsite: 'ਦਫ਼ਤਰ ਵਿੱਚ', model_hybrid: 'ਹਾਈਬ੍ਰਿਡ', model_remote: 'ਰਿਮੋਟ',
     per_month: '/ਮਹੀਨਾ', per_year: '/ਸਾਲ', per_hour: '/ਘੰਟਾ',

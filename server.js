@@ -121,6 +121,18 @@ app.use('/api', buildRouter(pool));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Self-hosted web fonts (Plus Jakarta Sans for text, Playfair Display for the
+// app name and page titles), served from their npm packages so no request
+// leaves the app's own origin. Each package's CSS points at ./files/*.woff2,
+// which resolves inside the same mount. File names are versioned, so they
+// can be cached for a long time.
+for (const [mount, pkg] of [
+  ['/fonts/plus-jakarta-sans', '@fontsource-variable/plus-jakarta-sans'],
+  ['/fonts/playfair-display', '@fontsource-variable/playfair-display'],
+]) {
+  app.use(mount, express.static(path.dirname(require.resolve(pkg + '/package.json')), { maxAge: '30d' }));
+}
+
 // HTML shell: serve the app if authenticated. Unauthenticated top-level
 // visits (share links pasted into a browser — Sec-Fetch-Dest: document)
 // are sent to the platform's chromeless view of this app, where the shell

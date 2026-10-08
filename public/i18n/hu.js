@@ -86,5 +86,6 @@
     pageNotFound: 'Az oldal nem található', pageNotFoundBody: 'Ez a hivatkozás nem létezik.',
     showAllCountries: 'Mind a {n} ország megjelenítése', showFewer: 'Kevesebb megjelenítése',
     notifications: 'Értesítések', markAllRead: 'Összes megjelölése olvasottként', noNotifications: 'Még nincs értesítés', noNotificationsBody: 'Itt jelennek meg a készségeidhez illő állások.', notifUnread: '{n} olvasatlan',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

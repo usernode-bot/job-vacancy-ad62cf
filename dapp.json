@@ -100,6 +100,17 @@
       "path": "/#/job/j20",
       "expectSelector": "header [data-testid=no-cert-badge]",
       "expectText": "Barista"
+    },
+    {
+      "name": "Worldwide openings lists jobs with a link",
+      "path": "/#/world",
+      "expectSelector": "[data-testid=world-jobs] [data-testid=world-job] a[href^=http]",
+      "expectText": "Worldwide openings"
+    },
+    {
+      "name": "Home links to worldwide openings",
+      "path": "/",
+      "expectSelector": "[data-testid=world-jobs-link]"
     }
   ],
   "visibility": {

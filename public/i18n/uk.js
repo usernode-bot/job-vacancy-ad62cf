@@ -86,5 +86,6 @@
     pageNotFound: 'Сторінку не знайдено', pageNotFoundBody: 'Такого посилання не існує.',
     showAllCountries: 'Показати всі країни ({n})', showFewer: 'Показати менше',
     notifications: 'Сповіщення', markAllRead: 'Позначити все прочитаним', noNotifications: 'Сповіщень поки немає', noNotificationsBody: 'Тут з’являтимуться вакансії, що відповідають вашим навичкам.', notifUnread: '{n} непрочитаних',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

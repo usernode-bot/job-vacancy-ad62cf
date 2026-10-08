@@ -86,5 +86,6 @@
     pageNotFound: 'Ukurasa haukupatikana', pageNotFoundBody: 'Kiungo hiki hakipo.',
     showAllCountries: 'Onyesha nchi zote {n}', showFewer: 'Onyesha chache',
     notifications: 'Arifa', markAllRead: 'Weka alama zote kuwa zimesomwa', noNotifications: 'Bado hakuna arifa', noNotificationsBody: 'Kazi zinazolingana na ujuzi wako zitaonekana hapa.', notifUnread: '{n} hazijasomwa',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -86,5 +86,6 @@
     pageNotFound: 'பக்கம் கிடைக்கவில்லை', pageNotFoundBody: 'இந்த இணைப்பு இல்லை.',
     showAllCountries: 'அனைத்து {n} நாடுகளையும் காட்டு', showFewer: 'குறைவாகக் காட்டு',
     notifications: 'அறிவிப்புகள்', markAllRead: 'அனைத்தையும் படித்ததாகக் குறி', noNotifications: 'இன்னும் அறிவிப்புகள் இல்லை', noNotificationsBody: 'உங்கள் திறன்களுக்கு பொருந்தும் வேலைகள் இங்கே தோன்றும்.', notifUnread: '{n} படிக்காதவை',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

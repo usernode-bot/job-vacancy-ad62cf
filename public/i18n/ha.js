@@ -86,5 +86,6 @@
     pageNotFound: 'Ba a sami shafin ba', pageNotFoundBody: 'Wannan mahaɗi bai wanzu ba.',
     showAllCountries: 'Nuna dukkan ƙasashe {n}', showFewer: 'Nuna kaɗan',
     notifications: 'Sanarwa', markAllRead: 'Yi alamar duka a matsayin an karanta', noNotifications: 'Babu sanarwa tukuna', noNotificationsBody: 'Ayyukan da suka dace da gwanintarka za su bayyana a nan.', notifUnread: '{n} ba a karanta ba',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

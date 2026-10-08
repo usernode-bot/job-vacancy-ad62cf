@@ -86,5 +86,6 @@
     pageNotFound: 'صفحه یافت نشد', pageNotFoundBody: 'این پیوند وجود ندارد.',
     showAllCountries: 'نمایش همه {n} کشور', showFewer: 'نمایش کمتر',
     notifications: 'اعلان‌ها', markAllRead: 'علامت‌گذاری همه به‌عنوان خوانده‌شده', noNotifications: 'هنوز اعلانی نیست', noNotificationsBody: 'شغل‌هایی که با مهارت‌های شما مطابقت دارند اینجا نمایش داده می‌شوند.', notifUnread: '{n} خوانده‌نشده',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -86,5 +86,6 @@
     pageNotFound: 'Page introuvable', pageNotFoundBody: "Ce lien n'existe pas.",
     showAllCountries: 'Afficher les {n} pays', showFewer: 'Afficher moins',
     notifications: 'Notifications', markAllRead: 'Tout marquer comme lu', noNotifications: 'Aucune notification pour le moment', noNotificationsBody: 'Les offres correspondant à vos compétences apparaîtront ici.', notifUnread: '{n} non lues',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

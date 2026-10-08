@@ -86,5 +86,6 @@
     pageNotFound: 'Kaca mboten kapanggih', pageNotFoundBody: 'Link punika mboten wonten.',
     showAllCountries: 'Tampilake kabeh {n} negara', showFewer: 'Tampilake luwih sithik',
     notifications: 'Kabar', markAllRead: 'Tandhani kabeh wis diwaca', noNotifications: 'Durung ana kabar', noNotificationsBody: 'Lowongan sing cocog karo skill sampeyan bakal katon ing kene.', notifUnread: '{n} durung diwaca',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

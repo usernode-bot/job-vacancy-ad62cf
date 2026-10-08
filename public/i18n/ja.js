@@ -86,5 +86,6 @@
     pageNotFound: 'ページが見つかりません', pageNotFoundBody: 'このリンクは存在しません。',
     showAllCountries: '{n}か国すべてを表示', showFewer: '表示を減らす',
     notifications: '通知', markAllRead: 'すべて既読にする', noNotifications: '通知はまだありません', noNotificationsBody: 'スキルに合う求人がここに表示されます。', notifUnread: '未読 {n} 件',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

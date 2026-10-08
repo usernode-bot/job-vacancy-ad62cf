@@ -86,5 +86,6 @@
     pageNotFound: 'പേജ് കണ്ടെത്തിയില്ല', pageNotFoundBody: 'ഈ ലിങ്ക് നിലവിലില്ല.',
     showAllCountries: 'എല്ലാ {n} രാജ്യങ്ങളും കാണിക്കുക', showFewer: 'കുറച്ച് കാണിക്കുക',
     notifications: 'അറിയിപ്പുകൾ', markAllRead: 'എല്ലാം വായിച്ചതായി അടയാളപ്പെടുത്തുക', noNotifications: 'ഇതുവരെ അറിയിപ്പുകളൊന്നുമില്ല', noNotificationsBody: 'നിങ്ങളുടെ വൈദഗ്ധ്യത്തിന് യോജിക്കുന്ന ജോലികൾ ഇവിടെ കാണാം.', notifUnread: '{n} വായിക്കാത്തത്',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

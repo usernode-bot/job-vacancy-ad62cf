@@ -86,5 +86,6 @@
     pageNotFound: 'Stránka nenalezena', pageNotFoundBody: 'Tento odkaz neexistuje.',
     showAllCountries: 'Zobrazit všech {n} zemí', showFewer: 'Zobrazit méně',
     notifications: 'Oznámení', markAllRead: 'Označit vše jako přečtené', noNotifications: 'Zatím žádná oznámení', noNotificationsBody: 'Zde se zobrazí nabídky, které odpovídají vašim dovednostem.', notifUnread: '{n} nepřečtených',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -86,5 +86,6 @@
     pageNotFound: 'ገጹ አልተገኘም', pageNotFoundBody: 'ይህ ሊንክ የለም።',
     showAllCountries: 'ሁሉንም {n} አገሮች አሳይ', showFewer: 'አነስተኛ አሳይ',
     notifications: 'ማሳወቂያዎች', markAllRead: 'ሁሉንም እንደተነበበ ምልክት አድርግ', noNotifications: 'እስካሁን ማሳወቂያ የለም', noNotificationsBody: 'ከችሎታዎ ጋር የሚስማሙ ሥራዎች እዚህ ይታያሉ።', notifUnread: '{n} ያልተነበቡ',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

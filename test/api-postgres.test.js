@@ -82,6 +82,14 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     assert.equal((await call(null, 'GET', '/bootstrap')).status, 401);
   });
 
+  await t.test('worldwide openings need sign-in and never come back empty', async () => {
+    assert.equal((await call(null, 'GET', '/world-jobs')).status, 401);
+    const { status, data } = await call(stranger, 'GET', '/world-jobs');
+    assert.equal(status, 200);
+    assert.ok(data.jobs.length > 0);
+    for (const j of data.jobs) assert.ok(j.title && j.company && j.location && /^https?:\/\//.test(j.url));
+  });
+
   await t.test('staging seed provides the sample board and demo employer', async () => {
     const { status, data } = await call(stranger, 'GET', '/bootstrap');
     assert.equal(status, 200);

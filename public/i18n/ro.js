@@ -86,5 +86,6 @@
     pageNotFound: 'Pagina nu a fost găsită', pageNotFoundBody: 'Acest link nu există.',
     showAllCountries: 'Afișează toate cele {n} țări', showFewer: 'Afișează mai puține',
     notifications: 'Notificări', markAllRead: 'Marchează tot ca citit', noNotifications: 'Încă nu există notificări', noNotificationsBody: 'Joburile potrivite cu abilitățile tale vor apărea aici.', notifUnread: '{n} necitite',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

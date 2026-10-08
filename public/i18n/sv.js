@@ -86,5 +86,6 @@
     pageNotFound: 'Sidan hittades inte', pageNotFoundBody: 'Denna länk finns inte.',
     showAllCountries: 'Visa alla {n} länder', showFewer: 'Visa färre',
     notifications: 'Aviseringar', markAllRead: 'Markera alla som lästa', noNotifications: 'Inga aviseringar än', noNotificationsBody: 'Jobb som matchar dina färdigheter visas här.', notifUnread: '{n} olästa',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

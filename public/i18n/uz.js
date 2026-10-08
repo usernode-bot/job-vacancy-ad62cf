@@ -86,5 +86,6 @@
     pageNotFound: 'Sahifa topilmadi', pageNotFoundBody: 'Bu havola mavjud emas.',
     showAllCountries: 'Barcha {n} mamlakatni ko‘rsatish', showFewer: 'Kamroq ko‘rsatish',
     notifications: 'Bildirishnomalar', markAllRead: 'Hammasini o‘qilgan deb belgilash', noNotifications: 'Hozircha bildirishnoma yo‘q', noNotificationsBody: 'Ko‘nikmalaringizga mos ishlar shu yerda ko‘rinadi.', notifUnread: '{n} o‘qilmagan',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

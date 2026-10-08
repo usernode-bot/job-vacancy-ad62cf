@@ -86,5 +86,6 @@
     pageNotFound: 'ไม่พบหน้า', pageNotFoundBody: 'ลิงก์นี้ไม่มีอยู่',
     showAllCountries: 'แสดงทั้ง {n} ประเทศ', showFewer: 'แสดงน้อยลง',
     notifications: 'การแจ้งเตือน', markAllRead: 'ทำเครื่องหมายว่าอ่านทั้งหมดแล้ว', noNotifications: 'ยังไม่มีการแจ้งเตือน', noNotificationsBody: 'งานที่ตรงกับทักษะของคุณจะแสดงที่นี่', notifUnread: 'ยังไม่ได้อ่าน {n}',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

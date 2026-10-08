@@ -86,5 +86,6 @@
     pageNotFound: 'Ahụghị ibe ahụ', pageNotFoundBody: 'Njikọ a adịghị.',
     showAllCountries: 'Gosi mba niile {n}', showFewer: 'Gosi ole na ole',
     notifications: 'Ọkwa', markAllRead: 'Maka niile dị ka e gụọla', noNotifications: 'Enweghị ọkwa ugbu a', noNotificationsBody: 'Ọrụ ndị kwekọrọ na nkà gị ga-apụta ebe a.', notifUnread: '{n} anaghị agụ',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

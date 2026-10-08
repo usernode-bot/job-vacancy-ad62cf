@@ -86,5 +86,6 @@
     pageNotFound: 'Η σελίδα δεν βρέθηκε', pageNotFoundBody: 'Αυτός ο σύνδεσμος δεν υπάρχει.',
     showAllCountries: 'Εμφάνιση και των {n} χωρών', showFewer: 'Εμφάνιση λιγότερων',
     notifications: 'Ειδοποιήσεις', markAllRead: 'Σήμανση όλων ως αναγνωσμένων', noNotifications: 'Δεν υπάρχουν ειδοποιήσεις ακόμα', noNotificationsBody: 'Εδώ θα εμφανίζονται θέσεις που ταιριάζουν με τις δεξιότητές σας.', notifUnread: '{n} μη αναγνωσμένες',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

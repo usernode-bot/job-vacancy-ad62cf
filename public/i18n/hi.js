@@ -86,5 +86,6 @@
     pageNotFound: 'पेज नहीं मिला', pageNotFoundBody: 'यह लिंक मौजूद नहीं है।',
     showAllCountries: 'सभी {n} देश दिखाएं', showFewer: 'कम दिखाएं',
     notifications: 'सूचनाएँ', markAllRead: 'सभी को पढ़ा हुआ चिह्नित करें', noNotifications: 'अभी कोई सूचना नहीं', noNotificationsBody: 'आपके कौशल से मेल खाने वाली नौकरियाँ यहाँ दिखेंगी।', notifUnread: '{n} अपठित',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

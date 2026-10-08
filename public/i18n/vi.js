@@ -86,5 +86,6 @@
     pageNotFound: 'Không tìm thấy trang', pageNotFoundBody: 'Liên kết này không tồn tại.',
     showAllCountries: 'Hiện cả {n} quốc gia', showFewer: 'Thu gọn',
     notifications: 'Thông báo', markAllRead: 'Đánh dấu tất cả là đã đọc', noNotifications: 'Chưa có thông báo', noNotificationsBody: 'Các việc làm phù hợp với kỹ năng của bạn sẽ hiện ở đây.', notifUnread: '{n} chưa đọc',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

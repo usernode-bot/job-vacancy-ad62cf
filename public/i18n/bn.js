@@ -86,5 +86,6 @@
     pageNotFound: 'পৃষ্ঠা পাওয়া যায়নি', pageNotFoundBody: 'এই লিংকটির কোনো অস্তিত্ব নেই।',
     showAllCountries: 'সব {n}টি দেশ দেখুন', showFewer: 'কম দেখুন',
     notifications: 'বিজ্ঞপ্তি', markAllRead: 'সব পঠিত হিসেবে চিহ্নিত করুন', noNotifications: 'এখনও কোনো বিজ্ঞপ্তি নেই', noNotificationsBody: 'আপনার দক্ষতার সাথে মেলে এমন চাকরি এখানে দেখা যাবে।', notifUnread: '{n} অপঠিত',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -86,5 +86,6 @@
     pageNotFound: '页面未找到', pageNotFoundBody: '该链接不存在。',
     showAllCountries: '显示全部 {n} 个国家', showFewer: '收起',
     notifications: '通知', markAllRead: '全部标为已读', noNotifications: '暂无通知', noNotificationsBody: '与你技能匹配的职位会显示在这里。', notifUnread: '{n} 条未读',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

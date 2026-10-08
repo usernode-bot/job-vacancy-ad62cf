@@ -86,5 +86,6 @@
     pageNotFound: 'صفحہ نہیں ملا', pageNotFoundBody: 'یہ لنک موجود نہیں ہے۔',
     showAllCountries: 'تمام {n} ممالک دکھائیں', showFewer: 'کم دکھائیں',
     notifications: 'اطلاعات', markAllRead: 'سب کو پڑھا ہوا نشان زد کریں', noNotifications: 'ابھی کوئی اطلاع نہیں', noNotificationsBody: 'آپ کی مہارتوں سے مطابقت رکھنے والی ملازمتیں یہاں نظر آئیں گی۔', notifUnread: '{n} غیر پڑھی ہوئی',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

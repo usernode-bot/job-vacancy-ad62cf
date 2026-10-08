@@ -86,5 +86,6 @@
     pageNotFound: 'A kò rí ojú-ìwé náà', pageNotFoundBody: 'Ìjápọ̀ yìí kò sí.',
     showAllCountries: 'Fi gbogbo orílẹ̀-èdè {n} hàn', showFewer: 'Fi díẹ̀ hàn',
     notifications: 'Àwọn ìkìlọ̀', markAllRead: 'Ṣàmì sí gbogbo wọn bí a ti kà', noNotifications: 'Kò sí ìkìlọ̀ kankan síbẹ̀', noNotificationsBody: 'Àwọn iṣẹ́ tó bá ọgbọ́n rẹ mu yóò hàn níbí.', notifUnread: '{n} tí a kò kà',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

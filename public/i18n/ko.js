@@ -86,5 +86,6 @@
     pageNotFound: '페이지를 찾을 수 없습니다', pageNotFoundBody: '존재하지 않는 링크입니다.',
     showAllCountries: '{n}개 국가 모두 보기', showFewer: '간략히 보기',
     notifications: '알림', markAllRead: '모두 읽음으로 표시', noNotifications: '아직 알림이 없습니다', noNotificationsBody: '내 스킬에 맞는 일자리가 여기에 표시됩니다.', notifUnread: '읽지 않음 {n}개',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

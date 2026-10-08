@@ -86,5 +86,6 @@
     pageNotFound: 'పేజీ కనుగొనబడలేదు', pageNotFoundBody: 'ఈ లింక్ ఉనికిలో లేదు.',
     showAllCountries: 'మొత్తం {n} దేశాలను చూపించు', showFewer: 'తక్కువ చూపించు',
     notifications: 'నోటిఫికేషన్లు', markAllRead: 'అన్నింటినీ చదివినట్లు గుర్తించండి', noNotifications: 'ఇంకా నోటిఫికేషన్లు లేవు', noNotificationsBody: 'మీ నైపుణ్యాలకు సరిపోయే ఉద్యోగాలు ఇక్కడ కనిపిస్తాయి.', notifUnread: '{n} చదవనివి',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

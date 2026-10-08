@@ -86,5 +86,6 @@
     pageNotFound: 'הדף לא נמצא', pageNotFoundBody: 'הקישור הזה אינו קיים.',
     showAllCountries: 'הצג את כל {n} המדינות', showFewer: 'הצג פחות',
     notifications: 'התראות', markAllRead: 'סמן הכול כנקרא', noNotifications: 'אין התראות עדיין', noNotificationsBody: 'משרות שמתאימות לכישורים שלך יופיעו כאן.', notifUnread: '{n} שלא נקראו',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

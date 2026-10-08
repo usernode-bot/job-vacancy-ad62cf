@@ -90,5 +90,6 @@
     pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
     showAllCountries: 'Tampilkan semua {n} negara', showFewer: 'Tampilkan lebih sedikit',
     notifications: 'Notifikasi', markAllRead: 'Tandai semua dibaca', noNotifications: 'Belum ada notifikasi', noNotificationsBody: 'Lowongan yang cocok dengan skill kamu akan muncul di sini.', notifUnread: '{n} belum dibaca',
+    worldJobs: 'Lowongan seluruh dunia', worldJobsSub: 'Daftar langsung dari situs lowongan publik', worldJobsCount: '{n} lowongan', worldJobsSource: 'Daftar langsung dari {source}', worldJobsSample: 'Daftar langsung sedang tidak tersedia. Menampilkan contoh lowongan dari seluruh dunia.', viewListing: 'Lihat lowongan',
   },
 };

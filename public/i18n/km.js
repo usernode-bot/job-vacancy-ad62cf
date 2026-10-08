@@ -86,5 +86,6 @@
     pageNotFound: 'រកមិនឃើញទំព័រ', pageNotFoundBody: 'តំណនេះមិនមានទេ។',
     showAllCountries: 'បង្ហាញប្រទេសទាំង {n}', showFewer: 'បង្ហាញតិចជាង',
     notifications: 'ការជូនដំណឹង', markAllRead: 'សម្គាល់ទាំងអស់ថាបានអាន', noNotifications: 'មិនទាន់មានការជូនដំណឹងទេ', noNotificationsBody: 'ការងារដែលត្រូវនឹងជំនាញរបស់អ្នកនឹងបង្ហាញនៅទីនេះ។', notifUnread: '{n} មិនទាន់អាន',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

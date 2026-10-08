@@ -86,5 +86,6 @@
     pageNotFound: 'පිටුව හමු නොවීය', pageNotFoundBody: 'මෙම සබැඳිය නොපවතී.',
     showAllCountries: 'රටවල් {n} ම පෙන්වන්න', showFewer: 'අඩුවෙන් පෙන්වන්න',
     notifications: 'දැනුම්දීම්', markAllRead: 'සියල්ල කියවූ ලෙස සලකුණු කරන්න', noNotifications: 'තවමත් දැනුම්දීම් නැත', noNotificationsBody: 'ඔබේ කුසලතාවලට ගැළපෙන රැකියා මෙහි දිස්වේ.', notifUnread: 'නොකියවූ {n}',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

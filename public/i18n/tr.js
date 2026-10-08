@@ -86,5 +86,6 @@
     pageNotFound: 'Sayfa bulunamadı', pageNotFoundBody: 'Bu bağlantı mevcut değil.',
     showAllCountries: '{n} ülkenin tümünü göster', showFewer: 'Daha az göster',
     notifications: 'Bildirimler', markAllRead: 'Tümünü okundu işaretle', noNotifications: 'Henüz bildirim yok', noNotificationsBody: 'Becerilerinize uyan işler burada görünecek.', notifUnread: '{n} okunmamış',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -86,5 +86,6 @@
     pageNotFound: 'ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ', pageNotFoundBody: 'ಈ ಲಿಂಕ್ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
     showAllCountries: 'ಎಲ್ಲಾ {n} ದೇಶಗಳನ್ನು ತೋರಿಸಿ', showFewer: 'ಕಡಿಮೆ ತೋರಿಸಿ',
     notifications: 'ಅಧಿಸೂಚನೆಗಳು', markAllRead: 'ಎಲ್ಲವನ್ನೂ ಓದಿದೆ ಎಂದು ಗುರುತಿಸಿ', noNotifications: 'ಇನ್ನೂ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ', noNotificationsBody: 'ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳಿಗೆ ಹೊಂದುವ ಉದ್ಯೋಗಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.', notifUnread: '{n} ಓದದಿರುವುದು',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

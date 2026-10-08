@@ -86,5 +86,6 @@
     pageNotFound: 'Pagina niet gevonden', pageNotFoundBody: 'Deze link bestaat niet.',
     showAllCountries: 'Alle {n} landen tonen', showFewer: 'Minder tonen',
     notifications: 'Meldingen', markAllRead: 'Alles als gelezen markeren', noNotifications: 'Nog geen meldingen', noNotificationsBody: 'Banen die bij je vaardigheden passen, verschijnen hier.', notifUnread: '{n} ongelezen',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

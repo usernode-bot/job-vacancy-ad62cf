@@ -86,5 +86,6 @@
     pageNotFound: 'စာမျက်နှာ မတွေ့ပါ', pageNotFoundBody: 'ဤလင့်ခ် မရှိပါ။',
     showAllCountries: 'နိုင်ငံ {n} ခုလုံးကို ပြပါ', showFewer: 'လျော့ပြပါ',
     notifications: 'အကြောင်းကြားချက်များ', markAllRead: 'အားလုံးကို ဖတ်ပြီးအဖြစ် မှတ်ပါ', noNotifications: 'အကြောင်းကြားချက် မရှိသေးပါ', noNotificationsBody: 'သင့်ကျွမ်းကျင်မှုနှင့် ကိုက်ညီသော အလုပ်များ ဤနေရာတွင် ပေါ်လာမည်။', notifUnread: 'မဖတ်ရသေး {n}',
+    worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
   },
 };

@@ -12,6 +12,7 @@
     searchPlaceholder: 'Cari jawatan, syarikat atau kemahiran', quickCountry: 'Pilih negara', allCountries: 'Semua negara', chooseCountry: 'Pilih negara', searchCountry: 'Cari negara',
     switchLang: 'Tukar bahasa', appLanguage: 'Bahasa aplikasi', searchLanguage: 'Cari bahasa', noLanguage: 'Bahasa tidak dijumpai', noLanguageBody: 'Cuba ejaan lain.', skipToContent: 'Langkau ke kandungan', lightMode: 'Mod cerah', darkMode: 'Mod gelap', nJobs: '{n} jawatan',
     hello: 'Hai, {name}', homeTitle: 'Jawatan kosong di seluruh dunia', homeStats: '{jobs} jawatan kosong di {countries} negara',
+    welcome: 'Selamat datang', homeEmpty: 'Jawatan sedang ditambah. Cipta profil Pencari Kerja dan kami akan memaklumkan apabila ada jawatan baharu yang sepadan dengan kemahiran anda.', featuredJobs: 'Jawatan terpilih dari seluruh dunia', remoteOnly: 'Jarak jauh sahaja', fieldOfWork: 'Bidang kerja',
     yourHiring: 'Pengambilan anda', openDashboard: 'Buka papan pemuka', statJobs: 'Jawatan', statApplicants: 'Pemohon',
     forYou: 'Jawatan untuk Anda', seeAll: 'Lihat semua', noRecsTitle: 'Belum ada jawatan yang sepadan', noRecsBody: 'Tambah kemahiran pada profil anda untuk cadangan yang lebih tepat.', addSkills: 'Tambah kemahiran',
     forYouGuestTitle: 'Cadangan untuk kemahiran anda', forYouGuestBody: 'Cipta profil Pencari Kerja untuk melihat jawatan yang paling sesuai dengan anda.', signUpSeeker: 'Daftar sebagai Pencari Kerja', completeProfile: 'Lengkapkan profil',

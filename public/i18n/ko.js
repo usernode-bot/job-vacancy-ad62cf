@@ -12,6 +12,7 @@
     searchPlaceholder: '직무, 기업 또는 기술 검색', quickCountry: '국가 선택', allCountries: '모든 국가', chooseCountry: '국가 선택', searchCountry: '국가 검색',
     switchLang: '언어 변경', appLanguage: '앱 언어', searchLanguage: '언어 검색', noLanguage: '언어를 찾을 수 없습니다', noLanguageBody: '다른 철자로 시도해 보세요.', skipToContent: '본문으로 건너뛰기', lightMode: '라이트 모드', darkMode: '다크 모드', nJobs: '채용 공고 {n}개',
     hello: '안녕하세요, {name}님', homeTitle: '전 세계 채용 정보', homeStats: '{countries}개국에서 {jobs}개 채용 중',
+    welcome: '환영합니다', homeEmpty: '채용 공고가 추가되고 있습니다. 구직자 프로필을 만들면 새 채용 공고가 내 기술과 일치할 때 알려드립니다.', featuredJobs: '전 세계 추천 채용 공고', remoteOnly: '원격 근무만', fieldOfWork: '직무 분야',
     yourHiring: '채용 현황', openDashboard: '대시보드 열기', statJobs: '채용 공고', statApplicants: '지원자',
     forYou: '맞춤 채용 공고', seeAll: '전체 보기', noRecsTitle: '아직 일치하는 채용 공고가 없습니다', noRecsBody: '프로필에 기술을 추가하면 더 정확한 추천을 받을 수 있습니다.', addSkills: '기술 추가',
     forYouGuestTitle: '보유 기술 맞춤 추천', forYouGuestBody: '구직자 프로필을 만들면 가장 잘 맞는 채용 공고를 확인할 수 있습니다.', signUpSeeker: '구직자로 가입', completeProfile: '프로필 완성하기',

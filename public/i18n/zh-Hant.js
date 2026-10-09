@@ -12,6 +12,7 @@
     searchPlaceholder: '搜尋職務、公司或技能', quickCountry: '選擇國家', allCountries: '所有國家', chooseCountry: '選擇國家', searchCountry: '搜尋國家',
     switchLang: '變更語言', appLanguage: '應用程式語言', searchLanguage: '搜尋語言', noLanguage: '找不到該語言', noLanguageBody: '請嘗試其他拼法。', skipToContent: '跳至內容', lightMode: '淺色模式', darkMode: '深色模式', nJobs: '{n} 個職缺',
     hello: '您好，{name}', homeTitle: '全球職缺', homeStats: '{countries} 個國家共有 {jobs} 個職缺',
+    welcome: '歡迎', homeEmpty: '職位正在陸續發布。建立求職者檔案，當有新職位與您的技能相符時，我們會通知您。', featuredJobs: '全球精選職位', remoteOnly: '僅限遠端', fieldOfWork: '工作領域',
     yourHiring: '您的招募', openDashboard: '開啟管理面板', statJobs: '職缺', statApplicants: '應徵者',
     forYou: '為您推薦', seeAll: '查看全部', noRecsTitle: '尚無符合的職缺', noRecsBody: '在個人檔案中新增技能，即可獲得更精準的推薦。', addSkills: '新增技能',
     forYouGuestTitle: '依您的技能推薦', forYouGuestBody: '建立求職者檔案，查看最適合您的職缺。', signUpSeeker: '註冊為求職者', completeProfile: '完成檔案',

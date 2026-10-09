@@ -12,6 +12,7 @@
     searchPlaceholder: 'ਅਹੁਦੇ, ਕੰਪਨੀਆਂ ਜਾਂ ਹੁਨਰ ਖੋਜੋ', quickCountry: 'ਦੇਸ਼ ਚੁਣੋ', allCountries: 'ਸਾਰੇ ਦੇਸ਼', chooseCountry: 'ਦੇਸ਼ ਚੁਣੋ', searchCountry: 'ਦੇਸ਼ ਖੋਜੋ',
     switchLang: 'ਭਾਸ਼ਾ ਬਦਲੋ', appLanguage: 'ਐਪ ਦੀ ਭਾਸ਼ਾ', searchLanguage: 'ਭਾਸ਼ਾਵਾਂ ਖੋਜੋ', noLanguage: 'ਕੋਈ ਭਾਸ਼ਾ ਨਹੀਂ ਮਿਲੀ', noLanguageBody: 'ਕੋਈ ਹੋਰ ਸ਼ਬਦ-ਜੋੜ ਅਜ਼ਮਾਓ।', skipToContent: 'ਸਮੱਗਰੀ ਉੱਤੇ ਜਾਓ', lightMode: 'ਲਾਈਟ ਮੋਡ', darkMode: 'ਡਾਰਕ ਮੋਡ', nJobs: '{n} ਨੌਕਰੀਆਂ',
     hello: 'ਸਤ ਸ੍ਰੀ ਅਕਾਲ, {name}', homeTitle: 'ਦੁਨੀਆ ਭਰ ਦੀਆਂ ਨੌਕਰੀਆਂ', homeStats: '{countries} ਦੇਸ਼ਾਂ ਵਿੱਚ {jobs} ਖਾਲੀ ਅਸਾਮੀਆਂ',
+    welcome: 'ਜੀ ਆਇਆਂ ਨੂੰ', homeEmpty: 'ਨੌਕਰੀਆਂ ਜੋੜੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ। ਨੌਕਰੀ ਲੈਣ ਵਾਲੇ ਦੀ ਪ੍ਰੋਫਾਈਲ ਬਣਾਓ ਅਤੇ ਜਦੋਂ ਤੁਹਾਡੇ ਹੁਨਰ ਨਾਲ ਮਿਲਦੀ ਨਵੀਂ ਨੌਕਰੀ ਆਵੇਗੀ ਤਾਂ ਅਸੀਂ ਦੱਸਾਂਗੇ।', featuredJobs: 'ਦੁਨੀਆ ਭਰ ਦੀਆਂ ਚੁਣੀਆਂ ਹੋਈਆਂ ਨੌਕਰੀਆਂ', remoteOnly: 'ਸਿਰਫ਼ ਰਿਮੋਟ', fieldOfWork: 'ਕੰਮ ਦਾ ਖੇਤਰ',
     yourHiring: 'ਤੁਹਾਡੀ ਭਰਤੀ', openDashboard: 'ਡੈਸ਼ਬੋਰਡ ਖੋਲ੍ਹੋ', statJobs: 'ਨੌਕਰੀਆਂ', statApplicants: 'ਬਿਨੈਕਾਰ',
     forYou: 'ਤੁਹਾਡੇ ਲਈ ਨੌਕਰੀਆਂ', seeAll: 'ਸਾਰੇ ਦੇਖੋ', noRecsTitle: 'ਅਜੇ ਕੋਈ ਮੇਲ ਖਾਂਦੀ ਨੌਕਰੀ ਨਹੀਂ', noRecsBody: 'ਬਿਹਤਰ ਸਿਫ਼ਾਰਸ਼ਾਂ ਲਈ ਆਪਣੀ ਪ੍ਰੋਫ਼ਾਈਲ ਵਿੱਚ ਹੁਨਰ ਸ਼ਾਮਲ ਕਰੋ।', addSkills: 'ਹੁਨਰ ਸ਼ਾਮਲ ਕਰੋ',
     forYouGuestTitle: 'ਤੁਹਾਡੇ ਹੁਨਰਾਂ ਲਈ ਸਿਫ਼ਾਰਸ਼ਾਂ', forYouGuestBody: 'ਤੁਹਾਡੇ ਲਈ ਸਭ ਤੋਂ ਢੁਕਵੀਆਂ ਨੌਕਰੀਆਂ ਦੇਖਣ ਲਈ ਨੌਕਰੀ ਲੱਭਣ ਵਾਲੇ ਦੀ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ।', signUpSeeker: 'ਨੌਕਰੀ ਲੱਭਣ ਵਾਲੇ ਵਜੋਂ ਸਾਈਨ ਅੱਪ ਕਰੋ', completeProfile: 'ਪ੍ਰੋਫ਼ਾਈਲ ਪੂਰੀ ਕਰੋ',

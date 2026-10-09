@@ -12,6 +12,7 @@
     searchPlaceholder: 'હોદ્દા, કંપનીઓ અથવા કૌશલ્યો શોધો', quickCountry: 'દેશ પસંદ કરો', allCountries: 'બધા દેશો', chooseCountry: 'દેશ પસંદ કરો', searchCountry: 'દેશો શોધો',
     switchLang: 'ભાષા બદલો', appLanguage: 'એપની ભાષા', searchLanguage: 'ભાષાઓ શોધો', noLanguage: 'કોઈ ભાષા મળી નથી', noLanguageBody: 'બીજી જોડણી અજમાવો.', skipToContent: 'સામગ્રી પર જાઓ', lightMode: 'લાઇટ મોડ', darkMode: 'ડાર્ક મોડ', nJobs: '{n} નોકરીઓ',
     hello: 'નમસ્તે, {name}', homeTitle: 'વિશ્વભરની નોકરીઓ', homeStats: '{countries} દેશોમાં {jobs} ખાલી જગ્યાઓ',
+    welcome: 'સ્વાગત છે', homeEmpty: 'નોકરીઓ ઉમેરવામાં આવી રહી છે. નોકરી શોધનારની પ્રોફાઇલ બનાવો અને તમારી કૌશલ્યો સાથે મેળ ખાતી નવી નોકરી આવે ત્યારે અમે જણાવીશું.', featuredJobs: 'વિશ્વભરની પ્રખ્યાત નોકરીઓ', remoteOnly: 'ફક્ત રિમોટ', fieldOfWork: 'કામનું ક્ષેત્ર',
     yourHiring: 'તમારી ભરતી', openDashboard: 'ડેશબોર્ડ ખોલો', statJobs: 'નોકરીઓ', statApplicants: 'અરજદારો',
     forYou: 'તમારા માટે નોકરીઓ', seeAll: 'બધું જુઓ', noRecsTitle: 'હજી કોઈ મેળ ખાતી નોકરી નથી', noRecsBody: 'વધુ સારી ભલામણો માટે તમારી પ્રોફાઇલમાં કૌશલ્યો ઉમેરો.', addSkills: 'કૌશલ્યો ઉમેરો',
     forYouGuestTitle: 'તમારા કૌશલ્યો માટે ભલામણો', forYouGuestBody: 'તમને સૌથી વધુ અનુકૂળ નોકરીઓ જોવા માટે નોકરી શોધનારની પ્રોફાઇલ બનાવો.', signUpSeeker: 'નોકરી શોધનાર તરીકે સાઇન અપ કરો', completeProfile: 'પ્રોફાઇલ પૂર્ણ કરો',

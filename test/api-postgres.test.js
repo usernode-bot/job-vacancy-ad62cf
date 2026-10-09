@@ -159,6 +159,13 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     // Re-saving keeps the certificate id the application points at.
     const again = await call(seeker, 'PUT', '/profile', profileBody({ certificates: [{ ...profileBody().certificates[0], id: certId }] }));
     assert.equal(again.data.profile.certificates[0].id, certId);
+    // Field of work: saved when it is a known category, blanked otherwise.
+    const withField = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, field: 'health' } }));
+    assert.equal(withField.status, 200);
+    assert.equal(withField.data.profile.field, 'health');
+    const badField = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, field: 'nonsense' } }));
+    assert.equal(badField.status, 200);
+    assert.equal(badField.data.profile.field, '');
   });
 
   await t.test('posting a job notifies seekers whose skills match, and only them', async () => {

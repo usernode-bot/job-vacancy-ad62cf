@@ -12,6 +12,7 @@
     searchPlaceholder: 'Hledejte pozice, firmy nebo dovednosti', quickCountry: 'Vyberte zemi', allCountries: 'Všechny země', chooseCountry: 'Vyberte zemi', searchCountry: 'Hledat zemi',
     switchLang: 'Změnit jazyk', appLanguage: 'Jazyk aplikace', searchLanguage: 'Hledat jazyk', noLanguage: 'Jazyk nenalezen', noLanguageBody: 'Zkuste jiný způsob zápisu.', skipToContent: 'Přejít na obsah', lightMode: 'Světlý režim', darkMode: 'Tmavý režim', nJobs: 'Nabídky: {n}',
     hello: 'Dobrý den, {name}', homeTitle: 'Práce po celém světě', homeStats: 'Otevřené nabídky: {jobs}, země: {countries}',
+    welcome: 'Vítejte', homeEmpty: 'Nabídky práce se přidávají. Vytvořte profil uchazeče o práci a dáme vědět, když se objeví nová nabídka odpovídající vašim dovednostem.', featuredJobs: 'Vybrané nabídky z celého světa', remoteOnly: 'Jen na dálku', fieldOfWork: 'Obor činnosti',
     yourHiring: 'Váš nábor', openDashboard: 'Otevřít přehled', statJobs: 'Nabídky', statApplicants: 'Uchazeči',
     forYou: 'Nabídky pro vás', seeAll: 'Zobrazit vše', noRecsTitle: 'Zatím žádné vhodné nabídky', noRecsBody: 'Přidejte do profilu dovednosti a získejte lepší doporučení.', addSkills: 'Přidat dovednosti',
     forYouGuestTitle: 'Doporučení podle vašich dovedností', forYouGuestBody: 'Vytvořte si profil uchazeče a uvidíte nabídky, které vám nejlépe odpovídají.', signUpSeeker: 'Registrovat se jako uchazeč', completeProfile: 'Dokončit profil',

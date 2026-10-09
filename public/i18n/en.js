@@ -18,6 +18,7 @@
     searchPlaceholder: 'Search roles, companies or skills', quickCountry: 'Choose country', allCountries: 'All countries', chooseCountry: 'Choose country', searchCountry: 'Search countries',
     switchLang: 'Change language', appLanguage: 'App language', searchLanguage: 'Search languages', noLanguage: 'No language found', noLanguageBody: 'Try another spelling.', skipToContent: 'Skip to content', lightMode: 'Light mode', darkMode: 'Dark mode', nJobs: '{n} jobs',
     hello: 'Hi, {name}', homeTitle: 'Jobs around the world', homeStats: '{jobs} open jobs in {countries} countries',
+    welcome: 'Welcome', homeEmpty: 'Jobs are being added. Create a Job Seeker profile and we will let you know when a new job matches your skills.', featuredJobs: 'Featured openings worldwide', remoteOnly: 'Remote only', fieldOfWork: 'Field of work',
     yourHiring: 'Your hiring', openDashboard: 'Open dashboard', statJobs: 'Jobs', statApplicants: 'Applicants',
     forYou: 'Jobs for You', seeAll: 'See all', noRecsTitle: 'No matching jobs yet', noRecsBody: 'Add skills to your profile for better recommendations.', addSkills: 'Add skills',
     forYouGuestTitle: 'Recommendations for your skills', forYouGuestBody: 'Create a Job Seeker profile to see the jobs that fit you best.', signUpSeeker: 'Sign up as a Job Seeker', completeProfile: 'Complete profile',

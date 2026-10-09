@@ -12,6 +12,7 @@
     searchPlaceholder: 'ابحث عن وظائف أو شركات أو مهارات', quickCountry: 'اختر الدولة', allCountries: 'جميع الدول', chooseCountry: 'اختر الدولة', searchCountry: 'ابحث عن دولة',
     switchLang: 'تغيير اللغة', appLanguage: 'لغة التطبيق', searchLanguage: 'ابحث عن لغة', noLanguage: 'لم يتم العثور على لغة', noLanguageBody: 'جرّب تهجئة أخرى.', skipToContent: 'الانتقال إلى المحتوى', lightMode: 'الوضع الفاتح', darkMode: 'الوضع الداكن', nJobs: '{n} وظيفة',
     hello: 'مرحبًا، {name}', homeTitle: 'وظائف حول العالم', homeStats: '{jobs} وظيفة متاحة في {countries} دولة',
+    welcome: 'مرحبًا', homeEmpty: 'تُضاف الوظائف باستمرار. أنشئ ملفًا للباحث عن عمل وسنخبرك عند ظهور وظيفة جديدة تطابق مهاراتك.', featuredJobs: 'وظائف مميزة من حول العالم', remoteOnly: 'عن بعد فقط', fieldOfWork: 'مجال العمل',
     yourHiring: 'التوظيف لديك', openDashboard: 'فتح لوحة التحكم', statJobs: 'الوظائف', statApplicants: 'المتقدمون',
     forYou: 'وظائف مناسبة لك', seeAll: 'عرض الكل', noRecsTitle: 'لا توجد وظائف مطابقة بعد', noRecsBody: 'أضف مهارات إلى ملفك الشخصي للحصول على توصيات أفضل.', addSkills: 'إضافة مهارات',
     forYouGuestTitle: 'توصيات تناسب مهاراتك', forYouGuestBody: 'أنشئ ملفًا شخصيًا كباحث عن عمل لرؤية الوظائف الأنسب لك.', signUpSeeker: 'التسجيل كباحث عن عمل', completeProfile: 'إكمال الملف الشخصي',

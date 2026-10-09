@@ -12,6 +12,7 @@
     searchPlaceholder: 'Cerchi ruoli, aziende o competenze', quickCountry: 'Scegli paese', allCountries: 'Tutti i paesi', chooseCountry: 'Scegli paese', searchCountry: 'Cerca paesi',
     switchLang: 'Cambia lingua', appLanguage: "Lingua dell'app", searchLanguage: 'Cerca lingue', noLanguage: 'Nessuna lingua trovata', noLanguageBody: "Provi un'altra grafia.", skipToContent: 'Vai al contenuto', lightMode: 'Modalità chiara', darkMode: 'Modalità scura', nJobs: '{n} offerte',
     hello: 'Salve, {name}', homeTitle: 'Lavoro in tutto il mondo', homeStats: '{jobs} offerte aperte in {countries} paesi',
+    welcome: 'Benvenuto', homeEmpty: 'Le offerte arrivano. Crea un profilo di Chi cerca lavoro e ti avviseremo quando una nuova offerta corrisponderà alle tue competenze.', featuredJobs: 'Offerte in evidenza da tutto il mondo', remoteOnly: 'Solo da remoto', fieldOfWork: 'Settore lavorativo',
     yourHiring: 'Le sue assunzioni', openDashboard: 'Apri dashboard', statJobs: 'Offerte', statApplicants: 'Candidati',
     forYou: 'Offerte per lei', seeAll: 'Vedi tutto', noRecsTitle: 'Ancora nessuna offerta corrispondente', noRecsBody: 'Aggiunga competenze al profilo per ricevere consigli migliori.', addSkills: 'Aggiungi competenze',
     forYouGuestTitle: 'Consigli in base alle sue competenze', forYouGuestBody: 'Crei un profilo da candidato per vedere le offerte più adatte a lei.', signUpSeeker: 'Registrati come candidato', completeProfile: 'Completa profilo',

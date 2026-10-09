@@ -12,6 +12,7 @@
     searchPlaceholder: 'Stellen, Unternehmen oder Fähigkeiten suchen', quickCountry: 'Land wählen', allCountries: 'Alle Länder', chooseCountry: 'Land wählen', searchCountry: 'Länder suchen',
     switchLang: 'Sprache ändern', appLanguage: 'App-Sprache', searchLanguage: 'Sprachen suchen', noLanguage: 'Keine Sprache gefunden', noLanguageBody: 'Versuchen Sie eine andere Schreibweise.', skipToContent: 'Zum Inhalt springen', lightMode: 'Heller Modus', darkMode: 'Dunkler Modus', nJobs: '{n} Stellen',
     hello: 'Hallo, {name}', homeTitle: 'Stellen weltweit', homeStats: '{jobs} offene Stellen in {countries} Ländern',
+    welcome: 'Willkommen', homeEmpty: 'Stellen werden gerade hinzugefügt. Erstellen Sie ein Stellenbewerber-Profil und wir benachrichtigen Sie, wenn eine neue Stelle zu Ihren Fähigkeiten passt.', featuredJobs: 'Ausgewählte Stellen weltweit', remoteOnly: 'Nur Remote', fieldOfWork: 'Arbeitsbereich',
     yourHiring: 'Ihre Personalsuche', openDashboard: 'Dashboard öffnen', statJobs: 'Stellen', statApplicants: 'Bewerber',
     forYou: 'Stellen für Sie', seeAll: 'Alle anzeigen', noRecsTitle: 'Noch keine passenden Stellen', noRecsBody: 'Fügen Sie Ihrem Profil Fähigkeiten hinzu, um bessere Empfehlungen zu erhalten.', addSkills: 'Fähigkeiten hinzufügen',
     forYouGuestTitle: 'Empfehlungen für Ihre Fähigkeiten', forYouGuestBody: 'Erstellen Sie ein Bewerberprofil, um die am besten passenden Stellen zu sehen.', signUpSeeker: 'Als Bewerber registrieren', completeProfile: 'Profil vervollständigen',

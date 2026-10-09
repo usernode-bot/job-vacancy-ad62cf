@@ -12,6 +12,7 @@
     searchPlaceholder: 'Pozíció, cég vagy készség keresése', quickCountry: 'Ország kiválasztása', allCountries: 'Minden ország', chooseCountry: 'Ország kiválasztása', searchCountry: 'Ország keresése',
     switchLang: 'Nyelv módosítása', appLanguage: 'Alkalmazás nyelve', searchLanguage: 'Nyelv keresése', noLanguage: 'Nem található nyelv', noLanguageBody: 'Próbálja más írásmóddal.', skipToContent: 'Ugrás a tartalomra', lightMode: 'Világos mód', darkMode: 'Sötét mód', nJobs: '{n} állás',
     hello: 'Üdvözöljük, {name}', homeTitle: 'Állások a világ minden tájáról', homeStats: '{jobs} nyitott állás {countries} országban',
+    welcome: 'Üdvözöljük', homeEmpty: 'Állások hozzáadása folyamatban van. Hozzon létre Álláskereső profilt, és értesítjük, ha új állás illik a készségeihez.', featuredJobs: 'Kiemelt álláshirdetések a világból', remoteOnly: 'Csak távmunka', fieldOfWork: 'Munkaterület',
     yourHiring: 'Toborzásai', openDashboard: 'Irányítópult megnyitása', statJobs: 'Állások', statApplicants: 'Jelentkezők',
     forYou: 'Önnek ajánlott állások', seeAll: 'Összes megtekintése', noRecsTitle: 'Még nincs megfelelő állás', noRecsBody: 'Adjon készségeket a profiljához a jobb ajánlásokért.', addSkills: 'Készségek hozzáadása',
     forYouGuestTitle: 'Ajánlások az Ön készségei alapján', forYouGuestBody: 'Hozzon létre Álláskereső profilt, hogy lássa az Önhöz leginkább illő állásokat.', signUpSeeker: 'Regisztráció álláskeresőként', completeProfile: 'Profil kiegészítése',

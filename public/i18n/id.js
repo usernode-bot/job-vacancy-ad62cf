@@ -16,6 +16,7 @@
     searchPlaceholder: 'Cari posisi, perusahaan, atau skill', quickCountry: 'Pilih negara', allCountries: 'Semua negara', chooseCountry: 'Pilih negara', searchCountry: 'Cari negara',
     switchLang: 'Ganti bahasa', appLanguage: 'Bahasa aplikasi', searchLanguage: 'Cari bahasa', noLanguage: 'Bahasa tidak ditemukan', noLanguageBody: 'Coba ejaan lain.', skipToContent: 'Langsung ke konten', lightMode: 'Mode terang', darkMode: 'Mode gelap', nJobs: '{n} lowongan',
     hello: 'Halo, {name}', homeTitle: 'Lowongan di seluruh dunia', homeStats: '{jobs} lowongan aktif di {countries} negara',
+    welcome: 'Selamat datang', homeEmpty: 'Lowongan sedang ditambahkan. Buat profil Pencari Kerja dan kami akan memberi tahu Anda saat ada lowongan baru yang sesuai dengan keahlian Anda.', featuredJobs: 'Lowongan unggulan dari seluruh dunia', remoteOnly: 'Hanya remote', fieldOfWork: 'Bidang pekerjaan',
     yourHiring: 'Rekrutmen kamu', openDashboard: 'Buka dasbor', statJobs: 'Lowongan', statApplicants: 'Pelamar',
     forYou: 'Lowongan untuk Kamu', seeAll: 'Lihat semua', noRecsTitle: 'Belum ada lowongan yang cocok', noRecsBody: 'Tambahkan skill di profil agar rekomendasi lebih tepat.', addSkills: 'Tambah skill',
     forYouGuestTitle: 'Rekomendasi sesuai skill kamu', forYouGuestBody: 'Buat profil Pencari Kerja untuk melihat lowongan yang paling cocok.', signUpSeeker: 'Daftar sebagai Pencari Kerja', completeProfile: 'Lengkapi profil',

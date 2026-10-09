@@ -12,6 +12,7 @@
     searchPlaceholder: 'Zoek functies, bedrijven of vaardigheden', quickCountry: 'Kies land', allCountries: 'Alle landen', chooseCountry: 'Kies land', searchCountry: 'Landen zoeken',
     switchLang: 'Taal wijzigen', appLanguage: 'App-taal', searchLanguage: 'Talen zoeken', noLanguage: 'Geen taal gevonden', noLanguageBody: 'Probeer een andere spelling.', skipToContent: 'Naar inhoud gaan', lightMode: 'Lichte modus', darkMode: 'Donkere modus', nJobs: '{n} vacatures',
     hello: 'Hallo, {name}', homeTitle: 'Vacatures over de hele wereld', homeStats: '{jobs} openstaande vacatures in {countries} landen',
+    welcome: 'Welkom', homeEmpty: 'Er worden banen toegevoegd. Maak een Werkzoekende-profiel en we laten het weten wanneer een nieuwe baan bij jouw vaardigheden past.', featuredJobs: 'Uitgelichte vacatures wereldwijd', remoteOnly: 'Alleen remote', fieldOfWork: 'Werkgebied',
     yourHiring: 'Uw werving', openDashboard: 'Dashboard openen', statJobs: 'Vacatures', statApplicants: 'Sollicitanten',
     forYou: 'Vacatures voor u', seeAll: 'Alles bekijken', noRecsTitle: 'Nog geen passende vacatures', noRecsBody: 'Voeg vaardigheden toe aan uw profiel voor betere aanbevelingen.', addSkills: 'Vaardigheden toevoegen',
     forYouGuestTitle: 'Aanbevelingen voor uw vaardigheden', forYouGuestBody: 'Maak een werkzoekendenprofiel aan om de vacatures te zien die het best bij u passen.', signUpSeeker: 'Registreren als werkzoekende', completeProfile: 'Profiel aanvullen',

@@ -111,6 +111,18 @@
       "name": "Home links to worldwide openings",
       "path": "/",
       "expectSelector": "[data-testid=world-jobs-link]"
+    },
+    {
+      "name": "Home offers Remote only and Country chips before the categories",
+      "path": "/",
+      "expectSelector": "[data-action=home-remote]",
+      "expectText": "Remote only"
+    },
+    {
+      "name": "Jobs for You previews the newest jobs before the sign-up card",
+      "path": "/",
+      "expectSelector": "[data-testid=for-you-preview] [data-testid=job-card]",
+      "expectText": "Sign up as a Job Seeker"
     }
   ],
   "visibility": {

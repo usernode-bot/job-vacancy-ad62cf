@@ -12,6 +12,7 @@
     searchPlaceholder: 'পদ, কোম্পানি বা দক্ষতা খুঁজুন', quickCountry: 'দেশ বেছে নিন', allCountries: 'সব দেশ', chooseCountry: 'দেশ বেছে নিন', searchCountry: 'দেশ খুঁজুন',
     switchLang: 'ভাষা পরিবর্তন করুন', appLanguage: 'অ্যাপের ভাষা', searchLanguage: 'ভাষা খুঁজুন', noLanguage: 'কোনো ভাষা পাওয়া যায়নি', noLanguageBody: 'অন্য কোনো বানান চেষ্টা করুন।', skipToContent: 'মূল বিষয়বস্তুতে যান', lightMode: 'লাইট মোড', darkMode: 'ডার্ক মোড', nJobs: '{n}টি চাকরি',
     hello: 'নমস্কার, {name}', homeTitle: 'বিশ্বজুড়ে চাকরি', homeStats: '{countries}টি দেশে {jobs}টি খোলা চাকরি',
+    welcome: 'স্বাগতম', homeEmpty: 'চাকরি যোগ করা হচ্ছে। চাকরিপ্রার্থীর প্রোফাইল তৈরি করুন, আপনার দক্ষতার সাথে মেলে এমন নতুন চাকরি এলে আমরা জানাব।', featuredJobs: 'বিশ্বজুড়ে নির্বাচিত চাকরি', remoteOnly: 'শুধু রিমোট', fieldOfWork: 'কাজের ক্ষেত্র',
     yourHiring: 'আপনার নিয়োগ', openDashboard: 'ড্যাশবোর্ড খুলুন', statJobs: 'চাকরি', statApplicants: 'আবেদনকারী',
     forYou: 'আপনার জন্য চাকরি', seeAll: 'সব দেখুন', noRecsTitle: 'এখনও মিলে যাওয়া কোনো চাকরি নেই', noRecsBody: 'আরও ভালো সুপারিশের জন্য আপনার প্রোফাইলে দক্ষতা যোগ করুন।', addSkills: 'দক্ষতা যোগ করুন',
     forYouGuestTitle: 'আপনার দক্ষতা অনুযায়ী সুপারিশ', forYouGuestBody: 'আপনার জন্য সবচেয়ে উপযুক্ত চাকরি দেখতে একটি চাকরিপ্রার্থী প্রোফাইল তৈরি করুন।', signUpSeeker: 'চাকরিপ্রার্থী হিসেবে সাইন আপ করুন', completeProfile: 'প্রোফাইল সম্পূর্ণ করুন',

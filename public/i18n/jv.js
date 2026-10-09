@@ -12,6 +12,7 @@
     searchPlaceholder: 'Pados jabatan, perusahaan utawi kaprigelan', quickCountry: 'Pilih negari', allCountries: 'Sedaya negari', chooseCountry: 'Pilih negari', searchCountry: 'Pados negari',
     switchLang: 'Gantos basa', appLanguage: 'Basa aplikasi', searchLanguage: 'Pados basa', noLanguage: 'Basa mboten kapanggih', noLanguageBody: 'Cobi ejaan sanes.', skipToContent: 'Langsung dhateng isi', lightMode: 'Mode padhang', darkMode: 'Mode peteng', nJobs: '{n} lowongan',
     hello: 'Sugeng, {name}', homeTitle: 'Lowongan ing saindenging jagad', homeStats: '{jobs} lowongan aktif ing {countries} negari',
+    welcome: 'Sugeng rawuh', homeEmpty: 'Lowongan kerja lagi ditambahake. Gawe profil Panggolek Kerja lan bakal kita ngandhani menawa ana lowongan anyar sing cocog karo katrampilanmu.', featuredJobs: 'Lowongan kerja unggulan saka sak dunyo', remoteOnly: 'Mung remot', fieldOfWork: 'Bidang kerja',
     yourHiring: 'Rekrutmen panjenengan', openDashboard: 'Bikak dasbor', statJobs: 'Lowongan', statApplicants: 'Pelamar',
     forYou: 'Lowongan kangge Panjenengan', seeAll: 'Tingali sedaya', noRecsTitle: 'Dereng wonten lowongan ingkang cocok', noRecsBody: 'Tambahaken kaprigelan ing profil supados rekomendasi langkung pas.', addSkills: 'Tambah kaprigelan',
     forYouGuestTitle: 'Rekomendasi kangge kaprigelan panjenengan', forYouGuestBody: 'Damel profil Pados Padamelan kangge ningali lowongan ingkang paling cocok kaliyan panjenengan.', signUpSeeker: 'Ndaftar minangka Pados Padamelan', completeProfile: 'Jangkepi profil',

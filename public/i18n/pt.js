@@ -12,6 +12,7 @@
     searchPlaceholder: 'Busque cargos, empresas ou habilidades', quickCountry: 'Escolher país', allCountries: 'Todos os países', chooseCountry: 'Escolher país', searchCountry: 'Buscar países',
     switchLang: 'Mudar idioma', appLanguage: 'Idioma do aplicativo', searchLanguage: 'Buscar idiomas', noLanguage: 'Nenhum idioma encontrado', noLanguageBody: 'Tente outra grafia.', skipToContent: 'Pular para o conteúdo', lightMode: 'Modo claro', darkMode: 'Modo escuro', nJobs: '{n} vagas',
     hello: 'Olá, {name}', homeTitle: 'Vagas no mundo todo', homeStats: '{jobs} vagas abertas em {countries} países',
+    welcome: 'Bem-vindo', homeEmpty: 'As vagas estão sendo publicadas. Crie um perfil de Candidato e avisaremos quando uma nova vaga corresponder às suas habilidades.', featuredJobs: 'Vagas em destaque no mundo', remoteOnly: 'Apenas remoto', fieldOfWork: 'Área de atuação',
     yourHiring: 'Suas contratações', openDashboard: 'Abrir painel', statJobs: 'Vagas', statApplicants: 'Candidatos',
     forYou: 'Vagas para você', seeAll: 'Ver tudo', noRecsTitle: 'Ainda não há vagas compatíveis', noRecsBody: 'Adicione habilidades ao seu perfil para receber recomendações melhores.', addSkills: 'Adicionar habilidades',
     forYouGuestTitle: 'Recomendações para suas habilidades', forYouGuestBody: 'Crie um perfil de candidato para ver as vagas mais adequadas a você.', signUpSeeker: 'Cadastrar-se como candidato', completeProfile: 'Completar perfil',

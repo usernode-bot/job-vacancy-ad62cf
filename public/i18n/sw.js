@@ -12,6 +12,7 @@
     searchPlaceholder: 'Tafuta nafasi, kampuni au ujuzi', quickCountry: 'Chagua nchi', allCountries: 'Nchi zote', chooseCountry: 'Chagua nchi', searchCountry: 'Tafuta nchi',
     switchLang: 'Badilisha lugha', appLanguage: 'Lugha ya programu', searchLanguage: 'Tafuta lugha', noLanguage: 'Hakuna lugha iliyopatikana', noLanguageBody: 'Jaribu tahajia nyingine.', skipToContent: 'Ruka hadi maudhui', lightMode: 'Hali ya mwanga', darkMode: 'Hali ya giza', nJobs: 'Kazi {n}',
     hello: 'Habari, {name}', homeTitle: 'Kazi kote duniani', homeStats: 'Nafasi {jobs} zilizo wazi katika nchi {countries}',
+    welcome: 'Karibu', homeEmpty: 'Kazi mpya zinaongezwa. Fanya wasifu wa Mtafutaji wa Kazi na tutakuambia kazi mpya inayolingana na ujuzi wako inapopatikana.', featuredJobs: 'Kazi bora kutoka dunia nzima', remoteOnly: 'Mbali pekee', fieldOfWork: 'Eneo la kazi',
     yourHiring: 'Uajiri wako', openDashboard: 'Fungua dashibodi', statJobs: 'Kazi', statApplicants: 'Waombaji',
     forYou: 'Kazi Kwa Ajili Yako', seeAll: 'Ona zote', noRecsTitle: 'Bado hakuna kazi zinazolingana', noRecsBody: 'Ongeza ujuzi kwenye wasifu wako ili upate mapendekezo bora.', addSkills: 'Ongeza ujuzi',
     forYouGuestTitle: 'Mapendekezo kulingana na ujuzi wako', forYouGuestBody: 'Unda wasifu wa Mtafuta Kazi ili uone kazi zinazokufaa zaidi.', signUpSeeker: 'Jisajili kama Mtafuta Kazi', completeProfile: 'Kamilisha wasifu',

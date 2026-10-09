@@ -12,6 +12,7 @@
     searchPlaceholder: 'ค้นหาตำแหน่ง บริษัท หรือทักษะ', quickCountry: 'เลือกประเทศ', allCountries: 'ทุกประเทศ', chooseCountry: 'เลือกประเทศ', searchCountry: 'ค้นหาประเทศ',
     switchLang: 'เปลี่ยนภาษา', appLanguage: 'ภาษาของแอป', searchLanguage: 'ค้นหาภาษา', noLanguage: 'ไม่พบภาษา', noLanguageBody: 'ลองสะกดแบบอื่น', skipToContent: 'ข้ามไปยังเนื้อหา', lightMode: 'โหมดสว่าง', darkMode: 'โหมดมืด', nJobs: '{n} งาน',
     hello: 'สวัสดี {name}', homeTitle: 'งานทั่วโลก', homeStats: 'งานที่เปิดรับ {jobs} ตำแหน่งใน {countries} ประเทศ',
+    welcome: 'ยินดีต้อนรับ', homeEmpty: 'กำลังเพิ่มตำแหน่งงาน สร้างโปรไฟล์ผู้หางาน แล้วเราจะแจ้งให้คุณทราบเมื่อมีงานใหม่ที่ตรงกับทักษะของคุณ', featuredJobs: 'ตำแหน่งงานแนะนำจากทั่วโลก', remoteOnly: 'ทำงานระยะไกลเท่านั้น', fieldOfWork: 'สาขางาน',
     yourHiring: 'การรับสมัครของคุณ', openDashboard: 'เปิดแดชบอร์ด', statJobs: 'งาน', statApplicants: 'ผู้สมัคร',
     forYou: 'งานสำหรับคุณ', seeAll: 'ดูทั้งหมด', noRecsTitle: 'ยังไม่มีงานที่ตรงกัน', noRecsBody: 'เพิ่มทักษะในโปรไฟล์เพื่อรับคำแนะนำที่ดีขึ้น', addSkills: 'เพิ่มทักษะ',
     forYouGuestTitle: 'งานแนะนำตามทักษะของคุณ', forYouGuestBody: 'สร้างโปรไฟล์ผู้หางานเพื่อดูงานที่เหมาะกับคุณที่สุด', signUpSeeker: 'สมัครเป็นผู้หางาน', completeProfile: 'กรอกโปรไฟล์ให้ครบ',

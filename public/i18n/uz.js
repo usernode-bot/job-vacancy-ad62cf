@@ -12,6 +12,7 @@
     searchPlaceholder: 'Lavozim, kompaniya yoki koʻnikma qidiring', quickCountry: 'Mamlakatni tanlang', allCountries: 'Barcha mamlakatlar', chooseCountry: 'Mamlakatni tanlang', searchCountry: 'Mamlakat qidiring',
     switchLang: 'Tilni oʻzgartirish', appLanguage: 'Ilova tili', searchLanguage: 'Til qidiring', noLanguage: 'Til topilmadi', noLanguageBody: 'Boshqacha yozib koʻring.', skipToContent: 'Kontentga oʻtish', lightMode: 'Yorugʻ rejim', darkMode: 'Qorongʻi rejim', nJobs: '{n} ta vakansiya',
     hello: 'Salom, {name}', homeTitle: 'Butun dunyo boʻylab vakansiyalar', homeStats: '{countries} ta mamlakatda {jobs} ta ochiq vakansiya',
+    welcome: 'Xush kelibsiz', homeEmpty: 'Ish e’lonlari qo‘shilmoqda. Ish qidiruvchi profilini yarating va malakalaringizga mos yangi ish paydo bo‘lganda xabar beramiz.', featuredJobs: 'Butun dunyodan tanlangan ish o‘rinlari', remoteOnly: 'Faqat masofadan', fieldOfWork: 'Ish sohasi',
     yourHiring: 'Sizning yollash jarayoningiz', openDashboard: 'Panelni ochish', statJobs: 'Vakansiyalar', statApplicants: 'Nomzodlar',
     forYou: 'Siz uchun vakansiyalar', seeAll: 'Barchasini koʻrish', noRecsTitle: 'Hozircha mos vakansiyalar yoʻq', noRecsBody: 'Yaxshiroq tavsiyalar uchun profilingizga koʻnikmalar qoʻshing.', addSkills: 'Koʻnikma qoʻshish',
     forYouGuestTitle: 'Koʻnikmalaringizga mos tavsiyalar', forYouGuestBody: 'Sizga eng mos vakansiyalarni koʻrish uchun Ish izlovchi profilini yarating.', signUpSeeker: 'Ish izlovchi sifatida roʻyxatdan oʻtish', completeProfile: 'Profilni toʻldirish',

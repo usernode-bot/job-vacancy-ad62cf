@@ -12,6 +12,7 @@
     searchPlaceholder: 'තනතුරු, සමාගම් හෝ කුසලතා සොයන්න', quickCountry: 'රට තෝරන්න', allCountries: 'සියලු රටවල්', chooseCountry: 'රට තෝරන්න', searchCountry: 'රටවල් සොයන්න',
     switchLang: 'භාෂාව වෙනස් කරන්න', appLanguage: 'යෙදුමේ භාෂාව', searchLanguage: 'භාෂා සොයන්න', noLanguage: 'භාෂාවක් හමු නොවීය', noLanguageBody: 'වෙනත් අක්ෂර වින්‍යාසයක් උත්සාහ කරන්න.', skipToContent: 'අන්තර්ගතයට යන්න', lightMode: 'ආලෝක ප්‍රකාරය', darkMode: 'අඳුරු ප්‍රකාරය', nJobs: 'රැකියා {n}',
     hello: 'ආයුබෝවන්, {name}', homeTitle: 'ලොව පුරා රැකියා', homeStats: 'රටවල් {countries} ක පුරප්පාඩු {jobs}',
+    welcome: 'සාදරයෙන් පිළිගනිමු', homeEmpty: 'රැකියා එකතු වෙමින් පවතී. රැකියා සොයන්නෙකුගේ පැතිකඩක් සාදන්න, ඔබේ දක්ෂතාවලට ගැළපෙන නව රැකියාවක් පැමිණි විට අපි දන්වන්නම්.', featuredJobs: 'ලොව පුරා විශේෂිත රැකියා', remoteOnly: 'දුරස්ථ පමණි', fieldOfWork: 'රැකියා ක්ෂේත්‍රය',
     yourHiring: 'ඔබගේ බඳවා ගැනීම්', openDashboard: 'උපකරණ පුවරුව විවෘත කරන්න', statJobs: 'රැකියා', statApplicants: 'අයදුම්කරුවන්',
     forYou: 'ඔබ සඳහා රැකියා', seeAll: 'සියල්ල බලන්න', noRecsTitle: 'තවමත් ගැළපෙන රැකියා නොමැත', noRecsBody: 'වඩා හොඳ නිර්දේශ සඳහා ඔබගේ පැතිකඩට කුසලතා එක් කරන්න.', addSkills: 'කුසලතා එක් කරන්න',
     forYouGuestTitle: 'ඔබගේ කුසලතා සඳහා නිර්දේශ', forYouGuestBody: 'ඔබට වඩාත්ම ගැළපෙන රැකියා බැලීමට රැකියා අපේක්ෂක පැතිකඩක් සාදන්න.', signUpSeeker: 'රැකියා අපේක්ෂකයෙකු ලෙස ලියාපදිංචි වන්න', completeProfile: 'පැතිකඩ සම්පූර්ණ කරන්න',

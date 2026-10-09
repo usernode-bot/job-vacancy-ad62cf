@@ -12,6 +12,7 @@
     searchPlaceholder: 'Wá ipò iṣẹ́, ilé-iṣẹ́ tàbí ọgbọ́n', quickCountry: 'Yan orílẹ̀-èdè', allCountries: 'Gbogbo orílẹ̀-èdè', chooseCountry: 'Yan orílẹ̀-èdè', searchCountry: 'Wá orílẹ̀-èdè',
     switchLang: 'Yí èdè padà', appLanguage: 'Èdè áàpù', searchLanguage: 'Wá èdè', noLanguage: 'A kò rí èdè kankan', noLanguageBody: 'Gbìyànjú àkọtọ́ mìíràn.', skipToContent: 'Fò lọ sí àkóónú', lightMode: 'Ìpò ìmọ́lẹ̀', darkMode: 'Ìpò òkùnkùn', nJobs: 'Iṣẹ́ {n}',
     hello: 'Ẹ n lẹ́, {name}', homeTitle: 'Iṣẹ́ káàkiri àgbáyé', homeStats: 'Iṣẹ́ {jobs} tó ṣí sílẹ̀ ní orílẹ̀-èdè {countries}',
+    welcome: 'Ẹ káàbọ̀', homeEmpty: 'Wọ́n ń fi iṣẹ́ kún. Ṣe àpọ̀ Olùfẹ́ Iṣẹ́ kí a lè rántí ẹ nígbà tí iṣẹ́ tuntun bá faramọ́ àgbékalẹ̀ yín.', featuredJobs: 'Àwọn iṣẹ́ pàtàkì lágbàáyé', remoteOnly: 'Jìnnà nìkan', fieldOfWork: 'Ààyè iṣẹ́',
     yourHiring: 'Ìgbaniṣiṣẹ́ yín', openDashboard: 'Ṣí dáṣíbọ́ọ̀dù', statJobs: 'Iṣẹ́', statApplicants: 'Olùbẹ̀wẹ̀',
     forYou: 'Iṣẹ́ Fún Yín', seeAll: 'Wo gbogbo rẹ̀', noRecsTitle: 'Kò sí iṣẹ́ tó bá yín mu síbẹ̀', noRecsBody: 'Ṣàfikún ọgbọ́n sí profaili yín fún àbá tó dára jù.', addSkills: 'Ṣàfikún ọgbọ́n',
     forYouGuestTitle: 'Àbá fún ọgbọ́n yín', forYouGuestBody: 'Ṣẹ̀dá profaili Olùwáṣẹ́ láti rí àwọn iṣẹ́ tó bá yín mu jùlọ.', signUpSeeker: 'Forúkọsílẹ̀ gẹ́gẹ́ bí Olùwáṣẹ́', completeProfile: 'Parí profaili',

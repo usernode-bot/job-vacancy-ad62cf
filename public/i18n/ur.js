@@ -12,6 +12,7 @@
     searchPlaceholder: 'عہدے، کمپنیاں یا مہارتیں تلاش کریں', quickCountry: 'ملک منتخب کریں', allCountries: 'تمام ممالک', chooseCountry: 'ملک منتخب کریں', searchCountry: 'ممالک تلاش کریں',
     switchLang: 'زبان تبدیل کریں', appLanguage: 'ایپ کی زبان', searchLanguage: 'زبانیں تلاش کریں', noLanguage: 'کوئی زبان نہیں ملی', noLanguageBody: 'کوئی اور ہجے آزمائیں۔', skipToContent: 'مواد پر جائیں', lightMode: 'لائٹ موڈ', darkMode: 'ڈارک موڈ', nJobs: '{n} ملازمتیں',
     hello: 'السلام علیکم، {name}', homeTitle: 'دنیا بھر میں ملازمتیں', homeStats: '{countries} ممالک میں {jobs} خالی آسامیاں',
+    welcome: 'خوش آمدید', homeEmpty: 'ملازمتیں شامل کی جا رہی ہیں۔ ملازمت تلاش کرنے والے کی پروفائل بنائیں اور جب آپ کی مہارتوں سے ملتی نئی ملازمت آئے گی تو ہم آپ کو بتائیں گے۔', featuredJobs: 'دنیا بھر کی نمایاں ملازمتیں', remoteOnly: 'صرف ریموٹ', fieldOfWork: 'کام کا شعبہ',
     yourHiring: 'آپ کی بھرتیاں', openDashboard: 'ڈیش بورڈ کھولیں', statJobs: 'ملازمتیں', statApplicants: 'امیدوار',
     forYou: 'آپ کے لیے ملازمتیں', seeAll: 'سب دیکھیں', noRecsTitle: 'ابھی کوئی مطابقت رکھنے والی ملازمت نہیں', noRecsBody: 'بہتر تجاویز کے لیے اپنی پروفائل میں مہارتیں شامل کریں۔', addSkills: 'مہارتیں شامل کریں',
     forYouGuestTitle: 'آپ کی مہارتوں کے مطابق تجاویز', forYouGuestBody: 'اپنے لیے موزوں ترین ملازمتیں دیکھنے کے لیے ملازمت کے متلاشی کی پروفائل بنائیں۔', signUpSeeker: 'ملازمت کے متلاشی کے طور پر سائن اپ کریں', completeProfile: 'پروفائل مکمل کریں',

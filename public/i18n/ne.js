@@ -12,6 +12,7 @@
     searchPlaceholder: 'पद, कम्पनी वा सीप खोज्नुहोस्', quickCountry: 'देश छान्नुहोस्', allCountries: 'सबै देश', chooseCountry: 'देश छान्नुहोस्', searchCountry: 'देश खोज्नुहोस्',
     switchLang: 'भाषा परिवर्तन गर्नुहोस्', appLanguage: 'एपको भाषा', searchLanguage: 'भाषा खोज्नुहोस्', noLanguage: 'कुनै भाषा भेटिएन', noLanguageBody: 'अर्को हिज्जे प्रयास गर्नुहोस्।', skipToContent: 'सामग्रीमा जानुहोस्', lightMode: 'लाइट मोड', darkMode: 'डार्क मोड', nJobs: '{n} जागिर',
     hello: 'नमस्ते, {name}', homeTitle: 'विश्वभरका जागिरहरू', homeStats: '{countries} देशमा {jobs} खुला जागिर',
+    welcome: 'स्वागत छ', homeEmpty: 'जागिरहरू थपिँदैछन्। जागिर खोज्ने प्रोफाइल बनाउनुहोस् र तपाईंको सीपसँग मिल्ने नयाँ जागिर आएमा हामी जानकारी दिनेछौं।', featuredJobs: 'विश्वभरका चयनित जागिरहरू', remoteOnly: 'रिमोट मात्र', fieldOfWork: 'कामको क्षेत्र',
     yourHiring: 'तपाईंको भर्ती', openDashboard: 'ड्यासबोर्ड खोल्नुहोस्', statJobs: 'जागिर', statApplicants: 'आवेदक',
     forYou: 'तपाईंका लागि जागिर', seeAll: 'सबै हेर्नुहोस्', noRecsTitle: 'अहिलेसम्म मिल्ने जागिर छैन', noRecsBody: 'राम्रा सिफारिसका लागि आफ्नो प्रोफाइलमा सीप थप्नुहोस्।', addSkills: 'सीप थप्नुहोस्',
     forYouGuestTitle: 'तपाईंको सीपअनुसार सिफारिस', forYouGuestBody: 'तपाईंलाई सबैभन्दा उपयुक्त जागिर हेर्न जागिर खोज्ने व्यक्तिको प्रोफाइल बनाउनुहोस्।', signUpSeeker: 'जागिर खोज्ने व्यक्तिको रूपमा साइन अप गर्नुहोस्', completeProfile: 'प्रोफाइल पूरा गर्नुहोस्',

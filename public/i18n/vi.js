@@ -12,6 +12,7 @@
     searchPlaceholder: 'Tìm vị trí, công ty hoặc kỹ năng', quickCountry: 'Chọn quốc gia', allCountries: 'Tất cả quốc gia', chooseCountry: 'Chọn quốc gia', searchCountry: 'Tìm quốc gia',
     switchLang: 'Đổi ngôn ngữ', appLanguage: 'Ngôn ngữ ứng dụng', searchLanguage: 'Tìm ngôn ngữ', noLanguage: 'Không tìm thấy ngôn ngữ', noLanguageBody: 'Hãy thử cách viết khác.', skipToContent: 'Chuyển đến nội dung', lightMode: 'Chế độ sáng', darkMode: 'Chế độ tối', nJobs: '{n} việc làm',
     hello: 'Xin chào, {name}', homeTitle: 'Việc làm trên toàn thế giới', homeStats: '{jobs} việc làm đang tuyển tại {countries} quốc gia',
+    welcome: 'Chào mừng', homeEmpty: 'Việc làm đang được bổ sung. Hãy tạo hồ sơ Người tìm việc và chúng tôi sẽ thông báo khi có việc mới phù hợp với kỹ năng của bạn.', featuredJobs: 'Việc làm nổi bật trên toàn thế giới', remoteOnly: 'Chỉ làm từ xa', fieldOfWork: 'Lĩnh vực làm việc',
     yourHiring: 'Tuyển dụng của bạn', openDashboard: 'Mở bảng điều khiển', statJobs: 'Việc làm', statApplicants: 'Ứng viên',
     forYou: 'Việc làm dành cho bạn', seeAll: 'Xem tất cả', noRecsTitle: 'Chưa có việc làm phù hợp', noRecsBody: 'Thêm kỹ năng vào hồ sơ để nhận gợi ý tốt hơn.', addSkills: 'Thêm kỹ năng',
     forYouGuestTitle: 'Gợi ý theo kỹ năng của bạn', forYouGuestBody: 'Tạo hồ sơ Người tìm việc để xem những việc làm phù hợp nhất với bạn.', signUpSeeker: 'Đăng ký làm Người tìm việc', completeProfile: 'Hoàn thiện hồ sơ',

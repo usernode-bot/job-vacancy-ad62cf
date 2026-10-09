@@ -12,6 +12,7 @@
     searchPlaceholder: 'Szukaj stanowisk, firm lub umiejętności', quickCountry: 'Wybierz kraj', allCountries: 'Wszystkie kraje', chooseCountry: 'Wybierz kraj', searchCountry: 'Szukaj kraju',
     switchLang: 'Zmień język', appLanguage: 'Język aplikacji', searchLanguage: 'Szukaj języka', noLanguage: 'Nie znaleziono języka', noLanguageBody: 'Spróbuj innej pisowni.', skipToContent: 'Przejdź do treści', lightMode: 'Tryb jasny', darkMode: 'Tryb ciemny', nJobs: 'Oferty: {n}',
     hello: 'Witaj, {name}', homeTitle: 'Praca na całym świecie', homeStats: 'Otwarte oferty: {jobs}, kraje: {countries}',
+    welcome: 'Witamy', homeEmpty: 'Oferty pracy są dodawane. Utwórz profil poszukującego pracy, a powiadomimy Cię, gdy pojawi się nowa oferta pasująca do Twoich umiejętności.', featuredJobs: 'Wyróżnione oferty z całego świata', remoteOnly: 'Tylko zdalnie', fieldOfWork: 'Branża',
     yourHiring: 'Twoja rekrutacja', openDashboard: 'Otwórz panel', statJobs: 'Oferty', statApplicants: 'Kandydaci',
     forYou: 'Oferty dla Ciebie', seeAll: 'Zobacz wszystkie', noRecsTitle: 'Brak dopasowanych ofert', noRecsBody: 'Dodaj umiejętności do profilu, aby otrzymywać lepsze rekomendacje.', addSkills: 'Dodaj umiejętności',
     forYouGuestTitle: 'Rekomendacje dla Twoich umiejętności', forYouGuestBody: 'Utwórz profil kandydata, aby zobaczyć najlepiej dopasowane oferty.', signUpSeeker: 'Zarejestruj się jako kandydat', completeProfile: 'Uzupełnij profil',

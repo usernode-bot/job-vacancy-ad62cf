@@ -12,6 +12,7 @@
     searchPlaceholder: 'Căutați posturi, companii sau competențe', quickCountry: 'Alegeți țara', allCountries: 'Toate țările', chooseCountry: 'Alegeți țara', searchCountry: 'Căutați țări',
     switchLang: 'Schimbați limba', appLanguage: 'Limba aplicației', searchLanguage: 'Căutați limbi', noLanguage: 'Nu s-a găsit nicio limbă', noLanguageBody: 'Încercați altă ortografie.', skipToContent: 'Salt la conținut', lightMode: 'Mod luminos', darkMode: 'Mod întunecat', nJobs: '{n} locuri de muncă',
     hello: 'Bună ziua, {name}', homeTitle: 'Locuri de muncă din toată lumea', homeStats: '{jobs} posturi disponibile în {countries} țări',
+    welcome: 'Bine ați venit', homeEmpty: 'Se adaugă locuri de muncă. Creați un profil de Căutător de loc de muncă și vă vom anunța când apare un loc nou potrivit competențelor dvs.', featuredJobs: 'Locuri de muncă recomandate din toată lumea', remoteOnly: 'Doar la distanță', fieldOfWork: 'Domeniul de activitate',
     yourHiring: 'Recrutările dvs.', openDashboard: 'Deschideți panoul', statJobs: 'Posturi', statApplicants: 'Candidați',
     forYou: 'Posturi pentru dvs.', seeAll: 'Vedeți tot', noRecsTitle: 'Încă nu există posturi potrivite', noRecsBody: 'Adăugați competențe în profil pentru recomandări mai bune.', addSkills: 'Adăugați competențe',
     forYouGuestTitle: 'Recomandări pentru competențele dvs.', forYouGuestBody: 'Creați un profil de candidat pentru a vedea posturile care vi se potrivesc cel mai bine.', signUpSeeker: 'Înregistrați-vă ca un candidat', completeProfile: 'Completați profilul',

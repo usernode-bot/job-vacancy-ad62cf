@@ -12,6 +12,7 @@
     searchPlaceholder: 'Пошук посад, компаній або навичок', quickCountry: 'Виберіть країну', allCountries: 'Усі країни', chooseCountry: 'Виберіть країну', searchCountry: 'Пошук країни',
     switchLang: 'Змінити мову', appLanguage: 'Мова застосунку', searchLanguage: 'Пошук мови', noLanguage: 'Мову не знайдено', noLanguageBody: 'Спробуйте інше написання.', skipToContent: 'Перейти до вмісту', lightMode: 'Світла тема', darkMode: 'Темна тема', nJobs: 'Вакансій: {n}',
     hello: 'Вітаємо, {name}', homeTitle: 'Вакансії по всьому світу', homeStats: 'Відкритих вакансій: {jobs} у країнах: {countries}',
+    welcome: 'Вітаємо', homeEmpty: 'Вакансії додаються. Створіть профіль шукача роботи, і ми повідомимо, коли з’явиться нова вакансія, що відповідає вашим навичкам.', featuredJobs: 'Вибрані вакансії з усього світу', remoteOnly: 'Лише віддалено', fieldOfWork: 'Сфера діяльності',
     yourHiring: 'Ваш найм', openDashboard: 'Відкрити панель', statJobs: 'Вакансії', statApplicants: 'Кандидати',
     forYou: 'Вакансії для вас', seeAll: 'Переглянути всі', noRecsTitle: 'Відповідних вакансій поки немає', noRecsBody: 'Додайте навички до профілю, щоб отримувати кращі рекомендації.', addSkills: 'Додати навички',
     forYouGuestTitle: 'Рекомендації за вашими навичками', forYouGuestBody: 'Створіть профіль шукача роботи, щоб бачити найвідповідніші вакансії.', signUpSeeker: 'Зареєструватися як шукач роботи', completeProfile: 'Заповнити профіль',

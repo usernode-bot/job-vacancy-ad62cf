@@ -918,10 +918,15 @@
     const countries = new Set(db.jobs.map(j => j.country)).size;
     const latest = db.jobs.slice().sort((a, b) => b.postedAt.localeCompare(a.postedAt)).slice(0, 6);
     let html = '<div class="space-y-8">';
-    const name = (p && p.fullName.split(' ')[0]) || (co && co.name) || HR_USER;
-    html += '<section><h1 class="' + C.h1 + '">' + esc(name ? t('hello', { name }) : t('homeTitle')) + '</h1>' +
-      '<p class="mt-1 ' + C.muted + '">' + t('homeStats', { jobs: db.jobs.length, countries }) + '</p>' +
+    // A signed-in user keeps the name greeting their tab matches (Profile or
+    // Account); a visitor who has not signed up is greeted "Welcome", since
+    // their tab still says "Sign in".
+    const name = (p && p.fullName.split(' ')[0]) || (co && co.name) || (r !== 'guest' ? HR_USER : null);
+    html += '<section><h1 class="' + C.h1 + '">' + esc(name ? t('hello', { name }) : t('welcome')) + '</h1>' +
+      '<p class="mt-1 ' + C.muted + '">' + (db.jobs.length ? t('homeStats', { jobs: db.jobs.length, countries }) : t('homeEmpty')) + '</p>' +
       '<div class="mt-4 -mx-4 px-4 flex gap-2 overflow-x-auto no-scrollbar" aria-label="' + esc(t('category')) + '">' +
+      '<button type="button" data-action="home-remote" class="shrink-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3.5 py-1.5 text-sm hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' + t('remoteOnly') + '</button>' +
+      '<button type="button" data-action="quick-country" class="shrink-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3.5 py-1.5 text-sm hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' + t('country') + icon('down', 'w-3.5 h-3.5 text-slate-400') + '</button>' +
       CATEGORIES.map(c => '<button type="button" data-action="pick-category" data-cat="' + c + '" class="shrink-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3.5 py-1.5 text-sm hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' + t('cat_' + c) + '</button>').join('') + '</div></section>';
 
     if (r === 'company' && co) {
@@ -934,16 +939,27 @@
     } else {
       html += '<section>' + sectionHead(t('forYou'), p ? '#/jobs?match=1' : '', t('seeAll'));
       if (p && skillsOf(p.id).length) {
-        const recs = db.jobs.map(j => ({ j, m: matchJob(j, p.id) })).filter(x => x.m.pct > 0).sort((a, b) => b.m.pct - a.m.pct).slice(0, 4).map(x => x.j);
+        const recs = db.jobs.map(j => ({ j, m: matchJob(j, p.id) })).filter(x => x.m.pct > 0)
+          .sort((a, b) => b.m.pct - a.m.pct || (b.j.category === p.field) - (a.j.category === p.field)).slice(0, 4).map(x => x.j);
         html += recs.length ? '<div data-testid="for-you">' + jobGrid(recs, { showMatch: true }) + '</div>' : emptyState(t('noRecsTitle'), t('noRecsBody'), '<a href="#/register?step=3&edit=1" class="' + C.btnPrimary + '">' + t('addSkills') + '</a>');
       } else {
+        // A preview of the newest openings before the sign-up card, so a
+        // visitor sees real jobs before being asked to create a profile.
+        if (latest.length) html += '<div data-testid="for-you-preview" class="mb-3">' + jobGrid(latest.slice(0, 2)) + '</div>';
         html += '<div class="' + C.section + ' flex flex-col sm:flex-row sm:items-center gap-3"><div class="flex-1"><p class="font-medium">' + t('forYouGuestTitle') + '</p><p class="text-sm ' + C.muted + '">' + t('forYouGuestBody') + '</p></div>' +
           '<a href="' + (r === 'seeker' ? '#/register' : '#/auth') + '" class="' + C.btnPrimary + '">' + t(r === 'seeker' ? 'completeProfile' : 'signUpSeeker') + '</a></div>';
       }
       html += '</section>';
     }
-    html += '<section>' + sectionHead(t('latestJobs'), latest.length ? '#/jobs' : '', t('seeAll')) + (latest.length ? jobGrid(latest, { showMatch: r === 'seeker', three: true })
-      : emptyState(t('noJobsYet'), t('noJobsYetBody'), r === 'company' ? '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>' : '')) + '</section>';
+    // When nothing has been posted yet, featured worldwide openings fill the
+    // place of "Latest jobs"; if they cannot be loaded, just the empty state.
+    if (!db.jobs.length && worldJobs && worldJobs.jobs.length) {
+      html += '<section>' + sectionHead(t('featuredJobs'), '#/world', t('seeAll')) +
+        '<ul class="grid gap-3 sm:grid-cols-2" data-testid="home-featured">' + worldJobs.jobs.slice(0, 4).map(worldJobCard).join('') + '</ul></section>';
+    } else {
+      html += '<section>' + sectionHead(t('latestJobs'), latest.length ? '#/jobs' : '', t('seeAll')) + (latest.length ? jobGrid(latest, { showMatch: r === 'seeker', three: true })
+        : emptyState(t('noJobsYet'), t('noJobsYetBody'), r === 'company' ? '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>' : '')) + '</section>';
+    }
     html += '<section class="grid gap-3 sm:grid-cols-2">' +
       '<a href="#/skills" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('trending') + '</span><span class="flex-1"><span class="block font-medium">' + t('topSkills') + '</span><span class="block text-sm ' + C.muted + '">' + t('topSkillsSub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
       '<a href="#/countries" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('byCountry') + '</span><span class="block text-sm ' + C.muted + '">' + t('byCountrySub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
@@ -1178,18 +1194,23 @@
   }
   // Worldwide openings come from the server (public feeds, or built-in
   // samples when they are down); the screen loads them each time it opens.
+  // Home fetches them once (only when the board is empty) and never refetches
+  // after a failure until the page is reloaded.
   let worldJobs = null;
+  let homeWorldTried = false;
+  function worldJobCard(j) {
+    return '<li data-testid="world-job" class="' + C.card + ' p-4 flex flex-col gap-2"><div class="flex gap-3">' + companyLogo(j.company) +
+      '<div class="min-w-0 flex-1"><h2 class="font-semibold leading-snug">' + esc(j.title) + '</h2><p class="text-sm ' + C.muted + ' truncate">' + esc(j.company) + '</p></div></div>' +
+      '<p class="text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span><span class="min-w-0">' + esc(j.location) + '</span></p>' +
+      '<div class="mt-auto pt-1"><a href="' + esc(j.url) + '" target="_blank" rel="noopener noreferrer" class="' + C.btnSecondary + '">' + t('viewListing') + '</a></div></li>';
+  }
   function viewWorld() {
     const w = worldJobs;
     const head = '<h1 class="' + C.h1 + ' mb-3">' + t('worldJobs') + '</h1>' + insightsTabs('#/world');
     if (!w) return head + emptyState(t('loadFailed'), t('loadFailedBody'), '<button type="button" data-action="retry-world" class="' + C.btnPrimary + '">' + t('retry') + '</button>');
     return head + '<p class="text-sm ' + C.muted + ' mb-1">' + t('worldJobsCount', { n: w.jobs.length }) + '</p>' +
       '<p class="text-sm ' + C.muted + ' mb-4" data-testid="world-jobs-source" data-live="' + (w.live ? '1' : '0') + '">' + esc(w.live ? t('worldJobsSource', { source: w.sources.join(', ') }) : t('worldJobsSample')) + '</p>' +
-      '<ul class="grid gap-3 sm:grid-cols-2" data-testid="world-jobs">' + w.jobs.map(j =>
-        '<li data-testid="world-job" class="' + C.card + ' p-4 flex flex-col gap-2"><div class="flex gap-3">' + companyLogo(j.company) +
-        '<div class="min-w-0 flex-1"><h2 class="font-semibold leading-snug">' + esc(j.title) + '</h2><p class="text-sm ' + C.muted + ' truncate">' + esc(j.company) + '</p></div></div>' +
-        '<p class="text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span><span class="min-w-0">' + esc(j.location) + '</span></p>' +
-        '<div class="mt-auto pt-1"><a href="' + esc(j.url) + '" target="_blank" rel="noopener noreferrer" class="' + C.btnSecondary + '">' + t('viewListing') + '</a></div></li>').join('') + '</ul>';
+      '<ul class="grid gap-3 sm:grid-cols-2" data-testid="world-jobs">' + w.jobs.map(worldJobCard).join('') + '</ul>';
   }
   let countryQuery = '';
   function viewCountries() {
@@ -1263,14 +1284,14 @@
   let draft = null;
   function blankDraft() {
     return { step: 1, mode: 'create', profileId: null,
-      bio: { photo: '', fullName: '', birthDate: '', gender: '', country: '', city: '', nationality: '', email: '', phoneCode: '', phone: '', summary: '' },
+      bio: { photo: '', fullName: '', birthDate: '', gender: '', field: '', country: '', city: '', nationality: '', email: '', phoneCode: '', phone: '', summary: '' },
       education: [], experience: [], skills: [], languages: [], certificates: [],
       certForm: blankCert(), errors: {} };
   }
   function blankCert() { return { name: '', issuer: '', issueDate: '', expiryDate: '', verify: '', skills: [], file: null }; }
   function draftFromProfile(p) {
     return { step: 1, mode: 'edit', profileId: p.id,
-      bio: { photo: p.photo || '', fullName: p.fullName, birthDate: p.birthDate, gender: p.gender, country: p.country, city: p.city, nationality: p.nationality, email: p.email, phoneCode: p.phoneCode, phone: p.phone, summary: p.summary },
+      bio: { photo: p.photo || '', fullName: p.fullName, birthDate: p.birthDate, gender: p.gender, field: p.field || '', country: p.country, city: p.city, nationality: p.nationality, email: p.email, phoneCode: p.phoneCode, phone: p.phone, summary: p.summary },
       education: JSON.parse(JSON.stringify(p.education || [])), experience: JSON.parse(JSON.stringify(p.experience || [])),
       skills: skillsOf(p.id).map(s => ({ ...s })), languages: JSON.parse(JSON.stringify(p.languages || [])),
       certificates: certsOf(p.id).map(c => JSON.parse(JSON.stringify(c))), certForm: blankCert(), errors: {} };
@@ -1311,6 +1332,7 @@
       '<div class="grid gap-4 sm:grid-cols-2">' + field('bio.birthDate', t('birthDate'), { type: 'date', attrs: ' max="' + today() + '"' }) +
         field('bio.gender', t('gender'), { type: 'select', blank: t('choose'), options: [['male', t('gender_male')], ['female', t('gender_female')], ['other', t('gender_other')], ['na', t('gender_na')]] }) + '</div>' +
       '<div class="grid gap-4 sm:grid-cols-2">' + countryField('bio.country', t('countryOfResidence')) + field('bio.city', t('cityOfResidence')) + '</div>' +
+      field('bio.field', t('fieldOfWork'), { type: 'select', blank: t('choose'), optional: true, options: CATEGORIES.map(c => [c, t('cat_' + c)]) }) +
       countryField('bio.nationality', t('nationality')) +
       field('bio.email', t('email'), { type: 'email', attrs: ' autocomplete="email" inputmode="email"' }) +
       '<div><span class="' + C.label + '">' + t('phone') + '</span><div class="grid grid-cols-5 gap-2">' +
@@ -1822,7 +1844,16 @@
       const j = await api.getJob(b);
       if (seq !== renderSeq) return;
       html = viewJob(j);
-    } else if (!a) html = viewHome();
+    } else if (!a) {
+      // An empty board pulls the worldwide openings once, so Home can show
+      // featured openings; a failure is not retried until the page reloads.
+      if (!db.jobs.length && !worldJobs && !homeWorldTried) {
+        homeWorldTried = true;
+        try { worldJobs = await request('GET', '/world-jobs'); } catch (e) {}
+        if (seq !== renderSeq) return;
+      }
+      html = viewHome();
+    }
     else if (a === 'jobs') html = viewJobs();
     else if (a === 'saved') html = viewSaved();
     else if (a === 'skills') html = viewSkills();
@@ -1964,6 +1995,7 @@
         break;
       }
       case 'pick-category': filters = emptyFilters(); filters.category = el.dataset.cat; go('#/jobs'); break;
+      case 'home-remote': filters = emptyFilters(); filters.models = ['remote']; go('#/jobs'); break;
       case 'search-skill': filters = emptyFilters(); filters.skills = [el.dataset.skill]; go('#/jobs'); break;
       case 'browse-country': filters = emptyFilters(); filters.country = el.dataset.cc; go('#/jobs'); break;
       case 'retry-world': worldJobs = null; render(); break;

@@ -12,6 +12,7 @@
     searchPlaceholder: 'جستجوی عنوان شغلی، شرکت یا مهارت', quickCountry: 'انتخاب کشور', allCountries: 'همه کشورها', chooseCountry: 'انتخاب کشور', searchCountry: 'جستجوی کشور',
     switchLang: 'تغییر زبان', appLanguage: 'زبان برنامه', searchLanguage: 'جستجوی زبان', noLanguage: 'زبانی یافت نشد', noLanguageBody: 'املای دیگری را امتحان کنید.', skipToContent: 'رفتن به محتوا', lightMode: 'حالت روشن', darkMode: 'حالت تیره', nJobs: '{n} شغل',
     hello: 'سلام، {name}', homeTitle: 'مشاغل در سراسر جهان', homeStats: '{jobs} شغل باز در {countries} کشور',
+    welcome: 'خوش آمدید', homeEmpty: 'آگهی‌های شغلی اضافه می‌شوند. یک پروفایل جویای کار بسازید و وقتی شغل جدیدی با مهارت‌های شما همخوانی داشت، به شما خبر می‌دهیم.', featuredJobs: 'مشاغل برگزیده از سراسر جهان', remoteOnly: 'فقط دوردست', fieldOfWork: 'حوزه کاری',
     yourHiring: 'استخدام‌های شما', openDashboard: 'باز کردن داشبورد', statJobs: 'مشاغل', statApplicants: 'متقاضیان',
     forYou: 'مشاغل مناسب شما', seeAll: 'مشاهده همه', noRecsTitle: 'هنوز شغل منطبقی وجود ندارد', noRecsBody: 'برای دریافت پیشنهادهای بهتر، مهارت‌هایی به پروفایل خود اضافه کنید.', addSkills: 'افزودن مهارت',
     forYouGuestTitle: 'پیشنهادها بر اساس مهارت‌های شما', forYouGuestBody: 'برای دیدن مناسب‌ترین مشاغل، یک پروفایل کارجو بسازید.', signUpSeeker: 'ثبت‌نام به‌عنوان کارجو', completeProfile: 'تکمیل پروفایل',

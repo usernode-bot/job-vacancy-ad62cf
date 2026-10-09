@@ -12,6 +12,7 @@
     searchPlaceholder: 'Поиск по должностям, компаниям или навыкам', quickCountry: 'Выберите страну', allCountries: 'Все страны', chooseCountry: 'Выберите страну', searchCountry: 'Поиск страны',
     switchLang: 'Сменить язык', appLanguage: 'Язык приложения', searchLanguage: 'Поиск языка', noLanguage: 'Язык не найден', noLanguageBody: 'Попробуйте другое написание.', skipToContent: 'Перейти к содержимому', lightMode: 'Светлая тема', darkMode: 'Тёмная тема', nJobs: 'Вакансий: {n}',
     hello: 'Здравствуйте, {name}', homeTitle: 'Вакансии по всему миру', homeStats: 'Открытых вакансий: {jobs} в странах: {countries}',
+    welcome: 'Добро пожаловать', homeEmpty: 'Вакансии добавляются. Создайте профиль соискателя, и мы сообщим, когда появится новая вакансия, подходящая вашим навыкам.', featuredJobs: 'Избранные вакансии со всего мира', remoteOnly: 'Только удалённо', fieldOfWork: 'Сфера деятельности',
     yourHiring: 'Ваш наём', openDashboard: 'Открыть панель', statJobs: 'Вакансии', statApplicants: 'Кандидаты',
     forYou: 'Вакансии для вас', seeAll: 'Смотреть все', noRecsTitle: 'Подходящих вакансий пока нет', noRecsBody: 'Добавьте навыки в профиль, чтобы получать более точные рекомендации.', addSkills: 'Добавить навыки',
     forYouGuestTitle: 'Рекомендации по вашим навыкам', forYouGuestBody: 'Создайте профиль соискателя, чтобы видеть наиболее подходящие вакансии.', signUpSeeker: 'Зарегистрироваться как соискатель', completeProfile: 'Заполнить профиль',

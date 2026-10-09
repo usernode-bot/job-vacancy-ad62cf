@@ -12,6 +12,7 @@
     searchPlaceholder: 'Milarian jabatan, perusahaan atanapi kaahlian', quickCountry: 'Pilih nagara', allCountries: 'Sadaya nagara', chooseCountry: 'Pilih nagara', searchCountry: 'Milarian nagara',
     switchLang: 'Gentos basa', appLanguage: 'Basa aplikasi', searchLanguage: 'Milarian basa', noLanguage: 'Basa teu kapendak', noLanguageBody: 'Cobian éjahan sanés.', skipToContent: 'Langsung ka eusi', lightMode: 'Mode caang', darkMode: 'Mode poék', nJobs: '{n} lowongan',
     hello: 'Wilujeng, {name}', homeTitle: 'Lowongan di sakuliah dunya', homeStats: '{jobs} lowongan aktip di {countries} nagara',
+    welcome: 'Wilujeng sumping', homeEmpty: 'Lowongan pagawéan keur ditambahkeun. Jieun profil Sisisia Pegawé pikeun urang béjakeun mun aya lowongan anyar anu cocog jeung kaahlian anjeun.', featuredJobs: 'Lowongan pagawéan unggulan ti sakuliah dunya', remoteOnly: 'Remote wungkul', fieldOfWork: 'Widang pagawéan',
     yourHiring: 'Rékrutmén anjeun', openDashboard: 'Buka dasbor', statJobs: 'Lowongan', statApplicants: 'Pelamar',
     forYou: 'Lowongan kanggo Anjeun', seeAll: 'Tingali sadaya', noRecsTitle: 'Teu acan aya lowongan anu cocog', noRecsBody: 'Tambihan kaahlian dina profil supados rékoméndasi langkung pas.', addSkills: 'Tambihan kaahlian',
     forYouGuestTitle: 'Rékoméndasi kanggo kaahlian anjeun', forYouGuestBody: 'Damel profil Pencari Padamelan kanggo ningali lowongan anu paling cocog sareng anjeun.', signUpSeeker: 'Daptar salaku Pencari Padamelan', completeProfile: 'Lengkepan profil',

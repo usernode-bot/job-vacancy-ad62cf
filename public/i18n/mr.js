@@ -11,7 +11,7 @@
     mainNav: 'मुख्य नेव्हिगेशन', navHome: 'मुख्यपृष्ठ', navSearch: 'शोधा', navSaved: 'जतन केलेले', navExplore: 'एक्सप्लोर', navProfile: 'प्रोफाइल', navSignIn: 'साइन इन', navPost: 'पोस्ट करा', navDashboard: 'डॅशबोर्ड', navAccount: 'खाते',
     searchPlaceholder: 'पद, कंपन्या किंवा कौशल्ये शोधा', quickCountry: 'देश निवडा', allCountries: 'सर्व देश', chooseCountry: 'देश निवडा', searchCountry: 'देश शोधा',
     switchLang: 'भाषा बदला', appLanguage: 'ॲपची भाषा', searchLanguage: 'भाषा शोधा', noLanguage: 'कोणतीही भाषा सापडली नाही', noLanguageBody: 'कृपया दुसरे शब्दलेखन वापरून पहा.', skipToContent: 'मजकुराकडे जा', lightMode: 'लाइट मोड', darkMode: 'डार्क मोड', nJobs: '{n} नोकऱ्या',
-    hello: 'नमस्कार, {name}', homeTitle: 'जगभरातील नोकऱ्या', homeStats: '{countries} देशांमध्ये {jobs} उपलब्ध नोकऱ्या',
+    hello: 'नमस्कार, {name}', homeTitle: 'जगभरातील नोकऱ्या', homeStats: '{countries} देशांमध्ये {jobs} उपलब्ध नोकऱ्या', welcome: 'स्वागत आहे', homeEmpty: 'नोकऱ्या जोडल्या जात आहेत. जगभरातील उपलब्ध नोकऱ्या येथे आहेत.', homeEmptyNotify: 'नोकऱ्या जोडल्या जात आहेत. प्रोफाइल तयार करा, तुमच्या कौशल्यांशी जुळणारी नोकरी आल्यास आम्ही तुम्हाला कळवू.', remoteOnly: 'फक्त रिमोट', fieldOfWork: 'कामाचे क्षेत्र',
     yourHiring: 'आपली भरती', openDashboard: 'डॅशबोर्ड उघडा', statJobs: 'नोकऱ्या', statApplicants: 'अर्जदार',
     forYou: 'आपल्यासाठी नोकऱ्या', seeAll: 'सर्व पहा', noRecsTitle: 'अद्याप जुळणाऱ्या नोकऱ्या नाहीत', noRecsBody: 'अधिक चांगल्या शिफारसींसाठी आपल्या प्रोफाइलमध्ये कौशल्ये जोडा.', addSkills: 'कौशल्ये जोडा',
     forYouGuestTitle: 'आपल्या कौशल्यांसाठी शिफारसी', forYouGuestBody: 'आपल्यासाठी सर्वात योग्य नोकऱ्या पाहण्यासाठी नोकरी शोधणाऱ्याची प्रोफाइल तयार करा.', signUpSeeker: 'नोकरी शोधणारा म्हणून साइन अप करा', completeProfile: 'प्रोफाइल पूर्ण करा',

@@ -11,7 +11,7 @@
     mainNav: 'メインナビゲーション', navHome: 'ホーム', navSearch: '検索', navSaved: '保存済み', navExplore: '探す', navProfile: 'プロフィール', navSignIn: 'ログイン', navPost: '掲載', navDashboard: 'ダッシュボード', navAccount: 'アカウント',
     searchPlaceholder: '職種、企業、スキルで検索', quickCountry: '国を選択', allCountries: 'すべての国', chooseCountry: '国を選択', searchCountry: '国を検索',
     switchLang: '言語を変更', appLanguage: 'アプリの言語', searchLanguage: '言語を検索', noLanguage: '言語が見つかりません', noLanguageBody: '別のつづりでお試しください。', skipToContent: 'コンテンツへスキップ', lightMode: 'ライトモード', darkMode: 'ダークモード', nJobs: '{n} 件の求人',
-    hello: 'こんにちは、{name} さん', homeTitle: '世界の求人', homeStats: '{countries} か国で {jobs} 件の求人を募集中',
+    hello: 'こんにちは、{name} さん', homeTitle: '世界の求人', homeStats: '{countries} か国で {jobs} 件の求人を募集中', welcome: 'ようこそ', homeEmpty: '求人を追加しています。世界中の求人をご紹介します。', homeEmptyNotify: '求人を追加しています。プロフィールを作成すると、あなたのスキルに合った求人が出たときにお知らせします。', remoteOnly: 'リモートのみ', fieldOfWork: '職種分野',
     yourHiring: '採用状況', openDashboard: 'ダッシュボードを開く', statJobs: '求人', statApplicants: '応募者',
     forYou: 'あなたへのおすすめ', seeAll: 'すべて表示', noRecsTitle: '該当する求人はまだありません', noRecsBody: 'プロフィールにスキルを追加すると、より的確なおすすめが表示されます。', addSkills: 'スキルを追加',
     forYouGuestTitle: 'スキルに合わせたおすすめ', forYouGuestBody: '求職者プロフィールを作成すると、あなたに最適な求人が表示されます。', signUpSeeker: '求職者として登録', completeProfile: 'プロフィールを完成させる',

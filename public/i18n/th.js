@@ -11,7 +11,7 @@
     mainNav: 'การนำทางหลัก', navHome: 'หน้าแรก', navSearch: 'ค้นหา', navSaved: 'บันทึกไว้', navExplore: 'สำรวจ', navProfile: 'โปรไฟล์', navSignIn: 'เข้าสู่ระบบ', navPost: 'ประกาศงาน', navDashboard: 'แดชบอร์ด', navAccount: 'บัญชี',
     searchPlaceholder: 'ค้นหาตำแหน่ง บริษัท หรือทักษะ', quickCountry: 'เลือกประเทศ', allCountries: 'ทุกประเทศ', chooseCountry: 'เลือกประเทศ', searchCountry: 'ค้นหาประเทศ',
     switchLang: 'เปลี่ยนภาษา', appLanguage: 'ภาษาของแอป', searchLanguage: 'ค้นหาภาษา', noLanguage: 'ไม่พบภาษา', noLanguageBody: 'ลองสะกดแบบอื่น', skipToContent: 'ข้ามไปยังเนื้อหา', lightMode: 'โหมดสว่าง', darkMode: 'โหมดมืด', nJobs: '{n} งาน',
-    hello: 'สวัสดี {name}', homeTitle: 'งานทั่วโลก', homeStats: 'งานที่เปิดรับ {jobs} ตำแหน่งใน {countries} ประเทศ',
+    hello: 'สวัสดี {name}', homeTitle: 'งานทั่วโลก', homeStats: 'งานที่เปิดรับ {jobs} ตำแหน่งใน {countries} ประเทศ', welcome: 'ยินดีต้อนรับ', homeEmpty: 'กำลังเพิ่มตำแหน่งงาน นี่คืองานเปิดรับจากทั่วโลก', homeEmptyNotify: 'กำลังเพิ่มตำแหน่งงาน สร้างโปรไฟล์แล้วเราจะแจ้งเตือนเมื่อมีงานที่ตรงกับทักษะของคุณ', remoteOnly: 'ทำงานระยะไกลเท่านั้น', fieldOfWork: 'สายงาน',
     yourHiring: 'การรับสมัครของคุณ', openDashboard: 'เปิดแดชบอร์ด', statJobs: 'งาน', statApplicants: 'ผู้สมัคร',
     forYou: 'งานสำหรับคุณ', seeAll: 'ดูทั้งหมด', noRecsTitle: 'ยังไม่มีงานที่ตรงกัน', noRecsBody: 'เพิ่มทักษะในโปรไฟล์เพื่อรับคำแนะนำที่ดีขึ้น', addSkills: 'เพิ่มทักษะ',
     forYouGuestTitle: 'งานแนะนำตามทักษะของคุณ', forYouGuestBody: 'สร้างโปรไฟล์ผู้หางานเพื่อดูงานที่เหมาะกับคุณที่สุด', signUpSeeker: 'สมัครเป็นผู้หางาน', completeProfile: 'กรอกโปรไฟล์ให้ครบ',

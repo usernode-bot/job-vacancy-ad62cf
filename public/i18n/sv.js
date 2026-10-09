@@ -11,7 +11,7 @@
     mainNav: 'Huvudnavigering', navHome: 'Hem', navSearch: 'Sök', navSaved: 'Sparade', navExplore: 'Utforska', navProfile: 'Profil', navSignIn: 'Logga in', navPost: 'Publicera', navDashboard: 'Översikt', navAccount: 'Konto',
     searchPlaceholder: 'Sök roller, företag eller färdigheter', quickCountry: 'Välj land', allCountries: 'Alla länder', chooseCountry: 'Välj land', searchCountry: 'Sök länder',
     switchLang: 'Byt språk', appLanguage: 'Appens språk', searchLanguage: 'Sök språk', noLanguage: 'Inget språk hittades', noLanguageBody: 'Prova en annan stavning.', skipToContent: 'Hoppa till innehåll', lightMode: 'Ljust läge', darkMode: 'Mörkt läge', nJobs: '{n} jobb',
-    hello: 'Hej, {name}', homeTitle: 'Jobb runt om i världen', homeStats: '{jobs} lediga jobb i {countries} länder',
+    hello: 'Hej, {name}', homeTitle: 'Jobb runt om i världen', homeStats: '{jobs} lediga jobb i {countries} länder', welcome: 'Välkommen', homeEmpty: 'Nya jobb läggs till. Här är lediga jobb från hela världen.', homeEmptyNotify: 'Nya jobb läggs till. Skapa en profil så meddelar vi dig när ett jobb som matchar dina färdigheter dyker upp.', remoteOnly: 'Endast distans', fieldOfWork: 'Arbetsområde',
     yourHiring: 'Din rekrytering', openDashboard: 'Öppna översikt', statJobs: 'Jobb', statApplicants: 'Sökande',
     forYou: 'Jobb för dig', seeAll: 'Visa alla', noRecsTitle: 'Inga matchande jobb ännu', noRecsBody: 'Lägg till färdigheter i din profil för bättre rekommendationer.', addSkills: 'Lägg till färdigheter',
     forYouGuestTitle: 'Rekommendationer för dina färdigheter', forYouGuestBody: 'Skapa en profil som arbetssökande för att se de jobb som passar dig bäst.', signUpSeeker: 'Registrera dig som arbetssökande', completeProfile: 'Slutför profilen',

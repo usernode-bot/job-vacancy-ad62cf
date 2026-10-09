@@ -11,7 +11,7 @@
     mainNav: 'Babban kewayawa', navHome: 'Gida', navSearch: 'Bincike', navSaved: 'Adanannu', navExplore: 'Bincika', navProfile: 'Bayanan kai', navSignIn: 'Shiga', navPost: 'Wallafa', navDashboard: 'Dashboard', navAccount: 'Asusu',
     searchPlaceholder: 'Nemi matsayi, kamfanoni ko ƙwarewa', quickCountry: 'Zaɓi ƙasa', allCountries: 'Duk ƙasashe', chooseCountry: 'Zaɓi ƙasa', searchCountry: 'Nemi ƙasashe',
     switchLang: 'Canja harshe', appLanguage: 'Harshen manhaja', searchLanguage: 'Nemi harsuna', noLanguage: 'Ba a sami harshe ba', noLanguageBody: 'Gwada wani rubutun.', skipToContent: 'Tsallaka zuwa abun ciki', lightMode: 'Yanayin haske', darkMode: 'Yanayin duhu', nJobs: 'Ayyuka {n}',
-    hello: 'Sannu, {name}', homeTitle: 'Ayyuka a faɗin duniya', homeStats: 'Guraben aiki {jobs} a ƙasashe {countries}',
+    hello: 'Sannu, {name}', homeTitle: 'Ayyuka a faɗin duniya', homeStats: 'Guraben aiki {jobs} a ƙasashe {countries}', welcome: 'Sannu da zuwa', homeEmpty: 'Ana ƙara ayyuka. Ga dama daga ko’iina cikin duniya.', homeEmptyNotify: 'Ana ƙara ayyuka. Ƙirƙiri bayanin martaba kuma za mu sanar da ke lokacin da aiki ya dace da ƙwarewar ka.', remoteOnly: 'Nisa kawai', fieldOfWork: 'Fannin aiki',
     yourHiring: 'Ɗaukar maʼaikatanku', openDashboard: 'Buɗe dashboard', statJobs: 'Ayyuka', statApplicants: 'Masu nema',
     forYou: 'Ayyuka Domin Ku', seeAll: 'Duba duka', noRecsTitle: 'Babu ayyukan da suka dace tukuna', noRecsBody: 'Ƙara ƙwarewa a bayanan kanku domin samun shawarwari mafi kyau.', addSkills: 'Ƙara ƙwarewa',
     forYouGuestTitle: 'Shawarwari bisa ƙwarewarku', forYouGuestBody: 'Ƙirƙiri bayanan Mai Neman Aiki domin ganin ayyukan da suka fi dacewa da ku.', signUpSeeker: 'Yi rajista a matsayin Mai Neman Aiki', completeProfile: 'Kammala bayanan kai',

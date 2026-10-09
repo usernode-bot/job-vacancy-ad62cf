@@ -11,7 +11,7 @@
     mainNav: 'ዋና ማሰሻ', navHome: 'መነሻ', navSearch: 'ፍለጋ', navSaved: 'የተቀመጡ', navExplore: 'ያስሱ', navProfile: 'መገለጫ', navSignIn: 'ይግቡ', navPost: 'ይለጥፉ', navDashboard: 'ዳሽቦርድ', navAccount: 'መለያ',
     searchPlaceholder: 'የሥራ መደቦችን፣ ኩባንያዎችን ወይም ክህሎቶችን ይፈልጉ', quickCountry: 'አገር ይምረጡ', allCountries: 'ሁሉም አገሮች', chooseCountry: 'አገር ይምረጡ', searchCountry: 'አገሮችን ይፈልጉ',
     switchLang: 'ቋንቋ ይቀይሩ', appLanguage: 'የመተግበሪያው ቋንቋ', searchLanguage: 'ቋንቋዎችን ይፈልጉ', noLanguage: 'ምንም ቋንቋ አልተገኘም', noLanguageBody: 'ሌላ አጻጻፍ ይሞክሩ።', skipToContent: 'ወደ ይዘቱ ይዝለሉ', lightMode: 'ብሩህ ገጽታ', darkMode: 'ጨለማ ገጽታ', nJobs: '{n} ሥራዎች',
-    hello: 'ሰላም፣ {name}', homeTitle: 'በዓለም ዙሪያ ያሉ ሥራዎች', homeStats: 'በ{countries} አገሮች ውስጥ {jobs} ክፍት የሥራ ቦታዎች',
+    hello: 'ሰላም፣ {name}', homeTitle: 'በዓለም ዙሪያ ያሉ ሥራዎች', homeStats: 'በ{countries} አገሮች ውስጥ {jobs} ክፍት የሥራ ቦታዎች', welcome: 'እንኳን ደህና መጡ', homeEmpty: 'ሥራዎች እየታከሉ ነው። ከዓለም ዙሪያ የመጡ ክፍት ሥራዎች።', homeEmptyNotify: 'ሥራዎች እየታከሉ ነው። መገለጫ ይፍጠሩ፣ ከክህሎትዎ ጋር የሚስማማ ሥራ ሲወጣ እናሳውቋል።', remoteOnly: 'ብቻ ለርቀት', fieldOfWork: 'የሥራ መስክ',
     yourHiring: 'የእርስዎ ቅጥር', openDashboard: 'ዳሽቦርድ ይክፈቱ', statJobs: 'ሥራዎች', statApplicants: 'አመልካቾች',
     forYou: 'ለእርስዎ የሚሆኑ ሥራዎች', seeAll: 'ሁሉንም ይመልከቱ', noRecsTitle: 'እስካሁን የሚዛመዱ ሥራዎች የሉም', noRecsBody: 'ለተሻሉ ምክሮች በመገለጫዎ ላይ ክህሎቶችን ያክሉ።', addSkills: 'ክህሎቶችን ያክሉ',
     forYouGuestTitle: 'ለክህሎቶችዎ የሚሆኑ ምክሮች', forYouGuestBody: 'ይበልጥ የሚስማሙዎትን ሥራዎች ለማየት የሥራ ፈላጊ መገለጫ ይፍጠሩ።', signUpSeeker: 'እንደ ሥራ ፈላጊ ይመዝገቡ', completeProfile: 'መገለጫውን ያጠናቅቁ',

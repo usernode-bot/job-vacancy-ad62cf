@@ -11,7 +11,7 @@
     mainNav: 'Ntụgharị isi', navHome: 'Ụlọ', navSearch: 'Chọọ', navSaved: 'Echekwara', navExplore: 'Nyochaa', navProfile: 'Profaịlụ', navSignIn: 'Banye', navPost: 'Bipụta', navDashboard: 'Dashbọọdụ', navAccount: 'Akaụntụ',
     searchPlaceholder: 'Chọọ ọkwa ọrụ, ụlọ ọrụ ma ọ bụ nka', quickCountry: 'Họrọ obodo', allCountries: 'Obodo niile', chooseCountry: 'Họrọ obodo', searchCountry: 'Chọọ obodo',
     switchLang: 'Gbanwee asụsụ', appLanguage: 'Asụsụ ngwa', searchLanguage: 'Chọọ asụsụ', noLanguage: 'Ahụghị asụsụ ọ bụla', noLanguageBody: 'Nwaa mkpoputa ọzọ.', skipToContent: 'Wụfee gaa na ọdịnaya', lightMode: 'Ọnọdụ ìhè', darkMode: 'Ọnọdụ ọchịchịrị', nJobs: 'Ọrụ {n}',
-    hello: 'Ndewo, {name}', homeTitle: 'Ọrụ n’ụwa niile', homeStats: 'Ọrụ {jobs} mepere emepe na obodo {countries}',
+    hello: 'Ndewo, {name}', homeTitle: 'Ọrụ n’ụwa niile', homeStats: 'Ọrụ {jobs} mepere emepe na obodo {countries}', welcome: 'Nnọọ', homeEmpty: 'A na-agbakwụnye ọrụ. Nke a bụ ọrụ sitere n’ụwa niile.', homeEmptyNotify: 'A na-agbakwụnye ọrụ. Mepụta profaịlụ, anyị ga-akọọ gị mgbe ọrụ dakọtara na nkà gị.', remoteOnly: 'Naanị remote', fieldOfWork: 'Ngalaba ọrụ',
     yourHiring: 'Nnabata ndị ọrụ gị', openDashboard: 'Mepee dashbọọdụ', statJobs: 'Ọrụ', statApplicants: 'Ndị na-achọ ọrụ',
     forYou: 'Ọrụ Maka Gị', seeAll: 'Hụ niile', noRecsTitle: 'Enweghị ọrụ dabara ugbu a', noRecsBody: 'Tinye nka na profaịlụ gị maka ndụmọdụ ka mma.', addSkills: 'Tinye nka',
     forYouGuestTitle: 'Ndụmọdụ maka nka gị', forYouGuestBody: 'Mepụta profaịlụ Onye Na-achọ Ọrụ ka ịhụ ọrụ kacha dabara gị.', signUpSeeker: 'Debanye aha dị ka Onye Na-achọ Ọrụ', completeProfile: 'Mezue profaịlụ',

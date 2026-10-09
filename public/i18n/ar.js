@@ -87,5 +87,11 @@
     showAllCountries: 'عرض كل الدول ({n})', showFewer: 'عرض أقل',
     notifications: 'الإشعارات', markAllRead: 'تحديد الكل كمقروء', noNotifications: 'لا توجد إشعارات بعد', noNotificationsBody: 'ستظهر هنا الوظائف المطابقة لمهاراتك.', notifUnread: '{n} غير مقروء',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "مرحبًا بك",
+    remoteOnly: "عن بُعد فقط",
+    jobsComing: "تُضاف وظائف باستمرار.",
+    jobsComingGuest: "تُضاف وظائف باستمرار. أنشئ ملفًا شخصيًا بمهاراتك لتصلك إشعارات عند نشر وظيفة مطابقة.",
+    jobsComingSeeker: "تُضاف وظائف باستمرار. سنخطرك عند نشر وظيفة تطابق مهاراتك.",
+    jobField: "مجال العمل",
   },
 };

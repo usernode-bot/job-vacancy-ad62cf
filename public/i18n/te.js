@@ -87,5 +87,11 @@
     showAllCountries: 'మొత్తం {n} దేశాలను చూపించు', showFewer: 'తక్కువ చూపించు',
     notifications: 'నోటిఫికేషన్లు', markAllRead: 'అన్నింటినీ చదివినట్లు గుర్తించండి', noNotifications: 'ఇంకా నోటిఫికేషన్లు లేవు', noNotificationsBody: 'మీ నైపుణ్యాలకు సరిపోయే ఉద్యోగాలు ఇక్కడ కనిపిస్తాయి.', notifUnread: '{n} చదవనివి',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "స్వాగతం",
+    remoteOnly: "రిమోట్ మాత్రమే",
+    jobsComing: "కొత్త ఉద్యోగాలు జోడించబడుతున్నాయి.",
+    jobsComingGuest: "కొత్త ఉద్యోగాలు జోడించబడుతున్నాయి. సరిపోయే ఉద్యోగం ప్రచురించబడినప్పుడు తెలియజేయడానికి మీ నైపుణ్యాలతో ప్రొఫైల్ సృష్టించండి.",
+    jobsComingSeeker: "కొత్త ఉద్యోగాలు జోడించబడుతున్నాయి. మీ నైపుణ్యాలకు సరిపోయే ఉద్యోగం ప్రచురించబడినప్పుడు మేము మిమ్మల్ని తెలియజేస్తాము.",
+    jobField: "పని రంగం",
   },
 };

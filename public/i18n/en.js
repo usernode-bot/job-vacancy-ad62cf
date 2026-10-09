@@ -93,5 +93,11 @@
     showAllCountries: 'Show all {n} countries', showFewer: 'Show fewer',
     notifications: 'Notifications', markAllRead: 'Mark all as read', noNotifications: 'No notifications yet', noNotificationsBody: 'Jobs that match your skills will show up here.', notifUnread: '{n} unread',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Welcome",
+    remoteOnly: "Remote only",
+    jobsComing: "Jobs are being added.",
+    jobsComingGuest: "Jobs are being added. Create a profile with your skills to get notified when a matching job is posted.",
+    jobsComingSeeker: "Jobs are being added. We will notify you when a job that matches your skills is posted.",
+    jobField: "Field of work",
   },
 };

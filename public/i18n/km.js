@@ -87,5 +87,11 @@
     showAllCountries: 'បង្ហាញប្រទេសទាំង {n}', showFewer: 'បង្ហាញតិចជាង',
     notifications: 'ការជូនដំណឹង', markAllRead: 'សម្គាល់ទាំងអស់ថាបានអាន', noNotifications: 'មិនទាន់មានការជូនដំណឹងទេ', noNotificationsBody: 'ការងារដែលត្រូវនឹងជំនាញរបស់អ្នកនឹងបង្ហាញនៅទីនេះ។', notifUnread: '{n} មិនទាន់អាន',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "សូមស្វាគមន៍",
+    remoteOnly: "ធ្វើការពីចម្ងាយតែប៉ុណ្ណោះ",
+    jobsComing: "កំពុងបន្ថែមកិច្ចការងារថ្មី។",
+    jobsComingGuest: "កំពុងបន្ថែមកិច្ចការងារថ្មី។ បង្កើតព័ត៌មានផ្ទាល់ខ្លួនជាមួយសមត្ថភាពរបស់អ្នក ដើម្បីទទួលបានការជូនដំណឹងនៅពេលមានការងារត្រូវគ្នាត្រូវបានផ្សាយ។",
+    jobsComingSeeker: "កំពុងបន្ថែមកិច្ចការងារថ្មី។ យើងនឹងជូនដំណឹងអ្នកនៅពេលមានការងារត្រូវនឹងសមត្ថភាពរបស់អ្នកត្រូវបានផ្សាយ។",
+    jobField: "វិស័យការងារ",
   },
 };

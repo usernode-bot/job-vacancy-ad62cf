@@ -87,5 +87,11 @@
     showAllCountries: 'সব {n}টি দেশ দেখুন', showFewer: 'কম দেখুন',
     notifications: 'বিজ্ঞপ্তি', markAllRead: 'সব পঠিত হিসেবে চিহ্নিত করুন', noNotifications: 'এখনও কোনো বিজ্ঞপ্তি নেই', noNotificationsBody: 'আপনার দক্ষতার সাথে মেলে এমন চাকরি এখানে দেখা যাবে।', notifUnread: '{n} অপঠিত',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "স্বাগতম",
+    remoteOnly: "শুধু রিমোট",
+    jobsComing: "নতুন চাকরি যোগ হচ্ছে।",
+    jobsComingGuest: "নতুন চাকরি যোগ হচ্ছে। মিলে যাওয়া চাকরি পোস্ট হলে জানতে আপনার দক্ষতা দিয়ে প্রোফাইল তৈরি করুন।",
+    jobsComingSeeker: "নতুন চাকরি যোগ হচ্ছে। আপনার দক্ষতার সাথে মিলে যাওয়া চাকরি পোস্ট হলে আমরা জানাব।",
+    jobField: "কাজের ক্ষেত্র",
   },
 };

@@ -87,5 +87,11 @@
     showAllCountries: 'Afișează toate cele {n} țări', showFewer: 'Afișează mai puține',
     notifications: 'Notificări', markAllRead: 'Marchează tot ca citit', noNotifications: 'Încă nu există notificări', noNotificationsBody: 'Joburile potrivite cu abilitățile tale vor apărea aici.', notifUnread: '{n} necitite',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Bun venit",
+    remoteOnly: "Doar de la distanță",
+    jobsComing: "Se adaugă noi locuri de muncă.",
+    jobsComingGuest: "Se adaugă noi locuri de muncă. Creați un profil cu abilitățile tale pentru a fi anunțat când se postează un loc de muncă potrivit.",
+    jobsComingSeeker: "Se adaugă noi locuri de muncă. Vă anunțăm când se postează un loc de muncă potrivit abilităților dvs.",
+    jobField: "Domeniu de activitate",
   },
 };

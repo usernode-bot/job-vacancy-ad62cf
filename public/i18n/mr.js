@@ -87,5 +87,11 @@
     showAllCountries: 'सर्व {n} देश दाखवा', showFewer: 'कमी दाखवा',
     notifications: 'सूचना', markAllRead: 'सर्व वाचले म्हणून चिन्हांकित करा', noNotifications: 'अजून कोणत्याही सूचना नाहीत', noNotificationsBody: 'तुमच्या कौशल्यांशी जुळणाऱ्या नोकऱ्या येथे दिसतील.', notifUnread: '{n} न वाचलेल्या',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "स्वागत आहे",
+    remoteOnly: "फक्त रिमोट",
+    jobsComing: "नवीन नोकऱ्या जोडल्या जात आहेत.",
+    jobsComingGuest: "नवीन नोकऱ्या जोडल्या जात आहेत. जुळणारी नोकरी पोस्ट झाल्यावर सूचना मिळवण्यासाठी तुमच्या कौशल्यांसह प्रोफाइल तयार करा.",
+    jobsComingSeeker: "नवीन नोकऱ्या जोडल्या जात आहेत. तुमच्या कौशल्यांशी जुळणारी नोकरी पोस्ट झाल्यावर आम्ही तुम्हाला कळवू.",
+    jobField: "कामाचे क्षेत्र",
   },
 };

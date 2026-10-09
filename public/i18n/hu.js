@@ -87,5 +87,11 @@
     showAllCountries: 'Mind a {n} ország megjelenítése', showFewer: 'Kevesebb megjelenítése',
     notifications: 'Értesítések', markAllRead: 'Összes megjelölése olvasottként', noNotifications: 'Még nincs értesítés', noNotificationsBody: 'Itt jelennek meg a készségeidhez illő állások.', notifUnread: '{n} olvasatlan',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Üdvözöljük",
+    remoteOnly: "Csak távmunka",
+    jobsComing: "Új álláshirdetések kerülnek fel.",
+    jobsComingGuest: "Új álláshirdetések kerülnek fel. Hozzon létre egy profilt a készségeivel, hogy értesüljön, amikor megfelelő állás jelenik meg.",
+    jobsComingSeeker: "Új álláshirdetések kerülnek fel. Értesítjük, amikor az Ön készségeinek megfelelő állás jelenik meg.",
+    jobField: "Munkaterület",
   },
 };

@@ -87,5 +87,11 @@
     showAllCountries: 'બધા {n} દેશો બતાવો', showFewer: 'ઓછા બતાવો',
     notifications: 'સૂચનાઓ', markAllRead: 'બધાને વાંચેલા તરીકે ચિહ્નિત કરો', noNotifications: 'હજી કોઈ સૂચના નથી', noNotificationsBody: 'તમારી કુશળતા સાથે મેળ ખાતી નોકરીઓ અહીં દેખાશે.', notifUnread: '{n} વણવાંચેલ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "સ્વાગત છે",
+    remoteOnly: "ફક્ત રિમોટ",
+    jobsComing: "નવી નોકરીઓ ઉમેરાતી જાય છે.",
+    jobsComingGuest: "નવી નોકરીઓ ઉમેરાતી જાય છે. મેળ ખાતી નોકરી પોસ્ટ થાય ત્યારે સૂચના મેળવવા તમારી કૌશલ્યો સાથે પ્રોફાઇલ બનાવો.",
+    jobsComingSeeker: "નવી નોકરીઓ ઉમેરાતી જાય છે. તમારી કૌશલ્યો સાથે મેળ ખાતી નોકરી પોસ્ટ થાય ત્યારે અમે તમને જણાવીશું.",
+    jobField: "કામનું ક્ષેત્ર",
   },
 };

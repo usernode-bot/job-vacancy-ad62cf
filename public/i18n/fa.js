@@ -87,5 +87,11 @@
     showAllCountries: 'نمایش همه {n} کشور', showFewer: 'نمایش کمتر',
     notifications: 'اعلان‌ها', markAllRead: 'علامت‌گذاری همه به‌عنوان خوانده‌شده', noNotifications: 'هنوز اعلانی نیست', noNotificationsBody: 'شغل‌هایی که با مهارت‌های شما مطابقت دارند اینجا نمایش داده می‌شوند.', notifUnread: '{n} خوانده‌نشده',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "خوش آمدید",
+    remoteOnly: "فقط دورکاری",
+    jobsComing: "آگهی‌های شغلی در حال اضافه شدن هستند.",
+    jobsComingGuest: "آگهی‌های شغلی در حال اضافه شدن هستند. یک پروفایل با مهارت‌هایتان بسازید تا وقتی شغل مناسب منتشر شد خبرتان کنیم.",
+    jobsComingSeeker: "آگهی‌های شغلی در حال اضافه شدن هستند. وقتی شغلی متناسب با مهارت‌هایتان منتشر شد به شما خبر می‌دهیم.",
+    jobField: "حوزه کاری",
   },
 };

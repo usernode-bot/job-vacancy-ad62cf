@@ -87,5 +87,11 @@
     showAllCountries: 'ಎಲ್ಲಾ {n} ದೇಶಗಳನ್ನು ತೋರಿಸಿ', showFewer: 'ಕಡಿಮೆ ತೋರಿಸಿ',
     notifications: 'ಅಧಿಸೂಚನೆಗಳು', markAllRead: 'ಎಲ್ಲವನ್ನೂ ಓದಿದೆ ಎಂದು ಗುರುತಿಸಿ', noNotifications: 'ಇನ್ನೂ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ', noNotificationsBody: 'ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳಿಗೆ ಹೊಂದುವ ಉದ್ಯೋಗಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.', notifUnread: '{n} ಓದದಿರುವುದು',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ಸ್ವಾಗತ",
+    remoteOnly: "ದೂರದಿಂದ ಮಾತ್ರ",
+    jobsComing: "ಹೊಸ ಉದ್ಯೋಗಗಳು ಸೇರಿಸಲಾಗುತ್ತಿವೆ.",
+    jobsComingGuest: "ಹೊಸ ಉದ್ಯೋಗಗಳು ಸೇರಿಸಲಾಗುತ್ತಿವೆ. ಹೊಂದಾಣಿಕೆಯ ಉದ್ಯೋಗ ಪ್ರಕಟವಾದಾಗ ಸೂಚನೆ ಪಡೆಯಲು ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳೊಂದಿಗೆ ಪ್ರೊಫೈಲ್ ರಚಿಸಿ.",
+    jobsComingSeeker: "ಹೊಸ ಉದ್ಯೋಗಗಳು ಸೇರಿಸಲಾಗುತ್ತಿವೆ. ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳಿಗೆ ಹೊಂದಾಣಿಕೆಯ ಉದ್ಯೋಗ ಪ್ರಕಟವಾದಾಗ ನಾವು ತಿಳಿಸುತ್ತೇವೆ.",
+    jobField: "ಕೆಲಸದ ಕ್ಷೇತ್ರ",
   },
 };

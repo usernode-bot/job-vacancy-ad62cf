@@ -87,5 +87,11 @@
     showAllCountries: 'Tampilake kabeh {n} negara', showFewer: 'Tampilake luwih sithik',
     notifications: 'Kabar', markAllRead: 'Tandhani kabeh wis diwaca', noNotifications: 'Durung ana kabar', noNotificationsBody: 'Lowongan sing cocog karo skill sampeyan bakal katon ing kene.', notifUnread: '{n} durung diwaca',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Sugeng rawuh",
+    remoteOnly: "Mung remote",
+    jobsComing: "Lowongan anyar terus ditambahake.",
+    jobsComingGuest: "Lowongan anyar terus ditambahake. Gawe profil karo keahlian supaya dingerteni nalika ana lowongan sing cocok dibukak.",
+    jobsComingSeeker: "Lowongan anyar terus ditambahake. Kita bakal ngandharake nalika ana lowongan sing cocok karo keahlianmu dibukak.",
+    jobField: "Bidang pakaryan",
   },
 };

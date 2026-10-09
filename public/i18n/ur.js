@@ -87,5 +87,11 @@
     showAllCountries: 'تمام {n} ممالک دکھائیں', showFewer: 'کم دکھائیں',
     notifications: 'اطلاعات', markAllRead: 'سب کو پڑھا ہوا نشان زد کریں', noNotifications: 'ابھی کوئی اطلاع نہیں', noNotificationsBody: 'آپ کی مہارتوں سے مطابقت رکھنے والی ملازمتیں یہاں نظر آئیں گی۔', notifUnread: '{n} غیر پڑھی ہوئی',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "خوش آمدید",
+    remoteOnly: "صرف ریموٹ",
+    jobsComing: "نوکریاں شامل کی جا رہی ہیں۔",
+    jobsComingGuest: "نوکریاں شامل کی جا رہی ہیں۔ مناسب نوکری پوسٹ ہونے پر اطلاع پانے کے لیے اپنی مہارتوں کے ساتھ پروفائل بنائیں۔",
+    jobsComingSeeker: "نوکریاں شامل کی جا رہی ہیں۔ آپ کی مہارتوں سے ملتی نوکری پوسٹ ہونے پر ہم آپ کو اطلاع دیں گے۔",
+    jobField: "کام کا شعبہ",
   },
 };

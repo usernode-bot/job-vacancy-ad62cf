@@ -87,5 +87,11 @@
     showAllCountries: 'Показати всі країни ({n})', showFewer: 'Показати менше',
     notifications: 'Сповіщення', markAllRead: 'Позначити все прочитаним', noNotifications: 'Сповіщень поки немає', noNotificationsBody: 'Тут з’являтимуться вакансії, що відповідають вашим навичкам.', notifUnread: '{n} непрочитаних',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Вітаємо",
+    remoteOnly: "Тільки віддалено",
+    jobsComing: "Вакансії додаються.",
+    jobsComingGuest: "Вакансії додаються. Створіть профіль із навичками, щоб отримати сповіщення, коли з'явиться відповідна вакансія.",
+    jobsComingSeeker: "Вакансії додаються. Ми повідомимо, коли з'явиться вакансія, що відповідає вашим навичкам.",
+    jobField: "Сфера діяльності",
   },
 };

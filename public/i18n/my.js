@@ -87,5 +87,11 @@
     showAllCountries: 'နိုင်ငံ {n} ခုလုံးကို ပြပါ', showFewer: 'လျော့ပြပါ',
     notifications: 'အကြောင်းကြားချက်များ', markAllRead: 'အားလုံးကို ဖတ်ပြီးအဖြစ် မှတ်ပါ', noNotifications: 'အကြောင်းကြားချက် မရှိသေးပါ', noNotificationsBody: 'သင့်ကျွမ်းကျင်မှုနှင့် ကိုက်ညီသော အလုပ်များ ဤနေရာတွင် ပေါ်လာမည်။', notifUnread: 'မဖတ်ရသေး {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ကြိုဆိုပါသည်",
+    remoteOnly: "အဝေးမှသာ",
+    jobsComing: "အလုပ်အကိုင် အသစ်များ ထည့်နေပါသည်။",
+    jobsComingGuest: "အလုပ်အကိုင် အသစ်များ ထည့်နေပါသည်။ ကိုက်ညီသော အလုပ် တင်ပြချက်အချိန်တွင် အသိပေးချက်ရရှိရန် သင့်ကျွမ်းကျင်မှုများဖြင့် ပရိုဖိုင်တစ်ခု ဖန်တီးပါ။",
+    jobsComingSeeker: "အလုပ်အကိုင် အသစ်များ ထည့်နေပါသည်။ သင့်ကျွမ်းကျင်မှုများနှင့် ကိုက်ညီသော အလုပ် တင်ပြလျှင် ကျွန်ုပ်တို့ အသိပေးမည်။",
+    jobField: "အလုပ်နယ်ပယ်",
   },
 };

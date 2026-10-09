@@ -87,5 +87,11 @@
     showAllCountries: 'Afficher les {n} pays', showFewer: 'Afficher moins',
     notifications: 'Notifications', markAllRead: 'Tout marquer comme lu', noNotifications: 'Aucune notification pour le moment', noNotificationsBody: 'Les offres correspondant à vos compétences apparaîtront ici.', notifUnread: '{n} non lues',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Bienvenue",
+    remoteOnly: "Remote uniquement",
+    jobsComing: "De nouvelles offres arrivent.",
+    jobsComingGuest: "De nouvelles offres arrivent. Créez un profil avec vos compétences pour être averti dès qu'une offre correspondante est publiée.",
+    jobsComingSeeker: "De nouvelles offres arrivent. Nous vous avertirons dès qu'une offre correspondant à vos compétences sera publiée.",
+    jobField: "Domaine d'activité",
   },
 };

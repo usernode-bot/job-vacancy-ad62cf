@@ -87,5 +87,11 @@
     showAllCountries: 'Ipakita ang lahat ng {n} bansa', showFewer: 'Magpakita ng mas kaunti',
     notifications: 'Mga abiso', markAllRead: 'Markahan lahat bilang nabasa', noNotifications: 'Wala pang abiso', noNotificationsBody: 'Dito lalabas ang mga trabahong tugma sa iyong mga kasanayan.', notifUnread: '{n} hindi pa nababasa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Maligayang pagdating",
+    remoteOnly: "Remote lang",
+    jobsComing: "Nagdaragdag pa ng mga trabaho.",
+    jobsComingGuest: "Nagdaragdag pa ng mga trabaho. Gumawa ng profile kasama ang mga kasanayan mo para maabisuhan kapag may katugmang trabahong na-post.",
+    jobsComingSeeker: "Nagdaragdag pa ng mga trabaho. Aabisuhan ka namin kapag na-post ang trabahong tugma sa mga kasanayan mo.",
+    jobField: "Larangan ng trabaho",
   },
 };

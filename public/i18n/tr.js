@@ -87,5 +87,11 @@
     showAllCountries: '{n} ülkenin tümünü göster', showFewer: 'Daha az göster',
     notifications: 'Bildirimler', markAllRead: 'Tümünü okundu işaretle', noNotifications: 'Henüz bildirim yok', noNotificationsBody: 'Becerilerinize uyan işler burada görünecek.', notifUnread: '{n} okunmamış',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Hoş geldiniz",
+    remoteOnly: "Sadece uzaktan",
+    jobsComing: "Yeni iş ilanları ekleniyor.",
+    jobsComingGuest: "Yeni iş ilanları ekleniyor. Eşleşen bir ilan yayınlandığında bildirim almak için becerilerinizle bir profil oluşturun.",
+    jobsComingSeeker: "Yeni iş ilanları ekleniyor. Becerilerinize uygun bir ilan yayınlandığında size haber vereceğiz.",
+    jobField: "İş alanı",
   },
 };

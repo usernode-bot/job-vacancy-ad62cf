@@ -87,5 +87,11 @@
     showAllCountries: 'Gosi mba niile {n}', showFewer: 'Gosi ole na ole',
     notifications: 'Ọkwa', markAllRead: 'Maka niile dị ka e gụọla', noNotifications: 'Enweghị ọkwa ugbu a', noNotificationsBody: 'Ọrụ ndị kwekọrọ na nkà gị ga-apụta ebe a.', notifUnread: '{n} anaghị agụ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Nọọ",
+    remoteOnly: "Remote naanị",
+    jobsComing: "A na-agbakwụnye ọrụ ọhụrụ.",
+    jobsComingGuest: "A na-agbakwụnye ọrụ ọhụrụ. Mepụta profail na nkà gị ka a mara gị mgbe ọrụ dakọtara pụtara.",
+    jobsComingSeeker: "A na-agbakwụnye ọrụ ọhụrụ. Anyị ga-akọ gị mgbe ọrụ dakọtara na nkà gị pụtara.",
+    jobField: "Ngalaba ọrụ",
   },
 };

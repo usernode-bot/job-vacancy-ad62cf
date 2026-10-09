@@ -87,5 +87,11 @@
     showAllCountries: '{n}か国すべてを表示', showFewer: '表示を減らす',
     notifications: '通知', markAllRead: 'すべて既読にする', noNotifications: '通知はまだありません', noNotificationsBody: 'スキルに合う求人がここに表示されます。', notifUnread: '未読 {n} 件',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ようこそ",
+    remoteOnly: "リモートのみ",
+    jobsComing: "求人を追加中です。",
+    jobsComingGuest: "求人を追加中です。マッチする求人が投稿されたときにお知らせを受け取るには、スキルを登録したプロフィールを作成してください。",
+    jobsComingSeeker: "求人を追加中です。あなたのスキルに合う求人が投稿されたらお知らせします。",
+    jobField: "職種",
   },
 };

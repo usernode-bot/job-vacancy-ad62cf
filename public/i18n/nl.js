@@ -87,5 +87,11 @@
     showAllCountries: 'Alle {n} landen tonen', showFewer: 'Minder tonen',
     notifications: 'Meldingen', markAllRead: 'Alles als gelezen markeren', noNotifications: 'Nog geen meldingen', noNotificationsBody: 'Banen die bij je vaardigheden passen, verschijnen hier.', notifUnread: '{n} ongelezen',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Welkom",
+    remoteOnly: "Alleen remote",
+    jobsComing: "Er worden vacatures toegevoegd.",
+    jobsComingGuest: "Er worden vacatures toegevoegd. Maak een profiel met je vaardigheden om een melding te krijgen zodra een passende vacature wordt geplaatst.",
+    jobsComingSeeker: "Er worden vacatures toegevoegd. We sturen je een melding zodra een vacature wordt geplaatst die past bij je vaardigheden.",
+    jobField: "Werkgebied",
   },
 };

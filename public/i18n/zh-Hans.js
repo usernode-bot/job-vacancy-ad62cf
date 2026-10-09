@@ -87,5 +87,11 @@
     showAllCountries: '显示全部 {n} 个国家', showFewer: '收起',
     notifications: '通知', markAllRead: '全部标为已读', noNotifications: '暂无通知', noNotificationsBody: '与你技能匹配的职位会显示在这里。', notifUnread: '{n} 条未读',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "欢迎",
+    remoteOnly: "仅限远程",
+    jobsComing: "职位正在陆续添加。",
+    jobsComingGuest: "职位正在陆续添加。创建包含你技能的个人资料，以便在有匹配职位发布时收到通知。",
+    jobsComingSeeker: "职位正在陆续添加。有与你的技能匹配的职位发布时，我们会通知你。",
+    jobField: "工作领域",
   },
 };

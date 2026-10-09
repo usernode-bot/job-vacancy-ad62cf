@@ -11,7 +11,7 @@
     mainNav: 'ניווט ראשי', navHome: 'ראשי', navSearch: 'חיפוש', navSaved: 'שמורות', navExplore: 'גילוי', navProfile: 'פרופיל', navSignIn: 'כניסה', navPost: 'פרסום', navDashboard: 'לוח בקרה', navAccount: 'חשבון',
     searchPlaceholder: 'חיפוש תפקידים, חברות או כישורים', quickCountry: 'בחירת מדינה', allCountries: 'כל המדינות', chooseCountry: 'בחירת מדינה', searchCountry: 'חיפוש מדינות',
     switchLang: 'החלפת שפה', appLanguage: 'שפת האפליקציה', searchLanguage: 'חיפוש שפות', noLanguage: 'לא נמצאה שפה', noLanguageBody: 'כדאי לנסות איות אחר.', skipToContent: 'דילוג לתוכן', lightMode: 'מצב בהיר', darkMode: 'מצב כהה', nJobs: '{n} משרות',
-    hello: 'שלום, {name}', homeTitle: 'משרות בכל העולם', homeStats: '{jobs} משרות פתוחות ב-{countries} מדינות',
+    hello: 'שלום, {name}', homeTitle: 'משרות בכל העולם', homeStats: '{jobs} משרות פתוחות ב-{countries} מדינות', welcome: 'ברוכים הבאים', homeEmpty: 'משרות נוספות בהתמדה. הנה משרות פתוחות מכל רחבי העולם.', homeEmptyNotify: 'משרות נוספות בהתמדה. צרו פרופיל ונעדכן אתכם כשתתפרסם משרה שמתאימה לכישורים שלכם.', remoteOnly: 'העבודה מרחוק בלבד', fieldOfWork: 'תחום עיסוק',
     yourHiring: 'הגיוס שלך', openDashboard: 'פתיחת לוח הבקרה', statJobs: 'משרות', statApplicants: 'מועמדים',
     forYou: 'משרות בשבילך', seeAll: 'הצגת הכול', noRecsTitle: 'אין עדיין משרות מתאימות', noRecsBody: 'כדי לקבל המלצות טובות יותר, יש להוסיף כישורים לפרופיל.', addSkills: 'הוספת כישורים',
     forYouGuestTitle: 'המלצות לפי הכישורים שלך', forYouGuestBody: 'יש ליצור פרופיל מחפש עבודה כדי לראות את המשרות המתאימות לך ביותר.', signUpSeeker: 'הרשמה כמחפש עבודה', completeProfile: 'השלמת הפרופיל',

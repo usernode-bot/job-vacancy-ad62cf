@@ -11,7 +11,7 @@
     mainNav: '主导航', navHome: '首页', navSearch: '搜索', navSaved: '收藏', navExplore: '发现', navProfile: '个人资料', navSignIn: '登录', navPost: '发布', navDashboard: '控制台', navAccount: '账户',
     searchPlaceholder: '搜索职位、公司或技能', quickCountry: '选择国家', allCountries: '所有国家', chooseCountry: '选择国家', searchCountry: '搜索国家',
     switchLang: '切换语言', appLanguage: '应用语言', searchLanguage: '搜索语言', noLanguage: '未找到该语言', noLanguageBody: '请尝试其他拼写。', skipToContent: '跳至内容', lightMode: '浅色模式', darkMode: '深色模式', nJobs: '{n} 个职位',
-    hello: '您好，{name}', homeTitle: '全球职位', homeStats: '{countries} 个国家共有 {jobs} 个在招职位',
+    hello: '您好，{name}', homeTitle: '全球职位', homeStats: '{countries} 个国家共有 {jobs} 个在招职位', welcome: '欢迎', homeEmpty: '职位正在陆续发布。以下是来自世界各地的职位。', homeEmptyNotify: '职位正在陆续发布。创建个人资料后，当有职位与您的技能匹配时，我们会通知您。', remoteOnly: '仅限远程', fieldOfWork: '工作领域',
     yourHiring: '您的招聘', openDashboard: '打开控制台', statJobs: '职位', statApplicants: '申请人',
     forYou: '为您推荐', seeAll: '查看全部', noRecsTitle: '暂无匹配职位', noRecsBody: '在个人资料中添加技能，可获得更精准的推荐。', addSkills: '添加技能',
     forYouGuestTitle: '根据您的技能推荐', forYouGuestBody: '创建求职者资料，查看最适合您的职位。', signUpSeeker: '注册为求职者', completeProfile: '完善资料',

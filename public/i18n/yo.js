@@ -11,7 +11,7 @@
     mainNav: 'Ìlọ kiri àkọ́kọ́', navHome: 'Ilé', navSearch: 'Wá', navSaved: 'Tí a fipamọ́', navExplore: 'Ṣàwárí', navProfile: 'Profaili', navSignIn: 'Wọlé', navPost: 'Gbé jáde', navDashboard: 'Dáṣíbọ́ọ̀dù', navAccount: 'Àkọọ́lẹ̀',
     searchPlaceholder: 'Wá ipò iṣẹ́, ilé-iṣẹ́ tàbí ọgbọ́n', quickCountry: 'Yan orílẹ̀-èdè', allCountries: 'Gbogbo orílẹ̀-èdè', chooseCountry: 'Yan orílẹ̀-èdè', searchCountry: 'Wá orílẹ̀-èdè',
     switchLang: 'Yí èdè padà', appLanguage: 'Èdè áàpù', searchLanguage: 'Wá èdè', noLanguage: 'A kò rí èdè kankan', noLanguageBody: 'Gbìyànjú àkọtọ́ mìíràn.', skipToContent: 'Fò lọ sí àkóónú', lightMode: 'Ìpò ìmọ́lẹ̀', darkMode: 'Ìpò òkùnkùn', nJobs: 'Iṣẹ́ {n}',
-    hello: 'Ẹ n lẹ́, {name}', homeTitle: 'Iṣẹ́ káàkiri àgbáyé', homeStats: 'Iṣẹ́ {jobs} tó ṣí sílẹ̀ ní orílẹ̀-èdè {countries}',
+    hello: 'Ẹ n lẹ́, {name}', homeTitle: 'Iṣẹ́ káàkiri àgbáyé', homeStats: 'Iṣẹ́ {jobs} tó ṣí sílẹ̀ ní orílẹ̀-èdè {countries}', welcome: 'Ẹ káàbọ̀', homeEmpty: 'Wọ́n ń fi iṣẹ́ kún. Ìwọ̀n yìí ni àwọn iṣẹ́ láti àgbáyé.', homeEmptyNotify: 'Wọ́n ń fi iṣẹ́ kún. Ṣẹ̀dá profaili kí a lè fi ránṣẹ́ fún ọ nígbà tí iṣẹ́ bá bá ògbọ́n rẹ mu.', remoteOnly: 'Remote nikan', fieldOfWork: 'Ààyà iṣẹ́',
     yourHiring: 'Ìgbaniṣiṣẹ́ yín', openDashboard: 'Ṣí dáṣíbọ́ọ̀dù', statJobs: 'Iṣẹ́', statApplicants: 'Olùbẹ̀wẹ̀',
     forYou: 'Iṣẹ́ Fún Yín', seeAll: 'Wo gbogbo rẹ̀', noRecsTitle: 'Kò sí iṣẹ́ tó bá yín mu síbẹ̀', noRecsBody: 'Ṣàfikún ọgbọ́n sí profaili yín fún àbá tó dára jù.', addSkills: 'Ṣàfikún ọgbọ́n',
     forYouGuestTitle: 'Àbá fún ọgbọ́n yín', forYouGuestBody: 'Ṣẹ̀dá profaili Olùwáṣẹ́ láti rí àwọn iṣẹ́ tó bá yín mu jùlọ.', signUpSeeker: 'Forúkọsílẹ̀ gẹ́gẹ́ bí Olùwáṣẹ́', completeProfile: 'Parí profaili',

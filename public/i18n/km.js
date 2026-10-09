@@ -11,7 +11,7 @@
     mainNav: 'ការរុករកមេ', navHome: 'ទំព័រដើម', navSearch: 'ស្វែងរក', navSaved: 'បានរក្សាទុក', navExplore: 'រុករក', navProfile: 'ប្រវត្តិរូប', navSignIn: 'ចូល', navPost: 'ប្រកាស', navDashboard: 'ផ្ទាំងគ្រប់គ្រង', navAccount: 'គណនី',
     searchPlaceholder: 'ស្វែងរកមុខតំណែង ក្រុមហ៊ុន ឬជំនាញ', quickCountry: 'ជ្រើសរើសប្រទេស', allCountries: 'ប្រទេសទាំងអស់', chooseCountry: 'ជ្រើសរើសប្រទេស', searchCountry: 'ស្វែងរកប្រទេស',
     switchLang: 'ប្តូរភាសា', appLanguage: 'ភាសាកម្មវិធី', searchLanguage: 'ស្វែងរកភាសា', noLanguage: 'រកមិនឃើញភាសា', noLanguageBody: 'សូមសាកល្បងអក្ខរាវិរុទ្ធផ្សេង។', skipToContent: 'រំលងទៅខ្លឹមសារ', lightMode: 'របៀបភ្លឺ', darkMode: 'របៀបងងឹត', nJobs: 'ការងារ {n}',
-    hello: 'សួស្តី {name}', homeTitle: 'ការងារជុំវិញពិភពលោក', homeStats: 'ការងារកំពុងជ្រើសរើស {jobs} នៅក្នុង {countries} ប្រទេស',
+    hello: 'សួស្តី {name}', homeTitle: 'ការងារជុំវិញពិភពលោក', homeStats: 'ការងារកំពុងជ្រើសរើស {jobs} នៅក្នុង {countries} ប្រទេស', welcome: 'សូមស្វាគមន៍', homeEmpty: 'កំពុងបន្ថែមការងារ។ នេះជាការងារបើកចំហពីទូទាំងពិភពលោក។', homeEmptyNotify: 'កំពុងបន្ថែមការងារ។ បង្កើតប្រវត្តិរូប យើងនឹងជូនដំណឹងអ្នកពេលមានការងារត្រូវនឹងជំនាញរបស់អ្នក។', remoteOnly: 'ពីចម្ងាយតែប៉ុណ្ណោះ', fieldOfWork: 'វិស័យការងារ',
     yourHiring: 'ការជ្រើសរើសបុគ្គលិករបស់អ្នក', openDashboard: 'បើកផ្ទាំងគ្រប់គ្រង', statJobs: 'ការងារ', statApplicants: 'បេក្ខជន',
     forYou: 'ការងារសម្រាប់អ្នក', seeAll: 'មើលទាំងអស់', noRecsTitle: 'មិនទាន់មានការងារដែលត្រូវគ្នា', noRecsBody: 'បន្ថែមជំនាញទៅប្រវត្តិរូបរបស់អ្នក ដើម្បីទទួលបានការណែនាំល្អជាងមុន។', addSkills: 'បន្ថែមជំនាញ',
     forYouGuestTitle: 'ការណែនាំតាមជំនាញរបស់អ្នក', forYouGuestBody: 'បង្កើតប្រវត្តិរូបអ្នកស្វែងរកការងារ ដើម្បីមើលការងារដែលសមស្របនឹងអ្នកបំផុត។', signUpSeeker: 'ចុះឈ្មោះជាអ្នកស្វែងរកការងារ', completeProfile: 'បំពេញប្រវត្តិរូប',

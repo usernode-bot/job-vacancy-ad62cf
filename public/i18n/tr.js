@@ -11,7 +11,7 @@
     mainNav: 'Ana gezinme', navHome: 'Ana Sayfa', navSearch: 'Ara', navSaved: 'Kaydedilenler', navExplore: 'Keşfet', navProfile: 'Profil', navSignIn: 'Giriş yap', navPost: 'İlan ver', navDashboard: 'Panel', navAccount: 'Hesap',
     searchPlaceholder: 'Pozisyon, şirket veya beceri arayın', quickCountry: 'Ülke seçin', allCountries: 'Tüm ülkeler', chooseCountry: 'Ülke seçin', searchCountry: 'Ülke arayın',
     switchLang: 'Dili değiştir', appLanguage: 'Uygulama dili', searchLanguage: 'Dil arayın', noLanguage: 'Dil bulunamadı', noLanguageBody: 'Farklı bir yazım deneyin.', skipToContent: 'İçeriğe geç', lightMode: 'Açık mod', darkMode: 'Koyu mod', nJobs: '{n} ilan',
-    hello: 'Merhaba, {name}', homeTitle: 'Dünyanın dört bir yanından iş ilanları', homeStats: '{countries} ülkede {jobs} açık ilan',
+    hello: 'Merhaba, {name}', homeTitle: 'Dünyanın dört bir yanından iş ilanları', homeStats: '{countries} ülkede {jobs} açık ilan', welcome: 'Hoş geldiniz', homeEmpty: 'İş ilanları ekleniyor. Dünyanın dört bir yanından açık pozisyonlar.', homeEmptyNotify: 'İş ilanları ekleniyor. Profil oluşturun, becerilerinize uyan bir iş çıktığında size haber verelim.', remoteOnly: 'Yalnızca uzaktan', fieldOfWork: 'Çalışma alanı',
     yourHiring: 'İşe alımlarınız', openDashboard: 'Paneli aç', statJobs: 'İlanlar', statApplicants: 'Adaylar',
     forYou: 'Size Uygun İlanlar', seeAll: 'Tümünü gör', noRecsTitle: 'Henüz uygun ilan yok', noRecsBody: 'Daha iyi öneriler için profilinize beceri ekleyin.', addSkills: 'Beceri ekle',
     forYouGuestTitle: 'Becerilerinize uygun öneriler', forYouGuestBody: 'Size en uygun ilanları görmek için bir İş Arayan profili oluşturun.', signUpSeeker: 'İş Arayan olarak kaydolun', completeProfile: 'Profili tamamla',

@@ -87,5 +87,11 @@
     showAllCountries: 'அனைத்து {n} நாடுகளையும் காட்டு', showFewer: 'குறைவாகக் காட்டு',
     notifications: 'அறிவிப்புகள்', markAllRead: 'அனைத்தையும் படித்ததாகக் குறி', noNotifications: 'இன்னும் அறிவிப்புகள் இல்லை', noNotificationsBody: 'உங்கள் திறன்களுக்கு பொருந்தும் வேலைகள் இங்கே தோன்றும்.', notifUnread: '{n} படிக்காதவை',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "வரவேற்கிறோம்",
+    remoteOnly: "தொலைவில் மட்டும்",
+    jobsComing: "புதிய வேலைவாய்ப்புகள் சேர்க்கப்படுகின்றன.",
+    jobsComingGuest: "புதிய வேலைவாய்ப்புகள் சேர்க்கப்படுகின்றன. பொருந்தும் வேலை இடுகையிடப்படும்போது அறிவிப்பு பெற உங்கள் திறன்களுடன் சுயவிவரம் உருவாக்குங்கள்.",
+    jobsComingSeeker: "புதிய வேலைவாய்ப்புகள் சேர்க்கப்படுகின்றன. உங்கள் திறன்களுக்குப் பொருந்தும் வேலை இடுகையிடப்படும்போது நாங்கள் உங்களுக்குத் தெரிவிப்போம்.",
+    jobField: "பணித் துறை",
   },
 };

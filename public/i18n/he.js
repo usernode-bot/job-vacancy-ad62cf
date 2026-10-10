@@ -87,5 +87,11 @@
     showAllCountries: 'הצג את כל {n} המדינות', showFewer: 'הצג פחות',
     notifications: 'התראות', markAllRead: 'סמן הכול כנקרא', noNotifications: 'אין התראות עדיין', noNotificationsBody: 'משרות שמתאימות לכישורים שלך יופיעו כאן.', notifUnread: '{n} שלא נקראו',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ברוכים הבאים",
+    remoteOnly: "עבודה מרחוק בלבד",
+    jobsComing: "משרות נוספות מתווספות.",
+    jobsComingGuest: "משרות נוספות מתווספות. צרו פרופיל עם הכישורים שלכם כדי לקבל הודעה כשמתפרסמת משרה מתאימה.",
+    jobsComingSeeker: "משרות נוספות מתווספות. נודיע לכם כשמתפרסמת משרה שמתאימה לכישורים שלכם.",
+    jobField: "תחום עיסוק",
   },
 };

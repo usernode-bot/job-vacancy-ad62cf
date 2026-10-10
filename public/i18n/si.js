@@ -87,5 +87,11 @@
     showAllCountries: 'රටවල් {n} ම පෙන්වන්න', showFewer: 'අඩුවෙන් පෙන්වන්න',
     notifications: 'දැනුම්දීම්', markAllRead: 'සියල්ල කියවූ ලෙස සලකුණු කරන්න', noNotifications: 'තවමත් දැනුම්දීම් නැත', noNotificationsBody: 'ඔබේ කුසලතාවලට ගැළපෙන රැකියා මෙහි දිස්වේ.', notifUnread: 'නොකියවූ {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ආයුබෝවන්",
+    remoteOnly: "දුරස්ථ පමණයි",
+    jobsComing: "නව රැකියා එකතු වෙමින් පවතී.",
+    jobsComingGuest: "නව රැකියා එකතු වෙමින් පවතී. ගැලපෙන රැකියාවක් පළ වූ විට දැනුම්දීමක් ලබා ගැනීමට ඔබේ කුසලතා සමඟ පැතිකඩක් සාදන්න.",
+    jobsComingSeeker: "නව රැකියා එකතු වෙමින් පවතී. ඔබේ කුසලතාවලට ගැලපෙන රැකියාවක් පළ වූ විට අපි ඔබට දන්වන්නෙමු.",
+    jobField: "රැකියා ක්ෂේත්‍රය",
   },
 };

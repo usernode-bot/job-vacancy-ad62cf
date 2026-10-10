@@ -161,6 +161,18 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     assert.equal(again.data.profile.certificates[0].id, certId);
   });
 
+  await t.test('a profile saves an optional field of work, or nothing for an unknown one', async () => {
+    const withField = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, field: 'it' } }));
+    assert.equal(withField.status, 200);
+    assert.equal(withField.data.profile.field, 'it');
+    const badField = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, field: 'nope' } }));
+    assert.equal(badField.status, 200);
+    assert.equal(badField.data.profile.field, '');
+    const noField = await call(seeker, 'PUT', '/profile', profileBody());
+    assert.equal(noField.status, 200);
+    assert.equal(noField.data.profile.field, '', 'old clients that do not send it keep working');
+  });
+
   await t.test('posting a job notifies seekers whose skills match, and only them', async () => {
     const post = (title, required, nice) => call(employer, 'POST', '/jobs', { companyId, title, category: 'it', country: 'ID', city: 'Jakarta', currency: 'IDR',
       salaryMin: 1, salaryMax: 2, period: 'month', type: 'fulltime', model: 'remote', required, nice: nice || [], description: 'Tes.' });

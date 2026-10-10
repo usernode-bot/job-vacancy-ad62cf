@@ -87,5 +87,11 @@
     showAllCountries: 'แสดงทั้ง {n} ประเทศ', showFewer: 'แสดงน้อยลง',
     notifications: 'การแจ้งเตือน', markAllRead: 'ทำเครื่องหมายว่าอ่านทั้งหมดแล้ว', noNotifications: 'ยังไม่มีการแจ้งเตือน', noNotificationsBody: 'งานที่ตรงกับทักษะของคุณจะแสดงที่นี่', notifUnread: 'ยังไม่ได้อ่าน {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ยินดีต้อนรับ",
+    remoteOnly: "ทำงานรีโมทเท่านั้น",
+    jobsComing: "กำลังเพิ่มตำแหน่งงานใหม่",
+    jobsComingGuest: "กำลังเพิ่มตำแหน่งงานใหม่ สร้างโปรไฟล์พร้อมทักษะของคุณเพื่อรับการแจ้งเตือนเมื่อมีงานที่ตรงกันเผยแพร่",
+    jobsComingSeeker: "กำลังเพิ่มตำแหน่งงานใหม่ เราจะแจ้งเตือนคุณเมื่อมีงานที่ตรงกับทักษะของคุณเผยแพร่",
+    jobField: "สายงาน",
   },
 };

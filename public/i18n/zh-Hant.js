@@ -87,5 +87,11 @@
     showAllCountries: '顯示全部 {n} 個國家', showFewer: '收合',
     notifications: '通知', markAllRead: '全部標示為已讀', noNotifications: '尚無通知', noNotificationsBody: '與你技能相符的職缺會顯示在這裡。', notifUnread: '{n} 則未讀',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "歡迎",
+    remoteOnly: "僅限遠端",
+    jobsComing: "職位正在陸續新增。",
+    jobsComingGuest: "職位正在陸續新增。建立包含你技能的個人資料，以便在相符職位刊登時收到通知。",
+    jobsComingSeeker: "職位正在陸續新增。有與你技能相符的職位刊登時，我們會通知你。",
+    jobField: "工作領域",
   },
 };

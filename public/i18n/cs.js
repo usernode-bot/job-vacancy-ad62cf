@@ -87,5 +87,11 @@
     showAllCountries: 'Zobrazit všech {n} zemí', showFewer: 'Zobrazit méně',
     notifications: 'Oznámení', markAllRead: 'Označit vše jako přečtené', noNotifications: 'Zatím žádná oznámení', noNotificationsBody: 'Zde se zobrazí nabídky, které odpovídají vašim dovednostem.', notifUnread: '{n} nepřečtených',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Vítejte",
+    remoteOnly: "Pouze vzdáleně",
+    jobsComing: "Přidávají se nové nabídky práce.",
+    jobsComingGuest: "Přidávají se nové nabídky práce. Vytvořte si profil se svými dovednostmi a dostanete upozornění, jakmile se objeví vyhovující nabídka.",
+    jobsComingSeeker: "Přidávají se nové nabídky práce. Jakmile se objeví nabídka odpovídající vaším dovednostem, dáme vám vědět.",
+    jobField: "Pracovní obor",
   },
 };

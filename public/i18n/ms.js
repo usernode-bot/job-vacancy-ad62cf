@@ -87,5 +87,11 @@
     showAllCountries: 'Tunjukkan semua {n} negara', showFewer: 'Tunjukkan kurang',
     notifications: 'Pemberitahuan', markAllRead: 'Tandakan semua sebagai dibaca', noNotifications: 'Belum ada pemberitahuan', noNotificationsBody: 'Pekerjaan yang sepadan dengan kemahiran anda akan dipaparkan di sini.', notifUnread: '{n} belum dibaca',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Selamat datang",
+    remoteOnly: "Aturan jauh sahaja",
+    jobsComing: "Kerja baharu sedang ditambah.",
+    jobsComingGuest: "Kerja baharu sedang ditambah. Buat profil dengan kemahiran anda untuk dimaklumkan apabila kerja yang sepadan disiarkan.",
+    jobsComingSeeker: "Kerja baharu sedang ditambah. Kami akan memaklumkan apabila kerja yang sepadan dengan kemahiran anda disiarkan.",
+    jobField: "Bidang pekerjaan",
   },
 };

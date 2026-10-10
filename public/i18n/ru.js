@@ -87,5 +87,11 @@
     showAllCountries: 'Показать все страны ({n})', showFewer: 'Показать меньше',
     notifications: 'Уведомления', markAllRead: 'Отметить все как прочитанные', noNotifications: 'Пока нет уведомлений', noNotificationsBody: 'Здесь появятся вакансии, подходящие под ваши навыки.', notifUnread: '{n} непрочитанных',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Добро пожаловать",
+    remoteOnly: "Только удалённо",
+    jobsComing: "Вакансии добавляются.",
+    jobsComingGuest: "Вакансии добавляются. Создайте профиль с навыками, чтобы получить уведомление, когда появится подходящая вакансия.",
+    jobsComingSeeker: "Вакансии добавляются. Мы сообщим, когда появится вакансия, подходящая под ваши навыки.",
+    jobField: "Сфера деятельности",
   },
 };

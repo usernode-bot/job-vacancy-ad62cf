@@ -87,5 +87,11 @@
     showAllCountries: 'Visa alla {n} länder', showFewer: 'Visa färre',
     notifications: 'Aviseringar', markAllRead: 'Markera alla som lästa', noNotifications: 'Inga aviseringar än', noNotificationsBody: 'Jobb som matchar dina färdigheter visas här.', notifUnread: '{n} olästa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Välkommen",
+    remoteOnly: "Endast distans",
+    jobsComing: "Nya jobb läggs till.",
+    jobsComingGuest: "Nya jobb läggs till. Skapa en profil med dina färdigheter för att få en avisering när ett matchande jobb publiceras.",
+    jobsComingSeeker: "Nya jobb läggs till. Vi meddelar dig när ett jobb som matchar dina färdigheter publiceras.",
+    jobField: "Arbetsområde",
   },
 };

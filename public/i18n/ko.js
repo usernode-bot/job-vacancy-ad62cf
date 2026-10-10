@@ -87,5 +87,11 @@
     showAllCountries: '{n}개 국가 모두 보기', showFewer: '간략히 보기',
     notifications: '알림', markAllRead: '모두 읽음으로 표시', noNotifications: '아직 알림이 없습니다', noNotificationsBody: '내 스킬에 맞는 일자리가 여기에 표시됩니다.', notifUnread: '읽지 않음 {n}개',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "환영합니다",
+    remoteOnly: "원격 근무만",
+    jobsComing: "일자리를 추가하고 있어요.",
+    jobsComingGuest: "일자리를 추가하고 있어요. 맞는 일자리가 올라오면 알림을 받으려면 기술을 넣어 프로필을 만들어 보세요.",
+    jobsComingSeeker: "일자리를 추가하고 있어요. 기술에 맞는 일자리가 올라오면 알려드릴게요.",
+    jobField: "직무 분야",
   },
 };

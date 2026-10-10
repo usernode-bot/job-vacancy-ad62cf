@@ -87,5 +87,11 @@
     showAllCountries: 'Barcha {n} mamlakatni ko‘rsatish', showFewer: 'Kamroq ko‘rsatish',
     notifications: 'Bildirishnomalar', markAllRead: 'Hammasini o‘qilgan deb belgilash', noNotifications: 'Hozircha bildirishnoma yo‘q', noNotificationsBody: 'Ko‘nikmalaringizga mos ishlar shu yerda ko‘rinadi.', notifUnread: '{n} o‘qilmagan',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Xush kelibsiz",
+    remoteOnly: "Faqat masofadan",
+    jobsComing: "Yangi ish e'lonlari qo'shilmoqda.",
+    jobsComingGuest: "Yangi ish e'lonlari qo'shilmoqda. Mos ish e'lon qilinganda xabar olish uchun ko'nikmalaringiz bilan profil yarating.",
+    jobsComingSeeker: "Yangi ish e'lonlari qo'shilmoqda. Ko'nikmalaringizga mos ish e'lon qilinganda sizga xabar beramiz.",
+    jobField: "Ish sohasi",
   },
 };

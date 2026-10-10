@@ -87,5 +87,11 @@
     showAllCountries: 'Témbongkeun kabéh {n} nagara', showFewer: 'Témbongkeun saeutik',
     notifications: 'Béwara', markAllRead: 'Tandaan sadayana parantos dibaca', noNotifications: 'Can aya béwara', noNotificationsBody: 'Lowongan anu cocog sareng kaahlian anjeun bakal muncul di dieu.', notifUnread: '{n} acan dibaca',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Wilujeng sumping",
+    remoteOnly: "Unggal jauh",
+    jobsComing: "Loker anyar terus ditambihan.",
+    jobsComingGuest: "Loker anyar terus ditambihan. Jieun profil kalawan kaahlian anjeun sangkan dikabaran upami aya loker anu cocok.",
+    jobsComingSeeker: "Loker anyar terus ditambihan. Urang bakal ngabaran upami aya loker anu cocog jeung kaahlian anjeun.",
+    jobField: "Widang pagawéan",
   },
 };

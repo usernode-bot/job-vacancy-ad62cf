@@ -87,5 +87,11 @@
     showAllCountries: 'Εμφάνιση και των {n} χωρών', showFewer: 'Εμφάνιση λιγότερων',
     notifications: 'Ειδοποιήσεις', markAllRead: 'Σήμανση όλων ως αναγνωσμένων', noNotifications: 'Δεν υπάρχουν ειδοποιήσεις ακόμα', noNotificationsBody: 'Εδώ θα εμφανίζονται θέσεις που ταιριάζουν με τις δεξιότητές σας.', notifUnread: '{n} μη αναγνωσμένες',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Καλώς ήρθατε",
+    remoteOnly: "Μόνο εξ αποστάσεως",
+    jobsComing: "Προστίθενται νέες θέσεις εργασίας.",
+    jobsComingGuest: "Προστίθενται νέες θέσεις εργασίας. Δημιουργήστε προφίλ με τις δεξιότητές σας για να λαμβάνετε ειδοποίηση όταν δημοσιεύεται αντίστοιχη θέση.",
+    jobsComingSeeker: "Προστίθενται νέες θέσεις εργασίας. Θα σας ενημερώσουμε όταν δημοσιευτεί θέση που ταιριάζει με τις δεξιότητές σας.",
+    jobField: "Επαγγελματικό πεδίο",
   },
 };

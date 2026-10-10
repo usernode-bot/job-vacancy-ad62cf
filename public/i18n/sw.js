@@ -87,5 +87,11 @@
     showAllCountries: 'Onyesha nchi zote {n}', showFewer: 'Onyesha chache',
     notifications: 'Arifa', markAllRead: 'Weka alama zote kuwa zimesomwa', noNotifications: 'Bado hakuna arifa', noNotificationsBody: 'Kazi zinazolingana na ujuzi wako zitaonekana hapa.', notifUnread: '{n} hazijasomwa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "Karibu",
+    remoteOnly: "Kutoka mbali tu",
+    jobsComing: "Kazi mpya zinaongezwa.",
+    jobsComingGuest: "Kazi mpya zinaongezwa. Tengeneza wasifu na ujuzi wako ili upate taarifa kazi inayofanana inapotangazwa.",
+    jobsComingSeeker: "Kazi mpya zinaongezwa. Tutakujulisha kazi inayofanana na ujuzi wako inapotangazwa.",
+    jobField: "Sekta ya kazi",
   },
 };

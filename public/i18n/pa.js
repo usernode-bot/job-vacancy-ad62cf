@@ -87,5 +87,11 @@
     showAllCountries: 'ਸਾਰੇ {n} ਦੇਸ਼ ਦਿਖਾਓ', showFewer: 'ਘੱਟ ਦਿਖਾਓ',
     notifications: 'ਸੂਚਨਾਵਾਂ', markAllRead: 'ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਹੋਇਆ ਮਾਰਕ ਕਰੋ', noNotifications: 'ਹਾਲੇ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ', noNotificationsBody: 'ਤੁਹਾਡੇ ਹੁਨਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੀਆਂ ਨੌਕਰੀਆਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।', notifUnread: '{n} ਨਾ-ਪੜ੍ਹੀਆਂ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
+    welcome: "ਜੀ ਆਇਆਂ ਨੂੰ",
+    remoteOnly: "ਸਿਰਫ਼ ਰਿਮੋਟ",
+    jobsComing: "ਨਵੀਆਂ ਨੌਕਰੀਆਂ ਜੋੜੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ।",
+    jobsComingGuest: "ਨਵੀਆਂ ਨੌਕਰੀਆਂ ਜੋੜੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ। ਮੇਲ ਖਾਂਦੀ ਨੌਕਰੀ ਪੋਸਟ ਹੋਣ 'ਤੇ ਸੂਚਨਾ ਲਈ ਆਪਣੀਆਂ ਹੁਨਰਾਂ ਨਾਲ ਪ੍ਰੋਫਾਈਲ ਬਣਾਓ।",
+    jobsComingSeeker: "ਨਵੀਆਂ ਨੌਕਰੀਆਂ ਜੋੜੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ। ਤੁਹਾਡੀਆਂ ਹੁਨਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੀ ਨੌਕਰੀ ਪੋਸਟ ਹੋਣ 'ਤੇ ਅਸੀਂ ਤੁਹਾਨੂੰ ਦੱਸਾਂਗੇ।",
+    jobField: "ਕੰਮ ਦਾ ਖੇਤਰ",
   },
 };

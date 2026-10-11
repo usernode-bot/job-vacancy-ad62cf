@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Urdu. A key missing here falls back to English. */
+/* Job Vacancy interface text: Urdu. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ur'] = {
   name: 'اردو',
   locale: 'ur-PK',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ملازمتوں کی بنیاد پر', youHaveIt: 'یہ آپ کے پاس ہے', pctRequired: '{n}% لازمی', otherCountriesHint: 'ملک فہرست میں نہیں؟', allCountriesList: 'تمام ممالک دیکھیں', noCountry: 'کوئی ملک نہیں ملا', noCountryBody: 'کوئی اور ہجے آزمائیں۔',
     signUpTitle: 'سائن اپ', signInTitle: 'سائن ان', signUp: 'سائن اپ', signIn: 'سائن ان', homeroomIdentity: 'آپ Homeroom اکاؤنٹ @{user} سے سائن ان ہیں، اس لیے پاس ورڈ کی ضرورت نہیں۔ براہ کرم اپنا کردار منتخب کریں۔', homeroomIdentityAnon: 'آپ کا Homeroom اکاؤنٹ آپ کو سائن ان کرتا ہے، اس لیے پاس ورڈ کی ضرورت نہیں۔',
     roleSeeker: 'ملازمت کا متلاشی', roleSeekerBody: 'ڈیجیٹل CV بنائیں، اپنی مہارتوں کی مطابقت دیکھیں اور ملازمتوں کے لیے درخواست دیں۔', roleCompany: 'کمپنی', roleCompanyBody: 'ملازمتیں پوسٹ کریں اور امیدواروں کا انتظام کریں۔',
-    yourAccounts: 'آپ کے اکاؤنٹس', noAccountsYet: 'ابھی آپ کا Loker Dunia اکاؤنٹ نہیں ہے۔ پہلے ملازمت کے متلاشی یا کمپنی کے طور پر سائن اپ کریں۔', sampleAccounts: 'نمونہ اکاؤنٹس', sampleAccount: 'نمونہ', unfinishedProfile: 'نامکمل پروفائل',
+    yourAccounts: 'آپ کے اکاؤنٹس', noAccountsYet: 'ابھی آپ کا Job Vacancy اکاؤنٹ نہیں ہے۔ پہلے ملازمت کے متلاشی یا کمپنی کے طور پر سائن اپ کریں۔', sampleAccounts: 'نمونہ اکاؤنٹس', sampleAccount: 'نمونہ', unfinishedProfile: 'نامکمل پروفائل',
     companySignupTitle: 'کمپنی کے طور پر سائن اپ کریں', companySignupBody: 'ملازمتیں پوسٹ کرنا شروع کرنے کے لیے اپنی کمپنی کی تفصیلات درج کریں۔', companyName: 'کمپنی کا نام', industry: 'صنعت', createCompany: 'کمپنی اکاؤنٹ بنائیں', welcomeCompany: 'خوش آمدید، {co}',
     createProfile: 'پروفائل بنائیں', editProfile: 'پروفائل میں ترمیم کریں', stepOf: 'مرحلہ {n} از {total}', progress: 'سائن اپ کی پیش رفت', stepBio: 'ذاتی تفصیلات', stepEduExp: 'تعلیم اور تجربہ', stepSkills: 'مہارتیں', stepCerts: 'سرٹیفکیٹس',
     saveFinish: 'محفوظ کریں اور مکمل کریں', saveChanges: 'تبدیلیاں محفوظ کریں', backToProfile: 'پروفائل پر واپس جائیں',

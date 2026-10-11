@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Malayalam. A key missing here falls back to English. */
+/* Job Vacancy interface text: Malayalam. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ml'] = {
   name: 'മലയാളം',
   locale: 'ml-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ജോലികളെ അടിസ്ഥാനമാക്കി', youHaveIt: 'നിങ്ങൾക്കുണ്ട്', pctRequired: '{n}% ആവശ്യം', otherCountriesHint: 'രാജ്യം പട്ടികയിൽ ഇല്ലേ?', allCountriesList: 'എല്ലാ രാജ്യങ്ങളും കാണുക', noCountry: 'രാജ്യമൊന്നും കണ്ടെത്തിയില്ല', noCountryBody: 'മറ്റൊരു അക്ഷരവിന്യാസം ശ്രമിക്കുക.',
     signUpTitle: 'സൈൻ അപ്പ്', signInTitle: 'സൈൻ ഇൻ', signUp: 'സൈൻ അപ്പ്', signIn: 'സൈൻ ഇൻ', homeroomIdentity: 'നിങ്ങൾ Homeroom അക്കൗണ്ട് @{user} ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്തിരിക്കുന്നു, അതിനാൽ പാസ്‌വേഡ് ആവശ്യമില്ല. നിങ്ങളുടെ റോൾ തിരഞ്ഞെടുക്കുക.', homeroomIdentityAnon: 'നിങ്ങളുടെ Homeroom അക്കൗണ്ട് നിങ്ങളെ സൈൻ ഇൻ ചെയ്യിക്കുന്നു, അതിനാൽ പാസ്‌വേഡ് ആവശ്യമില്ല.',
     roleSeeker: 'തൊഴിലന്വേഷകൻ', roleSeekerBody: 'ഒരു ഡിജിറ്റൽ CV തയ്യാറാക്കുക, നിങ്ങളുടെ കഴിവുകൾ ഒത്തുനോക്കുക, ജോലികൾക്ക് അപേക്ഷിക്കുക.', roleCompany: 'കമ്പനി', roleCompanyBody: 'ജോലികൾ പോസ്റ്റ് ചെയ്യുക, അപേക്ഷകരെ നിയന്ത്രിക്കുക.',
-    yourAccounts: 'നിങ്ങളുടെ അക്കൗണ്ടുകൾ', noAccountsYet: 'നിങ്ങൾക്ക് ഇതുവരെ Loker Dunia അക്കൗണ്ട് ഇല്ല. ആദ്യം തൊഴിലന്വേഷകനായോ കമ്പനിയായോ സൈൻ അപ്പ് ചെയ്യുക.', sampleAccounts: 'സാമ്പിൾ അക്കൗണ്ടുകൾ', sampleAccount: 'സാമ്പിൾ', unfinishedProfile: 'പൂർത്തിയാകാത്ത പ്രൊഫൈൽ',
+    yourAccounts: 'നിങ്ങളുടെ അക്കൗണ്ടുകൾ', noAccountsYet: 'നിങ്ങൾക്ക് ഇതുവരെ Job Vacancy അക്കൗണ്ട് ഇല്ല. ആദ്യം തൊഴിലന്വേഷകനായോ കമ്പനിയായോ സൈൻ അപ്പ് ചെയ്യുക.', sampleAccounts: 'സാമ്പിൾ അക്കൗണ്ടുകൾ', sampleAccount: 'സാമ്പിൾ', unfinishedProfile: 'പൂർത്തിയാകാത്ത പ്രൊഫൈൽ',
     companySignupTitle: 'കമ്പനിയായി സൈൻ അപ്പ് ചെയ്യുക', companySignupBody: 'ജോലികൾ പോസ്റ്റ് ചെയ്യാൻ തുടങ്ങുന്നതിന് നിങ്ങളുടെ കമ്പനി വിവരങ്ങൾ നൽകുക.', companyName: 'കമ്പനിയുടെ പേര്', industry: 'വ്യവസായം', createCompany: 'കമ്പനി അക്കൗണ്ട് സൃഷ്ടിക്കുക', welcomeCompany: 'സ്വാഗതം, {co}',
     createProfile: 'പ്രൊഫൈൽ സൃഷ്ടിക്കുക', editProfile: 'പ്രൊഫൈൽ തിരുത്തുക', stepOf: 'ഘട്ടം {n} / {total}', progress: 'സൈൻ അപ്പ് പുരോഗതി', stepBio: 'വ്യക്തിഗത വിവരങ്ങൾ', stepEduExp: 'വിദ്യാഭ്യാസവും പ്രവൃത്തിപരിചയവും', stepSkills: 'കഴിവുകൾ', stepCerts: 'സർട്ടിഫിക്കറ്റുകൾ',
     saveFinish: 'സംരക്ഷിച്ച് പൂർത്തിയാക്കുക', saveChanges: 'മാറ്റങ്ങൾ സംരക്ഷിക്കുക', backToProfile: 'പ്രൊഫൈലിലേക്ക് മടങ്ങുക',

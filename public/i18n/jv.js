@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Javanese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Javanese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['jv'] = {
   name: 'Basa Jawa',
   locale: 'jv-ID',
@@ -35,7 +35,7 @@
     skillsBasis: 'Adhedhasar {n} lowongan', youHaveIt: 'Panjenengan gadhah', pctRequired: '{n}% mbetahaken', otherCountriesHint: 'Negari mboten wonten ing daftar?', allCountriesList: 'Tingali sedaya negari', noCountry: 'Negari mboten kapanggih', noCountryBody: 'Cobi ejaan sanes.',
     signUpTitle: 'Ndaftar', signInTitle: 'Mlebet', signUp: 'Ndaftar', signIn: 'Mlebet', homeroomIdentity: 'Panjenengan mlebet ngagem akun Homeroom @{user}, pramila mboten mbetahaken sandhi. Mangga pilih peran panjenengan.', homeroomIdentityAnon: 'Akun Homeroom panjenengan dipunagem kangge mlebet, pramila mboten mbetahaken sandhi.',
     roleSeeker: 'Pados Padamelan', roleSeekerBody: 'Damel CV digital, cocokaken kaprigelan lan nglamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan lan ngatur pelamar.',
-    yourAccounts: 'Akun panjenengan', noAccountsYet: 'Panjenengan dereng gadhah akun Loker Dunia. Mangga ndaftar rumiyin minangka Pados Padamelan utawi Perusahaan.', sampleAccounts: 'Akun tuladha', sampleAccount: 'tuladha', unfinishedProfile: 'Profil dereng jangkep',
+    yourAccounts: 'Akun panjenengan', noAccountsYet: 'Panjenengan dereng gadhah akun Job Vacancy. Mangga ndaftar rumiyin minangka Pados Padamelan utawi Perusahaan.', sampleAccounts: 'Akun tuladha', sampleAccount: 'tuladha', unfinishedProfile: 'Profil dereng jangkep',
     companySignupTitle: 'Ndaftar minangka Perusahaan', companySignupBody: 'Lebetaken data perusahaan panjenengan kangge miwiti masang lowongan.', companyName: 'Nami perusahaan', industry: 'Industri', createCompany: 'Damel akun perusahaan', welcomeCompany: 'Sugeng rawuh, {co}',
     createProfile: 'Damel profil', editProfile: 'Owahi profil', stepOf: 'Langkah {n} saking {total}', progress: 'Kemajengan pendaftaran', stepBio: 'Data pribadi', stepEduExp: 'Pendhidhikan & Pengalaman', stepSkills: 'Kaprigelan', stepCerts: 'Sertifikat',
     saveFinish: 'Simpen & Rampung', saveChanges: 'Simpen owahan', backToProfile: 'Wangsul dhateng profil',

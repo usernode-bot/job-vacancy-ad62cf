@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Sundanese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Sundanese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['su'] = {
   name: 'Basa Sunda',
   locale: 'su-ID',
@@ -35,7 +35,7 @@
     skillsBasis: 'Dumasar {n} lowongan', youHaveIt: 'Anjeun gaduh', pctRequired: '{n}% meryogikeun', otherCountriesHint: 'Nagara teu aya dina daptar?', allCountriesList: 'Tingali sadaya nagara', noCountry: 'Nagara teu kapendak', noCountryBody: 'Cobian éjahan sanés.',
     signUpTitle: 'Daptar', signInTitle: 'Lebet', signUp: 'Daptar', signIn: 'Lebet', homeroomIdentity: 'Anjeun lebet nganggo akun Homeroom @{user}, janten teu peryogi kecap konci. Mangga pilih peran anjeun.', homeroomIdentityAnon: 'Akun Homeroom anjeun dianggo kanggo lebet, janten teu peryogi kecap konci.',
     roleSeeker: 'Pencari Padamelan', roleSeekerBody: 'Damel CV digital, cocogkeun kaahlian sareng lamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan sareng atur pelamar.',
-    yourAccounts: 'Akun anjeun', noAccountsYet: 'Anjeun teu acan gaduh akun Loker Dunia. Mangga daptar heula salaku Pencari Padamelan atanapi Perusahaan.', sampleAccounts: 'Akun conto', sampleAccount: 'conto', unfinishedProfile: 'Profil teu acan lengkep',
+    yourAccounts: 'Akun anjeun', noAccountsYet: 'Anjeun teu acan gaduh akun Job Vacancy. Mangga daptar heula salaku Pencari Padamelan atanapi Perusahaan.', sampleAccounts: 'Akun conto', sampleAccount: 'conto', unfinishedProfile: 'Profil teu acan lengkep',
     companySignupTitle: 'Daptar salaku Perusahaan', companySignupBody: 'Lebetkeun data perusahaan anjeun kanggo ngamimitian masang lowongan.', companyName: 'Nami perusahaan', industry: 'Industri', createCompany: 'Damel akun perusahaan', welcomeCompany: 'Wilujeng sumping, {co}',
     createProfile: 'Damel profil', editProfile: 'Édit profil', stepOf: 'Léngkah {n} tina {total}', progress: 'Kamajuan pendaptaran', stepBio: 'Data pribadi', stepEduExp: 'Atikan & Pangalaman', stepSkills: 'Kaahlian', stepCerts: 'Sértifikat',
     saveFinish: 'Simpen & Réngsé', saveChanges: 'Simpen parobihan', backToProfile: 'Uih ka profil',

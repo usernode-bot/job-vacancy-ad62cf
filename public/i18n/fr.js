@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: French. A key missing here falls back to English. */
+/* Job Vacancy interface text: French. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['fr'] = {
   name: 'Français',
   locale: 'fr-FR',
@@ -35,7 +35,7 @@
     skillsBasis: 'Sur la base de {n} offres', youHaveIt: 'Vous la maîtrisez', pctRequired: '{n} % la requièrent', otherCountriesHint: "Votre pays n'est pas listé ?", allCountriesList: 'Voir tous les pays', noCountry: 'Aucun pays trouvé', noCountryBody: 'Essayez une autre orthographe.',
     signUpTitle: 'Inscription', signInTitle: 'Connexion', signUp: "S'inscrire", signIn: 'Se connecter', homeroomIdentity: "Vous êtes connecté avec le compte Homeroom @{user} ; aucun mot de passe n'est nécessaire. Choisissez votre rôle.", homeroomIdentityAnon: "Votre compte Homeroom vous connecte ; aucun mot de passe n'est nécessaire.",
     roleSeeker: 'Candidat', roleSeekerBody: 'Créez un CV numérique, comparez vos compétences et postulez à des offres.', roleCompany: 'Entreprise', roleCompanyBody: 'Publiez des offres et gérez les candidats.',
-    yourAccounts: 'Vos comptes', noAccountsYet: "Vous n'avez pas encore de compte Loker Dunia. Inscrivez-vous d'abord en tant que candidat ou entreprise.", sampleAccounts: "Comptes d'exemple", sampleAccount: 'exemple', unfinishedProfile: 'Profil incomplet',
+    yourAccounts: 'Vos comptes', noAccountsYet: "Vous n'avez pas encore de compte Job Vacancy. Inscrivez-vous d'abord en tant que candidat ou entreprise.", sampleAccounts: "Comptes d'exemple", sampleAccount: 'exemple', unfinishedProfile: 'Profil incomplet',
     companySignupTitle: "S'inscrire en tant qu'entreprise", companySignupBody: 'Saisissez les informations de votre entreprise pour commencer à publier des offres.', companyName: "Nom de l'entreprise", industry: "Secteur d'activité", createCompany: 'Créer un compte entreprise', welcomeCompany: 'Bienvenue, {co}',
     createProfile: 'Créer un profil', editProfile: 'Modifier le profil', stepOf: 'Étape {n} sur {total}', progress: "Progression de l'inscription", stepBio: 'Informations personnelles', stepEduExp: 'Formation et expérience', stepSkills: 'Compétences', stepCerts: 'Certificats',
     saveFinish: 'Enregistrer et terminer', saveChanges: 'Enregistrer les modifications', backToProfile: 'Retour au profil',

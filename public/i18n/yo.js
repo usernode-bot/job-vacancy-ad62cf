@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Yoruba. A key missing here falls back to English. */
+/* Job Vacancy interface text: Yoruba. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['yo'] = {
   name: 'Yorùbá',
   locale: 'yo-NG',
@@ -35,7 +35,7 @@
     skillsBasis: 'Ní ìbámu pẹ̀lú iṣẹ́ {n}', youHaveIt: 'Ẹ ní i', pctRequired: '{n}% béèrè fún un', otherCountriesHint: 'Orílẹ̀-èdè kò sí nínú àkójọ?', allCountriesList: 'Wo gbogbo orílẹ̀-èdè', noCountry: 'A kò rí orílẹ̀-èdè kankan', noCountryBody: 'Gbìyànjú àkọtọ́ mìíràn.',
     signUpTitle: 'Forúkọsílẹ̀', signInTitle: 'Wọlé', signUp: 'Forúkọsílẹ̀', signIn: 'Wọlé', homeroomIdentity: 'Ẹ ti wọlé pẹ̀lú àkọọ́lẹ̀ Homeroom @{user}, nítorí náà ẹ kò nílò ọ̀rọ̀ aṣínà. Ẹ yan ipa yín.', homeroomIdentityAnon: 'Àkọọ́lẹ̀ Homeroom yín ló ń mú yín wọlé, nítorí náà ẹ kò nílò ọ̀rọ̀ aṣínà.',
     roleSeeker: 'Olùwáṣẹ́', roleSeekerBody: 'Ṣẹ̀dá CV oní-nọ́ńbà, bá ọgbọ́n yín mu kí ẹ sì bẹ̀wẹ̀ fún iṣẹ́.', roleCompany: 'Ilé-iṣẹ́', roleCompanyBody: 'Gbé iṣẹ́ jáde kí ẹ sì ṣàkóso àwọn olùbẹ̀wẹ̀.',
-    yourAccounts: 'Àwọn àkọọ́lẹ̀ yín', noAccountsYet: 'Ẹ kò tíì ní àkọọ́lẹ̀ Loker Dunia. Ẹ kọ́kọ́ forúkọsílẹ̀ gẹ́gẹ́ bí Olùwáṣẹ́ tàbí Ilé-iṣẹ́.', sampleAccounts: 'Àwọn àkọọ́lẹ̀ àpẹẹrẹ', sampleAccount: 'àpẹẹrẹ', unfinishedProfile: 'Profaili tí kò tíì parí',
+    yourAccounts: 'Àwọn àkọọ́lẹ̀ yín', noAccountsYet: 'Ẹ kò tíì ní àkọọ́lẹ̀ Job Vacancy. Ẹ kọ́kọ́ forúkọsílẹ̀ gẹ́gẹ́ bí Olùwáṣẹ́ tàbí Ilé-iṣẹ́.', sampleAccounts: 'Àwọn àkọọ́lẹ̀ àpẹẹrẹ', sampleAccount: 'àpẹẹrẹ', unfinishedProfile: 'Profaili tí kò tíì parí',
     companySignupTitle: 'Forúkọsílẹ̀ gẹ́gẹ́ bí Ilé-iṣẹ́', companySignupBody: 'Tẹ àlàyé ilé-iṣẹ́ yín sí i láti bẹ̀rẹ̀ sí í gbé iṣẹ́ jáde.', companyName: 'Orúkọ ilé-iṣẹ́', industry: 'Ẹ̀ka ilé-iṣẹ́', createCompany: 'Ṣẹ̀dá àkọọ́lẹ̀ ilé-iṣẹ́', welcomeCompany: 'Ẹ káàbọ̀, {co}',
     createProfile: 'Ṣẹ̀dá profaili', editProfile: 'Ṣàtúnṣe profaili', stepOf: 'Ìgbésẹ̀ {n} nínú {total}', progress: 'Ìlọsíwájú ìforúkọsílẹ̀', stepBio: 'Àlàyé ara ẹni', stepEduExp: 'Ẹ̀kọ́ àti Ìrírí', stepSkills: 'Ọgbọ́n', stepCerts: 'Àwọn ìwé-ẹ̀rí',
     saveFinish: 'Fipamọ́ àti Parí', saveChanges: 'Fi àwọn àyípadà pamọ́', backToProfile: 'Padà sí profaili',

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Russian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Russian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ru'] = {
   name: 'Русский',
   locale: 'ru-RU',
@@ -35,7 +35,7 @@
     skillsBasis: 'На основе вакансий: {n}', youHaveIt: 'У вас есть', pctRequired: 'Требуется в {n}%', otherCountriesHint: 'Нет нужной страны?', allCountriesList: 'Все страны', noCountry: 'Страна не найдена', noCountryBody: 'Попробуйте другое написание.',
     signUpTitle: 'Регистрация', signInTitle: 'Вход', signUp: 'Зарегистрироваться', signIn: 'Войти', homeroomIdentity: 'Вы вошли с аккаунтом Homeroom @{user}, поэтому пароль не нужен. Выберите свою роль.', homeroomIdentityAnon: 'Вход выполняется через ваш аккаунт Homeroom, поэтому пароль не нужен.',
     roleSeeker: 'Соискатель', roleSeekerBody: 'Создайте электронное резюме, сопоставьте навыки и откликайтесь на вакансии.', roleCompany: 'Компания', roleCompanyBody: 'Размещайте вакансии и работайте с кандидатами.',
-    yourAccounts: 'Ваши аккаунты', noAccountsYet: 'У вас ещё нет аккаунта Loker Dunia. Сначала зарегистрируйтесь как соискатель или компания.', sampleAccounts: 'Примеры аккаунтов', sampleAccount: 'пример', unfinishedProfile: 'Незаполненный профиль',
+    yourAccounts: 'Ваши аккаунты', noAccountsYet: 'У вас ещё нет аккаунта Job Vacancy. Сначала зарегистрируйтесь как соискатель или компания.', sampleAccounts: 'Примеры аккаунтов', sampleAccount: 'пример', unfinishedProfile: 'Незаполненный профиль',
     companySignupTitle: 'Регистрация компании', companySignupBody: 'Укажите данные компании, чтобы начать размещать вакансии.', companyName: 'Название компании', industry: 'Отрасль', createCompany: 'Создать аккаунт компании', welcomeCompany: 'Добро пожаловать, {co}',
     createProfile: 'Создать профиль', editProfile: 'Редактировать профиль', stepOf: 'Шаг {n} из {total}', progress: 'Ход регистрации', stepBio: 'Личные данные', stepEduExp: 'Образование и опыт', stepSkills: 'Навыки', stepCerts: 'Сертификаты',
     saveFinish: 'Сохранить и завершить', saveChanges: 'Сохранить изменения', backToProfile: 'Вернуться к профилю',

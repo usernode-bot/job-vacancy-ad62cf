@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Polish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Polish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['pl'] = {
   name: 'Polski',
   locale: 'pl-PL',
@@ -35,7 +35,7 @@
     skillsBasis: 'Na podstawie ofert: {n}', youHaveIt: 'Masz ją', pctRequired: 'Wymagana w {n}%', otherCountriesHint: 'Brak kraju na liście?', allCountriesList: 'Zobacz wszystkie kraje', noCountry: 'Nie znaleziono kraju', noCountryBody: 'Spróbuj innej pisowni.',
     signUpTitle: 'Rejestracja', signInTitle: 'Logowanie', signUp: 'Zarejestruj się', signIn: 'Zaloguj się', homeroomIdentity: 'Zalogowano kontem Homeroom @{user}, więc hasło nie jest potrzebne. Wybierz swoją rolę.', homeroomIdentityAnon: 'Logowanie odbywa się przez konto Homeroom, więc hasło nie jest potrzebne.',
     roleSeeker: 'Kandydat', roleSeekerBody: 'Utwórz cyfrowe CV, dopasuj umiejętności i aplikuj na oferty.', roleCompany: 'Firma', roleCompanyBody: 'Publikuj oferty i zarządzaj kandydatami.',
-    yourAccounts: 'Twoje konta', noAccountsYet: 'Nie masz jeszcze konta Loker Dunia. Najpierw zarejestruj się jako kandydat lub firma.', sampleAccounts: 'Przykładowe konta', sampleAccount: 'przykład', unfinishedProfile: 'Niedokończony profil',
+    yourAccounts: 'Twoje konta', noAccountsYet: 'Nie masz jeszcze konta Job Vacancy. Najpierw zarejestruj się jako kandydat lub firma.', sampleAccounts: 'Przykładowe konta', sampleAccount: 'przykład', unfinishedProfile: 'Niedokończony profil',
     companySignupTitle: 'Rejestracja firmy', companySignupBody: 'Podaj dane firmy, aby zacząć publikować oferty.', companyName: 'Nazwa firmy', industry: 'Branża', createCompany: 'Utwórz konto firmy', welcomeCompany: 'Witamy, {co}',
     createProfile: 'Utwórz profil', editProfile: 'Edytuj profil', stepOf: 'Krok {n} z {total}', progress: 'Postęp rejestracji', stepBio: 'Dane osobowe', stepEduExp: 'Wykształcenie i doświadczenie', stepSkills: 'Umiejętności', stepCerts: 'Certyfikaty',
     saveFinish: 'Zapisz i zakończ', saveChanges: 'Zapisz zmiany', backToProfile: 'Wróć do profilu',

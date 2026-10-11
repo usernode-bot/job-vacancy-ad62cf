@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Hebrew. A key missing here falls back to English. */
+/* Job Vacancy interface text: Hebrew. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['he'] = {
   name: 'עברית',
   locale: 'he-IL',
@@ -35,7 +35,7 @@
     skillsBasis: 'על סמך {n} משרות', youHaveIt: 'יש לך את זה', pctRequired: '{n}% חובה', otherCountriesHint: 'המדינה לא מופיעה?', allCountriesList: 'הצגת כל המדינות', noCountry: 'לא נמצאה מדינה', noCountryBody: 'כדאי לנסות איות אחר.',
     signUpTitle: 'הרשמה', signInTitle: 'כניסה', signUp: 'הרשמה', signIn: 'כניסה', homeroomIdentity: 'נכנסת באמצעות חשבון Homeroom @{user}, ולכן אין צורך בסיסמה. יש לבחור את התפקיד שלך.', homeroomIdentityAnon: 'הכניסה מתבצעת באמצעות חשבון Homeroom שלך, ולכן אין צורך בסיסמה.',
     roleSeeker: 'מחפש עבודה', roleSeekerBody: 'יצירת CV דיגיטלי, התאמת כישורים והגשת מועמדות למשרות.', roleCompany: 'חברה', roleCompanyBody: 'פרסום משרות וניהול מועמדים.',
-    yourAccounts: 'החשבונות שלך', noAccountsYet: 'אין לך עדיין חשבון ב-Loker Dunia. יש להירשם תחילה כמחפש עבודה או כחברה.', sampleAccounts: 'חשבונות לדוגמה', sampleAccount: 'לדוגמה', unfinishedProfile: 'פרופיל לא גמור',
+    yourAccounts: 'החשבונות שלך', noAccountsYet: 'אין לך עדיין חשבון ב-Job Vacancy. יש להירשם תחילה כמחפש עבודה או כחברה.', sampleAccounts: 'חשבונות לדוגמה', sampleAccount: 'לדוגמה', unfinishedProfile: 'פרופיל לא גמור',
     companySignupTitle: 'הרשמה כחברה', companySignupBody: 'יש להזין את פרטי החברה כדי להתחיל לפרסם משרות.', companyName: 'שם החברה', industry: 'תחום', createCompany: 'יצירת חשבון חברה', welcomeCompany: 'ברוכים הבאים, {co}',
     createProfile: 'יצירת פרופיל', editProfile: 'עריכת פרופיל', stepOf: 'שלב {n} מתוך {total}', progress: 'התקדמות ההרשמה', stepBio: 'פרטים אישיים', stepEduExp: 'השכלה וניסיון', stepSkills: 'כישורים', stepCerts: 'תעודות',
     saveFinish: 'שמירה וסיום', saveChanges: 'שמירת שינויים', backToProfile: 'חזרה לפרופיל',

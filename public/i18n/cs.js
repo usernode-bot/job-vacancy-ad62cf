@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Czech. A key missing here falls back to English. */
+/* Job Vacancy interface text: Czech. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['cs'] = {
   name: 'Čeština',
   locale: 'cs-CZ',
@@ -35,7 +35,7 @@
     skillsBasis: 'Na základě nabídek: {n}', youHaveIt: 'Máte ji', pctRequired: 'Požadováno v {n} %', otherCountriesHint: 'Země v seznamu chybí?', allCountriesList: 'Zobrazit všechny země', noCountry: 'Země nenalezena', noCountryBody: 'Zkuste jiný způsob zápisu.',
     signUpTitle: 'Registrace', signInTitle: 'Přihlášení', signUp: 'Registrovat se', signIn: 'Přihlásit se', homeroomIdentity: 'Jste přihlášeni účtem Homeroom @{user}, takže heslo není potřeba. Vyberte svou roli.', homeroomIdentityAnon: 'Přihlašuje vás účet Homeroom, takže heslo není potřeba.',
     roleSeeker: 'Uchazeč', roleSeekerBody: 'Vytvořte si digitální CV, porovnejte dovednosti a reagujte na nabídky.', roleCompany: 'Firma', roleCompanyBody: 'Zveřejňujte nabídky a spravujte uchazeče.',
-    yourAccounts: 'Vaše účty', noAccountsYet: 'Zatím nemáte účet Loker Dunia. Nejprve se zaregistrujte jako uchazeč nebo firma.', sampleAccounts: 'Ukázkové účty', sampleAccount: 'ukázka', unfinishedProfile: 'Nedokončený profil',
+    yourAccounts: 'Vaše účty', noAccountsYet: 'Zatím nemáte účet Job Vacancy. Nejprve se zaregistrujte jako uchazeč nebo firma.', sampleAccounts: 'Ukázkové účty', sampleAccount: 'ukázka', unfinishedProfile: 'Nedokončený profil',
     companySignupTitle: 'Registrace firmy', companySignupBody: 'Zadejte údaje o firmě a začněte zveřejňovat nabídky.', companyName: 'Název firmy', industry: 'Obor', createCompany: 'Vytvořit firemní účet', welcomeCompany: 'Vítejte, {co}',
     createProfile: 'Vytvořit profil', editProfile: 'Upravit profil', stepOf: 'Krok {n} z {total}', progress: 'Průběh registrace', stepBio: 'Osobní údaje', stepEduExp: 'Vzdělání a praxe', stepSkills: 'Dovednosti', stepCerts: 'Certifikáty',
     saveFinish: 'Uložit a dokončit', saveChanges: 'Uložit změny', backToProfile: 'Zpět na profil',

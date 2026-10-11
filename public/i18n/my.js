@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Burmese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Burmese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['my'] = {
   name: 'မြန်မာ',
   locale: 'my-MM',
@@ -35,7 +35,7 @@
     skillsBasis: 'အလုပ် {n} ခုအပေါ် အခြေခံသည်', youHaveIt: 'သင့်တွင် ရှိသည်', pctRequired: '{n}% လိုအပ်သည်', otherCountriesHint: 'နိုင်ငံ မပါဝင်ပါသလား?', allCountriesList: 'နိုင်ငံအားလုံး ကြည့်ရန်', noCountry: 'နိုင်ငံ မတွေ့ပါ', noCountryBody: 'အခြားစာလုံးပေါင်းဖြင့် ကြိုးစားကြည့်ပါ။',
     signUpTitle: 'စာရင်းသွင်းရန်', signInTitle: 'ဝင်ရောက်ရန်', signUp: 'စာရင်းသွင်းရန်', signIn: 'ဝင်ရောက်ရန်', homeroomIdentity: 'သင်သည် Homeroom အကောင့် @{user} ဖြင့် ဝင်ရောက်ထားသောကြောင့် စကားဝှက် မလိုအပ်ပါ။ သင့်အခန်းကဏ္ဍကို ရွေးချယ်ပါ။', homeroomIdentityAnon: 'သင့် Homeroom အကောင့်ဖြင့် ဝင်ရောက်မည်ဖြစ်သောကြောင့် စကားဝှက် မလိုအပ်ပါ။',
     roleSeeker: 'အလုပ်ရှာသူ', roleSeekerBody: 'ဒစ်ဂျစ်တယ် CV ဖန်တီးပြီး ကျွမ်းကျင်မှုများကို ကိုက်ညီစေကာ အလုပ်များ လျှောက်ထားပါ။', roleCompany: 'ကုမ္ပဏီ', roleCompanyBody: 'အလုပ်များ တင်ပြီး လျှောက်ထားသူများကို စီမံပါ။',
-    yourAccounts: 'သင့်အကောင့်များ', noAccountsYet: 'သင့်တွင် Loker Dunia အကောင့် မရှိသေးပါ။ အလုပ်ရှာသူ သို့မဟုတ် ကုမ္ပဏီအဖြစ် ဦးစွာ စာရင်းသွင်းပါ။', sampleAccounts: 'နမူနာအကောင့်များ', sampleAccount: 'နမူနာ', unfinishedProfile: 'မပြီးဆုံးသေးသော ပရိုဖိုင်',
+    yourAccounts: 'သင့်အကောင့်များ', noAccountsYet: 'သင့်တွင် Job Vacancy အကောင့် မရှိသေးပါ။ အလုပ်ရှာသူ သို့မဟုတ် ကုမ္ပဏီအဖြစ် ဦးစွာ စာရင်းသွင်းပါ။', sampleAccounts: 'နမူနာအကောင့်များ', sampleAccount: 'နမူနာ', unfinishedProfile: 'မပြီးဆုံးသေးသော ပရိုဖိုင်',
     companySignupTitle: 'ကုမ္ပဏီအဖြစ် စာရင်းသွင်းရန်', companySignupBody: 'အလုပ်များ စတင်တင်ရန် သင့်ကုမ္ပဏီ အချက်အလက်များကို ထည့်ပါ။', companyName: 'ကုမ္ပဏီအမည်', industry: 'လုပ်ငန်းကဏ္ဍ', createCompany: 'ကုမ္ပဏီအကောင့် ဖန်တီးရန်', welcomeCompany: 'ကြိုဆိုပါသည် {co}',
     createProfile: 'ပရိုဖိုင် ဖန်တီးရန်', editProfile: 'ပရိုဖိုင် ပြင်ဆင်ရန်', stepOf: 'အဆင့် {total} အနက် {n}', progress: 'စာရင်းသွင်းမှု တိုးတက်မှု', stepBio: 'ကိုယ်ရေးအချက်အလက်', stepEduExp: 'ပညာရေးနှင့် အတွေ့အကြုံ', stepSkills: 'ကျွမ်းကျင်မှုများ', stepCerts: 'လက်မှတ်များ',
     saveFinish: 'သိမ်းပြီး ပြီးဆုံးရန်', saveChanges: 'ပြောင်းလဲမှုများ သိမ်းရန်', backToProfile: 'ပရိုဖိုင်သို့ ပြန်သွားရန်',

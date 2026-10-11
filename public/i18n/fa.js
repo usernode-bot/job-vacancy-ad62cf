@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Persian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Persian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['fa'] = {
   name: 'فارسی',
   locale: 'fa-IR',
@@ -35,7 +35,7 @@
     skillsBasis: 'بر اساس {n} شغل', youHaveIt: 'این مهارت را دارید', pctRequired: '{n}% الزامی', otherCountriesHint: 'کشور شما در فهرست نیست؟', allCountriesList: 'مشاهده همه کشورها', noCountry: 'کشوری یافت نشد', noCountryBody: 'املای دیگری را امتحان کنید.',
     signUpTitle: 'ثبت‌نام', signInTitle: 'ورود', signUp: 'ثبت‌نام', signIn: 'ورود', homeroomIdentity: 'شما با حساب Homeroom @{user} وارد شده‌اید، بنابراین به رمز عبور نیازی نیست. لطفاً نقش خود را انتخاب کنید.', homeroomIdentityAnon: 'ورود شما با حساب Homeroom انجام می‌شود، بنابراین به رمز عبور نیازی نیست.',
     roleSeeker: 'کارجو', roleSeekerBody: 'رزومه دیجیتال بسازید، مهارت‌هایتان را تطبیق دهید و برای مشاغل درخواست بدهید.', roleCompany: 'شرکت', roleCompanyBody: 'آگهی شغلی منتشر کنید و متقاضیان را مدیریت کنید.',
-    yourAccounts: 'حساب‌های شما', noAccountsYet: 'هنوز حسابی در Loker Dunia ندارید. ابتدا به‌عنوان کارجو یا شرکت ثبت‌نام کنید.', sampleAccounts: 'حساب‌های نمونه', sampleAccount: 'نمونه', unfinishedProfile: 'پروفایل ناتمام',
+    yourAccounts: 'حساب‌های شما', noAccountsYet: 'هنوز حسابی در Job Vacancy ندارید. ابتدا به‌عنوان کارجو یا شرکت ثبت‌نام کنید.', sampleAccounts: 'حساب‌های نمونه', sampleAccount: 'نمونه', unfinishedProfile: 'پروفایل ناتمام',
     companySignupTitle: 'ثبت‌نام به‌عنوان شرکت', companySignupBody: 'برای شروع انتشار آگهی، اطلاعات شرکت خود را وارد کنید.', companyName: 'نام شرکت', industry: 'صنعت', createCompany: 'ایجاد حساب شرکت', welcomeCompany: 'خوش آمدید، {co}',
     createProfile: 'ایجاد پروفایل', editProfile: 'ویرایش پروفایل', stepOf: 'مرحله {n} از {total}', progress: 'پیشرفت ثبت‌نام', stepBio: 'اطلاعات شخصی', stepEduExp: 'تحصیلات و سوابق کاری', stepSkills: 'مهارت‌ها', stepCerts: 'گواهی‌ها',
     saveFinish: 'ذخیره و پایان', saveChanges: 'ذخیره تغییرات', backToProfile: 'بازگشت به پروفایل',

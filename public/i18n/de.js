@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: German. A key missing here falls back to English. */
+/* Job Vacancy interface text: German. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['de'] = {
   name: 'Deutsch',
   locale: 'de-DE',
@@ -35,7 +35,7 @@
     skillsBasis: 'Basierend auf {n} Stellen', youHaveIt: 'Vorhanden', pctRequired: '{n} % erforderlich', otherCountriesHint: 'Land nicht aufgeführt?', allCountriesList: 'Alle Länder anzeigen', noCountry: 'Kein Land gefunden', noCountryBody: 'Versuchen Sie eine andere Schreibweise.',
     signUpTitle: 'Registrieren', signInTitle: 'Anmelden', signUp: 'Registrieren', signIn: 'Anmelden', homeroomIdentity: 'Sie sind mit dem Homeroom-Konto @{user} angemeldet, daher ist kein Passwort erforderlich. Wählen Sie Ihre Rolle.', homeroomIdentityAnon: 'Sie werden über Ihr Homeroom-Konto angemeldet, daher ist kein Passwort erforderlich.',
     roleSeeker: 'Bewerber', roleSeekerBody: 'Erstellen Sie einen digitalen Lebenslauf, gleichen Sie Ihre Fähigkeiten ab und bewerben Sie sich auf Stellen.', roleCompany: 'Unternehmen', roleCompanyBody: 'Stellen veröffentlichen und Bewerber verwalten.',
-    yourAccounts: 'Ihre Konten', noAccountsYet: 'Sie haben noch kein Loker Dunia-Konto. Registrieren Sie sich zuerst als Bewerber oder Unternehmen.', sampleAccounts: 'Beispielkonten', sampleAccount: 'Beispiel', unfinishedProfile: 'Unvollständiges Profil',
+    yourAccounts: 'Ihre Konten', noAccountsYet: 'Sie haben noch kein Job Vacancy-Konto. Registrieren Sie sich zuerst als Bewerber oder Unternehmen.', sampleAccounts: 'Beispielkonten', sampleAccount: 'Beispiel', unfinishedProfile: 'Unvollständiges Profil',
     companySignupTitle: 'Als Unternehmen registrieren', companySignupBody: 'Geben Sie Ihre Unternehmensdaten ein, um Stellen zu veröffentlichen.', companyName: 'Unternehmensname', industry: 'Branche', createCompany: 'Unternehmenskonto erstellen', welcomeCompany: 'Willkommen, {co}',
     createProfile: 'Profil erstellen', editProfile: 'Profil bearbeiten', stepOf: 'Schritt {n} von {total}', progress: 'Registrierungsfortschritt', stepBio: 'Persönliche Angaben', stepEduExp: 'Ausbildung und Erfahrung', stepSkills: 'Fähigkeiten', stepCerts: 'Zertifikate',
     saveFinish: 'Speichern und abschließen', saveChanges: 'Änderungen speichern', backToProfile: 'Zurück zum Profil',

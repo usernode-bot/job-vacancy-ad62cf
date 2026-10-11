@@ -62,7 +62,7 @@
     try { post('info', ['[dev-console ready]'], { kind: 'ready' }); } catch (_) {}
   })();
   </script>
-  <title>Loker Dunia</title>
+  <title>Job Vacancy</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><g transform='translate(14 14) scale(3)' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='10' cy='7' r='4'/><path d='M10.3 15H7a4 4 0 0 0-4 4v2'/><circle cx='17' cy='17' r='3'/><path d='m21 21-1.9-1.9'/></g></svg>">
   <!-- Web fonts, self-hosted from npm packages (see server.js /fonts/*). -->
   <link rel="preload" href="/fonts/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -129,7 +129,7 @@
   <script>
   'use strict';
   /* ==========================================================================
-     Loker Dunia: reference data and sample content.
+     Job Vacancy: reference data and sample content.
      Everything below is plain data so it can later be served by an API.
      ========================================================================== */
 
@@ -846,7 +846,7 @@
     $('#hdr').innerHTML =
       '<div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-2 md:gap-4">' +
         '<a href="#/" class="flex items-center gap-2 font-bold text-blue-700 dark:text-blue-400 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg">' +
-          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span data-testid="app-name" class="font-display text-xl font-semibold tracking-tight text-slate-900 dark:text-white">Loker <span class="italic text-blue-600 dark:text-blue-400">Dunia</span></span></a>' +
+          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span data-testid="app-name" class="font-display text-xl font-semibold tracking-tight text-slate-900 dark:text-white">Job <span class="italic text-blue-600 dark:text-blue-400">Vacancy</span></span></a>' +
         searchForm('hdr-q', 'hidden md:flex flex-1 max-w-md') +
         '<nav class="hidden lg:flex items-center gap-1" aria-label="' + esc(t('mainNav')) + '">' + items.slice(0, 4).map(([h, , k]) =>
           '<a href="' + h + '" class="px-3 py-2 rounded-lg text-sm font-medium ' + (act === h ? 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-950' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>').join('') + '</nav>' +

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Gujarati. A key missing here falls back to English. */
+/* Job Vacancy interface text: Gujarati. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['gu'] = {
   name: 'ગુજરાતી',
   locale: 'gu-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} નોકરીઓના આધારે', youHaveIt: 'તમારી પાસે છે', pctRequired: '{n}% જરૂરી', otherCountriesHint: 'દેશ સૂચિમાં નથી?', allCountriesList: 'બધા દેશો જુઓ', noCountry: 'કોઈ દેશ મળ્યો નથી', noCountryBody: 'બીજી જોડણી અજમાવો.',
     signUpTitle: 'સાઇન અપ', signInTitle: 'સાઇન ઇન', signUp: 'સાઇન અપ', signIn: 'સાઇન ઇન', homeroomIdentity: 'તમે Homeroom એકાઉન્ટ @{user} થી સાઇન ઇન છો, તેથી પાસવર્ડની જરૂર નથી. તમારી ભૂમિકા પસંદ કરો.', homeroomIdentityAnon: 'તમારું Homeroom એકાઉન્ટ તમને સાઇન ઇન કરે છે, તેથી પાસવર્ડની જરૂર નથી.',
     roleSeeker: 'નોકરી શોધનાર', roleSeekerBody: 'ડિજિટલ CV બનાવો, તમારા કૌશલ્યો મેળવો અને નોકરીઓ માટે અરજી કરો.', roleCompany: 'કંપની', roleCompanyBody: 'નોકરીઓ પોસ્ટ કરો અને અરજદારોનું સંચાલન કરો.',
-    yourAccounts: 'તમારા એકાઉન્ટ', noAccountsYet: 'તમારી પાસે હજી Loker Dunia એકાઉન્ટ નથી. પહેલા નોકરી શોધનાર અથવા કંપની તરીકે સાઇન અપ કરો.', sampleAccounts: 'નમૂના એકાઉન્ટ', sampleAccount: 'નમૂનો', unfinishedProfile: 'અધૂરી પ્રોફાઇલ',
+    yourAccounts: 'તમારા એકાઉન્ટ', noAccountsYet: 'તમારી પાસે હજી Job Vacancy એકાઉન્ટ નથી. પહેલા નોકરી શોધનાર અથવા કંપની તરીકે સાઇન અપ કરો.', sampleAccounts: 'નમૂના એકાઉન્ટ', sampleAccount: 'નમૂનો', unfinishedProfile: 'અધૂરી પ્રોફાઇલ',
     companySignupTitle: 'કંપની તરીકે સાઇન અપ કરો', companySignupBody: 'નોકરીઓ પોસ્ટ કરવાનું શરૂ કરવા માટે તમારી કંપનીની વિગતો દાખલ કરો.', companyName: 'કંપનીનું નામ', industry: 'ઉદ્યોગ', createCompany: 'કંપની એકાઉન્ટ બનાવો', welcomeCompany: 'સ્વાગત છે, {co}',
     createProfile: 'પ્રોફાઇલ બનાવો', editProfile: 'પ્રોફાઇલમાં ફેરફાર કરો', stepOf: '{total} માંથી પગલું {n}', progress: 'સાઇન અપની પ્રગતિ', stepBio: 'વ્યક્તિગત વિગતો', stepEduExp: 'શિક્ષણ અને અનુભવ', stepSkills: 'કૌશલ્યો', stepCerts: 'પ્રમાણપત્રો',
     saveFinish: 'સાચવો અને પૂર્ણ કરો', saveChanges: 'ફેરફારો સાચવો', backToProfile: 'પ્રોફાઇલ પર પાછા જાઓ',

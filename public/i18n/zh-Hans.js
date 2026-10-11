@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Simplified Chinese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Simplified Chinese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['zh-Hans'] = {
   name: '简体中文',
   locale: 'zh-CN',
@@ -35,7 +35,7 @@
     skillsBasis: '基于 {n} 个职位', youHaveIt: '您已具备', pctRequired: '{n}% 要求', otherCountriesHint: '没有找到您的国家？', allCountriesList: '查看所有国家', noCountry: '未找到该国家', noCountryBody: '请尝试其他拼写。',
     signUpTitle: '注册', signInTitle: '登录', signUp: '注册', signIn: '登录', homeroomIdentity: '您已使用 Homeroom 账户 @{user} 登录，无需密码。请选择您的身份。', homeroomIdentityAnon: '您的 Homeroom 账户会自动为您登录，无需密码。',
     roleSeeker: '求职者', roleSeekerBody: '创建电子简历，匹配技能并申请职位。', roleCompany: '公司', roleCompanyBody: '发布职位并管理申请人。',
-    yourAccounts: '您的账户', noAccountsYet: '您还没有 Loker Dunia 账户。请先注册为求职者或公司。', sampleAccounts: '示例账户', sampleAccount: '示例', unfinishedProfile: '资料未完成',
+    yourAccounts: '您的账户', noAccountsYet: '您还没有 Job Vacancy 账户。请先注册为求职者或公司。', sampleAccounts: '示例账户', sampleAccount: '示例', unfinishedProfile: '资料未完成',
     companySignupTitle: '注册为公司', companySignupBody: '填写公司信息，即可开始发布职位。', companyName: '公司名称', industry: '行业', createCompany: '创建公司账户', welcomeCompany: '欢迎，{co}',
     createProfile: '创建资料', editProfile: '编辑资料', stepOf: '第 {n} 步，共 {total} 步', progress: '注册进度', stepBio: '个人信息', stepEduExp: '教育与工作经历', stepSkills: '技能', stepCerts: '证书',
     saveFinish: '保存并完成', saveChanges: '保存更改', backToProfile: '返回个人资料',

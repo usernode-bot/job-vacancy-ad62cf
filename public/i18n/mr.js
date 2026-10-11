@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Marathi. A key missing here falls back to English. */
+/* Job Vacancy interface text: Marathi. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['mr'] = {
   name: 'मराठी',
   locale: 'mr-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} नोकऱ्यांवर आधारित', youHaveIt: 'हे आपल्याकडे आहे', pctRequired: '{n}% मध्ये आवश्यक', otherCountriesHint: 'देश यादीत नाही?', allCountriesList: 'सर्व देश पहा', noCountry: 'कोणताही देश सापडला नाही', noCountryBody: 'कृपया दुसरे शब्दलेखन वापरून पहा.',
     signUpTitle: 'साइन अप', signInTitle: 'साइन इन', signUp: 'साइन अप करा', signIn: 'साइन इन करा', homeroomIdentity: 'आपण Homeroom खाते @{user} ने साइन इन केले आहे, त्यामुळे पासवर्डची आवश्यकता नाही. आपली भूमिका निवडा.', homeroomIdentityAnon: 'आपले Homeroom खाते आपल्याला साइन इन करते, त्यामुळे पासवर्डची आवश्यकता नाही.',
     roleSeeker: 'नोकरी शोधणारा', roleSeekerBody: 'डिजिटल CV तयार करा, आपली कौशल्ये जुळवा आणि नोकऱ्यांसाठी अर्ज करा.', roleCompany: 'कंपनी', roleCompanyBody: 'नोकऱ्या पोस्ट करा आणि अर्जदारांचे व्यवस्थापन करा.',
-    yourAccounts: 'आपली खाती', noAccountsYet: 'आपले अद्याप Loker Dunia खाते नाही. प्रथम नोकरी शोधणारा किंवा कंपनी म्हणून साइन अप करा.', sampleAccounts: 'नमुना खाती', sampleAccount: 'नमुना', unfinishedProfile: 'अपूर्ण प्रोफाइल',
+    yourAccounts: 'आपली खाती', noAccountsYet: 'आपले अद्याप Job Vacancy खाते नाही. प्रथम नोकरी शोधणारा किंवा कंपनी म्हणून साइन अप करा.', sampleAccounts: 'नमुना खाती', sampleAccount: 'नमुना', unfinishedProfile: 'अपूर्ण प्रोफाइल',
     companySignupTitle: 'कंपनी म्हणून साइन अप करा', companySignupBody: 'नोकऱ्या पोस्ट करणे सुरू करण्यासाठी आपल्या कंपनीचा तपशील प्रविष्ट करा.', companyName: 'कंपनीचे नाव', industry: 'उद्योग', createCompany: 'कंपनी खाते तयार करा', welcomeCompany: 'स्वागत आहे, {co}',
     createProfile: 'प्रोफाइल तयार करा', editProfile: 'प्रोफाइल संपादित करा', stepOf: 'टप्पा {n} / {total}', progress: 'साइन अपची प्रगती', stepBio: 'वैयक्तिक तपशील', stepEduExp: 'शिक्षण आणि अनुभव', stepSkills: 'कौशल्ये', stepCerts: 'प्रमाणपत्रे',
     saveFinish: 'जतन करा आणि पूर्ण करा', saveChanges: 'बदल जतन करा', backToProfile: 'प्रोफाइलकडे परत जा',

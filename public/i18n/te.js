@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Telugu. A key missing here falls back to English. */
+/* Job Vacancy interface text: Telugu. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['te'] = {
   name: 'తెలుగు',
   locale: 'te-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ఉద్యోగాల ఆధారంగా', youHaveIt: 'మీకు ఉంది', pctRequired: '{n}% అవసరం', otherCountriesHint: 'దేశం జాబితాలో లేదా?', allCountriesList: 'అన్ని దేశాలను చూడండి', noCountry: 'దేశం కనుగొనబడలేదు', noCountryBody: 'మరో స్పెల్లింగ్‌తో ప్రయత్నించండి.',
     signUpTitle: 'సైన్ అప్', signInTitle: 'సైన్ ఇన్', signUp: 'సైన్ అప్', signIn: 'సైన్ ఇన్', homeroomIdentity: 'మీరు Homeroom ఖాతా @{user} తో సైన్ ఇన్ అయ్యారు, కాబట్టి పాస్‌వర్డ్ అవసరం లేదు. మీ పాత్రను ఎంచుకోండి.', homeroomIdentityAnon: 'మీ Homeroom ఖాతా మిమ్మల్ని సైన్ ఇన్ చేస్తుంది, కాబట్టి పాస్‌వర్డ్ అవసరం లేదు.',
     roleSeeker: 'ఉద్యోగార్థి', roleSeekerBody: 'డిజిటల్ CV ను రూపొందించండి, మీ నైపుణ్యాలను సరిపోల్చండి మరియు ఉద్యోగాలకు దరఖాస్తు చేయండి.', roleCompany: 'కంపెనీ', roleCompanyBody: 'ఉద్యోగాలను పోస్ట్ చేయండి మరియు దరఖాస్తుదారులను నిర్వహించండి.',
-    yourAccounts: 'మీ ఖాతాలు', noAccountsYet: 'మీకు ఇంకా Loker Dunia ఖాతా లేదు. ముందుగా ఉద్యోగార్థిగా లేదా కంపెనీగా సైన్ అప్ చేయండి.', sampleAccounts: 'నమూనా ఖాతాలు', sampleAccount: 'నమూనా', unfinishedProfile: 'అసంపూర్ణ ప్రొఫైల్',
+    yourAccounts: 'మీ ఖాతాలు', noAccountsYet: 'మీకు ఇంకా Job Vacancy ఖాతా లేదు. ముందుగా ఉద్యోగార్థిగా లేదా కంపెనీగా సైన్ అప్ చేయండి.', sampleAccounts: 'నమూనా ఖాతాలు', sampleAccount: 'నమూనా', unfinishedProfile: 'అసంపూర్ణ ప్రొఫైల్',
     companySignupTitle: 'కంపెనీగా సైన్ అప్ చేయండి', companySignupBody: 'ఉద్యోగాలను పోస్ట్ చేయడం ప్రారంభించడానికి మీ కంపెనీ వివరాలను నమోదు చేయండి.', companyName: 'కంపెనీ పేరు', industry: 'పరిశ్రమ', createCompany: 'కంపెనీ ఖాతాను సృష్టించండి', welcomeCompany: 'స్వాగతం, {co}',
     createProfile: 'ప్రొఫైల్‌ను సృష్టించండి', editProfile: 'ప్రొఫైల్‌ను సవరించండి', stepOf: '{total}లో దశ {n}', progress: 'సైన్ అప్ పురోగతి', stepBio: 'వ్యక్తిగత వివరాలు', stepEduExp: 'విద్య & అనుభవం', stepSkills: 'నైపుణ్యాలు', stepCerts: 'సర్టిఫికెట్లు',
     saveFinish: 'సేవ్ చేసి ముగించండి', saveChanges: 'మార్పులను సేవ్ చేయండి', backToProfile: 'ప్రొఫైల్‌కు తిరిగి వెళ్లండి',

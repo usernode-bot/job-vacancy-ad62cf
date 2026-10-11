@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Swahili. A key missing here falls back to English. */
+/* Job Vacancy interface text: Swahili. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['sw'] = {
   name: 'Kiswahili',
   locale: 'sw-KE',
@@ -35,7 +35,7 @@
     skillsBasis: 'Kulingana na kazi {n}', youHaveIt: 'Unao', pctRequired: '{n}% inahitajika', otherCountriesHint: 'Nchi haipo kwenye orodha?', allCountriesList: 'Ona nchi zote', noCountry: 'Hakuna nchi iliyopatikana', noCountryBody: 'Jaribu tahajia nyingine.',
     signUpTitle: 'Jisajili', signInTitle: 'Ingia', signUp: 'Jisajili', signIn: 'Ingia', homeroomIdentity: 'Umeingia kwa akaunti ya Homeroom @{user}, kwa hiyo hauhitaji nenosiri. Chagua jukumu lako.', homeroomIdentityAnon: 'Akaunti yako ya Homeroom inakuingiza, kwa hiyo hauhitaji nenosiri.',
     roleSeeker: 'Mtafuta Kazi', roleSeekerBody: 'Tengeneza CV ya kidijitali, linganisha ujuzi wako na uombe kazi.', roleCompany: 'Kampuni', roleCompanyBody: 'Tangaza kazi na usimamie waombaji.',
-    yourAccounts: 'Akaunti zako', noAccountsYet: 'Bado huna akaunti ya Loker Dunia. Kwanza jisajili kama Mtafuta Kazi au Kampuni.', sampleAccounts: 'Akaunti za mfano', sampleAccount: 'mfano', unfinishedProfile: 'Wasifu haujakamilika',
+    yourAccounts: 'Akaunti zako', noAccountsYet: 'Bado huna akaunti ya Job Vacancy. Kwanza jisajili kama Mtafuta Kazi au Kampuni.', sampleAccounts: 'Akaunti za mfano', sampleAccount: 'mfano', unfinishedProfile: 'Wasifu haujakamilika',
     companySignupTitle: 'Jisajili kama Kampuni', companySignupBody: 'Weka taarifa za kampuni yako ili uanze kutangaza kazi.', companyName: 'Jina la kampuni', industry: 'Sekta', createCompany: 'Fungua akaunti ya kampuni', welcomeCompany: 'Karibu, {co}',
     createProfile: 'Unda wasifu', editProfile: 'Hariri wasifu', stepOf: 'Hatua {n} kati ya {total}', progress: 'Maendeleo ya usajili', stepBio: 'Taarifa binafsi', stepEduExp: 'Elimu na Uzoefu', stepSkills: 'Ujuzi', stepCerts: 'Vyeti',
     saveFinish: 'Hifadhi na Maliza', saveChanges: 'Hifadhi mabadiliko', backToProfile: 'Rudi kwenye wasifu',

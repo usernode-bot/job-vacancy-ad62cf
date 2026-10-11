@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Bahasa Indonesia.
+/* Job Vacancy interface text: Bahasa Indonesia.
  *
  * English (en.js) is the default and the base: see that file for how to add
  * a language. A key missing here falls back to English.
@@ -39,7 +39,7 @@
     skillsBasis: 'Berdasarkan {n} lowongan', youHaveIt: 'Kamu punya', pctRequired: '{n}% wajib', otherCountriesHint: 'Tidak ada negara kamu?', allCountriesList: 'Lihat semua negara', noCountry: 'Negara tidak ditemukan', noCountryBody: 'Coba ejaan lain.',
     signUpTitle: 'Daftar', signInTitle: 'Masuk', signUp: 'Daftar', signIn: 'Masuk', homeroomIdentity: 'Kamu masuk dengan akun Homeroom @{user}, jadi tidak perlu kata sandi. Pilih peran kamu.', homeroomIdentityAnon: 'Akun Homeroom kamu dipakai untuk masuk, jadi tidak perlu kata sandi.',
     roleSeeker: 'Pencari Kerja', roleSeekerBody: 'Buat CV digital, cocokkan skill, dan lamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan dan kelola pelamar.',
-    yourAccounts: 'Akun kamu', noAccountsYet: 'Kamu belum punya akun Loker Dunia. Daftar dulu sebagai Pencari Kerja atau Perusahaan.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
+    yourAccounts: 'Akun kamu', noAccountsYet: 'Kamu belum punya akun Job Vacancy. Daftar dulu sebagai Pencari Kerja atau Perusahaan.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
     companySignupTitle: 'Daftar sebagai Perusahaan', companySignupBody: 'Isi data perusahaan untuk mulai memasang lowongan.', companyName: 'Nama perusahaan', industry: 'Industri', createCompany: 'Buat akun perusahaan', welcomeCompany: 'Selamat datang, {co}',
     createProfile: 'Buat profil', editProfile: 'Edit profil', stepOf: 'Langkah {n} dari {total}', progress: 'Kemajuan pendaftaran', stepBio: 'Biodata', stepEduExp: 'Pendidikan & Pengalaman', stepSkills: 'Keahlian', stepCerts: 'Sertifikat',
     saveFinish: 'Simpan & Selesai', saveChanges: 'Simpan perubahan', backToProfile: 'Kembali ke profil',

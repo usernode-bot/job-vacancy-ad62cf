@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Hungarian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Hungarian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['hu'] = {
   name: 'Magyar',
   locale: 'hu-HU',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} állás alapján', youHaveIt: 'Önnek megvan', pctRequired: '{n}% kötelező', otherCountriesHint: 'Nem találja az országot?', allCountriesList: 'Összes ország megtekintése', noCountry: 'Nem található ország', noCountryBody: 'Próbálja más írásmóddal.',
     signUpTitle: 'Regisztráció', signInTitle: 'Belépés', signUp: 'Regisztráció', signIn: 'Belépés', homeroomIdentity: 'A(z) @{user} Homeroom-fiókkal lépett be, így nincs szükség jelszóra. Válassza ki a szerepkörét.', homeroomIdentityAnon: 'A Homeroom-fiókjával lép be, így nincs szükség jelszóra.',
     roleSeeker: 'Álláskereső', roleSeekerBody: 'Készítsen digitális önéletrajzot, egyeztesse készségeit, és jelentkezzen állásokra.', roleCompany: 'Cég', roleCompanyBody: 'Hirdessen állásokat, és kezelje a jelentkezőket.',
-    yourAccounts: 'Az Ön fiókjai', noAccountsYet: 'Még nincs Loker Dunia fiókja. Először regisztráljon Álláskeresőként vagy Cégként.', sampleAccounts: 'Mintafiókok', sampleAccount: 'minta', unfinishedProfile: 'Befejezetlen profil',
+    yourAccounts: 'Az Ön fiókjai', noAccountsYet: 'Még nincs Job Vacancy fiókja. Először regisztráljon Álláskeresőként vagy Cégként.', sampleAccounts: 'Mintafiókok', sampleAccount: 'minta', unfinishedProfile: 'Befejezetlen profil',
     companySignupTitle: 'Regisztráció cégként', companySignupBody: 'Adja meg a cég adatait, hogy elkezdhessen állásokat hirdetni.', companyName: 'Cégnév', industry: 'Iparág', createCompany: 'Céges fiók létrehozása', welcomeCompany: 'Üdvözöljük, {co}',
     createProfile: 'Profil létrehozása', editProfile: 'Profil szerkesztése', stepOf: '{n}. lépés / {total}', progress: 'Regisztráció állapota', stepBio: 'Személyes adatok', stepEduExp: 'Végzettség és tapasztalat', stepSkills: 'Készségek', stepCerts: 'Tanúsítványok',
     saveFinish: 'Mentés és befejezés', saveChanges: 'Módosítások mentése', backToProfile: 'Vissza a profilhoz',

@@ -64,6 +64,11 @@
   </script>
   <title>Loker Dunia</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><g transform='translate(14 14) scale(3)' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='10' cy='7' r='4'/><path d='M10.3 15H7a4 4 0 0 0-4 4v2'/><circle cx='17' cy='17' r='3'/><path d='m21 21-1.9-1.9'/></g></svg>">
+  <!-- Web fonts, self-hosted from npm packages (see server.js /fonts/*). -->
+  <link rel="preload" href="/fonts/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/plus-jakarta-sans/index.css">
+  <link rel="stylesheet" href="/fonts/playfair-display/wght.css">
+  <link rel="stylesheet" href="/fonts/playfair-display/wght-italic.css">
   <link rel="stylesheet" href="/tailwind.css">
   <link rel="stylesheet" href="/usernode-native/v1/native.css">
   <!-- Platform bridge and native UI kit: centrally hosted, loaded by relative path. Never vendor. -->
@@ -107,7 +112,6 @@
   </script>
   <style>
     :root { --un-accent: #2563eb; --un-accent-contrast: #ffffff; }
-    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .no-scrollbar { scrollbar-width: none; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .pb-safe-nav { padding-bottom: calc(5.5rem + var(--un-safe-inset-bottom, env(safe-area-inset-bottom, 0px))); }
@@ -134,9 +138,10 @@
     .split(',').reduce((m, p) => { const [c, d] = p.split(':'); m[c] = d; return m; }, {});
   const COUNTRY_CODES = Object.keys(DIAL);
 
-  // Static exchange rates: units of each currency per 1 USD.
-  // Approximate values, fixed on RATES_DATE. Not live market data.
-  const RATES_DATE = '2026-10-01';
+  // Exchange rates: units of each currency per 1 USD. These are the built-in
+  // fallback, fixed on RATES_DATE; loadRates() overwrites them with live rates
+  // when they can be fetched.
+  let RATES_DATE = '2026-10-01';
   const RATES = {
     USD: 1, IDR: 16300, EUR: 0.92, GBP: 0.78, JPY: 148, SGD: 1.33, AUD: 1.52, CAD: 1.37,
     AED: 3.6725, BRL: 5.4, NGN: 1550, INR: 84, MYR: 4.4, CHF: 0.86, ZAR: 18, KES: 129,
@@ -221,6 +226,8 @@
   const db = { companies: [], profiles: [], skills: [], certificates: [], jobs: [], applications: [], savedJobIds: [] };
   // { userId, username, role, activeCompanyId, profileId, ownedCompanyIds, demoCompanyIds }
   let me = null;
+  // The signed-in seeker's match notifications (see lib/match.js).
+  const notif = { unread: 0, list: [] };
   let loadState = 'loading';
 
   function readJson(key) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
@@ -274,9 +281,47 @@
   function salaryText(j) {
     return fmtMoney(j.salaryMin, j.currency, true) + '–' + fmtMoney(j.salaryMax, j.currency, true) + t('per_' + j.period);
   }
+  // 'local' means "detect from the browser": the region of the browser locale
+  // decides the currency, and no conversion happens when it is unknown.
+  function detectCurrency() {
+    const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (const l of langs) {
+      const m = /[-_]([A-Za-z]{2})\b/.exec(l || '');
+      const cur = m && COUNTRY_CURRENCY[m[1].toUpperCase()];
+      if (cur) return cur;
+    }
+    return null;
+  }
+  function viewerCurrency() { return prefs.cur === 'local' ? detectCurrency() : prefs.cur; }
+
+  // Live rates from a free, key-less source, cached for 12 hours. Any failure
+  // leaves the built-in rates in place.
+  const RATES_CACHE_KEY = 'lokerdunia.rates';
+  const RATES_TTL = 12 * 3600 * 1000;
+  function applyRates(r, date) {
+    let n = 0;
+    for (const c in RATES) { if (typeof r[c] === 'number' && r[c] > 0) { RATES[c] = r[c]; n++; } }
+    if (n && date) RATES_DATE = date;
+    return n > 0;
+  }
+  // Rates come from our own server (which caches them); the browser never calls
+  // the rates host itself. Any failure leaves the cached or built-in rates.
+  async function loadRates() {
+    const cached = readJson(RATES_CACHE_KEY);
+    if (cached && cached.rates && Date.now() - cached.at < RATES_TTL) { applyRates(cached.rates, cached.date); return true; }
+    try {
+      const body = await request('GET', '/rates');
+      if (!body || !body.rates || !applyRates(body.rates, body.date)) throw new Error('unavailable');
+      try { localStorage.setItem(RATES_CACHE_KEY, JSON.stringify({ at: Date.now(), date: body.date, rates: body.rates })); } catch (e) {}
+      return true;
+    } catch (e) {
+      if (cached && cached.rates) applyRates(cached.rates, cached.date);
+      return false;
+    }
+  }
   function salaryConverted(j) {
-    const to = prefs.cur;
-    if (to === 'local' || to === j.currency || !RATES[j.currency]) return '';
+    const to = viewerCurrency();
+    if (!to || to === j.currency || !RATES[to] || !RATES[j.currency]) return '';
     return '≈ ' + fmtMoney(convert(j.salaryMin, j.currency, to), to, true) + '–' + fmtMoney(convert(j.salaryMax, j.currency, to), to, true) + t('per_' + j.period);
   }
   function fmtDate(iso, opts) {
@@ -385,6 +430,16 @@
     db.certificates = db.certificates.filter(x => x.profileId !== p.id).concat(certificates);
   }
   const api = {
+    async loadNotifications() {
+      if (!me || !me.profileId) { notif.unread = 0; notif.list = []; return; }
+      const d = await request('GET', '/notifications');
+      notif.unread = d.unread; notif.list = d.notifications;
+    },
+    async markNotificationsRead(ids) {
+      const d = await request('POST', '/notifications/read', ids ? { ids } : { all: true });
+      notif.unread = d.unread;
+      notif.list.forEach(n => { if (!ids || ids.includes(n.id)) n.read = true; });
+    },
     async bootstrap() {
       const d = await request('GET', '/bootstrap');
       me = d.me;
@@ -436,6 +491,11 @@
       const a = db.applications.find(x => x.id === appId); if (a) a.status = application.status;
       return application;
     },
+    async setTracking(appId, trackStatus) {
+      const { application } = await request('PATCH', '/applications/' + encodeURIComponent(appId) + '/tracking', { trackStatus });
+      const a = db.applications.find(x => x.id === appId); if (a) a.trackStatus = application.trackStatus;
+      return application;
+    },
     async toggleBookmark(jobId) {
       const was = isSaved(jobId);
       db.savedJobIds = was ? db.savedJobIds.filter(x => x !== jobId) : [jobId].concat(db.savedJobIds);
@@ -471,10 +531,10 @@
   }
 
   /* ---------- search ---------- */
-  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false });
+  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false, noCert: false });
   let filters = emptyFilters();
-  const ui = { matchMode: false, sort: 'newest' };
-  function filterCurrency() { return prefs.cur === 'local' ? 'USD' : prefs.cur; }
+  const ui = { matchMode: false, sort: 'newest', countryListOpen: false };
+  function filterCurrency() { return viewerCurrency() || 'USD'; }
   function filterJobs(f) {
     const words = f.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const fc = filterCurrency();
@@ -492,6 +552,7 @@
       if (f.rw && !j.remoteWorldwide) return false;
       if (f.visa && !j.visaSponsor) return false;
       if (f.relo && !j.relocation) return false;
+      if (f.noCert && j.education !== 'any') return false;
       const lo = convert(monthly(j.salaryMin, j.period), j.currency, fc);
       const hi = convert(monthly(j.salaryMax, j.period), j.currency, fc);
       if (f.salaryMin !== '' && hi < Number(f.salaryMin)) return false;
@@ -508,7 +569,7 @@
   }
   function activeFilterCount() {
     const f = filters;
-    return [f.country, f.city, f.category, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo].filter(Boolean).length;
+    return [f.country, f.city, f.category, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo, f.noCert].filter(Boolean).length;
   }
 
   /* ==========================================================================
@@ -545,6 +606,7 @@
     logout: '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/>',
     info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
     dashboard: '<rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/>',
+    bell: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>',
     sparkle: '<path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>',
   };
   // Arrows that mean "back" or "forward" point the other way in right-to-left languages.
@@ -566,7 +628,7 @@
     chip: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',
     chipBlue: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
     muted: 'text-slate-500 dark:text-slate-400',
-    h1: 'text-2xl font-bold tracking-tight',
+    h1: 'font-display text-[1.65rem] font-semibold tracking-tight',
     h2: 'text-lg font-semibold',
     err: 'mt-1 text-xs text-red-600 dark:text-red-400',
     divider: 'divide-y divide-slate-200 dark:divide-slate-800',
@@ -577,6 +639,7 @@
     2: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300',
     3: 'inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-blue-600 text-white',
   };
+  const TRACK_STATUSES = ['applied', 'interviewing', 'offer', 'rejected'];
   const STATUS_CHIP = {
     new: 'inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
     processing: 'inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-amber-50 text-amber-800 dark:bg-amber-950 dark:text-amber-300',
@@ -690,6 +753,20 @@
       lang = code; prefs.lang = code; savePrefs(); render();
     });
   }
+  // Match notifications: newest first, unread highlighted. Opening one goes to the job.
+  function openNotifications() {
+    const row = n => '<li><a href="#/job/' + esc(n.jobId) + '" data-notif-id="' + esc(n.id) + '" data-testid="notif-item" data-read="' + n.read + '" class="flex items-start gap-3 px-3 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500' + (n.read ? '' : ' bg-blue-50 dark:bg-blue-950/50') + '">' +
+      '<span class="flex-1 min-w-0"><span class="block text-sm font-semibold truncate" dir="auto">' + esc(n.title) + '</span><span class="block text-xs ' + C.muted + ' truncate" dir="auto">' + esc(n.company + ' · ' + n.city) + '</span></span>' + matchChip(n.matchPct) + '</a></li>';
+    const body = notif.list.length
+      ? '<div class="flex justify-end mb-2"><button type="button" data-action="notif-read-all" class="' + C.btnGhost + '"' + (notif.unread ? '' : ' disabled') + '>' + esc(t('markAllRead')) + '</button></div>' +
+        '<ul class="space-y-0.5" data-testid="notif-list">' + notif.list.map(row).join('') + '</ul>'
+      : emptyState(t('noNotifications'), t('noNotificationsBody'), '<a href="#/profile" class="' + C.btnPrimary + '">' + esc(t('addSkills')) + '</a>');
+    const root = openModal(body, { title: t('notifications') });
+    root.querySelector('[data-modal-body]').addEventListener('click', e => {
+      const a = e.target.closest('[data-notif-id]'); if (!a) return;
+      api.markNotificationsRead([a.dataset.notifId]).then(renderChrome).catch(() => {});
+    });
+  }
   // Searchable picker over every country. onPick(code|'' for all).
   function openCountryPicker(onPick, opts) {
     opts = opts || {};
@@ -751,7 +828,7 @@
     const p = route().parts[0] || '';
     if (p === '' ) return '#/';
     if (p === 'jobs' || p === 'job') return '#/jobs';
-    if (p === 'countries' || p === 'skills') return '#/countries';
+    if (p === 'countries' || p === 'skills' || p === 'world') return '#/countries';
     if (p === 'dashboard' || p === 'applicant') return '#/dashboard';
     if (p === 'register' || p === 'auth') return role() === 'guest' ? '#/auth' : '#/profile';
     return '#/' + p;
@@ -769,7 +846,7 @@
     $('#hdr').innerHTML =
       '<div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-2 md:gap-4">' +
         '<a href="#/" class="flex items-center gap-2 font-bold text-blue-700 dark:text-blue-400 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg">' +
-          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span class="text-base">Loker Dunia</span></a>' +
+          '<span data-testid="app-logo" data-logo="seeker" class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center">' + icon('seeker', 'w-5 h-5') + '</span><span data-testid="app-name" class="font-display text-xl font-semibold tracking-tight text-slate-900 dark:text-white">Loker <span class="italic text-blue-600 dark:text-blue-400">Dunia</span></span></a>' +
         searchForm('hdr-q', 'hidden md:flex flex-1 max-w-md') +
         '<nav class="hidden lg:flex items-center gap-1" aria-label="' + esc(t('mainNav')) + '">' + items.slice(0, 4).map(([h, , k]) =>
           '<a href="' + h + '" class="px-3 py-2 rounded-lg text-sm font-medium ' + (act === h ? 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-950' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800') + '"' + (act === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>').join('') + '</nav>' +
@@ -778,6 +855,8 @@
             '<span class="text-lg" aria-hidden="true">' + flag(cc) + '</span><span class="hidden sm:inline max-w-28 truncate">' + esc(cc ? countryName(cc) : t('allCountries')) + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
           '<button type="button" data-action="pick-lang" data-testid="lang-switcher" data-lang="' + lang + '" class="inline-flex items-center gap-1 h-10 px-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" aria-label="' + esc(t('switchLang') + ': ' + LANG_META[lang].name) + '" aria-haspopup="dialog">' +
             icon('languages', 'w-4 h-4') + '<span>' + esc(LANG_META[lang].short) + '</span>' + icon('down', 'w-3.5 h-3.5') + '</button>' +
+          (p ? '<button type="button" data-action="open-notifications" data-testid="notif-bell" data-unread="' + notif.unread + '" class="' + C.btnIcon + ' relative" aria-haspopup="dialog" aria-label="' + esc(t('notifications') + (notif.unread ? ' (' + t('notifUnread', { n: notif.unread }) + ')' : '')) + '">' + icon('bell') +
+            (notif.unread ? '<span data-testid="notif-badge" class="absolute top-0.5 end-0.5 min-w-4 h-4 px-1 rounded-full bg-red-600 text-white text-[10px] font-semibold leading-4 text-center" aria-hidden="true">' + (notif.unread > 9 ? '9+' : notif.unread) + '</span>' : '') + '</button>' : '') +
           '<button type="button" data-action="toggle-theme" class="' + C.btnIcon + '" aria-label="' + esc(t(theme === 'dark' ? 'lightMode' : 'darkMode')) + '">' + icon(theme === 'dark' ? 'sun' : 'moon') + '</button>' +
           (u ? '<a href="#/profile" class="hidden md:inline-flex items-center gap-2 h-10 ps-1 pe-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium">' +
                 avatar(p && p.photo, (p && p.fullName) || (co && co.name) || HR_USER || '?', 'w-8 h-8 text-xs') + '<span class="max-w-32 truncate">' + esc((p && p.fullName) || (co && co.name) || t('navProfile')) + '</span></a>'
@@ -821,7 +900,8 @@
       '<div><p class="text-sm font-semibold">' + esc(salaryText(j)) + '</p>' + (conv ? '<p class="text-xs ' + C.muted + '">' + esc(conv) + '</p>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
         (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') +
-        (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + '</div>' +
+        (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') +
+        (j.education === 'any' ? '<span data-testid="no-cert-badge" class="' + C.chipBlue + '">' + t('edu_any') + '</span>' : '') + '</div>' +
       '<div class="flex flex-wrap gap-1.5" data-testid="job-skills">' + shown.map(s => '<span class="' + C.chip + ' border border-slate-200 dark:border-slate-700 bg-transparent dark:bg-transparent">' + esc(s.name) + '</span>').join('') +
         (all.length > shown.length ? '<span class="' + C.chip + ' bg-transparent dark:bg-transparent text-blue-700 dark:text-blue-300">' + t('nMore', { n: all.length - shown.length }) + '</span>' : '') + '</div>' +
       '<div class="flex items-center justify-between gap-2 mt-auto pt-1">' + (j.isSample ? '<span data-testid="sample-chip" class="' + C.chip + '">' + t('sampleListing') + '</span>' : '<span class="text-xs ' + C.muted + '">' + esc(relDays(j.postedAt)) + '</span>') + '' + (m ? matchChip(m.pct) : '') + '</div>' +
@@ -836,13 +916,22 @@
   function viewHome() {
     const r = role(); const p = myProfile(); const co = myCompany();
     const countries = new Set(db.jobs.map(j => j.country)).size;
-    const latest = db.jobs.slice().sort((a, b) => b.postedAt.localeCompare(a.postedAt)).slice(0, 6);
+    const latestAll = db.jobs.slice().sort((a, b) => b.postedAt.localeCompare(a.postedAt));
+    const world = (!db.jobs.length && worldJobs) ? worldJobs.jobs : [];
+    const showPreview = r !== 'company' && !(p && skillsOf(p.id).length);
+    const off = showPreview ? 3 : 0;
     let html = '<div class="space-y-8">';
-    const name = (p && p.fullName.split(' ')[0]) || (co && co.name) || HR_USER;
-    html += '<section><h1 class="' + C.h1 + '">' + esc(name ? t('hello', { name }) : t('homeTitle')) + '</h1>' +
-      '<p class="mt-1 ' + C.muted + '">' + t('homeStats', { jobs: db.jobs.length, countries }) + '</p>' +
+    const name = r === 'guest' ? '' : ((p && p.fullName.split(' ')[0]) || (co && co.name) || HR_USER);
+    const sub = db.jobs.length ? t('homeStats', { jobs: db.jobs.length, countries })
+      : r === 'company' ? t('jobsComing')
+      : p ? t('jobsComingSeeker') : t('jobsComingGuest');
+    const chip = 'shrink-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3.5 py-1.5 text-sm hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500';
+    html += '<section><h1 class="' + C.h1 + '">' + esc(name ? t('hello', { name }) : t('welcome')) + '</h1>' +
+      '<p class="mt-1 ' + C.muted + '">' + sub + '</p>' +
       '<div class="mt-4 -mx-4 px-4 flex gap-2 overflow-x-auto no-scrollbar" aria-label="' + esc(t('category')) + '">' +
-      CATEGORIES.map(c => '<button type="button" data-action="pick-category" data-cat="' + c + '" class="shrink-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3.5 py-1.5 text-sm hover:border-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">' + t('cat_' + c) + '</button>').join('') + '</div></section>';
+      '<button type="button" data-action="browse-remote" data-testid="chip-remote" class="' + chip + '">' + t('remoteOnly') + '</button>' +
+      '<button type="button" data-action="quick-country" data-testid="chip-country" class="' + chip + ' inline-flex items-center gap-1">' + t('country') + icon('down', 'w-3.5 h-3.5') + '</button>' +
+      CATEGORIES.map(c => '<button type="button" data-action="pick-category" data-cat="' + c + '" class="' + chip + '">' + t('cat_' + c) + '</button>').join('') + '</div></section>';
 
     if (r === 'company' && co) {
       const jobs = db.jobs.filter(j => j.companyId === co.id);
@@ -854,19 +943,32 @@
     } else {
       html += '<section>' + sectionHead(t('forYou'), p ? '#/jobs?match=1' : '', t('seeAll'));
       if (p && skillsOf(p.id).length) {
-        const recs = db.jobs.map(j => ({ j, m: matchJob(j, p.id) })).filter(x => x.m.pct > 0).sort((a, b) => b.m.pct - a.m.pct).slice(0, 4).map(x => x.j);
+        const recs = db.jobs.map(j => ({ j, m: matchJob(j, p.id) })).filter(x => x.m.pct > 0)
+          .sort((a, b) => b.m.pct - a.m.pct || (b.j.category === p.field) - (a.j.category === p.field)).slice(0, 4).map(x => x.j);
         html += recs.length ? '<div data-testid="for-you">' + jobGrid(recs, { showMatch: true }) + '</div>' : emptyState(t('noRecsTitle'), t('noRecsBody'), '<a href="#/register?step=3&edit=1" class="' + C.btnPrimary + '">' + t('addSkills') + '</a>');
       } else {
+        const preview = latestAll.length ? latestAll.slice(0, 3) : world.slice(0, 3);
+        if (preview.length) html += latestAll.length ? jobGrid(preview) :
+          '<ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-testid="home-preview">' + preview.map(worldJobCard).join('') + '</ul>';
         html += '<div class="' + C.section + ' flex flex-col sm:flex-row sm:items-center gap-3"><div class="flex-1"><p class="font-medium">' + t('forYouGuestTitle') + '</p><p class="text-sm ' + C.muted + '">' + t('forYouGuestBody') + '</p></div>' +
           '<a href="' + (r === 'seeker' ? '#/register' : '#/auth') + '" class="' + C.btnPrimary + '">' + t(r === 'seeker' ? 'completeProfile' : 'signUpSeeker') + '</a></div>';
       }
       html += '</section>';
     }
-    html += '<section>' + sectionHead(t('latestJobs'), latest.length ? '#/jobs' : '', t('seeAll')) + (latest.length ? jobGrid(latest, { showMatch: r === 'seeker', three: true })
-      : emptyState(t('noJobsYet'), t('noJobsYetBody'), r === 'company' ? '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>' : '')) + '</section>';
+    const latest = latestAll.slice(off, off + 6);
+    if (latestAll.length) {
+      if (latest.length) html += '<section>' + sectionHead(t('latestJobs'), '#/jobs', t('seeAll')) + jobGrid(latest, { showMatch: r === 'seeker', three: true }) + '</section>';
+    } else if (world.length) {
+      html += '<section>' + sectionHead(t('worldJobs'), '#/world', t('seeAll')) +
+        '<p class="text-sm ' + C.muted + ' mb-4" data-testid="home-world-source" data-live="' + (worldJobs.live ? '1' : '0') + '">' + esc(worldJobs.live ? t('worldJobsSource', { source: worldJobs.sources.join(', ') }) : t('worldJobsSample')) + '</p>' +
+        '<ul class="grid gap-3 sm:grid-cols-2" data-testid="home-world-jobs">' + world.slice(off, off + 6).map(worldJobCard).join('') + '</ul></section>';
+    } else {
+      html += '<section>' + sectionHead(t('latestJobs'), '', '') + emptyState(t('noJobsYet'), t('noJobsYetBody'), r === 'company' ? '<a href="#/post" class="' + C.btnPrimary + '">' + t('postJob') + '</a>' : '') + '</section>';
+    }
     html += '<section class="grid gap-3 sm:grid-cols-2">' +
       '<a href="#/skills" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('trending') + '</span><span class="flex-1"><span class="block font-medium">' + t('topSkills') + '</span><span class="block text-sm ' + C.muted + '">' + t('topSkillsSub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
-      '<a href="#/countries" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('byCountry') + '</span><span class="block text-sm ' + C.muted + '">' + t('byCountrySub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>';
+      '<a href="#/countries" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('byCountry') + '</span><span class="block text-sm ' + C.muted + '">' + t('byCountrySub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a>' +
+      '<a href="#/world" data-testid="world-jobs-link" class="' + C.section + ' flex items-center gap-3 hover:border-blue-400 sm:col-span-2"><span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 flex items-center justify-center">' + icon('globe') + '</span><span class="flex-1"><span class="block font-medium">' + t('worldJobs') + '</span><span class="block text-sm ' + C.muted + '">' + t('worldJobsSub') + '</span></span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>';
     return html + '</div>';
   }
 
@@ -891,12 +993,50 @@
         '<p class="mt-1 text-xs ' + C.muted + '">' + t('salaryHint') + '</p></fieldset>' +
       '<div><span class="' + C.label + '">' + t('skills') + '</span>' + skillInput('filter', t('filterSkillPh')) +
         '<div class="mt-2 flex flex-wrap gap-1.5">' + f.skills.map(s => '<button type="button" data-action="filter-skill-remove" data-skill="' + esc(s) + '" class="' + C.chipBlue + '" aria-label="' + esc(t('remove') + ' ' + s) + '">' + esc(s) + icon('x', 'w-3 h-3') + '</button>').join('') + '</div></div>' +
-      '<div class="' + C.divider + '">' + toggle('rw', t('remoteWorldwide'), t('remoteWorldwideHint')) + toggle('visa', t('visaSponsor'), '') + toggle('relo', t('relocation'), '') + '</div>' +
+      '<div class="' + C.divider + '">' + toggle('rw', t('remoteWorldwide'), t('remoteWorldwideHint')) + toggle('visa', t('visaSponsor'), '') + toggle('relo', t('relocation'), '') + toggle('noCert', t('edu_any'), t('noEduCertHint')) + '</div>' +
       '<div><label class="' + C.label + '" for="f-cur">' + t('showSalaryIn') + '</label><select id="f-cur" data-pref-cur class="' + C.input + '"><option value="local"' + (prefs.cur === 'local' ? ' selected' : '') + '>' + t('localCurrency') + '</option>' +
         Object.keys(RATES).map(c => '<option value="' + c + '"' + (prefs.cur === c ? ' selected' : '') + '>' + c + '</option>').join('') + '</select>' +
         '<button type="button" data-action="show-rates" class="mt-1 ' + C.btnGhost + ' -ms-2 text-xs">' + icon('info', 'w-3.5 h-3.5') + t('ratesLink', { date: fmtDate(RATES_DATE) }) + '</button></div>' +
       '<button type="button" data-action="reset-filters" class="' + C.btnSecondary + ' w-full">' + t('resetFilters') + '</button>' +
       '</form>';
+  }
+  // Country list on Find Jobs: counts follow every filter except country itself,
+  // so a number is what you get after picking that row.
+  const COUNTRY_LIST_TOP = 8;
+  function countryFacets() {
+    const counts = {};
+    filterJobs(Object.assign({}, filters, { country: '' })).forEach(j => { counts[j.country] = (counts[j.country] || 0) + 1; });
+    if (filters.country && !(filters.country in counts)) counts[filters.country] = 0;
+    const list = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || countryName(a).localeCompare(countryName(b), lang));
+    return { list, counts, total: list.reduce((n, c) => n + counts[c], 0) };
+  }
+  function countryList(mode) {
+    if (!db.jobs.length) return '';
+    const { list, counts, total } = countryFacets();
+    const sel = filters.country;
+    const on = cc => cc === sel;
+    if (mode === 'strip') {
+      const pill = (cc, flagStr, name, n) => '<button type="button" data-action="list-country" data-cc="' + cc + '" aria-pressed="' + on(cc) + '" class="shrink-0 rounded-full border px-3.5 py-1.5 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ' +
+        (on(cc) ? 'border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-semibold' : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:border-blue-400') + '"><span aria-hidden="true">' + flagStr + '</span> ' + esc(name) + ' <span class="' + (on(cc) ? '' : C.muted) + '">' + n + '</span></button>';
+      return '<div class="-mx-4 px-4 mb-3 flex gap-2 overflow-x-auto no-scrollbar" aria-label="' + esc(t('byCountry')) + '">' + pill('', '🌍', t('allCountries'), total) + list.map(c => pill(c, flag(c), countryName(c), counts[c])).join('') + '</div>';
+    }
+    let shown = ui.countryListOpen ? list : list.slice(0, COUNTRY_LIST_TOP);
+    if (sel && !shown.includes(sel)) shown = shown.concat(sel);
+    const row = (cc, flagStr, name, n) => '<button type="button" data-action="list-country" data-cc="' + cc + '" aria-pressed="' + on(cc) + '" class="w-full flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm text-start focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ' +
+      (on(cc) ? 'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-semibold' : 'hover:bg-slate-50 dark:hover:bg-slate-800') + '"><span aria-hidden="true">' + flagStr + '</span><span class="flex-1 min-w-0 truncate">' + esc(name) + '</span><span class="text-xs ' + (on(cc) ? '' : C.muted) + '">' + n + '</span></button>';
+    return '<div class="' + C.section + ' mb-4" data-testid="country-list"><h2 class="font-semibold mb-2">' + t('byCountry') + '</h2>' +
+      '<div class="space-y-0.5">' + row('', '🌍', t('allCountries'), total) + shown.map(c => row(c, flag(c), countryName(c), counts[c])).join('') + '</div>' +
+      (list.length > COUNTRY_LIST_TOP ? '<button type="button" data-action="toggle-country-list" aria-expanded="' + ui.countryListOpen + '" class="' + C.btnGhost + ' mt-1 -ms-2 text-xs">' + (ui.countryListOpen ? t('showFewer') : t('showAllCountries', { n: list.length })) + '</button>' : '') + '</div>';
+  }
+  function refreshCountryLists() {
+    const a = document.activeElement;
+    const keep = a && a.closest && a.closest('[data-country-list]') && a.dataset.action ? { act: a.dataset.action, cc: a.dataset.cc, mode: a.closest('[data-country-list]').dataset.countryList } : null;
+    $$('[data-country-list]').forEach(h => { h.innerHTML = countryList(h.dataset.countryList); });
+    if (keep) {
+      const host = $('[data-country-list="' + keep.mode + '"]');
+      const btn = host && Array.from(host.querySelectorAll('[data-action="' + keep.act + '"]')).find(b => b.dataset.cc === keep.cc);
+      if (btn) btn.focus({ preventScroll: true });
+    }
   }
   function viewJobs() {
     const q = route().query;
@@ -912,8 +1052,8 @@
       '</div>' +
       (ui.matchMode && !(p && skillsOf(p.id).length) ? '<div class="mb-4 rounded-xl border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950 p-3 text-sm flex flex-col sm:flex-row sm:items-center gap-2"><span class="flex-1">' + t('matchNeedsProfile') + '</span><a class="' + C.btnPrimary + '" href="' + (role() === 'seeker' ? '#/register' : '#/auth') + '">' + t(role() === 'seeker' ? 'completeProfile' : 'signUpSeeker') + '</a></div>' : '') +
       (ui.matchMode && p ? '<p class="mb-4 text-xs ' + C.muted + '">' + t('matchExplain') + '</p>' : '') +
-      '<div class="lg:grid lg:grid-cols-4 lg:gap-6"><aside class="hidden lg:block lg:col-span-1"><div class="' + C.section + ' sticky top-20" data-filter-host>' + filterForm() + '</div></aside>' +
-      '<div class="lg:col-span-3"><div data-active-chips class="flex flex-wrap gap-1.5 mb-3"></div><div id="results"></div></div></div></div>';
+      '<div class="lg:grid lg:grid-cols-4 lg:gap-6"><aside class="hidden lg:block lg:col-span-1"><div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto p-1 -m-1"><div data-country-list="column">' + countryList('column') + '</div><div class="' + C.section + '" data-filter-host>' + filterForm() + '</div></div></aside>' +
+      '<div class="lg:col-span-3"><div data-country-list="strip" class="lg:hidden">' + countryList('strip') + '</div><div data-active-chips class="flex flex-wrap gap-1.5 mb-3"></div><div id="results"></div></div></div></div>';
   }
   function activeChips() {
     const f = filters, out = [];
@@ -929,12 +1069,14 @@
     if (f.rw) out.push(['rw', '', t('remoteWorldwide')]);
     if (f.visa) out.push(['visa', '', t('visaSponsor')]);
     if (f.relo) out.push(['relo', '', t('relocation')]);
+    if (f.noCert) out.push(['noCert', '', t('edu_any')]);
     return out.map(([k, v, l]) => '<button type="button" data-action="clear-filter" data-key="' + k + '" data-val="' + esc(v) + '" class="' + C.chipBlue + '" aria-label="' + esc(t('remove') + ' ' + l) + '">' + esc(l) + icon('x', 'w-3 h-3') + '</button>').join('');
   }
   let searchSeq = 0;
   async function refreshResults() {
     const box = $('#results'); if (!box) return;
     const chips = $('[data-active-chips]'); if (chips) chips.innerHTML = activeChips();
+    refreshCountryLists();
     const seq = ++searchSeq;
     box.innerHTML = skeletonCards(4);
     const list = await api.searchJobs(filters);
@@ -1003,7 +1145,7 @@
       '<header class="flex items-start gap-3">' + companyLogo(co.name) + '<div class="min-w-0"><h1 class="' + C.h1 + '" dir="auto">' + esc(j.title) + '</h1>' +
         '<p class="' + C.muted + '" dir="auto">' + esc(co.name) + '</p><p class="mt-1 text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span>' + esc(j.city) + ', ' + esc(countryName(j.country)) + (j.isSample ? '' : ' · ' + esc(relDays(j.postedAt))) + '</p>' + (j.isSample ? '<p class="mt-2"><span data-testid="sample-chip" class="' + C.chip + '">' + t('sampleListing') + '</span></p>' : '') +
         '<div class="mt-2 flex flex-wrap gap-1.5"><span class="' + C.chip + '">' + t('cat_' + j.category) + '</span><span class="' + C.chip + '">' + t('type_' + j.type) + '</span><span class="' + C.chip + '">' + t('model_' + j.model) + '</span>' +
-        (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') + (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + (j.relocation ? '<span class="' + C.chipBlue + '">' + t('relocation') + '</span>' : '') + '</div></div></header>' +
+        (j.remoteWorldwide ? '<span class="' + C.chipBlue + '">' + t('remoteWorldwide') + '</span>' : '') + (j.visaSponsor ? '<span class="' + C.chipBlue + '">' + t('visaSponsor') + '</span>' : '') + (j.relocation ? '<span class="' + C.chipBlue + '">' + t('relocation') + '</span>' : '') + (j.education === 'any' ? '<span data-testid="no-cert-badge" class="' + C.chipBlue + '">' + t('edu_any') + '</span>' : '') + '</div></div></header>' +
       '<div class="lg:hidden">' + aside + '</div>' +
       '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('description') + '</h2><p class="text-sm leading-relaxed" dir="auto">' + esc(j.description) + '</p></section>' +
       (j.qualifications.length ? '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('qualifications') + '</h2>' + list(j.qualifications) + '</section>' : '') +
@@ -1029,7 +1171,7 @@
 
   function insightsTabs(active) {
     const tab = (h, k) => '<a href="' + h + '" class="flex-1 text-center rounded-lg px-3 py-2 text-sm font-medium ' + (active === h ? 'bg-white dark:bg-slate-900 shadow-sm text-blue-700 dark:text-blue-300' : 'text-slate-600 dark:text-slate-300') + '"' + (active === h ? ' aria-current="page"' : '') + '>' + t(k) + '</a>';
-    return '<div class="flex gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-800 mb-4 max-w-md">' + tab('#/countries', 'byCountry') + tab('#/skills', 'topSkills') + '</div>';
+    return '<div class="flex gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-800 mb-4 max-w-lg">' + tab('#/countries', 'byCountry') + tab('#/skills', 'topSkills') + tab('#/world', 'worldJobs') + '</div>';
   }
   const insight = { country: '', category: '' };
   function viewSkills() {
@@ -1055,6 +1197,23 @@
         '<span class="mt-1.5 block h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden"><span class="block h-full rounded-full bg-blue-600" style="width:' + Math.round(a.n / top * 100) + '%"></span></span></span>' +
         '<span class="text-end shrink-0"><span class="block text-sm font-semibold">' + t('nJobs', { n: a.n }) + '</span><span class="block text-xs ' + C.muted + '">' + t('pctRequired', { n: Math.round(a.req / a.n * 100) }) + '</span></span></button></li>').join('') + '</ol>'
         : emptyState(t('noJobs'), t('noJobsBody')));
+  }
+  // Worldwide openings come from the server (public feeds, or built-in
+  // samples when they are down); the screen loads them each time it opens.
+  let worldJobs = null;
+  function worldJobCard(j) {
+    return '<li data-testid="world-job" class="' + C.card + ' p-4 flex flex-col gap-2"><div class="flex gap-3">' + companyLogo(j.company) +
+      '<div class="min-w-0 flex-1"><h2 class="font-semibold leading-snug">' + esc(j.title) + '</h2><p class="text-sm ' + C.muted + ' truncate">' + esc(j.company) + '</p></div></div>' +
+      '<p class="text-sm flex items-center gap-1.5"><span aria-hidden="true">' + flag(j.country) + '</span><span class="min-w-0">' + esc(j.location) + '</span></p>' +
+      '<div class="mt-auto pt-1"><a href="' + esc(j.url) + '" target="_blank" rel="noopener noreferrer" class="' + C.btnSecondary + '">' + t('viewListing') + '</a></div></li>';
+  }
+  function viewWorld() {
+    const w = worldJobs;
+    const head = '<h1 class="' + C.h1 + ' mb-3">' + t('worldJobs') + '</h1>' + insightsTabs('#/world');
+    if (!w) return head + emptyState(t('loadFailed'), t('loadFailedBody'), '<button type="button" data-action="retry-world" class="' + C.btnPrimary + '">' + t('retry') + '</button>');
+    return head + '<p class="text-sm ' + C.muted + ' mb-1">' + t('worldJobsCount', { n: w.jobs.length }) + '</p>' +
+      '<p class="text-sm ' + C.muted + ' mb-4" data-testid="world-jobs-source" data-live="' + (w.live ? '1' : '0') + '">' + esc(w.live ? t('worldJobsSource', { source: w.sources.join(', ') }) : t('worldJobsSample')) + '</p>' +
+      '<ul class="grid gap-3 sm:grid-cols-2" data-testid="world-jobs">' + w.jobs.map(worldJobCard).join('') + '</ul>';
   }
   let countryQuery = '';
   function viewCountries() {
@@ -1128,14 +1287,14 @@
   let draft = null;
   function blankDraft() {
     return { step: 1, mode: 'create', profileId: null,
-      bio: { photo: '', fullName: '', birthDate: '', gender: '', country: '', city: '', nationality: '', email: '', phoneCode: '', phone: '', summary: '' },
+      bio: { photo: '', fullName: '', birthDate: '', gender: '', field: '', country: '', city: '', nationality: '', email: '', phoneCode: '', phone: '', summary: '' },
       education: [], experience: [], skills: [], languages: [], certificates: [],
       certForm: blankCert(), errors: {} };
   }
   function blankCert() { return { name: '', issuer: '', issueDate: '', expiryDate: '', verify: '', skills: [], file: null }; }
   function draftFromProfile(p) {
     return { step: 1, mode: 'edit', profileId: p.id,
-      bio: { photo: p.photo || '', fullName: p.fullName, birthDate: p.birthDate, gender: p.gender, country: p.country, city: p.city, nationality: p.nationality, email: p.email, phoneCode: p.phoneCode, phone: p.phone, summary: p.summary },
+      bio: { photo: p.photo || '', fullName: p.fullName, birthDate: p.birthDate, gender: p.gender, field: p.field || '', country: p.country, city: p.city, nationality: p.nationality, email: p.email, phoneCode: p.phoneCode, phone: p.phone, summary: p.summary },
       education: JSON.parse(JSON.stringify(p.education || [])), experience: JSON.parse(JSON.stringify(p.experience || [])),
       skills: skillsOf(p.id).map(s => ({ ...s })), languages: JSON.parse(JSON.stringify(p.languages || [])),
       certificates: certsOf(p.id).map(c => JSON.parse(JSON.stringify(c))), certForm: blankCert(), errors: {} };
@@ -1175,6 +1334,7 @@
       field('bio.fullName', t('fullName'), { attrs: ' autocomplete="name"' }) +
       '<div class="grid gap-4 sm:grid-cols-2">' + field('bio.birthDate', t('birthDate'), { type: 'date', attrs: ' max="' + today() + '"' }) +
         field('bio.gender', t('gender'), { type: 'select', blank: t('choose'), options: [['male', t('gender_male')], ['female', t('gender_female')], ['other', t('gender_other')], ['na', t('gender_na')]] }) + '</div>' +
+            field('bio.field', t('jobField'), { type: 'select', blank: t('choose'), optional: true, options: CATEGORIES.map(c => [c, t('cat_' + c)]) }) +
       '<div class="grid gap-4 sm:grid-cols-2">' + countryField('bio.country', t('countryOfResidence')) + field('bio.city', t('cityOfResidence')) + '</div>' +
       countryField('bio.nationality', t('nationality')) +
       field('bio.email', t('email'), { type: 'email', attrs: ' autocomplete="email" inputmode="email"' }) +
@@ -1434,7 +1594,7 @@
       '<section class="' + C.section + '"><h2 class="font-semibold mb-1">' + t('privacy') + '</h2><p class="text-xs ' + C.muted + ' mb-2">' + t('privacyHint') + '</p><div class="' + C.divider + '">' +
         '<label class="flex items-center justify-between gap-3 py-2.5"><span class="text-sm">' + t('showPhoneToCompanies') + '</span><input type="checkbox" class="un-switch" data-privacy="showPhone"' + (p.privacy.showPhone ? ' checked' : '') + '></label>' +
         '<label class="flex items-center justify-between gap-3 py-2.5"><span class="text-sm">' + t('showCertsToCompanies') + '</span><input type="checkbox" class="un-switch" data-privacy="showCerts"' + (p.privacy.showCerts ? ' checked' : '') + '></label></div></section>' +
-      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('myApplications') + '</h2>' + (apps.length ? '<ul class="' + C.divider + '">' + apps.map(a => { const j = getJob(a.jobId); return j ? '<li class="py-2.5 flex items-center justify-between gap-2"><a href="#/job/' + j.id + '" class="min-w-0"><span class="block text-sm font-medium truncate hover:underline">' + esc(j.title) + '</span><span class="block text-xs ' + C.muted + '">' + esc(companyOf(j).name) + ' · ' + esc(fmtDate(a.createdAt)) + '</span></a><span class="' + STATUS_CHIP[a.status] + '">' + t('status_' + a.status) + '</span></li>' : ''; }).join('') + '</ul>' : '<p class="text-sm ' + C.muted + '">' + t('noApplications') + '</p>') + '</section>' +
+      '<section class="' + C.section + '"><h2 class="font-semibold mb-2">' + t('myApplications') + '</h2>' + (apps.length ? '<ul class="' + C.divider + '">' + apps.map(a => { const j = getJob(a.jobId); return j ? '<li class="py-2.5 flex items-center justify-between gap-2"><a href="#/job/' + j.id + '" class="min-w-0"><span class="block text-sm font-medium truncate hover:underline">' + esc(j.title) + '</span><span class="block text-xs ' + C.muted + '">' + esc(companyOf(j).name) + ' · ' + esc(fmtDate(a.createdAt)) + '</span></a><span class="flex flex-col items-end gap-1 shrink-0"><span class="' + STATUS_CHIP[a.status] + '">' + t('status_' + a.status) + '</span><select data-track-app="' + a.id + '" aria-label="' + esc(t('myProgress')) + '" class="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-2 py-1 text-xs">' + TRACK_STATUSES.map(x => '<option value="' + x + '"' + ((a.trackStatus || 'applied') === x ? ' selected' : '') + '>' + t('track' + x[0].toUpperCase() + x.slice(1)) + '</option>').join('') + '</select></span></li>' : ''; }).join('') + '</ul>' : '<p class="text-sm ' + C.muted + '">' + t('noApplications') + '</p>') + '</section>' +
       signOutBlock();
     return '<div class="lg:grid lg:grid-cols-3 lg:gap-6"><div class="lg:col-span-2 space-y-4" data-testid="cv">' + renderCV(p, 'self') + '</div><div class="mt-4 lg:mt-0 space-y-4">' + aside + '</div></div>';
   }
@@ -1486,7 +1646,7 @@
     if (!co) return needCompany();
     const jobs = db.jobs.filter(j => j.companyId === co.id);
     return '<div class="max-w-lg mx-auto space-y-4"><section class="' + C.section + ' flex items-center gap-4">' + companyLogo(co.name) +
-      '<div><h1 class="text-xl font-bold">' + esc(co.name) + '</h1><p class="text-sm ' + C.muted + '">' + flag(co.country) + ' ' + esc(co.city) + ', ' + esc(countryName(co.country)) + ' · ' + t('cat_' + co.industry) + '</p></div></section>' +
+      '<div><h1 class="font-display text-xl font-semibold">' + esc(co.name) + '</h1><p class="text-sm ' + C.muted + '">' + flag(co.country) + ' ' + esc(co.city) + ', ' + esc(countryName(co.country)) + ' · ' + t('cat_' + co.industry) + '</p></div></section>' +
       '<section class="' + C.section + ' ' + C.divider + '">' +
         '<a href="#/dashboard" class="flex items-center justify-between py-3 text-sm font-medium"><span>' + t('navDashboard') + '</span><span class="' + C.muted + '">' + t('nJobs', { n: jobs.length }) + '</span></a>' +
         '<a href="#/post" class="flex items-center justify-between py-3 text-sm font-medium"><span>' + t('postJob') + '</span>' + icon('chevron', 'w-4 h-4 text-slate-400') + '</a></section>' +
@@ -1681,6 +1841,11 @@
     } else if (changed && a === 'profile' && role() === 'seeker') {
       try { await api.bootstrap(); } catch (e) {}
       if (seq !== renderSeq) return;
+    } else if (changed && !a && !db.jobs.length && !worldJobs) {
+      // The empty home shows worldwide openings, so fetch them once for this path.
+      view.innerHTML = spinner();
+      try { worldJobs = await request('GET', '/world-jobs'); } catch (e) { worldJobs = null; }
+      if (seq !== renderSeq) return;
     }
     if (a === 'job') {
       view.innerHTML = viewJobSkeleton();
@@ -1692,6 +1857,14 @@
     else if (a === 'saved') html = viewSaved();
     else if (a === 'skills') html = viewSkills();
     else if (a === 'countries') html = viewCountries();
+    else if (a === 'world') {
+      if (changed || !worldJobs) {
+        view.innerHTML = spinner();
+        try { worldJobs = await request('GET', '/world-jobs'); } catch (e) { worldJobs = null; }
+        if (seq !== renderSeq) return;
+      }
+      html = viewWorld();
+    }
     else if (a === 'auth') html = r.query.get('company') === '1' ? viewCompanySignup() : viewAuth();
     else if (a === 'register') html = viewRegister();
     else if (a === 'profile') html = viewProfile();
@@ -1800,6 +1973,12 @@
       case 'quick-country':
         openCountryPicker(cc => { filters.country = cc; filters.city = ''; go('#/jobs'); }, { allowAll: true, showCounts: true, title: t('quickCountry') }); break;
       case 'pick-lang': openLanguagePicker(); break;
+      case 'open-notifications':
+        try { await api.loadNotifications(); renderChrome(); } catch (err) {}
+        openNotifications(); break;
+      case 'notif-read-all':
+        try { await api.markNotificationsRead(); } catch (err) { toast(t('saveFailed')); break; }
+        closeModal(); renderChrome(); openNotifications(); break;
       case 'toggle-theme': {
         const dark = document.documentElement.classList.contains('dark');
         try { localStorage.setItem('lokerdunia.theme', dark ? 'light' : 'dark'); } catch (err) {}
@@ -1817,8 +1996,16 @@
       case 'pick-category': filters = emptyFilters(); filters.category = el.dataset.cat; go('#/jobs'); break;
       case 'search-skill': filters = emptyFilters(); filters.skills = [el.dataset.skill]; go('#/jobs'); break;
       case 'browse-country': filters = emptyFilters(); filters.country = el.dataset.cc; go('#/jobs'); break;
+      case 'retry-world': worldJobs = null; render(); break;
       case 'browse-rw': filters = emptyFilters(); filters.rw = true; go('#/jobs'); break;
+      case 'browse-remote': filters = emptyFilters(); filters.models = ['remote']; go('#/jobs'); break;
       case 'open-filters': openFiltersModal(); break;
+      case 'list-country': {
+        const cc = filters.country === el.dataset.cc ? '' : el.dataset.cc;
+        if (cc !== filters.country) { filters.country = cc; filters.city = ''; }
+        refreshFilterHosts(); refreshResults(); break;
+      }
+      case 'toggle-country-list': ui.countryListOpen = !ui.countryListOpen; refreshCountryLists(); break;
       case 'toggle-match':
         ui.matchMode = !ui.matchMode;
         if (!ui.matchMode && route().query.get('match') === '1') go('#/jobs'); else render();
@@ -1943,6 +2130,11 @@
 
   document.addEventListener('change', async e => {
     const el = e.target;
+    if (el.matches('select[data-track-app]')) {
+      try { await api.setTracking(el.dataset.trackApp, el.value); toast(t('statusUpdated', { s: t('track' + el.value[0].toUpperCase() + el.value.slice(1)) })); }
+      catch (err) { toast(t('saveFailed')); render(); }
+      return;
+    }
     if (el.matches('select[data-filter]')) { filters[el.dataset.filter] = el.value; refreshResults(); return; }
     if (el.matches('[data-filter-multi]')) {
       const k = el.dataset.filterMulti;
@@ -2096,10 +2288,20 @@
     try { await loadLang(lang); }
     catch (e) { console.warn(e.message); lang = DEFAULT_LANG; }
     loadState = 'loading'; render();
+    loadRates().then(ok => { if (ok && loadState === 'ready') { lastPath = null; render(); } });
     try { await api.bootstrap(); loadState = 'ready'; }
     catch (e) { console.warn('bootstrap failed: ' + e.message); loadState = 'error'; }
     lastPath = null; render();
+    api.loadNotifications().then(renderChrome).catch(() => {});
   }
+  // New matches arrive while the app is open: check every minute and when the tab is shown again.
+  function refreshNotifications() {
+    if (document.hidden || loadState !== 'ready') return;
+    const before = notif.unread;
+    api.loadNotifications().then(() => { if (notif.unread !== before) renderChrome(); }).catch(() => {});
+  }
+  setInterval(refreshNotifications, 60000);
+  document.addEventListener('visibilitychange', refreshNotifications);
   (function start() {
     // Shared profile links arrive as /p/<id>; the app itself routes by hash.
     const m = location.pathname.match(/^\/p\/([A-Za-z0-9_-]+)\/?$/);

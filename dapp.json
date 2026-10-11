@@ -12,6 +12,12 @@
       "expectSelector": "#hdr [data-testid=app-logo][data-logo=seeker] svg"
     },
     {
+      "name": "Header shows the Loker Dunia wordmark in the display font",
+      "path": "/",
+      "expectSelector": "#hdr [data-testid=app-name].font-display",
+      "expectText": "Loker Dunia"
+    },
+    {
       "name": "Header shows the language switcher, English by default",
       "path": "/",
       "expectSelector": "#hdr [data-testid=lang-switcher][data-lang=en]"
@@ -35,7 +41,8 @@
       "visual": true,
       "impact": [
         "public/index.html",
-        "public/i18n/**"
+        "public/i18n/**",
+        "tailwind.config.js"
       ]
     },
     {
@@ -88,6 +95,34 @@
       "path": "/#/job/j17",
       "expectSelector": "[data-testid=job-skill-lists]",
       "expectText": "Maple Leaf Commerce"
+    },
+    {
+      "name": "Job search shows the no education certificate badge",
+      "path": "/#/jobs",
+      "expectSelector": "#results [data-testid=job-card] [data-testid=no-cert-badge]",
+      "expectText": "No education certificate needed"
+    },
+    {
+      "name": "Job filters offer the no education certificate switch",
+      "path": "/#/jobs",
+      "expectSelector": "[data-filter-host] [data-filter-bool=noCert]"
+    },
+    {
+      "name": "Job page shows the no education certificate badge",
+      "path": "/#/job/j20",
+      "expectSelector": "header [data-testid=no-cert-badge]",
+      "expectText": "Barista"
+    },
+    {
+      "name": "Worldwide openings lists jobs with a link",
+      "path": "/#/world",
+      "expectSelector": "[data-testid=world-jobs] [data-testid=world-job] a[href^=http]",
+      "expectText": "Worldwide openings"
+    },
+    {
+      "name": "Home links to worldwide openings",
+      "path": "/",
+      "expectSelector": "[data-testid=world-jobs-link]"
     }
   ],
   "visibility": {

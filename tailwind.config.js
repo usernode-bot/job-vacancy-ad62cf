@@ -7,6 +7,8 @@
 // To build it locally (optional; the image build does this for you):
 //   npm ci --include=dev
 //   npm run build
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   // Every file that can contain a class name. Tailwind's extractor is a
   // regex over source text, so it finds class names written as whole
@@ -28,6 +30,16 @@ module.exports = {
   // the usernode-native UI kit and harmless without it.
   future: { hoverOnlyWhenSupported: true },
 
-  theme: { extend: {} },
+  // Plus Jakarta Sans for all text (preflight applies `sans` to <html>);
+  // Playfair Display (`font-display`) for the app name and page titles.
+  // Both are self-hosted; see the /fonts/* mounts in server.js.
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans Variable"', ...defaultTheme.fontFamily.sans],
+        display: ['"Playfair Display Variable"', 'Georgia', 'ui-serif', '"Times New Roman"', 'serif'],
+      },
+    },
+  },
   plugins: [],
 };

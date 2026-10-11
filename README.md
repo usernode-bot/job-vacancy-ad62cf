@@ -17,6 +17,9 @@ add an entry to that list. A missing key falls back to English.
 - **Everyone** can search and filter jobs from every continent,
   convert salaries with static exchange rates, bookmark jobs, and browse the
   most wanted skills and jobs per country.
+- **No education certificate needed**: a job whose Education is set to that
+  first choice (stored as `education = 'any'`) shows a badge on its card and
+  page, and the "No education certificate needed" filter lists only those jobs.
 
 ## How it is built
 

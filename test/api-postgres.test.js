@@ -82,6 +82,14 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     assert.equal((await call(null, 'GET', '/bootstrap')).status, 401);
   });
 
+  await t.test('worldwide openings need sign-in and never come back empty', async () => {
+    assert.equal((await call(null, 'GET', '/world-jobs')).status, 401);
+    const { status, data } = await call(stranger, 'GET', '/world-jobs');
+    assert.equal(status, 200);
+    assert.ok(data.jobs.length > 0);
+    for (const j of data.jobs) assert.ok(j.title && j.company && j.location && /^https?:\/\//.test(j.url));
+  });
+
   await t.test('staging seed provides the sample board and demo employer', async () => {
     const { status, data } = await call(stranger, 'GET', '/bootstrap');
     assert.equal(status, 200);
@@ -107,7 +115,7 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     const { rows } = await pool.query(`SELECT c.relname FROM pg_class c JOIN pg_description d ON d.objoid = c.oid AND d.objsubid = 0
       WHERE d.description = 'staging:private' ORDER BY 1`);
     await pool.end();
-    assert.deepEqual(rows.map(r => r.relname), ['applications', 'certificates', 'profiles', 'saved_jobs', 'skills']);
+    assert.deepEqual(rows.map(r => r.relname), ['applications', 'certificates', 'notifications', 'profiles', 'saved_jobs', 'skills']);
   });
 
   let companyId, jobId, certId;
@@ -122,6 +130,20 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     jobId = j.data.job.id;
     assert.equal((await call(stranger, 'POST', '/jobs', { ...j.data.job, companyId })).status, 403, 'only the owner posts for a company');
     assert.equal((await call(stranger, 'POST', '/companies', { name: 'test employer ltd', country: 'ID', city: 'Jakarta' })).status, 409);
+  });
+
+  await t.test('a job can be marked as needing no education certificate', async () => {
+    const body = { companyId, title: 'Warehouse Helper', category: 'logistics', country: 'ID', city: 'Bekasi', currency: 'IDR',
+      salaryMin: 4e6, salaryMax: 5e6, period: 'month', type: 'fulltime', model: 'onsite', required: [{ name: 'Forklift', level: 1 }], nice: [],
+      languages: [{ code: 'id', level: 'fluent' }], description: 'Bantu operasional gudang.', qualifications: [], benefits: [] };
+    const none = await call(employer, 'POST', '/jobs', { ...body, education: 'any' });
+    assert.equal(none.status, 201);
+    assert.equal(none.data.job.education, 'any');
+    const s1 = await call(employer, 'POST', '/jobs', { ...body, education: 's1' });
+    assert.equal(s1.data.job.education, 's1');
+    const { data } = await call(stranger, 'GET', '/bootstrap');
+    assert.equal(data.jobs.find(j => j.id === none.data.job.id).education, 'any');
+    assert.ok(data.jobs.filter(j => j.isDemo && j.education === 'any').length >= 4, 'staging seed has no-certificate jobs to filter');
   });
 
   await t.test('a seeker saves a profile and applies with a certificate', async () => {
@@ -139,6 +161,54 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     // Re-saving keeps the certificate id the application points at.
     const again = await call(seeker, 'PUT', '/profile', profileBody({ certificates: [{ ...profileBody().certificates[0], id: certId }] }));
     assert.equal(again.data.profile.certificates[0].id, certId);
+  });
+
+  await t.test('a profile saves an optional field of work, or nothing for an unknown one', async () => {
+    const withField = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, field: 'it' } }));
+    assert.equal(withField.status, 200);
+    assert.equal(withField.data.profile.field, 'it');
+    const badField = await call(seeker, 'PUT', '/profile', profileBody({ bio: { ...profileBody().bio, field: 'nope' } }));
+    assert.equal(badField.status, 200);
+    assert.equal(badField.data.profile.field, '');
+    const noField = await call(seeker, 'PUT', '/profile', profileBody());
+    assert.equal(noField.status, 200);
+    assert.equal(noField.data.profile.field, '', 'old clients that do not send it keep working');
+  });
+
+  await t.test('posting a job notifies seekers whose skills match, and only them', async () => {
+    const post = (title, required, nice) => call(employer, 'POST', '/jobs', { companyId, title, category: 'it', country: 'ID', city: 'Jakarta', currency: 'IDR',
+      salaryMin: 1, salaryMax: 2, period: 'month', type: 'fulltime', model: 'remote', required, nice: nice || [], description: 'Tes.' });
+    const good = await post('Notif React Lead', [{ name: 'react', level: 3 }]);
+    const lowOverlap = await post('Notif Rust Dev', [{ name: 'Rust', level: 3 }, { name: 'Go', level: 3 }], [{ name: 'React', level: 1 }]);
+    const nobody = await post('Notif Cobol Dev', [{ name: 'COBOL', level: 3 }]);
+    assert.equal(good.status, 201); assert.equal(lowOverlap.status, 201); assert.equal(nobody.status, 201);
+
+    const mine = await call(seeker, 'GET', '/notifications');
+    assert.equal(mine.status, 200);
+    assert.deepEqual(mine.data.notifications.map(n => n.title), ['Notif React Lead'], 'only the matching job notifies');
+    assert.equal(mine.data.notifications[0].matchPct, 100);
+    assert.equal(mine.data.notifications[0].company, 'Test Employer Ltd');
+    assert.equal(mine.data.unread, 1);
+
+    assert.equal((await call(employer, 'GET', '/notifications')).data.notifications.length, 0, 'the poster is not notified');
+    assert.equal((await call(stranger, 'GET', '/notifications')).data.notifications.length, 0, 'notifications are private to their owner');
+
+    const id = mine.data.notifications[0].id;
+    assert.equal((await call(stranger, 'POST', '/notifications/read', { ids: [id] })).data.unread, 0);
+    assert.equal((await call(seeker, 'GET', '/notifications')).data.unread, 1, 'someone else cannot mark it read');
+    const read = await call(seeker, 'POST', '/notifications/read', { ids: [id] });
+    assert.equal(read.data.unread, 0);
+    assert.equal((await call(seeker, 'GET', '/notifications')).data.notifications[0].read, true);
+
+    await post('Notif React Two', [{ name: 'React', level: 2 }]);
+    assert.equal((await call(seeker, 'GET', '/notifications')).data.unread, 1);
+    assert.equal((await call(seeker, 'POST', '/notifications/read', { all: true })).data.unread, 0);
+
+    const pool = new Pool({ connectionString: dbUrl });
+    await pool.query('DELETE FROM jobs WHERE id = $1', [good.data.job.id]);
+    const left = await pool.query('SELECT COUNT(*)::int AS n FROM notifications WHERE job_id = $1', [good.data.job.id]);
+    await pool.end();
+    assert.equal(left.rows[0].n, 0, 'deleting a job removes its notifications');
   });
 
   await t.test('the employer sees the application from another account, with privacy enforced', async () => {
@@ -235,5 +305,15 @@ test('Loker Dunia API on Postgres', { skip: !BASE_URL && 'no TEST_DATABASE_URL o
     assert.deepEqual((await call(stranger, 'GET', '/bootstrap')).data.savedJobIds, []);
     await call(seeker, 'DELETE', `/saved/${jobId}`);
     assert.deepEqual((await call(seeker, 'GET', '/bootstrap')).data.savedJobIds, []);
+  });
+
+  await t.test('applicants track their own progress, privately', async () => {
+    const list = (await call(seeker, 'GET', '/bootstrap')).data.applications;
+    const appId = list[0].id;
+    assert.equal(list[0].trackStatus, 'applied');
+    assert.equal((await call(seeker, 'PATCH', `/applications/${appId}/tracking`, { trackStatus: 'bogus' })).status, 400);
+    assert.equal((await call(stranger, 'PATCH', `/applications/${appId}/tracking`, { trackStatus: 'offer' })).status, 404);
+    assert.equal((await call(seeker, 'PATCH', `/applications/${appId}/tracking`, { trackStatus: 'interviewing' })).status, 200);
+    assert.equal((await call(seeker, 'GET', '/bootstrap')).data.applications[0].trackStatus, 'interviewing');
   });
 });

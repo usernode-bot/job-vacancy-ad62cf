@@ -1,0 +1,11 @@
+{
+  "name": "Loker Dunia",
+  "short_name": "Loker Dunia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1E5EFF",
+  "icons": [
+    { "src": "/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

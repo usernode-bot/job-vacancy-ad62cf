@@ -7,9 +7,9 @@
   ],
   "tests": [
     {
-      "name": "Header logo shows a person searching for a job",
+      "name": "Header logo shows the globe and briefcase",
       "path": "/",
-      "expectSelector": "#hdr [data-testid=app-logo][data-logo=seeker] svg"
+      "expectSelector": "#hdr [data-testid=app-logo][data-logo=globe-briefcase] svg"
     },
     {
       "name": "Header shows the Loker Dunia wordmark in the display font",

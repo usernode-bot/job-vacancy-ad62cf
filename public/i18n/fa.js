@@ -84,6 +84,8 @@
     per_month: '/ماه', per_year: '/سال', per_hour: '/ساعت',
     cat_it: 'فناوری اطلاعات', cat_health: 'بهداشت و درمان', cat_education: 'آموزش', cat_finance: 'مالی', cat_engineering: 'مهندسی', cat_creative: 'خلاقیت و هنر', cat_marketing: 'بازاریابی', cat_sales: 'فروش و خدمات', cat_hospitality: 'هتلداری و پذیرایی', cat_logistics: 'لجستیک', cat_agriculture: 'کشاورزی',
     pageNotFound: 'صفحه یافت نشد', pageNotFoundBody: 'این پیوند وجود ندارد.',
+    sampleListing: 'آگهی نمونه', sampleApplyOff: 'ارسال درخواست غیرفعال است',
+    sampleApplyNote: 'این یک آگهی نمونه است که نشان می‌دهد شغل‌ها در Loker Dunia چگونه دیده می‌شوند. ارسال درخواست غیرفعال است.',
     showAllCountries: 'نمایش همه {n} کشور', showFewer: 'نمایش کمتر',
     notifications: 'اعلان‌ها', markAllRead: 'علامت‌گذاری همه به‌عنوان خوانده‌شده', noNotifications: 'هنوز اعلانی نیست', noNotificationsBody: 'شغل‌هایی که با مهارت‌های شما مطابقت دارند اینجا نمایش داده می‌شوند.', notifUnread: '{n} خوانده‌نشده',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

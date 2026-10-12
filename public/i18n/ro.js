@@ -84,6 +84,8 @@
     per_month: '/lună', per_year: '/an', per_hour: '/oră',
     cat_it: 'IT', cat_health: 'Sănătate', cat_education: 'Educație', cat_finance: 'Finanțe', cat_engineering: 'Inginerie', cat_creative: 'Creativ', cat_marketing: 'Marketing', cat_sales: 'Vânzări și servicii', cat_hospitality: 'Ospitalitate', cat_logistics: 'Logistică', cat_agriculture: 'Agricultură',
     pageNotFound: 'Pagina nu a fost găsită', pageNotFoundBody: 'Acest link nu există.',
+    sampleListing: 'Anunț de exemplu', sampleApplyOff: 'Aplicările sunt dezactivate',
+    sampleApplyNote: 'Acesta este un anunț de exemplu care arată cum arată joburile în Loker Dunia. Aplicările sunt dezactivate.',
     showAllCountries: 'Afișează toate cele {n} țări', showFewer: 'Afișează mai puține',
     notifications: 'Notificări', markAllRead: 'Marchează tot ca citit', noNotifications: 'Încă nu există notificări', noNotificationsBody: 'Joburile potrivite cu abilitățile tale vor apărea aici.', notifUnread: '{n} necitite',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

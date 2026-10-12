@@ -84,6 +84,8 @@
     per_month: '/ọnwa', per_year: '/afọ', per_hour: '/awa',
     cat_it: 'Teknụzụ (IT)', cat_health: 'Ahụike', cat_education: 'Agụmakwụkwọ', cat_finance: 'Ego na akụ', cat_engineering: 'Injinịa', cat_creative: 'Okike nka', cat_marketing: 'Ahịa na mgbasa ozi', cat_sales: 'Ire ahịa na Ọrụ ndị ahịa', cat_hospitality: 'Nnabata ndị ọbịa', cat_logistics: 'Njem ngwongwo', cat_agriculture: 'Ọrụ ugbo',
     pageNotFound: 'Ahụghị ibe ahụ', pageNotFoundBody: 'Njikọ a adịghị.',
+    sampleListing: 'Ihe atụ ọrụ', sampleApplyOff: 'Ekpechiri ịkwado ọrụ',
+    sampleApplyNote: 'Nke a bụ ihe atụ ọrụ na-egosi ka ọrụ si adị na Loker Dunia. Ekpechiri ịkwado ọrụ.',
     showAllCountries: 'Gosi mba niile {n}', showFewer: 'Gosi ole na ole',
     notifications: 'Ọkwa', markAllRead: 'Maka niile dị ka e gụọla', noNotifications: 'Enweghị ọkwa ugbu a', noNotificationsBody: 'Ọrụ ndị kwekọrọ na nkà gị ga-apụta ebe a.', notifUnread: '{n} anaghị agụ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

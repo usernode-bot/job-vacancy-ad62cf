@@ -84,6 +84,8 @@
     per_month: '/လ', per_year: '/နှစ်', per_hour: '/နာရီ',
     cat_it: 'IT', cat_health: 'ကျန်းမာရေး', cat_education: 'ပညာရေး', cat_finance: 'ဘဏ္ဍာရေး', cat_engineering: 'အင်ဂျင်နီယာ', cat_creative: 'ဖန်တီးမှု', cat_marketing: 'စျေးကွက်ရှာဖွေရေး', cat_sales: 'အရောင်းနှင့် ဝန်ဆောင်မှု', cat_hospitality: 'ဧည့်ဝန်ဆောင်မှု', cat_logistics: 'ထောက်ပံ့ပို့ဆောင်ရေး', cat_agriculture: 'စိုက်ပျိုးရေး',
     pageNotFound: 'စာမျက်နှာ မတွေ့ပါ', pageNotFoundBody: 'ဤလင့်ခ် မရှိပါ။',
+    sampleListing: 'နမူနာ အလုပ်ခေါ်စာ', sampleApplyOff: 'လျှောက်ထားမှု ပိတ်ထားသည်',
+    sampleApplyNote: '၎င်းသည် Loker Dunia တွင် အလုပ်များ မည်သို့ ပေါ်လေ့ရှိသည်ကို ပြသသော နမူနာ အလုပ်ခေါ်စာ ဖြစ်သည်။ လျှောက်ထားမှု ပိတ်ထားသည်။',
     showAllCountries: 'နိုင်ငံ {n} ခုလုံးကို ပြပါ', showFewer: 'လျော့ပြပါ',
     notifications: 'အကြောင်းကြားချက်များ', markAllRead: 'အားလုံးကို ဖတ်ပြီးအဖြစ် မှတ်ပါ', noNotifications: 'အကြောင်းကြားချက် မရှိသေးပါ', noNotificationsBody: 'သင့်ကျွမ်းကျင်မှုနှင့် ကိုက်ညီသော အလုပ်များ ဤနေရာတွင် ပေါ်လာမည်။', notifUnread: 'မဖတ်ရသေး {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

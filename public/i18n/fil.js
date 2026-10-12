@@ -84,6 +84,8 @@
     per_month: '/buwan', per_year: '/taon', per_hour: '/oras',
     cat_it: 'IT', cat_health: 'Kalusugan', cat_education: 'Edukasyon', cat_finance: 'Pananalapi', cat_engineering: 'Inhinyeriya', cat_creative: 'Malikhain', cat_marketing: 'Marketing', cat_sales: 'Benta at Serbisyo', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agrikultura',
     pageNotFound: 'Hindi nahanap ang pahina', pageNotFoundBody: 'Hindi umiiral ang link na ito.',
+    sampleListing: 'Sample na listahan', sampleApplyOff: 'Sarado ang mga aplikasyon',
+    sampleApplyNote: 'Ito ay sample na listahan na nagpapakita kung ano ang hitsura ng mga trabaho sa Loker Dunia. Sarado ang mga aplikasyon.',
     showAllCountries: 'Ipakita ang lahat ng {n} bansa', showFewer: 'Magpakita ng mas kaunti',
     notifications: 'Mga abiso', markAllRead: 'Markahan lahat bilang nabasa', noNotifications: 'Wala pang abiso', noNotificationsBody: 'Dito lalabas ang mga trabahong tugma sa iyong mga kasanayan.', notifUnread: '{n} hindi pa nababasa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

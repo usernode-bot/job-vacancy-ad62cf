@@ -84,6 +84,8 @@
     per_month: '/mies.', per_year: '/rok', per_hour: '/godz.',
     cat_it: 'IT', cat_health: 'Ochrona zdrowia', cat_education: 'Edukacja', cat_finance: 'Finanse', cat_engineering: 'Inżynieria', cat_creative: 'Branża kreatywna', cat_marketing: 'Marketing', cat_sales: 'Sprzedaż i obsługa', cat_hospitality: 'Hotelarstwo i gastronomia', cat_logistics: 'Logistyka', cat_agriculture: 'Rolnictwo',
     pageNotFound: 'Nie znaleziono strony', pageNotFoundBody: 'Ten link nie istnieje.',
+    sampleListing: 'Przykładowe ogłoszenie', sampleApplyOff: 'Aplikowanie jest wyłączone',
+    sampleApplyNote: 'To przykładowe ogłoszenie pokazujące, jak wyglądają oferty pracy w Loker Dunia. Aplikowanie jest wyłączone.',
     showAllCountries: 'Pokaż wszystkie kraje ({n})', showFewer: 'Pokaż mniej',
     notifications: 'Powiadomienia', markAllRead: 'Oznacz wszystko jako przeczytane', noNotifications: 'Brak powiadomień', noNotificationsBody: 'Tutaj pojawią się oferty pasujące do Twoich umiejętności.', notifUnread: '{n} nieprzeczytanych',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

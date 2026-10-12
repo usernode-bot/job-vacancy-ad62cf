@@ -84,6 +84,8 @@
     per_month: '/wln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kasarasan', cat_education: 'Pendhidhikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Tetanen',
     pageNotFound: 'Kaca mboten kapanggih', pageNotFoundBody: 'Link punika mboten wonten.',
+    sampleListing: 'Conto lowongan', sampleApplyOff: 'Lamaran dipateni',
+    sampleApplyNote: 'Iki conto lowongan kanggo nuduhake tampilan pegaweyan ing Loker Dunia. Lamaran dipateni.',
     showAllCountries: 'Tampilake kabeh {n} negara', showFewer: 'Tampilake luwih sithik',
     notifications: 'Kabar', markAllRead: 'Tandhani kabeh wis diwaca', noNotifications: 'Durung ana kabar', noNotificationsBody: 'Lowongan sing cocog karo skill sampeyan bakal katon ing kene.', notifUnread: '{n} durung diwaca',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

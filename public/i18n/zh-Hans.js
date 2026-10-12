@@ -84,6 +84,8 @@
     per_month: '/月', per_year: '/年', per_hour: '/小时',
     cat_it: 'IT', cat_health: '医疗健康', cat_education: '教育', cat_finance: '金融', cat_engineering: '工程', cat_creative: '创意', cat_marketing: '市场营销', cat_sales: '销售与服务', cat_hospitality: '酒店餐饮', cat_logistics: '物流', cat_agriculture: '农业',
     pageNotFound: '页面未找到', pageNotFoundBody: '该链接不存在。',
+    sampleListing: '示例职位', sampleApplyOff: '暂不接受申请',
+    sampleApplyNote: '这是一个示例职位，用来展示 Loker Dunia 上的职位是什么样子。暂不接受申请。',
     showAllCountries: '显示全部 {n} 个国家', showFewer: '收起',
     notifications: '通知', markAllRead: '全部标为已读', noNotifications: '暂无通知', noNotificationsBody: '与你技能匹配的职位会显示在这里。', notifUnread: '{n} 条未读',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

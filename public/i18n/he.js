@@ -84,6 +84,8 @@
     per_month: '/חודש', per_year: '/שנה', per_hour: '/שעה',
     cat_it: 'הייטק ו-IT', cat_health: 'בריאות', cat_education: 'חינוך', cat_finance: 'כספים', cat_engineering: 'הנדסה', cat_creative: 'קריאייטיב', cat_marketing: 'שיווק', cat_sales: 'מכירות ושירות', cat_hospitality: 'אירוח ומלונאות', cat_logistics: 'לוגיסטיקה', cat_agriculture: 'חקלאות',
     pageNotFound: 'הדף לא נמצא', pageNotFoundBody: 'הקישור הזה אינו קיים.',
+    sampleListing: 'מודעה לדוגמה', sampleApplyOff: 'ההגשה כבויה',
+    sampleApplyNote: 'זוהי מודעה לדוגמה שמראה איך נראות משרות ב-Loker Dunia. ההגשה כבויה.',
     showAllCountries: 'הצג את כל {n} המדינות', showFewer: 'הצג פחות',
     notifications: 'התראות', markAllRead: 'סמן הכול כנקרא', noNotifications: 'אין התראות עדיין', noNotificationsBody: 'משרות שמתאימות לכישורים שלך יופיעו כאן.', notifUnread: '{n} שלא נקראו',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

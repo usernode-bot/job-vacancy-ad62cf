@@ -84,6 +84,8 @@
     per_month: '/міс.', per_year: '/рік', per_hour: '/год',
     cat_it: 'ІТ', cat_health: 'Охорона здоров\'я', cat_education: 'Освіта', cat_finance: 'Фінанси', cat_engineering: 'Інженерія', cat_creative: 'Творчість', cat_marketing: 'Маркетинг', cat_sales: 'Продажі та сервіс', cat_hospitality: 'Гостинність', cat_logistics: 'Логістика', cat_agriculture: 'Сільське господарство',
     pageNotFound: 'Сторінку не знайдено', pageNotFoundBody: 'Такого посилання не існує.',
+    sampleListing: 'Приклад вакансії', sampleApplyOff: 'Відгуки вимкнено',
+    sampleApplyNote: 'Це приклад вакансії, який показує, як виглядають вакансії в Loker Dunia. Відгуки вимкнено.',
     showAllCountries: 'Показати всі країни ({n})', showFewer: 'Показати менше',
     notifications: 'Сповіщення', markAllRead: 'Позначити все прочитаним', noNotifications: 'Сповіщень поки немає', noNotificationsBody: 'Тут з’являтимуться вакансії, що відповідають вашим навичкам.', notifUnread: '{n} непрочитаних',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

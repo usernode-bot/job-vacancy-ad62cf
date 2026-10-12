@@ -84,6 +84,8 @@
     per_month: '/මසකට', per_year: '/වසරකට', per_hour: '/පැයකට',
     cat_it: 'IT', cat_health: 'සෞඛ්‍ය සේවා', cat_education: 'අධ්‍යාපනය', cat_finance: 'මූල්‍ය', cat_engineering: 'ඉංජිනේරු', cat_creative: 'නිර්මාණාත්මක', cat_marketing: 'අලෙවිකරණය', cat_sales: 'විකුණුම් සහ සේවා', cat_hospitality: 'ආගන්තුක සත්කාර', cat_logistics: 'සැපයුම් දාම', cat_agriculture: 'කෘෂිකර්මය',
     pageNotFound: 'පිටුව හමු නොවීය', pageNotFoundBody: 'මෙම සබැඳිය නොපවතී.',
+    sampleListing: 'නියැදි ලැයිස්තුව', sampleApplyOff: 'අයදුම්පත් නවත්වා ඇත',
+    sampleApplyNote: 'මෙය Loker Dunia හි රැකියා පෙනෙන ආකාරය පෙන්වන නියැදි ලැයිස්තුවකි. අයදුම්පත් නවත්වා ඇත.',
     showAllCountries: 'රටවල් {n} ම පෙන්වන්න', showFewer: 'අඩුවෙන් පෙන්වන්න',
     notifications: 'දැනුම්දීම්', markAllRead: 'සියල්ල කියවූ ලෙස සලකුණු කරන්න', noNotifications: 'තවමත් දැනුම්දීම් නැත', noNotificationsBody: 'ඔබේ කුසලතාවලට ගැළපෙන රැකියා මෙහි දිස්වේ.', notifUnread: 'නොකියවූ {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

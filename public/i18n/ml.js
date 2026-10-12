@@ -84,6 +84,8 @@
     per_month: '/മാസം', per_year: '/വർഷം', per_hour: '/മണിക്കൂർ',
     cat_it: 'IT', cat_health: 'ആരോഗ്യപരിപാലനം', cat_education: 'വിദ്യാഭ്യാസം', cat_finance: 'ധനകാര്യം', cat_engineering: 'എഞ്ചിനീയറിംഗ്', cat_creative: 'ക്രിയേറ്റീവ്', cat_marketing: 'മാർക്കറ്റിംഗ്', cat_sales: 'വിൽപ്പനയും സേവനവും', cat_hospitality: 'ആതിഥ്യം', cat_logistics: 'ലോജിസ്റ്റിക്സ്', cat_agriculture: 'കൃഷി',
     pageNotFound: 'പേജ് കണ്ടെത്തിയില്ല', pageNotFoundBody: 'ഈ ലിങ്ക് നിലവിലില്ല.',
+    sampleListing: 'മാതൃകാ പട്ടിക', sampleApplyOff: 'അപേക്ഷകൾ ഓഫാണ്',
+    sampleApplyNote: 'Loker Dunia-യിൽ ജോലികൾ എങ്ങനെ കാണപ്പെടുന്നു എന്ന് കാണിക്കുന്ന ഒരു മാതൃകാ പട്ടികയാണിത്. അപേക്ഷകൾ ഓഫാണ്.',
     showAllCountries: 'എല്ലാ {n} രാജ്യങ്ങളും കാണിക്കുക', showFewer: 'കുറച്ച് കാണിക്കുക',
     notifications: 'അറിയിപ്പുകൾ', markAllRead: 'എല്ലാം വായിച്ചതായി അടയാളപ്പെടുത്തുക', noNotifications: 'ഇതുവരെ അറിയിപ്പുകളൊന്നുമില്ല', noNotificationsBody: 'നിങ്ങളുടെ വൈദഗ്ധ്യത്തിന് യോജിക്കുന്ന ജോലികൾ ഇവിടെ കാണാം.', notifUnread: '{n} വായിക്കാത്തത്',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

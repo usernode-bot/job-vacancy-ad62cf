@@ -84,6 +84,8 @@
     per_month: '/oṣù', per_year: '/ọdún', per_hour: '/wákàtí',
     cat_it: 'Ìmọ̀ ẹ̀rọ (IT)', cat_health: 'Ìlera', cat_education: 'Ẹ̀kọ́', cat_finance: 'Ìṣúná', cat_engineering: 'Ìmọ̀ ẹ̀rọ', cat_creative: 'Iṣẹ́ ọnà', cat_marketing: 'Ìpolówó ọjà', cat_sales: 'Títà àti Iṣẹ́ ìsìn', cat_hospitality: 'Ìgbàlejò', cat_logistics: 'Ètò ìrìnnà ẹrù', cat_agriculture: 'Iṣẹ́ àgbẹ̀',
     pageNotFound: 'A kò rí ojú-ìwé náà', pageNotFoundBody: 'Ìjápọ̀ yìí kò sí.',
+    sampleListing: 'Àpẹẹrẹ ìkéde iṣẹ́', sampleApplyOff: 'A ti ti ìfiwéránṣẹ́ iṣẹ́',
+    sampleApplyNote: 'Èyí jẹ́ àpẹẹrẹ ìkéde iṣẹ́ tó ń fi bí iṣẹ́ ṣe rí lórí Loker Dunia hàn. A ti ti ìfiwéránṣẹ́ iṣẹ́.',
     showAllCountries: 'Fi gbogbo orílẹ̀-èdè {n} hàn', showFewer: 'Fi díẹ̀ hàn',
     notifications: 'Àwọn ìkìlọ̀', markAllRead: 'Ṣàmì sí gbogbo wọn bí a ti kà', noNotifications: 'Kò sí ìkìlọ̀ kankan síbẹ̀', noNotificationsBody: 'Àwọn iṣẹ́ tó bá ọgbọ́n rẹ mu yóò hàn níbí.', notifUnread: '{n} tí a kò kà',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

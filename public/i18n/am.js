@@ -84,6 +84,8 @@
     per_month: '/በወር', per_year: '/በዓመት', per_hour: '/በሰዓት',
     cat_it: 'IT', cat_health: 'ጤና አጠባበቅ', cat_education: 'ትምህርት', cat_finance: 'ፋይናንስ', cat_engineering: 'ምህንድስና', cat_creative: 'ፈጠራ', cat_marketing: 'ማርኬቲንግ', cat_sales: 'ሽያጭ እና አገልግሎት', cat_hospitality: 'መስተንግዶ', cat_logistics: 'ሎጂስቲክስ', cat_agriculture: 'ግብርና',
     pageNotFound: 'ገጹ አልተገኘም', pageNotFoundBody: 'ይህ ሊንክ የለም።',
+    sampleListing: 'የናሙና ማስታወቂያ', sampleApplyOff: 'ማመልከት ተዘግቷል',
+    sampleApplyNote: 'ይህ በሎከር ዱኒያ ላይ ስራዎች ምን እንደሚመስሉ የሚያሳይ የናሙና ማስታወቂያ ነው። ማመልከት ተዘግቷል።',
     showAllCountries: 'ሁሉንም {n} አገሮች አሳይ', showFewer: 'አነስተኛ አሳይ',
     notifications: 'ማሳወቂያዎች', markAllRead: 'ሁሉንም እንደተነበበ ምልክት አድርግ', noNotifications: 'እስካሁን ማሳወቂያ የለም', noNotificationsBody: 'ከችሎታዎ ጋር የሚስማሙ ሥራዎች እዚህ ይታያሉ።', notifUnread: '{n} ያልተነበቡ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

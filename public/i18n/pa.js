@@ -84,6 +84,8 @@
     per_month: '/ਮਹੀਨਾ', per_year: '/ਸਾਲ', per_hour: '/ਘੰਟਾ',
     cat_it: 'IT', cat_health: 'ਸਿਹਤ ਸੰਭਾਲ', cat_education: 'ਸਿੱਖਿਆ', cat_finance: 'ਵਿੱਤ', cat_engineering: 'ਇੰਜੀਨੀਅਰਿੰਗ', cat_creative: 'ਰਚਨਾਤਮਕ', cat_marketing: 'ਮਾਰਕੀਟਿੰਗ', cat_sales: 'ਵਿਕਰੀ ਅਤੇ ਸੇਵਾ', cat_hospitality: 'ਪਰਾਹੁਣਚਾਰੀ', cat_logistics: 'ਲੌਜਿਸਟਿਕਸ', cat_agriculture: 'ਖੇਤੀਬਾੜੀ',
     pageNotFound: 'ਪੰਨਾ ਨਹੀਂ ਮਿਲਿਆ', pageNotFoundBody: 'ਇਹ ਲਿੰਕ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।',
+    sampleListing: 'ਨਮੂਨਾ ਸੂਚੀ', sampleApplyOff: 'ਅਰਜ਼ੀਆਂ ਬੰਦ ਹਨ',
+    sampleApplyNote: 'ਇਹ ਇੱਕ ਨਮੂਨਾ ਸੂਚੀ ਹੈ ਜੋ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ Loker Dunia ਉੱਤੇ ਨੌਕਰੀਆਂ ਕਿਵੇਂ ਦਿਸਦੀਆਂ ਹਨ। ਅਰਜ਼ੀਆਂ ਬੰਦ ਹਨ।',
     showAllCountries: 'ਸਾਰੇ {n} ਦੇਸ਼ ਦਿਖਾਓ', showFewer: 'ਘੱਟ ਦਿਖਾਓ',
     notifications: 'ਸੂਚਨਾਵਾਂ', markAllRead: 'ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਹੋਇਆ ਮਾਰਕ ਕਰੋ', noNotifications: 'ਹਾਲੇ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ', noNotificationsBody: 'ਤੁਹਾਡੇ ਹੁਨਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੀਆਂ ਨੌਕਰੀਆਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।', notifUnread: '{n} ਨਾ-ਪੜ੍ਹੀਆਂ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',

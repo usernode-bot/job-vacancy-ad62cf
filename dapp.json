@@ -116,5 +116,8 @@
   "visibility": {
     "build": "private",
     "view": "public"
+  },
+  "governance": {
+    "preset": "two_yeses"
   }
 }

@@ -95,5 +95,6 @@
     jobsComingGuest: "משרות נוספות מתווספות. צרו פרופיל עם הכישורים שלכם כדי לקבל הודעה כשמתפרסמת משרה מתאימה.",
     jobsComingSeeker: "משרות נוספות מתווספות. נודיע לכם כשמתפרסמת משרה שמתאימה לכישורים שלכם.",
     jobField: "תחום עיסוק",
+    jobsInCountry: 'משרות ב{country}', jobLanguage: 'שפת המשרה', allLanguages: 'כל השפות', jobLangChip: 'שפה: {lang}',
   },
 };

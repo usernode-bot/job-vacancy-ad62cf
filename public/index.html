@@ -531,7 +531,7 @@
   }
 
   /* ---------- search ---------- */
-  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false, noCert: false });
+  const emptyFilters = () => ({ q: '', country: '', city: '', category: '', jobLang: '', types: [], models: [], salaryMin: '', salaryMax: '', skills: [], rw: false, visa: false, relo: false, noCert: false });
   let filters = emptyFilters();
   const ui = { matchMode: false, sort: 'newest', countryListOpen: false };
   function filterCurrency() { return viewerCurrency() || 'USD'; }
@@ -546,6 +546,7 @@
       if (f.country && j.country !== f.country) return false;
       if (f.city && !j.city.toLowerCase().includes(f.city.trim().toLowerCase())) return false;
       if (f.category && j.category !== f.category) return false;
+      if (f.jobLang && !(j.languages || []).some(l => l.code === f.jobLang)) return false;
       if (f.types.length && !f.types.includes(j.type)) return false;
       if (f.models.length && !f.models.includes(j.model)) return false;
       if (f.skills.length && !f.skills.every(s => jobSkills(j).some(x => x.toLowerCase() === s.toLowerCase()))) return false;
@@ -569,7 +570,7 @@
   }
   function activeFilterCount() {
     const f = filters;
-    return [f.country, f.city, f.category, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo, f.noCert].filter(Boolean).length;
+    return [f.country, f.city, f.category, f.jobLang, f.salaryMin, f.salaryMax].filter(Boolean).length + f.types.length + f.models.length + f.skills.length + [f.rw, f.visa, f.relo, f.noCert].filter(Boolean).length;
   }
 
   /* ==========================================================================
@@ -794,6 +795,26 @@
     });
   }
 
+  // Job-language picker over the languages posted jobs ask for. onPick(code|'' for all).
+  function jobLangCounts() {
+    const counts = {};
+    db.jobs.forEach(j => (j.languages || []).forEach(l => { if (l.code) counts[l.code] = (counts[l.code] || 0) + 1; }));
+    return { counts, list: Object.keys(counts).sort((a, b) => langName(a).localeCompare(langName(b), lang)) };
+  }
+  function openJobLangPicker() {
+    const { counts, list } = jobLangCounts();
+    const row = c => '<li><button type="button" data-pick="' + c + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-start hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"><span class="flex-1 text-sm">' + esc(langName(c)) + '</span><span class="text-xs ' + C.muted + '">' + t('nJobs', { n: counts[c] }) + '</span></button></li>';
+    const root = openModal(
+      '<ul class="space-y-0.5" data-joblang-list>' +
+      '<li><button type="button" data-pick="" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-start hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"><span class="flex-1 text-sm font-medium">' + esc(t('allLanguages')) + '</span></button></li>' +
+      list.map(row).join('') + '</ul>', { title: t('jobLanguage') });
+    if (!list.length) root.querySelector('[data-joblang-list]').innerHTML = emptyState(t('noJobsYet'), t('noJobsYetBody'));
+    root.querySelector('[data-joblang-list]').addEventListener('click', e => {
+      const b = e.target.closest('[data-pick]'); if (!b) return;
+      closeModal(); filters.jobLang = b.dataset.pick; go('#/jobs');
+    });
+  }
+
   // Skill input with suggestions. Markup: a wrapper [data-skill-input="<key>"]
   // containing the input; handlers registered in SKILL_ADD[key](name).
   const SKILL_ADD = {};
@@ -929,8 +950,10 @@
     html += '<section><h1 class="' + C.h1 + '">' + esc(name ? t('hello', { name }) : t('welcome')) + '</h1>' +
       '<p class="mt-1 ' + C.muted + '">' + sub + '</p>' +
       '<div class="mt-4 -mx-4 px-4 flex gap-2 overflow-x-auto no-scrollbar" aria-label="' + esc(t('category')) + '">' +
+      '<button type="button" data-action="browse-country" data-cc="ID" data-testid="chip-indonesia" class="' + chip + ' inline-flex items-center gap-1"><span aria-hidden="true">' + flag('ID') + '</span>' + t('jobsInCountry', { country: countryName('ID') }) + '</button>' +
       '<button type="button" data-action="browse-remote" data-testid="chip-remote" class="' + chip + '">' + t('remoteOnly') + '</button>' +
       '<button type="button" data-action="quick-country" data-testid="chip-country" class="' + chip + ' inline-flex items-center gap-1">' + t('country') + icon('down', 'w-3.5 h-3.5') + '</button>' +
+      '<button type="button" data-action="pick-job-lang" data-testid="chip-job-lang" class="' + chip + ' inline-flex items-center gap-1">' + t('jobLanguage') + icon('down', 'w-3.5 h-3.5') + '</button>' +
       CATEGORIES.map(c => '<button type="button" data-action="pick-category" data-cat="' + c + '" class="' + chip + '">' + t('cat_' + c) + '</button>').join('') + '</div></section>';
 
     if (r === 'company' && co) {
@@ -985,6 +1008,9 @@
       '<div><span class="' + C.label + '">' + t('country') + '</span><button type="button" data-action="filter-country" class="' + C.input + ' flex items-center gap-2 text-start"><span aria-hidden="true">' + flag(f.country) + '</span><span class="flex-1 truncate">' + esc(f.country ? countryName(f.country) : t('allCountries')) + '</span>' + icon('down', 'w-4 h-4 text-slate-400') + '</button></div>' +
       '<div><label class="' + C.label + '" for="f-city">' + t('city') + '</label><input id="f-city" list="f-city-list" data-filter="city" value="' + esc(f.city) + '" class="' + C.input + '" placeholder="' + esc(t('cityPlaceholder')) + '"><datalist id="f-city-list">' + cities.map(c => '<option value="' + esc(c) + '">').join('') + '</datalist></div>' +
       '<div><label class="' + C.label + '" for="f-cat">' + t('category') + '</label><select id="f-cat" data-filter="category" class="' + C.input + '"><option value="">' + t('allCategories') + '</option>' + CATEGORIES.map(c => '<option value="' + c + '"' + (f.category === c ? ' selected' : '') + '>' + t('cat_' + c) + '</option>').join('') + '</select></div>' +
+      '<div><label class="' + C.label + '" for="f-joblang">' + t('jobLanguage') + '</label><select id="f-joblang" data-filter="jobLang" class="' + C.input + '"><option value="">' + t('allLanguages') + '</option>' +
+      (() => { const { list } = jobLangCounts(); const opts = list.map(c => '<option value="' + c + '"' + (f.jobLang === c ? ' selected' : '') + '>' + esc(langName(c)) + '</option>').join(''); return (f.jobLang && !list.includes(f.jobLang) ? '<option value="' + f.jobLang + '" selected>' + esc(langName(f.jobLang)) + '</option>' : '') + opts; })() +
+      '</select></div>' +
       '<fieldset><legend class="' + C.label + '">' + t('jobType') + '</legend><div class="flex flex-wrap gap-2">' + JOB_TYPES.map(x => check('types', x, f.types.includes(x), t('type_' + x))).join('') + '</div></fieldset>' +
       '<fieldset><legend class="' + C.label + '">' + t('workModel') + '</legend><div class="flex flex-wrap gap-2">' + WORK_MODELS.map(x => check('models', x, f.models.includes(x), t('model_' + x))).join('') + '</div></fieldset>' +
       '<fieldset><legend class="' + C.label + '">' + t('salaryRange', { cur: fc }) + '</legend><div class="grid grid-cols-2 gap-2">' +
@@ -1061,6 +1087,7 @@
     if (f.country) out.push(['country', '', flag(f.country) + ' ' + countryName(f.country)]);
     if (f.city) out.push(['city', '', f.city]);
     if (f.category) out.push(['category', '', t('cat_' + f.category)]);
+    if (f.jobLang) out.push(['jobLang', '', t('jobLangChip', { lang: langName(f.jobLang) })]);
     f.types.forEach(x => out.push(['types', x, t('type_' + x)]));
     f.models.forEach(x => out.push(['models', x, t('model_' + x)]));
     f.skills.forEach(x => out.push(['skills', x, x]));
@@ -1973,6 +2000,7 @@
       case 'quick-country':
         openCountryPicker(cc => { filters.country = cc; filters.city = ''; go('#/jobs'); }, { allowAll: true, showCounts: true, title: t('quickCountry') }); break;
       case 'pick-lang': openLanguagePicker(); break;
+      case 'pick-job-lang': openJobLangPicker(); break;
       case 'open-notifications':
         try { await api.loadNotifications(); renderChrome(); } catch (err) {}
         openNotifications(); break;

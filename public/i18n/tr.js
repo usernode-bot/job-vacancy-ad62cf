@@ -95,5 +95,6 @@
     jobsComingGuest: "Yeni iş ilanları ekleniyor. Eşleşen bir ilan yayınlandığında bildirim almak için becerilerinizle bir profil oluşturun.",
     jobsComingSeeker: "Yeni iş ilanları ekleniyor. Becerilerinize uygun bir ilan yayınlandığında size haber vereceğiz.",
     jobField: "İş alanı",
+    jobsInCountry: '{country} içindeki işler', jobLanguage: 'İşin dili', allLanguages: 'Tüm diller', jobLangChip: 'Dil: {lang}',
   },
 };

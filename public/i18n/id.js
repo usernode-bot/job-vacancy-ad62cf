@@ -99,5 +99,6 @@
     jobsComingGuest: "Lowongan sedang ditambahkan. Buat profil dengan keahlian Anda untuk diberi tahu saat ada lowongan yang cocok.",
     jobsComingSeeker: "Lowongan sedang ditambahkan. Kami akan memberi tahu Anda saat ada lowongan yang cocok dengan keahlian Anda.",
     jobField: "Bidang pekerjaan",
+    jobsInCountry: 'Lowongan di {country}', jobLanguage: 'Bahasa lowongan', allLanguages: 'Semua bahasa', jobLangChip: 'Bahasa: {lang}',
   },
 };

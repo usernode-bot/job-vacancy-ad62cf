@@ -95,5 +95,6 @@
     jobsComingGuest: "Se adaugă noi locuri de muncă. Creați un profil cu abilitățile tale pentru a fi anunțat când se postează un loc de muncă potrivit.",
     jobsComingSeeker: "Se adaugă noi locuri de muncă. Vă anunțăm când se postează un loc de muncă potrivit abilităților dvs.",
     jobField: "Domeniu de activitate",
+    jobsInCountry: 'Locuri de muncă în {country}', jobLanguage: 'Limba postului', allLanguages: 'Toate limbile', jobLangChip: 'Limba: {lang}',
   },
 };

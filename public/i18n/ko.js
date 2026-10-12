@@ -95,5 +95,6 @@
     jobsComingGuest: "일자리를 추가하고 있어요. 맞는 일자리가 올라오면 알림을 받으려면 기술을 넣어 프로필을 만들어 보세요.",
     jobsComingSeeker: "일자리를 추가하고 있어요. 기술에 맞는 일자리가 올라오면 알려드릴게요.",
     jobField: "직무 분야",
+    jobsInCountry: '{country} 채용공고', jobLanguage: '채용 언어', allLanguages: '모든 언어', jobLangChip: '언어: {lang}',
   },
 };

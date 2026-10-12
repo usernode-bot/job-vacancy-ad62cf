@@ -95,5 +95,6 @@
     jobsComingGuest: "Nya jobb läggs till. Skapa en profil med dina färdigheter för att få en avisering när ett matchande jobb publiceras.",
     jobsComingSeeker: "Nya jobb läggs till. Vi meddelar dig när ett jobb som matchar dina färdigheter publiceras.",
     jobField: "Arbetsområde",
+    jobsInCountry: 'Jobb i {country}', jobLanguage: 'Jobbspråk', allLanguages: 'Alla språk', jobLangChip: 'Språk: {lang}',
   },
 };

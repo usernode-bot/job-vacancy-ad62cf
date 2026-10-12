@@ -95,5 +95,6 @@
     jobsComingGuest: "Přidávají se nové nabídky práce. Vytvořte si profil se svými dovednostmi a dostanete upozornění, jakmile se objeví vyhovující nabídka.",
     jobsComingSeeker: "Přidávají se nové nabídky práce. Jakmile se objeví nabídka odpovídající vaším dovednostem, dáme vám vědět.",
     jobField: "Pracovní obor",
+    jobsInCountry: 'Práce v {country}', jobLanguage: 'Jazyk práce', allLanguages: 'Všechny jazyky', jobLangChip: 'Jazyk: {lang}',
   },
 };

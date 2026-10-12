@@ -95,5 +95,6 @@
     jobsComingGuest: "አዳዲስ ስራዎች እየታከሉ ነው። የሚስማማ ስራ ሲተወገን እንዲነገርዎ በክህሎትዎ መገለጫ ይፍጠሩ።",
     jobsComingSeeker: "አዳዲስ ስራዎች እየታከሉ ነው። ከክህሎትዎ ጋር የሚስማማ ስራ ሲተወገን እንነገርዎታለን።",
     jobField: "የስራ መስክ",
+    jobsInCountry: 'ስራዎች በ{country}', jobLanguage: 'የስራ ቋንቋ', allLanguages: 'ሁሉም ቋንቋዎች', jobLangChip: 'ቋንቋ: {lang}',
   },
 };

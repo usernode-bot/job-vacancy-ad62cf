@@ -101,5 +101,6 @@
     jobsComingGuest: "Jobs are being added. Create a profile with your skills to get notified when a matching job is posted.",
     jobsComingSeeker: "Jobs are being added. We will notify you when a job that matches your skills is posted.",
     jobField: "Field of work",
+    jobsInCountry: 'Jobs in {country}', jobLanguage: 'Job language', allLanguages: 'All languages', jobLangChip: 'Language: {lang}',
   },
 };

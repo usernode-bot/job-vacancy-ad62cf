@@ -95,5 +95,6 @@
     jobsComingGuest: "求人を追加中です。マッチする求人が投稿されたときにお知らせを受け取るには、スキルを登録したプロフィールを作成してください。",
     jobsComingSeeker: "求人を追加中です。あなたのスキルに合う求人が投稿されたらお知らせします。",
     jobField: "職種",
+    jobsInCountry: '{country}の求人', jobLanguage: '求人の言語', allLanguages: 'すべての言語', jobLangChip: '言語: {lang}',
   },
 };

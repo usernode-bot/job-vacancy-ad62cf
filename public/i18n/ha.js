@@ -95,5 +95,6 @@
     jobsComingGuest: "Ana ƙara sabbin ayyuka. Yi bayani da ƙwarewarku don a sanar da ku lokacin da ake wallafa wani aiki mai dacewa.",
     jobsComingSeeker: "Ana ƙara sabbin ayyuka. Za mu sanar da ku lokacin da ake wallafa aiki mai dacewa da ƙwarewarku.",
     jobField: "Fannin aiki",
+    jobsInCountry: 'Ayyuka a {country}', jobLanguage: 'Harshen aiki', allLanguages: 'Dukkan harsuna', jobLangChip: 'Harshe: {lang}',
   },
 };

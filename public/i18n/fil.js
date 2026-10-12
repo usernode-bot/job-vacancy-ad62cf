@@ -95,5 +95,6 @@
     jobsComingGuest: "Nagdaragdag pa ng mga trabaho. Gumawa ng profile kasama ang mga kasanayan mo para maabisuhan kapag may katugmang trabahong na-post.",
     jobsComingSeeker: "Nagdaragdag pa ng mga trabaho. Aabisuhan ka namin kapag na-post ang trabahong tugma sa mga kasanayan mo.",
     jobField: "Larangan ng trabaho",
+    jobsInCountry: 'Mga trabaho sa {country}', jobLanguage: 'Wika ng trabaho', allLanguages: 'Lahat ng wika', jobLangChip: 'Wika: {lang}',
   },
 };

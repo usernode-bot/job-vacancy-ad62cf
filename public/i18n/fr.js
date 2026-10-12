@@ -95,5 +95,6 @@
     jobsComingGuest: "De nouvelles offres arrivent. Créez un profil avec vos compétences pour être averti dès qu'une offre correspondante est publiée.",
     jobsComingSeeker: "De nouvelles offres arrivent. Nous vous avertirons dès qu'une offre correspondant à vos compétences sera publiée.",
     jobField: "Domaine d'activité",
+    jobsInCountry: 'Emplois en {country}', jobLanguage: 'Langue du poste', allLanguages: 'Toutes les langues', jobLangChip: 'Langue : {lang}',
   },
 };

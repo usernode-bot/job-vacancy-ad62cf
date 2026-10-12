@@ -95,5 +95,6 @@
     jobsComingGuest: "Oferty pracy są dodawane. Utwórz profil ze swoimi umiejętnościami, aby dostać powiadomienie, gdy pojawi się pasująca oferta.",
     jobsComingSeeker: "Oferty pracy są dodawane. Powiadomimy Cię, gdy pojawi się oferta pasująca do Twoich umiejętności.",
     jobField: "Branża",
+    jobsInCountry: 'Praca w {country}', jobLanguage: 'Język pracy', allLanguages: 'Wszystkie języki', jobLangChip: 'Język: {lang}',
   },
 };

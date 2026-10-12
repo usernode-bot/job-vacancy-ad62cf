@@ -95,5 +95,6 @@
     jobsComingGuest: "تُضاف وظائف باستمرار. أنشئ ملفًا شخصيًا بمهاراتك لتصلك إشعارات عند نشر وظيفة مطابقة.",
     jobsComingSeeker: "تُضاف وظائف باستمرار. سنخطرك عند نشر وظيفة تطابق مهاراتك.",
     jobField: "مجال العمل",
+    jobsInCountry: 'وظائف في {country}', jobLanguage: 'لغة الوظيفة', allLanguages: 'كل اللغات', jobLangChip: 'اللغة: {lang}',
   },
 };

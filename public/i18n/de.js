@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: German. A key missing here falls back to English. */
+/* Job Vacancy interface text: German. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['de'] = {
   name: 'Deutsch',
   locale: 'de-DE',
@@ -35,7 +35,7 @@
     skillsBasis: 'Basierend auf {n} Stellen', youHaveIt: 'Vorhanden', pctRequired: '{n} % erforderlich', otherCountriesHint: 'Land nicht aufgeführt?', allCountriesList: 'Alle Länder anzeigen', noCountry: 'Kein Land gefunden', noCountryBody: 'Versuchen Sie eine andere Schreibweise.',
     signUpTitle: 'Registrieren', signInTitle: 'Anmelden', signUp: 'Registrieren', signIn: 'Anmelden', homeroomIdentity: 'Sie sind mit dem Homeroom-Konto @{user} angemeldet, daher ist kein Passwort erforderlich. Wählen Sie Ihre Rolle.', homeroomIdentityAnon: 'Sie werden über Ihr Homeroom-Konto angemeldet, daher ist kein Passwort erforderlich.',
     roleSeeker: 'Bewerber', roleSeekerBody: 'Erstellen Sie einen digitalen Lebenslauf, gleichen Sie Ihre Fähigkeiten ab und bewerben Sie sich auf Stellen.', roleCompany: 'Unternehmen', roleCompanyBody: 'Stellen veröffentlichen und Bewerber verwalten.',
-    yourAccounts: 'Ihre Konten', noAccountsYet: 'Sie haben noch kein Loker Dunia-Konto. Registrieren Sie sich zuerst als Bewerber oder Unternehmen.', sampleAccounts: 'Beispielkonten', sampleAccount: 'Beispiel', unfinishedProfile: 'Unvollständiges Profil',
+    yourAccounts: 'Ihre Konten', noAccountsYet: 'Sie haben noch kein Job Vacancy-Konto. Registrieren Sie sich zuerst als Bewerber oder Unternehmen.', sampleAccounts: 'Beispielkonten', sampleAccount: 'Beispiel', unfinishedProfile: 'Unvollständiges Profil',
     companySignupTitle: 'Als Unternehmen registrieren', companySignupBody: 'Geben Sie Ihre Unternehmensdaten ein, um Stellen zu veröffentlichen.', companyName: 'Unternehmensname', industry: 'Branche', createCompany: 'Unternehmenskonto erstellen', welcomeCompany: 'Willkommen, {co}',
     createProfile: 'Profil erstellen', editProfile: 'Profil bearbeiten', stepOf: 'Schritt {n} von {total}', progress: 'Registrierungsfortschritt', stepBio: 'Persönliche Angaben', stepEduExp: 'Ausbildung und Erfahrung', stepSkills: 'Fähigkeiten', stepCerts: 'Zertifikate',
     saveFinish: 'Speichern und abschließen', saveChanges: 'Änderungen speichern', backToProfile: 'Zurück zum Profil',
@@ -84,6 +84,8 @@
     per_month: '/Mon.', per_year: '/Jahr', per_hour: '/Std.',
     cat_it: 'IT', cat_health: 'Gesundheitswesen', cat_education: 'Bildung', cat_finance: 'Finanzen', cat_engineering: 'Ingenieurwesen', cat_creative: 'Kreativ', cat_marketing: 'Marketing', cat_sales: 'Vertrieb und Service', cat_hospitality: 'Gastgewerbe', cat_logistics: 'Logistik', cat_agriculture: 'Landwirtschaft',
     pageNotFound: 'Seite nicht gefunden', pageNotFoundBody: 'Dieser Link existiert nicht.',
+    sampleListing: 'Beispielanzeige', sampleApplyOff: 'Bewerbungen sind deaktiviert',
+    sampleApplyNote: 'Dies ist eine Beispielanzeige, die zeigt, wie Stellen bei Loker Dunia aussehen. Bewerbungen sind deaktiviert.',
     showAllCountries: 'Alle {n} Länder anzeigen', showFewer: 'Weniger anzeigen',
     notifications: 'Benachrichtigungen', markAllRead: 'Alle als gelesen markieren', noNotifications: 'Noch keine Benachrichtigungen', noNotificationsBody: 'Hier erscheinen Jobs, die zu deinen Fähigkeiten passen.', notifUnread: '{n} ungelesen',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Es werden neue Stellen hinzugefügt. Erstelle ein Profil mit deinen Fähigkeiten, um benachrichtigt zu werden, wenn eine passende Stelle veröffentlicht wird.",
     jobsComingSeeker: "Es werden neue Stellen hinzugefügt. Wir benachrichtigen dich, wenn eine Stelle veröffentlicht wird, die zu deinen Fähigkeiten passt.",
     jobField: "Berufsfeld",
+    jobsInCountry: 'Jobs in {country}', jobLanguage: 'Jobsprache', allLanguages: 'Alle Sprachen', jobLangChip: 'Sprache: {lang}',
   },
 };

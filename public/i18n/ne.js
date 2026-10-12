@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Nepali. A key missing here falls back to English. */
+/* Job Vacancy interface text: Nepali. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ne'] = {
   name: 'नेपाली',
   locale: 'ne-NP',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} जागिरमा आधारित', youHaveIt: 'तपाईंसँग छ', pctRequired: '{n}% मा आवश्यक', otherCountriesHint: 'देश सूचीमा छैन?', allCountriesList: 'सबै देश हेर्नुहोस्', noCountry: 'कुनै देश भेटिएन', noCountryBody: 'अर्को हिज्जे प्रयास गर्नुहोस्।',
     signUpTitle: 'साइन अप', signInTitle: 'साइन इन', signUp: 'साइन अप गर्नुहोस्', signIn: 'साइन इन गर्नुहोस्', homeroomIdentity: 'तपाईं Homeroom खाता @{user} बाट साइन इन हुनुहुन्छ, त्यसैले पासवर्ड आवश्यक छैन। आफ्नो भूमिका छान्नुहोस्।', homeroomIdentityAnon: 'तपाईंको Homeroom खाताले तपाईंलाई साइन इन गराउँछ, त्यसैले पासवर्ड आवश्यक छैन।',
     roleSeeker: 'जागिर खोज्ने व्यक्ति', roleSeekerBody: 'डिजिटल CV बनाउनुहोस्, आफ्नो सीप मिलाउनुहोस् र जागिरका लागि आवेदन दिनुहोस्।', roleCompany: 'कम्पनी', roleCompanyBody: 'जागिर पोस्ट गर्नुहोस् र आवेदकहरू व्यवस्थापन गर्नुहोस्।',
-    yourAccounts: 'तपाईंका खाताहरू', noAccountsYet: 'तपाईंको अहिलेसम्म Loker Dunia खाता छैन। पहिले जागिर खोज्ने व्यक्ति वा कम्पनीको रूपमा साइन अप गर्नुहोस्।', sampleAccounts: 'नमुना खाताहरू', sampleAccount: 'नमुना', unfinishedProfile: 'अपूर्ण प्रोफाइल',
+    yourAccounts: 'तपाईंका खाताहरू', noAccountsYet: 'तपाईंको अहिलेसम्म Job Vacancy खाता छैन। पहिले जागिर खोज्ने व्यक्ति वा कम्पनीको रूपमा साइन अप गर्नुहोस्।', sampleAccounts: 'नमुना खाताहरू', sampleAccount: 'नमुना', unfinishedProfile: 'अपूर्ण प्रोफाइल',
     companySignupTitle: 'कम्पनीको रूपमा साइन अप गर्नुहोस्', companySignupBody: 'जागिर पोस्ट गर्न सुरु गर्न आफ्नो कम्पनीको विवरण भर्नुहोस्।', companyName: 'कम्पनीको नाम', industry: 'उद्योग', createCompany: 'कम्पनी खाता बनाउनुहोस्', welcomeCompany: 'स्वागत छ, {co}',
     createProfile: 'प्रोफाइल बनाउनुहोस्', editProfile: 'प्रोफाइल सम्पादन गर्नुहोस्', stepOf: 'चरण {n} / {total}', progress: 'साइन अपको प्रगति', stepBio: 'व्यक्तिगत विवरण', stepEduExp: 'शिक्षा र अनुभव', stepSkills: 'सीप', stepCerts: 'प्रमाणपत्रहरू',
     saveFinish: 'सुरक्षित गरी समाप्त गर्नुहोस्', saveChanges: 'परिवर्तन सुरक्षित गर्नुहोस्', backToProfile: 'प्रोफाइलमा फर्कनुहोस्',
@@ -84,6 +84,8 @@
     per_month: '/महिना', per_year: '/वर्ष', per_hour: '/घण्टा',
     cat_it: 'IT', cat_health: 'स्वास्थ्य सेवा', cat_education: 'शिक्षा', cat_finance: 'वित्त', cat_engineering: 'इन्जिनियरिङ', cat_creative: 'सिर्जनात्मक', cat_marketing: 'मार्केटिङ', cat_sales: 'बिक्री र सेवा', cat_hospitality: 'आतिथ्य', cat_logistics: 'लजिस्टिक्स', cat_agriculture: 'कृषि',
     pageNotFound: 'पृष्ठ भेटिएन', pageNotFoundBody: 'यो लिङ्क अस्तित्वमा छैन।',
+    sampleListing: 'नमुना सूची', sampleApplyOff: 'आवेदन बन्द छ',
+    sampleApplyNote: 'यो नमुना सूची हो, जसले Loker Dunia मा जागिरहरू कस्ता देखिन्छन् भनेर देखाउँछ। आवेदन बन्द छ।',
     showAllCountries: 'सबै {n} देश देखाउनुहोस्', showFewer: 'कम देखाउनुहोस्',
     notifications: 'सूचनाहरू', markAllRead: 'सबै पढिसकेको चिन्ह लगाउनुहोस्', noNotifications: 'अहिलेसम्म कुनै सूचना छैन', noNotificationsBody: 'तपाईंको सीपसँग मिल्ने जागिरहरू यहाँ देखिनेछन्।', notifUnread: '{n} नपढिएका',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "नयाँ जागिरहरू थपिँदै छन्। मिल्ने जागिर पोस्ट हुँदा सूचना पाउन आफ्ना सीपसहित प्रोफाइल बनाउनुहोस्।",
     jobsComingSeeker: "नयाँ जागिरहरू थपिँदै छन्। तपाईंका सीपसँग मिल्ने जागिर पोस्ट हुँदा हामी जानकारी दिनेछौं।",
     jobField: "कामको क्षेत्र",
+    jobsInCountry: '{country} मा रोजगारी', jobLanguage: 'रोजगारीको भाषा', allLanguages: 'सबै भाषाहरू', jobLangChip: 'भाषा: {lang}',
   },
 };

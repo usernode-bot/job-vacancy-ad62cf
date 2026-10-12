@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Malay. A key missing here falls back to English. */
+/* Job Vacancy interface text: Malay. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ms'] = {
   name: 'Bahasa Melayu',
   locale: 'ms-MY',
@@ -35,7 +35,7 @@
     skillsBasis: 'Berdasarkan {n} jawatan', youHaveIt: 'Anda memilikinya', pctRequired: '{n}% mewajibkan', otherCountriesHint: 'Negara tiada dalam senarai?', allCountriesList: 'Lihat semua negara', noCountry: 'Negara tidak dijumpai', noCountryBody: 'Cuba ejaan lain.',
     signUpTitle: 'Daftar', signInTitle: 'Log masuk', signUp: 'Daftar', signIn: 'Log masuk', homeroomIdentity: 'Anda log masuk dengan akaun Homeroom @{user}, jadi kata laluan tidak diperlukan. Pilih peranan anda.', homeroomIdentityAnon: 'Akaun Homeroom anda digunakan untuk log masuk, jadi kata laluan tidak diperlukan.',
     roleSeeker: 'Pencari Kerja', roleSeekerBody: 'Bina CV digital, padankan kemahiran anda dan mohon jawatan.', roleCompany: 'Syarikat', roleCompanyBody: 'Iklankan jawatan dan urus pemohon.',
-    yourAccounts: 'Akaun anda', noAccountsYet: 'Anda belum mempunyai akaun Loker Dunia. Daftar sebagai Pencari Kerja atau Syarikat terlebih dahulu.', sampleAccounts: 'Akaun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum lengkap',
+    yourAccounts: 'Akaun anda', noAccountsYet: 'Anda belum mempunyai akaun Job Vacancy. Daftar sebagai Pencari Kerja atau Syarikat terlebih dahulu.', sampleAccounts: 'Akaun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum lengkap',
     companySignupTitle: 'Daftar sebagai Syarikat', companySignupBody: 'Masukkan butiran syarikat anda untuk mula mengiklankan jawatan.', companyName: 'Nama syarikat', industry: 'Industri', createCompany: 'Cipta akaun syarikat', welcomeCompany: 'Selamat datang, {co}',
     createProfile: 'Cipta profil', editProfile: 'Sunting profil', stepOf: 'Langkah {n} daripada {total}', progress: 'Kemajuan pendaftaran', stepBio: 'Butiran peribadi', stepEduExp: 'Pendidikan & Pengalaman', stepSkills: 'Kemahiran', stepCerts: 'Sijil',
     saveFinish: 'Simpan & Selesai', saveChanges: 'Simpan perubahan', backToProfile: 'Kembali ke profil',
@@ -84,6 +84,8 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kesihatan', cat_education: 'Pendidikan', cat_finance: 'Kewangan', cat_engineering: 'Kejuruteraan', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Jualan & Perkhidmatan', cat_hospitality: 'Hospitaliti', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak dijumpai', pageNotFoundBody: 'Pautan ini tidak wujud.',
+    sampleListing: 'Senarai contoh', sampleApplyOff: 'Permohonan dimatikan',
+    sampleApplyNote: 'Ini ialah senarai contoh yang menunjukkan rupa pekerjaan di Loker Dunia. Permohonan dimatikan.',
     showAllCountries: 'Tunjukkan semua {n} negara', showFewer: 'Tunjukkan kurang',
     notifications: 'Pemberitahuan', markAllRead: 'Tandakan semua sebagai dibaca', noNotifications: 'Belum ada pemberitahuan', noNotificationsBody: 'Pekerjaan yang sepadan dengan kemahiran anda akan dipaparkan di sini.', notifUnread: '{n} belum dibaca',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Kerja baharu sedang ditambah. Buat profil dengan kemahiran anda untuk dimaklumkan apabila kerja yang sepadan disiarkan.",
     jobsComingSeeker: "Kerja baharu sedang ditambah. Kami akan memaklumkan apabila kerja yang sepadan dengan kemahiran anda disiarkan.",
     jobField: "Bidang pekerjaan",
+    jobsInCountry: 'Kerja di {country}', jobLanguage: 'Bahasa kerja', allLanguages: 'Semua bahasa', jobLangChip: 'Bahasa: {lang}',
   },
 };

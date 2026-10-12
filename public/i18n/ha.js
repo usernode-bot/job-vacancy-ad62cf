@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Hausa. A key missing here falls back to English. */
+/* Job Vacancy interface text: Hausa. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ha'] = {
   name: 'Hausa',
   locale: 'ha-NG',
@@ -35,7 +35,7 @@
     skillsBasis: 'Bisa ayyuka {n}', youHaveIt: 'Kuna da ita', pctRequired: 'Ana buƙata a {n}%', otherCountriesHint: 'Ƙasar ba ta cikin jerin?', allCountriesList: 'Duba duk ƙasashe', noCountry: 'Ba a sami ƙasa ba', noCountryBody: 'Gwada wani rubutun.',
     signUpTitle: 'Rajista', signInTitle: 'Shiga', signUp: 'Yi rajista', signIn: 'Shiga', homeroomIdentity: 'Kun shiga da asusun Homeroom @{user}, don haka ba a buƙatar kalmar sirri. Zaɓi matsayinku.', homeroomIdentityAnon: 'Asusun Homeroom ɗinku ne ke shigar da ku, don haka ba a buƙatar kalmar sirri.',
     roleSeeker: 'Mai Neman Aiki', roleSeekerBody: 'Gina CV na zamani, daidaita ƙwarewarku kuma ku nemi ayyuka.', roleCompany: 'Kamfani', roleCompanyBody: 'Wallafa ayyuka kuma ku sarrafa masu nema.',
-    yourAccounts: 'Asusunku', noAccountsYet: 'Ba ku da asusun Loker Dunia tukuna. Ku fara yin rajista a matsayin Mai Neman Aiki ko Kamfani.', sampleAccounts: 'Asusun misali', sampleAccount: 'misali', unfinishedProfile: 'Bayanan kai ba su kammala ba',
+    yourAccounts: 'Asusunku', noAccountsYet: 'Ba ku da asusun Job Vacancy tukuna. Ku fara yin rajista a matsayin Mai Neman Aiki ko Kamfani.', sampleAccounts: 'Asusun misali', sampleAccount: 'misali', unfinishedProfile: 'Bayanan kai ba su kammala ba',
     companySignupTitle: 'Yi rajista a matsayin Kamfani', companySignupBody: 'Shigar da bayanan kamfaninku domin fara wallafa ayyuka.', companyName: 'Sunan kamfani', industry: 'Masanaʼanta', createCompany: 'Ƙirƙiri asusun kamfani', welcomeCompany: 'Barka da zuwa, {co}',
     createProfile: 'Ƙirƙiri bayanan kai', editProfile: 'Gyara bayanan kai', stepOf: 'Mataki na {n} cikin {total}', progress: 'Ci gaban rajista', stepBio: 'Bayanan sirri', stepEduExp: 'Ilimi da Ƙwarewa', stepSkills: 'Ƙwarewa', stepCerts: 'Takardun shaida',
     saveFinish: 'Adana kuma Kammala', saveChanges: 'Adana canje-canje', backToProfile: 'Koma ga bayanan kai',
@@ -84,6 +84,8 @@
     per_month: '/wata', per_year: '/shekara', per_hour: '/awa',
     cat_it: 'Fasahar Sadarwa', cat_health: 'Kiwon lafiya', cat_education: 'Ilimi', cat_finance: 'Kuɗi', cat_engineering: 'Injiniyanci', cat_creative: 'Fasahar ƙirƙira', cat_marketing: 'Tallace-tallace', cat_sales: 'Sayarwa da Hidima', cat_hospitality: 'Karɓar baƙi', cat_logistics: 'Sufuri da jigila', cat_agriculture: 'Noma',
     pageNotFound: 'Ba a sami shafin ba', pageNotFoundBody: 'Wannan mahaɗi bai wanzu ba.',
+    sampleListing: 'Misalin sanarwar aiki', sampleApplyOff: 'An rufe neman aiki',
+    sampleApplyNote: 'Wannan misalin sanarwar aiki ne da ke nuna yadda ayyuka suke a Loker Dunia. An rufe neman aiki.',
     showAllCountries: 'Nuna dukkan ƙasashe {n}', showFewer: 'Nuna kaɗan',
     notifications: 'Sanarwa', markAllRead: 'Yi alamar duka a matsayin an karanta', noNotifications: 'Babu sanarwa tukuna', noNotificationsBody: 'Ayyukan da suka dace da gwanintarka za su bayyana a nan.', notifUnread: '{n} ba a karanta ba',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Ana ƙara sabbin ayyuka. Yi bayani da ƙwarewarku don a sanar da ku lokacin da ake wallafa wani aiki mai dacewa.",
     jobsComingSeeker: "Ana ƙara sabbin ayyuka. Za mu sanar da ku lokacin da ake wallafa aiki mai dacewa da ƙwarewarku.",
     jobField: "Fannin aiki",
+    jobsInCountry: 'Ayyuka a {country}', jobLanguage: 'Harshen aiki', allLanguages: 'Dukkan harsuna', jobLangChip: 'Harshe: {lang}',
   },
 };

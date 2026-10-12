@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Telugu. A key missing here falls back to English. */
+/* Job Vacancy interface text: Telugu. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['te'] = {
   name: 'తెలుగు',
   locale: 'te-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ఉద్యోగాల ఆధారంగా', youHaveIt: 'మీకు ఉంది', pctRequired: '{n}% అవసరం', otherCountriesHint: 'దేశం జాబితాలో లేదా?', allCountriesList: 'అన్ని దేశాలను చూడండి', noCountry: 'దేశం కనుగొనబడలేదు', noCountryBody: 'మరో స్పెల్లింగ్‌తో ప్రయత్నించండి.',
     signUpTitle: 'సైన్ అప్', signInTitle: 'సైన్ ఇన్', signUp: 'సైన్ అప్', signIn: 'సైన్ ఇన్', homeroomIdentity: 'మీరు Homeroom ఖాతా @{user} తో సైన్ ఇన్ అయ్యారు, కాబట్టి పాస్‌వర్డ్ అవసరం లేదు. మీ పాత్రను ఎంచుకోండి.', homeroomIdentityAnon: 'మీ Homeroom ఖాతా మిమ్మల్ని సైన్ ఇన్ చేస్తుంది, కాబట్టి పాస్‌వర్డ్ అవసరం లేదు.',
     roleSeeker: 'ఉద్యోగార్థి', roleSeekerBody: 'డిజిటల్ CV ను రూపొందించండి, మీ నైపుణ్యాలను సరిపోల్చండి మరియు ఉద్యోగాలకు దరఖాస్తు చేయండి.', roleCompany: 'కంపెనీ', roleCompanyBody: 'ఉద్యోగాలను పోస్ట్ చేయండి మరియు దరఖాస్తుదారులను నిర్వహించండి.',
-    yourAccounts: 'మీ ఖాతాలు', noAccountsYet: 'మీకు ఇంకా Loker Dunia ఖాతా లేదు. ముందుగా ఉద్యోగార్థిగా లేదా కంపెనీగా సైన్ అప్ చేయండి.', sampleAccounts: 'నమూనా ఖాతాలు', sampleAccount: 'నమూనా', unfinishedProfile: 'అసంపూర్ణ ప్రొఫైల్',
+    yourAccounts: 'మీ ఖాతాలు', noAccountsYet: 'మీకు ఇంకా Job Vacancy ఖాతా లేదు. ముందుగా ఉద్యోగార్థిగా లేదా కంపెనీగా సైన్ అప్ చేయండి.', sampleAccounts: 'నమూనా ఖాతాలు', sampleAccount: 'నమూనా', unfinishedProfile: 'అసంపూర్ణ ప్రొఫైల్',
     companySignupTitle: 'కంపెనీగా సైన్ అప్ చేయండి', companySignupBody: 'ఉద్యోగాలను పోస్ట్ చేయడం ప్రారంభించడానికి మీ కంపెనీ వివరాలను నమోదు చేయండి.', companyName: 'కంపెనీ పేరు', industry: 'పరిశ్రమ', createCompany: 'కంపెనీ ఖాతాను సృష్టించండి', welcomeCompany: 'స్వాగతం, {co}',
     createProfile: 'ప్రొఫైల్‌ను సృష్టించండి', editProfile: 'ప్రొఫైల్‌ను సవరించండి', stepOf: '{total}లో దశ {n}', progress: 'సైన్ అప్ పురోగతి', stepBio: 'వ్యక్తిగత వివరాలు', stepEduExp: 'విద్య & అనుభవం', stepSkills: 'నైపుణ్యాలు', stepCerts: 'సర్టిఫికెట్లు',
     saveFinish: 'సేవ్ చేసి ముగించండి', saveChanges: 'మార్పులను సేవ్ చేయండి', backToProfile: 'ప్రొఫైల్‌కు తిరిగి వెళ్లండి',
@@ -84,6 +84,8 @@
     per_month: '/నెల', per_year: '/సం.', per_hour: '/గం.',
     cat_it: 'IT', cat_health: 'ఆరోగ్య సంరక్షణ', cat_education: 'విద్య', cat_finance: 'ఆర్థికం', cat_engineering: 'ఇంజనీరింగ్', cat_creative: 'సృజనాత్మకం', cat_marketing: 'మార్కెటింగ్', cat_sales: 'అమ్మకాలు & సేవ', cat_hospitality: 'ఆతిథ్యం', cat_logistics: 'లాజిస్టిక్స్', cat_agriculture: 'వ్యవసాయం',
     pageNotFound: 'పేజీ కనుగొనబడలేదు', pageNotFoundBody: 'ఈ లింక్ ఉనికిలో లేదు.',
+    sampleListing: 'నమూనా జాబితా', sampleApplyOff: 'దరఖాస్తులు ఆపివేయబడ్డాయి',
+    sampleApplyNote: 'Loker Dunia లో ఉద్యోగాలు ఎలా కనిపిస్తాయో చూపించే నమూనా జాబితా ఇది. దరఖాస్తులు ఆపివేయబడ్డాయి.',
     showAllCountries: 'మొత్తం {n} దేశాలను చూపించు', showFewer: 'తక్కువ చూపించు',
     notifications: 'నోటిఫికేషన్లు', markAllRead: 'అన్నింటినీ చదివినట్లు గుర్తించండి', noNotifications: 'ఇంకా నోటిఫికేషన్లు లేవు', noNotificationsBody: 'మీ నైపుణ్యాలకు సరిపోయే ఉద్యోగాలు ఇక్కడ కనిపిస్తాయి.', notifUnread: '{n} చదవనివి',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "కొత్త ఉద్యోగాలు జోడించబడుతున్నాయి. సరిపోయే ఉద్యోగం ప్రచురించబడినప్పుడు తెలియజేయడానికి మీ నైపుణ్యాలతో ప్రొఫైల్ సృష్టించండి.",
     jobsComingSeeker: "కొత్త ఉద్యోగాలు జోడించబడుతున్నాయి. మీ నైపుణ్యాలకు సరిపోయే ఉద్యోగం ప్రచురించబడినప్పుడు మేము మిమ్మల్ని తెలియజేస్తాము.",
     jobField: "పని రంగం",
+    jobsInCountry: '{country}లో ఉద్యోగాలు', jobLanguage: 'ఉద్యోగ భాష', allLanguages: 'అన్ని భాషలు', jobLangChip: 'భాష: {lang}',
   },
 };

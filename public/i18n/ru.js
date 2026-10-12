@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Russian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Russian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ru'] = {
   name: 'Русский',
   locale: 'ru-RU',
@@ -35,7 +35,7 @@
     skillsBasis: 'На основе вакансий: {n}', youHaveIt: 'У вас есть', pctRequired: 'Требуется в {n}%', otherCountriesHint: 'Нет нужной страны?', allCountriesList: 'Все страны', noCountry: 'Страна не найдена', noCountryBody: 'Попробуйте другое написание.',
     signUpTitle: 'Регистрация', signInTitle: 'Вход', signUp: 'Зарегистрироваться', signIn: 'Войти', homeroomIdentity: 'Вы вошли с аккаунтом Homeroom @{user}, поэтому пароль не нужен. Выберите свою роль.', homeroomIdentityAnon: 'Вход выполняется через ваш аккаунт Homeroom, поэтому пароль не нужен.',
     roleSeeker: 'Соискатель', roleSeekerBody: 'Создайте электронное резюме, сопоставьте навыки и откликайтесь на вакансии.', roleCompany: 'Компания', roleCompanyBody: 'Размещайте вакансии и работайте с кандидатами.',
-    yourAccounts: 'Ваши аккаунты', noAccountsYet: 'У вас ещё нет аккаунта Loker Dunia. Сначала зарегистрируйтесь как соискатель или компания.', sampleAccounts: 'Примеры аккаунтов', sampleAccount: 'пример', unfinishedProfile: 'Незаполненный профиль',
+    yourAccounts: 'Ваши аккаунты', noAccountsYet: 'У вас ещё нет аккаунта Job Vacancy. Сначала зарегистрируйтесь как соискатель или компания.', sampleAccounts: 'Примеры аккаунтов', sampleAccount: 'пример', unfinishedProfile: 'Незаполненный профиль',
     companySignupTitle: 'Регистрация компании', companySignupBody: 'Укажите данные компании, чтобы начать размещать вакансии.', companyName: 'Название компании', industry: 'Отрасль', createCompany: 'Создать аккаунт компании', welcomeCompany: 'Добро пожаловать, {co}',
     createProfile: 'Создать профиль', editProfile: 'Редактировать профиль', stepOf: 'Шаг {n} из {total}', progress: 'Ход регистрации', stepBio: 'Личные данные', stepEduExp: 'Образование и опыт', stepSkills: 'Навыки', stepCerts: 'Сертификаты',
     saveFinish: 'Сохранить и завершить', saveChanges: 'Сохранить изменения', backToProfile: 'Вернуться к профилю',
@@ -84,6 +84,8 @@
     per_month: '/мес.', per_year: '/год', per_hour: '/час',
     cat_it: 'ИТ', cat_health: 'Здравоохранение', cat_education: 'Образование', cat_finance: 'Финансы', cat_engineering: 'Инженерия', cat_creative: 'Творчество', cat_marketing: 'Маркетинг', cat_sales: 'Продажи и сервис', cat_hospitality: 'Гостеприимство', cat_logistics: 'Логистика', cat_agriculture: 'Сельское хозяйство',
     pageNotFound: 'Страница не найдена', pageNotFoundBody: 'Такой ссылки не существует.',
+    sampleListing: 'Пример вакансии', sampleApplyOff: 'Отклики отключены',
+    sampleApplyNote: 'Это пример вакансии, показывающий, как выглядят вакансии в Loker Dunia. Отклики отключены.',
     showAllCountries: 'Показать все страны ({n})', showFewer: 'Показать меньше',
     notifications: 'Уведомления', markAllRead: 'Отметить все как прочитанные', noNotifications: 'Пока нет уведомлений', noNotificationsBody: 'Здесь появятся вакансии, подходящие под ваши навыки.', notifUnread: '{n} непрочитанных',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Вакансии добавляются. Создайте профиль с навыками, чтобы получить уведомление, когда появится подходящая вакансия.",
     jobsComingSeeker: "Вакансии добавляются. Мы сообщим, когда появится вакансия, подходящая под ваши навыки.",
     jobField: "Сфера деятельности",
+    jobsInCountry: 'Вакансии в {country}', jobLanguage: 'Язык вакансии', allLanguages: 'Все языки', jobLangChip: 'Язык: {lang}',
   },
 };

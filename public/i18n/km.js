@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Khmer. A key missing here falls back to English. */
+/* Job Vacancy interface text: Khmer. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['km'] = {
   name: 'ខ្មែរ',
   locale: 'km-KH',
@@ -35,7 +35,7 @@
     skillsBasis: 'ផ្អែកលើការងារ {n}', youHaveIt: 'អ្នកមានហើយ', pctRequired: 'តម្រូវ {n}%', otherCountriesHint: 'រកមិនឃើញប្រទេសរបស់អ្នក?', allCountriesList: 'មើលប្រទេសទាំងអស់', noCountry: 'រកមិនឃើញប្រទេស', noCountryBody: 'សូមសាកល្បងអក្ខរាវិរុទ្ធផ្សេង។',
     signUpTitle: 'ចុះឈ្មោះ', signInTitle: 'ចូល', signUp: 'ចុះឈ្មោះ', signIn: 'ចូល', homeroomIdentity: 'អ្នកបានចូលដោយគណនី Homeroom @{user} ដូច្នេះមិនត្រូវការពាក្យសម្ងាត់ទេ។ សូមជ្រើសរើសតួនាទីរបស់អ្នក។', homeroomIdentityAnon: 'គណនី Homeroom របស់អ្នកនឹងនាំអ្នកចូល ដូច្នេះមិនត្រូវការពាក្យសម្ងាត់ទេ។',
     roleSeeker: 'អ្នកស្វែងរកការងារ', roleSeekerBody: 'បង្កើត CV ឌីជីថល ផ្គូផ្គងជំនាញ និងដាក់ពាក្យការងារ។', roleCompany: 'ក្រុមហ៊ុន', roleCompanyBody: 'ប្រកាសការងារ និងគ្រប់គ្រងបេក្ខជន។',
-    yourAccounts: 'គណនីរបស់អ្នក', noAccountsYet: 'អ្នកមិនទាន់មានគណនី Loker Dunia នៅឡើយទេ។ សូមចុះឈ្មោះជាអ្នកស្វែងរកការងារ ឬក្រុមហ៊ុនជាមុនសិន។', sampleAccounts: 'គណនីគំរូ', sampleAccount: 'គំរូ', unfinishedProfile: 'ប្រវត្តិរូបមិនទាន់បញ្ចប់',
+    yourAccounts: 'គណនីរបស់អ្នក', noAccountsYet: 'អ្នកមិនទាន់មានគណនី Job Vacancy នៅឡើយទេ។ សូមចុះឈ្មោះជាអ្នកស្វែងរកការងារ ឬក្រុមហ៊ុនជាមុនសិន។', sampleAccounts: 'គណនីគំរូ', sampleAccount: 'គំរូ', unfinishedProfile: 'ប្រវត្តិរូបមិនទាន់បញ្ចប់',
     companySignupTitle: 'ចុះឈ្មោះជាក្រុមហ៊ុន', companySignupBody: 'បញ្ចូលព័ត៌មានក្រុមហ៊ុនរបស់អ្នក ដើម្បីចាប់ផ្តើមប្រកាសការងារ។', companyName: 'ឈ្មោះក្រុមហ៊ុន', industry: 'វិស័យ', createCompany: 'បង្កើតគណនីក្រុមហ៊ុន', welcomeCompany: 'សូមស្វាគមន៍ {co}',
     createProfile: 'បង្កើតប្រវត្តិរូប', editProfile: 'កែសម្រួលប្រវត្តិរូប', stepOf: 'ជំហាន {n} នៃ {total}', progress: 'វឌ្ឍនភាពនៃការចុះឈ្មោះ', stepBio: 'ព័ត៌មានផ្ទាល់ខ្លួន', stepEduExp: 'ការសិក្សា និងបទពិសោធន៍', stepSkills: 'ជំនាញ', stepCerts: 'វិញ្ញាបនបត្រ',
     saveFinish: 'រក្សាទុក និងបញ្ចប់', saveChanges: 'រក្សាទុកការផ្លាស់ប្តូរ', backToProfile: 'ត្រឡប់ទៅប្រវត្តិរូប',
@@ -84,6 +84,8 @@
     per_month: '/ខែ', per_year: '/ឆ្នាំ', per_hour: '/ម៉ោង',
     cat_it: 'IT', cat_health: 'សុខាភិបាល', cat_education: 'អប់រំ', cat_finance: 'ហិរញ្ញវត្ថុ', cat_engineering: 'វិស្វកម្ម', cat_creative: 'ច្នៃប្រឌិត', cat_marketing: 'ទីផ្សារ', cat_sales: 'លក់ និងសេវាកម្ម', cat_hospitality: 'បដិសណ្ឋារកិច្ច', cat_logistics: 'ភស្តុភារ', cat_agriculture: 'កសិកម្ម',
     pageNotFound: 'រកមិនឃើញទំព័រ', pageNotFoundBody: 'តំណនេះមិនមានទេ។',
+    sampleListing: 'ការផ្សាយឧទាហរណ៍', sampleApplyOff: 'ការដាក់ពាក្យត្រូវបានបិទ',
+    sampleApplyNote: 'នេះជាការផ្សាយឧទាហរណ៍ ដែលបង្ហាញពីរូបរាងការងារនៅលើ Loker Dunia។ ការដាក់ពាក្យត្រូវបានបិទ។',
     showAllCountries: 'បង្ហាញប្រទេសទាំង {n}', showFewer: 'បង្ហាញតិចជាង',
     notifications: 'ការជូនដំណឹង', markAllRead: 'សម្គាល់ទាំងអស់ថាបានអាន', noNotifications: 'មិនទាន់មានការជូនដំណឹងទេ', noNotificationsBody: 'ការងារដែលត្រូវនឹងជំនាញរបស់អ្នកនឹងបង្ហាញនៅទីនេះ។', notifUnread: '{n} មិនទាន់អាន',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "កំពុងបន្ថែមកិច្ចការងារថ្មី។ បង្កើតព័ត៌មានផ្ទាល់ខ្លួនជាមួយសមត្ថភាពរបស់អ្នក ដើម្បីទទួលបានការជូនដំណឹងនៅពេលមានការងារត្រូវគ្នាត្រូវបានផ្សាយ។",
     jobsComingSeeker: "កំពុងបន្ថែមកិច្ចការងារថ្មី។ យើងនឹងជូនដំណឹងអ្នកនៅពេលមានការងារត្រូវនឹងសមត្ថភាពរបស់អ្នកត្រូវបានផ្សាយ។",
     jobField: "វិស័យការងារ",
+    jobsInCountry: 'ការងារនៅ {country}', jobLanguage: 'ភាសាការងារ', allLanguages: 'ភាសាទាំងអស់', jobLangChip: 'ភាសា: {lang}',
   },
 };

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Javanese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Javanese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['jv'] = {
   name: 'Basa Jawa',
   locale: 'jv-ID',
@@ -35,7 +35,7 @@
     skillsBasis: 'Adhedhasar {n} lowongan', youHaveIt: 'Panjenengan gadhah', pctRequired: '{n}% mbetahaken', otherCountriesHint: 'Negari mboten wonten ing daftar?', allCountriesList: 'Tingali sedaya negari', noCountry: 'Negari mboten kapanggih', noCountryBody: 'Cobi ejaan sanes.',
     signUpTitle: 'Ndaftar', signInTitle: 'Mlebet', signUp: 'Ndaftar', signIn: 'Mlebet', homeroomIdentity: 'Panjenengan mlebet ngagem akun Homeroom @{user}, pramila mboten mbetahaken sandhi. Mangga pilih peran panjenengan.', homeroomIdentityAnon: 'Akun Homeroom panjenengan dipunagem kangge mlebet, pramila mboten mbetahaken sandhi.',
     roleSeeker: 'Pados Padamelan', roleSeekerBody: 'Damel CV digital, cocokaken kaprigelan lan nglamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan lan ngatur pelamar.',
-    yourAccounts: 'Akun panjenengan', noAccountsYet: 'Panjenengan dereng gadhah akun Loker Dunia. Mangga ndaftar rumiyin minangka Pados Padamelan utawi Perusahaan.', sampleAccounts: 'Akun tuladha', sampleAccount: 'tuladha', unfinishedProfile: 'Profil dereng jangkep',
+    yourAccounts: 'Akun panjenengan', noAccountsYet: 'Panjenengan dereng gadhah akun Job Vacancy. Mangga ndaftar rumiyin minangka Pados Padamelan utawi Perusahaan.', sampleAccounts: 'Akun tuladha', sampleAccount: 'tuladha', unfinishedProfile: 'Profil dereng jangkep',
     companySignupTitle: 'Ndaftar minangka Perusahaan', companySignupBody: 'Lebetaken data perusahaan panjenengan kangge miwiti masang lowongan.', companyName: 'Nami perusahaan', industry: 'Industri', createCompany: 'Damel akun perusahaan', welcomeCompany: 'Sugeng rawuh, {co}',
     createProfile: 'Damel profil', editProfile: 'Owahi profil', stepOf: 'Langkah {n} saking {total}', progress: 'Kemajengan pendaftaran', stepBio: 'Data pribadi', stepEduExp: 'Pendhidhikan & Pengalaman', stepSkills: 'Kaprigelan', stepCerts: 'Sertifikat',
     saveFinish: 'Simpen & Rampung', saveChanges: 'Simpen owahan', backToProfile: 'Wangsul dhateng profil',
@@ -84,6 +84,8 @@
     per_month: '/wln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kasarasan', cat_education: 'Pendhidhikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Tetanen',
     pageNotFound: 'Kaca mboten kapanggih', pageNotFoundBody: 'Link punika mboten wonten.',
+    sampleListing: 'Conto lowongan', sampleApplyOff: 'Lamaran dipateni',
+    sampleApplyNote: 'Iki conto lowongan kanggo nuduhake tampilan pegaweyan ing Loker Dunia. Lamaran dipateni.',
     showAllCountries: 'Tampilake kabeh {n} negara', showFewer: 'Tampilake luwih sithik',
     notifications: 'Kabar', markAllRead: 'Tandhani kabeh wis diwaca', noNotifications: 'Durung ana kabar', noNotificationsBody: 'Lowongan sing cocog karo skill sampeyan bakal katon ing kene.', notifUnread: '{n} durung diwaca',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Lowongan anyar terus ditambahake. Gawe profil karo keahlian supaya dingerteni nalika ana lowongan sing cocok dibukak.",
     jobsComingSeeker: "Lowongan anyar terus ditambahake. Kita bakal ngandharake nalika ana lowongan sing cocok karo keahlianmu dibukak.",
     jobField: "Bidang pakaryan",
+    jobsInCountry: 'Lowongan ing {country}', jobLanguage: 'Basa pakaryan', allLanguages: 'Kabeh basa', jobLangChip: 'Basa: {lang}',
   },
 };

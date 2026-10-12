@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Spanish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Spanish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['es'] = {
   name: 'Español',
   locale: 'es-ES',
@@ -35,7 +35,7 @@
     skillsBasis: 'Basado en {n} ofertas', youHaveIt: 'La tiene', pctRequired: '{n} % la exige', otherCountriesHint: '¿Su país no aparece?', allCountriesList: 'Ver todos los países', noCountry: 'No se encontró ningún país', noCountryBody: 'Pruebe con otra ortografía.',
     signUpTitle: 'Registrarse', signInTitle: 'Acceder', signUp: 'Registrarse', signIn: 'Acceder', homeroomIdentity: 'Ha accedido con la cuenta de Homeroom @{user}, así que no necesita contraseña. Elija su rol.', homeroomIdentityAnon: 'Su cuenta de Homeroom le identifica, así que no necesita contraseña.',
     roleSeeker: 'Candidato', roleSeekerBody: 'Cree un CV digital, compare sus habilidades y postúlese a ofertas.', roleCompany: 'Empresa', roleCompanyBody: 'Publique ofertas y gestione candidatos.',
-    yourAccounts: 'Sus cuentas', noAccountsYet: 'Aún no tiene una cuenta de Loker Dunia. Regístrese primero como candidato o como empresa.', sampleAccounts: 'Cuentas de ejemplo', sampleAccount: 'ejemplo', unfinishedProfile: 'Perfil incompleto',
+    yourAccounts: 'Sus cuentas', noAccountsYet: 'Aún no tiene una cuenta de Job Vacancy. Regístrese primero como candidato o como empresa.', sampleAccounts: 'Cuentas de ejemplo', sampleAccount: 'ejemplo', unfinishedProfile: 'Perfil incompleto',
     companySignupTitle: 'Registrarse como empresa', companySignupBody: 'Introduzca los datos de su empresa para empezar a publicar ofertas.', companyName: 'Nombre de la empresa', industry: 'Sector', createCompany: 'Crear cuenta de empresa', welcomeCompany: 'Bienvenido, {co}',
     createProfile: 'Crear perfil', editProfile: 'Editar perfil', stepOf: 'Paso {n} de {total}', progress: 'Progreso del registro', stepBio: 'Datos personales', stepEduExp: 'Formación y experiencia', stepSkills: 'Habilidades', stepCerts: 'Certificados',
     saveFinish: 'Guardar y finalizar', saveChanges: 'Guardar cambios', backToProfile: 'Volver al perfil',
@@ -84,6 +84,8 @@
     per_month: '/mes', per_year: '/año', per_hour: '/h',
     cat_it: 'TI', cat_health: 'Sanidad', cat_education: 'Educación', cat_finance: 'Finanzas', cat_engineering: 'Ingeniería', cat_creative: 'Creatividad', cat_marketing: 'Marketing', cat_sales: 'Ventas y atención', cat_hospitality: 'Hostelería', cat_logistics: 'Logística', cat_agriculture: 'Agricultura',
     pageNotFound: 'Página no encontrada', pageNotFoundBody: 'Este enlace no existe.',
+    sampleListing: 'Oferta de ejemplo', sampleApplyOff: 'Las solicitudes están desactivadas',
+    sampleApplyNote: 'Esta es una oferta de ejemplo que muestra cómo se ven los empleos en Loker Dunia. Las solicitudes están desactivadas.',
     showAllCountries: 'Mostrar los {n} países', showFewer: 'Mostrar menos',
     notifications: 'Notificaciones', markAllRead: 'Marcar todo como leído', noNotifications: 'Aún no hay notificaciones', noNotificationsBody: 'Aquí aparecerán los empleos que coincidan con tus habilidades.', notifUnread: '{n} sin leer',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Se están publicando empleos. Crea un perfil con tus habilidades para que te avisemos cuando se publique uno que coincida.",
     jobsComingSeeker: "Se están publicando empleos. Te avisaremos cuando se publique uno que coincida con tus habilidades.",
     jobField: "Área de trabajo",
+    jobsInCountry: 'Empleos en {country}', jobLanguage: 'Idioma del empleo', allLanguages: 'Todos los idiomas', jobLangChip: 'Idioma: {lang}',
   },
 };

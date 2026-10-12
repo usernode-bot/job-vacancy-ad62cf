@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: English. Default language and the fallback for every other one.
+/* Job Vacancy interface text: English. Default language and the fallback for every other one.
  *
  * To add a language: copy this file to public/i18n/<code>.js, translate every
  * value (keep the keys and the {placeholders}), change the code, name and
@@ -41,7 +41,7 @@
     skillsBasis: 'Based on {n} jobs', youHaveIt: 'You have it', pctRequired: '{n}% required', otherCountriesHint: 'Country not listed?', allCountriesList: 'See all countries', noCountry: 'No country found', noCountryBody: 'Try another spelling.',
     signUpTitle: 'Sign up', signInTitle: 'Sign in', signUp: 'Sign up', signIn: 'Sign in', homeroomIdentity: 'You are signed in with the Homeroom account @{user}, so no password is needed. Choose your role.', homeroomIdentityAnon: 'Your Homeroom account signs you in, so no password is needed.',
     roleSeeker: 'Job Seeker', roleSeekerBody: 'Build a digital CV, match your skills and apply to jobs.', roleCompany: 'Company', roleCompanyBody: 'Post jobs and manage applicants.',
-    yourAccounts: 'Your accounts', noAccountsYet: 'You do not have a Loker Dunia account yet. Sign up as a Job Seeker or a Company first.', sampleAccounts: 'Sample accounts', sampleAccount: 'sample', unfinishedProfile: 'Unfinished profile',
+    yourAccounts: 'Your accounts', noAccountsYet: 'You do not have a Job Vacancy account yet. Sign up as a Job Seeker or a Company first.', sampleAccounts: 'Sample accounts', sampleAccount: 'sample', unfinishedProfile: 'Unfinished profile',
     companySignupTitle: 'Sign up as a Company', companySignupBody: 'Enter your company details to start posting jobs.', companyName: 'Company name', industry: 'Industry', createCompany: 'Create company account', welcomeCompany: 'Welcome, {co}',
     createProfile: 'Create profile', editProfile: 'Edit profile', stepOf: 'Step {n} of {total}', progress: 'Sign-up progress', stepBio: 'Personal details', stepEduExp: 'Education & Experience', stepSkills: 'Skills', stepCerts: 'Certificates',
     saveFinish: 'Save & Finish', saveChanges: 'Save changes', backToProfile: 'Back to profile',
@@ -90,6 +90,8 @@
     per_month: '/mo', per_year: '/yr', per_hour: '/hr',
     cat_it: 'IT', cat_health: 'Healthcare', cat_education: 'Education', cat_finance: 'Finance', cat_engineering: 'Engineering', cat_creative: 'Creative', cat_marketing: 'Marketing', cat_sales: 'Sales & Service', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agriculture',
     pageNotFound: 'Page not found', pageNotFoundBody: 'This link does not exist.',
+    sampleListing: 'Sample listing', sampleApplyOff: 'Applications are off',
+    sampleApplyNote: 'This is a sample listing that shows what jobs on Loker Dunia look like. Applications are off.',
     showAllCountries: 'Show all {n} countries', showFewer: 'Show fewer',
     notifications: 'Notifications', markAllRead: 'Mark all as read', noNotifications: 'No notifications yet', noNotificationsBody: 'Jobs that match your skills will show up here.', notifUnread: '{n} unread',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -99,5 +101,6 @@
     jobsComingGuest: "Jobs are being added. Create a profile with your skills to get notified when a matching job is posted.",
     jobsComingSeeker: "Jobs are being added. We will notify you when a job that matches your skills is posted.",
     jobField: "Field of work",
+    jobsInCountry: 'Jobs in {country}', jobLanguage: 'Job language', allLanguages: 'All languages', jobLangChip: 'Language: {lang}',
   },
 };

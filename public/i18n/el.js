@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Greek. A key missing here falls back to English. */
+/* Job Vacancy interface text: Greek. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['el'] = {
   name: 'Ελληνικά',
   locale: 'el-GR',
@@ -35,7 +35,7 @@
     skillsBasis: 'Με βάση {n} θέσεις', youHaveIt: 'Την έχετε', pctRequired: '{n}% απαιτείται', otherCountriesHint: 'Η χώρα δεν υπάρχει στη λίστα;', allCountriesList: 'Προβολή όλων των χωρών', noCountry: 'Δεν βρέθηκε χώρα', noCountryBody: 'Δοκιμάστε διαφορετική ορθογραφία.',
     signUpTitle: 'Εγγραφή', signInTitle: 'Σύνδεση', signUp: 'Εγγραφή', signIn: 'Σύνδεση', homeroomIdentity: 'Έχετε συνδεθεί με τον λογαριασμό Homeroom @{user}, οπότε δεν χρειάζεται κωδικός. Επιλέξτε τον ρόλο σας.', homeroomIdentityAnon: 'Η σύνδεση γίνεται με τον λογαριασμό σας στο Homeroom, οπότε δεν χρειάζεται κωδικός.',
     roleSeeker: 'Υποψήφιος', roleSeekerBody: 'Δημιουργήστε ψηφιακό βιογραφικό, αντιστοιχίστε τις δεξιότητές σας και κάντε αιτήσεις.', roleCompany: 'Εταιρεία', roleCompanyBody: 'Δημοσιεύστε θέσεις και διαχειριστείτε υποψηφίους.',
-    yourAccounts: 'Οι λογαριασμοί σας', noAccountsYet: 'Δεν έχετε ακόμη λογαριασμό στο Loker Dunia. Εγγραφείτε πρώτα ως Υποψήφιος ή ως Εταιρεία.', sampleAccounts: 'Δείγματα λογαριασμών', sampleAccount: 'δείγμα', unfinishedProfile: 'Ημιτελές προφίλ',
+    yourAccounts: 'Οι λογαριασμοί σας', noAccountsYet: 'Δεν έχετε ακόμη λογαριασμό στο Job Vacancy. Εγγραφείτε πρώτα ως Υποψήφιος ή ως Εταιρεία.', sampleAccounts: 'Δείγματα λογαριασμών', sampleAccount: 'δείγμα', unfinishedProfile: 'Ημιτελές προφίλ',
     companySignupTitle: 'Εγγραφή ως Εταιρεία', companySignupBody: 'Συμπληρώστε τα στοιχεία της εταιρείας σας για να αρχίσετε να δημοσιεύετε θέσεις.', companyName: 'Επωνυμία εταιρείας', industry: 'Κλάδος', createCompany: 'Δημιουργία εταιρικού λογαριασμού', welcomeCompany: 'Καλώς ήρθατε, {co}',
     createProfile: 'Δημιουργία προφίλ', editProfile: 'Επεξεργασία προφίλ', stepOf: 'Βήμα {n} από {total}', progress: 'Πρόοδος εγγραφής', stepBio: 'Προσωπικά στοιχεία', stepEduExp: 'Εκπαίδευση και Εμπειρία', stepSkills: 'Δεξιότητες', stepCerts: 'Πιστοποιητικά',
     saveFinish: 'Αποθήκευση και Ολοκλήρωση', saveChanges: 'Αποθήκευση αλλαγών', backToProfile: 'Επιστροφή στο προφίλ',
@@ -84,6 +84,8 @@
     per_month: '/μήνα', per_year: '/έτος', per_hour: '/ώρα',
     cat_it: 'Πληροφορική', cat_health: 'Υγεία', cat_education: 'Εκπαίδευση', cat_finance: 'Οικονομικά', cat_engineering: 'Μηχανική', cat_creative: 'Δημιουργικά', cat_marketing: 'Μάρκετινγκ', cat_sales: 'Πωλήσεις και Εξυπηρέτηση', cat_hospitality: 'Φιλοξενία', cat_logistics: 'Εφοδιαστική', cat_agriculture: 'Γεωργία',
     pageNotFound: 'Η σελίδα δεν βρέθηκε', pageNotFoundBody: 'Αυτός ο σύνδεσμος δεν υπάρχει.',
+    sampleListing: 'Δείγμα αγγελίας', sampleApplyOff: 'Οι αιτήσεις είναι απενεργοποιημένες',
+    sampleApplyNote: 'Αυτή είναι μια δείγμα αγγελίας που δείχνει πώς φαίνονται οι θέσεις εργασίας στο Loker Dunia. Οι αιτήσεις είναι απενεργοποιημένες.',
     showAllCountries: 'Εμφάνιση και των {n} χωρών', showFewer: 'Εμφάνιση λιγότερων',
     notifications: 'Ειδοποιήσεις', markAllRead: 'Σήμανση όλων ως αναγνωσμένων', noNotifications: 'Δεν υπάρχουν ειδοποιήσεις ακόμα', noNotificationsBody: 'Εδώ θα εμφανίζονται θέσεις που ταιριάζουν με τις δεξιότητές σας.', notifUnread: '{n} μη αναγνωσμένες',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Προστίθενται νέες θέσεις εργασίας. Δημιουργήστε προφίλ με τις δεξιότητές σας για να λαμβάνετε ειδοποίηση όταν δημοσιεύεται αντίστοιχη θέση.",
     jobsComingSeeker: "Προστίθενται νέες θέσεις εργασίας. Θα σας ενημερώσουμε όταν δημοσιευτεί θέση που ταιριάζει με τις δεξιότητές σας.",
     jobField: "Επαγγελματικό πεδίο",
+    jobsInCountry: 'Θέσεις εργασίας σε {country}', jobLanguage: 'Γλώσσα εργασίας', allLanguages: 'Όλες οι γλώσσες', jobLangChip: 'Γλώσσα: {lang}',
   },
 };

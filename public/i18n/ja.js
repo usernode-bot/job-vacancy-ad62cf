@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Japanese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Japanese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {}).ja = {
   name: '日本語',
   locale: 'ja-JP',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} 件の求人に基づく', youHaveIt: '保有済み', pctRequired: '{n}% が必須', otherCountriesHint: 'お探しの国が見つかりませんか？', allCountriesList: 'すべての国を表示', noCountry: '国が見つかりません', noCountryBody: '別のつづりでお試しください。',
     signUpTitle: '新規登録', signInTitle: 'ログイン', signUp: '新規登録', signIn: 'ログイン', homeroomIdentity: 'Homeroom アカウント @{user} でログインしているため、パスワードは不要です。役割を選択してください。', homeroomIdentityAnon: 'Homeroom アカウントでログインするため、パスワードは不要です。',
     roleSeeker: '求職者', roleSeekerBody: 'デジタル履歴書を作成し、スキルをマッチさせて求人に応募できます。', roleCompany: '企業', roleCompanyBody: '求人を掲載し、応募者を管理できます。',
-    yourAccounts: 'あなたのアカウント', noAccountsYet: 'Loker Dunia のアカウントはまだありません。まず求職者または企業として登録してください。', sampleAccounts: 'サンプルアカウント', sampleAccount: 'サンプル', unfinishedProfile: '未完成のプロフィール',
+    yourAccounts: 'あなたのアカウント', noAccountsYet: 'Job Vacancy のアカウントはまだありません。まず求職者または企業として登録してください。', sampleAccounts: 'サンプルアカウント', sampleAccount: 'サンプル', unfinishedProfile: '未完成のプロフィール',
     companySignupTitle: '企業として登録', companySignupBody: '企業情報を入力して、求人の掲載を始めましょう。', companyName: '企業名', industry: '業界', createCompany: '企業アカウントを作成', welcomeCompany: 'ようこそ、{co} 様',
     createProfile: 'プロフィールを作成', editProfile: 'プロフィールを編集', stepOf: 'ステップ {n}/{total}', progress: '登録の進捗', stepBio: '基本情報', stepEduExp: '学歴・職歴', stepSkills: 'スキル', stepCerts: '資格',
     saveFinish: '保存して完了', saveChanges: '変更を保存', backToProfile: 'プロフィールに戻る',
@@ -84,6 +84,8 @@
     per_month: '/月', per_year: '/年', per_hour: '/時',
     cat_it: 'IT', cat_health: '医療・ヘルスケア', cat_education: '教育', cat_finance: '金融', cat_engineering: 'エンジニアリング', cat_creative: 'クリエイティブ', cat_marketing: 'マーケティング', cat_sales: '営業・サービス', cat_hospitality: 'ホスピタリティ', cat_logistics: '物流', cat_agriculture: '農業',
     pageNotFound: 'ページが見つかりません', pageNotFoundBody: 'このリンクは存在しません。',
+    sampleListing: 'サンプル求人', sampleApplyOff: '応募は受け付けていません',
+    sampleApplyNote: 'これは Loker Dunia の求人がどのように表示されるかを示すサンプル求人です。応募は受け付けていません。',
     showAllCountries: '{n}か国すべてを表示', showFewer: '表示を減らす',
     notifications: '通知', markAllRead: 'すべて既読にする', noNotifications: '通知はまだありません', noNotificationsBody: 'スキルに合う求人がここに表示されます。', notifUnread: '未読 {n} 件',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "求人を追加中です。マッチする求人が投稿されたときにお知らせを受け取るには、スキルを登録したプロフィールを作成してください。",
     jobsComingSeeker: "求人を追加中です。あなたのスキルに合う求人が投稿されたらお知らせします。",
     jobField: "職種",
+    jobsInCountry: '{country}の求人', jobLanguage: '求人の言語', allLanguages: 'すべての言語', jobLangChip: '言語: {lang}',
   },
 };

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Swedish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Swedish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['sv'] = {
   name: 'Svenska',
   locale: 'sv-SE',
@@ -35,7 +35,7 @@
     skillsBasis: 'Baserat på {n} jobb', youHaveIt: 'Du har den', pctRequired: '{n} % kräver', otherCountriesHint: 'Finns inte landet med?', allCountriesList: 'Visa alla länder', noCountry: 'Inget land hittades', noCountryBody: 'Prova en annan stavning.',
     signUpTitle: 'Registrera dig', signInTitle: 'Logga in', signUp: 'Registrera dig', signIn: 'Logga in', homeroomIdentity: 'Du är inloggad med Homeroom-kontot @{user}, så inget lösenord behövs. Välj din roll.', homeroomIdentityAnon: 'Du loggas in med ditt Homeroom-konto, så inget lösenord behövs.',
     roleSeeker: 'Arbetssökande', roleSeekerBody: 'Skapa ett digitalt CV, matcha dina färdigheter och sök jobb.', roleCompany: 'Företag', roleCompanyBody: 'Publicera jobb och hantera sökande.',
-    yourAccounts: 'Dina konton', noAccountsYet: 'Du har inget Loker Dunia-konto ännu. Registrera dig först som arbetssökande eller företag.', sampleAccounts: 'Exempelkonton', sampleAccount: 'exempel', unfinishedProfile: 'Ofullständig profil',
+    yourAccounts: 'Dina konton', noAccountsYet: 'Du har inget Job Vacancy-konto ännu. Registrera dig först som arbetssökande eller företag.', sampleAccounts: 'Exempelkonton', sampleAccount: 'exempel', unfinishedProfile: 'Ofullständig profil',
     companySignupTitle: 'Registrera dig som företag', companySignupBody: 'Ange företagets uppgifter för att börja publicera jobb.', companyName: 'Företagsnamn', industry: 'Bransch', createCompany: 'Skapa företagskonto', welcomeCompany: 'Välkommen, {co}',
     createProfile: 'Skapa profil', editProfile: 'Redigera profil', stepOf: 'Steg {n} av {total}', progress: 'Registreringsförlopp', stepBio: 'Personuppgifter', stepEduExp: 'Utbildning och erfarenhet', stepSkills: 'Färdigheter', stepCerts: 'Certifikat',
     saveFinish: 'Spara och slutför', saveChanges: 'Spara ändringar', backToProfile: 'Tillbaka till profilen',
@@ -84,6 +84,8 @@
     per_month: '/mån', per_year: '/år', per_hour: '/tim',
     cat_it: 'IT', cat_health: 'Vård och hälsa', cat_education: 'Utbildning', cat_finance: 'Ekonomi', cat_engineering: 'Teknik', cat_creative: 'Kreativt', cat_marketing: 'Marknadsföring', cat_sales: 'Försäljning och service', cat_hospitality: 'Hotell och restaurang', cat_logistics: 'Logistik', cat_agriculture: 'Jordbruk',
     pageNotFound: 'Sidan hittades inte', pageNotFoundBody: 'Denna länk finns inte.',
+    sampleListing: 'Exempelannons', sampleApplyOff: 'Ansökningar är avstängda',
+    sampleApplyNote: 'Det här är en exempelannons som visar hur jobb ser ut på Loker Dunia. Ansökningar är avstängda.',
     showAllCountries: 'Visa alla {n} länder', showFewer: 'Visa färre',
     notifications: 'Aviseringar', markAllRead: 'Markera alla som lästa', noNotifications: 'Inga aviseringar än', noNotificationsBody: 'Jobb som matchar dina färdigheter visas här.', notifUnread: '{n} olästa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Nya jobb läggs till. Skapa en profil med dina färdigheter för att få en avisering när ett matchande jobb publiceras.",
     jobsComingSeeker: "Nya jobb läggs till. Vi meddelar dig när ett jobb som matchar dina färdigheter publiceras.",
     jobField: "Arbetsområde",
+    jobsInCountry: 'Jobb i {country}', jobLanguage: 'Jobbspråk', allLanguages: 'Alla språk', jobLangChip: 'Språk: {lang}',
   },
 };

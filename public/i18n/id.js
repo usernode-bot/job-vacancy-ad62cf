@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Bahasa Indonesia.
+/* Job Vacancy interface text: Bahasa Indonesia.
  *
  * English (en.js) is the default and the base: see that file for how to add
  * a language. A key missing here falls back to English.
@@ -39,7 +39,7 @@
     skillsBasis: 'Berdasarkan {n} lowongan', youHaveIt: 'Kamu punya', pctRequired: '{n}% wajib', otherCountriesHint: 'Tidak ada negara kamu?', allCountriesList: 'Lihat semua negara', noCountry: 'Negara tidak ditemukan', noCountryBody: 'Coba ejaan lain.',
     signUpTitle: 'Daftar', signInTitle: 'Masuk', signUp: 'Daftar', signIn: 'Masuk', homeroomIdentity: 'Kamu masuk dengan akun Homeroom @{user}, jadi tidak perlu kata sandi. Pilih peran kamu.', homeroomIdentityAnon: 'Akun Homeroom kamu dipakai untuk masuk, jadi tidak perlu kata sandi.',
     roleSeeker: 'Pencari Kerja', roleSeekerBody: 'Buat CV digital, cocokkan skill, dan lamar lowongan.', roleCompany: 'Perusahaan', roleCompanyBody: 'Pasang lowongan dan kelola pelamar.',
-    yourAccounts: 'Akun kamu', noAccountsYet: 'Kamu belum punya akun Loker Dunia. Daftar dulu sebagai Pencari Kerja atau Perusahaan.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
+    yourAccounts: 'Akun kamu', noAccountsYet: 'Kamu belum punya akun Job Vacancy. Daftar dulu sebagai Pencari Kerja atau Perusahaan.', sampleAccounts: 'Akun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum selesai',
     companySignupTitle: 'Daftar sebagai Perusahaan', companySignupBody: 'Isi data perusahaan untuk mulai memasang lowongan.', companyName: 'Nama perusahaan', industry: 'Industri', createCompany: 'Buat akun perusahaan', welcomeCompany: 'Selamat datang, {co}',
     createProfile: 'Buat profil', editProfile: 'Edit profil', stepOf: 'Langkah {n} dari {total}', progress: 'Kemajuan pendaftaran', stepBio: 'Biodata', stepEduExp: 'Pendidikan & Pengalaman', stepSkills: 'Keahlian', stepCerts: 'Sertifikat',
     saveFinish: 'Simpan & Selesai', saveChanges: 'Simpan perubahan', backToProfile: 'Kembali ke profil',
@@ -88,6 +88,8 @@
     per_month: '/bln', per_year: '/thn', per_hour: '/jam',
     cat_it: 'IT', cat_health: 'Kesehatan', cat_education: 'Pendidikan', cat_finance: 'Keuangan', cat_engineering: 'Teknik', cat_creative: 'Kreatif', cat_marketing: 'Pemasaran', cat_sales: 'Penjualan & Layanan', cat_hospitality: 'Perhotelan', cat_logistics: 'Logistik', cat_agriculture: 'Pertanian',
     pageNotFound: 'Halaman tidak ditemukan', pageNotFoundBody: 'Tautan ini tidak ada.',
+    sampleListing: 'Contoh lowongan', sampleApplyOff: 'Lamaran dinonaktifkan',
+    sampleApplyNote: 'Ini adalah contoh lowongan untuk menunjukkan tampilan pekerjaan di Loker Dunia. Lamaran dinonaktifkan.',
     showAllCountries: 'Tampilkan semua {n} negara', showFewer: 'Tampilkan lebih sedikit',
     notifications: 'Notifikasi', markAllRead: 'Tandai semua dibaca', noNotifications: 'Belum ada notifikasi', noNotificationsBody: 'Lowongan yang cocok dengan skill kamu akan muncul di sini.', notifUnread: '{n} belum dibaca',
     worldJobs: 'Lowongan seluruh dunia', worldJobsSub: 'Daftar langsung dari situs lowongan publik', worldJobsCount: '{n} lowongan', worldJobsSource: 'Daftar langsung dari {source}', worldJobsSample: 'Daftar langsung sedang tidak tersedia. Menampilkan contoh lowongan dari seluruh dunia.', viewListing: 'Lihat lowongan',
@@ -97,5 +99,6 @@
     jobsComingGuest: "Lowongan sedang ditambahkan. Buat profil dengan keahlian Anda untuk diberi tahu saat ada lowongan yang cocok.",
     jobsComingSeeker: "Lowongan sedang ditambahkan. Kami akan memberi tahu Anda saat ada lowongan yang cocok dengan keahlian Anda.",
     jobField: "Bidang pekerjaan",
+    jobsInCountry: 'Lowongan di {country}', jobLanguage: 'Bahasa lowongan', allLanguages: 'Semua bahasa', jobLangChip: 'Bahasa: {lang}',
   },
 };

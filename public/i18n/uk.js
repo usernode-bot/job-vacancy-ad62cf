@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Ukrainian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Ukrainian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['uk'] = {
   name: 'Українська',
   locale: 'uk-UA',
@@ -35,7 +35,7 @@
     skillsBasis: 'На основі вакансій: {n}', youHaveIt: 'У вас є', pctRequired: 'Потрібно в {n}%', otherCountriesHint: 'Немає потрібної країни?', allCountriesList: 'Усі країни', noCountry: 'Країну не знайдено', noCountryBody: 'Спробуйте інше написання.',
     signUpTitle: 'Реєстрація', signInTitle: 'Вхід', signUp: 'Зареєструватися', signIn: 'Увійти', homeroomIdentity: 'Ви увійшли з обліковим записом Homeroom @{user}, тому пароль не потрібен. Виберіть свою роль.', homeroomIdentityAnon: 'Вхід виконується через ваш обліковий запис Homeroom, тому пароль не потрібен.',
     roleSeeker: 'Шукач роботи', roleSeekerBody: 'Створіть електронне резюме, зіставте навички та відгукуйтеся на вакансії.', roleCompany: 'Компанія', roleCompanyBody: 'Розміщуйте вакансії та працюйте з кандидатами.',
-    yourAccounts: 'Ваші облікові записи', noAccountsYet: 'У вас ще немає облікового запису Loker Dunia. Спершу зареєструйтеся як шукач роботи або компанія.', sampleAccounts: 'Приклади облікових записів', sampleAccount: 'приклад', unfinishedProfile: 'Незаповнений профіль',
+    yourAccounts: 'Ваші облікові записи', noAccountsYet: 'У вас ще немає облікового запису Job Vacancy. Спершу зареєструйтеся як шукач роботи або компанія.', sampleAccounts: 'Приклади облікових записів', sampleAccount: 'приклад', unfinishedProfile: 'Незаповнений профіль',
     companySignupTitle: 'Реєстрація компанії', companySignupBody: 'Вкажіть дані компанії, щоб почати розміщувати вакансії.', companyName: 'Назва компанії', industry: 'Галузь', createCompany: 'Створити обліковий запис компанії', welcomeCompany: 'Ласкаво просимо, {co}',
     createProfile: 'Створити профіль', editProfile: 'Редагувати профіль', stepOf: 'Крок {n} з {total}', progress: 'Перебіг реєстрації', stepBio: 'Особисті дані', stepEduExp: 'Освіта та досвід', stepSkills: 'Навички', stepCerts: 'Сертифікати',
     saveFinish: 'Зберегти та завершити', saveChanges: 'Зберегти зміни', backToProfile: 'Повернутися до профілю',
@@ -84,6 +84,8 @@
     per_month: '/міс.', per_year: '/рік', per_hour: '/год',
     cat_it: 'ІТ', cat_health: 'Охорона здоров\'я', cat_education: 'Освіта', cat_finance: 'Фінанси', cat_engineering: 'Інженерія', cat_creative: 'Творчість', cat_marketing: 'Маркетинг', cat_sales: 'Продажі та сервіс', cat_hospitality: 'Гостинність', cat_logistics: 'Логістика', cat_agriculture: 'Сільське господарство',
     pageNotFound: 'Сторінку не знайдено', pageNotFoundBody: 'Такого посилання не існує.',
+    sampleListing: 'Приклад вакансії', sampleApplyOff: 'Відгуки вимкнено',
+    sampleApplyNote: 'Це приклад вакансії, який показує, як виглядають вакансії в Loker Dunia. Відгуки вимкнено.',
     showAllCountries: 'Показати всі країни ({n})', showFewer: 'Показати менше',
     notifications: 'Сповіщення', markAllRead: 'Позначити все прочитаним', noNotifications: 'Сповіщень поки немає', noNotificationsBody: 'Тут з’являтимуться вакансії, що відповідають вашим навичкам.', notifUnread: '{n} непрочитаних',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Вакансії додаються. Створіть профіль із навичками, щоб отримати сповіщення, коли з'явиться відповідна вакансія.",
     jobsComingSeeker: "Вакансії додаються. Ми повідомимо, коли з'явиться вакансія, що відповідає вашим навичкам.",
     jobField: "Сфера діяльності",
+    jobsInCountry: 'Вакансії в {country}', jobLanguage: 'Мова вакансії', allLanguages: 'Усі мови', jobLangChip: 'Мова: {lang}',
   },
 };

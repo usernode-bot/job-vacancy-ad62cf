@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Burmese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Burmese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['my'] = {
   name: 'မြန်မာ',
   locale: 'my-MM',
@@ -35,7 +35,7 @@
     skillsBasis: 'အလုပ် {n} ခုအပေါ် အခြေခံသည်', youHaveIt: 'သင့်တွင် ရှိသည်', pctRequired: '{n}% လိုအပ်သည်', otherCountriesHint: 'နိုင်ငံ မပါဝင်ပါသလား?', allCountriesList: 'နိုင်ငံအားလုံး ကြည့်ရန်', noCountry: 'နိုင်ငံ မတွေ့ပါ', noCountryBody: 'အခြားစာလုံးပေါင်းဖြင့် ကြိုးစားကြည့်ပါ။',
     signUpTitle: 'စာရင်းသွင်းရန်', signInTitle: 'ဝင်ရောက်ရန်', signUp: 'စာရင်းသွင်းရန်', signIn: 'ဝင်ရောက်ရန်', homeroomIdentity: 'သင်သည် Homeroom အကောင့် @{user} ဖြင့် ဝင်ရောက်ထားသောကြောင့် စကားဝှက် မလိုအပ်ပါ။ သင့်အခန်းကဏ္ဍကို ရွေးချယ်ပါ။', homeroomIdentityAnon: 'သင့် Homeroom အကောင့်ဖြင့် ဝင်ရောက်မည်ဖြစ်သောကြောင့် စကားဝှက် မလိုအပ်ပါ။',
     roleSeeker: 'အလုပ်ရှာသူ', roleSeekerBody: 'ဒစ်ဂျစ်တယ် CV ဖန်တီးပြီး ကျွမ်းကျင်မှုများကို ကိုက်ညီစေကာ အလုပ်များ လျှောက်ထားပါ။', roleCompany: 'ကုမ္ပဏီ', roleCompanyBody: 'အလုပ်များ တင်ပြီး လျှောက်ထားသူများကို စီမံပါ။',
-    yourAccounts: 'သင့်အကောင့်များ', noAccountsYet: 'သင့်တွင် Loker Dunia အကောင့် မရှိသေးပါ။ အလုပ်ရှာသူ သို့မဟုတ် ကုမ္ပဏီအဖြစ် ဦးစွာ စာရင်းသွင်းပါ။', sampleAccounts: 'နမူနာအကောင့်များ', sampleAccount: 'နမူနာ', unfinishedProfile: 'မပြီးဆုံးသေးသော ပရိုဖိုင်',
+    yourAccounts: 'သင့်အကောင့်များ', noAccountsYet: 'သင့်တွင် Job Vacancy အကောင့် မရှိသေးပါ။ အလုပ်ရှာသူ သို့မဟုတ် ကုမ္ပဏီအဖြစ် ဦးစွာ စာရင်းသွင်းပါ။', sampleAccounts: 'နမူနာအကောင့်များ', sampleAccount: 'နမူနာ', unfinishedProfile: 'မပြီးဆုံးသေးသော ပရိုဖိုင်',
     companySignupTitle: 'ကုမ္ပဏီအဖြစ် စာရင်းသွင်းရန်', companySignupBody: 'အလုပ်များ စတင်တင်ရန် သင့်ကုမ္ပဏီ အချက်အလက်များကို ထည့်ပါ။', companyName: 'ကုမ္ပဏီအမည်', industry: 'လုပ်ငန်းကဏ္ဍ', createCompany: 'ကုမ္ပဏီအကောင့် ဖန်တီးရန်', welcomeCompany: 'ကြိုဆိုပါသည် {co}',
     createProfile: 'ပရိုဖိုင် ဖန်တီးရန်', editProfile: 'ပရိုဖိုင် ပြင်ဆင်ရန်', stepOf: 'အဆင့် {total} အနက် {n}', progress: 'စာရင်းသွင်းမှု တိုးတက်မှု', stepBio: 'ကိုယ်ရေးအချက်အလက်', stepEduExp: 'ပညာရေးနှင့် အတွေ့အကြုံ', stepSkills: 'ကျွမ်းကျင်မှုများ', stepCerts: 'လက်မှတ်များ',
     saveFinish: 'သိမ်းပြီး ပြီးဆုံးရန်', saveChanges: 'ပြောင်းလဲမှုများ သိမ်းရန်', backToProfile: 'ပရိုဖိုင်သို့ ပြန်သွားရန်',
@@ -84,6 +84,8 @@
     per_month: '/လ', per_year: '/နှစ်', per_hour: '/နာရီ',
     cat_it: 'IT', cat_health: 'ကျန်းမာရေး', cat_education: 'ပညာရေး', cat_finance: 'ဘဏ္ဍာရေး', cat_engineering: 'အင်ဂျင်နီယာ', cat_creative: 'ဖန်တီးမှု', cat_marketing: 'စျေးကွက်ရှာဖွေရေး', cat_sales: 'အရောင်းနှင့် ဝန်ဆောင်မှု', cat_hospitality: 'ဧည့်ဝန်ဆောင်မှု', cat_logistics: 'ထောက်ပံ့ပို့ဆောင်ရေး', cat_agriculture: 'စိုက်ပျိုးရေး',
     pageNotFound: 'စာမျက်နှာ မတွေ့ပါ', pageNotFoundBody: 'ဤလင့်ခ် မရှိပါ။',
+    sampleListing: 'နမူနာ အလုပ်ခေါ်စာ', sampleApplyOff: 'လျှောက်ထားမှု ပိတ်ထားသည်',
+    sampleApplyNote: '၎င်းသည် Loker Dunia တွင် အလုပ်များ မည်သို့ ပေါ်လေ့ရှိသည်ကို ပြသသော နမူနာ အလုပ်ခေါ်စာ ဖြစ်သည်။ လျှောက်ထားမှု ပိတ်ထားသည်။',
     showAllCountries: 'နိုင်ငံ {n} ခုလုံးကို ပြပါ', showFewer: 'လျော့ပြပါ',
     notifications: 'အကြောင်းကြားချက်များ', markAllRead: 'အားလုံးကို ဖတ်ပြီးအဖြစ် မှတ်ပါ', noNotifications: 'အကြောင်းကြားချက် မရှိသေးပါ', noNotificationsBody: 'သင့်ကျွမ်းကျင်မှုနှင့် ကိုက်ညီသော အလုပ်များ ဤနေရာတွင် ပေါ်လာမည်။', notifUnread: 'မဖတ်ရသေး {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "အလုပ်အကိုင် အသစ်များ ထည့်နေပါသည်။ ကိုက်ညီသော အလုပ် တင်ပြချက်အချိန်တွင် အသိပေးချက်ရရှိရန် သင့်ကျွမ်းကျင်မှုများဖြင့် ပရိုဖိုင်တစ်ခု ဖန်တီးပါ။",
     jobsComingSeeker: "အလုပ်အကိုင် အသစ်များ ထည့်နေပါသည်။ သင့်ကျွမ်းကျင်မှုများနှင့် ကိုက်ညီသော အလုပ် တင်ပြလျှင် ကျွန်ုပ်တို့ အသိပေးမည်။",
     jobField: "အလုပ်နယ်ပယ်",
+    jobsInCountry: '{country} ရှိ အလုပ်များ', jobLanguage: 'အလုပ်၏ ဘာသာစကား', allLanguages: 'ဘာသာစကား အားလုံး', jobLangChip: 'ဘာသာ: {lang}',
   },
 };

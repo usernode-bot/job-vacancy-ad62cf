@@ -1,5 +1,5 @@
 {
-  "name": "Loker Dunia",
+  "name": "Job Vacancy",
   "description": "Papan lowongan kerja global dengan pencocokan skill dan sertifikat",
   "secrets": [],
   "admins": [
@@ -12,10 +12,10 @@
       "expectSelector": "#hdr [data-testid=app-logo][data-logo=globe-briefcase] svg"
     },
     {
-      "name": "Header shows the Loker Dunia wordmark in the display font",
+      "name": "Header shows the Job Vacancy wordmark in the display font",
       "path": "/",
       "expectSelector": "#hdr [data-testid=app-name].font-display",
-      "expectText": "Loker Dunia"
+      "expectText": "Job Vacancy"
     },
     {
       "name": "Header shows the language switcher, English by default",
@@ -44,6 +44,18 @@
         "public/i18n/**",
         "tailwind.config.js"
       ]
+    },
+    {
+      "name": "Search lists sample listings tagged as samples",
+      "path": "/#/jobs",
+      "expectSelector": "#results [data-testid=job-card] [data-testid=sample-chip]",
+      "expectText": "Sample listing"
+    },
+    {
+      "name": "A sample listing has no Apply button, only the note",
+      "path": "/#/job/s-1",
+      "expectSelector": "[data-testid=apply-off]",
+      "expectText": "Applications are off"
     },
     {
       "name": "Job detail shows required skills and apply",
@@ -116,5 +128,8 @@
   "visibility": {
     "build": "private",
     "view": "public"
+  },
+  "governance": {
+    "preset": "two_yeses"
   }
 }

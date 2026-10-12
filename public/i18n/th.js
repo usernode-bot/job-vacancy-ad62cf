@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Thai. A key missing here falls back to English. */
+/* Job Vacancy interface text: Thai. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['th'] = {
   name: 'ไทย',
   locale: 'th-TH',
@@ -35,7 +35,7 @@
     skillsBasis: 'อ้างอิงจาก {n} งาน', youHaveIt: 'คุณมีแล้ว', pctRequired: 'ต้องการ {n}%', otherCountriesHint: 'ไม่พบประเทศของคุณ?', allCountriesList: 'ดูทุกประเทศ', noCountry: 'ไม่พบประเทศ', noCountryBody: 'ลองสะกดแบบอื่น',
     signUpTitle: 'สมัครสมาชิก', signInTitle: 'เข้าสู่ระบบ', signUp: 'สมัครสมาชิก', signIn: 'เข้าสู่ระบบ', homeroomIdentity: 'คุณเข้าสู่ระบบด้วยบัญชี Homeroom @{user} จึงไม่ต้องใช้รหัสผ่าน โปรดเลือกบทบาทของคุณ', homeroomIdentityAnon: 'บัญชี Homeroom จะช่วยให้คุณเข้าสู่ระบบ จึงไม่ต้องใช้รหัสผ่าน',
     roleSeeker: 'ผู้หางาน', roleSeekerBody: 'สร้าง CV ดิจิทัล จับคู่ทักษะ และสมัครงาน', roleCompany: 'บริษัท', roleCompanyBody: 'ประกาศงานและจัดการผู้สมัคร',
-    yourAccounts: 'บัญชีของคุณ', noAccountsYet: 'คุณยังไม่มีบัญชี Loker Dunia โปรดสมัครเป็นผู้หางานหรือบริษัทก่อน', sampleAccounts: 'บัญชีตัวอย่าง', sampleAccount: 'ตัวอย่าง', unfinishedProfile: 'โปรไฟล์ยังไม่สมบูรณ์',
+    yourAccounts: 'บัญชีของคุณ', noAccountsYet: 'คุณยังไม่มีบัญชี Job Vacancy โปรดสมัครเป็นผู้หางานหรือบริษัทก่อน', sampleAccounts: 'บัญชีตัวอย่าง', sampleAccount: 'ตัวอย่าง', unfinishedProfile: 'โปรไฟล์ยังไม่สมบูรณ์',
     companySignupTitle: 'สมัครในฐานะบริษัท', companySignupBody: 'กรอกข้อมูลบริษัทเพื่อเริ่มประกาศงาน', companyName: 'ชื่อบริษัท', industry: 'อุตสาหกรรม', createCompany: 'สร้างบัญชีบริษัท', welcomeCompany: 'ยินดีต้อนรับ {co}',
     createProfile: 'สร้างโปรไฟล์', editProfile: 'แก้ไขโปรไฟล์', stepOf: 'ขั้นตอนที่ {n} จาก {total}', progress: 'ความคืบหน้าการสมัคร', stepBio: 'ข้อมูลส่วนตัว', stepEduExp: 'การศึกษาและประสบการณ์', stepSkills: 'ทักษะ', stepCerts: 'ใบรับรอง',
     saveFinish: 'บันทึกและเสร็จสิ้น', saveChanges: 'บันทึกการเปลี่ยนแปลง', backToProfile: 'กลับไปที่โปรไฟล์',
@@ -84,6 +84,8 @@
     per_month: '/เดือน', per_year: '/ปี', per_hour: '/ชม.',
     cat_it: 'ไอที', cat_health: 'สุขภาพ', cat_education: 'การศึกษา', cat_finance: 'การเงิน', cat_engineering: 'วิศวกรรม', cat_creative: 'งานสร้างสรรค์', cat_marketing: 'การตลาด', cat_sales: 'งานขายและบริการ', cat_hospitality: 'การโรงแรมและบริการ', cat_logistics: 'โลจิสติกส์', cat_agriculture: 'เกษตรกรรม',
     pageNotFound: 'ไม่พบหน้า', pageNotFoundBody: 'ลิงก์นี้ไม่มีอยู่',
+    sampleListing: 'ประกาศตัวอย่าง', sampleApplyOff: 'ปิดรับสมัครแล้ว',
+    sampleApplyNote: 'นี่คือประกาศตัวอย่างที่แสดงให้เห็นว่างานบน Loker Dunia หน้าตาเป็นอย่างไร ปิดรับสมัครแล้ว',
     showAllCountries: 'แสดงทั้ง {n} ประเทศ', showFewer: 'แสดงน้อยลง',
     notifications: 'การแจ้งเตือน', markAllRead: 'ทำเครื่องหมายว่าอ่านทั้งหมดแล้ว', noNotifications: 'ยังไม่มีการแจ้งเตือน', noNotificationsBody: 'งานที่ตรงกับทักษะของคุณจะแสดงที่นี่', notifUnread: 'ยังไม่ได้อ่าน {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "กำลังเพิ่มตำแหน่งงานใหม่ สร้างโปรไฟล์พร้อมทักษะของคุณเพื่อรับการแจ้งเตือนเมื่อมีงานที่ตรงกันเผยแพร่",
     jobsComingSeeker: "กำลังเพิ่มตำแหน่งงานใหม่ เราจะแจ้งเตือนคุณเมื่อมีงานที่ตรงกับทักษะของคุณเผยแพร่",
     jobField: "สายงาน",
+    jobsInCountry: 'งานใน {country}', jobLanguage: 'ภาษาของงาน', allLanguages: 'ทุกภาษา', jobLangChip: 'ภาษา: {lang}',
   },
 };

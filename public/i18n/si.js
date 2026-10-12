@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Sinhala. A key missing here falls back to English. */
+/* Job Vacancy interface text: Sinhala. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['si'] = {
   name: 'සිංහල',
   locale: 'si-LK',
@@ -35,7 +35,7 @@
     skillsBasis: 'රැකියා {n} ක් මත පදනම්ව', youHaveIt: 'ඔබට ඇත', pctRequired: '{n}% අවශ්‍යයි', otherCountriesHint: 'රට ලැයිස්තුවේ නැද්ද?', allCountriesList: 'සියලු රටවල් බලන්න', noCountry: 'රටක් හමු නොවීය', noCountryBody: 'වෙනත් අක්ෂර වින්‍යාසයක් උත්සාහ කරන්න.',
     signUpTitle: 'ලියාපදිංචි වන්න', signInTitle: 'පිවිසෙන්න', signUp: 'ලියාපදිංචි වන්න', signIn: 'පිවිසෙන්න', homeroomIdentity: 'ඔබ Homeroom ගිණුම @{user} සමඟ පිවිස ඇති බැවින් මුරපදයක් අවශ්‍ය නැත. ඔබගේ භූමිකාව තෝරන්න.', homeroomIdentityAnon: 'ඔබගේ Homeroom ගිණුම ඔබව පිවිසුම් කරවන බැවින් මුරපදයක් අවශ්‍ය නැත.',
     roleSeeker: 'රැකියා අපේක්ෂක', roleSeekerBody: 'ඩිජිටල් CV එකක් සාදා, ඔබගේ කුසලතා ගළපා, රැකියා සඳහා අයදුම් කරන්න.', roleCompany: 'සමාගම', roleCompanyBody: 'රැකියා පළ කර අයදුම්කරුවන් කළමනාකරණය කරන්න.',
-    yourAccounts: 'ඔබගේ ගිණුම්', noAccountsYet: 'ඔබට තවමත් Loker Dunia ගිණුමක් නොමැත. පළමුව රැකියා අපේක්ෂකයෙකු හෝ සමාගමක් ලෙස ලියාපදිංචි වන්න.', sampleAccounts: 'නියැදි ගිණුම්', sampleAccount: 'නියැදිය', unfinishedProfile: 'අසම්පූර්ණ පැතිකඩ',
+    yourAccounts: 'ඔබගේ ගිණුම්', noAccountsYet: 'ඔබට තවමත් Job Vacancy ගිණුමක් නොමැත. පළමුව රැකියා අපේක්ෂකයෙකු හෝ සමාගමක් ලෙස ලියාපදිංචි වන්න.', sampleAccounts: 'නියැදි ගිණුම්', sampleAccount: 'නියැදිය', unfinishedProfile: 'අසම්පූර්ණ පැතිකඩ',
     companySignupTitle: 'සමාගමක් ලෙස ලියාපදිංචි වන්න', companySignupBody: 'රැකියා පළ කිරීම ආරම්භ කිරීමට ඔබගේ සමාගමේ විස්තර ඇතුළත් කරන්න.', companyName: 'සමාගමේ නම', industry: 'කර්මාන්තය', createCompany: 'සමාගම් ගිණුමක් සාදන්න', welcomeCompany: 'සාදරයෙන් පිළිගනිමු, {co}',
     createProfile: 'පැතිකඩ සාදන්න', editProfile: 'පැතිකඩ සංස්කරණය', stepOf: 'පියවර {n} / {total}', progress: 'ලියාපදිංචි ප්‍රගතිය', stepBio: 'පුද්ගලික විස්තර', stepEduExp: 'අධ්‍යාපනය සහ පළපුරුද්ද', stepSkills: 'කුසලතා', stepCerts: 'සහතික',
     saveFinish: 'සුරකින්න සහ අවසන් කරන්න', saveChanges: 'වෙනස්කම් සුරකින්න', backToProfile: 'පැතිකඩට ආපසු',
@@ -84,6 +84,8 @@
     per_month: '/මසකට', per_year: '/වසරකට', per_hour: '/පැයකට',
     cat_it: 'IT', cat_health: 'සෞඛ්‍ය සේවා', cat_education: 'අධ්‍යාපනය', cat_finance: 'මූල්‍ය', cat_engineering: 'ඉංජිනේරු', cat_creative: 'නිර්මාණාත්මක', cat_marketing: 'අලෙවිකරණය', cat_sales: 'විකුණුම් සහ සේවා', cat_hospitality: 'ආගන්තුක සත්කාර', cat_logistics: 'සැපයුම් දාම', cat_agriculture: 'කෘෂිකර්මය',
     pageNotFound: 'පිටුව හමු නොවීය', pageNotFoundBody: 'මෙම සබැඳිය නොපවතී.',
+    sampleListing: 'නියැදි ලැයිස්තුව', sampleApplyOff: 'අයදුම්පත් නවත්වා ඇත',
+    sampleApplyNote: 'මෙය Loker Dunia හි රැකියා පෙනෙන ආකාරය පෙන්වන නියැදි ලැයිස්තුවකි. අයදුම්පත් නවත්වා ඇත.',
     showAllCountries: 'රටවල් {n} ම පෙන්වන්න', showFewer: 'අඩුවෙන් පෙන්වන්න',
     notifications: 'දැනුම්දීම්', markAllRead: 'සියල්ල කියවූ ලෙස සලකුණු කරන්න', noNotifications: 'තවමත් දැනුම්දීම් නැත', noNotificationsBody: 'ඔබේ කුසලතාවලට ගැළපෙන රැකියා මෙහි දිස්වේ.', notifUnread: 'නොකියවූ {n}',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "නව රැකියා එකතු වෙමින් පවතී. ගැලපෙන රැකියාවක් පළ වූ විට දැනුම්දීමක් ලබා ගැනීමට ඔබේ කුසලතා සමඟ පැතිකඩක් සාදන්න.",
     jobsComingSeeker: "නව රැකියා එකතු වෙමින් පවතී. ඔබේ කුසලතාවලට ගැලපෙන රැකියාවක් පළ වූ විට අපි ඔබට දන්වන්නෙමු.",
     jobField: "රැකියා ක්ෂේත්‍රය",
+    jobsInCountry: '{country} සේවා', jobLanguage: 'රැකියා භාෂාව', allLanguages: 'සියලු භාෂා', jobLangChip: 'භාෂාව: {lang}',
   },
 };

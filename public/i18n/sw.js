@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Swahili. A key missing here falls back to English. */
+/* Job Vacancy interface text: Swahili. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['sw'] = {
   name: 'Kiswahili',
   locale: 'sw-KE',
@@ -35,7 +35,7 @@
     skillsBasis: 'Kulingana na kazi {n}', youHaveIt: 'Unao', pctRequired: '{n}% inahitajika', otherCountriesHint: 'Nchi haipo kwenye orodha?', allCountriesList: 'Ona nchi zote', noCountry: 'Hakuna nchi iliyopatikana', noCountryBody: 'Jaribu tahajia nyingine.',
     signUpTitle: 'Jisajili', signInTitle: 'Ingia', signUp: 'Jisajili', signIn: 'Ingia', homeroomIdentity: 'Umeingia kwa akaunti ya Homeroom @{user}, kwa hiyo hauhitaji nenosiri. Chagua jukumu lako.', homeroomIdentityAnon: 'Akaunti yako ya Homeroom inakuingiza, kwa hiyo hauhitaji nenosiri.',
     roleSeeker: 'Mtafuta Kazi', roleSeekerBody: 'Tengeneza CV ya kidijitali, linganisha ujuzi wako na uombe kazi.', roleCompany: 'Kampuni', roleCompanyBody: 'Tangaza kazi na usimamie waombaji.',
-    yourAccounts: 'Akaunti zako', noAccountsYet: 'Bado huna akaunti ya Loker Dunia. Kwanza jisajili kama Mtafuta Kazi au Kampuni.', sampleAccounts: 'Akaunti za mfano', sampleAccount: 'mfano', unfinishedProfile: 'Wasifu haujakamilika',
+    yourAccounts: 'Akaunti zako', noAccountsYet: 'Bado huna akaunti ya Job Vacancy. Kwanza jisajili kama Mtafuta Kazi au Kampuni.', sampleAccounts: 'Akaunti za mfano', sampleAccount: 'mfano', unfinishedProfile: 'Wasifu haujakamilika',
     companySignupTitle: 'Jisajili kama Kampuni', companySignupBody: 'Weka taarifa za kampuni yako ili uanze kutangaza kazi.', companyName: 'Jina la kampuni', industry: 'Sekta', createCompany: 'Fungua akaunti ya kampuni', welcomeCompany: 'Karibu, {co}',
     createProfile: 'Unda wasifu', editProfile: 'Hariri wasifu', stepOf: 'Hatua {n} kati ya {total}', progress: 'Maendeleo ya usajili', stepBio: 'Taarifa binafsi', stepEduExp: 'Elimu na Uzoefu', stepSkills: 'Ujuzi', stepCerts: 'Vyeti',
     saveFinish: 'Hifadhi na Maliza', saveChanges: 'Hifadhi mabadiliko', backToProfile: 'Rudi kwenye wasifu',
@@ -84,6 +84,8 @@
     per_month: '/mwezi', per_year: '/mwaka', per_hour: '/saa',
     cat_it: 'TEHAMA', cat_health: 'Afya', cat_education: 'Elimu', cat_finance: 'Fedha', cat_engineering: 'Uhandisi', cat_creative: 'Ubunifu', cat_marketing: 'Masoko', cat_sales: 'Mauzo na Huduma', cat_hospitality: 'Ukarimu', cat_logistics: 'Usafirishaji', cat_agriculture: 'Kilimo',
     pageNotFound: 'Ukurasa haukupatikana', pageNotFoundBody: 'Kiungo hiki hakipo.',
+    sampleListing: 'Tangazo la mfano', sampleApplyOff: 'Maombi yamezimwa',
+    sampleApplyNote: 'Hili ni tangazo la mfano linaloonyesha jinsi kazi zinavyoonekana kwenye Loker Dunia. Maombi yamezimwa.',
     showAllCountries: 'Onyesha nchi zote {n}', showFewer: 'Onyesha chache',
     notifications: 'Arifa', markAllRead: 'Weka alama zote kuwa zimesomwa', noNotifications: 'Bado hakuna arifa', noNotificationsBody: 'Kazi zinazolingana na ujuzi wako zitaonekana hapa.', notifUnread: '{n} hazijasomwa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Kazi mpya zinaongezwa. Tengeneza wasifu na ujuzi wako ili upate taarifa kazi inayofanana inapotangazwa.",
     jobsComingSeeker: "Kazi mpya zinaongezwa. Tutakujulisha kazi inayofanana na ujuzi wako inapotangazwa.",
     jobField: "Sekta ya kazi",
+    jobsInCountry: 'Kazi nchini {country}', jobLanguage: 'Lugha ya kazi', allLanguages: 'Lugha zote', jobLangChip: 'Lugha: {lang}',
   },
 };

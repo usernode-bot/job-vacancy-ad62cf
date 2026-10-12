@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Polish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Polish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['pl'] = {
   name: 'Polski',
   locale: 'pl-PL',
@@ -35,7 +35,7 @@
     skillsBasis: 'Na podstawie ofert: {n}', youHaveIt: 'Masz ją', pctRequired: 'Wymagana w {n}%', otherCountriesHint: 'Brak kraju na liście?', allCountriesList: 'Zobacz wszystkie kraje', noCountry: 'Nie znaleziono kraju', noCountryBody: 'Spróbuj innej pisowni.',
     signUpTitle: 'Rejestracja', signInTitle: 'Logowanie', signUp: 'Zarejestruj się', signIn: 'Zaloguj się', homeroomIdentity: 'Zalogowano kontem Homeroom @{user}, więc hasło nie jest potrzebne. Wybierz swoją rolę.', homeroomIdentityAnon: 'Logowanie odbywa się przez konto Homeroom, więc hasło nie jest potrzebne.',
     roleSeeker: 'Kandydat', roleSeekerBody: 'Utwórz cyfrowe CV, dopasuj umiejętności i aplikuj na oferty.', roleCompany: 'Firma', roleCompanyBody: 'Publikuj oferty i zarządzaj kandydatami.',
-    yourAccounts: 'Twoje konta', noAccountsYet: 'Nie masz jeszcze konta Loker Dunia. Najpierw zarejestruj się jako kandydat lub firma.', sampleAccounts: 'Przykładowe konta', sampleAccount: 'przykład', unfinishedProfile: 'Niedokończony profil',
+    yourAccounts: 'Twoje konta', noAccountsYet: 'Nie masz jeszcze konta Job Vacancy. Najpierw zarejestruj się jako kandydat lub firma.', sampleAccounts: 'Przykładowe konta', sampleAccount: 'przykład', unfinishedProfile: 'Niedokończony profil',
     companySignupTitle: 'Rejestracja firmy', companySignupBody: 'Podaj dane firmy, aby zacząć publikować oferty.', companyName: 'Nazwa firmy', industry: 'Branża', createCompany: 'Utwórz konto firmy', welcomeCompany: 'Witamy, {co}',
     createProfile: 'Utwórz profil', editProfile: 'Edytuj profil', stepOf: 'Krok {n} z {total}', progress: 'Postęp rejestracji', stepBio: 'Dane osobowe', stepEduExp: 'Wykształcenie i doświadczenie', stepSkills: 'Umiejętności', stepCerts: 'Certyfikaty',
     saveFinish: 'Zapisz i zakończ', saveChanges: 'Zapisz zmiany', backToProfile: 'Wróć do profilu',
@@ -84,6 +84,8 @@
     per_month: '/mies.', per_year: '/rok', per_hour: '/godz.',
     cat_it: 'IT', cat_health: 'Ochrona zdrowia', cat_education: 'Edukacja', cat_finance: 'Finanse', cat_engineering: 'Inżynieria', cat_creative: 'Branża kreatywna', cat_marketing: 'Marketing', cat_sales: 'Sprzedaż i obsługa', cat_hospitality: 'Hotelarstwo i gastronomia', cat_logistics: 'Logistyka', cat_agriculture: 'Rolnictwo',
     pageNotFound: 'Nie znaleziono strony', pageNotFoundBody: 'Ten link nie istnieje.',
+    sampleListing: 'Przykładowe ogłoszenie', sampleApplyOff: 'Aplikowanie jest wyłączone',
+    sampleApplyNote: 'To przykładowe ogłoszenie pokazujące, jak wyglądają oferty pracy w Loker Dunia. Aplikowanie jest wyłączone.',
     showAllCountries: 'Pokaż wszystkie kraje ({n})', showFewer: 'Pokaż mniej',
     notifications: 'Powiadomienia', markAllRead: 'Oznacz wszystko jako przeczytane', noNotifications: 'Brak powiadomień', noNotificationsBody: 'Tutaj pojawią się oferty pasujące do Twoich umiejętności.', notifUnread: '{n} nieprzeczytanych',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Oferty pracy są dodawane. Utwórz profil ze swoimi umiejętnościami, aby dostać powiadomienie, gdy pojawi się pasująca oferta.",
     jobsComingSeeker: "Oferty pracy są dodawane. Powiadomimy Cię, gdy pojawi się oferta pasująca do Twoich umiejętności.",
     jobField: "Branża",
+    jobsInCountry: 'Praca w {country}', jobLanguage: 'Język pracy', allLanguages: 'Wszystkie języki', jobLangChip: 'Język: {lang}',
   },
 };

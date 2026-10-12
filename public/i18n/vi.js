@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Vietnamese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Vietnamese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['vi'] = {
   name: 'Tiếng Việt',
   locale: 'vi-VN',
@@ -35,7 +35,7 @@
     skillsBasis: 'Dựa trên {n} việc làm', youHaveIt: 'Bạn đã có', pctRequired: '{n}% yêu cầu', otherCountriesHint: 'Không thấy quốc gia của bạn?', allCountriesList: 'Xem tất cả quốc gia', noCountry: 'Không tìm thấy quốc gia', noCountryBody: 'Hãy thử cách viết khác.',
     signUpTitle: 'Đăng ký', signInTitle: 'Đăng nhập', signUp: 'Đăng ký', signIn: 'Đăng nhập', homeroomIdentity: 'Bạn đã đăng nhập bằng tài khoản Homeroom @{user}, nên không cần mật khẩu. Hãy chọn vai trò của bạn.', homeroomIdentityAnon: 'Tài khoản Homeroom sẽ giúp bạn đăng nhập, nên không cần mật khẩu.',
     roleSeeker: 'Người tìm việc', roleSeekerBody: 'Tạo CV điện tử, so khớp kỹ năng và ứng tuyển việc làm.', roleCompany: 'Công ty', roleCompanyBody: 'Đăng tin tuyển dụng và quản lý ứng viên.',
-    yourAccounts: 'Tài khoản của bạn', noAccountsYet: 'Bạn chưa có tài khoản Loker Dunia. Hãy đăng ký với tư cách Người tìm việc hoặc Công ty trước.', sampleAccounts: 'Tài khoản mẫu', sampleAccount: 'mẫu', unfinishedProfile: 'Hồ sơ chưa hoàn thiện',
+    yourAccounts: 'Tài khoản của bạn', noAccountsYet: 'Bạn chưa có tài khoản Job Vacancy. Hãy đăng ký với tư cách Người tìm việc hoặc Công ty trước.', sampleAccounts: 'Tài khoản mẫu', sampleAccount: 'mẫu', unfinishedProfile: 'Hồ sơ chưa hoàn thiện',
     companySignupTitle: 'Đăng ký với tư cách Công ty', companySignupBody: 'Nhập thông tin công ty để bắt đầu đăng tin tuyển dụng.', companyName: 'Tên công ty', industry: 'Lĩnh vực', createCompany: 'Tạo tài khoản công ty', welcomeCompany: 'Chào mừng, {co}',
     createProfile: 'Tạo hồ sơ', editProfile: 'Sửa hồ sơ', stepOf: 'Bước {n}/{total}', progress: 'Tiến độ đăng ký', stepBio: 'Thông tin cá nhân', stepEduExp: 'Học vấn và Kinh nghiệm', stepSkills: 'Kỹ năng', stepCerts: 'Chứng chỉ',
     saveFinish: 'Lưu và Hoàn tất', saveChanges: 'Lưu thay đổi', backToProfile: 'Quay lại hồ sơ',
@@ -84,6 +84,8 @@
     per_month: '/tháng', per_year: '/năm', per_hour: '/giờ',
     cat_it: 'CNTT', cat_health: 'Y tế', cat_education: 'Giáo dục', cat_finance: 'Tài chính', cat_engineering: 'Kỹ thuật', cat_creative: 'Sáng tạo', cat_marketing: 'Marketing', cat_sales: 'Bán hàng và Dịch vụ', cat_hospitality: 'Nhà hàng khách sạn', cat_logistics: 'Logistics', cat_agriculture: 'Nông nghiệp',
     pageNotFound: 'Không tìm thấy trang', pageNotFoundBody: 'Liên kết này không tồn tại.',
+    sampleListing: 'Tin mẫu', sampleApplyOff: 'Đã tắt chức năng ứng tuyển',
+    sampleApplyNote: 'Đây là tin tuyển dụng mẫu cho thấy việc làm trên Loker Dunia trông như thế nào. Đã tắt chức năng ứng tuyển.',
     showAllCountries: 'Hiện cả {n} quốc gia', showFewer: 'Thu gọn',
     notifications: 'Thông báo', markAllRead: 'Đánh dấu tất cả là đã đọc', noNotifications: 'Chưa có thông báo', noNotificationsBody: 'Các việc làm phù hợp với kỹ năng của bạn sẽ hiện ở đây.', notifUnread: '{n} chưa đọc',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Đang thêm việc làm mới. Hãy tạo hồ sơ với kỹ năng của bạn để nhận thông báo khi có việc phù hợp được đăng.",
     jobsComingSeeker: "Đang thêm việc làm mới. Chúng tôi sẽ thông báo cho bạn khi có việc phù hợp với kỹ năng của bạn được đăng.",
     jobField: "Lĩnh vực công việc",
+    jobsInCountry: 'Việc làm tại {country}', jobLanguage: 'Ngôn ngữ công việc', allLanguages: 'Tất cả ngôn ngữ', jobLangChip: 'Ngôn ngữ: {lang}',
   },
 };

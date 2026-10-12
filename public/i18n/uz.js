@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Uzbek. A key missing here falls back to English. */
+/* Job Vacancy interface text: Uzbek. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['uz'] = {
   name: 'Oʻzbekcha',
   locale: 'uz-UZ',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ta vakansiya asosida', youHaveIt: 'Sizda bor', pctRequired: '{n}% majburiy', otherCountriesHint: 'Mamlakat roʻyxatda yoʻqmi?', allCountriesList: 'Barcha mamlakatlarni koʻrish', noCountry: 'Mamlakat topilmadi', noCountryBody: 'Boshqacha yozib koʻring.',
     signUpTitle: 'Roʻyxatdan oʻtish', signInTitle: 'Kirish', signUp: 'Roʻyxatdan oʻtish', signIn: 'Kirish', homeroomIdentity: 'Siz @{user} Homeroom hisobi orqali kirgansiz, shuning uchun parol kerak emas. Rolingizni tanlang.', homeroomIdentityAnon: 'Siz Homeroom hisobingiz orqali kirasiz, shuning uchun parol kerak emas.',
     roleSeeker: 'Ish izlovchi', roleSeekerBody: 'Raqamli rezyume yarating, koʻnikmalaringizni moslang va vakansiyalarga ariza topshiring.', roleCompany: 'Kompaniya', roleCompanyBody: 'Vakansiyalar joylang va nomzodlarni boshqaring.',
-    yourAccounts: 'Hisoblaringiz', noAccountsYet: 'Sizda hali Loker Dunia hisobi yoʻq. Avval Ish izlovchi yoki Kompaniya sifatida roʻyxatdan oʻting.', sampleAccounts: 'Namuna hisoblar', sampleAccount: 'namuna', unfinishedProfile: 'Toʻldirilmagan profil',
+    yourAccounts: 'Hisoblaringiz', noAccountsYet: 'Sizda hali Job Vacancy hisobi yoʻq. Avval Ish izlovchi yoki Kompaniya sifatida roʻyxatdan oʻting.', sampleAccounts: 'Namuna hisoblar', sampleAccount: 'namuna', unfinishedProfile: 'Toʻldirilmagan profil',
     companySignupTitle: 'Kompaniya sifatida roʻyxatdan oʻtish', companySignupBody: 'Vakansiya joylashni boshlash uchun kompaniya maʼlumotlarini kiriting.', companyName: 'Kompaniya nomi', industry: 'Soha', createCompany: 'Kompaniya hisobini yaratish', welcomeCompany: 'Xush kelibsiz, {co}',
     createProfile: 'Profil yaratish', editProfile: 'Profilni tahrirlash', stepOf: '{n}/{total}-qadam', progress: 'Roʻyxatdan oʻtish jarayoni', stepBio: 'Shaxsiy maʼlumotlar', stepEduExp: 'Taʼlim va tajriba', stepSkills: 'Koʻnikmalar', stepCerts: 'Sertifikatlar',
     saveFinish: 'Saqlash va yakunlash', saveChanges: 'Oʻzgarishlarni saqlash', backToProfile: 'Profilga qaytish',
@@ -84,6 +84,8 @@
     per_month: '/oy', per_year: '/yil', per_hour: '/soat',
     cat_it: 'IT', cat_health: 'Sogʻliqni saqlash', cat_education: 'Taʼlim', cat_finance: 'Moliya', cat_engineering: 'Muhandislik', cat_creative: 'Ijodiy', cat_marketing: 'Marketing', cat_sales: 'Savdo va xizmat', cat_hospitality: 'Mehmondoʻstlik', cat_logistics: 'Logistika', cat_agriculture: 'Qishloq xoʻjaligi',
     pageNotFound: 'Sahifa topilmadi', pageNotFoundBody: 'Bu havola mavjud emas.',
+    sampleListing: 'Namunaviy e’lon', sampleApplyOff: 'Ariza topshirish o‘chirilgan',
+    sampleApplyNote: 'Bu Loker Dunia’da ishlar qanday ko‘rinishini ko‘rsatadigan namunaviy e’londir. Ariza topshirish o‘chirilgan.',
     showAllCountries: 'Barcha {n} mamlakatni ko‘rsatish', showFewer: 'Kamroq ko‘rsatish',
     notifications: 'Bildirishnomalar', markAllRead: 'Hammasini o‘qilgan deb belgilash', noNotifications: 'Hozircha bildirishnoma yo‘q', noNotificationsBody: 'Ko‘nikmalaringizga mos ishlar shu yerda ko‘rinadi.', notifUnread: '{n} o‘qilmagan',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Yangi ish e'lonlari qo'shilmoqda. Mos ish e'lon qilinganda xabar olish uchun ko'nikmalaringiz bilan profil yarating.",
     jobsComingSeeker: "Yangi ish e'lonlari qo'shilmoqda. Ko'nikmalaringizga mos ish e'lon qilinganda sizga xabar beramiz.",
     jobField: "Ish sohasi",
+    jobsInCountry: '{country}dagi ish o‘rinlari', jobLanguage: 'Ish tili', allLanguages: 'Barcha tillar', jobLangChip: 'Til: {lang}',
   },
 };

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Hebrew. A key missing here falls back to English. */
+/* Job Vacancy interface text: Hebrew. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['he'] = {
   name: 'עברית',
   locale: 'he-IL',
@@ -35,7 +35,7 @@
     skillsBasis: 'על סמך {n} משרות', youHaveIt: 'יש לך את זה', pctRequired: '{n}% חובה', otherCountriesHint: 'המדינה לא מופיעה?', allCountriesList: 'הצגת כל המדינות', noCountry: 'לא נמצאה מדינה', noCountryBody: 'כדאי לנסות איות אחר.',
     signUpTitle: 'הרשמה', signInTitle: 'כניסה', signUp: 'הרשמה', signIn: 'כניסה', homeroomIdentity: 'נכנסת באמצעות חשבון Homeroom @{user}, ולכן אין צורך בסיסמה. יש לבחור את התפקיד שלך.', homeroomIdentityAnon: 'הכניסה מתבצעת באמצעות חשבון Homeroom שלך, ולכן אין צורך בסיסמה.',
     roleSeeker: 'מחפש עבודה', roleSeekerBody: 'יצירת CV דיגיטלי, התאמת כישורים והגשת מועמדות למשרות.', roleCompany: 'חברה', roleCompanyBody: 'פרסום משרות וניהול מועמדים.',
-    yourAccounts: 'החשבונות שלך', noAccountsYet: 'אין לך עדיין חשבון ב-Loker Dunia. יש להירשם תחילה כמחפש עבודה או כחברה.', sampleAccounts: 'חשבונות לדוגמה', sampleAccount: 'לדוגמה', unfinishedProfile: 'פרופיל לא גמור',
+    yourAccounts: 'החשבונות שלך', noAccountsYet: 'אין לך עדיין חשבון ב-Job Vacancy. יש להירשם תחילה כמחפש עבודה או כחברה.', sampleAccounts: 'חשבונות לדוגמה', sampleAccount: 'לדוגמה', unfinishedProfile: 'פרופיל לא גמור',
     companySignupTitle: 'הרשמה כחברה', companySignupBody: 'יש להזין את פרטי החברה כדי להתחיל לפרסם משרות.', companyName: 'שם החברה', industry: 'תחום', createCompany: 'יצירת חשבון חברה', welcomeCompany: 'ברוכים הבאים, {co}',
     createProfile: 'יצירת פרופיל', editProfile: 'עריכת פרופיל', stepOf: 'שלב {n} מתוך {total}', progress: 'התקדמות ההרשמה', stepBio: 'פרטים אישיים', stepEduExp: 'השכלה וניסיון', stepSkills: 'כישורים', stepCerts: 'תעודות',
     saveFinish: 'שמירה וסיום', saveChanges: 'שמירת שינויים', backToProfile: 'חזרה לפרופיל',
@@ -84,6 +84,8 @@
     per_month: '/חודש', per_year: '/שנה', per_hour: '/שעה',
     cat_it: 'הייטק ו-IT', cat_health: 'בריאות', cat_education: 'חינוך', cat_finance: 'כספים', cat_engineering: 'הנדסה', cat_creative: 'קריאייטיב', cat_marketing: 'שיווק', cat_sales: 'מכירות ושירות', cat_hospitality: 'אירוח ומלונאות', cat_logistics: 'לוגיסטיקה', cat_agriculture: 'חקלאות',
     pageNotFound: 'הדף לא נמצא', pageNotFoundBody: 'הקישור הזה אינו קיים.',
+    sampleListing: 'מודעה לדוגמה', sampleApplyOff: 'ההגשה כבויה',
+    sampleApplyNote: 'זוהי מודעה לדוגמה שמראה איך נראות משרות ב-Loker Dunia. ההגשה כבויה.',
     showAllCountries: 'הצג את כל {n} המדינות', showFewer: 'הצג פחות',
     notifications: 'התראות', markAllRead: 'סמן הכול כנקרא', noNotifications: 'אין התראות עדיין', noNotificationsBody: 'משרות שמתאימות לכישורים שלך יופיעו כאן.', notifUnread: '{n} שלא נקראו',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "משרות נוספות מתווספות. צרו פרופיל עם הכישורים שלכם כדי לקבל הודעה כשמתפרסמת משרה מתאימה.",
     jobsComingSeeker: "משרות נוספות מתווספות. נודיע לכם כשמתפרסמת משרה שמתאימה לכישורים שלכם.",
     jobField: "תחום עיסוק",
+    jobsInCountry: 'משרות ב{country}', jobLanguage: 'שפת המשרה', allLanguages: 'כל השפות', jobLangChip: 'שפה: {lang}',
   },
 };

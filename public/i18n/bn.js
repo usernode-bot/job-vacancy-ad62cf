@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Bengali. A key missing here falls back to English. */
+/* Job Vacancy interface text: Bengali. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['bn'] = {
   name: 'বাংলা',
   locale: 'bn-BD',
@@ -35,7 +35,7 @@
     skillsBasis: '{n}টি চাকরির ভিত্তিতে', youHaveIt: 'আপনার আছে', pctRequired: '{n}% চাকরিতে আবশ্যক', otherCountriesHint: 'দেশটি তালিকায় নেই?', allCountriesList: 'সব দেশ দেখুন', noCountry: 'কোনো দেশ পাওয়া যায়নি', noCountryBody: 'অন্য কোনো বানান চেষ্টা করুন।',
     signUpTitle: 'সাইন আপ', signInTitle: 'সাইন ইন', signUp: 'সাইন আপ করুন', signIn: 'সাইন ইন করুন', homeroomIdentity: 'আপনি Homeroom অ্যাকাউন্ট @{user} দিয়ে সাইন ইন করেছেন, তাই পাসওয়ার্ডের প্রয়োজন নেই। আপনার ভূমিকা বেছে নিন।', homeroomIdentityAnon: 'আপনার Homeroom অ্যাকাউন্ট আপনাকে সাইন ইন করায়, তাই পাসওয়ার্ডের প্রয়োজন নেই।',
     roleSeeker: 'চাকরিপ্রার্থী', roleSeekerBody: 'ডিজিটাল CV তৈরি করুন, আপনার দক্ষতা মেলান এবং চাকরিতে আবেদন করুন।', roleCompany: 'কোম্পানি', roleCompanyBody: 'চাকরি পোস্ট করুন এবং আবেদনকারীদের পরিচালনা করুন।',
-    yourAccounts: 'আপনার অ্যাকাউন্টসমূহ', noAccountsYet: 'আপনার এখনও কোনো Loker Dunia অ্যাকাউন্ট নেই। প্রথমে চাকরিপ্রার্থী বা কোম্পানি হিসেবে সাইন আপ করুন।', sampleAccounts: 'নমুনা অ্যাকাউন্ট', sampleAccount: 'নমুনা', unfinishedProfile: 'অসম্পূর্ণ প্রোফাইল',
+    yourAccounts: 'আপনার অ্যাকাউন্টসমূহ', noAccountsYet: 'আপনার এখনও কোনো Job Vacancy অ্যাকাউন্ট নেই। প্রথমে চাকরিপ্রার্থী বা কোম্পানি হিসেবে সাইন আপ করুন।', sampleAccounts: 'নমুনা অ্যাকাউন্ট', sampleAccount: 'নমুনা', unfinishedProfile: 'অসম্পূর্ণ প্রোফাইল',
     companySignupTitle: 'কোম্পানি হিসেবে সাইন আপ করুন', companySignupBody: 'চাকরি পোস্ট করা শুরু করতে আপনার কোম্পানির তথ্য দিন।', companyName: 'কোম্পানির নাম', industry: 'শিল্প খাত', createCompany: 'কোম্পানি অ্যাকাউন্ট তৈরি করুন', welcomeCompany: 'স্বাগতম, {co}',
     createProfile: 'প্রোফাইল তৈরি করুন', editProfile: 'প্রোফাইল সম্পাদনা করুন', stepOf: 'ধাপ {n} / {total}', progress: 'সাইন আপের অগ্রগতি', stepBio: 'ব্যক্তিগত তথ্য', stepEduExp: 'শিক্ষা ও অভিজ্ঞতা', stepSkills: 'দক্ষতা', stepCerts: 'সনদ',
     saveFinish: 'সংরক্ষণ করে শেষ করুন', saveChanges: 'পরিবর্তন সংরক্ষণ করুন', backToProfile: 'প্রোফাইলে ফিরে যান',
@@ -84,6 +84,8 @@
     per_month: '/মাস', per_year: '/বছর', per_hour: '/ঘণ্টা',
     cat_it: 'IT', cat_health: 'স্বাস্থ্যসেবা', cat_education: 'শিক্ষা', cat_finance: 'অর্থায়ন', cat_engineering: 'প্রকৌশল', cat_creative: 'সৃজনশীল', cat_marketing: 'মার্কেটিং', cat_sales: 'বিক্রয় ও সেবা', cat_hospitality: 'আতিথেয়তা', cat_logistics: 'লজিস্টিকস', cat_agriculture: 'কৃষি',
     pageNotFound: 'পৃষ্ঠা পাওয়া যায়নি', pageNotFoundBody: 'এই লিংকটির কোনো অস্তিত্ব নেই।',
+    sampleListing: 'নমুনা বিজ্ঞপ্তি', sampleApplyOff: 'আবেদন বন্ধ আছে',
+    sampleApplyNote: 'এটি একটি নমুনা বিজ্ঞপ্তি, যা দেখায় Loker Dunia-তে চাকরি কেমন দেখায়। আবেদন বন্ধ আছে।',
     showAllCountries: 'সব {n}টি দেশ দেখুন', showFewer: 'কম দেখুন',
     notifications: 'বিজ্ঞপ্তি', markAllRead: 'সব পঠিত হিসেবে চিহ্নিত করুন', noNotifications: 'এখনও কোনো বিজ্ঞপ্তি নেই', noNotificationsBody: 'আপনার দক্ষতার সাথে মেলে এমন চাকরি এখানে দেখা যাবে।', notifUnread: '{n} অপঠিত',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "নতুন চাকরি যোগ হচ্ছে। মিলে যাওয়া চাকরি পোস্ট হলে জানতে আপনার দক্ষতা দিয়ে প্রোফাইল তৈরি করুন।",
     jobsComingSeeker: "নতুন চাকরি যোগ হচ্ছে। আপনার দক্ষতার সাথে মিলে যাওয়া চাকরি পোস্ট হলে আমরা জানাব।",
     jobField: "কাজের ক্ষেত্র",
+    jobsInCountry: '{country}-এ চাকরি', jobLanguage: 'চাকরির ভাষা', allLanguages: 'সব ভাষা', jobLangChip: 'ভাষা: {lang}',
   },
 };

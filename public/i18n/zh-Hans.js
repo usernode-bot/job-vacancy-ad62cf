@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Simplified Chinese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Simplified Chinese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['zh-Hans'] = {
   name: '简体中文',
   locale: 'zh-CN',
@@ -35,7 +35,7 @@
     skillsBasis: '基于 {n} 个职位', youHaveIt: '您已具备', pctRequired: '{n}% 要求', otherCountriesHint: '没有找到您的国家？', allCountriesList: '查看所有国家', noCountry: '未找到该国家', noCountryBody: '请尝试其他拼写。',
     signUpTitle: '注册', signInTitle: '登录', signUp: '注册', signIn: '登录', homeroomIdentity: '您已使用 Homeroom 账户 @{user} 登录，无需密码。请选择您的身份。', homeroomIdentityAnon: '您的 Homeroom 账户会自动为您登录，无需密码。',
     roleSeeker: '求职者', roleSeekerBody: '创建电子简历，匹配技能并申请职位。', roleCompany: '公司', roleCompanyBody: '发布职位并管理申请人。',
-    yourAccounts: '您的账户', noAccountsYet: '您还没有 Loker Dunia 账户。请先注册为求职者或公司。', sampleAccounts: '示例账户', sampleAccount: '示例', unfinishedProfile: '资料未完成',
+    yourAccounts: '您的账户', noAccountsYet: '您还没有 Job Vacancy 账户。请先注册为求职者或公司。', sampleAccounts: '示例账户', sampleAccount: '示例', unfinishedProfile: '资料未完成',
     companySignupTitle: '注册为公司', companySignupBody: '填写公司信息，即可开始发布职位。', companyName: '公司名称', industry: '行业', createCompany: '创建公司账户', welcomeCompany: '欢迎，{co}',
     createProfile: '创建资料', editProfile: '编辑资料', stepOf: '第 {n} 步，共 {total} 步', progress: '注册进度', stepBio: '个人信息', stepEduExp: '教育与工作经历', stepSkills: '技能', stepCerts: '证书',
     saveFinish: '保存并完成', saveChanges: '保存更改', backToProfile: '返回个人资料',
@@ -84,6 +84,8 @@
     per_month: '/月', per_year: '/年', per_hour: '/小时',
     cat_it: 'IT', cat_health: '医疗健康', cat_education: '教育', cat_finance: '金融', cat_engineering: '工程', cat_creative: '创意', cat_marketing: '市场营销', cat_sales: '销售与服务', cat_hospitality: '酒店餐饮', cat_logistics: '物流', cat_agriculture: '农业',
     pageNotFound: '页面未找到', pageNotFoundBody: '该链接不存在。',
+    sampleListing: '示例职位', sampleApplyOff: '暂不接受申请',
+    sampleApplyNote: '这是一个示例职位，用来展示 Loker Dunia 上的职位是什么样子。暂不接受申请。',
     showAllCountries: '显示全部 {n} 个国家', showFewer: '收起',
     notifications: '通知', markAllRead: '全部标为已读', noNotifications: '暂无通知', noNotificationsBody: '与你技能匹配的职位会显示在这里。', notifUnread: '{n} 条未读',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "职位正在陆续添加。创建包含你技能的个人资料，以便在有匹配职位发布时收到通知。",
     jobsComingSeeker: "职位正在陆续添加。有与你的技能匹配的职位发布时，我们会通知你。",
     jobField: "工作领域",
+    jobsInCountry: '{country}的职位', jobLanguage: '职位语言', allLanguages: '所有语言', jobLangChip: '语言: {lang}',
   },
 };

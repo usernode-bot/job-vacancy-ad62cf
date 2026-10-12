@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Kannada. A key missing here falls back to English. */
+/* Job Vacancy interface text: Kannada. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['kn'] = {
   name: 'ಕನ್ನಡ',
   locale: 'kn-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ಉದ್ಯೋಗಗಳ ಆಧಾರದ ಮೇಲೆ', youHaveIt: 'ನಿಮ್ಮಲ್ಲಿದೆ', pctRequired: '{n}% ಅಗತ್ಯ', otherCountriesHint: 'ದೇಶ ಪಟ್ಟಿಯಲ್ಲಿಲ್ಲವೇ?', allCountriesList: 'ಎಲ್ಲಾ ದೇಶಗಳನ್ನು ನೋಡಿ', noCountry: 'ಯಾವುದೇ ದೇಶ ಕಂಡುಬಂದಿಲ್ಲ', noCountryBody: 'ಬೇರೆ ಕಾಗುಣಿತದೊಂದಿಗೆ ಪ್ರಯತ್ನಿಸಿ.',
     signUpTitle: 'ಸೈನ್ ಅಪ್', signInTitle: 'ಸೈನ್ ಇನ್', signUp: 'ಸೈನ್ ಅಪ್', signIn: 'ಸೈನ್ ಇನ್', homeroomIdentity: 'ನೀವು Homeroom ಖಾತೆ @{user} ಮೂಲಕ ಸೈನ್ ಇನ್ ಆಗಿದ್ದೀರಿ, ಆದ್ದರಿಂದ ಪಾಸ್‌ವರ್ಡ್ ಅಗತ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಪಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ.', homeroomIdentityAnon: 'ನಿಮ್ಮ Homeroom ಖಾತೆಯು ನಿಮ್ಮನ್ನು ಸೈನ್ ಇನ್ ಮಾಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಪಾಸ್‌ವರ್ಡ್ ಅಗತ್ಯವಿಲ್ಲ.',
     roleSeeker: 'ಉದ್ಯೋಗಾಕಾಂಕ್ಷಿ', roleSeekerBody: 'ಡಿಜಿಟಲ್ CV ರಚಿಸಿ, ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳನ್ನು ಹೊಂದಿಸಿ ಮತ್ತು ಉದ್ಯೋಗಗಳಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.', roleCompany: 'ಕಂಪನಿ', roleCompanyBody: 'ಉದ್ಯೋಗಗಳನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿ ಮತ್ತು ಅರ್ಜಿದಾರರನ್ನು ನಿರ್ವಹಿಸಿ.',
-    yourAccounts: 'ನಿಮ್ಮ ಖಾತೆಗಳು', noAccountsYet: 'ನಿಮಗೆ ಇನ್ನೂ Loker Dunia ಖಾತೆ ಇಲ್ಲ. ಮೊದಲು ಉದ್ಯೋಗಾಕಾಂಕ್ಷಿಯಾಗಿ ಅಥವಾ ಕಂಪನಿಯಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ.', sampleAccounts: 'ಮಾದರಿ ಖಾತೆಗಳು', sampleAccount: 'ಮಾದರಿ', unfinishedProfile: 'ಅಪೂರ್ಣ ಪ್ರೊಫೈಲ್',
+    yourAccounts: 'ನಿಮ್ಮ ಖಾತೆಗಳು', noAccountsYet: 'ನಿಮಗೆ ಇನ್ನೂ Job Vacancy ಖಾತೆ ಇಲ್ಲ. ಮೊದಲು ಉದ್ಯೋಗಾಕಾಂಕ್ಷಿಯಾಗಿ ಅಥವಾ ಕಂಪನಿಯಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ.', sampleAccounts: 'ಮಾದರಿ ಖಾತೆಗಳು', sampleAccount: 'ಮಾದರಿ', unfinishedProfile: 'ಅಪೂರ್ಣ ಪ್ರೊಫೈಲ್',
     companySignupTitle: 'ಕಂಪನಿಯಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ', companySignupBody: 'ಉದ್ಯೋಗಗಳನ್ನು ಪೋಸ್ಟ್ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಲು ನಿಮ್ಮ ಕಂಪನಿಯ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ.', companyName: 'ಕಂಪನಿಯ ಹೆಸರು', industry: 'ಉದ್ಯಮ', createCompany: 'ಕಂಪನಿ ಖಾತೆ ರಚಿಸಿ', welcomeCompany: 'ಸ್ವಾಗತ, {co}',
     createProfile: 'ಪ್ರೊಫೈಲ್ ರಚಿಸಿ', editProfile: 'ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ', stepOf: '{total} ರಲ್ಲಿ ಹಂತ {n}', progress: 'ಸೈನ್ ಅಪ್ ಪ್ರಗತಿ', stepBio: 'ವೈಯಕ್ತಿಕ ವಿವರಗಳು', stepEduExp: 'ಶಿಕ್ಷಣ & ಅನುಭವ', stepSkills: 'ಕೌಶಲ್ಯಗಳು', stepCerts: 'ಪ್ರಮಾಣಪತ್ರಗಳು',
     saveFinish: 'ಉಳಿಸಿ ಮತ್ತು ಮುಗಿಸಿ', saveChanges: 'ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ', backToProfile: 'ಪ್ರೊಫೈಲ್‌ಗೆ ಹಿಂತಿರುಗಿ',
@@ -84,6 +84,8 @@
     per_month: '/ತಿಂ.', per_year: '/ವ.', per_hour: '/ಗಂ.',
     cat_it: 'IT', cat_health: 'ಆರೋಗ್ಯ ರಕ್ಷಣೆ', cat_education: 'ಶಿಕ್ಷಣ', cat_finance: 'ಹಣಕಾಸು', cat_engineering: 'ಎಂಜಿನಿಯರಿಂಗ್', cat_creative: 'ಸೃಜನಶೀಲ', cat_marketing: 'ಮಾರ್ಕೆಟಿಂಗ್', cat_sales: 'ಮಾರಾಟ & ಸೇವೆ', cat_hospitality: 'ಆತಿಥ್ಯ', cat_logistics: 'ಲಾಜಿಸ್ಟಿಕ್ಸ್', cat_agriculture: 'ಕೃಷಿ',
     pageNotFound: 'ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ', pageNotFoundBody: 'ಈ ಲಿಂಕ್ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
+    sampleListing: 'ಮಾದರಿ ಪಟ್ಟಿ', sampleApplyOff: 'ಅರ್ಜಿಗಳು ಆಫ್ ಆಗಿವೆ',
+    sampleApplyNote: 'ಇದು Loker Dunia ನಲ್ಲಿ ಉದ್ಯೋಗಗಳು ಹೇಗೆ ಕಾಣುತ್ತವೆ ಎಂಬುದನ್ನು ತೋರಿಸುವ ಮಾದರಿ ಪಟ್ಟಿ. ಅರ್ಜಿಗಳು ಆಫ್ ಆಗಿವೆ.',
     showAllCountries: 'ಎಲ್ಲಾ {n} ದೇಶಗಳನ್ನು ತೋರಿಸಿ', showFewer: 'ಕಡಿಮೆ ತೋರಿಸಿ',
     notifications: 'ಅಧಿಸೂಚನೆಗಳು', markAllRead: 'ಎಲ್ಲವನ್ನೂ ಓದಿದೆ ಎಂದು ಗುರುತಿಸಿ', noNotifications: 'ಇನ್ನೂ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ', noNotificationsBody: 'ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳಿಗೆ ಹೊಂದುವ ಉದ್ಯೋಗಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.', notifUnread: '{n} ಓದದಿರುವುದು',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "ಹೊಸ ಉದ್ಯೋಗಗಳು ಸೇರಿಸಲಾಗುತ್ತಿವೆ. ಹೊಂದಾಣಿಕೆಯ ಉದ್ಯೋಗ ಪ್ರಕಟವಾದಾಗ ಸೂಚನೆ ಪಡೆಯಲು ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳೊಂದಿಗೆ ಪ್ರೊಫೈಲ್ ರಚಿಸಿ.",
     jobsComingSeeker: "ಹೊಸ ಉದ್ಯೋಗಗಳು ಸೇರಿಸಲಾಗುತ್ತಿವೆ. ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳಿಗೆ ಹೊಂದಾಣಿಕೆಯ ಉದ್ಯೋಗ ಪ್ರಕಟವಾದಾಗ ನಾವು ತಿಳಿಸುತ್ತೇವೆ.",
     jobField: "ಕೆಲಸದ ಕ್ಷೇತ್ರ",
+    jobsInCountry: '{country} ನಲ್ಲಿ ಉದ್ಯೋಗಗಳು', jobLanguage: 'ಉದ್ಯೋಗದ ಭಾಷೆ', allLanguages: 'ಎಲ್ಲಾ ಭಾಷೆಗಳು', jobLangChip: 'ಭಾಷೆ: {lang}',
   },
 };

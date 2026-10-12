@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Tamil. A key missing here falls back to English. */
+/* Job Vacancy interface text: Tamil. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ta'] = {
   name: 'தமிழ்',
   locale: 'ta-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} வேலைகளின் அடிப்படையில்', youHaveIt: 'உங்களிடம் உள்ளது', pctRequired: '{n}% தேவை', otherCountriesHint: 'நாடு பட்டியலில் இல்லையா?', allCountriesList: 'அனைத்து நாடுகளையும் காண்க', noCountry: 'நாடு எதுவும் கிடைக்கவில்லை', noCountryBody: 'வேறு எழுத்துக்கூட்டலை முயலவும்.',
     signUpTitle: 'பதிவு செய்க', signInTitle: 'உள்நுழைக', signUp: 'பதிவு செய்க', signIn: 'உள்நுழைக', homeroomIdentity: 'நீங்கள் Homeroom கணக்கு @{user} மூலம் உள்நுழைந்துள்ளீர்கள், எனவே கடவுச்சொல் தேவையில்லை. உங்கள் பங்கைத் தேர்ந்தெடுக்கவும்.', homeroomIdentityAnon: 'உங்கள் Homeroom கணக்கு உங்களை உள்நுழைய வைக்கிறது, எனவே கடவுச்சொல் தேவையில்லை.',
     roleSeeker: 'வேலை தேடுபவர்', roleSeekerBody: 'டிஜிட்டல் CV ஐ உருவாக்கி, உங்கள் திறன்களைப் பொருத்தி, வேலைகளுக்கு விண்ணப்பிக்கவும்.', roleCompany: 'நிறுவனம்', roleCompanyBody: 'வேலைகளை வெளியிட்டு விண்ணப்பதாரர்களை நிர்வகிக்கவும்.',
-    yourAccounts: 'உங்கள் கணக்குகள்', noAccountsYet: 'உங்களிடம் இன்னும் Loker Dunia கணக்கு இல்லை. முதலில் வேலை தேடுபவராக அல்லது நிறுவனமாகப் பதிவு செய்யவும்.', sampleAccounts: 'மாதிரிக் கணக்குகள்', sampleAccount: 'மாதிரி', unfinishedProfile: 'முழுமையடையாத சுயவிவரம்',
+    yourAccounts: 'உங்கள் கணக்குகள்', noAccountsYet: 'உங்களிடம் இன்னும் Job Vacancy கணக்கு இல்லை. முதலில் வேலை தேடுபவராக அல்லது நிறுவனமாகப் பதிவு செய்யவும்.', sampleAccounts: 'மாதிரிக் கணக்குகள்', sampleAccount: 'மாதிரி', unfinishedProfile: 'முழுமையடையாத சுயவிவரம்',
     companySignupTitle: 'நிறுவனமாகப் பதிவு செய்யவும்', companySignupBody: 'வேலைகளை வெளியிடத் தொடங்க உங்கள் நிறுவன விவரங்களை உள்ளிடவும்.', companyName: 'நிறுவனத்தின் பெயர்', industry: 'தொழில்துறை', createCompany: 'நிறுவனக் கணக்கை உருவாக்கவும்', welcomeCompany: 'வரவேற்கிறோம், {co}',
     createProfile: 'சுயவிவரத்தை உருவாக்கவும்', editProfile: 'சுயவிவரத்தைத் திருத்தவும்', stepOf: 'படி {n} / {total}', progress: 'பதிவு முன்னேற்றம்', stepBio: 'தனிப்பட்ட விவரங்கள்', stepEduExp: 'கல்வி & அனுபவம்', stepSkills: 'திறன்கள்', stepCerts: 'சான்றிதழ்கள்',
     saveFinish: 'சேமித்து முடிக்கவும்', saveChanges: 'மாற்றங்களைச் சேமிக்கவும்', backToProfile: 'சுயவிவரத்திற்குத் திரும்பு',
@@ -84,6 +84,8 @@
     per_month: '/மாதம்', per_year: '/ஆண்டு', per_hour: '/மணி',
     cat_it: 'IT', cat_health: 'சுகாதாரம்', cat_education: 'கல்வி', cat_finance: 'நிதி', cat_engineering: 'பொறியியல்', cat_creative: 'படைப்பாற்றல்', cat_marketing: 'சந்தைப்படுத்தல்', cat_sales: 'விற்பனை & சேவை', cat_hospitality: 'விருந்தோம்பல்', cat_logistics: 'தளவாடங்கள்', cat_agriculture: 'வேளாண்மை',
     pageNotFound: 'பக்கம் கிடைக்கவில்லை', pageNotFoundBody: 'இந்த இணைப்பு இல்லை.',
+    sampleListing: 'மாதிரி பட்டியல்', sampleApplyOff: 'விண்ணப்பங்கள் நிறுத்தப்பட்டுள்ளன',
+    sampleApplyNote: 'Loker Dunia-வில் வேலைகள் எப்படி இருக்கும் என்பதைக் காட்டும் மாதிரி பட்டியல் இது. விண்ணப்பங்கள் நிறுத்தப்பட்டுள்ளன.',
     showAllCountries: 'அனைத்து {n} நாடுகளையும் காட்டு', showFewer: 'குறைவாகக் காட்டு',
     notifications: 'அறிவிப்புகள்', markAllRead: 'அனைத்தையும் படித்ததாகக் குறி', noNotifications: 'இன்னும் அறிவிப்புகள் இல்லை', noNotificationsBody: 'உங்கள் திறன்களுக்கு பொருந்தும் வேலைகள் இங்கே தோன்றும்.', notifUnread: '{n} படிக்காதவை',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "புதிய வேலைவாய்ப்புகள் சேர்க்கப்படுகின்றன. பொருந்தும் வேலை இடுகையிடப்படும்போது அறிவிப்பு பெற உங்கள் திறன்களுடன் சுயவிவரம் உருவாக்குங்கள்.",
     jobsComingSeeker: "புதிய வேலைவாய்ப்புகள் சேர்க்கப்படுகின்றன. உங்கள் திறன்களுக்குப் பொருந்தும் வேலை இடுகையிடப்படும்போது நாங்கள் உங்களுக்குத் தெரிவிப்போம்.",
     jobField: "பணித் துறை",
+    jobsInCountry: '{country} இல் வேலைவாய்ப்புகள்', jobLanguage: 'வேலையின் மொழி', allLanguages: 'அனைத்து மொழிகளும்', jobLangChip: 'மொழி: {lang}',
   },
 };

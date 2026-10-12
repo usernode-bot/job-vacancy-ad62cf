@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Persian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Persian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['fa'] = {
   name: 'فارسی',
   locale: 'fa-IR',
@@ -35,7 +35,7 @@
     skillsBasis: 'بر اساس {n} شغل', youHaveIt: 'این مهارت را دارید', pctRequired: '{n}% الزامی', otherCountriesHint: 'کشور شما در فهرست نیست؟', allCountriesList: 'مشاهده همه کشورها', noCountry: 'کشوری یافت نشد', noCountryBody: 'املای دیگری را امتحان کنید.',
     signUpTitle: 'ثبت‌نام', signInTitle: 'ورود', signUp: 'ثبت‌نام', signIn: 'ورود', homeroomIdentity: 'شما با حساب Homeroom @{user} وارد شده‌اید، بنابراین به رمز عبور نیازی نیست. لطفاً نقش خود را انتخاب کنید.', homeroomIdentityAnon: 'ورود شما با حساب Homeroom انجام می‌شود، بنابراین به رمز عبور نیازی نیست.',
     roleSeeker: 'کارجو', roleSeekerBody: 'رزومه دیجیتال بسازید، مهارت‌هایتان را تطبیق دهید و برای مشاغل درخواست بدهید.', roleCompany: 'شرکت', roleCompanyBody: 'آگهی شغلی منتشر کنید و متقاضیان را مدیریت کنید.',
-    yourAccounts: 'حساب‌های شما', noAccountsYet: 'هنوز حسابی در Loker Dunia ندارید. ابتدا به‌عنوان کارجو یا شرکت ثبت‌نام کنید.', sampleAccounts: 'حساب‌های نمونه', sampleAccount: 'نمونه', unfinishedProfile: 'پروفایل ناتمام',
+    yourAccounts: 'حساب‌های شما', noAccountsYet: 'هنوز حسابی در Job Vacancy ندارید. ابتدا به‌عنوان کارجو یا شرکت ثبت‌نام کنید.', sampleAccounts: 'حساب‌های نمونه', sampleAccount: 'نمونه', unfinishedProfile: 'پروفایل ناتمام',
     companySignupTitle: 'ثبت‌نام به‌عنوان شرکت', companySignupBody: 'برای شروع انتشار آگهی، اطلاعات شرکت خود را وارد کنید.', companyName: 'نام شرکت', industry: 'صنعت', createCompany: 'ایجاد حساب شرکت', welcomeCompany: 'خوش آمدید، {co}',
     createProfile: 'ایجاد پروفایل', editProfile: 'ویرایش پروفایل', stepOf: 'مرحله {n} از {total}', progress: 'پیشرفت ثبت‌نام', stepBio: 'اطلاعات شخصی', stepEduExp: 'تحصیلات و سوابق کاری', stepSkills: 'مهارت‌ها', stepCerts: 'گواهی‌ها',
     saveFinish: 'ذخیره و پایان', saveChanges: 'ذخیره تغییرات', backToProfile: 'بازگشت به پروفایل',
@@ -84,6 +84,8 @@
     per_month: '/ماه', per_year: '/سال', per_hour: '/ساعت',
     cat_it: 'فناوری اطلاعات', cat_health: 'بهداشت و درمان', cat_education: 'آموزش', cat_finance: 'مالی', cat_engineering: 'مهندسی', cat_creative: 'خلاقیت و هنر', cat_marketing: 'بازاریابی', cat_sales: 'فروش و خدمات', cat_hospitality: 'هتلداری و پذیرایی', cat_logistics: 'لجستیک', cat_agriculture: 'کشاورزی',
     pageNotFound: 'صفحه یافت نشد', pageNotFoundBody: 'این پیوند وجود ندارد.',
+    sampleListing: 'آگهی نمونه', sampleApplyOff: 'ارسال درخواست غیرفعال است',
+    sampleApplyNote: 'این یک آگهی نمونه است که نشان می‌دهد شغل‌ها در Loker Dunia چگونه دیده می‌شوند. ارسال درخواست غیرفعال است.',
     showAllCountries: 'نمایش همه {n} کشور', showFewer: 'نمایش کمتر',
     notifications: 'اعلان‌ها', markAllRead: 'علامت‌گذاری همه به‌عنوان خوانده‌شده', noNotifications: 'هنوز اعلانی نیست', noNotificationsBody: 'شغل‌هایی که با مهارت‌های شما مطابقت دارند اینجا نمایش داده می‌شوند.', notifUnread: '{n} خوانده‌نشده',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "آگهی‌های شغلی در حال اضافه شدن هستند. یک پروفایل با مهارت‌هایتان بسازید تا وقتی شغل مناسب منتشر شد خبرتان کنیم.",
     jobsComingSeeker: "آگهی‌های شغلی در حال اضافه شدن هستند. وقتی شغلی متناسب با مهارت‌هایتان منتشر شد به شما خبر می‌دهیم.",
     jobField: "حوزه کاری",
+    jobsInCountry: 'مشاغل در {country}', jobLanguage: 'زبان شغل', allLanguages: 'همه زبان‌ها', jobLangChip: 'زبان: {lang}',
   },
 };

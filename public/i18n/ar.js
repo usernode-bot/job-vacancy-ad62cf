@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Arabic. A key missing here falls back to English. */
+/* Job Vacancy interface text: Arabic. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ar'] = {
   name: 'العربية',
   locale: 'ar',
@@ -35,7 +35,7 @@
     skillsBasis: 'استنادًا إلى {n} وظيفة', youHaveIt: 'لديك هذه المهارة', pctRequired: 'مطلوبة بنسبة {n}%', otherCountriesHint: 'الدولة غير مدرجة؟', allCountriesList: 'عرض جميع الدول', noCountry: 'لم يتم العثور على دولة', noCountryBody: 'جرّب تهجئة أخرى.',
     signUpTitle: 'إنشاء حساب', signInTitle: 'تسجيل الدخول', signUp: 'إنشاء حساب', signIn: 'تسجيل الدخول', homeroomIdentity: 'أنت مسجّل الدخول بحساب Homeroom @{user}، لذا لا حاجة إلى كلمة مرور. يُرجى اختيار دورك.', homeroomIdentityAnon: 'يتم تسجيل دخولك عبر حساب Homeroom، لذا لا حاجة إلى كلمة مرور.',
     roleSeeker: 'باحث عن عمل', roleSeekerBody: 'أنشئ سيرة ذاتية رقمية، وطابق مهاراتك، وتقدّم للوظائف.', roleCompany: 'شركة', roleCompanyBody: 'انشر الوظائف وأدِر المتقدمين.',
-    yourAccounts: 'حساباتك', noAccountsYet: 'ليس لديك حساب في Loker Dunia بعد. يُرجى التسجيل أولًا كباحث عن عمل أو كشركة.', sampleAccounts: 'حسابات تجريبية', sampleAccount: 'تجريبي', unfinishedProfile: 'ملف شخصي غير مكتمل',
+    yourAccounts: 'حساباتك', noAccountsYet: 'ليس لديك حساب في Job Vacancy بعد. يُرجى التسجيل أولًا كباحث عن عمل أو كشركة.', sampleAccounts: 'حسابات تجريبية', sampleAccount: 'تجريبي', unfinishedProfile: 'ملف شخصي غير مكتمل',
     companySignupTitle: 'التسجيل كشركة', companySignupBody: 'أدخل بيانات شركتك للبدء في نشر الوظائف.', companyName: 'اسم الشركة', industry: 'القطاع', createCompany: 'إنشاء حساب شركة', welcomeCompany: 'مرحبًا، {co}',
     createProfile: 'إنشاء ملف شخصي', editProfile: 'تعديل الملف الشخصي', stepOf: 'الخطوة {n} من {total}', progress: 'تقدّم التسجيل', stepBio: 'البيانات الشخصية', stepEduExp: 'التعليم والخبرة', stepSkills: 'المهارات', stepCerts: 'الشهادات',
     saveFinish: 'حفظ وإنهاء', saveChanges: 'حفظ التغييرات', backToProfile: 'العودة إلى الملف الشخصي',
@@ -84,6 +84,8 @@
     per_month: '/شهر', per_year: '/سنة', per_hour: '/ساعة',
     cat_it: 'تقنية المعلومات', cat_health: 'الرعاية الصحية', cat_education: 'التعليم', cat_finance: 'المالية', cat_engineering: 'الهندسة', cat_creative: 'الإبداع', cat_marketing: 'التسويق', cat_sales: 'المبيعات والخدمة', cat_hospitality: 'الضيافة', cat_logistics: 'الخدمات اللوجستية', cat_agriculture: 'الزراعة',
     pageNotFound: 'الصفحة غير موجودة', pageNotFoundBody: 'هذا الرابط غير موجود.',
+    sampleListing: 'إعلان تجريبي', sampleApplyOff: 'التقديم متوقف',
+    sampleApplyNote: 'هذا إعلان تجريبي يوضح شكل الوظائف على Loker Dunia. التقديم متوقف.',
     showAllCountries: 'عرض كل الدول ({n})', showFewer: 'عرض أقل',
     notifications: 'الإشعارات', markAllRead: 'تحديد الكل كمقروء', noNotifications: 'لا توجد إشعارات بعد', noNotificationsBody: 'ستظهر هنا الوظائف المطابقة لمهاراتك.', notifUnread: '{n} غير مقروء',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "تُضاف وظائف باستمرار. أنشئ ملفًا شخصيًا بمهاراتك لتصلك إشعارات عند نشر وظيفة مطابقة.",
     jobsComingSeeker: "تُضاف وظائف باستمرار. سنخطرك عند نشر وظيفة تطابق مهاراتك.",
     jobField: "مجال العمل",
+    jobsInCountry: 'وظائف في {country}', jobLanguage: 'لغة الوظيفة', allLanguages: 'كل اللغات', jobLangChip: 'اللغة: {lang}',
   },
 };

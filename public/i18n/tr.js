@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Turkish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Turkish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['tr'] = {
   name: 'Türkçe',
   locale: 'tr-TR',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ilana göre', youHaveIt: 'Sizde var', pctRequired: '%{n} zorunlu', otherCountriesHint: 'Ülke listede yok mu?', allCountriesList: 'Tüm ülkeleri gör', noCountry: 'Ülke bulunamadı', noCountryBody: 'Farklı bir yazım deneyin.',
     signUpTitle: 'Kaydol', signInTitle: 'Giriş yap', signUp: 'Kaydol', signIn: 'Giriş yap', homeroomIdentity: '@{user} Homeroom hesabıyla giriş yaptınız, bu nedenle şifre gerekmez. Rolünüzü seçin.', homeroomIdentityAnon: 'Homeroom hesabınızla giriş yapılır, bu nedenle şifre gerekmez.',
     roleSeeker: 'İş Arayan', roleSeekerBody: 'Dijital özgeçmiş oluşturun, becerilerinizi eşleştirin ve ilanlara başvurun.', roleCompany: 'Şirket', roleCompanyBody: 'İlan yayınlayın ve adayları yönetin.',
-    yourAccounts: 'Hesaplarınız', noAccountsYet: 'Henüz bir Loker Dunia hesabınız yok. Önce İş Arayan veya Şirket olarak kaydolun.', sampleAccounts: 'Örnek hesaplar', sampleAccount: 'örnek', unfinishedProfile: 'Tamamlanmamış profil',
+    yourAccounts: 'Hesaplarınız', noAccountsYet: 'Henüz bir Job Vacancy hesabınız yok. Önce İş Arayan veya Şirket olarak kaydolun.', sampleAccounts: 'Örnek hesaplar', sampleAccount: 'örnek', unfinishedProfile: 'Tamamlanmamış profil',
     companySignupTitle: 'Şirket olarak kaydolun', companySignupBody: 'İlan yayınlamaya başlamak için şirket bilgilerinizi girin.', companyName: 'Şirket adı', industry: 'Sektör', createCompany: 'Şirket hesabı oluştur', welcomeCompany: 'Hoş geldiniz, {co}',
     createProfile: 'Profil oluştur', editProfile: 'Profili düzenle', stepOf: 'Adım {n} / {total}', progress: 'Kayıt ilerlemesi', stepBio: 'Kişisel bilgiler', stepEduExp: 'Eğitim ve Deneyim', stepSkills: 'Beceriler', stepCerts: 'Sertifikalar',
     saveFinish: 'Kaydet ve Bitir', saveChanges: 'Değişiklikleri kaydet', backToProfile: 'Profile dön',
@@ -84,6 +84,8 @@
     per_month: '/ay', per_year: '/yıl', per_hour: '/sa',
     cat_it: 'Bilişim', cat_health: 'Sağlık', cat_education: 'Eğitim', cat_finance: 'Finans', cat_engineering: 'Mühendislik', cat_creative: 'Yaratıcı', cat_marketing: 'Pazarlama', cat_sales: 'Satış ve Hizmet', cat_hospitality: 'Konaklama', cat_logistics: 'Lojistik', cat_agriculture: 'Tarım',
     pageNotFound: 'Sayfa bulunamadı', pageNotFoundBody: 'Bu bağlantı mevcut değil.',
+    sampleListing: 'Örnek ilan', sampleApplyOff: 'Başvurular kapalı',
+    sampleApplyNote: 'Bu, Loker Dunia\'daki işlerin nasıl göründüğünü gösteren örnek bir ilandır. Başvurular kapalı.',
     showAllCountries: '{n} ülkenin tümünü göster', showFewer: 'Daha az göster',
     notifications: 'Bildirimler', markAllRead: 'Tümünü okundu işaretle', noNotifications: 'Henüz bildirim yok', noNotificationsBody: 'Becerilerinize uyan işler burada görünecek.', notifUnread: '{n} okunmamış',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Yeni iş ilanları ekleniyor. Eşleşen bir ilan yayınlandığında bildirim almak için becerilerinizle bir profil oluşturun.",
     jobsComingSeeker: "Yeni iş ilanları ekleniyor. Becerilerinize uygun bir ilan yayınlandığında size haber vereceğiz.",
     jobField: "İş alanı",
+    jobsInCountry: '{country} içindeki işler', jobLanguage: 'İşin dili', allLanguages: 'Tüm diller', jobLangChip: 'Dil: {lang}',
   },
 };

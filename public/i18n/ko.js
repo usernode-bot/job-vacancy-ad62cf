@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Korean. A key missing here falls back to English. */
+/* Job Vacancy interface text: Korean. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {}).ko = {
   name: '한국어',
   locale: 'ko-KR',
@@ -35,7 +35,7 @@
     skillsBasis: '채용 공고 {n}개 기준', youHaveIt: '보유 중', pctRequired: '{n}% 필수', otherCountriesHint: '찾는 국가가 없나요?', allCountriesList: '모든 국가 보기', noCountry: '국가를 찾을 수 없습니다', noCountryBody: '다른 철자로 시도해 보세요.',
     signUpTitle: '회원가입', signInTitle: '로그인', signUp: '회원가입', signIn: '로그인', homeroomIdentity: 'Homeroom 계정 @{user}(으)로 로그인되어 있어 비밀번호가 필요 없습니다. 역할을 선택해 주세요.', homeroomIdentityAnon: 'Homeroom 계정으로 로그인되므로 비밀번호가 필요 없습니다.',
     roleSeeker: '구직자', roleSeekerBody: '디지털 이력서를 만들고, 기술을 매칭하여 채용 공고에 지원하세요.', roleCompany: '기업', roleCompanyBody: '채용 공고를 등록하고 지원자를 관리하세요.',
-    yourAccounts: '내 계정', noAccountsYet: '아직 Loker Dunia 계정이 없습니다. 먼저 구직자 또는 기업으로 가입해 주세요.', sampleAccounts: '샘플 계정', sampleAccount: '샘플', unfinishedProfile: '미완성 프로필',
+    yourAccounts: '내 계정', noAccountsYet: '아직 Job Vacancy 계정이 없습니다. 먼저 구직자 또는 기업으로 가입해 주세요.', sampleAccounts: '샘플 계정', sampleAccount: '샘플', unfinishedProfile: '미완성 프로필',
     companySignupTitle: '기업으로 가입', companySignupBody: '기업 정보를 입력하고 채용 공고 등록을 시작하세요.', companyName: '기업명', industry: '업종', createCompany: '기업 계정 만들기', welcomeCompany: '{co}님, 환영합니다',
     createProfile: '프로필 만들기', editProfile: '프로필 편집', stepOf: '{total}단계 중 {n}단계', progress: '가입 진행 상황', stepBio: '인적 사항', stepEduExp: '학력 및 경력', stepSkills: '기술', stepCerts: '자격증',
     saveFinish: '저장 및 완료', saveChanges: '변경 사항 저장', backToProfile: '프로필로 돌아가기',
@@ -84,6 +84,8 @@
     per_month: '/월', per_year: '/년', per_hour: '/시간',
     cat_it: 'IT', cat_health: '의료', cat_education: '교육', cat_finance: '금융', cat_engineering: '엔지니어링', cat_creative: '크리에이티브', cat_marketing: '마케팅', cat_sales: '영업 및 서비스', cat_hospitality: '호텔 및 요식업', cat_logistics: '물류', cat_agriculture: '농업',
     pageNotFound: '페이지를 찾을 수 없습니다', pageNotFoundBody: '존재하지 않는 링크입니다.',
+    sampleListing: '샘플 공고', sampleApplyOff: '지원이 비활성화되어 있습니다',
+    sampleApplyNote: 'Loker Dunia의 채용 공고가 어떻게 보이는지 보여 주는 샘플 공고입니다. 지원이 비활성화되어 있습니다.',
     showAllCountries: '{n}개 국가 모두 보기', showFewer: '간략히 보기',
     notifications: '알림', markAllRead: '모두 읽음으로 표시', noNotifications: '아직 알림이 없습니다', noNotificationsBody: '내 스킬에 맞는 일자리가 여기에 표시됩니다.', notifUnread: '읽지 않음 {n}개',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "일자리를 추가하고 있어요. 맞는 일자리가 올라오면 알림을 받으려면 기술을 넣어 프로필을 만들어 보세요.",
     jobsComingSeeker: "일자리를 추가하고 있어요. 기술에 맞는 일자리가 올라오면 알려드릴게요.",
     jobField: "직무 분야",
+    jobsInCountry: '{country} 채용공고', jobLanguage: '채용 언어', allLanguages: '모든 언어', jobLangChip: '언어: {lang}',
   },
 };

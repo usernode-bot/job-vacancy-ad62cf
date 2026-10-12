@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Hungarian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Hungarian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['hu'] = {
   name: 'Magyar',
   locale: 'hu-HU',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} állás alapján', youHaveIt: 'Önnek megvan', pctRequired: '{n}% kötelező', otherCountriesHint: 'Nem találja az országot?', allCountriesList: 'Összes ország megtekintése', noCountry: 'Nem található ország', noCountryBody: 'Próbálja más írásmóddal.',
     signUpTitle: 'Regisztráció', signInTitle: 'Belépés', signUp: 'Regisztráció', signIn: 'Belépés', homeroomIdentity: 'A(z) @{user} Homeroom-fiókkal lépett be, így nincs szükség jelszóra. Válassza ki a szerepkörét.', homeroomIdentityAnon: 'A Homeroom-fiókjával lép be, így nincs szükség jelszóra.',
     roleSeeker: 'Álláskereső', roleSeekerBody: 'Készítsen digitális önéletrajzot, egyeztesse készségeit, és jelentkezzen állásokra.', roleCompany: 'Cég', roleCompanyBody: 'Hirdessen állásokat, és kezelje a jelentkezőket.',
-    yourAccounts: 'Az Ön fiókjai', noAccountsYet: 'Még nincs Loker Dunia fiókja. Először regisztráljon Álláskeresőként vagy Cégként.', sampleAccounts: 'Mintafiókok', sampleAccount: 'minta', unfinishedProfile: 'Befejezetlen profil',
+    yourAccounts: 'Az Ön fiókjai', noAccountsYet: 'Még nincs Job Vacancy fiókja. Először regisztráljon Álláskeresőként vagy Cégként.', sampleAccounts: 'Mintafiókok', sampleAccount: 'minta', unfinishedProfile: 'Befejezetlen profil',
     companySignupTitle: 'Regisztráció cégként', companySignupBody: 'Adja meg a cég adatait, hogy elkezdhessen állásokat hirdetni.', companyName: 'Cégnév', industry: 'Iparág', createCompany: 'Céges fiók létrehozása', welcomeCompany: 'Üdvözöljük, {co}',
     createProfile: 'Profil létrehozása', editProfile: 'Profil szerkesztése', stepOf: '{n}. lépés / {total}', progress: 'Regisztráció állapota', stepBio: 'Személyes adatok', stepEduExp: 'Végzettség és tapasztalat', stepSkills: 'Készségek', stepCerts: 'Tanúsítványok',
     saveFinish: 'Mentés és befejezés', saveChanges: 'Módosítások mentése', backToProfile: 'Vissza a profilhoz',
@@ -84,6 +84,8 @@
     per_month: '/hó', per_year: '/év', per_hour: '/óra',
     cat_it: 'IT', cat_health: 'Egészségügy', cat_education: 'Oktatás', cat_finance: 'Pénzügy', cat_engineering: 'Mérnöki', cat_creative: 'Kreatív', cat_marketing: 'Marketing', cat_sales: 'Értékesítés és ügyfélszolgálat', cat_hospitality: 'Vendéglátás', cat_logistics: 'Logisztika', cat_agriculture: 'Mezőgazdaság',
     pageNotFound: 'Az oldal nem található', pageNotFoundBody: 'Ez a hivatkozás nem létezik.',
+    sampleListing: 'Minta hirdetés', sampleApplyOff: 'A jelentkezés ki van kapcsolva',
+    sampleApplyNote: 'Ez egy minta hirdetés, amely megmutatja, hogyan néznek ki az állások a Loker Dunián. A jelentkezés ki van kapcsolva.',
     showAllCountries: 'Mind a {n} ország megjelenítése', showFewer: 'Kevesebb megjelenítése',
     notifications: 'Értesítések', markAllRead: 'Összes megjelölése olvasottként', noNotifications: 'Még nincs értesítés', noNotificationsBody: 'Itt jelennek meg a készségeidhez illő állások.', notifUnread: '{n} olvasatlan',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Új álláshirdetések kerülnek fel. Hozzon létre egy profilt a készségeivel, hogy értesüljön, amikor megfelelő állás jelenik meg.",
     jobsComingSeeker: "Új álláshirdetések kerülnek fel. Értesítjük, amikor az Ön készségeinek megfelelő állás jelenik meg.",
     jobField: "Munkaterület",
+    jobsInCountry: 'Állások itt: {country}', jobLanguage: 'Az állás nyelve', allLanguages: 'Minden nyelv', jobLangChip: 'Nyelv: {lang}',
   },
 };

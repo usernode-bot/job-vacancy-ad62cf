@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Amharic. A key missing here falls back to English. */
+/* Job Vacancy interface text: Amharic. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['am'] = {
   name: 'አማርኛ',
   locale: 'am-ET',
@@ -35,7 +35,7 @@
     skillsBasis: 'በ{n} ሥራዎች ላይ የተመሠረተ', youHaveIt: 'አለዎት', pctRequired: '{n}% አስፈላጊ', otherCountriesHint: 'አገሩ በዝርዝሩ ውስጥ የለም?', allCountriesList: 'ሁሉንም አገሮች ይመልከቱ', noCountry: 'ምንም አገር አልተገኘም', noCountryBody: 'ሌላ አጻጻፍ ይሞክሩ።',
     signUpTitle: 'ይመዝገቡ', signInTitle: 'ይግቡ', signUp: 'ይመዝገቡ', signIn: 'ይግቡ', homeroomIdentity: 'በHomeroom መለያ @{user} ገብተዋል፤ ስለዚህ የይለፍ ቃል አያስፈልግም። ሚናዎን ይምረጡ።', homeroomIdentityAnon: 'የHomeroom መለያዎ ያስገባዎታል፤ ስለዚህ የይለፍ ቃል አያስፈልግም።',
     roleSeeker: 'ሥራ ፈላጊ', roleSeekerBody: 'ዲጂታል CV ይፍጠሩ፣ ክህሎቶችዎን ያዛምዱ እና ለሥራዎች ያመልክቱ።', roleCompany: 'ኩባንያ', roleCompanyBody: 'ሥራዎችን ይለጥፉ እና አመልካቾችን ያስተዳድሩ።',
-    yourAccounts: 'የእርስዎ መለያዎች', noAccountsYet: 'እስካሁን የLoker Dunia መለያ የለዎትም። መጀመሪያ እንደ ሥራ ፈላጊ ወይም እንደ ኩባንያ ይመዝገቡ።', sampleAccounts: 'የናሙና መለያዎች', sampleAccount: 'ናሙና', unfinishedProfile: 'ያልተጠናቀቀ መገለጫ',
+    yourAccounts: 'የእርስዎ መለያዎች', noAccountsYet: 'እስካሁን የJob Vacancy መለያ የለዎትም። መጀመሪያ እንደ ሥራ ፈላጊ ወይም እንደ ኩባንያ ይመዝገቡ።', sampleAccounts: 'የናሙና መለያዎች', sampleAccount: 'ናሙና', unfinishedProfile: 'ያልተጠናቀቀ መገለጫ',
     companySignupTitle: 'እንደ ኩባንያ ይመዝገቡ', companySignupBody: 'ሥራዎችን መለጠፍ ለመጀመር የኩባንያዎን ዝርዝሮች ያስገቡ።', companyName: 'የኩባንያው ስም', industry: 'ኢንዱስትሪ', createCompany: 'የኩባንያ መለያ ይፍጠሩ', welcomeCompany: 'እንኳን ደህና መጡ፣ {co}',
     createProfile: 'መገለጫ ይፍጠሩ', editProfile: 'መገለጫ ያርትዑ', stepOf: 'ደረጃ {n} ከ{total}', progress: 'የምዝገባ ሂደት', stepBio: 'የግል ዝርዝሮች', stepEduExp: 'ትምህርት እና የሥራ ልምድ', stepSkills: 'ክህሎቶች', stepCerts: 'የምስክር ወረቀቶች',
     saveFinish: 'አስቀምጥ እና ጨርስ', saveChanges: 'ለውጦችን አስቀምጥ', backToProfile: 'ወደ መገለጫ ተመለስ',
@@ -84,6 +84,8 @@
     per_month: '/በወር', per_year: '/በዓመት', per_hour: '/በሰዓት',
     cat_it: 'IT', cat_health: 'ጤና አጠባበቅ', cat_education: 'ትምህርት', cat_finance: 'ፋይናንስ', cat_engineering: 'ምህንድስና', cat_creative: 'ፈጠራ', cat_marketing: 'ማርኬቲንግ', cat_sales: 'ሽያጭ እና አገልግሎት', cat_hospitality: 'መስተንግዶ', cat_logistics: 'ሎጂስቲክስ', cat_agriculture: 'ግብርና',
     pageNotFound: 'ገጹ አልተገኘም', pageNotFoundBody: 'ይህ ሊንክ የለም።',
+    sampleListing: 'የናሙና ማስታወቂያ', sampleApplyOff: 'ማመልከት ተዘግቷል',
+    sampleApplyNote: 'ይህ በሎከር ዱኒያ ላይ ስራዎች ምን እንደሚመስሉ የሚያሳይ የናሙና ማስታወቂያ ነው። ማመልከት ተዘግቷል።',
     showAllCountries: 'ሁሉንም {n} አገሮች አሳይ', showFewer: 'አነስተኛ አሳይ',
     notifications: 'ማሳወቂያዎች', markAllRead: 'ሁሉንም እንደተነበበ ምልክት አድርግ', noNotifications: 'እስካሁን ማሳወቂያ የለም', noNotificationsBody: 'ከችሎታዎ ጋር የሚስማሙ ሥራዎች እዚህ ይታያሉ።', notifUnread: '{n} ያልተነበቡ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "አዳዲስ ስራዎች እየታከሉ ነው። የሚስማማ ስራ ሲተወገን እንዲነገርዎ በክህሎትዎ መገለጫ ይፍጠሩ።",
     jobsComingSeeker: "አዳዲስ ስራዎች እየታከሉ ነው። ከክህሎትዎ ጋር የሚስማማ ስራ ሲተወገን እንነገርዎታለን።",
     jobField: "የስራ መስክ",
+    jobsInCountry: 'ስራዎች በ{country}', jobLanguage: 'የስራ ቋንቋ', allLanguages: 'ሁሉም ቋንቋዎች', jobLangChip: 'ቋንቋ: {lang}',
   },
 };

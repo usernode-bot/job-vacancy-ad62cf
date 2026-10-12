@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Igbo. A key missing here falls back to English. */
+/* Job Vacancy interface text: Igbo. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ig'] = {
   name: 'Igbo',
   locale: 'ig-NG',
@@ -35,7 +35,7 @@
     skillsBasis: 'Dabere n’ọrụ {n}', youHaveIt: 'Ị nwere ya', pctRequired: 'A chọrọ {n}%', otherCountriesHint: 'Obodo adịghị na ndepụta?', allCountriesList: 'Hụ obodo niile', noCountry: 'Ahụghị obodo ọ bụla', noCountryBody: 'Nwaa mkpoputa ọzọ.',
     signUpTitle: 'Debanye aha', signInTitle: 'Banye', signUp: 'Debanye aha', signIn: 'Banye', homeroomIdentity: 'Ị banyere site na akaụntụ Homeroom @{user}, ya mere ịchọghị okwuntughe. Họrọ ọrụ gị.', homeroomIdentityAnon: 'Akaụntụ Homeroom gị na-abanye gị, ya mere ịchọghị okwuntughe.',
     roleSeeker: 'Onye Na-achọ Ọrụ', roleSeekerBody: 'Wuo CV dijitalụ, dakọọ nka gị ma tinye akwụkwọ maka ọrụ.', roleCompany: 'Ụlọ Ọrụ', roleCompanyBody: 'Bipụta ọrụ ma jikwaa ndị na-achọ ọrụ.',
-    yourAccounts: 'Akaụntụ gị', noAccountsYet: 'Ị nwebeghị akaụntụ Loker Dunia. Buru ụzọ debanye aha dị ka Onye Na-achọ Ọrụ ma ọ bụ Ụlọ Ọrụ.', sampleAccounts: 'Akaụntụ ihe atụ', sampleAccount: 'ihe atụ', unfinishedProfile: 'Profaịlụ emezughị',
+    yourAccounts: 'Akaụntụ gị', noAccountsYet: 'Ị nwebeghị akaụntụ Job Vacancy. Buru ụzọ debanye aha dị ka Onye Na-achọ Ọrụ ma ọ bụ Ụlọ Ọrụ.', sampleAccounts: 'Akaụntụ ihe atụ', sampleAccount: 'ihe atụ', unfinishedProfile: 'Profaịlụ emezughị',
     companySignupTitle: 'Debanye aha dị ka Ụlọ Ọrụ', companySignupBody: 'Tinye nkọwa ụlọ ọrụ gị ka ịmalite ibipụta ọrụ.', companyName: 'Aha ụlọ ọrụ', industry: 'Ngalaba azụmahịa', createCompany: 'Mepụta akaụntụ ụlọ ọrụ', welcomeCompany: 'Nnọọ, {co}',
     createProfile: 'Mepụta profaịlụ', editProfile: 'Dezie profaịlụ', stepOf: 'Nzọụkwụ {n} n’ime {total}', progress: 'Ọganihu ndebanye aha', stepBio: 'Nkọwa onwe', stepEduExp: 'Agụmakwụkwọ na Ahụmahụ', stepSkills: 'Nka', stepCerts: 'Asambodo',
     saveFinish: 'Chekwaa ma Mechaa', saveChanges: 'Chekwaa mgbanwe', backToProfile: 'Laghachi na profaịlụ',
@@ -84,6 +84,8 @@
     per_month: '/ọnwa', per_year: '/afọ', per_hour: '/awa',
     cat_it: 'Teknụzụ (IT)', cat_health: 'Ahụike', cat_education: 'Agụmakwụkwọ', cat_finance: 'Ego na akụ', cat_engineering: 'Injinịa', cat_creative: 'Okike nka', cat_marketing: 'Ahịa na mgbasa ozi', cat_sales: 'Ire ahịa na Ọrụ ndị ahịa', cat_hospitality: 'Nnabata ndị ọbịa', cat_logistics: 'Njem ngwongwo', cat_agriculture: 'Ọrụ ugbo',
     pageNotFound: 'Ahụghị ibe ahụ', pageNotFoundBody: 'Njikọ a adịghị.',
+    sampleListing: 'Ihe atụ ọrụ', sampleApplyOff: 'Ekpechiri ịkwado ọrụ',
+    sampleApplyNote: 'Nke a bụ ihe atụ ọrụ na-egosi ka ọrụ si adị na Loker Dunia. Ekpechiri ịkwado ọrụ.',
     showAllCountries: 'Gosi mba niile {n}', showFewer: 'Gosi ole na ole',
     notifications: 'Ọkwa', markAllRead: 'Maka niile dị ka e gụọla', noNotifications: 'Enweghị ọkwa ugbu a', noNotificationsBody: 'Ọrụ ndị kwekọrọ na nkà gị ga-apụta ebe a.', notifUnread: '{n} anaghị agụ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "A na-agbakwụnye ọrụ ọhụrụ. Mepụta profail na nkà gị ka a mara gị mgbe ọrụ dakọtara pụtara.",
     jobsComingSeeker: "A na-agbakwụnye ọrụ ọhụrụ. Anyị ga-akọ gị mgbe ọrụ dakọtara na nkà gị pụtara.",
     jobField: "Ngalaba ọrụ",
+    jobsInCountry: 'Ọrụ na {country}', jobLanguage: 'Asụsụ ọrụ', allLanguages: 'Asụsụ niile', jobLangChip: 'Asụsụ: {lang}',
   },
 };

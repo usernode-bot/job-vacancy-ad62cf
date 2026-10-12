@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Punjabi. A key missing here falls back to English. */
+/* Job Vacancy interface text: Punjabi. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['pa'] = {
   name: 'ਪੰਜਾਬੀ',
   locale: 'pa-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ਨੌਕਰੀਆਂ ਦੇ ਆਧਾਰ ਉੱਤੇ', youHaveIt: 'ਤੁਹਾਡੇ ਕੋਲ ਹੈ', pctRequired: '{n}% ਲੋੜੀਂਦਾ', otherCountriesHint: 'ਦੇਸ਼ ਸੂਚੀ ਵਿੱਚ ਨਹੀਂ?', allCountriesList: 'ਸਾਰੇ ਦੇਸ਼ ਦੇਖੋ', noCountry: 'ਕੋਈ ਦੇਸ਼ ਨਹੀਂ ਮਿਲਿਆ', noCountryBody: 'ਕੋਈ ਹੋਰ ਸ਼ਬਦ-ਜੋੜ ਅਜ਼ਮਾਓ।',
     signUpTitle: 'ਸਾਈਨ ਅੱਪ', signInTitle: 'ਸਾਈਨ ਇਨ', signUp: 'ਸਾਈਨ ਅੱਪ', signIn: 'ਸਾਈਨ ਇਨ', homeroomIdentity: 'ਤੁਸੀਂ Homeroom ਖਾਤੇ @{user} ਨਾਲ ਸਾਈਨ ਇਨ ਹੋ, ਇਸ ਲਈ ਪਾਸਵਰਡ ਦੀ ਲੋੜ ਨਹੀਂ। ਆਪਣੀ ਭੂਮਿਕਾ ਚੁਣੋ।', homeroomIdentityAnon: 'ਤੁਹਾਡਾ Homeroom ਖਾਤਾ ਤੁਹਾਨੂੰ ਸਾਈਨ ਇਨ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ ਪਾਸਵਰਡ ਦੀ ਲੋੜ ਨਹੀਂ।',
     roleSeeker: 'ਨੌਕਰੀ ਲੱਭਣ ਵਾਲਾ', roleSeekerBody: 'ਡਿਜੀਟਲ CV ਬਣਾਓ, ਆਪਣੇ ਹੁਨਰ ਮਿਲਾਓ ਅਤੇ ਨੌਕਰੀਆਂ ਲਈ ਅਰਜ਼ੀ ਦਿਓ।', roleCompany: 'ਕੰਪਨੀ', roleCompanyBody: 'ਨੌਕਰੀਆਂ ਪੋਸਟ ਕਰੋ ਅਤੇ ਬਿਨੈਕਾਰਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ।',
-    yourAccounts: 'ਤੁਹਾਡੇ ਖਾਤੇ', noAccountsYet: 'ਤੁਹਾਡੇ ਕੋਲ ਅਜੇ Loker Dunia ਖਾਤਾ ਨਹੀਂ ਹੈ। ਪਹਿਲਾਂ ਨੌਕਰੀ ਲੱਭਣ ਵਾਲੇ ਜਾਂ ਕੰਪਨੀ ਵਜੋਂ ਸਾਈਨ ਅੱਪ ਕਰੋ।', sampleAccounts: 'ਨਮੂਨਾ ਖਾਤੇ', sampleAccount: 'ਨਮੂਨਾ', unfinishedProfile: 'ਅਧੂਰੀ ਪ੍ਰੋਫ਼ਾਈਲ',
+    yourAccounts: 'ਤੁਹਾਡੇ ਖਾਤੇ', noAccountsYet: 'ਤੁਹਾਡੇ ਕੋਲ ਅਜੇ Job Vacancy ਖਾਤਾ ਨਹੀਂ ਹੈ। ਪਹਿਲਾਂ ਨੌਕਰੀ ਲੱਭਣ ਵਾਲੇ ਜਾਂ ਕੰਪਨੀ ਵਜੋਂ ਸਾਈਨ ਅੱਪ ਕਰੋ।', sampleAccounts: 'ਨਮੂਨਾ ਖਾਤੇ', sampleAccount: 'ਨਮੂਨਾ', unfinishedProfile: 'ਅਧੂਰੀ ਪ੍ਰੋਫ਼ਾਈਲ',
     companySignupTitle: 'ਕੰਪਨੀ ਵਜੋਂ ਸਾਈਨ ਅੱਪ ਕਰੋ', companySignupBody: 'ਨੌਕਰੀਆਂ ਪੋਸਟ ਕਰਨੀਆਂ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣੀ ਕੰਪਨੀ ਦੇ ਵੇਰਵੇ ਦਰਜ ਕਰੋ।', companyName: 'ਕੰਪਨੀ ਦਾ ਨਾਮ', industry: 'ਉਦਯੋਗ', createCompany: 'ਕੰਪਨੀ ਖਾਤਾ ਬਣਾਓ', welcomeCompany: 'ਜੀ ਆਇਆਂ ਨੂੰ, {co}',
     createProfile: 'ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ', editProfile: 'ਪ੍ਰੋਫ਼ਾਈਲ ਸੋਧੋ', stepOf: '{total} ਵਿੱਚੋਂ ਕਦਮ {n}', progress: 'ਸਾਈਨ ਅੱਪ ਦੀ ਤਰੱਕੀ', stepBio: 'ਨਿੱਜੀ ਵੇਰਵੇ', stepEduExp: 'ਸਿੱਖਿਆ ਅਤੇ ਤਜਰਬਾ', stepSkills: 'ਹੁਨਰ', stepCerts: 'ਸਰਟੀਫ਼ਿਕੇਟ',
     saveFinish: 'ਸੰਭਾਲੋ ਅਤੇ ਪੂਰਾ ਕਰੋ', saveChanges: 'ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ', backToProfile: 'ਪ੍ਰੋਫ਼ਾਈਲ ਉੱਤੇ ਵਾਪਸ ਜਾਓ',
@@ -84,6 +84,8 @@
     per_month: '/ਮਹੀਨਾ', per_year: '/ਸਾਲ', per_hour: '/ਘੰਟਾ',
     cat_it: 'IT', cat_health: 'ਸਿਹਤ ਸੰਭਾਲ', cat_education: 'ਸਿੱਖਿਆ', cat_finance: 'ਵਿੱਤ', cat_engineering: 'ਇੰਜੀਨੀਅਰਿੰਗ', cat_creative: 'ਰਚਨਾਤਮਕ', cat_marketing: 'ਮਾਰਕੀਟਿੰਗ', cat_sales: 'ਵਿਕਰੀ ਅਤੇ ਸੇਵਾ', cat_hospitality: 'ਪਰਾਹੁਣਚਾਰੀ', cat_logistics: 'ਲੌਜਿਸਟਿਕਸ', cat_agriculture: 'ਖੇਤੀਬਾੜੀ',
     pageNotFound: 'ਪੰਨਾ ਨਹੀਂ ਮਿਲਿਆ', pageNotFoundBody: 'ਇਹ ਲਿੰਕ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।',
+    sampleListing: 'ਨਮੂਨਾ ਸੂਚੀ', sampleApplyOff: 'ਅਰਜ਼ੀਆਂ ਬੰਦ ਹਨ',
+    sampleApplyNote: 'ਇਹ ਇੱਕ ਨਮੂਨਾ ਸੂਚੀ ਹੈ ਜੋ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ Loker Dunia ਉੱਤੇ ਨੌਕਰੀਆਂ ਕਿਵੇਂ ਦਿਸਦੀਆਂ ਹਨ। ਅਰਜ਼ੀਆਂ ਬੰਦ ਹਨ।',
     showAllCountries: 'ਸਾਰੇ {n} ਦੇਸ਼ ਦਿਖਾਓ', showFewer: 'ਘੱਟ ਦਿਖਾਓ',
     notifications: 'ਸੂਚਨਾਵਾਂ', markAllRead: 'ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਹੋਇਆ ਮਾਰਕ ਕਰੋ', noNotifications: 'ਹਾਲੇ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ', noNotificationsBody: 'ਤੁਹਾਡੇ ਹੁਨਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੀਆਂ ਨੌਕਰੀਆਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।', notifUnread: '{n} ਨਾ-ਪੜ੍ਹੀਆਂ',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "ਨਵੀਆਂ ਨੌਕਰੀਆਂ ਜੋੜੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ। ਮੇਲ ਖਾਂਦੀ ਨੌਕਰੀ ਪੋਸਟ ਹੋਣ 'ਤੇ ਸੂਚਨਾ ਲਈ ਆਪਣੀਆਂ ਹੁਨਰਾਂ ਨਾਲ ਪ੍ਰੋਫਾਈਲ ਬਣਾਓ।",
     jobsComingSeeker: "ਨਵੀਆਂ ਨੌਕਰੀਆਂ ਜੋੜੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ। ਤੁਹਾਡੀਆਂ ਹੁਨਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੀ ਨੌਕਰੀ ਪੋਸਟ ਹੋਣ 'ਤੇ ਅਸੀਂ ਤੁਹਾਨੂੰ ਦੱਸਾਂਗੇ।",
     jobField: "ਕੰਮ ਦਾ ਖੇਤਰ",
+    jobsInCountry: '{country} ਵਿੱਚ ਨੌਕਰੀਆਂ', jobLanguage: 'ਨੌਕਰੀ ਦੀ ਭਾਸ਼ਾ', allLanguages: 'ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ', jobLangChip: 'ਭਾਸ਼ਾ: {lang}',
   },
 };

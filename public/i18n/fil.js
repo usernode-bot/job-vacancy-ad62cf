@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Filipino. A key missing here falls back to English. */
+/* Job Vacancy interface text: Filipino. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['fil'] = {
   name: 'Filipino',
   locale: 'fil-PH',
@@ -35,7 +35,7 @@
     skillsBasis: 'Batay sa {n} trabaho', youHaveIt: 'Mayroon kayo nito', pctRequired: '{n}% ang nangangailangan', otherCountriesHint: 'Wala sa listahan ang bansa?', allCountriesList: 'Tingnan ang lahat ng bansa', noCountry: 'Walang nahanap na bansa', noCountryBody: 'Subukan ang ibang baybay.',
     signUpTitle: 'Mag-sign up', signInTitle: 'Mag-sign in', signUp: 'Mag-sign up', signIn: 'Mag-sign in', homeroomIdentity: 'Naka-sign in kayo gamit ang Homeroom account na @{user}, kaya hindi kailangan ng password. Piliin ang inyong tungkulin.', homeroomIdentityAnon: 'Ang inyong Homeroom account ang ginagamit sa pag-sign in, kaya hindi kailangan ng password.',
     roleSeeker: 'Naghahanap ng Trabaho', roleSeekerBody: 'Gumawa ng digital CV, itugma ang inyong kasanayan at mag-apply sa mga trabaho.', roleCompany: 'Kumpanya', roleCompanyBody: 'Mag-post ng trabaho at pamahalaan ang mga aplikante.',
-    yourAccounts: 'Inyong mga account', noAccountsYet: 'Wala pa kayong Loker Dunia account. Mag-sign up muna bilang Naghahanap ng Trabaho o Kumpanya.', sampleAccounts: 'Mga sample na account', sampleAccount: 'sample', unfinishedProfile: 'Hindi kumpletong profile',
+    yourAccounts: 'Inyong mga account', noAccountsYet: 'Wala pa kayong Job Vacancy account. Mag-sign up muna bilang Naghahanap ng Trabaho o Kumpanya.', sampleAccounts: 'Mga sample na account', sampleAccount: 'sample', unfinishedProfile: 'Hindi kumpletong profile',
     companySignupTitle: 'Mag-sign up bilang Kumpanya', companySignupBody: 'Ilagay ang detalye ng inyong kumpanya para makapagsimulang mag-post ng trabaho.', companyName: 'Pangalan ng kumpanya', industry: 'Industriya', createCompany: 'Gumawa ng account ng kumpanya', welcomeCompany: 'Maligayang pagdating, {co}',
     createProfile: 'Gumawa ng profile', editProfile: 'I-edit ang profile', stepOf: 'Hakbang {n} sa {total}', progress: 'Progreso ng pag-sign up', stepBio: 'Personal na detalye', stepEduExp: 'Edukasyon at Karanasan', stepSkills: 'Kasanayan', stepCerts: 'Mga Sertipiko',
     saveFinish: 'I-save at Tapusin', saveChanges: 'I-save ang mga pagbabago', backToProfile: 'Bumalik sa profile',
@@ -84,6 +84,8 @@
     per_month: '/buwan', per_year: '/taon', per_hour: '/oras',
     cat_it: 'IT', cat_health: 'Kalusugan', cat_education: 'Edukasyon', cat_finance: 'Pananalapi', cat_engineering: 'Inhinyeriya', cat_creative: 'Malikhain', cat_marketing: 'Marketing', cat_sales: 'Benta at Serbisyo', cat_hospitality: 'Hospitality', cat_logistics: 'Logistics', cat_agriculture: 'Agrikultura',
     pageNotFound: 'Hindi nahanap ang pahina', pageNotFoundBody: 'Hindi umiiral ang link na ito.',
+    sampleListing: 'Sample na listahan', sampleApplyOff: 'Sarado ang mga aplikasyon',
+    sampleApplyNote: 'Ito ay sample na listahan na nagpapakita kung ano ang hitsura ng mga trabaho sa Loker Dunia. Sarado ang mga aplikasyon.',
     showAllCountries: 'Ipakita ang lahat ng {n} bansa', showFewer: 'Magpakita ng mas kaunti',
     notifications: 'Mga abiso', markAllRead: 'Markahan lahat bilang nabasa', noNotifications: 'Wala pang abiso', noNotificationsBody: 'Dito lalabas ang mga trabahong tugma sa iyong mga kasanayan.', notifUnread: '{n} hindi pa nababasa',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Nagdaragdag pa ng mga trabaho. Gumawa ng profile kasama ang mga kasanayan mo para maabisuhan kapag may katugmang trabahong na-post.",
     jobsComingSeeker: "Nagdaragdag pa ng mga trabaho. Aabisuhan ka namin kapag na-post ang trabahong tugma sa mga kasanayan mo.",
     jobField: "Larangan ng trabaho",
+    jobsInCountry: 'Mga trabaho sa {country}', jobLanguage: 'Wika ng trabaho', allLanguages: 'Lahat ng wika', jobLangChip: 'Wika: {lang}',
   },
 };

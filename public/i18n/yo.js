@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Yoruba. A key missing here falls back to English. */
+/* Job Vacancy interface text: Yoruba. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['yo'] = {
   name: 'Yorùbá',
   locale: 'yo-NG',
@@ -35,7 +35,7 @@
     skillsBasis: 'Ní ìbámu pẹ̀lú iṣẹ́ {n}', youHaveIt: 'Ẹ ní i', pctRequired: '{n}% béèrè fún un', otherCountriesHint: 'Orílẹ̀-èdè kò sí nínú àkójọ?', allCountriesList: 'Wo gbogbo orílẹ̀-èdè', noCountry: 'A kò rí orílẹ̀-èdè kankan', noCountryBody: 'Gbìyànjú àkọtọ́ mìíràn.',
     signUpTitle: 'Forúkọsílẹ̀', signInTitle: 'Wọlé', signUp: 'Forúkọsílẹ̀', signIn: 'Wọlé', homeroomIdentity: 'Ẹ ti wọlé pẹ̀lú àkọọ́lẹ̀ Homeroom @{user}, nítorí náà ẹ kò nílò ọ̀rọ̀ aṣínà. Ẹ yan ipa yín.', homeroomIdentityAnon: 'Àkọọ́lẹ̀ Homeroom yín ló ń mú yín wọlé, nítorí náà ẹ kò nílò ọ̀rọ̀ aṣínà.',
     roleSeeker: 'Olùwáṣẹ́', roleSeekerBody: 'Ṣẹ̀dá CV oní-nọ́ńbà, bá ọgbọ́n yín mu kí ẹ sì bẹ̀wẹ̀ fún iṣẹ́.', roleCompany: 'Ilé-iṣẹ́', roleCompanyBody: 'Gbé iṣẹ́ jáde kí ẹ sì ṣàkóso àwọn olùbẹ̀wẹ̀.',
-    yourAccounts: 'Àwọn àkọọ́lẹ̀ yín', noAccountsYet: 'Ẹ kò tíì ní àkọọ́lẹ̀ Loker Dunia. Ẹ kọ́kọ́ forúkọsílẹ̀ gẹ́gẹ́ bí Olùwáṣẹ́ tàbí Ilé-iṣẹ́.', sampleAccounts: 'Àwọn àkọọ́lẹ̀ àpẹẹrẹ', sampleAccount: 'àpẹẹrẹ', unfinishedProfile: 'Profaili tí kò tíì parí',
+    yourAccounts: 'Àwọn àkọọ́lẹ̀ yín', noAccountsYet: 'Ẹ kò tíì ní àkọọ́lẹ̀ Job Vacancy. Ẹ kọ́kọ́ forúkọsílẹ̀ gẹ́gẹ́ bí Olùwáṣẹ́ tàbí Ilé-iṣẹ́.', sampleAccounts: 'Àwọn àkọọ́lẹ̀ àpẹẹrẹ', sampleAccount: 'àpẹẹrẹ', unfinishedProfile: 'Profaili tí kò tíì parí',
     companySignupTitle: 'Forúkọsílẹ̀ gẹ́gẹ́ bí Ilé-iṣẹ́', companySignupBody: 'Tẹ àlàyé ilé-iṣẹ́ yín sí i láti bẹ̀rẹ̀ sí í gbé iṣẹ́ jáde.', companyName: 'Orúkọ ilé-iṣẹ́', industry: 'Ẹ̀ka ilé-iṣẹ́', createCompany: 'Ṣẹ̀dá àkọọ́lẹ̀ ilé-iṣẹ́', welcomeCompany: 'Ẹ káàbọ̀, {co}',
     createProfile: 'Ṣẹ̀dá profaili', editProfile: 'Ṣàtúnṣe profaili', stepOf: 'Ìgbésẹ̀ {n} nínú {total}', progress: 'Ìlọsíwájú ìforúkọsílẹ̀', stepBio: 'Àlàyé ara ẹni', stepEduExp: 'Ẹ̀kọ́ àti Ìrírí', stepSkills: 'Ọgbọ́n', stepCerts: 'Àwọn ìwé-ẹ̀rí',
     saveFinish: 'Fipamọ́ àti Parí', saveChanges: 'Fi àwọn àyípadà pamọ́', backToProfile: 'Padà sí profaili',
@@ -84,6 +84,8 @@
     per_month: '/oṣù', per_year: '/ọdún', per_hour: '/wákàtí',
     cat_it: 'Ìmọ̀ ẹ̀rọ (IT)', cat_health: 'Ìlera', cat_education: 'Ẹ̀kọ́', cat_finance: 'Ìṣúná', cat_engineering: 'Ìmọ̀ ẹ̀rọ', cat_creative: 'Iṣẹ́ ọnà', cat_marketing: 'Ìpolówó ọjà', cat_sales: 'Títà àti Iṣẹ́ ìsìn', cat_hospitality: 'Ìgbàlejò', cat_logistics: 'Ètò ìrìnnà ẹrù', cat_agriculture: 'Iṣẹ́ àgbẹ̀',
     pageNotFound: 'A kò rí ojú-ìwé náà', pageNotFoundBody: 'Ìjápọ̀ yìí kò sí.',
+    sampleListing: 'Àpẹẹrẹ ìkéde iṣẹ́', sampleApplyOff: 'A ti ti ìfiwéránṣẹ́ iṣẹ́',
+    sampleApplyNote: 'Èyí jẹ́ àpẹẹrẹ ìkéde iṣẹ́ tó ń fi bí iṣẹ́ ṣe rí lórí Loker Dunia hàn. A ti ti ìfiwéránṣẹ́ iṣẹ́.',
     showAllCountries: 'Fi gbogbo orílẹ̀-èdè {n} hàn', showFewer: 'Fi díẹ̀ hàn',
     notifications: 'Àwọn ìkìlọ̀', markAllRead: 'Ṣàmì sí gbogbo wọn bí a ti kà', noNotifications: 'Kò sí ìkìlọ̀ kankan síbẹ̀', noNotificationsBody: 'Àwọn iṣẹ́ tó bá ọgbọ́n rẹ mu yóò hàn níbí.', notifUnread: '{n} tí a kò kà',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Wọ́n ń fi iṣẹ́ tuntun sí i. Ṣe profil pẹ̀lú àgbọ́n rẹ kí wọ́n lè fún ọ ní ìfíhàn nígbà tí iṣẹ́ tí ó bá mu wọjá.",
     jobsComingSeeker: "Wọ́n ń fi iṣẹ́ tuntun sí i. A máa fún ọ ní ìmọ̀ nígbà tí iṣẹ́ tí ó bá àgbọ́n rẹ wọjá.",
     jobField: "Ẹ̀ka iṣẹ́",
+    jobsInCountry: 'Iṣẹ́ ni {country}', jobLanguage: 'Èdè iṣẹ́', allLanguages: 'Gbogbo èdè', jobLangChip: 'Èdè: {lang}',
   },
 };

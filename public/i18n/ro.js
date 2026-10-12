@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Romanian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Romanian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ro'] = {
   name: 'Română',
   locale: 'ro-RO',
@@ -35,7 +35,7 @@
     skillsBasis: 'Pe baza a {n} posturi', youHaveIt: 'O dețineți', pctRequired: '{n}% o cer', otherCountriesHint: 'Țara nu este în listă?', allCountriesList: 'Vedeți toate țările', noCountry: 'Nu s-a găsit nicio țară', noCountryBody: 'Încercați altă ortografie.',
     signUpTitle: 'Înregistrare', signInTitle: 'Autentificare', signUp: 'Înregistrați-vă', signIn: 'Autentificați-vă', homeroomIdentity: 'Sunteți autentificat cu contul Homeroom @{user}, deci nu este necesară o parolă. Alegeți rolul dvs.', homeroomIdentityAnon: 'Contul dvs. Homeroom vă autentifică, deci nu este necesară o parolă.',
     roleSeeker: 'Candidat', roleSeekerBody: 'Creați un CV digital, comparați-vă competențele și aplicați la posturi.', roleCompany: 'Companie', roleCompanyBody: 'Publicați posturi și gestionați candidații.',
-    yourAccounts: 'Conturile dvs.', noAccountsYet: 'Încă nu aveți un cont Loker Dunia. Înregistrați-vă mai întâi ca un candidat sau ca o companie.', sampleAccounts: 'Conturi exemplu', sampleAccount: 'exemplu', unfinishedProfile: 'Profil incomplet',
+    yourAccounts: 'Conturile dvs.', noAccountsYet: 'Încă nu aveți un cont Job Vacancy. Înregistrați-vă mai întâi ca un candidat sau ca o companie.', sampleAccounts: 'Conturi exemplu', sampleAccount: 'exemplu', unfinishedProfile: 'Profil incomplet',
     companySignupTitle: 'Înregistrare ca o companie', companySignupBody: 'Introduceți datele companiei pentru a începe să publicați posturi.', companyName: 'Numele companiei', industry: 'Domeniu', createCompany: 'Creați contul companiei', welcomeCompany: 'Bun venit, {co}',
     createProfile: 'Creați profilul', editProfile: 'Editați profilul', stepOf: 'Pasul {n} din {total}', progress: 'Progresul înregistrării', stepBio: 'Date personale', stepEduExp: 'Studii și experiență', stepSkills: 'Competențe', stepCerts: 'Certificate',
     saveFinish: 'Salvați și finalizați', saveChanges: 'Salvați modificările', backToProfile: 'Înapoi la profil',
@@ -84,6 +84,8 @@
     per_month: '/lună', per_year: '/an', per_hour: '/oră',
     cat_it: 'IT', cat_health: 'Sănătate', cat_education: 'Educație', cat_finance: 'Finanțe', cat_engineering: 'Inginerie', cat_creative: 'Creativ', cat_marketing: 'Marketing', cat_sales: 'Vânzări și servicii', cat_hospitality: 'Ospitalitate', cat_logistics: 'Logistică', cat_agriculture: 'Agricultură',
     pageNotFound: 'Pagina nu a fost găsită', pageNotFoundBody: 'Acest link nu există.',
+    sampleListing: 'Anunț de exemplu', sampleApplyOff: 'Aplicările sunt dezactivate',
+    sampleApplyNote: 'Acesta este un anunț de exemplu care arată cum arată joburile în Loker Dunia. Aplicările sunt dezactivate.',
     showAllCountries: 'Afișează toate cele {n} țări', showFewer: 'Afișează mai puține',
     notifications: 'Notificări', markAllRead: 'Marchează tot ca citit', noNotifications: 'Încă nu există notificări', noNotificationsBody: 'Joburile potrivite cu abilitățile tale vor apărea aici.', notifUnread: '{n} necitite',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Se adaugă noi locuri de muncă. Creați un profil cu abilitățile tale pentru a fi anunțat când se postează un loc de muncă potrivit.",
     jobsComingSeeker: "Se adaugă noi locuri de muncă. Vă anunțăm când se postează un loc de muncă potrivit abilităților dvs.",
     jobField: "Domeniu de activitate",
+    jobsInCountry: 'Locuri de muncă în {country}', jobLanguage: 'Limba postului', allLanguages: 'Toate limbile', jobLangChip: 'Limba: {lang}',
   },
 };

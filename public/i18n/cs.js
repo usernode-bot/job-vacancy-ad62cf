@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Czech. A key missing here falls back to English. */
+/* Job Vacancy interface text: Czech. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['cs'] = {
   name: 'Čeština',
   locale: 'cs-CZ',
@@ -35,7 +35,7 @@
     skillsBasis: 'Na základě nabídek: {n}', youHaveIt: 'Máte ji', pctRequired: 'Požadováno v {n} %', otherCountriesHint: 'Země v seznamu chybí?', allCountriesList: 'Zobrazit všechny země', noCountry: 'Země nenalezena', noCountryBody: 'Zkuste jiný způsob zápisu.',
     signUpTitle: 'Registrace', signInTitle: 'Přihlášení', signUp: 'Registrovat se', signIn: 'Přihlásit se', homeroomIdentity: 'Jste přihlášeni účtem Homeroom @{user}, takže heslo není potřeba. Vyberte svou roli.', homeroomIdentityAnon: 'Přihlašuje vás účet Homeroom, takže heslo není potřeba.',
     roleSeeker: 'Uchazeč', roleSeekerBody: 'Vytvořte si digitální CV, porovnejte dovednosti a reagujte na nabídky.', roleCompany: 'Firma', roleCompanyBody: 'Zveřejňujte nabídky a spravujte uchazeče.',
-    yourAccounts: 'Vaše účty', noAccountsYet: 'Zatím nemáte účet Loker Dunia. Nejprve se zaregistrujte jako uchazeč nebo firma.', sampleAccounts: 'Ukázkové účty', sampleAccount: 'ukázka', unfinishedProfile: 'Nedokončený profil',
+    yourAccounts: 'Vaše účty', noAccountsYet: 'Zatím nemáte účet Job Vacancy. Nejprve se zaregistrujte jako uchazeč nebo firma.', sampleAccounts: 'Ukázkové účty', sampleAccount: 'ukázka', unfinishedProfile: 'Nedokončený profil',
     companySignupTitle: 'Registrace firmy', companySignupBody: 'Zadejte údaje o firmě a začněte zveřejňovat nabídky.', companyName: 'Název firmy', industry: 'Obor', createCompany: 'Vytvořit firemní účet', welcomeCompany: 'Vítejte, {co}',
     createProfile: 'Vytvořit profil', editProfile: 'Upravit profil', stepOf: 'Krok {n} z {total}', progress: 'Průběh registrace', stepBio: 'Osobní údaje', stepEduExp: 'Vzdělání a praxe', stepSkills: 'Dovednosti', stepCerts: 'Certifikáty',
     saveFinish: 'Uložit a dokončit', saveChanges: 'Uložit změny', backToProfile: 'Zpět na profil',
@@ -84,6 +84,8 @@
     per_month: '/měs.', per_year: '/rok', per_hour: '/hod.',
     cat_it: 'IT', cat_health: 'Zdravotnictví', cat_education: 'Vzdělávání', cat_finance: 'Finance', cat_engineering: 'Strojírenství a technika', cat_creative: 'Kreativní obory', cat_marketing: 'Marketing', cat_sales: 'Prodej a služby', cat_hospitality: 'Pohostinství', cat_logistics: 'Logistika', cat_agriculture: 'Zemědělství',
     pageNotFound: 'Stránka nenalezena', pageNotFoundBody: 'Tento odkaz neexistuje.',
+    sampleListing: 'Ukázkový inzerát', sampleApplyOff: 'Přihlášky jsou vypnuté',
+    sampleApplyNote: 'Toto je ukázkový inzerát, který ukazuje, jak vypadají nabídky práce v aplikaci Loker Dunia. Přihlášky jsou vypnuté.',
     showAllCountries: 'Zobrazit všech {n} zemí', showFewer: 'Zobrazit méně',
     notifications: 'Oznámení', markAllRead: 'Označit vše jako přečtené', noNotifications: 'Zatím žádná oznámení', noNotificationsBody: 'Zde se zobrazí nabídky, které odpovídají vašim dovednostem.', notifUnread: '{n} nepřečtených',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Přidávají se nové nabídky práce. Vytvořte si profil se svými dovednostmi a dostanete upozornění, jakmile se objeví vyhovující nabídka.",
     jobsComingSeeker: "Přidávají se nové nabídky práce. Jakmile se objeví nabídka odpovídající vaším dovednostem, dáme vám vědět.",
     jobField: "Pracovní obor",
+    jobsInCountry: 'Práce v {country}', jobLanguage: 'Jazyk práce', allLanguages: 'Všechny jazyky', jobLangChip: 'Jazyk: {lang}',
   },
 };

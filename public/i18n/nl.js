@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Dutch. A key missing here falls back to English. */
+/* Job Vacancy interface text: Dutch. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['nl'] = {
   name: 'Nederlands',
   locale: 'nl-NL',
@@ -35,7 +35,7 @@
     skillsBasis: 'Gebaseerd op {n} vacatures', youHaveIt: 'In uw bezit', pctRequired: '{n}% vereist', otherCountriesHint: 'Land niet vermeld?', allCountriesList: 'Alle landen bekijken', noCountry: 'Geen land gevonden', noCountryBody: 'Probeer een andere spelling.',
     signUpTitle: 'Registreren', signInTitle: 'Inloggen', signUp: 'Registreren', signIn: 'Inloggen', homeroomIdentity: 'U bent ingelogd met het Homeroom-account @{user}, dus een wachtwoord is niet nodig. Kies uw rol.', homeroomIdentityAnon: 'U wordt ingelogd via uw Homeroom-account, dus een wachtwoord is niet nodig.',
     roleSeeker: 'Werkzoekende', roleSeekerBody: 'Maak een digitaal cv, match uw vaardigheden en solliciteer op vacatures.', roleCompany: 'Bedrijf', roleCompanyBody: 'Plaats vacatures en beheer sollicitanten.',
-    yourAccounts: 'Uw accounts', noAccountsYet: 'U hebt nog geen Loker Dunia-account. Registreer u eerst als werkzoekende of als bedrijf.', sampleAccounts: 'Voorbeeldaccounts', sampleAccount: 'voorbeeld', unfinishedProfile: 'Onvolledig profiel',
+    yourAccounts: 'Uw accounts', noAccountsYet: 'U hebt nog geen Job Vacancy-account. Registreer u eerst als werkzoekende of als bedrijf.', sampleAccounts: 'Voorbeeldaccounts', sampleAccount: 'voorbeeld', unfinishedProfile: 'Onvolledig profiel',
     companySignupTitle: 'Registreren als bedrijf', companySignupBody: 'Vul uw bedrijfsgegevens in om vacatures te plaatsen.', companyName: 'Bedrijfsnaam', industry: 'Branche', createCompany: 'Bedrijfsaccount aanmaken', welcomeCompany: 'Welkom, {co}',
     createProfile: 'Profiel aanmaken', editProfile: 'Profiel bewerken', stepOf: 'Stap {n} van {total}', progress: 'Voortgang registratie', stepBio: 'Persoonlijke gegevens', stepEduExp: 'Opleiding en ervaring', stepSkills: 'Vaardigheden', stepCerts: 'Certificaten',
     saveFinish: 'Opslaan en afronden', saveChanges: 'Wijzigingen opslaan', backToProfile: 'Terug naar profiel',
@@ -84,6 +84,8 @@
     per_month: '/mnd', per_year: '/jr', per_hour: '/uur',
     cat_it: 'IT', cat_health: 'Zorg', cat_education: 'Onderwijs', cat_finance: 'Financiën', cat_engineering: 'Techniek', cat_creative: 'Creatief', cat_marketing: 'Marketing', cat_sales: 'Verkoop en service', cat_hospitality: 'Horeca', cat_logistics: 'Logistiek', cat_agriculture: 'Landbouw',
     pageNotFound: 'Pagina niet gevonden', pageNotFoundBody: 'Deze link bestaat niet.',
+    sampleListing: 'Voorbeeldvacature', sampleApplyOff: 'Solliciteren is uitgeschakeld',
+    sampleApplyNote: 'Dit is een voorbeeldvacature die laat zien hoe banen eruitzien op Loker Dunia. Solliciteren is uitgeschakeld.',
     showAllCountries: 'Alle {n} landen tonen', showFewer: 'Minder tonen',
     notifications: 'Meldingen', markAllRead: 'Alles als gelezen markeren', noNotifications: 'Nog geen meldingen', noNotificationsBody: 'Banen die bij je vaardigheden passen, verschijnen hier.', notifUnread: '{n} ongelezen',
     worldJobs: 'Worldwide openings', worldJobsSub: 'Live listings from public job boards', worldJobsCount: '{n} openings', worldJobsSource: 'Live listings from {source}', worldJobsSample: 'Live listings are unavailable right now. Showing sample openings from around the world.', viewListing: 'View listing',
@@ -93,5 +95,6 @@
     jobsComingGuest: "Er worden vacatures toegevoegd. Maak een profiel met je vaardigheden om een melding te krijgen zodra een passende vacature wordt geplaatst.",
     jobsComingSeeker: "Er worden vacatures toegevoegd. We sturen je een melding zodra een vacature wordt geplaatst die past bij je vaardigheden.",
     jobField: "Werkgebied",
+    jobsInCountry: 'Vacatures in {country}', jobLanguage: 'Vacaturertaal', allLanguages: 'Alle talen', jobLangChip: 'Taal: {lang}',
   },
 };

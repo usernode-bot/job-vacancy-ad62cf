@@ -93,5 +93,6 @@
     jobsComingGuest: "Wọ́n ń fi iṣẹ́ tuntun sí i. Ṣe profil pẹ̀lú àgbọ́n rẹ kí wọ́n lè fún ọ ní ìfíhàn nígbà tí iṣẹ́ tí ó bá mu wọjá.",
     jobsComingSeeker: "Wọ́n ń fi iṣẹ́ tuntun sí i. A máa fún ọ ní ìmọ̀ nígbà tí iṣẹ́ tí ó bá àgbọ́n rẹ wọjá.",
     jobField: "Ẹ̀ka iṣẹ́",
+    jobsInCountry: 'Iṣẹ́ ni {country}', jobLanguage: 'Èdè iṣẹ́', allLanguages: 'Gbogbo èdè', jobLangChip: 'Èdè: {lang}',
   },
 };

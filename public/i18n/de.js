@@ -93,5 +93,6 @@
     jobsComingGuest: "Es werden neue Stellen hinzugefügt. Erstelle ein Profil mit deinen Fähigkeiten, um benachrichtigt zu werden, wenn eine passende Stelle veröffentlicht wird.",
     jobsComingSeeker: "Es werden neue Stellen hinzugefügt. Wir benachrichtigen dich, wenn eine Stelle veröffentlicht wird, die zu deinen Fähigkeiten passt.",
     jobField: "Berufsfeld",
+    jobsInCountry: 'Jobs in {country}', jobLanguage: 'Jobsprache', allLanguages: 'Alle Sprachen', jobLangChip: 'Sprache: {lang}',
   },
 };

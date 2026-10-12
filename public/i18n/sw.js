@@ -93,5 +93,6 @@
     jobsComingGuest: "Kazi mpya zinaongezwa. Tengeneza wasifu na ujuzi wako ili upate taarifa kazi inayofanana inapotangazwa.",
     jobsComingSeeker: "Kazi mpya zinaongezwa. Tutakujulisha kazi inayofanana na ujuzi wako inapotangazwa.",
     jobField: "Sekta ya kazi",
+    jobsInCountry: 'Kazi nchini {country}', jobLanguage: 'Lugha ya kazi', allLanguages: 'Lugha zote', jobLangChip: 'Lugha: {lang}',
   },
 };

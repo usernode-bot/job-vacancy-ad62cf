@@ -93,5 +93,6 @@
     jobsComingGuest: "Kerja baharu sedang ditambah. Buat profil dengan kemahiran anda untuk dimaklumkan apabila kerja yang sepadan disiarkan.",
     jobsComingSeeker: "Kerja baharu sedang ditambah. Kami akan memaklumkan apabila kerja yang sepadan dengan kemahiran anda disiarkan.",
     jobField: "Bidang pekerjaan",
+    jobsInCountry: 'Kerja di {country}', jobLanguage: 'Bahasa kerja', allLanguages: 'Semua bahasa', jobLangChip: 'Bahasa: {lang}',
   },
 };

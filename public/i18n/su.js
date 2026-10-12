@@ -93,5 +93,6 @@
     jobsComingGuest: "Loker anyar terus ditambihan. Jieun profil kalawan kaahlian anjeun sangkan dikabaran upami aya loker anu cocok.",
     jobsComingSeeker: "Loker anyar terus ditambihan. Urang bakal ngabaran upami aya loker anu cocog jeung kaahlian anjeun.",
     jobField: "Widang pagawéan",
+    jobsInCountry: 'Lowongan di {country}', jobLanguage: 'Basa pakaryan', allLanguages: 'Sadaya basa', jobLangChip: 'Basa: {lang}',
   },
 };

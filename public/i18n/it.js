@@ -93,5 +93,6 @@
     jobsComingGuest: "Stiamo aggiungendo nuove offerte di lavoro. Crea un profilo con le tue competenze per ricevere un avviso quando viene pubblicata un'offerta adatta.",
     jobsComingSeeker: "Stiamo aggiungendo nuove offerte di lavoro. Ti avviseremo quando viene pubblicata un'offerta adatta alle tue competenze.",
     jobField: "Settore lavorativo",
+    jobsInCountry: 'Lavori in {country}', jobLanguage: 'Lingua del lavoro', allLanguages: 'Tutte le lingue', jobLangChip: 'Lingua: {lang}',
   },
 };

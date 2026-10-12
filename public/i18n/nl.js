@@ -93,5 +93,6 @@
     jobsComingGuest: "Er worden vacatures toegevoegd. Maak een profiel met je vaardigheden om een melding te krijgen zodra een passende vacature wordt geplaatst.",
     jobsComingSeeker: "Er worden vacatures toegevoegd. We sturen je een melding zodra een vacature wordt geplaatst die past bij je vaardigheden.",
     jobField: "Werkgebied",
+    jobsInCountry: 'Vacatures in {country}', jobLanguage: 'Vacaturertaal', allLanguages: 'Alle talen', jobLangChip: 'Taal: {lang}',
   },
 };

@@ -93,5 +93,6 @@
     jobsComingGuest: "Lowongan anyar terus ditambahake. Gawe profil karo keahlian supaya dingerteni nalika ana lowongan sing cocok dibukak.",
     jobsComingSeeker: "Lowongan anyar terus ditambahake. Kita bakal ngandharake nalika ana lowongan sing cocok karo keahlianmu dibukak.",
     jobField: "Bidang pakaryan",
+    jobsInCountry: 'Lowongan ing {country}', jobLanguage: 'Basa pakaryan', allLanguages: 'Kabeh basa', jobLangChip: 'Basa: {lang}',
   },
 };

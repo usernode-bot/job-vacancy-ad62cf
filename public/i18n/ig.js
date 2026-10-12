@@ -93,5 +93,6 @@
     jobsComingGuest: "A na-agbakwụnye ọrụ ọhụrụ. Mepụta profail na nkà gị ka a mara gị mgbe ọrụ dakọtara pụtara.",
     jobsComingSeeker: "A na-agbakwụnye ọrụ ọhụrụ. Anyị ga-akọ gị mgbe ọrụ dakọtara na nkà gị pụtara.",
     jobField: "Ngalaba ọrụ",
+    jobsInCountry: 'Ọrụ na {country}', jobLanguage: 'Asụsụ ọrụ', allLanguages: 'Asụsụ niile', jobLangChip: 'Asụsụ: {lang}',
   },
 };

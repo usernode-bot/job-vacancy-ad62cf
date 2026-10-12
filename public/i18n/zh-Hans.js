@@ -93,5 +93,6 @@
     jobsComingGuest: "职位正在陆续添加。创建包含你技能的个人资料，以便在有匹配职位发布时收到通知。",
     jobsComingSeeker: "职位正在陆续添加。有与你的技能匹配的职位发布时，我们会通知你。",
     jobField: "工作领域",
+    jobsInCountry: '{country}的职位', jobLanguage: '职位语言', allLanguages: '所有语言', jobLangChip: '语言: {lang}',
   },
 };

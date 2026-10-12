@@ -93,5 +93,6 @@
     jobsComingGuest: "職位正在陸續新增。建立包含你技能的個人資料，以便在相符職位刊登時收到通知。",
     jobsComingSeeker: "職位正在陸續新增。有與你技能相符的職位刊登時，我們會通知你。",
     jobField: "工作領域",
+    jobsInCountry: '{country}的職缺', jobLanguage: '職缺語言', allLanguages: '所有語言', jobLangChip: '語言: {lang}',
   },
 };

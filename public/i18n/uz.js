@@ -93,5 +93,6 @@
     jobsComingGuest: "Yangi ish e'lonlari qo'shilmoqda. Mos ish e'lon qilinganda xabar olish uchun ko'nikmalaringiz bilan profil yarating.",
     jobsComingSeeker: "Yangi ish e'lonlari qo'shilmoqda. Ko'nikmalaringizga mos ish e'lon qilinganda sizga xabar beramiz.",
     jobField: "Ish sohasi",
+    jobsInCountry: '{country}dagi ish o‘rinlari', jobLanguage: 'Ish tili', allLanguages: 'Barcha tillar', jobLangChip: 'Til: {lang}',
   },
 };

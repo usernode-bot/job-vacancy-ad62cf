@@ -93,5 +93,6 @@
     jobsComingGuest: "Új álláshirdetések kerülnek fel. Hozzon létre egy profilt a készségeivel, hogy értesüljön, amikor megfelelő állás jelenik meg.",
     jobsComingSeeker: "Új álláshirdetések kerülnek fel. Értesítjük, amikor az Ön készségeinek megfelelő állás jelenik meg.",
     jobField: "Munkaterület",
+    jobsInCountry: 'Állások itt: {country}', jobLanguage: 'Az állás nyelve', allLanguages: 'Minden nyelv', jobLangChip: 'Nyelv: {lang}',
   },
 };

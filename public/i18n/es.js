@@ -93,5 +93,6 @@
     jobsComingGuest: "Se están publicando empleos. Crea un perfil con tus habilidades para que te avisemos cuando se publique uno que coincida.",
     jobsComingSeeker: "Se están publicando empleos. Te avisaremos cuando se publique uno que coincida con tus habilidades.",
     jobField: "Área de trabajo",
+    jobsInCountry: 'Empleos en {country}', jobLanguage: 'Idioma del empleo', allLanguages: 'Todos los idiomas', jobLangChip: 'Idioma: {lang}',
   },
 };

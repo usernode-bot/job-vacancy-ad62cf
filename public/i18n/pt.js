@@ -93,5 +93,6 @@
     jobsComingGuest: "Vagas estão sendo adicionadas. Crie um perfil com suas habilidades para ser avisado quando uma vaga compatível for publicada.",
     jobsComingSeeker: "Vagas estão sendo adicionadas. Avisaremos você quando uma vaga compatível com suas habilidades for publicada.",
     jobField: "Área de atuação",
+    jobsInCountry: 'Vagas em {country}', jobLanguage: 'Idioma da vaga', allLanguages: 'Todos os idiomas', jobLangChip: 'Idioma: {lang}',
   },
 };

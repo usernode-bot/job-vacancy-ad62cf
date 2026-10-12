@@ -93,5 +93,6 @@
     jobsComingGuest: "Đang thêm việc làm mới. Hãy tạo hồ sơ với kỹ năng của bạn để nhận thông báo khi có việc phù hợp được đăng.",
     jobsComingSeeker: "Đang thêm việc làm mới. Chúng tôi sẽ thông báo cho bạn khi có việc phù hợp với kỹ năng của bạn được đăng.",
     jobField: "Lĩnh vực công việc",
+    jobsInCountry: 'Việc làm tại {country}', jobLanguage: 'Ngôn ngữ công việc', allLanguages: 'Tất cả ngôn ngữ', jobLangChip: 'Ngôn ngữ: {lang}',
   },
 };

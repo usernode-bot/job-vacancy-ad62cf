@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Thai. A key missing here falls back to English. */
+/* Job Vacancy interface text: Thai. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['th'] = {
   name: 'ไทย',
   locale: 'th-TH',
@@ -35,7 +35,7 @@
     skillsBasis: 'อ้างอิงจาก {n} งาน', youHaveIt: 'คุณมีแล้ว', pctRequired: 'ต้องการ {n}%', otherCountriesHint: 'ไม่พบประเทศของคุณ?', allCountriesList: 'ดูทุกประเทศ', noCountry: 'ไม่พบประเทศ', noCountryBody: 'ลองสะกดแบบอื่น',
     signUpTitle: 'สมัครสมาชิก', signInTitle: 'เข้าสู่ระบบ', signUp: 'สมัครสมาชิก', signIn: 'เข้าสู่ระบบ', homeroomIdentity: 'คุณเข้าสู่ระบบด้วยบัญชี Homeroom @{user} จึงไม่ต้องใช้รหัสผ่าน โปรดเลือกบทบาทของคุณ', homeroomIdentityAnon: 'บัญชี Homeroom จะช่วยให้คุณเข้าสู่ระบบ จึงไม่ต้องใช้รหัสผ่าน',
     roleSeeker: 'ผู้หางาน', roleSeekerBody: 'สร้าง CV ดิจิทัล จับคู่ทักษะ และสมัครงาน', roleCompany: 'บริษัท', roleCompanyBody: 'ประกาศงานและจัดการผู้สมัคร',
-    yourAccounts: 'บัญชีของคุณ', noAccountsYet: 'คุณยังไม่มีบัญชี Loker Dunia โปรดสมัครเป็นผู้หางานหรือบริษัทก่อน', sampleAccounts: 'บัญชีตัวอย่าง', sampleAccount: 'ตัวอย่าง', unfinishedProfile: 'โปรไฟล์ยังไม่สมบูรณ์',
+    yourAccounts: 'บัญชีของคุณ', noAccountsYet: 'คุณยังไม่มีบัญชี Job Vacancy โปรดสมัครเป็นผู้หางานหรือบริษัทก่อน', sampleAccounts: 'บัญชีตัวอย่าง', sampleAccount: 'ตัวอย่าง', unfinishedProfile: 'โปรไฟล์ยังไม่สมบูรณ์',
     companySignupTitle: 'สมัครในฐานะบริษัท', companySignupBody: 'กรอกข้อมูลบริษัทเพื่อเริ่มประกาศงาน', companyName: 'ชื่อบริษัท', industry: 'อุตสาหกรรม', createCompany: 'สร้างบัญชีบริษัท', welcomeCompany: 'ยินดีต้อนรับ {co}',
     createProfile: 'สร้างโปรไฟล์', editProfile: 'แก้ไขโปรไฟล์', stepOf: 'ขั้นตอนที่ {n} จาก {total}', progress: 'ความคืบหน้าการสมัคร', stepBio: 'ข้อมูลส่วนตัว', stepEduExp: 'การศึกษาและประสบการณ์', stepSkills: 'ทักษะ', stepCerts: 'ใบรับรอง',
     saveFinish: 'บันทึกและเสร็จสิ้น', saveChanges: 'บันทึกการเปลี่ยนแปลง', backToProfile: 'กลับไปที่โปรไฟล์',

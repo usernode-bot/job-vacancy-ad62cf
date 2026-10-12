@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Italian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Italian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['it'] = {
   name: 'Italiano',
   locale: 'it-IT',
@@ -35,7 +35,7 @@
     skillsBasis: 'Basato su {n} offerte', youHaveIt: 'La possiede', pctRequired: 'Richiesta nel {n}%', otherCountriesHint: 'Il paese non è in elenco?', allCountriesList: 'Vedi tutti i paesi', noCountry: 'Nessun paese trovato', noCountryBody: "Provi un'altra grafia.",
     signUpTitle: 'Registrazione', signInTitle: 'Accesso', signUp: 'Registrati', signIn: 'Accedi', homeroomIdentity: "Ha effettuato l'accesso con l'account Homeroom @{user}, quindi non serve una password. Scelga il suo ruolo.", homeroomIdentityAnon: "Il suo account Homeroom effettua l'accesso, quindi non serve una password.",
     roleSeeker: 'Candidato', roleSeekerBody: 'Crei un CV digitale, confronti le sue competenze e si candidi alle offerte.', roleCompany: 'Azienda', roleCompanyBody: 'Pubblichi offerte e gestisca i candidati.',
-    yourAccounts: 'I suoi account', noAccountsYet: 'Non ha ancora un account Loker Dunia. Si registri prima come candidato o come azienda.', sampleAccounts: 'Account di esempio', sampleAccount: 'esempio', unfinishedProfile: 'Profilo incompleto',
+    yourAccounts: 'I suoi account', noAccountsYet: 'Non ha ancora un account Job Vacancy. Si registri prima come candidato o come azienda.', sampleAccounts: 'Account di esempio', sampleAccount: 'esempio', unfinishedProfile: 'Profilo incompleto',
     companySignupTitle: 'Registrati come azienda', companySignupBody: "Inserisca i dati dell'azienda per iniziare a pubblicare offerte.", companyName: "Nome dell'azienda", industry: 'Settore', createCompany: 'Crea account aziendale', welcomeCompany: 'Benvenuti, {co}',
     createProfile: 'Crea profilo', editProfile: 'Modifica profilo', stepOf: 'Passaggio {n} di {total}', progress: 'Avanzamento della registrazione', stepBio: 'Dati personali', stepEduExp: 'Istruzione ed esperienza', stepSkills: 'Competenze', stepCerts: 'Certificati',
     saveFinish: 'Salva e termina', saveChanges: 'Salva modifiche', backToProfile: 'Torna al profilo',

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Nepali. A key missing here falls back to English. */
+/* Job Vacancy interface text: Nepali. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ne'] = {
   name: 'नेपाली',
   locale: 'ne-NP',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} जागिरमा आधारित', youHaveIt: 'तपाईंसँग छ', pctRequired: '{n}% मा आवश्यक', otherCountriesHint: 'देश सूचीमा छैन?', allCountriesList: 'सबै देश हेर्नुहोस्', noCountry: 'कुनै देश भेटिएन', noCountryBody: 'अर्को हिज्जे प्रयास गर्नुहोस्।',
     signUpTitle: 'साइन अप', signInTitle: 'साइन इन', signUp: 'साइन अप गर्नुहोस्', signIn: 'साइन इन गर्नुहोस्', homeroomIdentity: 'तपाईं Homeroom खाता @{user} बाट साइन इन हुनुहुन्छ, त्यसैले पासवर्ड आवश्यक छैन। आफ्नो भूमिका छान्नुहोस्।', homeroomIdentityAnon: 'तपाईंको Homeroom खाताले तपाईंलाई साइन इन गराउँछ, त्यसैले पासवर्ड आवश्यक छैन।',
     roleSeeker: 'जागिर खोज्ने व्यक्ति', roleSeekerBody: 'डिजिटल CV बनाउनुहोस्, आफ्नो सीप मिलाउनुहोस् र जागिरका लागि आवेदन दिनुहोस्।', roleCompany: 'कम्पनी', roleCompanyBody: 'जागिर पोस्ट गर्नुहोस् र आवेदकहरू व्यवस्थापन गर्नुहोस्।',
-    yourAccounts: 'तपाईंका खाताहरू', noAccountsYet: 'तपाईंको अहिलेसम्म Loker Dunia खाता छैन। पहिले जागिर खोज्ने व्यक्ति वा कम्पनीको रूपमा साइन अप गर्नुहोस्।', sampleAccounts: 'नमुना खाताहरू', sampleAccount: 'नमुना', unfinishedProfile: 'अपूर्ण प्रोफाइल',
+    yourAccounts: 'तपाईंका खाताहरू', noAccountsYet: 'तपाईंको अहिलेसम्म Job Vacancy खाता छैन। पहिले जागिर खोज्ने व्यक्ति वा कम्पनीको रूपमा साइन अप गर्नुहोस्।', sampleAccounts: 'नमुना खाताहरू', sampleAccount: 'नमुना', unfinishedProfile: 'अपूर्ण प्रोफाइल',
     companySignupTitle: 'कम्पनीको रूपमा साइन अप गर्नुहोस्', companySignupBody: 'जागिर पोस्ट गर्न सुरु गर्न आफ्नो कम्पनीको विवरण भर्नुहोस्।', companyName: 'कम्पनीको नाम', industry: 'उद्योग', createCompany: 'कम्पनी खाता बनाउनुहोस्', welcomeCompany: 'स्वागत छ, {co}',
     createProfile: 'प्रोफाइल बनाउनुहोस्', editProfile: 'प्रोफाइल सम्पादन गर्नुहोस्', stepOf: 'चरण {n} / {total}', progress: 'साइन अपको प्रगति', stepBio: 'व्यक्तिगत विवरण', stepEduExp: 'शिक्षा र अनुभव', stepSkills: 'सीप', stepCerts: 'प्रमाणपत्रहरू',
     saveFinish: 'सुरक्षित गरी समाप्त गर्नुहोस्', saveChanges: 'परिवर्तन सुरक्षित गर्नुहोस्', backToProfile: 'प्रोफाइलमा फर्कनुहोस्',

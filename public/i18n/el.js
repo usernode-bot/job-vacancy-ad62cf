@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Greek. A key missing here falls back to English. */
+/* Job Vacancy interface text: Greek. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['el'] = {
   name: 'Ελληνικά',
   locale: 'el-GR',
@@ -35,7 +35,7 @@
     skillsBasis: 'Με βάση {n} θέσεις', youHaveIt: 'Την έχετε', pctRequired: '{n}% απαιτείται', otherCountriesHint: 'Η χώρα δεν υπάρχει στη λίστα;', allCountriesList: 'Προβολή όλων των χωρών', noCountry: 'Δεν βρέθηκε χώρα', noCountryBody: 'Δοκιμάστε διαφορετική ορθογραφία.',
     signUpTitle: 'Εγγραφή', signInTitle: 'Σύνδεση', signUp: 'Εγγραφή', signIn: 'Σύνδεση', homeroomIdentity: 'Έχετε συνδεθεί με τον λογαριασμό Homeroom @{user}, οπότε δεν χρειάζεται κωδικός. Επιλέξτε τον ρόλο σας.', homeroomIdentityAnon: 'Η σύνδεση γίνεται με τον λογαριασμό σας στο Homeroom, οπότε δεν χρειάζεται κωδικός.',
     roleSeeker: 'Υποψήφιος', roleSeekerBody: 'Δημιουργήστε ψηφιακό βιογραφικό, αντιστοιχίστε τις δεξιότητές σας και κάντε αιτήσεις.', roleCompany: 'Εταιρεία', roleCompanyBody: 'Δημοσιεύστε θέσεις και διαχειριστείτε υποψηφίους.',
-    yourAccounts: 'Οι λογαριασμοί σας', noAccountsYet: 'Δεν έχετε ακόμη λογαριασμό στο Loker Dunia. Εγγραφείτε πρώτα ως Υποψήφιος ή ως Εταιρεία.', sampleAccounts: 'Δείγματα λογαριασμών', sampleAccount: 'δείγμα', unfinishedProfile: 'Ημιτελές προφίλ',
+    yourAccounts: 'Οι λογαριασμοί σας', noAccountsYet: 'Δεν έχετε ακόμη λογαριασμό στο Job Vacancy. Εγγραφείτε πρώτα ως Υποψήφιος ή ως Εταιρεία.', sampleAccounts: 'Δείγματα λογαριασμών', sampleAccount: 'δείγμα', unfinishedProfile: 'Ημιτελές προφίλ',
     companySignupTitle: 'Εγγραφή ως Εταιρεία', companySignupBody: 'Συμπληρώστε τα στοιχεία της εταιρείας σας για να αρχίσετε να δημοσιεύετε θέσεις.', companyName: 'Επωνυμία εταιρείας', industry: 'Κλάδος', createCompany: 'Δημιουργία εταιρικού λογαριασμού', welcomeCompany: 'Καλώς ήρθατε, {co}',
     createProfile: 'Δημιουργία προφίλ', editProfile: 'Επεξεργασία προφίλ', stepOf: 'Βήμα {n} από {total}', progress: 'Πρόοδος εγγραφής', stepBio: 'Προσωπικά στοιχεία', stepEduExp: 'Εκπαίδευση και Εμπειρία', stepSkills: 'Δεξιότητες', stepCerts: 'Πιστοποιητικά',
     saveFinish: 'Αποθήκευση και Ολοκλήρωση', saveChanges: 'Αποθήκευση αλλαγών', backToProfile: 'Επιστροφή στο προφίλ',

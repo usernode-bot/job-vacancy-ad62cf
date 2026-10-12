@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Uzbek. A key missing here falls back to English. */
+/* Job Vacancy interface text: Uzbek. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['uz'] = {
   name: 'Oʻzbekcha',
   locale: 'uz-UZ',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ta vakansiya asosida', youHaveIt: 'Sizda bor', pctRequired: '{n}% majburiy', otherCountriesHint: 'Mamlakat roʻyxatda yoʻqmi?', allCountriesList: 'Barcha mamlakatlarni koʻrish', noCountry: 'Mamlakat topilmadi', noCountryBody: 'Boshqacha yozib koʻring.',
     signUpTitle: 'Roʻyxatdan oʻtish', signInTitle: 'Kirish', signUp: 'Roʻyxatdan oʻtish', signIn: 'Kirish', homeroomIdentity: 'Siz @{user} Homeroom hisobi orqali kirgansiz, shuning uchun parol kerak emas. Rolingizni tanlang.', homeroomIdentityAnon: 'Siz Homeroom hisobingiz orqali kirasiz, shuning uchun parol kerak emas.',
     roleSeeker: 'Ish izlovchi', roleSeekerBody: 'Raqamli rezyume yarating, koʻnikmalaringizni moslang va vakansiyalarga ariza topshiring.', roleCompany: 'Kompaniya', roleCompanyBody: 'Vakansiyalar joylang va nomzodlarni boshqaring.',
-    yourAccounts: 'Hisoblaringiz', noAccountsYet: 'Sizda hali Loker Dunia hisobi yoʻq. Avval Ish izlovchi yoki Kompaniya sifatida roʻyxatdan oʻting.', sampleAccounts: 'Namuna hisoblar', sampleAccount: 'namuna', unfinishedProfile: 'Toʻldirilmagan profil',
+    yourAccounts: 'Hisoblaringiz', noAccountsYet: 'Sizda hali Job Vacancy hisobi yoʻq. Avval Ish izlovchi yoki Kompaniya sifatida roʻyxatdan oʻting.', sampleAccounts: 'Namuna hisoblar', sampleAccount: 'namuna', unfinishedProfile: 'Toʻldirilmagan profil',
     companySignupTitle: 'Kompaniya sifatida roʻyxatdan oʻtish', companySignupBody: 'Vakansiya joylashni boshlash uchun kompaniya maʼlumotlarini kiriting.', companyName: 'Kompaniya nomi', industry: 'Soha', createCompany: 'Kompaniya hisobini yaratish', welcomeCompany: 'Xush kelibsiz, {co}',
     createProfile: 'Profil yaratish', editProfile: 'Profilni tahrirlash', stepOf: '{n}/{total}-qadam', progress: 'Roʻyxatdan oʻtish jarayoni', stepBio: 'Shaxsiy maʼlumotlar', stepEduExp: 'Taʼlim va tajriba', stepSkills: 'Koʻnikmalar', stepCerts: 'Sertifikatlar',
     saveFinish: 'Saqlash va yakunlash', saveChanges: 'Oʻzgarishlarni saqlash', backToProfile: 'Profilga qaytish',

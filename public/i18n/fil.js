@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Filipino. A key missing here falls back to English. */
+/* Job Vacancy interface text: Filipino. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['fil'] = {
   name: 'Filipino',
   locale: 'fil-PH',
@@ -35,7 +35,7 @@
     skillsBasis: 'Batay sa {n} trabaho', youHaveIt: 'Mayroon kayo nito', pctRequired: '{n}% ang nangangailangan', otherCountriesHint: 'Wala sa listahan ang bansa?', allCountriesList: 'Tingnan ang lahat ng bansa', noCountry: 'Walang nahanap na bansa', noCountryBody: 'Subukan ang ibang baybay.',
     signUpTitle: 'Mag-sign up', signInTitle: 'Mag-sign in', signUp: 'Mag-sign up', signIn: 'Mag-sign in', homeroomIdentity: 'Naka-sign in kayo gamit ang Homeroom account na @{user}, kaya hindi kailangan ng password. Piliin ang inyong tungkulin.', homeroomIdentityAnon: 'Ang inyong Homeroom account ang ginagamit sa pag-sign in, kaya hindi kailangan ng password.',
     roleSeeker: 'Naghahanap ng Trabaho', roleSeekerBody: 'Gumawa ng digital CV, itugma ang inyong kasanayan at mag-apply sa mga trabaho.', roleCompany: 'Kumpanya', roleCompanyBody: 'Mag-post ng trabaho at pamahalaan ang mga aplikante.',
-    yourAccounts: 'Inyong mga account', noAccountsYet: 'Wala pa kayong Loker Dunia account. Mag-sign up muna bilang Naghahanap ng Trabaho o Kumpanya.', sampleAccounts: 'Mga sample na account', sampleAccount: 'sample', unfinishedProfile: 'Hindi kumpletong profile',
+    yourAccounts: 'Inyong mga account', noAccountsYet: 'Wala pa kayong Job Vacancy account. Mag-sign up muna bilang Naghahanap ng Trabaho o Kumpanya.', sampleAccounts: 'Mga sample na account', sampleAccount: 'sample', unfinishedProfile: 'Hindi kumpletong profile',
     companySignupTitle: 'Mag-sign up bilang Kumpanya', companySignupBody: 'Ilagay ang detalye ng inyong kumpanya para makapagsimulang mag-post ng trabaho.', companyName: 'Pangalan ng kumpanya', industry: 'Industriya', createCompany: 'Gumawa ng account ng kumpanya', welcomeCompany: 'Maligayang pagdating, {co}',
     createProfile: 'Gumawa ng profile', editProfile: 'I-edit ang profile', stepOf: 'Hakbang {n} sa {total}', progress: 'Progreso ng pag-sign up', stepBio: 'Personal na detalye', stepEduExp: 'Edukasyon at Karanasan', stepSkills: 'Kasanayan', stepCerts: 'Mga Sertipiko',
     saveFinish: 'I-save at Tapusin', saveChanges: 'I-save ang mga pagbabago', backToProfile: 'Bumalik sa profile',

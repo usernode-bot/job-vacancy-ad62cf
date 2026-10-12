@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Vietnamese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Vietnamese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['vi'] = {
   name: 'Tiếng Việt',
   locale: 'vi-VN',
@@ -35,7 +35,7 @@
     skillsBasis: 'Dựa trên {n} việc làm', youHaveIt: 'Bạn đã có', pctRequired: '{n}% yêu cầu', otherCountriesHint: 'Không thấy quốc gia của bạn?', allCountriesList: 'Xem tất cả quốc gia', noCountry: 'Không tìm thấy quốc gia', noCountryBody: 'Hãy thử cách viết khác.',
     signUpTitle: 'Đăng ký', signInTitle: 'Đăng nhập', signUp: 'Đăng ký', signIn: 'Đăng nhập', homeroomIdentity: 'Bạn đã đăng nhập bằng tài khoản Homeroom @{user}, nên không cần mật khẩu. Hãy chọn vai trò của bạn.', homeroomIdentityAnon: 'Tài khoản Homeroom sẽ giúp bạn đăng nhập, nên không cần mật khẩu.',
     roleSeeker: 'Người tìm việc', roleSeekerBody: 'Tạo CV điện tử, so khớp kỹ năng và ứng tuyển việc làm.', roleCompany: 'Công ty', roleCompanyBody: 'Đăng tin tuyển dụng và quản lý ứng viên.',
-    yourAccounts: 'Tài khoản của bạn', noAccountsYet: 'Bạn chưa có tài khoản Loker Dunia. Hãy đăng ký với tư cách Người tìm việc hoặc Công ty trước.', sampleAccounts: 'Tài khoản mẫu', sampleAccount: 'mẫu', unfinishedProfile: 'Hồ sơ chưa hoàn thiện',
+    yourAccounts: 'Tài khoản của bạn', noAccountsYet: 'Bạn chưa có tài khoản Job Vacancy. Hãy đăng ký với tư cách Người tìm việc hoặc Công ty trước.', sampleAccounts: 'Tài khoản mẫu', sampleAccount: 'mẫu', unfinishedProfile: 'Hồ sơ chưa hoàn thiện',
     companySignupTitle: 'Đăng ký với tư cách Công ty', companySignupBody: 'Nhập thông tin công ty để bắt đầu đăng tin tuyển dụng.', companyName: 'Tên công ty', industry: 'Lĩnh vực', createCompany: 'Tạo tài khoản công ty', welcomeCompany: 'Chào mừng, {co}',
     createProfile: 'Tạo hồ sơ', editProfile: 'Sửa hồ sơ', stepOf: 'Bước {n}/{total}', progress: 'Tiến độ đăng ký', stepBio: 'Thông tin cá nhân', stepEduExp: 'Học vấn và Kinh nghiệm', stepSkills: 'Kỹ năng', stepCerts: 'Chứng chỉ',
     saveFinish: 'Lưu và Hoàn tất', saveChanges: 'Lưu thay đổi', backToProfile: 'Quay lại hồ sơ',

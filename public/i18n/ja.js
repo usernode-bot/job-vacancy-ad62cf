@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Japanese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Japanese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {}).ja = {
   name: '日本語',
   locale: 'ja-JP',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} 件の求人に基づく', youHaveIt: '保有済み', pctRequired: '{n}% が必須', otherCountriesHint: 'お探しの国が見つかりませんか？', allCountriesList: 'すべての国を表示', noCountry: '国が見つかりません', noCountryBody: '別のつづりでお試しください。',
     signUpTitle: '新規登録', signInTitle: 'ログイン', signUp: '新規登録', signIn: 'ログイン', homeroomIdentity: 'Homeroom アカウント @{user} でログインしているため、パスワードは不要です。役割を選択してください。', homeroomIdentityAnon: 'Homeroom アカウントでログインするため、パスワードは不要です。',
     roleSeeker: '求職者', roleSeekerBody: 'デジタル履歴書を作成し、スキルをマッチさせて求人に応募できます。', roleCompany: '企業', roleCompanyBody: '求人を掲載し、応募者を管理できます。',
-    yourAccounts: 'あなたのアカウント', noAccountsYet: 'Loker Dunia のアカウントはまだありません。まず求職者または企業として登録してください。', sampleAccounts: 'サンプルアカウント', sampleAccount: 'サンプル', unfinishedProfile: '未完成のプロフィール',
+    yourAccounts: 'あなたのアカウント', noAccountsYet: 'Job Vacancy のアカウントはまだありません。まず求職者または企業として登録してください。', sampleAccounts: 'サンプルアカウント', sampleAccount: 'サンプル', unfinishedProfile: '未完成のプロフィール',
     companySignupTitle: '企業として登録', companySignupBody: '企業情報を入力して、求人の掲載を始めましょう。', companyName: '企業名', industry: '業界', createCompany: '企業アカウントを作成', welcomeCompany: 'ようこそ、{co} 様',
     createProfile: 'プロフィールを作成', editProfile: 'プロフィールを編集', stepOf: 'ステップ {n}/{total}', progress: '登録の進捗', stepBio: '基本情報', stepEduExp: '学歴・職歴', stepSkills: 'スキル', stepCerts: '資格',
     saveFinish: '保存して完了', saveChanges: '変更を保存', backToProfile: 'プロフィールに戻る',

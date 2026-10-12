@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Turkish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Turkish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['tr'] = {
   name: 'Türkçe',
   locale: 'tr-TR',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} ilana göre', youHaveIt: 'Sizde var', pctRequired: '%{n} zorunlu', otherCountriesHint: 'Ülke listede yok mu?', allCountriesList: 'Tüm ülkeleri gör', noCountry: 'Ülke bulunamadı', noCountryBody: 'Farklı bir yazım deneyin.',
     signUpTitle: 'Kaydol', signInTitle: 'Giriş yap', signUp: 'Kaydol', signIn: 'Giriş yap', homeroomIdentity: '@{user} Homeroom hesabıyla giriş yaptınız, bu nedenle şifre gerekmez. Rolünüzü seçin.', homeroomIdentityAnon: 'Homeroom hesabınızla giriş yapılır, bu nedenle şifre gerekmez.',
     roleSeeker: 'İş Arayan', roleSeekerBody: 'Dijital özgeçmiş oluşturun, becerilerinizi eşleştirin ve ilanlara başvurun.', roleCompany: 'Şirket', roleCompanyBody: 'İlan yayınlayın ve adayları yönetin.',
-    yourAccounts: 'Hesaplarınız', noAccountsYet: 'Henüz bir Loker Dunia hesabınız yok. Önce İş Arayan veya Şirket olarak kaydolun.', sampleAccounts: 'Örnek hesaplar', sampleAccount: 'örnek', unfinishedProfile: 'Tamamlanmamış profil',
+    yourAccounts: 'Hesaplarınız', noAccountsYet: 'Henüz bir Job Vacancy hesabınız yok. Önce İş Arayan veya Şirket olarak kaydolun.', sampleAccounts: 'Örnek hesaplar', sampleAccount: 'örnek', unfinishedProfile: 'Tamamlanmamış profil',
     companySignupTitle: 'Şirket olarak kaydolun', companySignupBody: 'İlan yayınlamaya başlamak için şirket bilgilerinizi girin.', companyName: 'Şirket adı', industry: 'Sektör', createCompany: 'Şirket hesabı oluştur', welcomeCompany: 'Hoş geldiniz, {co}',
     createProfile: 'Profil oluştur', editProfile: 'Profili düzenle', stepOf: 'Adım {n} / {total}', progress: 'Kayıt ilerlemesi', stepBio: 'Kişisel bilgiler', stepEduExp: 'Eğitim ve Deneyim', stepSkills: 'Beceriler', stepCerts: 'Sertifikalar',
     saveFinish: 'Kaydet ve Bitir', saveChanges: 'Değişiklikleri kaydet', backToProfile: 'Profile dön',

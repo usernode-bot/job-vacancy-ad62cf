@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Amharic. A key missing here falls back to English. */
+/* Job Vacancy interface text: Amharic. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['am'] = {
   name: 'አማርኛ',
   locale: 'am-ET',
@@ -35,7 +35,7 @@
     skillsBasis: 'በ{n} ሥራዎች ላይ የተመሠረተ', youHaveIt: 'አለዎት', pctRequired: '{n}% አስፈላጊ', otherCountriesHint: 'አገሩ በዝርዝሩ ውስጥ የለም?', allCountriesList: 'ሁሉንም አገሮች ይመልከቱ', noCountry: 'ምንም አገር አልተገኘም', noCountryBody: 'ሌላ አጻጻፍ ይሞክሩ።',
     signUpTitle: 'ይመዝገቡ', signInTitle: 'ይግቡ', signUp: 'ይመዝገቡ', signIn: 'ይግቡ', homeroomIdentity: 'በHomeroom መለያ @{user} ገብተዋል፤ ስለዚህ የይለፍ ቃል አያስፈልግም። ሚናዎን ይምረጡ።', homeroomIdentityAnon: 'የHomeroom መለያዎ ያስገባዎታል፤ ስለዚህ የይለፍ ቃል አያስፈልግም።',
     roleSeeker: 'ሥራ ፈላጊ', roleSeekerBody: 'ዲጂታል CV ይፍጠሩ፣ ክህሎቶችዎን ያዛምዱ እና ለሥራዎች ያመልክቱ።', roleCompany: 'ኩባንያ', roleCompanyBody: 'ሥራዎችን ይለጥፉ እና አመልካቾችን ያስተዳድሩ።',
-    yourAccounts: 'የእርስዎ መለያዎች', noAccountsYet: 'እስካሁን የLoker Dunia መለያ የለዎትም። መጀመሪያ እንደ ሥራ ፈላጊ ወይም እንደ ኩባንያ ይመዝገቡ።', sampleAccounts: 'የናሙና መለያዎች', sampleAccount: 'ናሙና', unfinishedProfile: 'ያልተጠናቀቀ መገለጫ',
+    yourAccounts: 'የእርስዎ መለያዎች', noAccountsYet: 'እስካሁን የJob Vacancy መለያ የለዎትም። መጀመሪያ እንደ ሥራ ፈላጊ ወይም እንደ ኩባንያ ይመዝገቡ።', sampleAccounts: 'የናሙና መለያዎች', sampleAccount: 'ናሙና', unfinishedProfile: 'ያልተጠናቀቀ መገለጫ',
     companySignupTitle: 'እንደ ኩባንያ ይመዝገቡ', companySignupBody: 'ሥራዎችን መለጠፍ ለመጀመር የኩባንያዎን ዝርዝሮች ያስገቡ።', companyName: 'የኩባንያው ስም', industry: 'ኢንዱስትሪ', createCompany: 'የኩባንያ መለያ ይፍጠሩ', welcomeCompany: 'እንኳን ደህና መጡ፣ {co}',
     createProfile: 'መገለጫ ይፍጠሩ', editProfile: 'መገለጫ ያርትዑ', stepOf: 'ደረጃ {n} ከ{total}', progress: 'የምዝገባ ሂደት', stepBio: 'የግል ዝርዝሮች', stepEduExp: 'ትምህርት እና የሥራ ልምድ', stepSkills: 'ክህሎቶች', stepCerts: 'የምስክር ወረቀቶች',
     saveFinish: 'አስቀምጥ እና ጨርስ', saveChanges: 'ለውጦችን አስቀምጥ', backToProfile: 'ወደ መገለጫ ተመለስ',

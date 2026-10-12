@@ -1,4 +1,4 @@
-/* Loker Dunia interface languages: the single list the language picker,
+/* Job Vacancy interface languages: the single list the language picker,
  * the header badge and the page direction read from.
  *
  * Each entry has a matching file public/i18n/<code>.js, loaded only when

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Dutch. A key missing here falls back to English. */
+/* Job Vacancy interface text: Dutch. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['nl'] = {
   name: 'Nederlands',
   locale: 'nl-NL',
@@ -35,7 +35,7 @@
     skillsBasis: 'Gebaseerd op {n} vacatures', youHaveIt: 'In uw bezit', pctRequired: '{n}% vereist', otherCountriesHint: 'Land niet vermeld?', allCountriesList: 'Alle landen bekijken', noCountry: 'Geen land gevonden', noCountryBody: 'Probeer een andere spelling.',
     signUpTitle: 'Registreren', signInTitle: 'Inloggen', signUp: 'Registreren', signIn: 'Inloggen', homeroomIdentity: 'U bent ingelogd met het Homeroom-account @{user}, dus een wachtwoord is niet nodig. Kies uw rol.', homeroomIdentityAnon: 'U wordt ingelogd via uw Homeroom-account, dus een wachtwoord is niet nodig.',
     roleSeeker: 'Werkzoekende', roleSeekerBody: 'Maak een digitaal cv, match uw vaardigheden en solliciteer op vacatures.', roleCompany: 'Bedrijf', roleCompanyBody: 'Plaats vacatures en beheer sollicitanten.',
-    yourAccounts: 'Uw accounts', noAccountsYet: 'U hebt nog geen Loker Dunia-account. Registreer u eerst als werkzoekende of als bedrijf.', sampleAccounts: 'Voorbeeldaccounts', sampleAccount: 'voorbeeld', unfinishedProfile: 'Onvolledig profiel',
+    yourAccounts: 'Uw accounts', noAccountsYet: 'U hebt nog geen Job Vacancy-account. Registreer u eerst als werkzoekende of als bedrijf.', sampleAccounts: 'Voorbeeldaccounts', sampleAccount: 'voorbeeld', unfinishedProfile: 'Onvolledig profiel',
     companySignupTitle: 'Registreren als bedrijf', companySignupBody: 'Vul uw bedrijfsgegevens in om vacatures te plaatsen.', companyName: 'Bedrijfsnaam', industry: 'Branche', createCompany: 'Bedrijfsaccount aanmaken', welcomeCompany: 'Welkom, {co}',
     createProfile: 'Profiel aanmaken', editProfile: 'Profiel bewerken', stepOf: 'Stap {n} van {total}', progress: 'Voortgang registratie', stepBio: 'Persoonlijke gegevens', stepEduExp: 'Opleiding en ervaring', stepSkills: 'Vaardigheden', stepCerts: 'Certificaten',
     saveFinish: 'Opslaan en afronden', saveChanges: 'Wijzigingen opslaan', backToProfile: 'Terug naar profiel',

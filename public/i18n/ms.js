@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Malay. A key missing here falls back to English. */
+/* Job Vacancy interface text: Malay. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ms'] = {
   name: 'Bahasa Melayu',
   locale: 'ms-MY',
@@ -35,7 +35,7 @@
     skillsBasis: 'Berdasarkan {n} jawatan', youHaveIt: 'Anda memilikinya', pctRequired: '{n}% mewajibkan', otherCountriesHint: 'Negara tiada dalam senarai?', allCountriesList: 'Lihat semua negara', noCountry: 'Negara tidak dijumpai', noCountryBody: 'Cuba ejaan lain.',
     signUpTitle: 'Daftar', signInTitle: 'Log masuk', signUp: 'Daftar', signIn: 'Log masuk', homeroomIdentity: 'Anda log masuk dengan akaun Homeroom @{user}, jadi kata laluan tidak diperlukan. Pilih peranan anda.', homeroomIdentityAnon: 'Akaun Homeroom anda digunakan untuk log masuk, jadi kata laluan tidak diperlukan.',
     roleSeeker: 'Pencari Kerja', roleSeekerBody: 'Bina CV digital, padankan kemahiran anda dan mohon jawatan.', roleCompany: 'Syarikat', roleCompanyBody: 'Iklankan jawatan dan urus pemohon.',
-    yourAccounts: 'Akaun anda', noAccountsYet: 'Anda belum mempunyai akaun Loker Dunia. Daftar sebagai Pencari Kerja atau Syarikat terlebih dahulu.', sampleAccounts: 'Akaun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum lengkap',
+    yourAccounts: 'Akaun anda', noAccountsYet: 'Anda belum mempunyai akaun Job Vacancy. Daftar sebagai Pencari Kerja atau Syarikat terlebih dahulu.', sampleAccounts: 'Akaun contoh', sampleAccount: 'contoh', unfinishedProfile: 'Profil belum lengkap',
     companySignupTitle: 'Daftar sebagai Syarikat', companySignupBody: 'Masukkan butiran syarikat anda untuk mula mengiklankan jawatan.', companyName: 'Nama syarikat', industry: 'Industri', createCompany: 'Cipta akaun syarikat', welcomeCompany: 'Selamat datang, {co}',
     createProfile: 'Cipta profil', editProfile: 'Sunting profil', stepOf: 'Langkah {n} daripada {total}', progress: 'Kemajuan pendaftaran', stepBio: 'Butiran peribadi', stepEduExp: 'Pendidikan & Pengalaman', stepSkills: 'Kemahiran', stepCerts: 'Sijil',
     saveFinish: 'Simpan & Selesai', saveChanges: 'Simpan perubahan', backToProfile: 'Kembali ke profil',

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Arabic. A key missing here falls back to English. */
+/* Job Vacancy interface text: Arabic. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ar'] = {
   name: 'العربية',
   locale: 'ar',
@@ -35,7 +35,7 @@
     skillsBasis: 'استنادًا إلى {n} وظيفة', youHaveIt: 'لديك هذه المهارة', pctRequired: 'مطلوبة بنسبة {n}%', otherCountriesHint: 'الدولة غير مدرجة؟', allCountriesList: 'عرض جميع الدول', noCountry: 'لم يتم العثور على دولة', noCountryBody: 'جرّب تهجئة أخرى.',
     signUpTitle: 'إنشاء حساب', signInTitle: 'تسجيل الدخول', signUp: 'إنشاء حساب', signIn: 'تسجيل الدخول', homeroomIdentity: 'أنت مسجّل الدخول بحساب Homeroom @{user}، لذا لا حاجة إلى كلمة مرور. يُرجى اختيار دورك.', homeroomIdentityAnon: 'يتم تسجيل دخولك عبر حساب Homeroom، لذا لا حاجة إلى كلمة مرور.',
     roleSeeker: 'باحث عن عمل', roleSeekerBody: 'أنشئ سيرة ذاتية رقمية، وطابق مهاراتك، وتقدّم للوظائف.', roleCompany: 'شركة', roleCompanyBody: 'انشر الوظائف وأدِر المتقدمين.',
-    yourAccounts: 'حساباتك', noAccountsYet: 'ليس لديك حساب في Loker Dunia بعد. يُرجى التسجيل أولًا كباحث عن عمل أو كشركة.', sampleAccounts: 'حسابات تجريبية', sampleAccount: 'تجريبي', unfinishedProfile: 'ملف شخصي غير مكتمل',
+    yourAccounts: 'حساباتك', noAccountsYet: 'ليس لديك حساب في Job Vacancy بعد. يُرجى التسجيل أولًا كباحث عن عمل أو كشركة.', sampleAccounts: 'حسابات تجريبية', sampleAccount: 'تجريبي', unfinishedProfile: 'ملف شخصي غير مكتمل',
     companySignupTitle: 'التسجيل كشركة', companySignupBody: 'أدخل بيانات شركتك للبدء في نشر الوظائف.', companyName: 'اسم الشركة', industry: 'القطاع', createCompany: 'إنشاء حساب شركة', welcomeCompany: 'مرحبًا، {co}',
     createProfile: 'إنشاء ملف شخصي', editProfile: 'تعديل الملف الشخصي', stepOf: 'الخطوة {n} من {total}', progress: 'تقدّم التسجيل', stepBio: 'البيانات الشخصية', stepEduExp: 'التعليم والخبرة', stepSkills: 'المهارات', stepCerts: 'الشهادات',
     saveFinish: 'حفظ وإنهاء', saveChanges: 'حفظ التغييرات', backToProfile: 'العودة إلى الملف الشخصي',

@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Swedish. A key missing here falls back to English. */
+/* Job Vacancy interface text: Swedish. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['sv'] = {
   name: 'Svenska',
   locale: 'sv-SE',
@@ -35,7 +35,7 @@
     skillsBasis: 'Baserat på {n} jobb', youHaveIt: 'Du har den', pctRequired: '{n} % kräver', otherCountriesHint: 'Finns inte landet med?', allCountriesList: 'Visa alla länder', noCountry: 'Inget land hittades', noCountryBody: 'Prova en annan stavning.',
     signUpTitle: 'Registrera dig', signInTitle: 'Logga in', signUp: 'Registrera dig', signIn: 'Logga in', homeroomIdentity: 'Du är inloggad med Homeroom-kontot @{user}, så inget lösenord behövs. Välj din roll.', homeroomIdentityAnon: 'Du loggas in med ditt Homeroom-konto, så inget lösenord behövs.',
     roleSeeker: 'Arbetssökande', roleSeekerBody: 'Skapa ett digitalt CV, matcha dina färdigheter och sök jobb.', roleCompany: 'Företag', roleCompanyBody: 'Publicera jobb och hantera sökande.',
-    yourAccounts: 'Dina konton', noAccountsYet: 'Du har inget Loker Dunia-konto ännu. Registrera dig först som arbetssökande eller företag.', sampleAccounts: 'Exempelkonton', sampleAccount: 'exempel', unfinishedProfile: 'Ofullständig profil',
+    yourAccounts: 'Dina konton', noAccountsYet: 'Du har inget Job Vacancy-konto ännu. Registrera dig först som arbetssökande eller företag.', sampleAccounts: 'Exempelkonton', sampleAccount: 'exempel', unfinishedProfile: 'Ofullständig profil',
     companySignupTitle: 'Registrera dig som företag', companySignupBody: 'Ange företagets uppgifter för att börja publicera jobb.', companyName: 'Företagsnamn', industry: 'Bransch', createCompany: 'Skapa företagskonto', welcomeCompany: 'Välkommen, {co}',
     createProfile: 'Skapa profil', editProfile: 'Redigera profil', stepOf: 'Steg {n} av {total}', progress: 'Registreringsförlopp', stepBio: 'Personuppgifter', stepEduExp: 'Utbildning och erfarenhet', stepSkills: 'Färdigheter', stepCerts: 'Certifikat',
     saveFinish: 'Spara och slutför', saveChanges: 'Spara ändringar', backToProfile: 'Tillbaka till profilen',

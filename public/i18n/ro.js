@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Romanian. A key missing here falls back to English. */
+/* Job Vacancy interface text: Romanian. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ro'] = {
   name: 'Română',
   locale: 'ro-RO',
@@ -35,7 +35,7 @@
     skillsBasis: 'Pe baza a {n} posturi', youHaveIt: 'O dețineți', pctRequired: '{n}% o cer', otherCountriesHint: 'Țara nu este în listă?', allCountriesList: 'Vedeți toate țările', noCountry: 'Nu s-a găsit nicio țară', noCountryBody: 'Încercați altă ortografie.',
     signUpTitle: 'Înregistrare', signInTitle: 'Autentificare', signUp: 'Înregistrați-vă', signIn: 'Autentificați-vă', homeroomIdentity: 'Sunteți autentificat cu contul Homeroom @{user}, deci nu este necesară o parolă. Alegeți rolul dvs.', homeroomIdentityAnon: 'Contul dvs. Homeroom vă autentifică, deci nu este necesară o parolă.',
     roleSeeker: 'Candidat', roleSeekerBody: 'Creați un CV digital, comparați-vă competențele și aplicați la posturi.', roleCompany: 'Companie', roleCompanyBody: 'Publicați posturi și gestionați candidații.',
-    yourAccounts: 'Conturile dvs.', noAccountsYet: 'Încă nu aveți un cont Loker Dunia. Înregistrați-vă mai întâi ca un candidat sau ca o companie.', sampleAccounts: 'Conturi exemplu', sampleAccount: 'exemplu', unfinishedProfile: 'Profil incomplet',
+    yourAccounts: 'Conturile dvs.', noAccountsYet: 'Încă nu aveți un cont Job Vacancy. Înregistrați-vă mai întâi ca un candidat sau ca o companie.', sampleAccounts: 'Conturi exemplu', sampleAccount: 'exemplu', unfinishedProfile: 'Profil incomplet',
     companySignupTitle: 'Înregistrare ca o companie', companySignupBody: 'Introduceți datele companiei pentru a începe să publicați posturi.', companyName: 'Numele companiei', industry: 'Domeniu', createCompany: 'Creați contul companiei', welcomeCompany: 'Bun venit, {co}',
     createProfile: 'Creați profilul', editProfile: 'Editați profilul', stepOf: 'Pasul {n} din {total}', progress: 'Progresul înregistrării', stepBio: 'Date personale', stepEduExp: 'Studii și experiență', stepSkills: 'Competențe', stepCerts: 'Certificate',
     saveFinish: 'Salvați și finalizați', saveChanges: 'Salvați modificările', backToProfile: 'Înapoi la profil',

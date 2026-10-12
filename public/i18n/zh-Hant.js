@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Traditional Chinese. A key missing here falls back to English. */
+/* Job Vacancy interface text: Traditional Chinese. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['zh-Hant'] = {
   name: '繁體中文',
   locale: 'zh-TW',
@@ -35,7 +35,7 @@
     skillsBasis: '依據 {n} 個職缺', youHaveIt: '您已具備', pctRequired: '{n}% 要求', otherCountriesHint: '找不到您的國家？', allCountriesList: '查看所有國家', noCountry: '找不到該國家', noCountryBody: '請嘗試其他拼法。',
     signUpTitle: '註冊', signInTitle: '登入', signUp: '註冊', signIn: '登入', homeroomIdentity: '您已使用 Homeroom 帳戶 @{user} 登入，無需密碼。請選擇您的身分。', homeroomIdentityAnon: '您的 Homeroom 帳戶會自動為您登入，無需密碼。',
     roleSeeker: '求職者', roleSeekerBody: '建立數位履歷，比對技能並應徵職缺。', roleCompany: '公司', roleCompanyBody: '刊登職缺並管理應徵者。',
-    yourAccounts: '您的帳戶', noAccountsYet: '您還沒有 Loker Dunia 帳戶。請先註冊為求職者或公司。', sampleAccounts: '範例帳戶', sampleAccount: '範例', unfinishedProfile: '檔案未完成',
+    yourAccounts: '您的帳戶', noAccountsYet: '您還沒有 Job Vacancy 帳戶。請先註冊為求職者或公司。', sampleAccounts: '範例帳戶', sampleAccount: '範例', unfinishedProfile: '檔案未完成',
     companySignupTitle: '註冊為公司', companySignupBody: '填寫公司資料，即可開始刊登職缺。', companyName: '公司名稱', industry: '產業', createCompany: '建立公司帳戶', welcomeCompany: '歡迎，{co}',
     createProfile: '建立檔案', editProfile: '編輯檔案', stepOf: '第 {n} 步，共 {total} 步', progress: '註冊進度', stepBio: '個人資料', stepEduExp: '學歷與經歷', stepSkills: '技能', stepCerts: '證照',
     saveFinish: '儲存並完成', saveChanges: '儲存變更', backToProfile: '返回個人檔案',

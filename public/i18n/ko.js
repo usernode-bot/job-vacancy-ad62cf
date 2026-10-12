@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Korean. A key missing here falls back to English. */
+/* Job Vacancy interface text: Korean. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {}).ko = {
   name: '한국어',
   locale: 'ko-KR',
@@ -35,7 +35,7 @@
     skillsBasis: '채용 공고 {n}개 기준', youHaveIt: '보유 중', pctRequired: '{n}% 필수', otherCountriesHint: '찾는 국가가 없나요?', allCountriesList: '모든 국가 보기', noCountry: '국가를 찾을 수 없습니다', noCountryBody: '다른 철자로 시도해 보세요.',
     signUpTitle: '회원가입', signInTitle: '로그인', signUp: '회원가입', signIn: '로그인', homeroomIdentity: 'Homeroom 계정 @{user}(으)로 로그인되어 있어 비밀번호가 필요 없습니다. 역할을 선택해 주세요.', homeroomIdentityAnon: 'Homeroom 계정으로 로그인되므로 비밀번호가 필요 없습니다.',
     roleSeeker: '구직자', roleSeekerBody: '디지털 이력서를 만들고, 기술을 매칭하여 채용 공고에 지원하세요.', roleCompany: '기업', roleCompanyBody: '채용 공고를 등록하고 지원자를 관리하세요.',
-    yourAccounts: '내 계정', noAccountsYet: '아직 Loker Dunia 계정이 없습니다. 먼저 구직자 또는 기업으로 가입해 주세요.', sampleAccounts: '샘플 계정', sampleAccount: '샘플', unfinishedProfile: '미완성 프로필',
+    yourAccounts: '내 계정', noAccountsYet: '아직 Job Vacancy 계정이 없습니다. 먼저 구직자 또는 기업으로 가입해 주세요.', sampleAccounts: '샘플 계정', sampleAccount: '샘플', unfinishedProfile: '미완성 프로필',
     companySignupTitle: '기업으로 가입', companySignupBody: '기업 정보를 입력하고 채용 공고 등록을 시작하세요.', companyName: '기업명', industry: '업종', createCompany: '기업 계정 만들기', welcomeCompany: '{co}님, 환영합니다',
     createProfile: '프로필 만들기', editProfile: '프로필 편집', stepOf: '{total}단계 중 {n}단계', progress: '가입 진행 상황', stepBio: '인적 사항', stepEduExp: '학력 및 경력', stepSkills: '기술', stepCerts: '자격증',
     saveFinish: '저장 및 완료', saveChanges: '변경 사항 저장', backToProfile: '프로필로 돌아가기',

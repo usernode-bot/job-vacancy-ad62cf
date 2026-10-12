@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Bengali. A key missing here falls back to English. */
+/* Job Vacancy interface text: Bengali. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['bn'] = {
   name: 'বাংলা',
   locale: 'bn-BD',
@@ -35,7 +35,7 @@
     skillsBasis: '{n}টি চাকরির ভিত্তিতে', youHaveIt: 'আপনার আছে', pctRequired: '{n}% চাকরিতে আবশ্যক', otherCountriesHint: 'দেশটি তালিকায় নেই?', allCountriesList: 'সব দেশ দেখুন', noCountry: 'কোনো দেশ পাওয়া যায়নি', noCountryBody: 'অন্য কোনো বানান চেষ্টা করুন।',
     signUpTitle: 'সাইন আপ', signInTitle: 'সাইন ইন', signUp: 'সাইন আপ করুন', signIn: 'সাইন ইন করুন', homeroomIdentity: 'আপনি Homeroom অ্যাকাউন্ট @{user} দিয়ে সাইন ইন করেছেন, তাই পাসওয়ার্ডের প্রয়োজন নেই। আপনার ভূমিকা বেছে নিন।', homeroomIdentityAnon: 'আপনার Homeroom অ্যাকাউন্ট আপনাকে সাইন ইন করায়, তাই পাসওয়ার্ডের প্রয়োজন নেই।',
     roleSeeker: 'চাকরিপ্রার্থী', roleSeekerBody: 'ডিজিটাল CV তৈরি করুন, আপনার দক্ষতা মেলান এবং চাকরিতে আবেদন করুন।', roleCompany: 'কোম্পানি', roleCompanyBody: 'চাকরি পোস্ট করুন এবং আবেদনকারীদের পরিচালনা করুন।',
-    yourAccounts: 'আপনার অ্যাকাউন্টসমূহ', noAccountsYet: 'আপনার এখনও কোনো Loker Dunia অ্যাকাউন্ট নেই। প্রথমে চাকরিপ্রার্থী বা কোম্পানি হিসেবে সাইন আপ করুন।', sampleAccounts: 'নমুনা অ্যাকাউন্ট', sampleAccount: 'নমুনা', unfinishedProfile: 'অসম্পূর্ণ প্রোফাইল',
+    yourAccounts: 'আপনার অ্যাকাউন্টসমূহ', noAccountsYet: 'আপনার এখনও কোনো Job Vacancy অ্যাকাউন্ট নেই। প্রথমে চাকরিপ্রার্থী বা কোম্পানি হিসেবে সাইন আপ করুন।', sampleAccounts: 'নমুনা অ্যাকাউন্ট', sampleAccount: 'নমুনা', unfinishedProfile: 'অসম্পূর্ণ প্রোফাইল',
     companySignupTitle: 'কোম্পানি হিসেবে সাইন আপ করুন', companySignupBody: 'চাকরি পোস্ট করা শুরু করতে আপনার কোম্পানির তথ্য দিন।', companyName: 'কোম্পানির নাম', industry: 'শিল্প খাত', createCompany: 'কোম্পানি অ্যাকাউন্ট তৈরি করুন', welcomeCompany: 'স্বাগতম, {co}',
     createProfile: 'প্রোফাইল তৈরি করুন', editProfile: 'প্রোফাইল সম্পাদনা করুন', stepOf: 'ধাপ {n} / {total}', progress: 'সাইন আপের অগ্রগতি', stepBio: 'ব্যক্তিগত তথ্য', stepEduExp: 'শিক্ষা ও অভিজ্ঞতা', stepSkills: 'দক্ষতা', stepCerts: 'সনদ',
     saveFinish: 'সংরক্ষণ করে শেষ করুন', saveChanges: 'পরিবর্তন সংরক্ষণ করুন', backToProfile: 'প্রোফাইলে ফিরে যান',

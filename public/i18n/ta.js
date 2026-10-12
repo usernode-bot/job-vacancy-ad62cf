@@ -1,4 +1,4 @@
-/* Loker Dunia interface text: Tamil. A key missing here falls back to English. */
+/* Job Vacancy interface text: Tamil. A key missing here falls back to English. */
 (window.LOKER_I18N = window.LOKER_I18N || {})['ta'] = {
   name: 'தமிழ்',
   locale: 'ta-IN',
@@ -35,7 +35,7 @@
     skillsBasis: '{n} வேலைகளின் அடிப்படையில்', youHaveIt: 'உங்களிடம் உள்ளது', pctRequired: '{n}% தேவை', otherCountriesHint: 'நாடு பட்டியலில் இல்லையா?', allCountriesList: 'அனைத்து நாடுகளையும் காண்க', noCountry: 'நாடு எதுவும் கிடைக்கவில்லை', noCountryBody: 'வேறு எழுத்துக்கூட்டலை முயலவும்.',
     signUpTitle: 'பதிவு செய்க', signInTitle: 'உள்நுழைக', signUp: 'பதிவு செய்க', signIn: 'உள்நுழைக', homeroomIdentity: 'நீங்கள் Homeroom கணக்கு @{user} மூலம் உள்நுழைந்துள்ளீர்கள், எனவே கடவுச்சொல் தேவையில்லை. உங்கள் பங்கைத் தேர்ந்தெடுக்கவும்.', homeroomIdentityAnon: 'உங்கள் Homeroom கணக்கு உங்களை உள்நுழைய வைக்கிறது, எனவே கடவுச்சொல் தேவையில்லை.',
     roleSeeker: 'வேலை தேடுபவர்', roleSeekerBody: 'டிஜிட்டல் CV ஐ உருவாக்கி, உங்கள் திறன்களைப் பொருத்தி, வேலைகளுக்கு விண்ணப்பிக்கவும்.', roleCompany: 'நிறுவனம்', roleCompanyBody: 'வேலைகளை வெளியிட்டு விண்ணப்பதாரர்களை நிர்வகிக்கவும்.',
-    yourAccounts: 'உங்கள் கணக்குகள்', noAccountsYet: 'உங்களிடம் இன்னும் Loker Dunia கணக்கு இல்லை. முதலில் வேலை தேடுபவராக அல்லது நிறுவனமாகப் பதிவு செய்யவும்.', sampleAccounts: 'மாதிரிக் கணக்குகள்', sampleAccount: 'மாதிரி', unfinishedProfile: 'முழுமையடையாத சுயவிவரம்',
+    yourAccounts: 'உங்கள் கணக்குகள்', noAccountsYet: 'உங்களிடம் இன்னும் Job Vacancy கணக்கு இல்லை. முதலில் வேலை தேடுபவராக அல்லது நிறுவனமாகப் பதிவு செய்யவும்.', sampleAccounts: 'மாதிரிக் கணக்குகள்', sampleAccount: 'மாதிரி', unfinishedProfile: 'முழுமையடையாத சுயவிவரம்',
     companySignupTitle: 'நிறுவனமாகப் பதிவு செய்யவும்', companySignupBody: 'வேலைகளை வெளியிடத் தொடங்க உங்கள் நிறுவன விவரங்களை உள்ளிடவும்.', companyName: 'நிறுவனத்தின் பெயர்', industry: 'தொழில்துறை', createCompany: 'நிறுவனக் கணக்கை உருவாக்கவும்', welcomeCompany: 'வரவேற்கிறோம், {co}',
     createProfile: 'சுயவிவரத்தை உருவாக்கவும்', editProfile: 'சுயவிவரத்தைத் திருத்தவும்', stepOf: 'படி {n} / {total}', progress: 'பதிவு முன்னேற்றம்', stepBio: 'தனிப்பட்ட விவரங்கள்', stepEduExp: 'கல்வி & அனுபவம்', stepSkills: 'திறன்கள்', stepCerts: 'சான்றிதழ்கள்',
     saveFinish: 'சேமித்து முடிக்கவும்', saveChanges: 'மாற்றங்களைச் சேமிக்கவும்', backToProfile: 'சுயவிவரத்திற்குத் திரும்பு',

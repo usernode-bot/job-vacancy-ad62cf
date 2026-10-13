@@ -1,15 +1,16 @@
 {
   "name": "Job Vacancy",
   "description": "Papan lowongan kerja global dengan pencocokan skill dan sertifikat",
+  "icon": { "image": "brand/icon.png", "emoji": "💼" },
   "secrets": [],
   "admins": [
     "dethan1527"
   ],
   "tests": [
     {
-      "name": "Header logo shows the globe and briefcase",
+      "name": "Header logo shows the briefcase and globe app icon",
       "path": "/",
-      "expectSelector": "#hdr [data-testid=app-logo][data-logo=globe-briefcase] svg"
+      "expectSelector": "#hdr [data-testid=app-logo][data-logo=briefcase-globe-tile] svg linearGradient#jvLogoBg"
     },
     {
       "name": "Header shows the Job Vacancy wordmark in the display font",
